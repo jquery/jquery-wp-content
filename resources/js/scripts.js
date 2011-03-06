@@ -34,4 +34,23 @@ App.subscribe("init", function(){
 		$(this).find("ul").stop().slideUp(200);
 	});
 
+	//
+	// Temporary: REMOVE
+	// Change page color
+	//
+	var colors = [ "jquery", "jquery-ui", "jquery-mobile" ],
+		color_string = colors.join(' ');
+	$("ul.projects").delegate("li", "click", function (e) {
+		e.preventDefault();
+		$(document.documentElement)
+			.removeClass(color_string)
+			.addClass(this.className);
+		window.location.hash = this.className;
+	});
+	
+	if (window.location.hash && $.inArray(window.location.hash.substr(1), colors) > -1) {
+		$(document.documentElement)
+			.removeClass(color_string)
+			.addClass(window.location.hash.substr(1));
+	}
 });
