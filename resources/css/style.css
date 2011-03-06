@@ -257,7 +257,9 @@
 	.jquery-ui h1 a
 {	background: url(../i/logo-ui.png) no-repeat;
 	width: 275px;
-	height: 72px; }
+	height: 72px;
+	left: -14px;
+	position: relative; }
 	.jquery-ui .border
 {	border-color: #ECC308; }
 	.jquery-ui a,
@@ -283,7 +285,10 @@
 	.jquery-mobile h1 a
 {	background: url(../i/logo-mobile.png) no-repeat;
 	height: 72px;
-	width: 275px; }
+	width: 275px;
+	left: -5px;
+	top: -1px;
+	position: relative; }
 	.jquery-mobile .border
 {	border-color: #88C41A; }	
 	.jquery-mobile a
@@ -419,10 +424,25 @@
 			line-height: 999px;
 			overflow: hidden; }
 			
+			header nav.top li.jquery
+		{	}
+				.jquery header nav.top li.jquery
+			{	margin-right: -4px; }
+			
+			header nav.top li.jquery-ui
+		{	}
+				.jquery-ui header nav.top li.jquery-ui
+			{	margin-right: -4px; }
+			
+			header nav.top li.jquery-mobile
+		{	}
+				.jquery-mobile header nav.top li.jquery-mobile
+			{	margin-right: -4px; }
+			
 			header nav.top li.jquery a
-		{	background-position: 11px 0px; }
+		{	background-position: 11px 1px; }
 				.jquery header nav.top li.jquery a
-			{	width: 44px;
+			{	width: 48px;
 				height: 40px;
 				border: none; 
 				background-position: 0px -36px; }
@@ -433,9 +453,9 @@
 				box-shadow: none; }
 				
 			header nav.top li.jquery-ui a
-		{	background-position: -39px 0px; }
+		{	background-position: -39px 1px; }
 				.jquery-ui header nav.top li.jquery-ui a
-			{	width: 44px;
+			{	width: 48px;
 				height: 40px;
 				border: none; 
 				background-position: -50px -36px; }
@@ -446,9 +466,9 @@
 				box-shadow: none; }
 			
 			header nav.top li.jquery-mobile a
-		{	background-position: -91px 0px; }
+		{	background-position: -91px 1px; }
 				.jquery-mobile header nav.top li.jquery-mobile a
-			{	width: 44px;
+			{	width: 48px;
 				height: 40px;
 				border: none; 
 				background-position: -100px -36px; }
