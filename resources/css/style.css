@@ -228,7 +228,7 @@
 /*	Core */
 
 	html.jquery
-{	background: #065791 url(../i/bg-body-jquery.jpg) no-repeat top center; }
+{	background: #065791 url(../i/bg-body-jquery.jpg) no-repeat center -20px ; }
 	.jquery h1 a
 {	height: 72px;
 	background: url(../i/logo-jquery.png) no-repeat; }
@@ -253,7 +253,7 @@
 /*	UI */
 
 	html.jquery-ui
-{	background: #BB6F04 url(../i/bg-body-ui.jpg) no-repeat top center; }
+{	background: #BB6F04 url(../i/bg-body-ui.jpg) no-repeat center -20px; }
 	.jquery-ui h1 a
 {	background: url(../i/logo-ui.png) no-repeat;
 	width: 275px;
@@ -279,7 +279,7 @@
 /* 	Mobile */
 
 	html.jquery-mobile
-{	background: #598611 url(../i/bg-body-mobile.jpg) no-repeat top center; }
+{	background: #598611 url(../i/bg-body-mobile.jpg) no-repeat center -30px; }
 	.jquery-mobile h1 a
 {	background: url(../i/logo-mobile.png) no-repeat;
 	height: 72px;
