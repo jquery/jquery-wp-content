@@ -38,7 +38,7 @@ App.subscribe("init", function(){
 	// Temporary: REMOVE
 	// Change page color
 	//
-	var colors = [ "jquery", "jquery-ui", "jquery-mobile" ],
+	var colors = [ "jquery", "jquery-ui", "jquery-mobile", "jquery-project" ],
 		color_string = colors.join(' ');
 	$("ul.projects").delegate("li", "click", function (e) {
 		e.preventDefault();
