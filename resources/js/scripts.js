@@ -40,7 +40,7 @@ App.subscribe("init", function(){
 	//
 	var colors = [ "jquery", "jquery-ui", "jquery-mobile", "jquery-project" ],
 		color_string = colors.join(' ');
-	$("ul.projects").delegate("li", "click", function(e) {
+	$("ul.projects").delegate("li:lt(3)", "click", function(e) {
 		e.preventDefault();
 		$(document.documentElement)
 			.removeClass(color_string)
