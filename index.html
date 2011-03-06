@@ -29,14 +29,52 @@
 </head> 
 <body>
 
+<!-- projects -->
+<div class="project-select">
+	<ul class="constrain"> 
+		<li>
+			<a href="#" title="" class=""> 
+				<img src="resources/i/logo-top-jquery.png" alt="jQuery" /> 
+				<em>The core JS framework that allows you to write less, do more.</em> 
+			</a>
+		</li> 
+		<li>
+			<a href="#" title="" class=""> 
+				<img src="resources/i/logo-top-ui.png" alt="jQuery UI" /> 
+				<em>The officially supported User Interface library for jQuery.</em> 
+			</a>
+		</li> 
+		<li>
+			<a href="#" title="" class=""> 
+				<img src="resources/i/logo-top-mobile.png" alt="jQuery Mobile"> 
+				<em>Build mobile web apps with jQuery using this framework.</em> 
+			</a>
+		</li> 
+		<li>
+			<a href="#" title="" class=""> 
+				<img src="resources/i/logo-top-sizzle.png" alt="SizzleJS" /> 
+				<em>A smoking fast CSS selector engine for JavaScript.</em> 
+			</a>
+		</li> 
+		<li>
+			<a href="#" title="" class=""> 
+				<img src="resources/i/logo-top-qunit.png" alt="QUnit" /> 
+				<em>Write solid JavaScript apps by unit testing with QUnit.</em> 
+			</a>
+		</li>
+	</ul>
+</div>
+<!-- /projects -->
+
 <!-- nav -->
 <header class="border clearfix">
-
+	
 	<nav class="constrain clearfix top">
 		<ul class="projects">
 			<li class="jquery"><a href="#" title="jQuery">jQuery</a></li>
 			<li class="jquery-ui"><a href="#" title="jQuery UI">jQuery UI</a></li>
 			<li class="jquery-mobile"><a href="#" title="jQuery Mobile">jQuery Mobile</a></li>
+			<li class="toggle-projects"><a href="#" title="All Projects">All Projects</a></li>
 		</ul>
 		<ul class="links">
 			<li class="dropdown"><a href="#" title="Support">Support</a>
@@ -296,6 +334,12 @@
 <script>!window.jQuery && document.write(unescape('%3Cscript src="resources/js/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
 <script src="resources/js/plugins.js"></script>
 <script src="resources/js/scripts.js"></script>
+<script id="tooltip-template"> 
+	<div class="tooltip">
+		<a href="${url}" title="${title}" class="jq-tooltip-branding"><img src="${preview}" /></a>
+		<ul>{{each(i,link) links}}<li><a href="${link[1]}">${link[0]}</a></li>{{/each}}</ul>
+	</div>
+</script> 
 <!-- /scripts -->
 
 </body> 

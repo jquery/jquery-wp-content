@@ -40,7 +40,7 @@ App.subscribe("init", function(){
 	//
 	var colors = [ "jquery", "jquery-ui", "jquery-mobile" ],
 		color_string = colors.join(' ');
-	$("ul.projects").delegate("li", "click", function (e) {
+	$("ul.projects").delegate("li", "click", function(e) {
 		e.preventDefault();
 		$(document.documentElement)
 			.removeClass(color_string)
@@ -53,4 +53,17 @@ App.subscribe("init", function(){
 			.removeClass(color_string)
 			.addClass(window.location.hash.substr(1));
 	}
+	
+	//
+	// Project Select Show/Hide
+	//
+	$(".toggle-projects").bind("click", function(e){
+		e.preventDefault();
+		$("body").animate({"marginTop":"140px"}, 500);
+	});
+	
 });
+
+
+
+

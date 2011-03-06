@@ -218,7 +218,7 @@
 /*	Project Specific Classes  */
 
 /*	Default */
-
+	
 	a
 {	color: #0d619c; }
 	footer a
@@ -244,7 +244,7 @@
 	.jquery #container header nav
 {	border-top: solid 1px rgba(12,157,214,0.4);
 	background: rgba(0, 64, 108, 0.3); 
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px ;}
+	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px ; }
 	.jquery #container header nav .search .icon-search
 {	-webkit-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
 	-moz-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
@@ -272,7 +272,7 @@
 	.jquery-ui #container header nav
 {	border-top: solid 1px rgba(236,195,8,0.4);
 	background: rgba(187,111,4,0.5); 
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(137,81,6,0.5) 0 -3px 5px ;}
+	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(137,81,6,0.5) 0 -3px 5px ; }
 	.jquery-ui #container header nav .search .icon-search
 {	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 	-moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
@@ -291,17 +291,17 @@
 	position: relative; }
 	.jquery-mobile .border
 {	border-color: #88C41A; }	
-	.jquery-mobile a
+	.jquery-mobile a,
+	.jquery-mobile .title
 {	color: #598611; }
 	.jquery-mobile #container header nav ul li a,
 	.jquery-mobile #container header nav .search::-webkit-input-placeholder,
-	.jquery-mobile #container header nav .search label,
-	.jquery-mobile .title
+	.jquery-mobile #container header nav .search label
 {	color: #fff; }
 	.jquery-mobile #container header nav
 {	border-top: solid 1px rgba(136,196,26,0.3);
 	background: rgba(80,118,17,0.4); 
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px ;}
+	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px ; }
 	.jquery-mobile #container header nav .search .icon-search
 {	-webkit-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
 	-moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
@@ -322,6 +322,52 @@
 	
 	h1 a:hover
 {	cursor: pointer; }
+	
+	.project-select
+{	background: #222 url(../i/bg-top.jpg) center center repeat-x;
+	position: absolute;
+	margin: -140px 0 0 0;
+	height: 140px;
+	width: 100%; }
+
+	.project-select ul li
+{	height: 130px;
+	list-style: none;
+	display: block;
+	float: left;
+	width: 20%;
+	margin: 0;
+	padding: 10px 0 0; }
+		
+		.project-select ul li a
+	{	display: block;
+		height: 130px;
+		border-right: solid 1px rgba(0, 0, 0, 0.3);
+		border-left: solid 1px rgba(150, 150, 150, 0.08);
+		overflow: hidden;
+		text-align: center;
+		position: relative;
+		text-decoration: none; }
+		
+		.project-select ul li:hover a em
+	{	opacity: 1.0; }
+		
+		.project-select ul li a em
+	{	display: block;
+		color: #444;
+		text-shadow: black 0 -1px 0;
+		line-height: 140%;
+		font-size: 9pt;
+		margin-top: 10px;
+		left: 20px;
+		right: 20px;
+		bottom: 15px;
+		position: absolute;
+		text-decoration: none; }
+				
+		.project-select ul li a img
+	{	width: 90%;
+		margin: 10px 5%; }
 
 	header 
 {	}
