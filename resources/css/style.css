@@ -797,6 +797,7 @@ header nav.top li.jquery-mobile a {
 footer {
 	width: 100%;
 	margin: 30px 0 0 0;
+	padding-bottom: 15px;
 	border-top: 1px solid #6b6868;
 	background-color: #212121;
 	position: relative;
@@ -865,6 +866,86 @@ footer h3:after {
 	z-index: -10;
 }
 
+.footer-site-links {
+	float: right;
+	padding: 10px 0 0 0;
+	width: 60%;
+	text-align: right;
+}
+
+footer p.copyright {
+	margin: 10px 0 0 0;
+	float: left;
+	width: 40%;
+	font-size: 11px;
+	line-height: 130%;
+	color: #777;
+}
+
+footer p.copyright a {
+	color: #aaa;
+}
+
+footer p.copyright a:hover {
+	color: #fff;
+}
+
+footer p.copyright > br { display: none ;}
+footer p.copyright span.sponsor-line {
+	display: block;
+	font-size: 10px;
+	margin: 1px 0 0 0;
+}
+
+footer li.icon  {
+	position: relative ;
+	background: none;
+	width: auto;
+	height: auto;
+	line-height: 20px;
+	margin: 0 0 10px 20px;
+	font-size: 13px;
+}
+
+	footer li.icon a {
+		padding-left: 22px;
+		position: relative;
+		z-index: 10;
+		color: #aaa;
+	}
+	
+	footer li.icon a:hover {
+		color: white;
+	}
+
+.footer-site-links li {
+	display: inline-block;
+}
+
+footer li.icon:before {
+	content: "";
+	display: block;
+	height: 24px;
+	width: 24px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	background: url(../i/footer-icons.png) no-repeat;
+	z-index: 5;
+}
+
+footer li.icon-learning-center:before { background-position: 1px 0;}
+footer li.icon-forum:before           { background-position: -101px 0;}
+footer li.icon-api:before             { background-position: -33px 0;}
+footer li.icon-twitter:before         { background-position: -135px 0;}
+footer li.icon-irc:before             { background-position: -67px 0;}
+
+footer li.icon-learning-center:hover:before { background-position: 1px -34px;}
+footer li.icon-forum:hover:before           { background-position: -101px -34px;}
+footer li.icon-api:hover:before             { background-position: -33px -34px;}
+footer li.icon-twitter:hover:before         { background-position: -135px -34px;}
+footer li.icon-irc:hover:before             { background-position: -67px -34px;}
+
 footer .col {
 	margin-left: 2.5%;
 	min-height: 200px;
@@ -908,7 +989,6 @@ footer .bottom {
 footer #legal {
 	clear: left;
 	display: block;
-	height: 50px;
 	border-top: solid 1px #333;
 	-webkit-box-shadow: #000 0 -1px 0;
 	   -moz-box-shadow: #000 0 -1px 0;
@@ -952,7 +1032,8 @@ footer .presentations {
 
 		footer .presentations li a:hover > span,
 		footer .books         li a:hover > span {
-			border-color: white
+			border-color: white;
+			-webkit-transition: none;
 		}
 
 		footer .presentations li a > span:after,
@@ -1322,6 +1403,11 @@ footer .presentations {
 			text-transform: none !important;
 			display: inline !important;
 		}
+	
+	footer ul.books  {
+		overflow: hidden;
+	}
+	
 	footer .books li,
 	footer .presentations li {
 		text-align: center;
@@ -1330,6 +1416,22 @@ footer .presentations {
 	footer .books li a > span,
 	footer .presentations li a > span {
 		margin: 0 auto 8px auto;
+	}
+	
+	footer .footer-site-links {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	
+	footer .footer-site-links li:first-child {
+		margin-left: 0;
+	}
+	
+	footer p.copyright {
+		text-align: center;
+		width: auto;
+		float: none;
 	}
 }
 
@@ -1346,5 +1448,18 @@ footer .presentations {
 @media all and (max-width: 320px) { 
 	header nav.top li a {
 		padding: 0 8px
+	}
+	
+	footer .constrain {
+		padding: 0;
+	}
+	
+	footer h3,
+	footer h3:after {
+		border-left: none;
+		border-right: none;
+		-webkit-border-radius: 0;
+		   -moz-border-radius: 0;
+		        border-radius: 0;
 	}
 }
