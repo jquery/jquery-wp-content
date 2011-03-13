@@ -12,17 +12,7 @@ App.subscribe("init", function(){
 	//
 	// Add Search Interactions
 	//
-	$("#search").bind('focus', function(){
-		$(this).parent().find("label").animate({opacity:'0.5'}, 200);
-	}).bind('blur', function(){
-		$(this).parent().find("label").animate({opacity:'1'}, 200);
-	}).bind('keypress', function(){
-		$(this).parent().find('label').hide();
-	}).bind('keyup', function(){
-		if($(this).val() == ''){
-			$(this).parent().find('label').show();
-		}
-	});
+	$("#search").inFieldLabels();
 	
 	
 	//
