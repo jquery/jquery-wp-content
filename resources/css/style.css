@@ -215,8 +215,8 @@ code {
 	font-family: monaco, monospace;
 	padding: 3px 5px;
 	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	   -moz-border-radius: 5px;
+	        border-radius: 5px;
 }
 
 pre, .syntaxhighlighter {
@@ -248,8 +248,8 @@ iframe {
 	margin: 0 0 20px -30px;
 	padding: 10px 30px 10px 30px;
 	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
-	box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+	   -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+	        box-shadow: 0 1px 1px rgba(0,0,0,0.35);
 	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
 	background: -moz-linear-gradient(top,  #e5e5e5,	 #d5d5d5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5');
@@ -266,8 +266,8 @@ iframe {
 	text-decoration: none;
 	text-shadow: 0 1px 1px #fff;
 	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
 	background: -moz-linear-gradient(top,  #e5e5e5,	 #d5d5d5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5');
@@ -379,12 +379,14 @@ html.jquery {
 	border-top: solid 1px rgba(12,157,214,0.4);
 	background: rgba(0, 64, 108, 0.3);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px;
+	   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px;
+	        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px;
 }
 
 	.jquery #container header nav .search .icon-search {
 		-webkit-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
-		-moz-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
-		box-shadow: rgba(12,157,214,0.5) -1px 0 0;
+		   -moz-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
+		        box-shadow: rgba(12,157,214,0.5) -1px 0 0;
 	}
 
 /* ===[ jQuery UI ]=== */
@@ -417,12 +419,14 @@ html.jquery-ui {
 	border-top: solid 1px rgba(236,195,8,0.4);
 	background: rgba(187,111,4,0.5);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(137,81,6,0.5) 0 -3px 5px;
+	   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(137,81,6,0.5) 0 -3px 5px;
+	        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(137,81,6,0.5) 0 -3px 5px;
 }
 
 	.jquery-ui #container header nav .search .icon-search {
 		-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-		-moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-		box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+		   -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+		        box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 	}
 
 /* ===[ Mobile ]=== */
@@ -456,12 +460,14 @@ html.jquery-mobile {
 	border-top: solid 1px rgba(136,196,26,0.3);
 	background: rgba(80,118,17,0.4);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
+	   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
+	        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
 }
 
 	.jquery-mobile #container header nav .search .icon-search {
 		-webkit-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
-		-moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
-		box-shadow: rgba(136,196,26,0.5) -1px 0 0;
+		   -moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
+		        box-shadow: rgba(136,196,26,0.5) -1px 0 0;
 	}
 
 /* jQuery Project  */
@@ -496,12 +502,14 @@ html.jquery-project {
 	border-top: solid 1px rgba(219,30,113,0.2);
 	background: rgba(92,12,47,0.5);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
+	   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
+	        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
 }
 
 	.jquery-project #container header nav .search .icon-search {
 		-webkit-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
-		-moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
-		box-shadow: rgba(136,196,26,0.5) -1px 0 0;
+		   -moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
+		        box-shadow: rgba(136,196,26,0.5) -1px 0 0;
 	}
 
 /* ------------------------------------------------------------------------------
@@ -594,8 +602,8 @@ header {
 		line-height: auto;
 		border-right: 1px solid rgba(0, 0, 0, 0.347656);
 		-webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
-		-moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
-		box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
+		   -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
+		        box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
 	}
 
 	header nav.top li {
@@ -606,8 +614,8 @@ header {
 		display: block;
 		border-left: 1px solid rgba(0, 0, 0, 0.347656);
 		-webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
-		-moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
-		box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
+		   -moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
+		        box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
 	}
 	
 	header nav.top li:hover {
@@ -630,8 +638,8 @@ header {
 		position: absolute;
 		border: none;
 		-webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-		-moz-box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-		box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+		   -moz-box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+		        box-shadow: 0 5px 5px rgba(0,0,0,0.5);
 		min-width: 120px;
 	}
 
@@ -648,8 +656,8 @@ header {
 		border: none;
 		background: none;
 		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
+		   -moz-box-shadow: none;
+		        box-shadow: none;
 	}
 
 		header nav.top li ul li a {
@@ -688,8 +696,8 @@ header {
 	border: none;
 	margin: 1px 0 0 -5px;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
 header nav.top li.jquery a, header nav.top li.jquery-ui a, header nav.top li.jquery-mobile a {
@@ -741,8 +749,8 @@ header nav.top li.jquery a {
 .jquery header nav.top li.jquery-ui {
 	border: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
 header nav.top li.jquery-ui a {
@@ -759,8 +767,8 @@ header nav.top li.jquery-ui a {
 .jquery-ui header nav li.jquery-mobile {
 	border: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
 header nav.top li.jquery-mobile a {
@@ -777,8 +785,8 @@ header nav.top li.jquery-mobile a {
 .jquery-mobile header nav li.toggle-projects {
 	border: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
 }
 
 /* ------------------------------------------------------------------------------
@@ -796,14 +804,14 @@ footer {
 }
 
 .multiplebgs footer {
+	background-image: url(../i/bg-footer-noise.jpg);
 	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../i/bg-footer-noise.jpg); /* FF3.6 */
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(0,0,0,0.3)),color-stop(1, rgba(0,0,0,0.0))), url(../i/bg-footer-noise.jpg); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../i/bg-footer-noise.jpg); /* Chrome 10+, Saf6 */
 	background-repeat: repeat-x, repeat;
 	-webkit-background-size: 100px 15px, 140px 140px;
-	-moz-background-size: 100px 15px, 140px 140px;
-	-o-background-size: 100px 15px, 140px 140px;
-	background-size: 100px 15px, 140px 140px;
+	   -moz-background-size: 100px 15px, 140px 140px;
+	        background-size: 100px 15px, 140px 140px;
 }
 
 .no-multiplebgs footer {
@@ -825,8 +833,8 @@ footer h3 {
 	border-bottom: none;
 	-webkit-border-top-left-radius: 4px;
 	-webkit-border-top-right-radius: 4px;
-	-moz-border-radius: 4px 4px 0 0;
-	border-radius: 4px 4px 0 0;
+	   -moz-border-radius: 4px 4px 0 0;
+	        border-radius: 4px 4px 0 0;
 	position: relative;
 	text-align: center;
 	height: 10px;
@@ -852,8 +860,8 @@ footer h3:after {
 	border-bottom: none;
 	-webkit-border-top-left-radius: 4px;
 	-webkit-border-top-right-radius: 4px;
-	-moz-border-radius: 4px 4px 0 0;
-	border-radius: 4px 4px 0 0;
+	   -moz-border-radius: 4px 4px 0 0;
+	        border-radius: 4px 4px 0 0;
 	z-index: -10;
 }
 
@@ -903,6 +911,8 @@ footer #legal {
 	height: 50px;
 	border-top: solid 1px #333;
 	-webkit-box-shadow: #000 0 -1px 0;
+	   -moz-box-shadow: #000 0 -1px 0;
+	        box-shadow: #000 0 -1px 0;
 }
 
 	footer #legal .constrain {
@@ -927,14 +937,16 @@ footer .presentations {
 		footer .books         li a > span {
 			display: block;
 			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
+			   -moz-border-radius: 5px;
+			        border-radius: 5px;
 			border: solid 1px #000;
 			position: relative;
 			width: 142px;
 			margin-bottom: 5px;
 			overflow: hidden;
 			-webkit-background-clip: padding-box;
+			   -moz-background-clip: padding-box;
+			        background-clip: padding-box;
 		}
 
 		footer .presentations li a:hover > span,
@@ -1036,8 +1048,8 @@ footer .presentations {
 			border: solid 1px rgba(0,0,0,0.2);
 			-webkit-border-top-left-radius: 10px;
 			-webkit-border-top-right-radius: 10px;
-			-moz-border-radius: 10px 10px 0 0;
-			border-radius: 10px 10px 0 0;
+			   -moz-border-radius: 10px 10px 0 0;
+			        border-radius: 10px 10px 0 0;
 		}
 
 			#container header nav ul {
@@ -1049,8 +1061,8 @@ footer .presentations {
 				display: block;
 				border: none;
 				-webkit-box-shadow: none;
-				-moz-box-shadow: none;
-				box-shadow: none;
+				   -moz-box-shadow: none;
+				        box-shadow: none;
 				width: 70%;
 			}
 
@@ -1061,8 +1073,8 @@ footer .presentations {
 					display: block;
 					border: none;
 					-webkit-box-shadow: none;
-					-moz-box-shadow: none;
-					box-shadow: none;
+					   -moz-box-shadow: none;
+					        box-shadow: none;
 				}
 
 				#container header nav ul li a {
@@ -1085,11 +1097,11 @@ footer .presentations {
 				#container header nav ul li a:hover, #container header nav ul li.active a {
 					background: none;
 					-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
-					-moz-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
-					box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+					   -moz-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
+					        box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
 					-webkit-border-radius: 4px;
-					-moz-border-radius: 4px;
-					border-radius: 4px;
+					   -moz-border-radius: 4px;
+					        border-radius: 4px;
 					padding: 6px 10px;
 					border: 1px solid rgba(0,0,0,0.25);
 					color: #fff;
@@ -1107,11 +1119,11 @@ footer .presentations {
 				font-family: "Lucida Grande", Helvetica, Arial, Sans-serif;
 				line-height: 18px;
 				-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
-				-moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
-				box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+				   -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+				        box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 				-webkit-border-radius: 2em;
-				-moz-border-radius: 2em;
-				border-radius: 2em;
+				   -moz-border-radius: 2em;
+				        border-radius: 2em;
 			}
 
 				#container header nav .search label {
@@ -1148,8 +1160,8 @@ footer .presentations {
 					margin: -2px -5px 0 0;
 					border-left: rgba(0,0,0,0.15) 1px solid;
 					-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-					-moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-					box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+					   -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+					        box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 					opacity: 0.5;
 					text-decoration: none;
 				}
@@ -1168,10 +1180,12 @@ footer .presentations {
 		min-height: 400px;
 		-webkit-border-bottom-left-radius: 8px;
 		-webkit-border-bottom-right-radius: 8px;
-		-moz-border-radius: 0 0 8px 8px;
-		border-radius: 0 0 8px 8px;
+		   -moz-border-radius: 0 0 8px 8px;
+		        border-radius: 0 0 8px 8px;
 		background: #fff;
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+		    moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+		        box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 		padding: 20px;
 		position: relative;
 		z-index: 20;
@@ -1265,8 +1279,8 @@ footer .presentations {
 	#container #body {
 		margin-top: 20px;
 		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
+		   -moz-border-radius: 8px;
+		        border-radius: 8px;
 	}
 
 	#container header nav .search {
@@ -1299,8 +1313,8 @@ footer .presentations {
 			padding: 0 !important;
 			border: none !important;
 			-webkit-box-shadow: none !important;
-			-moz-box-shadow: none !important;
-			box-shadow: none !important;
+			   -moz-box-shadow: none !important;
+			        box-shadow: none !important;
 			color: #fff !important;
 			float: none !important;
 			font-family: Helvetica, Arial, sans-serif !important;
