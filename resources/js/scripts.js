@@ -61,7 +61,14 @@ App.subscribe("init", function(){
 		e.preventDefault();
 		$("body").animate({"marginTop":"140px"}, 500);
 	});
-	
+
+	$(".presentations img").each(function (i, el) {
+		var $img = $(this),
+			$span = $img.parent();
+		
+		$span.css("background-image", "url(" + $img.attr('src') + ")");
+		$img.css("visibility", "hidden");
+	});
 });
 
 
