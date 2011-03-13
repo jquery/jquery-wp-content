@@ -319,41 +319,18 @@ iframe {
 	padding-right: 3%;
 }
 
-.col4-1 {
-	width: 21%
-}
+.col4-1 { width: 21% }
+.col4-2 { width: 47% }
+.col4-3 { width: 72% }
 
-.col4-2 {
-	width: 47%
-}
+.col7-1 { width: 15.2% }
+.col7-2 { width: 27%   }
+.col7-3 { width: 40.9% }
 
-.col4-3 {
-	width: 72%
-}
+.col3-1 { width: 30% }
+.col3-2 { width: 63% }
 
-.col7-1 {
-	width: 15.2%
-}
-
-.col7-2 {
-	width: 27%
-}
-
-.col7-3 {
-	width: 40.9%
-}
-
-.col3-1 {
-	width: 30%
-}
-
-.col3-2 {
-	width: 63%
-}
-
-.col2-1 {
-	width: 47%
-}
+.col2-1 { width: 47% }
 
 .col.first, .col4-1.first, .col4-2.first, .col4-3.first, .col3-1.first, .col3-2.first, .col2-1.first {
 	margin-left: 0;
@@ -411,8 +388,7 @@ html.jquery {
 		box-shadow: rgba(12,157,214,0.5) -1px 0 0;
 	}
 
-/* UI
-   ================================================== */
+/* ===[ jQuery UI ]=== */
 
 html.jquery-ui {
 	background: #BB6F04 url(../i/bg-body-ui.jpg) no-repeat center -20px
@@ -784,7 +760,7 @@ header nav.top li.jquery-mobile a {
 	background-position: -100px -36px;
 }
 
-.jquery-mobile nav.top .projects {
+.jquery-mobile header nav li.toggle-projects {
 	border: none;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -848,7 +824,7 @@ footer h3 {
 		padding: 3px 10px;
 		position: relative;
 		top: -0.8em;
-		background: url(../i/bg-footer.png) 0 -100px repeat-x;
+		background: url(../i/bg-footer-noise.jpg) repeat;
 	}
 
 footer h3:after {
@@ -860,7 +836,6 @@ footer h3:after {
 	height: 100%;
 	border: solid 1px #333;
 	border-bottom: none;
-	: ;
 	-webkit-border-top-left-radius: 4px;
 	-webkit-border-top-right-radius: 4px;
 	-moz-border-radius: 4px 4px 0 0;
@@ -1145,10 +1120,10 @@ footer .presentations {
 	#container #body {
 		margin-bottom: -50px;
 		min-height: 400px;
-		-webkit-border-bottom-left-radius: 5px;
-		-webkit-border-bottom-right-radius: 5px;
-		-moz-border-radius: 0 0 5px 5px;
-		border-radius: 0 0 5px 5px;
+		-webkit-border-bottom-left-radius: 8px;
+		-webkit-border-bottom-right-radius: 8px;
+		-moz-border-radius: 0 0 8px 8px;
+		border-radius: 0 0 8px 8px;
 		background: #fff;
 		-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 		padding: 20px;
@@ -1190,8 +1165,18 @@ footer .presentations {
 		}
 }
 
-@media all and (max-width: 800px) { 
-	
+@media all and (max-width: 900px) { 
+	.col2-1 .col2-1 {
+		width: 100%;
+		clear: left;
+	}
+}
+
+@media all and (max-width: 700px) { 
+	.col2-1 {
+		width: 100%;
+		clear: left;
+	}
 }
 
 @media all and (max-width: 600px) { 
@@ -1206,6 +1191,13 @@ footer .presentations {
 
 	header nav.top .projects {
 		display: none
+	}
+	
+	#container #body {
+		margin-top: 20px;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
 	}
 
 	#container header nav .search {
