@@ -59,10 +59,17 @@ App.subscribe("init", function(){
 	//
 	$(".toggle-projects").bind("click", function(e){
 		e.preventDefault();
-		$("body").animate({"marginTop":"140px"}, 500);
+		var $this = $(this).toggleClass("open");
+		
+		if ($this.hasClass("open")) {
+		    $("body > header").stop(true, false).animate({"marginTop":"140px"}, 500);
+		} else {
+		    $("body > header").stop(true, false).animate({"marginTop":"0"}, 500);
+		}
+		
 	});
 
-	$(".presentations img").each(function (i, el) {
+	$(".presentations img, .books img").each(function (i, el) {
 		var $img = $(this),
 			$span = $img.parent();
 		

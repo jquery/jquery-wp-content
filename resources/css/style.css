@@ -93,7 +93,6 @@ body {
 	display: block;
 	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
-	background: url(../i/jq-global-nav.png) repeat-x 0% -68px;
 	color: #444;
 }
 
@@ -581,6 +580,10 @@ header {
 
 }
 
+	body > header {
+		background: url(../i/jq-global-nav.png) repeat-x 0% -68px;
+	}
+
 	header nav.top ul {
 		margin: 0;
 		padding: 0;
@@ -596,6 +599,7 @@ header {
 	}
 
 	header nav.top li {
+		height: 34px;
 		margin: 0;
 		padding: 0;
 		float: left;
@@ -605,14 +609,20 @@ header {
 		-moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
 		box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
 	}
+	
+	header nav.top li:hover {
+		background: rgba(0,0,0,0.1);
+	}
+	
+	.jquery header nav.top li.jquery:hover,
+	.jquery-ui header nav.top li.jquery-ui:hover,
+	.jquery-mobile header nav.top li.jquery-mobile:hover {
+		background: none;
+	}
 
 		header nav.top li ul {
 			display: none
 		}
-
-	header nav.top li:hover a {
-		background: #333
-	}
 
 	header nav.top li ul {
 		padding: 0 0 10px 0;
@@ -668,6 +678,10 @@ header {
 		height: 32px;
 		line-height: 31px;
 		text-shadow: black 0px -1px 0px, black 0px 0px 2px;
+	}
+	
+	header nav.top li a:hover {
+		height: 34px;
 	}
 
 .jquery header nav.top li.jquery, .jquery-ui header nav.top li.jquery-ui, .jquery-mobile header nav.top li.jquery-mobile {
@@ -909,7 +923,8 @@ footer .presentations {
 		font-size: 11px;
 	}
 
-		footer .presentations li a > span {
+		footer .presentations li a > span,
+		footer .books         li a > span {
 			display: block;
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
@@ -922,11 +937,13 @@ footer .presentations {
 			-webkit-background-clip: padding-box;
 		}
 
-		footer .presentations li a:hover > span {
+		footer .presentations li a:hover > span,
+		footer .books         li a:hover > span {
 			border-color: white
 		}
 
-		footer .presentations li a > span:after {
+		footer .presentations li a > span:after,
+		footer .books         li a > span:after {
 			content: "";
 			display: block;
 			position: absolute;
@@ -942,7 +959,8 @@ footer .presentations {
 			border-radius: 4px;
 		}
 
-		footer .presentations li a:hover > span:after {
+		footer .presentations li a:hover > span:after,
+		footer .books         li a:hover > span:after {
 			background: -webkit-gradient(linear, 100% 0%, 55% 100%, from(rgba(255,255,255,0.02)), color-stop(0.5, rgba(255,255,255,0.3)), color-stop(0.505, rgba(255,255,255,0)), to(rgba(255,255,255,0)))
 		}
 
@@ -951,23 +969,51 @@ footer .presentations {
 			height: auto;
 		}
 
-		footer .presentations li a > br {
+		footer .presentations li a > br,
+		footer .books         li a > br {
 			display: none
 		}
 
-		footer .presentations li a cite {
+		footer .presentations li a cite,
+		footer .books         li a cite {
 			font-style: normal;
 			display: block;
 			margin-top: 3px;
-			font-size: 10px;
+			font-size: 9px;
 			color: #aaa;
 		}
 
-		footer .presentations li a cite, footer .presentations li a strong {
-			min-width: 100px;
+		footer .presentations li a cite, 
+		footer .presentations li a strong,
+		footer .books         li a cite, 
+		footer .books         li a strong {
+			line-height: 130%;
 			display: block;
 			font-weight: normal;
 		}
+		
+	footer .books li {
+		float: left;
+		width: 30%;
+		min-width: 95px;
+		margin-left: 2.8%;
+		margin-bottom: 15px;
+		line-height: 130%;
+		font-size: 11px;
+	}
+	
+	footer .books li:first-child {
+		margin-left: 2%;
+	}
+	
+		footer .books li a > span {
+			width: 90px;
+			height: 114px;
+		}
+		
+		footer .books li a > span.top    { background-position: center top;}
+		footer .books li a > span.bottom { background-position: center bottom;}
+		footer .books li a > span        { background-position: center center;}
 
 /* ------------------------------------------------------------------------------
    ================================================== */
@@ -1152,6 +1198,20 @@ footer .presentations {
 			float: left;
 			margin: 0 8px 0 0;
 		}
+	
+	footer ul.books li {
+		width: 90%;
+		clear: left;
+		padding-bottom: 9px;
+		margin: 0 0 0 3% !important;
+	}
+	
+		footer .books li a > span {
+			float: left;
+			height: 60px;
+			margin: 0 8px 0 0;
+		}
+	
 }
 
 @media all and (max-width: 1000px) and (min-width: 600px) { 
@@ -1162,6 +1222,15 @@ footer .presentations {
 		footer .presentations li a > span {
 			float: none;
 			margin: 0 auto 10px auto;
+		}
+		
+		footer .books li {
+			text-align: center;
+		}
+
+		footer .books li a > span {
+			margin: 0 auto 8px auto;
+			float: none;
 		}
 }
 
@@ -1238,6 +1307,15 @@ footer .presentations {
 			text-transform: none !important;
 			display: inline !important;
 		}
+	footer .books li,
+	footer .presentations li {
+		text-align: center;
+	}
+	
+	footer .books li a > span,
+	footer .presentations li a > span {
+		margin: 0 auto 8px auto;
+	}
 }
 
 @media all and (max-width: 400px) { 
