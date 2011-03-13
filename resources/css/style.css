@@ -942,6 +942,7 @@ footer .presentations {
 			border: solid 1px #000;
 			position: relative;
 			width: 142px;
+			height: 92px;
 			margin-bottom: 5px;
 			overflow: hidden;
 			-webkit-background-clip: padding-box;
