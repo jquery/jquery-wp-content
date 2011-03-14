@@ -66,6 +66,17 @@ App.subscribe("init", function(){
 		$span.css("background-image", "url(" + $img.attr('src') + ")");
 		$img.css("visibility", "hidden");
 	});
+	
+	$(".footer-icon-links")
+		.find("li a")
+			.append("<span></span>")
+			.end()
+		.delegate("li a", "mouseenter", function () {
+			$(this).find("span").stop(true, false).fadeTo(250, 1.0);
+		})
+		.delegate("li a", "mouseleave", function () {
+			$(this).find("span").stop(true, false).fadeOut(250);
+		});
 });
 
 

@@ -808,13 +808,20 @@ footer .cdn {
 	-webkit-border-radius: 4px;
 	   -moz-border-radius: 4px;
 	        border-radius: 4px;
-	background: #000;
+	background: #000 url(../i/cdn-download.png) center center repeat-x;
 	width: 96%;
 	margin-left: 2%;
 	height: 30px;
 	line-height: 30px;
 	position: relative;
 	overflow: hidden;
+	-webkit-box-shadow: rgba(255,255,255,0.15) 0 1px 0;
+	   -moz-box-shadow: rgba(255,255,255,0.15) 0 1px 0;
+	        box-shadow: rgba(255,255,255,0.15) 0 1px 0;
+}
+
+.no-cssboxshadow {
+	border-bottom: solid 1px #333;
 }
 
 	footer .cdn strong {
@@ -868,7 +875,7 @@ footer .cdn {
 
 footer .download {
 	color: #fff;
-	padding: 10px 2% 0 2%;
+	padding: 10px 2% 15px 2%;
 	line-height: 140%;
 }
 
@@ -891,6 +898,71 @@ footer .download {
 		
 		footer .download a:hover {
 			border-bottom: solid 1px #888;
+		}
+
+footer .footer-icon-links {
+	padding: 15px 0;
+	margin: 0 2%;
+	border-top: solid 1px #333;
+	-webkit-box-shadow: #000 0 -1px 0;
+	   -moz-box-shadow: #000 0 -1px 0;
+	        box-shadow: #000 0 -1px 0;
+}
+
+	footer .footer-icon-links li {
+		width: 33%;
+		margin-left: 2%;
+		float: left;
+	}
+	
+	footer .footer-icon-links li.icon-bugs {
+		width: 27%;
+	}
+
+		footer .footer-icon-links li a {
+			display: block;
+			padding-left: 40px;
+			line-height: auto;
+			font-size: 18px;
+			float: left;
+			position: relative;
+		}
+	
+			footer .footer-icon-links li.footer-icon a,
+			footer .footer-icon-links li.footer-icon a span {
+				background: url(../i/footer-icons-large.png) no-repeat;
+			}
+			
+			footer .footer-icon-links li.footer-icon a span {
+				content: "";
+				display: block;
+				opacity: 0;
+				width: 34px;
+				height: 32px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		
+			footer .footer-icon-links li.icon-github a { background-position: 0 0;}
+			footer .footer-icon-links li.icon-forum  a { background-position: 0 -123px;}
+			footer .footer-icon-links li.icon-bugs   a { background-position: 0 -249px;}
+			
+			footer .footer-icon-links li.icon-github a span { background-position: -251px 0;}
+			footer .footer-icon-links li.icon-forum  a span { background-position: -251px -123px;}
+			footer .footer-icon-links li.icon-bugs   a span { background-position: -251px -249px;}
+			
+			.no-js footer .footer-icon-links li.footer-icon a:hover span { opacity: 1.0; }
+
+		footer .footer-icon-links li small {
+			display: block;
+			font-size: 14px;
+			color: #777;
+			line-height: 120%;
+		}
+		
+		footer .footer-icon-links li:first-child {
+			margin-left: 0%;
 		}
 
 .multiplebgs footer {
@@ -1399,6 +1471,27 @@ footer .presentations {
 }
 
 @media all and (max-width: 1000px) and (min-width: 600px) { 
+	
+	footer ul.footer-icon-links {
+		padding-bottom: 0;
+	}
+	
+	footer ul.footer-icon-links li {
+		float: none;
+		clear: left;
+		width: 98% !important;
+		overflow: hidden;
+		margin-bottom: 10px;
+		margin-left: 0;
+	}
+		footer .footer-icon-links li small {
+			display: inline;
+		}
+	
+		footer .footer-icon-links li br {
+			display: none;
+		}
+	
 	footer .presentations li {
 		text-align: center
 	}
@@ -1534,9 +1627,32 @@ footer .presentations {
 }
 
 @media all and (max-width: 320px) { 
+	.download {
+		text-align: center;
+	}
+	
 	header nav.top li a {
 		padding: 0 8px
 	}
+	
+	footer ul.footer-icon-links {
+		padding-left: 5%;
+	}
+	
+	footer ul.footer-icon-links li {
+		float: none;
+		clear: left;
+		width: 98%;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+		footer .footer-icon-links li small {
+			display: inline;
+		}
+	
+		footer .footer-icon-links li br {
+			display: none;
+		}
 	
 	footer .constrain {
 		padding: 0;
