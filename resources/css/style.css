@@ -356,7 +356,7 @@ footer a {
 
 /* ===[ Core ]=== */
 
-html.jquery {
+html.jquery, .jquery #container {
   background: #065791 url(../i/bg-body-jquery.jpg) no-repeat center -20px
 }
 
@@ -393,7 +393,7 @@ html.jquery {
 
 /* ===[ jQuery UI ]=== */
 
-html.jquery-ui {
+html.jquery-ui, .jquery-ui #container {
   background: #BB6F04 url(../i/bg-body-ui.jpg) no-repeat center -20px
 }
 
@@ -433,7 +433,7 @@ html.jquery-ui {
 
 /* ===[ Mobile ]=== */
 
-html.jquery-mobile {
+html.jquery-mobile, .jquery-mobile #container {
   background: #598611 url(../i/bg-body-mobile.jpg) no-repeat center -30px
 }
 
@@ -517,7 +517,7 @@ html.jquery-project {
 /* ------------------------------------------------------------------------------
    ================================================== */
 
-/* ===[ Global Header ]=== */
+/* ===[ Global Logo ]=== */
 
 h1 a {
   background: url(../i/logo-project.png) no-repeat;
@@ -534,165 +534,247 @@ h1 a:hover {
   cursor: pointer
 }
 
-.project-select {
-  background: #222 url(../i/bg-top.jpg) center center repeat-x;
+/* ------------------------------------------------------------------------------
+   ================================================== */
+
+/* ===[ Global Tooltips ]=== */
+
+.tooltip {
+  display: none;
   position: absolute;
-  margin: -140px 0 0 0;
-  height: 140px;
+  z-index: 10;
+  width: 386px;
+  height: 121px;
+  background: url(../i/bg-tooltip.png) no-repeat;
+  z-index: 400;
+}
+
+.jquery.tooltip {
+  margin: -10px 0 0 -10px
+}
+
+.jquery-ui.tooltip {
+  margin: -10px 0 0 26px
+}
+
+.jquery-mobile.tooltip {
+  margin: -10px 0 0 64px
+}
+
+.tooltip .branding, .tooltip .branding:hover {
+  position: absolute;
+  float: none;
+  text-indent: 0;
+  top: 25px;
+  left: 22px;
+  width: auto;
+  height: auto;
+  border: none;
+  background: none;
+}
+
+.tooltip ul {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+  width: 130px;
+  font-size: 9pt;
+  padding: 3px 0 0 0;
+  border-left: solid 1px #333;
+  border-left: solid 1px rgba(255,255,255,0.1);
+  text-shadow: rgba(0,0,0,0.9) 0 1px 0;
+  -webkit-box-shadow: rgba(0,0,0,0.2) -1px 0 0;
+  -moz-box-shadow: rgba(0,0,0,0.2) -1px 0 0;
+  box-shadow: rgba(0,0,0,0.2) -1px 0 0;
+  display: block;
+  float: none;
+  height: auto;
+  border-right: none;
+}
+
+.tooltip li {
+  float: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+ .tooltip li a, .tooltip li a:hover {
+   display: block;
+   height: 17px;
+   line-height: 17px;
+   color: #999;
+   float: none;
+   background: none;
+   text-indent: 0;
+   border: none;
+   text-decoration: none;
+ }
+
+ .tooltip li a:hover {
+   color: #fff
+ }
+
+/* ------------------------------------------------------------------------------
+   ================================================== */
+
+/* ===[ Global Project Select ]=== */
+
+.project-select {
+  background: #222 url(../i/bg-top.jpg) center bottom repeat-x;
+  position: absolute;
+  padding: 5px 0 0 0;
+  margin: -155px 0 0 0;
+  height: 150px;
   width: 100%;
 }
 
-  .project-select ul li {
+ .project-select ul li {
+   height: 140px;
+   list-style: none;
+   display: block;
+   float: left;
+   width: 20%;
+   margin: 0;
+   padding: 10px 0 0;
+ }
+
+  .project-select ul li a {
+    display: block;
     height: 130px;
-    list-style: none;
-    display: block;
-    float: left;
-    width: 20%;
-    margin: 0;
-    padding: 10px 0 0;
-  }
-
-    .project-select ul li a {
-      display: block;
-      height: 130px;
-      border-right: solid 1px rgba(0, 0, 0, 0.3);
-      border-left: solid 1px rgba(150, 150, 150, 0.08);
-      overflow: hidden;
-      text-align: center;
-      position: relative;
-      text-decoration: none;
-    }
-
-  .project-select ul li:hover a em {
-    opacity: 1.0
-  }
-
-  .project-select ul li a em {
-    display: block;
-    color: #444;
-    text-shadow: black 0 -1px 0;
-    line-height: 140%;
-    font-size: 9pt;
-    margin-top: 10px;
-    left: 20px;
-    right: 20px;
-    bottom: 15px;
-    position: absolute;
+    border-right: solid 1px rgba(0, 0, 0, 0.3);
+    border-left: solid 1px rgba(150, 150, 150, 0.08);
+    overflow: hidden;
+    text-align: center;
+    position: relative;
     text-decoration: none;
   }
 
-  .project-select ul li a img {
-    width: 90%;
-    margin: 10px 5%;
-  }
+ .project-select ul li:hover a em {
+   opacity: 1.0
+ }
 
-header {
+ .project-select ul li a em {
+   display: block;
+   color: #444;
+   text-shadow: black 0 -1px 0;
+   line-height: 140%;
+   font-size: 9pt;
+   margin-top: 10px;
+   left: 20px;
+   right: 20px;
+   bottom: 15px;
+   position: absolute;
+   text-decoration: none;
+ }
 
+ .project-select ul li a img {
+   width: 84%;
+   margin: 10px 5%;
+ }
+
+/* ------------------------------------------------------------------------------
+   ================================================== */
+
+/* ===[ Global Header ]=== */
+
+body > header {
+  background: url(../i/jq-global-nav.png) 0 -68px repeat-x;
 }
 
-  body > header {
-    background: url(../i/jq-global-nav.png) repeat-x 0% -68px;
-  }
+ header nav.top ul {
+   margin: 0;
+   padding: 0;
+   float: left;
+   display: block;
+   width: auto;
+   height: 34px;
+   line-height: auto;
+   border-right: 1px solid rgba(0, 0, 0, 0.347656);
+   -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
+   -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
+   box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
+ }
 
-  header nav.top ul {
-    margin: 0;
-    padding: 0;
-    float: left;
-    display: block;
-    width: auto;
-    height: 34px;
-    line-height: auto;
-    border-right: 1px solid rgba(0, 0, 0, 0.347656);
-    -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
-       -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
-            box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
-  }
+ header nav.top li {
+   margin: 0;
+   padding: 0;
+   float: left;
+   display: block;
+   position: relative;
+   border-left: 1px solid rgba(0, 0, 0, 0.347656);
+   -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
+   -moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
+   box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
+ }
 
-  header nav.top li {
-    height: 34px;
-    margin: 0;
-    padding: 0;
-    float: left;
-    display: block;
-    border-left: 1px solid rgba(0, 0, 0, 0.347656);
-    -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
-       -moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
-            box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
-  }
-  
-  header nav.top li:hover {
-    background: rgba(0,0,0,0.1);
-  }
-  
-  .jquery header nav.top li.jquery:hover,
-  .jquery-ui header nav.top li.jquery-ui:hover,
-  .jquery-mobile header nav.top li.jquery-mobile:hover {
-    background: none;
-  }
+ header nav.top li:hover a, header nav.top li.active a {
+   background: rgba(0,0,0,0.1)
+ }
 
-    header nav.top li ul {
-      display: none
-    }
+ header nav.top li.dropdown:hover a, header nav.top li.dropdown.active a {
+   background: transparent url(../i/jq-global-noise-only.png)
+ }
 
-  header nav.top li ul {
-    padding: 0 0 10px 0;
-    margin: 32px 0 0 0;
-    position: absolute;
-    border: none;
-    -webkit-box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-       -moz-box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-            box-shadow: 0 5px 5px rgba(0,0,0,0.5);
-    min-width: 120px;
-  }
-
-  header nav.top li:last {
-    margin: 32px 0 0 -60px
-  }
+ header nav.top li ul {
+   display: none;
+   position: absolute;
+   top: 32px;
+   left: 0;
+   float: left;
+   min-width: 120px;
+   height: auto;
+   border-left: solid 1px #333;
+   border-right: solid 1px #111;
+   border-bottom: solid 1px #111;
+   padding: 5px 0;
+   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
+   -moz-box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
+   box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
+   z-index: 999;
+   background: transparent url(../i/jq-global-noise-only.png);
+ }
 
   header nav.top li ul li {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: block;
     float: none;
     border: none;
-    background: none;
-    -webkit-box-shadow: none;
-       -moz-box-shadow: none;
-            box-shadow: none;
+    padding: 0 5px;
   }
 
-    header nav.top li ul li a {
-      float: none;
-      background: #333;
-    }
+   header nav.top li ul li a {
+     float: none;
+     border: none;
+     height: 27px;
+     line-height: 27px;
+     white-space: nowrap;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+   }
 
-    header nav.top li ul li a:hover {
-      color: #fff
-    }
+   header nav.top li ul li a:hover {
+     color: #fff
+   }
 
-  header nav.top .links {
-    float: right
+ header nav.top .links {
+   float: right
+ }
+
+  header nav.top .links li:nth-child(1) {
+    border-left: 1px solid rgba(0, 0, 0, 0.347656)
   }
 
-    header nav.top .links li:nth-child(1) {
-      border-left: 1px solid rgba(0, 0, 0, 0.347656)
-    }
-
-  header nav.top li a {
-    float: left;
-    display: block;
-    color: #e6e6e6;
-    text-decoration: none;
-    padding: 0px 13px;
-    height: 32px;
-    line-height: 31px;
-    text-shadow: black 0px -1px 0px, black 0px 0px 2px;
-  }
-  
-  header nav.top li a:hover {
-    height: 34px;
-  }
+ header nav.top li a {
+   float: left;
+   display: block;
+   color: #e6e6e6;
+   text-decoration: none;
+   padding: 0px 13px;
+   height: 32px;
+   line-height: 31px;
+   text-shadow: black 0px -1px 0px, black 0px 0px 2px;
+ }
 
 .jquery header nav.top li.jquery, .jquery-ui header nav.top li.jquery-ui, .jquery-mobile header nav.top li.jquery-mobile {
   border: none;
@@ -784,7 +866,20 @@ header nav.top li.jquery-mobile a {
   background-position: -100px -36px;
 }
 
-.jquery-mobile header nav li.toggle-projects {
+header nav.top li.toggle-projects a {
+  padding-right: 30px;
+  background-image: url(../i/icon-arrow.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+header nav.top li.toggle-projects.active a {
+  background-position: 100% -32px;
+  background-color: transparent;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.8) 0 0 6px;
+}
+
+.jquery header nav.top li.jquery-ui, .jquery-ui header nav li.jquery-mobile, .jquery-mobile header nav.top li.toggle-projects {
   border: none;
   -webkit-box-shadow: none;
      -moz-box-shadow: none;

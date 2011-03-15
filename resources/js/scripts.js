@@ -20,14 +20,71 @@ App.subscribe("init", function(){
   //
   $("#search").inFieldLabels();
   
+  //
+  // Project Select Show/Hide
+  //
+  $(".toggle-projects").bind("click", function(e){
+    e.preventDefault();
+    var el = $(this);
+    if(el.hasClass('active')){
+      el.removeClass('active');
+      $("body").animate({"marginTop":"0"}, 300, function(){
+        el.removeClass('down');
+      });
+    } else {
+      el.addClass('active');
+      $("body").animate({"marginTop":"150px"}, 300, function(){
+        el.addClass('down');
+      });
+    }
+  });
+  
+  //
+  // Project Select Clickoutside
+  //
+  $(".project-select").bind("clickoutside", function(e){
+    var el = $(".toggle-projects");
+    if(el.hasClass('down')){
+      el.removeClass("active down");
+      $("body").animate({"marginTop":"0"}, 300);
+    }
+  });
+  
+  //
+  // Project Tooltips
+  //
+  $(".projects .jquery, .projects .jquery-ui, .projects .jquery-mobile").bind("mouseover", function(){
+    var el = $(this), tooltips = $(".tooltips"), tooltip = {};
+    if(el.hasClass('jquery')){
+      tooltip = $(".tooltips .jquery");
+    } else if(el.hasClass('jquery-ui')){
+      tooltip = $(".tooltips .jquery-ui");
+    } else if(el.hasClass('jquery-mobile')){
+      tooltip = $(".tooltips .jquery-mobile");
+    }
+    if($(".tooltip:visible",tooltips) !== tooltip){
+      clearTimeout(App.tooltip_timeout);
+      $(".tooltip:visible",tooltips).fadeOut(200);
+    }
+    if(tooltip.is(":hidden")){
+      setTimeout(function(){ tooltip.fadeIn(300); }, 300);
+    }
+  });
+  
+  $(".tooltips .jquery, .tooltips .jquery-ui, .tooltips .jquery-mobile").bind("mouseout", function(){
+    var el = $(this);
+    App.tooltip_timeout = setTimeout(function(){ el.fadeOut(200) }, 300);
+  }).bind("mouseover", function(){
+    clearTimeout(App.tooltip_timeout);
+  });
   
   //
   // Fancy Dropdown
   //
-  $(".sdropdown").bind("mouseover", function(){
-    $(this).find("ul").stop().slideDown(200);
-  }).bind("mouseout", function(){
-    $(this).find("ul").stop().slideUp(200);
+  $(".links .dropdown").hover(function(){
+    $(this).find("ul").stop(true, true).slideDown(100);
+  }, function(){
+    $(this).find("ul").stop(true, true).slideUp(100);
   });
 
   //
@@ -49,21 +106,6 @@ App.subscribe("init", function(){
       .removeClass(color_string)
       .addClass(window.location.hash.substr(1));
   }
-  
-  //
-  // Project Select Show/Hide
-  //
-  $(".toggle-projects").bind("click", function(e){
-    e.preventDefault();
-    var $this = $(this).toggleClass("open");
-    
-    if ($this.hasClass("open")) {
-        $("body > header").stop(true, false).animate({"marginTop":"140px"}, 500);
-    } else {
-        $("body > header").stop(true, false).animate({"marginTop":"0"}, 500);
-    }
-    
-  });
 
   $(".presentations img, .books img").each(function (i, el) {
     var $img = $(this),
