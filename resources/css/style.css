@@ -683,52 +683,57 @@ body > header {
   background: url(../i/jq-global-nav.png) 0 -68px repeat-x;
 }
 
+  header nav.top {
+    height: 32px;
+  }
+
  header nav.top ul {
    margin: 0;
    padding: 0;
    float: left;
    display: block;
    width: auto;
-   height: 34px;
+   height: 31px;
    line-height: auto;
-   border-right: 1px solid rgba(0, 0, 0, 0.347656);
-   -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
-   -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
-   box-shadow: 1px 0 0 rgba(255, 255, 255, 0.0976562);
+   border-right: 1px solid rgba(255, 255, 255, 0.0976562);
+   border-left: 1px solid rgba(0, 0, 0, 0.347656);
  }
 
  header nav.top li {
+   height: 31px;
    margin: 0;
    padding: 0;
    float: left;
    display: block;
    position: relative;
-   border-left: 1px solid rgba(0, 0, 0, 0.347656);
-   -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
-   -moz-box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
-   box-shadow: -1px 0 0 rgba(255, 255, 255, 0.0976562);
+   border-left: 1px solid rgba(255, 255, 255, 0.0976562);
+   border-right: 1px solid rgba(0, 0, 0, 0.347656);
  }
 
  header nav.top li:hover a, header nav.top li.active a {
    background: rgba(0,0,0,0.1)
  }
+ 
+ header nav.top ul.links li.dropdown:hover, header nav.top ul.dropdown.links li.active {
+   
+ }
 
  header nav.top li.dropdown:hover a, header nav.top li.dropdown.active a {
-   background: transparent url(../i/jq-global-noise-only.png)
+   background: transparent url(../i/jq-global-noise-only.png);
  }
 
  header nav.top li ul {
    display: none;
    position: absolute;
-   top: 32px;
-   left: 0;
+   top: 30px;
+   left: -1px;
    float: left;
    min-width: 120px;
    height: auto;
    border-left: solid 1px #333;
    border-right: solid 1px #111;
    border-bottom: solid 1px #111;
-   padding: 5px 0;
+   padding: 0 0 5px 0;
    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
    -moz-box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
    box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
@@ -758,12 +763,10 @@ body > header {
    }
 
  header nav.top .links {
-   float: right
+   float: right;
+   position: relative;
+   top: 1px;
  }
-
-  header nav.top .links li:nth-child(1) {
-    border-left: 1px solid rgba(0, 0, 0, 0.347656)
-  }
 
  header nav.top li a {
    float: left;
@@ -830,11 +833,12 @@ header nav.top li.jquery a {
   background-position: 0px -36px;
 }
 
+.jquery header nav.top ul.projects {
+  border-left-color: transparent;
+}
+
 .jquery header nav.top li.jquery-ui {
-  border: none;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+  border-left-color: transparent;
 }
 
 header nav.top li.jquery-ui a {
@@ -849,10 +853,11 @@ header nav.top li.jquery-ui a {
 }
 
 .jquery-ui header nav li.jquery-mobile {
-  border: none;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+  border-left-color: transparent;
+}
+
+.jquery-ui header nav li.jquery {
+  border-right-color: transparent;
 }
 
 header nav.top li.jquery-mobile a {
@@ -866,6 +871,14 @@ header nav.top li.jquery-mobile a {
   background-position: -100px -36px;
 }
 
+.jquery-mobile header nav.top li.jquery-ui {
+  border-right-color: transparent;
+}
+
+.jquery-mobile header nav.top li.toggle-projects {
+  border-left-color: transparent;
+}
+
 header nav.top li.toggle-projects a {
   padding-right: 30px;
   background-image: url(../i/icon-arrow.png);
@@ -877,13 +890,6 @@ header nav.top li.toggle-projects.active a {
   background-position: 100% -32px;
   background-color: transparent;
   text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.8) 0 0 6px;
-}
-
-.jquery header nav.top li.jquery-ui, .jquery-ui header nav li.jquery-mobile, .jquery-mobile header nav.top li.toggle-projects {
-  border: none;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
 }
 
 /* ------------------------------------------------------------------------------
