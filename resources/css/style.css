@@ -1,3 +1,5 @@
+@import "syntax.css";
+
 /* ------------------------------------------------------------------------------
    ================================================== */
 
@@ -1443,7 +1445,7 @@ footer .presentations {
 
 /* ===[ Media Queries ]=== */
 
-@media all and (max-width: 1180px) and (min-width: 600px) { 
+@media all and (max-width: 1180px) and (min-width: 600px){ 
   footer .presentations li {
     width: 90%;
     clear: left;
@@ -1468,9 +1470,9 @@ footer .presentations {
       margin: 0 8px 0 0;
     }
   
-}
+}/*/mediaquery*/
 
-@media all and (max-width: 1000px) and (min-width: 600px) { 
+@media all and (max-width: 1000px) and (min-width: 600px){ 
   
   footer ul.footer-icon-links {
     padding-bottom: 0;
@@ -1509,23 +1511,23 @@ footer .presentations {
       margin: 0 auto 8px auto;
       float: none;
     }
-}
+}/*/mediaquery*/
 
-@media all and (max-width: 900px) { 
+@media all and (max-width: 900px){ 
   .col2-1 .col2-1 {
     width: 100%;
     clear: left;
   }
-}
+}/*/mediaquery*/
 
-@media all and (max-width: 700px) { 
+@media all and (max-width: 700px){ 
   .col2-1 {
     width: 100%;
     clear: left;
   }
-}
+}/*/mediaquery*/
 
-@media all and (max-width: 600px) { 
+@media all and (max-width: 600px){ 
   h1 a {
     margin: 20px auto;
     float: none;
@@ -1614,9 +1616,9 @@ footer .presentations {
     width: auto;
     float: none;
   }
-}
+}/*/mediaquery*/
 
-@media all and (max-width: 400px) { 
+@media all and (max-width: 400px){ 
   .constrain {
     padding: 0 10px
   }
@@ -1624,9 +1626,9 @@ footer .presentations {
   header nav.top li a {
     font-size: 0.85em
   }
-}
+}/*/mediaquery*/
 
-@media all and (max-width: 320px) { 
+@media all and (max-width: 320px){ 
   .download {
     text-align: center;
   }
@@ -1666,4 +1668,4 @@ footer .presentations {
        -moz-border-radius: 0;
             border-radius: 0;
   }
-}
+}/*/mediaquery*/
