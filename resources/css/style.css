@@ -817,9 +817,18 @@ footer .cdn {
   line-height: 30px;
   position: relative;
   overflow: hidden;
+  white-space: nowrap;
   -webkit-box-shadow: rgba(255,255,255,0.15) 0 1px 0;
      -moz-box-shadow: rgba(255,255,255,0.15) 0 1px 0;
           box-shadow: rgba(255,255,255,0.15) 0 1px 0;
+}
+
+footer .cdn ~ .cdn {
+  margin-top: 5px;
+}
+
+footer .cdn ~ .cdn strong {
+  text-align: right;
 }
 
 .no-cssboxshadow {
@@ -827,14 +836,14 @@ footer .cdn {
 }
 
   footer .cdn strong {
-    width: 40px;
     text-align: center;
     height: 26px;
+    text-align: left;
+    padding: 0 6px 0 6px;
     line-height: 28px;
-    float: left;
-    position: absolute;
-    left: 2px;
-    top: 2px;
+    display: inline-block;
+    margin: 2px 0 0 2px;
+    position: relative;
     -webkit-border-top-left-radius: 3px;
     -webkit-border-bottom-left-radius: 3px;
        -moz-border-radius: 3px 0 0 3px;
@@ -865,11 +874,22 @@ footer .cdn {
          -moz-border-radius: 3px 0 0 3px;
               border-radius: 3px 0 0 3px;
     }
+    
+    footer .cdn strong em {
+      font-style: normal;
+      color: #ccc;
+      font-family: Consolas, Monaco, monospace;
+      display: inline-block;
+      width: 20px;
+      padding-left: 5px;
+      padding-right: 4px;
+      text-align: right;
+    }
   
   footer .cdn span {
+    display: inline-block;
     font-family: Consolas, monospace;
-    padding-left: 50px;
-    padding-right: 10px;
+    padding-left: 5px;
     white-space: nowrap;
     color: #ccc;
     font-size: 12px;
