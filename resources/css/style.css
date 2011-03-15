@@ -1088,8 +1088,7 @@ footer .footer-icon-links {
       margin-left: 0%;
     }
 
-.multiplebgs footer {
-  background-image: url(../i/bg-footer-noise.jpg);
+.multiplebgs.cssgradients footer {
   background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../i/bg-footer-noise.jpg); /* FF3.6 */
   background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(0,0,0,0.3)),color-stop(1, rgba(0,0,0,0.0))), url(../i/bg-footer-noise.jpg); /* Saf4+, Chrome */
   background-image: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../i/bg-footer-noise.jpg); /* Chrome 10+, Saf6 */
@@ -1099,7 +1098,7 @@ footer .footer-icon-links {
           background-size: 100px 15px, 140px 140px;
 }
 
-.no-multiplebgs footer {
+.no-multiplebgs footer, .no-cssgradients footer {
   background-image: url(../i/bg-footer-noise.jpg);
   background-repeat: repeat;
 }
