@@ -52,7 +52,7 @@ App.subscribe("init", function(){
   
   //
   // Project Tooltips
-  //
+  //  
   $(".projects .jquery, .projects .jquery-ui, .projects .jquery-mobile").bind("mouseover", function(){
     var el = $(this), tooltips = $(".tooltips"), tooltip = {};
     if(el.hasClass('jquery')){
@@ -82,9 +82,9 @@ App.subscribe("init", function(){
   // Fancy Dropdown
   //
   $(".links .dropdown").hover(function(){
-    $(this).find("ul").stop(true, true).slideDown(100);
+    $(this).children("ul").stop(true, true).slideDown(100);
   }, function(){
-    $(this).find("ul").stop(true, true).slideUp(100);
+    $(this).children("ul").stop(true, true).slideUp(100);
   });
 
   //
