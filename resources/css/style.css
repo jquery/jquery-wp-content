@@ -85,6 +85,11 @@ input, select {
 
 /* ===[ Global Selectors & Classes ]=== */
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 html {
   background: #444
 }
@@ -1538,7 +1543,7 @@ footer .presentations {
         #container header nav .search #search:focus {
           outline: none
         }
-
+	
   #container #body {
     margin-bottom: -50px;
     min-height: 400px;
@@ -1547,12 +1552,181 @@ footer .presentations {
        -moz-border-radius: 0 0 8px 8px;
             border-radius: 0 0 8px 8px;
     background: #fff;
+    display: block;
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-        moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+       -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
             box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-    padding: 20px;
     position: relative;
     z-index: 20;
+  }
+  
+  #container #body .inner {
+  	padding: 2%;
+  }
+  
+  
+/* Sidebar Right */
+	
+  #container #body.sidebar-right .inner {
+  	width: 72.25%;
+  	float: left;
+  }
+
+  #container #body.sidebar-right #sidebar {
+  	float: right;
+  	border-left: 1px solid #cccccc;
+  }
+  	
+	#container #body.sidebar-right #sidebar {
+		-webkit-border-bottom-right-radius: 8px;
+		-moz-border-radius: 0 8px 0 0;
+	}
+	  	
+/* Sidebar Left */
+	
+	#container #body.sidebar-left .inner {
+  	width: 72.25%;
+  	float: right;
+  }
+
+  #container #body.sidebar-left #sidebar {
+  	float: left;
+  	border-right: 1px solid #cccccc;
+  }
+  
+	#container #body.sidebar-left #sidebar {
+		-webkit-border-bottom-left-radius: 8px;
+		-moz-border-radius: 0 0 0 8px;
+	}
+
+/* Sidebar */
+	
+  #container #body #sidebar {
+  	width: 20.5%;
+  	min-height: 100%;
+  	display: block;
+  	position: relative;
+  	background: #eeeeee;
+  	padding: 0 1.5%;
+  }
+  
+  #container #body #sidebar ul {
+  	float: left;
+  	display: block;
+  }
+  
+  #container #body #sidebar ul.api {
+  	-webkit-column-count: 2;
+		-webkit-column-gap: 0px;
+		-moz-column-count: 2;
+		-moz-column-gap: 0;
+		width: 100%;
+  }
+  
+  #container #body #sidebar ul.api li {
+  	display: block;
+  	width: 40%;
+  	padding: 0;
+  	margin: 0;
+  	font-size: 12px;
+  }
+  
+	  #container #body #sidebar ul.api li a {
+			padding: 3px 5px;
+			width: 220%;
+			display: block;
+			color: #333;
+			text-decoration: none;	  
+	  }
+	  
+	  #container #body #sidebar ul.api li a:hover {
+	  	background: #cccccc;
+	  	-webkit-border-radius: 3px;
+	  	-moz-border-radius: 3px;
+	  	border-radius: 3px;
+	  	-webkit-box-shadow: 0 1px 1px #fff;
+	  	-moz-box-shadow: 0 1px 1px #fff;
+	  	box-shadow: 0 1px 1px #fff;
+	  }
+  
+  #container #body #sidebar hr {
+  	height: 1px;
+  	width: 114.45%;
+  	float: left;
+  	margin: 0 0 15px -7.25%;
+  	display: block;
+  	background: #cccccc;
+  	border-bottom: 1px solid #fff;
+  	clear: both;
+  }
+  
+  #container #body #sidebar h2 {
+  	margin: 10px 0;
+  	font-size: 20px;
+  	text-shadow: 0 1px 1px #fff;
+  }
+  
+  #container #body #sidebar h3 {
+  	float: left;
+  	width: 100%;
+  	font-size: 16px;
+  	font-weight: normal;
+  	letter-spacing: 0;
+  	text-shadow: 0 1px 1px #fff;
+  }
+  
+  #container #body #sidebar .inset {
+  	float: left;
+  	display: block;
+  	background: #fff;
+  	padding: 4%;
+  	-webkit-box-shadow: #ccc -1px -1px 0;
+		-moz-box-shadow: #ccc -1px -1px 0;
+		box-shadow: #ccc -1px -1px 0;
+		-webkit-border-radius: 6px;
+  	-moz-border-radius: 6px;
+  	border-radius: 6px;
+  	width: 94%;
+  }
+
+  	#container #body #sidebar ul.inset li {
+  		list-style: none;
+  		padding: 0;
+  		margin: 0;
+  	}
+  	
+  	#container #body #sidebar ul.inset li a {
+  		color: #444444;
+  		text-decoration: none;
+  		padding: 2.5%;
+  		float: left;
+  		width: 95%;
+  		border-bottom: 1px solid #cccccc;
+  		display: block;
+  	}
+  	
+  	#container #body #sidebar ul.inset li a:hover {
+  		color: #000;
+  		background: #e6e6e6;
+  	}
+		
+		#container #body #sidebar ul.inset li:first-child a {
+			-webkit-border-radius: 4px 4px 0 0;
+			-moz-border-radius: 4px 4px 0 0;	
+			border-radius: 4px 4px 0 0;
+		}
+  
+  	#container #body #sidebar ul.inset li:last-child a {
+			-webkit-border-radius: 0 0 4px 4px;
+			-moz-border-radius: 0 0 4px 4px;	
+			border-radius: 0 0 4px 4px;
+			border: none;
+		}
+  
+  #container #body #sidebar p.inset {
+  	font-size: 11px;
+  	font-color: #666;
+  	line-height: 15px;
   }
 
 /* ------------------------------------------------------------------------------

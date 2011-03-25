@@ -69,7 +69,7 @@ App.subscribe("init", function(){
     if(tooltip.is(":hidden")){
       setTimeout(function(){ tooltip.fadeIn(300); }, 300);
     }
-  });
+  });	
   
   $(".tooltips .jquery, .tooltips .jquery-ui, .tooltips .jquery-mobile").bind("mouseout", function(){
     var el = $(this);
