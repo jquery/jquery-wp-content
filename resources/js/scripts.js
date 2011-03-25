@@ -1,8 +1,6 @@
-// The plugin included by SyntaxHighlighter breaks Number
-// parsing in the jQuery Animate function. You must use
-// strings instead of numbers so it still works.
-jQuery.InFieldLabels.defaultOptions.defaultOpacity = "1.0";
-jQuery.InFieldLabels.defaultOptions.fadeOpacity    = "0.5";
+
+jQuery.InFieldLabels.defaultOptions.defaultOpacity = 1;
+jQuery.InFieldLabels.defaultOptions.fadeOpacity    = 0.5;
 
 
 //
