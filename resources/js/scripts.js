@@ -123,7 +123,28 @@ App.subscribe("init", function(){
     .delegate("li a", "mouseleave", function () {
       $(this).find("span").stop(true, false).fadeOut(250);
     });
+	
+	autoHeight();
+	
+	$(window).resize(function(){
+		autoHeight();
+	});
+	
+	function autoHeight(){
+		$(".autoHeight").each(function(){
+			var el = $(this), parent = el.parent();
+			console.log(el.height("auto").height());
+			console.log(el.height("auto").height() + " : " + parent.height());
+			if(parent.height() >= el.height("auto").height()){
+				el.css({"height":parent.height()});
+			} else {
+				el.css({"height":el.height("auto").height()});
+			}
+		});
+	}
+	
 });
+
 
 
 

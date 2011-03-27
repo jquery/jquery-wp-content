@@ -1575,7 +1575,7 @@ footer .presentations {
   #container #body.sidebar-right #sidebar {
   	float: right;
   	border-left: 1px solid #cccccc;
-  }
+	}
   	
 	#container #body.sidebar-right #sidebar {
 		-webkit-border-bottom-right-radius: 8px;
@@ -1603,10 +1603,10 @@ footer .presentations {
 	
   #container #body #sidebar {
   	width: 20.5%;
-  	min-height: 100%;
-  	display: block;
   	position: relative;
+  	display: block;
   	background: #eeeeee;
+  	float: left;
   	padding: 0 1.5%;
   }
   
@@ -1826,7 +1826,7 @@ footer .presentations {
     margin: 20px auto;
     float: none;
   }
-
+	
   header nav.constrain {
     padding: 0
   }
@@ -1880,6 +1880,34 @@ footer .presentations {
       text-transform: none !important;
       display: inline !important;
     }
+  
+  #container #body #sidebar {
+  	-webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+       -moz-border-radius: 0 0 8px 8px;
+            border-radius: 0 0 8px 8px;
+    height: auto !important;
+    border-top: 1px solid #e1e1e1;
+  }
+  
+  #container #body.sidebar-left #sidebar,
+  #container #body.sidebar-right #sidebar {
+  	clear: both;
+  	float: left;
+  	padding:  0 3% 3%;
+  	width: 94%;
+  }
+  
+  #container #body #sidebar hr {
+  	margin: 0 0 15px 0;
+  	width: 100%;
+  }
+  
+  #container #body.sidebar-left .inner,
+  #container #body.sidebar-right .inner {
+  	padding: 3%;
+  	width: 94%;
+  }
   
   footer ul.books  {
     overflow: hidden;
