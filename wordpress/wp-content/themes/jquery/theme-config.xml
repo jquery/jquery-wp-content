@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	
+	<folders>
+		<images src="uploads/" />
+	</folders>
+	
+	<panel title="Settings">
+		
+		<tab title="Custom Modules">
+			
+			<custom-module title="Color Module" function="darcy_color_module" />
+			<custom-module title="" function="" />
+			
+		</tab>
+		
+		
+	</panel>
+	
+	<panel title="Styling">
+	
+		<tab title="Background">
+			
+			<element title="Body Background" selector="body">
+				<module name="image-preview" src="uploads/bg/" />
+				<module name="background-image" target="uploads/bg/" />
+				<module name="background-color" />
+				<module name="background-repeat" />
+				<module name="background-position" />
+			</element>
+		
+		</tab>
+
+		<tab title="Body Font">
+
+			<element title="Body Font Styles" selector="body">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="line-height" />
+			</element>
+			
+			<element title="Body a:link" selector="a">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+			
+			<element title="Body a:hover" selector="a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+							
+		</tab>
+
+		<tab title="Headings">
+
+			<element title="Heading 1 (h1)" selector="h1">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Heading 2 (h2)" selector="h2">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Heading 3 (h3)" selector="h3">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Heading 4 (h4)" selector="h4">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Heading 5 (h5)" selector="h5">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Heading 6 (h6)" selector="h6">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+						
+		</tab>
+
+		<tab title="Form Elements">
+
+			<element title="Form Fields (input, textarea, etc.)" selector="input[type=text], input[type=password], textarea">
+				<module name="background-color" />
+				<module name="border" />
+				<module name="padding" />
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+			</element>
+
+			<element title="Form Fields :focus" selector="textarea:focus, input[type=password]:focus, input[type=text]:focus">
+				<module name="background-color" />
+				<module name="border" />
+				<module name="color" />
+			</element>
+
+			<element title="Form Button" selector="input[type=reset], input[type=submit]">
+				<module name="background-color" />
+				<module name="border" />
+				<module name="color" />
+			</element>
+
+			<element title="Form Button a:hover" selector="input[type=reset]:hover, input[type=submit]:hover">
+				<module name="background-color" />
+				<module name="border" />
+				<module name="color" />
+			</element>
+							
+		</tab>
+
+		<tab title="Post Title">
+
+			<element title="Post-Title Font Styles" selector=".post-title">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+			
+			<element title="Post-Title a:link" selector=".post-title a">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+			
+			<element title="Post-Title a:hover" selector=".post a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+				
+		</tab>
+
+		<tab title="Page Title">
+
+			<element title="Page Title Font Styles" selector=".page-title">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+			</element>
+							
+		</tab>
+
+		<tab title="Post Meta">
+
+			<element title="Post Meta Text" selector=".post-meta, .post-meta em">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+			</element>
+						
+			<element title="Post Meta a:link" selector=".post-meta a">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Post Meta a:hover" selector=".post-meta a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Post Date" selector=".post-date">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+			</element>
+
+			<element title="More Link" selector=".more-link">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="divider" />
+				<module name="background-color" />
+				<module name="padding" />
+				<module name="margin" />
+				<module name="border" />
+			</element>
+
+			<element title="More Link a:hover" selector=".more-link:hover">
+				<module name="color" />
+				<module name="background-color" />
+			</element>
+							
+		</tab>
+
+		<tab title="Post Navigation">
+
+			<element title="Post Navigation (next/prev post)" selector=".post-nav">
+				<module name="border" />
+			</element>
+
+			<element title="Next/Prev Label" selector=".next-prev-post em">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="background-color" />
+			</element>
+
+			<element title="Post Title a:link" selector=".next-prev-post a">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="line-height" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Post Title a:hover" selector=".next-prev-post a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+		
+		</tab>
+
+		<tab title="Header">
+			
+			<element title="Header Background" selector="#headerwrap">
+				<module name="image-preview" src="uploads/bg/header/" />
+				<module name="background-image" target="uploads/bg/header/" />
+				<module name="background-color" />
+				<module name="background-repeat" />
+				<module name="background-position" />
+			</element>
+
+			<element title="Header" selector="#header">
+				<module name="color" />
+				<module name="height" />
+				<module name="border" />
+			</element>
+
+			<element title="Header a:link" selector="#header a">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Header a:hover" selector="#header a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+						
+		</tab>
+		<tab title="Site Logo">
+
+			<element title="Site Logo Position" selector="#site-logo">
+				<module name="position" />
+			</element>
+
+			<element title="Site Logo" selector="#site-logo a">
+				<module name="site_logo" target="uploads/logo/" />
+				<module name="divider" />
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Site Logo a:hover" selector="#site-logo a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+
+		</tab>		
+
+		<tab title="Site Description">
+
+			<element title="Site Description" selector="#site-description">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="text-transform" />
+				<module name="divider" />
+				<module name="position" />
+			</element>
+
+		</tab>		
+
+		<tab title="Navigation">
+
+			<element title="Navigation Bar" selector="#nav-bar">
+				<module name="image-preview" src="uploads/bg/nav/" />
+				<module name="background-image" target="uploads/bg/nav/" />
+				<module name="background-color" />
+				<module name="background-repeat" />
+				<module name="background-position" />
+				<module name="divider" />
+				<module name="position" />
+				<module name="divider" />
+				<module name="border" />
+			</element>
+
+			<element title="Main Navigation Position" selector="#main-nav">
+				<module name="position" />
+			</element>
+
+			<element title="Main Navigation a:link" selector="#main-nav li a">
+				<module name="font-family" />
+				<module name="font-size" />
+				<module name="color" />
+				<module name="text-decoration" />
+				<module name="text-transform" />
+				<module name="divider" />
+				<module name="padding" />
+				<module name="background-color" />
+			</element>
+
+			<element title="Main Navigation a:hover" selector="#main-nav li a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+				<module name="background-color" />
+			</element>
+
+			<element title="Main Navigation Active (current)" selector="#main-nav .current_page_item a, #main-nav .current-menu-item a">
+				<module name="color" />
+				<module name="background-color" />
+			</element>
+
+			<element title="Dropdown" selector="#main-nav ul">
+				<module name="background-color" />
+				<module name="padding" />
+				<module name="border" />
+			</element>
+
+			<element title="Dropdown a:link" selector="#main-nav ul a, #main-nav .current_page_item ul a, #main-nav ul .current_page_item a, #main-nav .current-menu-item ul a, #main-nav ul .current-menu-item a">
+				<module name="font-family" />
+				<module name="font-size" />
+				<module name="color" />
+				<module name="background-color" />
+				<module name="padding" />
+				<module name="border" />
+			</element>
+			
+			<element title="Dropdown a:hover" selector="#main-nav ul a:hover, #main-nav .current_page_item ul a:hover, #main-nav ul .current_page_item a:hover, #main-nav .current-menu-item ul a:hover, #main-nav ul .current-menu-item a:hover">
+				<module name="color" />
+				<module name="background-color" />
+			</element>
+
+		</tab>
+
+		<tab title="Sidebar">
+
+			<element title="Sidebar Font Styles" selector="#sidebar">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="line-height" />
+			</element>
+
+			<element title="Sidebar a:link" selector="#sidebar a">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+			
+			<element title="Sidebar a:hover" selector="#sidebar a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+
+			<element title="Sidebar Widget Box" selector="#sidebar .widget">
+				<module name="background-color" />
+				<module name="padding" />
+				<module name="margin" />
+				<module name="border" />
+			</element>
+
+			<element title="Sidebar Widget Title" selector="#sidebar .widgettitle">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+				<module name="divider" />
+				<module name="border" />
+				<module name="background-color" />
+				<module name="padding" />
+				<module name="margin" />
+			</element>
+
+			<element title="Sidebar List Item" selector="#sidebar .widget li ">
+				<module name="background-color" />
+				<module name="margin" />
+				<module name="padding" />
+				<module name="border" />
+			</element>
+			
+		</tab>
+		
+		<tab title="Footer">
+
+			<element title="Footer" selector="#footerwrap">
+				<module name="image-preview" src="uploads/footer/" />
+				<module name="background-image" target="uploads/footer/" />
+				<module name="background-color" />
+				<module name="background-repeat" />
+				<module name="background-position" />
+				<module name="divider" />
+				<module name="border" />
+				<module name="padding" />
+				<module name="margin" />
+			</element>
+			
+			<element title="Footer Font Styles" selector="#footer">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="line-height" />
+			</element>
+			
+			<element title="Footer a:link" selector="#footer a">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+			
+			<element title="Footer a:hover" selector="#footer a:hover">
+				<module name="color" />
+				<module name="text-decoration" />
+			</element>
+		
+			<element title="Footer Widget Box" selector="#footer .widget">
+				<module name="background-color" />
+				<module name="padding" />
+				<module name="margin" />
+				<module name="border" />
+			</element>
+
+			<element title="Footer Widget Title" selector="#footer .widgettitle">
+				<module name="font-family" />
+				<module name="color" />
+				<module name="font-size" />
+				<module name="font-weight" />
+				<module name="font-style" />
+				<module name="font-variant" />
+				<module name="line-height" />
+				<module name="text-transform" />
+				<module name="text-decoration" />
+				<module name="divider" />
+				<module name="border" />
+				<module name="background-color" />
+				<module name="padding" />
+				<module name="margin" />
+			</element>
+
+			<element title="Footer List Item" selector="#footer .widget li ">
+				<module name="background-color" />
+				<module name="margin" />
+				<module name="padding" />
+				<module name="border" />
+			</element>
+			
+		</tab>
+		
+		<tab title="Custom CSS">
+			
+			<element title="Custom CSS" selector="html">
+				<module name="custom_css" />
+			</element>
+			
+		</tab>
+		
+	</panel>
+
+	<!-- <custom-module title="Image Settings" function="img_settings" />
+			<custom-module title="" function="" />
+     -->
+</config>

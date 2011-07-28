@@ -1,0 +1,179 @@
+/************************************************************************************
+BUTTONS
+*************************************************************************************/
+a.button {
+	text-decoration: none;
+	color: #000;	
+	font: normal 13px/100% Arial, Helvetica, sans-serif;
+	padding: 6px 13px;
+	margin: 1px 3px;
+
+	background: #ccc;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#cecece));
+	background: -moz-linear-gradient(top,  #f0f0f0,  #9b9b9b);
+	background: linear-gradient(-90deg, #f0f0f0, #9b9b9b);
+
+	vertical-align: middle;
+	display: inline-block;
+	zoom:1;
+	*display:inline;
+
+	text-shadow: 0 1px 0 rgba(255,255,255,.3);
+
+	-webkit-border-radius: 20em;
+	-moz-border-radius: 20em;
+	border-radius: 20em;
+
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+a.button:hover {
+	text-decoration: none;
+}
+a.button.orange {
+	background: #fcb717;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fdc913), to(#faa61a));
+	background: -moz-linear-gradient(top,  #fdc913,  #faa61a);
+	background: linear-gradient(-90deg, #fdc913, #faa61a);
+}
+a.button.blue {
+	background: #28abf5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6ccef6), to(#028eef));
+	background: -moz-linear-gradient(top,  #6ccef6,  #028eef);
+	background: linear-gradient(-90deg, #6ccef6, #028eef);
+}
+a.button.pink {
+	background: #fa64ba;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9a2ca), to(#ff36ad));
+	background: -moz-linear-gradient(top,  #f9a2ca,  #ff36ad);
+	background: linear-gradient(-90deg, #f9a2ca, #ff36ad);
+}
+a.button.green {
+	background: #9fc568;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b8e17c), to(#86a854));
+	background: -moz-linear-gradient(top,  #b8e17c,  #86a854);
+	background: linear-gradient(-90deg, #b8e17c, #86a854);
+}
+a.button.red {
+	background: #da433a;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e75952), to(#d03a30));
+	background: -moz-linear-gradient(top,  #e75952,  #d03a30);
+	background: linear-gradient(-90deg, #e75952, #d03a30);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+}
+a.button.black {
+	background: #444;
+	background: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#2b2b2b));
+	background: -moz-linear-gradient(top,  #646464,  #2b2b2b);
+	background: linear-gradient(-90deg, #646464, #2b2b2b);
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+}
+a.button.purple {
+	background: #28abf5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7d0e80), to(#550556));
+	background: -moz-linear-gradient(top,  #7d0e80,  #550556);
+	background: linear-gradient(-90deg, #7d0e80, #550556);
+}
+
+/* button size */
+a.button.small {
+	font-size: 11px;
+	font-weight: normal;
+	padding: 3px 10px;
+	margin: 0 2px;
+}
+a.button.large {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 9px 19px;
+	margin: 2px 5px;
+}
+a.button.xlarge {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px 25px;
+	margin: 4px 8px;
+}
+
+/************************************************************************************
+HR
+*************************************************************************************/
+hr {
+	height: 1px;
+	border: none;
+	border-top: solid 1px #ccc;
+	clear: both;
+}
+hr.red {
+	border-color: #F30;
+}
+hr.blue {
+	border-color: #69F;
+}
+hr.pink {
+	border-color: #F9C;
+}
+hr.light-gray {
+	border-color: #ddd;
+}
+hr.dark-gray {
+	border-color: #999;
+}
+hr.black {
+	border-color: #000;
+}
+hr.yellow {
+	border-color: #FF0;
+}
+hr.orange {
+	border-color: #F90;
+}
+hr.white {
+	border-color: #fff;
+}
+
+/************************************************************************************
+GRID
+*************************************************************************************/
+.col,
+.col4-1,
+.col4-2,
+.col4-3,
+.col3-1,
+.col3-2,
+.col2-1
+{
+	float: left;
+}
+.col4-1 {
+	width: 25%;
+}
+.col4-2 {
+	width: 50%;
+}
+.col4-3 {
+	width: 75%;
+}
+.col3-1 {
+	width: 33%;
+}
+.col3-2 {
+	width: 66%;
+}
+.col2-1 {
+	width: 50%;
+}
+.col.first,
+.col4-1.first,
+.col4-2.first,
+.col4-3.first,
+.col3-1.first,
+.col3-2.first,
+.col2-1.first
+{
+	margin-left: 0;
+	clear: left;
+}
