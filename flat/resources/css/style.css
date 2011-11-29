@@ -519,6 +519,50 @@ html.jquery-project {
             box-shadow: rgba(136,196,26,0.5) -1px 0 0;
   }
 
+/* ===[ Sizzle ]=== */
+
+html.sizzle, .sizzle #container {
+  background: #8c0000 url(../i/bg-body-sizzle.jpg) no-repeat center -20px
+}
+
+.sizzle h1 a {
+  background: url(../i/logo-sizzle.png) no-repeat;
+  width: 275px;
+  height: 72px;
+  left: -14px;
+  position: relative;
+}
+
+.sizzle .border, .sizzle footer {
+  border-color: #c10000
+}
+
+.sizzle a, .sizzle .title {
+  color: #c10000
+}
+
+.sizzle footer a {
+	color: #fff;
+}
+
+.sizzle #container header nav ul li a, .sizzle #container header nav .search::-webkit-input-placeholder, .sizzle #container header nav .search label {
+  color: #fff
+}
+
+.sizzle #container header nav {
+  border-top: solid 1px rgba(236,0,0,0.3);
+  background: rgba(110,0,0,0.5);
+  -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
+     -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
+          box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
+}
+
+  .sizzle #container header nav .search .icon-search {
+    -webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+       -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+            box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+  }
+
 /* ------------------------------------------------------------------------------
    ================================================== */
 
