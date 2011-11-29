@@ -563,6 +563,51 @@ html.sizzle, .sizzle #container {
             box-shadow: rgba(255,215,124,0.5) -1px 0 0;
   }
 
+/* ===[ QUnit ]=== */
+
+html.qunit, .qunit #container {
+  background: #00733c url(../i/bg-body-qunit.jpg) no-repeat center -20px
+}
+
+.qunit h1 a {
+  background: url(../i/logo-qunit.png) no-repeat;
+  width: 275px;
+  height: 72px;
+  left: -14px;
+  position: relative;
+}
+
+.qunit .border, .qunit footer {
+  border-color: #1d923c
+}
+
+.qunit a, .qunit .title {
+  color: #00733c
+}
+
+.qunit footer a {
+	color: #fff;
+}
+
+.qunit #container header nav ul li a, .qunit #container header nav .search::-webkit-input-placeholder, .qunit #container header nav .search label {
+  color: #fff
+}
+
+.qunit #container header nav {
+  border-top: solid 1px rgba(58,178,59,0.5);
+  background: rgba(0,85,44,0.5);
+  -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
+     -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
+          box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
+}
+
+  .qunit #container header nav .search .icon-search {
+    -webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+       -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+            box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+  }
+
+
 /* ------------------------------------------------------------------------------
    ================================================== */
 

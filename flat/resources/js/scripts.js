@@ -89,7 +89,7 @@ App.subscribe("init", function(){
   // Temporary: REMOVE
   // Change page color
   //
-  var colors = [ "jquery", "jquery-ui", "jquery-mobile", "jquery-project", "sizzle" ],
+  var colors = [ "jquery", "jquery-ui", "jquery-mobile", "jquery-project", "sizzle", "qunit" ],
     color_string = colors.join(' ');
   $("ul.projects").delegate("li:lt(3)", "click", function(e) {
     e.preventDefault();
