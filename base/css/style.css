@@ -11,6 +11,9 @@
 	font-size: 100%;
 	vertical-align: baseline;
 	background: transparent; }
+	
+	*:focus
+{	outline: none; }
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
 {	display: block; }
@@ -193,8 +196,6 @@
 	background: #e5e5e5;
 	border: 1px solid #ccc;
 	border-bottom: none; }
-
-	.entry-meta { clear:left; }
 	
 	/*******************************************************************************/
 	/* Syntax */
@@ -232,15 +233,15 @@
 	/* Titles */
 	/*******************************************************************************/
 	
-	h1.title, h1.entry-title, h2.title, h2.entry-title
+	h2.title 
 {	background: #f7b535;
 	width: 100%;
 	text-shadow: 0 1px 1px #fff;
 	margin: 0 0 20px -30px;
 	padding: 10px 30px 10px 30px;
-	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.35);
-	box-shadow: 0 1px 1px rgba(0,0,0,0.35);
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+	box-shadow: 0 1px 0 rgba(0,0,0,0.25);
 	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
 	background: -moz-linear-gradient(top,  #e5e5e5,  #d5d5d5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5'); }
@@ -331,7 +332,7 @@
 	a 
 {	color: #0d619c; }
 	
-	#site-footer a {
+	footer a {
 	color: #fff;
 	text-decoration: none;
 	}
@@ -343,14 +344,14 @@
 	html.jquery, .jquery #container 
 {	background: #065791 url(../i/bg-body-jquery.jpg) no-repeat center -20px; }
 	
-	.jquery h1.site-title a 
+	.jquery h1 a 
 {	height: 72px;
 	background: url(../i/logo-jquery.png) no-repeat; }
 	
-	.jquery .border, .jquery #site-footer 
+	.jquery .border, .jquery footer 
 {	border-color: #0C9DD6; }
 	
-	.jquery a, .jquery .title, .jquery .entry-title 
+	.jquery a, .jquery .title 
 {	color: #065791; }
 	
 	.jquery #container header nav ul li a, .jquery #container header nav .search::-webkit-input-placeholder, .jquery #container header nav .search label 
@@ -375,17 +376,17 @@
 	html.jquery-ui, .jquery-ui #container 
 {	background: #BB6F04 url(../i/bg-body-ui.jpg) no-repeat center -20px; }
 	
-	.jquery-ui h1.site-title a 
+	.jquery-ui h1 a 
 {	background: url(../i/logo-ui.png) no-repeat;
 	width: 275px;
 	height: 72px;
 	left: -14px;
 	position: relative; }
 	
-	.jquery-ui .border, .jquery-ui #site-footer 
+	.jquery-ui .border, .jquery-ui footer 
 {	border-color: #d69a06; }
 	
-	.jquery-ui a, .jquery-ui .title, .jquery-ui .entry-title
+	.jquery-ui a, .jquery-ui .title 
 {	color: #BB6F04; }
 	
 	.jquery-ui #container header nav ul li a, .jquery-ui #container header nav .search::-webkit-input-placeholder, .jquery-ui #container header nav .search label 
@@ -410,7 +411,7 @@
 	html.jquery-mobile, .jquery-mobile #container 
 {	background: #598611 url(../i/bg-body-mobile.jpg) no-repeat center -30px; }
 	
-	.jquery-mobile h1.site-title a 
+	.jquery-mobile h1 a 
 {	background: url(../i/logo-mobile.png) no-repeat;
 	height: 72px;
 	width: 275px;
@@ -418,10 +419,10 @@
 	top: -1px;
 	position: relative; }
 	
-	.jquery-mobile .border, .jquery-mobile #site-footer 
+	.jquery-mobile .border, .jquery-mobile footer 
 {	border-color: #88C41A; }
 	
-	.jquery-mobile a, .jquery-mobile .title, .jquery-mobile .entry-title
+	.jquery-mobile a, .jquery-mobile .title 
 {	color: #598611; }
 	
 	.jquery-mobile #container header nav ul li a, .jquery-mobile #container header nav .search::-webkit-input-placeholder, .jquery-mobile #container header nav .search label 
@@ -446,7 +447,7 @@
 	html.jquery-project 
 {	background: #861143 url(../i/bg-body-jquery-project.jpg) no-repeat center -30px; }
 	
-	.jquery-project h1.site-title a 
+	.jquery-project h1 a 
 {	background: url(../i/logo-project.png) no-repeat;
 	height: 78px;
 	width: 275px;
@@ -455,10 +456,10 @@
 	position: relative;
 	margin-bottom: 9px; }
 	
-	.jquery-project .border, .jquery-project #site-footer 
+	.jquery-project .border, .jquery-project footer 
 {	border-color: #b2175b; }
 	
-	.jquery-project a, .jquery-project .title, .jquery-project .entry-title
+	.jquery-project a, .jquery-project .title 
 {	color: #b2175b; }
 	
 	.jquery-project #container header nav ul li a, .jquery-project #container header nav .search::-webkit-input-placeholder, .jquery-project #container header nav .search label 
@@ -483,7 +484,7 @@
 	html.jquery-learning
 {	background: #000 url(../i/learning_bg.jpg) no-repeat center 0; }
 
-	.jquery-learning h1.site-title a
+	.jquery-learning h1 a
 {	background: url(../i/logo-learning.png) no-repeat;
 	height: 78px;
 	width: 550px;
@@ -492,10 +493,10 @@
 	position: relative;
 	margin-bottom: 9px; }
 	
-	.jquery-learning .border, .jquery-learning #site-footer 
+	.jquery-learning .border, .jquery-learning footer 
 {	border-color: #686868; }
 	
-	.jquery-learning a, .jquery-learning .title, .jquery-learning .entry-title
+	.jquery-learning a, .jquery-learning .title 
 {	color: #393939; }
 	
 	.jquery-learning #container header nav ul li a, .jquery-learning #container header nav .search::-webkit-input-placeholder, .jquery-learning #container header nav .search label 
@@ -513,86 +514,13 @@
 	-moz-box-shadow: rgba(255,255,255,0.25) -1px 0 0;
 	box-shadow: rgba(255,255,255,0.25) -1px 0 0; }
 	
-
-	/* ===[ Sizzle ]=== */
-
-	html.sizzlejs, .sizzlejs #container
-{	background: #8c0000 url(../i/bg-body-sizzlejs.jpg) no-repeat center -20px; }
-
-	.sizzlejs h1.site-title a
-{	background: url(../i/logo-sizzlejs.png) no-repeat;
-	width: 275px;
-	height: 72px;
-	left: -14px;
-	position: relative; }
-
-	.sizzlejs .border, .sizzlejs footer
-{	border-color: #c10000; }
-
-	.sizzlejs a, .sizzlejs .title, .sizzlejs .entry-title
-{	color: #c10000; }
-
-	.sizzlejs footer a
-{	color: #fff; }
-
-	.sizzlejs #container header nav ul li a, .sizzlejs #container header nav .search::-webkit-input-placeholder, .sizzlejs #container header nav .search label
-{	color: #fff; }
-
-	.sizzlejs #container header nav
-{	border-top: solid 1px rgba(236,0,0,0.3);
-	background: rgba(110,0,0,0.5);
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
-	   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
-	        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px; }
-
-	.sizzlejs #container header nav .search .icon-search
-{	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	   -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	        box-shadow: rgba(255,215,124,0.5) -1px 0 0; }
-
-	
-	/* ===[ QUnit ]=== */
-
-	html.qunitjs, .qunitjs #container
-{	background: #00733c url(../i/bg-body-qunitjs.jpg) no-repeat center -20px; }
-
-	.qunitjs h1.site-title a
-{	background: url(../i/logo-qunitjs.png) no-repeat;
-	width: 275px;
-	height: 72px;
-	left: -14px;
-	position: relative; }
-
-	.qunitjs .border, .qunitjs footer
-{	border-color: #1d923c; }
-
-	.qunitjs a, .qunitjs .title, .qunitjs .entry-title
-{	color: #00733c; }
-
-	.qunitjs footer a
-{	color: #fff; }
-
-	.qunitjs #container header nav ul li a, .qunitjs #container header nav .search::-webkit-input-placeholder, .qunitjs #container header nav .search label
-{	color: #fff; }
-
-	.qunitjs #container header nav
-{	border-top: solid 1px rgba(58,178,59,0.5);
-	background: rgba(0,85,44,0.5);
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
-	   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
-	        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px; }
-
-	.qunitjs #container header nav .search .icon-search
-{	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	   -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	        box-shadow: rgba(255,215,124,0.5) -1px 0 0; }
 	
 	
 	/*******************************************************************************/
 	/* Global Logo */
 	/*******************************************************************************/
 	
-	h1.site-title a 
+	h1 a 
 {	background: url(../i/logo-project.png) no-repeat;
 	height: 71px;
 	width: 257px;
@@ -926,7 +854,7 @@
 	/* Global Footer */
 	/*******************************************************************************/
 	
-	#site-footer 
+	footer 
 {	width: 100%;
 	margin: 30px 0 0 0;
 	padding-bottom: 15px;
@@ -935,7 +863,7 @@
 	position: relative;
 	z-index: 10; }
 	
-	#site-footer .cdn 
+	footer .cdn 
 {	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -951,16 +879,16 @@
 	-moz-box-shadow: rgba(255,255,255,0.15) 0 1px 0;
 	box-shadow: rgba(255,255,255,0.15) 0 1px 0; }
 	
-	#site-footer .cdn ~ .cdn 
+	footer .cdn ~ .cdn 
 {	margin-top: 5px; }
 	
-	#site-footer .cdn ~ .cdn strong 
+	footer .cdn ~ .cdn strong 
 {	text-align: right; }
 	
 	.no-cssboxshadow 
 {	border-bottom: solid 1px #333; }
 	
-	#site-footer .cdn strong 
+	footer .cdn strong 
 {	text-align: center;
 	height: 26px;
 	text-align: left;
@@ -984,7 +912,7 @@
 	background-image: linear-gradient(top, #7a7a7a, #5e5e5e);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7a7a7a', EndColorStr='#5e5e5e'); /* IE6–IE9 */ }
 	
-	#site-footer .cdn strong:after 
+	footer .cdn strong:after 
 {	content: "";
 	display: block;
 	position: absolute;
@@ -998,7 +926,7 @@
 	-moz-border-radius: 3px 0 0 3px;
 	border-radius: 3px 0 0 3px; }
 	
-	#site-footer .cdn strong em 
+	footer .cdn strong em 
 {	font-style: normal;
 	color: #ccc;
 	font-family: Consolas, Monaco, monospace;
@@ -1008,7 +936,7 @@
 	padding-right: 4px;
 	text-align: right; }
 	
-	#site-footer .cdn span 
+	footer .cdn span 
 {	display: inline-block;
 	font-family: Consolas, monospace;
 	padding-left: 5px;
@@ -1016,29 +944,28 @@
 	color: #ccc;
 	font-size: 12px; }
 	
-	#site-footer .download 
-{	text-align: center;
-	color: #fff;
+	footer .download 
+{	color: #fff;
 	padding: 10px 2% 15px 2%;
 	line-height: 140%; }
 	
-	#site-footer .download strong 
+	footer .download strong 
 {	margin-right: 10px; }
 	
-	#site-footer .download > span 
+	footer .download > span 
 {	white-space: nowrap; }
 	
-	#site-footer .download a 
+	footer .download a 
 {	margin: 0 10px; }
 	
-	#site-footer .download a em 
+	footer .download a em 
 {	font-style: normal;
 	color: #aaa; }
 	
-	#site-footer .download a:hover 
+	footer .download a:hover 
 {	border-bottom: solid 1px #888; }
 	
-	#site-footer .footer-icon-links 
+	footer .footer-icon-links 
 {	padding: 15px 0;
 	margin: 0 2%;
 	border-top: solid 1px #333;
@@ -1046,15 +973,15 @@
 	-moz-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0; }
 	
-	#site-footer .footer-icon-links li 
+	footer .footer-icon-links li 
 {	width: 33%;
 	margin-left: 2%;
 	float: left; }
 	
-	#site-footer .footer-icon-links li.icon-bugs 
+	footer .footer-icon-links li.icon-bugs 
 {	width: 27%; }
 	
-	#site-footer .footer-icon-links li a 
+	footer .footer-icon-links li a 
 {	display: block;
 	padding-left: 40px;
 	line-height: auto;
@@ -1062,11 +989,11 @@
 	float: left;
 	position: relative; }
 	
-	#site-footer .footer-icon-links li.footer-icon a,
-	#site-footer .footer-icon-links li.footer-icon a span 
+	footer .footer-icon-links li.footer-icon a,
+	footer .footer-icon-links li.footer-icon a span 
 {	background: url(../i/footer-icons-large.png) no-repeat; }
 	
-	#site-footer .footer-icon-links li.footer-icon a span 
+	footer .footer-icon-links li.footer-icon a span 
 {	content: "";
 	display: block;
 	opacity: 0;
@@ -1076,26 +1003,26 @@
 	left: 0;
 	top: 0; }
 	
-	#site-footer .footer-icon-links li.icon-github a { background-position: 0 0;}
-	#site-footer .footer-icon-links li.icon-forum  a { background-position: 0 -123px;}
-	#site-footer .footer-icon-links li.icon-bugs   a { background-position: 0 -249px;}
+	footer .footer-icon-links li.icon-github a { background-position: 0 0;}
+	footer .footer-icon-links li.icon-forum  a { background-position: 0 -123px;}
+	footer .footer-icon-links li.icon-bugs   a { background-position: 0 -249px;}
 	
-	#site-footer .footer-icon-links li.icon-github a span { background-position: -251px 0;}
-	#site-footer .footer-icon-links li.icon-forum  a span { background-position: -251px -123px;}
-	#site-footer .footer-icon-links li.icon-bugs   a span { background-position: -251px -249px;}
+	footer .footer-icon-links li.icon-github a span { background-position: -251px 0;}
+	footer .footer-icon-links li.icon-forum  a span { background-position: -251px -123px;}
+	footer .footer-icon-links li.icon-bugs   a span { background-position: -251px -249px;}
 	
-	.no-js #site-footer .footer-icon-links li.footer-icon a:hover span { opacity: 1.0; }
+	.no-js footer .footer-icon-links li.footer-icon a:hover span { opacity: 1.0; }
 	
-	#site-footer .footer-icon-links li small 
+	footer .footer-icon-links li small 
 {	display: block;
 	font-size: 14px;
 	color: #777;
 	line-height: 120%; }
 	
-	#site-footer .footer-icon-links li:first-child 
+	footer .footer-icon-links li:first-child 
 {	margin-left: 0%; }
 	
-	.multiplebgs.cssgradients #site-footer 
+	.multiplebgs.cssgradients footer 
 {	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../i/bg-footer-noise.jpg); /* FF3.6 */
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(0,0,0,0.3)),color-stop(1, rgba(0,0,0,0.0))), url(../i/bg-footer-noise.jpg); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../i/bg-footer-noise.jpg); /* Chrome 10+, Saf6 */
@@ -1104,11 +1031,11 @@
 	-moz-background-size: 100px 15px, 140px 140px;
 	background-size: 100px 15px, 140px 140px; }
 	
-	.no-multiplebgs #site-footer, .no-cssgradients footer 
+	.no-multiplebgs footer, .no-cssgradients footer 
 {	background-image: url(../i/bg-footer-noise.jpg);
 	background-repeat: repeat; }
 	
-	#site-footer h3 
+	footer h3 
 {	color: #777;
 	font-size: 14px;
 	font-weight: bold;
@@ -1129,14 +1056,14 @@
 	height: 10px;
 	margin-top: 20px; }
 	
-	#site-footer h3 span 
+	footer h3 span 
 {	display: inline-block;
 	padding: 3px 10px;
 	position: relative;
 	top: -0.8em;
 	background: url(../i/bg-footer-noise.jpg) repeat; }
 	
-	#site-footer h3:after 
+	footer h3:after 
 {	content: "";
 	position: absolute;
 	left: 0;
@@ -1157,7 +1084,7 @@
 	width: 60%;
 	text-align: right; }
 	
-	#site-footer p.copyright 
+	footer p.copyright 
 {	margin: 10px 0 0 0;
 	float: left;
 	width: 40%;
@@ -1165,20 +1092,20 @@
 	line-height: 130%;
 	color: #777; }
 	
-	#site-footer p.copyright a 
+	footer p.copyright a 
 {	color: #aaa; }
 	
-	#site-footer p.copyright a:hover 
+	footer p.copyright a:hover 
 {	color: #fff; }
 	
-	#site-footer p.copyright > br { display: none; }
+	footer p.copyright > br { display: none; }
 	
-	#site-footer p.copyright span.sponsor-line 
+	footer p.copyright span.sponsor-line 
 {	display: block;
 	font-size: 10px;
 	margin: 1px 0 0 0; }
 	
-	#site-footer li.icon 
+	footer li.icon 
 {	position: relative;
 	background: none;
 	width: auto;
@@ -1187,19 +1114,19 @@
 	margin: 0 0 10px 20px;
 	font-size: 13px; }
 	
-	#site-footer li.icon a 
+	footer li.icon a 
 {	padding-left: 22px;
 	position: relative;
 	z-index: 10;
 	color: #aaa; }
 	
-	#site-footer li.icon a:hover 
+	footer li.icon a:hover 
 {	color: #FFF; }
 	
 	.footer-site-links li 
 {	display: inline-block; }
 	
-	#site-footer li.icon:before 
+	footer li.icon:before 
 {	content: "";
 	display: block;
 	height: 24px;
@@ -1210,50 +1137,50 @@
 	background: url(../i/footer-icons.png) no-repeat;
 	z-index: 5; }
 	
-	#site-footer li.icon-learning-center:before       { background-position: 1px 2px;}
-	#site-footer li.icon-forum:before                 { background-position: -101px 0;}
-	#site-footer li.icon-api:before                   { background-position: -33px 0;}
-	#site-footer li.icon-twitter:before               { background-position: -135px 0;}
-	#site-footer li.icon-irc:before                   { background-position: -67px 0;}
+	footer li.icon-learning-center:before       { background-position: 1px 2px;}
+	footer li.icon-forum:before                 { background-position: -101px 0;}
+	footer li.icon-api:before                   { background-position: -33px 0;}
+	footer li.icon-twitter:before               { background-position: -135px 0;}
+	footer li.icon-irc:before                   { background-position: -67px 0;}
 	
-	#site-footer li.icon-learning-center:hover:before { background-position: 1px -32px;}
-	#site-footer li.icon-forum:hover:before           { background-position: -101px -34px;}
-	#site-footer li.icon-api:hover:before             { background-position: -33px -34px;}
-	#site-footer li.icon-twitter:hover:before         { background-position: -135px -34px;}
-	#site-footer li.icon-irc:hover:before             { background-position: -67px -34px;}
+	footer li.icon-learning-center:hover:before { background-position: 1px -32px;}
+	footer li.icon-forum:hover:before           { background-position: -101px -34px;}
+	footer li.icon-api:hover:before             { background-position: -33px -34px;}
+	footer li.icon-twitter:hover:before         { background-position: -135px -34px;}
+	footer li.icon-irc:hover:before             { background-position: -67px -34px;}
 	
-	#site-footer .col 
+	footer .col 
 {	margin-left: 2.5%;
 	padding: 30px 0 20px 0;
 	height: 100%; }
 	
-	#site-footer .col:first-child 
+	footer .col:first-child 
 {	margin-left: 0 }
 	
-	#site-footer .constrain.fake 
+	footer .constrain.fake 
 {	background: url(../i/footer-comp.png) center 45px no-repeat;
 	height: 283px; }
 	
-	#site-footer .constrain.fake > div 
+	footer .constrain.fake > div 
 {	display: none; }
 	
-	#site-footer ul 
+	footer ul 
 {	}
 	
-	#site-footer ul li 
+	footer ul li 
 {	list-style: none;
 	padding: 0;
 	margin: 0;
 	line-height: 30px; }
 	
-	.jquery #site-footer a, .jquery-ui #site-footer a, .jquery-mobile #site-footer a, #site-footer .bottom 
+	.jquery footer a, .jquery-ui footer a, .jquery-mobile footer a, footer .bottom 
 {	color: #fff;
 	text-decoration: none; }
 	
-	#site-footer .bottom 
+	footer .bottom 
 {	margin: 0 10% 0 0; }
 	
-	#site-footer #legal 
+	footer #legal 
 {	clear: left;
 	display: block;
 	border-top: solid 1px #333;
@@ -1261,14 +1188,14 @@
 	-moz-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0; }
 	
-	#site-footer #legal .constrain 
+	footer #legal .constrain 
 {	background: none;
 	height: auto; }
 	
-	#site-footer .presentations 
+	footer .presentations 
 {	}
 	
-	#site-footer .presentations li 
+	footer .presentations li 
 {	float: left;
 	width: 45%;
 	min-width: 142px;
@@ -1276,8 +1203,8 @@
 	line-height: 130%;
 	font-size: 11px; }
 	
-	#site-footer .presentations li a > span,
-	#site-footer .books         li a > span 
+	footer .presentations li a > span,
+	footer .books         li a > span 
 {	display: block;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -1292,13 +1219,13 @@
 	-moz-background-clip: padding-box;
 	background-clip: padding-box; }
 	
-	#site-footer .presentations li a:hover > span,
-	#site-footer .books         li a:hover > span 
+	footer .presentations li a:hover > span,
+	footer .books         li a:hover > span 
 {	border-color: white;
 	-webkit-transition: none; }
 	
-	#site-footer .presentations li a > span:after,
-	#site-footer .books         li a > span:after 
+	footer .presentations li a > span:after,
+	footer .books         li a > span:after 
 {	content: "";
 	display: block;
 	position: absolute;
@@ -1313,35 +1240,35 @@
 	-moz-border-radius: 4px;
 	border-radius: 4px; }
 	
-	#site-footer .presentations li a:hover > span:after,
-	#site-footer .books         li a:hover > span:after 
+	footer .presentations li a:hover > span:after,
+	footer .books         li a:hover > span:after 
 {	background: -webkit-gradient(linear, 100% 0%, 55% 100%, from(rgba(255,255,255,0.02)), color-stop(0.5, rgba(255,255,255,0.3)), color-stop(0.505, rgba(255,255,255,0)), to(rgba(255,255,255,0))); }
 	
-	#site-footer .presentations li a > span img 
+	footer .presentations li a > span img 
 {	max-width: 100%;
 	height: auto; }
 	
-	#site-footer .presentations li a > br,
-	#site-footer .books         li a > br 
+	footer .presentations li a > br,
+	footer .books         li a > br 
 {	display: none; }
 	
-	#site-footer .presentations li a cite,
-	#site-footer .books         li a cite 
+	footer .presentations li a cite,
+	footer .books         li a cite 
 {	font-style: normal;
 	display: block;
 	margin-top: 3px;
 	font-size: 9px;
 	color: #aaa; }
 	
-	#site-footer .presentations li a cite, 
-	#site-footer .presentations li a strong,
-	#site-footer .books         li a cite, 
-	#site-footer .books         li a strong 
+	footer .presentations li a cite, 
+	footer .presentations li a strong,
+	footer .books         li a cite, 
+	footer .books         li a strong 
 {	line-height: 130%;
 	display: block;
 	font-weight: normal; }
 	
-	#site-footer .books li 
+	footer .books li 
 {	float: left;
 	width: 30%;
 	min-width: 95px;
@@ -1350,16 +1277,16 @@
 	line-height: 130%;
 	font-size: 11px; }
 	
-	#site-footer .books li:first-child 
+	footer .books li:first-child 
 {	margin-left: 2%; }
 	
-	#site-footer .books li a > span 
+	footer .books li a > span 
 {	width: 90px;
 	height: 114px; }
 	
-	#site-footer .books li a > span.top    { background-position: center top;}
-	#site-footer .books li a > span.bottom { background-position: center bottom;}
-	#site-footer .books li a > span        { background-position: center center;}
+	footer .books li a > span.top    { background-position: center top;}
+	footer .books li a > span.bottom { background-position: center bottom;}
+	footer .books li a > span        { background-position: center center;}
 	
 	/*******************************************************************************/
 	/* Global Container */
@@ -1420,7 +1347,7 @@
 	#container header nav ul li:hover, #container header nav ul li:hover a 
 {	background: none; }
 	
-	#container header nav ul li a:hover, #container header nav ul li.active a, #container header nav ul li.current-menu-item a
+	#container header nav ul li a:hover, #container header nav ul li.active a 
 {	background: none;
 	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
 	-moz-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
@@ -1507,7 +1434,8 @@
 	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 	position: relative;
-	z-index: 20; }
+	z-index: 20;
+	overflow: hidden; }
 	
 	#container #body .inner 
 {	padding: 2%; }
@@ -1531,10 +1459,9 @@
 	
 	/* Sidebar Left */
 	
-	#container #body.sidebar-left .inner {
-	width: 72.25%;
-	float: right;
-	}
+	#container #body.sidebar-left .inner 
+{	width: 72.25%;
+	float: right; }
 	
 	#container #body.sidebar-left #sidebar 
 {	float: left;
@@ -1551,10 +1478,10 @@
 	#container #body #sidebar 
 {	width: 20.5%;
 	position: relative;
-	display: block;
 	background: #eeeeee;
-	float: left;
-	padding: 0 1.5% 25px; }
+	height: 100%;
+	padding: 0 1.5% 10000px;
+	margin-bottom: -10000px; }
 	
 	#container #body #sidebar ul 
 {	float: left;
@@ -1600,7 +1527,7 @@
 	border-bottom: 1px solid #fff;
 	clear: both; }
 	
-	#container #body #sidebar h2, #container #body #sidebar h3.widget-title
+	#container #body #sidebar h2
 {	margin: 10px 0;
 	font-size: 20px;
 	text-shadow: 0 1px 1px #fff; }
@@ -1682,6 +1609,18 @@
 		padding: 0;
 		margin: 0;
 		width: 100%; }
+		
+		#sidebar .nav li.active
+	{	border: 0; }
+				
+		#sidebar .nav li.active a
+	{	color: #fff;
+		text-shadow: 0 -1px 1px #000;
+		background: #393939;
+		-webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
+		-moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
+		box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
+		border-top: 1px solid #000; }
 	
 		#sidebar .nav li:last-child
 	{	border: none;
@@ -1697,13 +1636,17 @@
 		text-decoration: none;
 		width: 100%;
 		display: block;
-		width: 100%;
-		padding: 5% 6%; }
+		width: 96%;
+		padding: 5% 10%;
+		margin: -1px 0 0 -8%; }
 		
-		.jquery-learning #sidebar h2, .jquery-learning #sidebar h3.widget-title
+		.jquery-learning #sidebar h2
 	{	background: url(../i/learning_category_icon.png) no-repeat 0 5px;
 		padding-left: 26px; }
 		
+		.jquery-learning #sidebar .paper
+	{	display: none; }
+	
 		.jquery-learning #sidebar .paper.subnav
 	{	position: absolute;
 		height: 100%;
@@ -1758,13 +1701,13 @@
 		.jquery-learning #sidebar .paper.subnav .inner .white_bg
 	{	background: #fff;
 		margin-top: -110px;
-		width: 100%;
+		width: 84%;
 		height: 100%;
 		position: absolute;
 		margin-left: -2%; }
 		
 		.jquery-learning #sidebar .paper.subnav .inner .white_bg ul
-	{	width: 90%;
+	{	padding: 0 6.5% 0 0;
 		height: 100%;
 		background: #fff url(../i/learning_paper_line_bg.png) repeat-y 0 0;
 		position: absolute;
@@ -1779,13 +1722,17 @@
 	{	opacity: 1; }
 	
 	    .jquery-learning #sidebar .paper.subnav .inner ul li a
-	{	font-family: 'Gloria Hallelujah', cursive;
-	    font-size: 16px;
+	{	/* font-family: 'Gloria Hallelujah', cursive; */
+	    font-size: 14px;
+	    line-height: 21px;
 	    font-weight: normal;
 		text-decoration: none; }
 		
+		.jquery-learning #sidebar .paper.subnav .inner ul li.active a
+	{	font-weight: bold; }
+		
 		.jquery-learning #sidebar .paper.subnav .inner ul li a:hover
-	{	border-bottom: 1px dashed #999; }
+	{	font-weight: bold; }
 		
 		.jquery-learning #sidebar .paper.subnav .inner ul li 
 	{	margin: 0 0 11px 44px; 
@@ -1811,6 +1758,7 @@
 	{	float: left;
 		display: block;
 		width: 35%;
+		min-height: 45px;
 		border-right: 1px solid #fff;
 		-webkit-box-shadow: 1px 0 0 #b7b7b7; }
 	
@@ -1847,31 +1795,150 @@
 		letter-spacing: 0;
 		margin: 4px 0 0 0; }
 	
-
+	/*******************************************************************************/
+	/* Pagination
+	/*******************************************************************************/
+		
+		#body .inner .meta .pagination
+	{	}
+		
+		#body .inner .meta .pagination .article
+	{	}
+		
+		#body .inner .meta .pagination .previous
+	{	}
+		
+		#body .inner .meta .pagination .previous .article
+	{	}
+	
+		#body .inner .meta .pagination .previous .direction
+	{	}
+		
+		#body .inner .meta .pagination .next
+	{	}
+	
+		#body .inner .meta .pagination .next .article
+	{	}
+	
+		#body .inner .meta .pagination .next .direction
+	{	}
 						
 	
+	/*******************************************************************************/
+	/*	jQuery.com List Page Documentation */
+	/*******************************************************************************/
+		
+		.jquery .inner .method-list
+	{	}
+	
+		.jquery .inner .method-list li
+	{	border-bottom: 1px solid #eee;
+		margin: 0 0 15px 0; }
+	
+		.jquery .inner .method-list li .entry-title
+	{	font-size: 18px;
+		letter-spacing: 0; }
+	
+		.jquery .inner .method-list li .entry-meta
+	{	}
+		
+		.jquery .inner .method-list li .entry-meta .cat-links
+	{	float: right;
+		border: 1px solid #eee;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		padding: 3px 10px;
+		margin: -20px 0 0 0; }
+		
+	/*******************************************************************************/
+	/*	jQuery.com Single Page Documentation */
+	/*******************************************************************************/
+		
+		.jquery .inner .entry .section-title
+	{	background: #3e92c6;
+		border: 1px solid #054873;
+		padding: 10px 15px;
+		font-size: 16px;
+		color: #fff;
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+		letter-spacing: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-weight: normal;
+		background: #0769a8; }
+		
+			.jquery .inner .entry .section-title .name
+		{	}
+			
+			.jquery .inner .entry .section-title .returns
+		{	float: right;
+			font-style: italic; }
+			
+			.jquery .inner .entry .section-title .returns a
+		{	color: #fff; }
+			
+			.jquery .inner .entry .desc
+		{	font-size: 16px;
+			padding: 10px 15px;
+			color: #999;
+			font-style: italic; }
+			
+			.jquery .inner .entry .desc strong
+		{	color: #444; }
+		
+			.jquery .inner .entry .signatures
+		{	background: #eee;
+			border: 1px solid #ccc;
+			padding: 3%;
+			margin: 0 auto 30px;
+			max-width: 750px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			text-shadow: 0 1px 0 #fff; }
+				
+				.jquery .inner .entry .signatures li
+			{	list-style: none;
+				margin: 0 0 20px;
+				padding: 0; }
+				
+				.jquery .inner .entry .signatures li h4
+			{	border-bottom: 1px solid #ccc;
+				padding: 0 0 10px 0;
+				font-size: 16px;
+				letter-spacing: 0; }
+				
+				.jquery .inner .entry .signatures li .versionAdded
+			{	float: right;
+				font-size: 12px;
+				color: #999;
+				font-weight: normal;
+				letter-spacing: 0; }	
+
 	/*******************************************************************************/
 	/* Media Queries
 	/*******************************************************************************/
 				
 	@media all and (max-width: 1180px) and (min-width: 600px){ 
 		
-			#site-footer .presentations li 
+			footer .presentations li 
 		{	width: 90%;
 			clear: left;
 			padding-bottom: 10px; }
 			
-			#site-footer .presentations li a > span 
+			footer .presentations li a > span 
 		{	float: left;
 			margin: 0 8px 0 0; }
 			
-			#site-footer ul.books li 
+			footer ul.books li 
 		{	width: 90%;
 			clear: left;
 			padding-bottom: 9px;
 			margin: 0 0 0 3% !important; }
 			
-			#site-footer .books li a > span 
+			footer .books li a > span 
 		{	float: left;
 			height: 60px;
 			margin: 0 8px 0 0; }
@@ -1880,10 +1947,10 @@
 	
 	@media all and (max-width: 1000px) and (min-width: 600px){ 
 	
-			#site-footer ul.footer-icon-links 
+			footer ul.footer-icon-links 
 		{	padding-bottom: 0; }
 			
-			#site-footer ul.footer-icon-links li 
+			footer ul.footer-icon-links li 
 		{	float: none;
 			clear: left;
 			width: 98% !important;
@@ -1891,23 +1958,23 @@
 			margin-bottom: 10px;
 			margin-left: 0; }
 			
-			#site-footer .footer-icon-links li small 
+			footer .footer-icon-links li small 
 		{	display: inline; }
 			
-			#site-footer .footer-icon-links li br
+			footer .footer-icon-links li br
 		{	display: none; }
 			
-			#site-footer .presentations li 
+			footer .presentations li 
 		{	text-align: center; }
 			
-			#site-footer .presentations li a > span 
+			footer .presentations li a > span 
 		{	float: none;
 			margin: 0 auto 10px auto; }
 			
-			#site-footer .books li 
+			footer .books li 
 		{	text-align: center; }
 			
-			#site-footer .books li a > span
+			footer .books li a > span
 		{	margin: 0 auto 8px auto;
 			float: none; }
 	}
@@ -1952,7 +2019,7 @@
 			margin: 0 auto;
 			width: 200px; }
 			
-			#site-footer .col 
+			footer .col 
 		{	clear: both;
 			width: 100%;
 			padding: 30px 0 0;
@@ -2005,29 +2072,36 @@
 		{	padding: 3%;
 			width: 94%; }
 			
-			#site-footer ul.books
+			#container #body #sidebar .nav li a
+		{	width: 87%;
+			margin-left: -3.5%; }
+			
+			footer ul.books
 		{	overflow: hidden; }
 		
-			#site-footer .books li,
-			#site-footer .presentations li 
+			footer .books li,
+			footer .presentations li 
 		{	text-align: center; }
 			
-			#site-footer .books li a > span,
-			#site-footer .presentations li a > span 
+			footer .books li a > span,
+			footer .presentations li a > span 
 		{	margin: 0 auto 8px auto; }
 			
-			#site-footer .footer-site-links 
+			footer .footer-site-links 
 		{	float: none;
 			text-align: center;
 			width: 100%; }
 			
-			#site-footer .footer-site-links li:first-child
+			footer .footer-site-links li:first-child
 		{	margin-left: 0; }
 			
-			#site-footer p.copyright
+			footer p.copyright
 		{	text-align: center;
 			width: auto;
 			float: none; }
+			
+			.jquery-learning #sidebar .paper.subnav 
+		{	display: none; }
 	}
 	
 	@media all and (max-width: 400px){ 
@@ -2048,27 +2122,27 @@
 			header nav.top li a 
 		{	padding: 0 8px; }
 			
-			#site-footer ul.footer-icon-links 
+			footer ul.footer-icon-links 
 		{	padding-left: 5%; }
 			
-			#site-footer ul.footer-icon-links li 
+			footer ul.footer-icon-links li 
 		{	float: none;
 			clear: left;
 			width: 98%;
 			overflow: hidden;
 			margin-bottom: 10px; }
 			
-			#site-footer .footer-icon-links li small 
+			footer .footer-icon-links li small 
 		{	display: inline; }
 			
-			#site-footer .footer-icon-links li br 
+			footer .footer-icon-links li br 
 		{	display: none; }
 			
-			#site-footer .constrain 
+			footer .constrain 
 		{	padding: 0; }
 			
-			#site-footer h3,
-			#site-footer h3:after 
+			footer h3,
+			footer h3:after 
 		{	border-left: none;
 			border-right: none;
 			-webkit-border-radius: 0;
