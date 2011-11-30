@@ -138,6 +138,7 @@ if (stristr($site, "qunitjs-com")) {
       <li class="dropdown"><a href="http://jquery.org/getting-involved/" title="Contribute">Contribute</a>
         <ul>
           <li><a href="http://jquery.org/donate/" title="Donate">Donate</a></li>
+          <li><a href="http://jquery.org/sponsor/" title="Sponsor">Sponsor</a></li>
           <li><a href="http://jquery.org/getting-involved/#fix-bugs">Fix Bugs</a></li>
           <li><a href="http://jquery.org/getting-involved/#answer-questions">Answer Questions</a></li>
           <li><a href="http://jquery.org/getting-involved/#write-documentation">Write Documentation</a></li>
