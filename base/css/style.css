@@ -1945,53 +1945,147 @@
 		font-weight: normal;
 		background: #0769a8; }
 		
-			.jquery .inner .entry .section-title .name
-		{	}
-			
-			.jquery .inner .entry .section-title .returns
-		{	float: right;
-			font-style: italic; }
-			
-			.jquery .inner .entry .section-title .returns a
-		{	color: #fff; }
-			
-			.jquery .inner .entry .desc
-		{	font-size: 16px;
-			padding: 10px 15px;
-			color: #999;
-			font-style: italic; }
-			
-			.jquery .inner .entry .desc strong
-		{	color: #444; }
+		.jquery .inner .entry .section-title .name
+	{	}
 		
-			.jquery .inner .entry .signatures
-		{	background: #eee;
-			border: 1px solid #ccc;
-			padding: 3%;
-			margin: 0 auto 30px;
-			max-width: 750px;
-			-webkit-border-radius: 3px;
-			-moz-border-radius: 3px;
-			border-radius: 3px;
-			text-shadow: 0 1px 0 #fff; }
-				
-				.jquery .inner .entry .signatures li
-			{	list-style: none;
-				margin: 0 0 20px;
-				padding: 0; }
-				
-				.jquery .inner .entry .signatures li h4
-			{	border-bottom: 1px solid #ccc;
-				padding: 0 0 10px 0;
-				font-size: 16px;
-				letter-spacing: 0; }
-				
-				.jquery .inner .entry .signatures li .versionAdded
-			{	float: right;
-				font-size: 12px;
-				color: #999;
-				font-weight: normal;
-				letter-spacing: 0; }	
+		.jquery .inner .entry .section-title .returns
+	{	float: right;
+		font-style: italic; }
+		
+		.jquery .inner .entry .section-title .returns a
+	{	color: #fff; }
+		
+		.jquery .inner .entry .desc
+	{	font-size: 16px;
+		padding: 10px 15px;
+		color: #999;
+		font-style: italic; }
+		
+		.jquery .inner .entry .desc strong
+	{	color: #444; }
+	
+		.jquery .inner .entry .signatures
+	{	background: #eee;
+		border: 1px solid #ccc;
+		padding: 3%;
+		margin: 0 auto 30px;
+		max-width: 750px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		text-shadow: 0 1px 0 #fff; }
+			
+		.jquery .inner .entry .signatures li
+	{	list-style: none;
+		margin: 0 0 20px;
+		padding: 0; }
+		
+		.jquery .inner .entry .signatures li h4
+	{	border-bottom: 1px solid #ccc;
+		padding: 0 0 10px 0;
+		font-size: 16px;
+		letter-spacing: 0; }
+		
+		.jquery .inner .entry .signatures li .versionAdded
+	{	float: right;
+		font-size: 12px;
+		color: #999;
+		font-weight: normal;
+		letter-spacing: 0; }	
+
+	/*******************************************************************************/
+	/*	jquery-ui List Page Documentation */
+	/*******************************************************************************/
+
+		.jquery-ui .inner .method-list
+	{	}
+
+		.jquery-ui .inner .method-list li
+	{	border-bottom: 1px solid #eee;
+		margin: 0 0 15px 0; }
+
+		.jquery-ui .inner .method-list li .entry-title
+	{	font-size: 18px;
+		letter-spacing: 0; }
+
+		.jquery-ui .inner .method-list li .entry-meta
+	{	}
+
+		.jquery-ui .inner .method-list li .entry-meta .cat-links
+	{	float: right;
+		border: 1px solid #eee;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		padding: 3px 10px;
+		margin: -20px 0 0 0; }
+
+	/*******************************************************************************/
+	/*	jquery-ui Single Page Documentation */
+	/*******************************************************************************/
+
+		.jquery-ui .inner .entry .section-title
+	{	background: #3e92c6;
+		border: 1px solid #955803;
+		padding: 10px 15px;
+		font-size: 16px;
+		color: #fff;
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+		letter-spacing: 0;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		font-weight: normal;
+		background: #ce8c04; }
+
+		.jquery-ui .inner .entry .section-title .name
+	{	}
+
+		.jquery-ui .inner .entry .section-title .returns
+	{	float: right;
+		font-style: italic; }
+
+		.jquery-ui .inner .entry .section-title .returns a
+	{	color: #fff; }
+
+		.jquery-ui .inner .entry .desc
+	{	font-size: 16px;
+		padding: 10px 15px;
+		color: #999;
+		font-style: italic; }
+
+		.jquery-ui .inner .entry .desc strong
+	{	color: #444; }
+
+		.jquery-ui .inner .entry .signatures
+	{	background: #eee;
+		border: 1px solid #ccc;
+		padding: 3%;
+		margin: 0 auto 30px;
+		max-width: 750px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		text-shadow: 0 1px 0 #fff; }
+
+		.jquery-ui .inner .entry .signatures li
+	{	list-style: none;
+		margin: 0 0 20px;
+		padding: 0; }
+
+		.jquery-ui .inner .entry .signatures li h4
+	{	border-bottom: 1px solid #ccc;
+		padding: 0 0 10px 0;
+		font-size: 16px;
+		letter-spacing: 0; }
+
+		.jquery-ui .inner .entry .signatures li .versionAdded
+	{	float: right;
+		font-size: 12px;
+		color: #999;
+		font-weight: normal;
+		letter-spacing: 0; }	
+
 
 	/*******************************************************************************/
 	/* Media Queries

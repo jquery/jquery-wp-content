@@ -1,0 +1,580 @@
+<!DOCTYPE html> 
+<!--[if lt IE 7 ]> <html class="no-js ie6 api-jqueryui-com jquery-ui" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 api-jqueryui-com jquery-ui" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 api-jqueryui-com jquery-ui" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9 api-jqueryui-com jquery-ui" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js api-jqueryui-com jquery-ui" dir="ltr" lang="en-US"> <!--<![endif]-->
+<head> 
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>.accordion() | api.jqueryui.com</title> 
+ 
+<meta name="author" content="The jQuery Project - jQuery.org"> 
+<meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library"> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+<link rel="shortcut icon" href="http://li367-225.members.linode.com/wp-content/themes/api-jqueryui-com/i/favicon.ico">
+<link rel="stylesheet" href="resources/css/style.css?v=1">
+<link rel="stylesheet" href="http://li367-225.members.linode.com/wp-content/themes/api-jqueryui-com/style.css">
+<link rel="pingback" href="http://li367-225.members.linode.com/xmlrpc.php" />
+
+<script src="resources/js/respond.min.js"></script>
+<script src="resources/js/modernizr-1.5.min.js"></script>
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="resources/js/selectivizr.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="api.jqueryui.com &raquo; Feed" href="http://li367-225.members.linode.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="api.jqueryui.com &raquo; Comments Feed" href="http://li367-225.members.linode.com/comments/feed/" />
+<script type='text/javascript' src='http://li367-225.members.linode.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://li367-225.members.linode.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://li367-225.members.linode.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://li367-225.members.linode.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='api.jqueryui.com' href='http://li367-225.members.linode.com/' />
+<link rel='start' title='.accordion()' href='http://li367-225.members.linode.com/accordion/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='canonical' href='http://li367-225.members.linode.com/accordion/' />
+<link rel='shortlink' href='http://li367-225.members.linode.com/?p=13' />
+<script src='http://jakeweary.com/?dm=13c9728c8f8f28e416be6070b512b4b1&amp;action=load&amp;blogid=4&amp;siteid=1&amp;t=528975707&amp;back=http%3A%2F%2Fli367-225.members.linode.com%2Faccordion%2F' type='text/javascript'></script>
+</head> 
+<body class="single single-post postid-13 single-format-standard single-author singular two-column right-sidebar">
+
+<!-- projects -->
+<div class="project-select">
+  <ul class="constrain"> 
+    <li>
+      <a href="http://jquery.com/" title="" class=""> 
+        <img src="resources/i/logo-top-jquery.png" alt="jQuery" /> 
+        <em>The core JS framework that allows you to write less, do more.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="http://jqueryui.com/" title="" class=""> 
+        <img src="resources/i/logo-top-ui.png" alt="jQuery UI" /> 
+        <em>The officially supported User Interface library for jQuery.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="http://jquerymobile.com/" title="" class=""> 
+        <img src="resources/i/logo-top-mobile.png" alt="jQuery Mobile"> 
+        <em>Build mobile web apps with jQuery using this framework.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="http://sizzlejs.com/" title="" class=""> 
+        <img src="resources/i/logo-top-sizzle.png" alt="SizzleJS" /> 
+        <em>A smoking fast CSS selector engine for JavaScript.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="http://qunitjs.com/" title="" class=""> 
+        <img src="resources/i/logo-top-qunit.png" alt="QUnit" /> 
+        <em>Write solid JavaScript apps by unit testing with QUnit.</em> 
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- /projects -->
+
+<!-- nav -->
+<header class="border clearfix">
+  
+  <nav class="constrain clearfix top">
+    <ul class="projects">
+      <li class="jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
+      <li class="jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+      <li class="jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+      <li class="toggle-projects"><a href="http://jquery.org/projects/" title="All Projects">All Projects</a></li>
+    </ul>
+    <ul class="links">
+      <li><a href="http://learn.jquery.com/">Learning</a></li>
+      <li class="dropdown"><a href="http://jquery.org/support/" title="Support">Support</a>
+        <ul>
+          <li><a href="http://forum.jquery.com/" title="Forum">Forum</a></li>
+          <li><a href="http://irc.jquery.org/" title="IRC/Chat">IRC/Chat</a></li>
+          <li><a href="http://jquery.org/bugs" title="Report a Bug">Report a Bug</a></li>
+          <li><a href="http://jquery.org/support#enterprise-support" title="Enterprise Support">Enterprise Support</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="#" title="Community">Community</a>
+        <ul>
+           <li><a href="http://blog.jquery.com/" title="Blog">Blog</a></li>
+               <li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
+               <li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
+               <li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
+               <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="http://jquery.org/getting-involved/" title="Contribute">Contribute</a>
+        <ul>
+          <li><a href="http://jquery.org/donate/" title="Donate">Donate</a></li>
+          <li><a href="http://jquery.org/sponsor/" title="Sponsor">Sponsor</a></li>
+          <li><a href="http://jquery.org/getting-involved/#fix-bugs">Fix Bugs</a></li>
+          <li><a href="http://jquery.org/getting-involved/#answer-questions">Answer Questions</a></li>
+          <li><a href="http://jquery.org/getting-involved/#write-documentation">Write Documentation</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="http://jquery.org/about/" title="">About</a>
+        <ul class="last">
+              <li><a href="http://jquery.org/projects/" title="Projects">Projects</a></li>
+              <li><a href="http://jquery.org/team/" title="Team">Team</a></li>
+              <li><a href="http://jquery.org/history/" title="History">History</a></li>
+              <li><a href="http://jquery.org/sponsors/" title="Sponsors">Sponsors</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+</header>
+<!-- /nav -->
+
+<!-- container --> 
+<div id="container" class="constrain"> 
+  
+  <!-- header -->
+  <header class="clearfix">
+  
+    <!-- logo -->
+    <h1 class="site-title"><a href="/" title="api.jqueryui.com">api.jqueryui.com</a></h1>
+    <!-- /logo -->
+    
+    <!-- ads or events -->
+    <aside></aside>
+    <!-- /ads  or events -->
+    
+
+
+    <!-- secondary nav -->
+    <nav class="clearfix">
+
+      <div class="menu-top-container"><ul id="menu-top" class="menu"><li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="http://jakewearyui.com/demos/">Demos</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="http://jakewearyui.com/download/">Download</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="http://li367-225.members.linode.com/">API Documentation</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://jakewearyui.com/themes/">Themes</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="http://jakewearyui.com/development/">Development</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://forum.jquery.com/using-jquery-ui">Forum</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="http://blog.jakewearyui.com/">Blog</a></li>
+</ul></div>
+            <form method="get" id="searchform" class="search" action="http://li367-225.members.linode.com/">
+        <input type="text" id="search" name="s"></li>
+        <label for="search" class="text">Search api.jqueryui.com</label>
+        <a href="#" class="icon icon-search" title="Submit Search">Submit Search</a>
+        <input type="hidden" name="searchblogs" value="1,2,3,4,5,6,7,8,9,10,11,12">
+      </form>
+    </nav>
+    <!-- /secondary nav -->
+
+  </header>
+  <!-- /header -->
+                
+  <!-- body -->
+    <div id="body" class="clearfix sidebar-right">
+    
+    <!-- inner -->
+    <div class="inner">
+    
+<h2 class="title">.accordion()</h2>
+<article class="entry">
+		Expand one section of content at a time in a vertical container.
+		Each section has a header that can be clicked or hovered to toggle visibility with an optional animation.
+	<nav><ul>
+<li><a href="#overview">Overview</a></li>
+<li>
+<a href="#options">Options</a><ul>
+<li><a href="#option-active">active</a></li>
+<li><a href="#option-animated">animated</a></li>
+<li><a href="#option-collapsible">collapsible</a></li>
+<li><a href="#option-event">event</a></li>
+<li><a href="#option-header">header</a></li>
+<li><a href="#option-heightStyle">heightStyle</a></li>
+<li><a href="#option-icons">icons</a></li>
+</ul>
+</li>
+<li>
+<a href="#methods">Methods</a><ul>
+<li><a href="#method-refresh">refresh</a></li>
+<li><a href="#method-explode">explode</a></li>
+</ul>
+</li>
+<li>
+<a href="#events">Events</a><ul>
+<li><a href="#event-beforeActivate">beforeActivate</a></li>
+<li><a href="#event-activate">activate</a></li>
+</ul>
+</li>
+<li><a href="#theming">Theming</a></li>
+<li><a href="#examples">Examples</a></li>
+</ul></nav><section id="overview"><header><h2 class="section-title">Overview</h2></header><p>
+		<p>The markup of your accordion container needs pairs of headers and content panels:</p>
+
+		<pre>&lt;div id="accordion"&gt;
+		    &lt;h3&gt;&lt;a href="#"&gt;First header&lt;/a&gt;&lt;/h3&gt;
+		    &lt;div&gt;First content&lt;/div&gt;
+		    &lt;h3&gt;&lt;a href="#"&gt;Second header&lt;/a&gt;&lt;/h3&gt;
+		    &lt;div&gt;Second content&lt;/div&gt;
+		&lt;/div&gt;</pre>
+
+		<p>If you use a different element for the header, specify the header-option with an appropriate selector, eg. header: 'a.header'. The content element must be always next to its header.</p>
+		<p>If you have links inside the accordion content and use a-elements as headers, add a class to them and use that as the header, eg. header: 'a.header'.</p>
+		<p>Use activate(Number) to change the active content programmatically.</p>
+
+		<h4>NOTE: If you want multiple sections open at once, don't use an accordion</h4>
+		<p>An accordion doesn't allow more than one content panel to be open at the same time, and it takes a lot of effort to do that. If you are looking for a widget that allows more than one content panel to be open, don't use this. Usually it can be written with a few lines of jQuery instead, something like this:</p>
+
+		<pre>jQuery(document).ready(function(){
+			$('.accordion .head').click(function() {
+				$(this).next().toggle();
+				return false;
+			}).next().hide();
+		});</pre>
+
+		<p>Or animated:</p>
+
+		<pre>jQuery(document).ready(function(){
+			$('.accordion .head').click(function() {
+				$(this).next().toggle('slow');
+				return false;
+			}).next().hide();
+		});</pre>
+	</p></section><section id="options"><header><h2 class="section-title">Options</h2></header><ul>
+<li id="option-active">
+<h3>active</h3>
+<p><strong>Type:</strong>Integer, Boolean</p>
+<p><strong>Default:</strong>0</p>
+<p>Select the active (open) panel by zero-based index. Negative values select backward from the last. When collapsible: true, active: false closees the accordion, otherwise setting active to false will have no effect.</p>
+</li>
+<li id="option-animated">
+<h3>animated</h3>
+<p><strong>Type:</strong></p>
+<p><strong>Default:</strong>slide</p>
+<p>Choose your favorite animation, or disable them (set to false). In addition to the default, 'bounceslide' and all defined easing methods are supported ('bounceslide' requires UI Effects Core).</p>
+</li>
+<li id="option-collapsible">
+<h3>collapsible</h3>
+<p><strong>Type:</strong></p>
+<p><strong>Default:</strong>false</p>
+<p>Whether all the sections can be closed at once. Allows collapsing the active section by the triggering event (click is the default).</p>
+</li>
+<li id="option-event">
+<h3>event</h3>
+<p><strong>Type:</strong></p>
+<p><strong>Default:</strong>click</p>
+<p>The event on which to trigger the accordion. For hover, use 'mouseover'.</p>
+</li>
+<li id="option-header">
+<h3>header</h3>
+<p><strong>Type:</strong></p>
+<p><strong>Default:</strong>&gt; li &gt; :first-child, &gt; :not(li):even</p>
+<p>Selector for the header element. Must be a selector that applies to the accordion container element, via .find(). The default covers both ui/li accordions, as well as flat structures like dl/dt/dd</p>
+</li>
+<li id="option-heightStyle">
+<h3>heightStyle</h3>
+<p><strong>Type:</strong></p>
+<p><strong>Default:</strong>auto</p>
+<p>
+				<p>Controls the height of the accordion and each panel.</p>
+				<p>Possible values:</p>
+				<dl>
+					<dt>auto</dt>
+						<dd>all panels will be set to the height of the tallest panel</dd>
+					<dt>fill</dt>
+						<dd>expand to the available height based on the accordion's parent height</dd>
+					<dt>content</dt>
+						<dd>each panel will only be as tall as its content</dd>
+				</dl>
+			</p>
+</li>
+<li id="option-icons">
+<h3>icons</h3>
+<p><strong>Type:</strong></p>
+<p><strong>Default:</strong>{ "header": "ui-icon-triangle-1-e", "headerSelected": "ui-icon-triangle-1-s" }</p>
+<p>Icons to use for headers. Icons may be specified for 'header' and 'headerSelected', and we recommend using the icons native to the jQuery UI CSS Framework manipulated by <a href="http://www.themeroller.com/">jQuery UI ThemeRoller</a></p>
+</li>
+</ul></section><section id="methods"><header><h2 class="section-title">Methods</h2></header><ul>
+<li id="method-refresh">
+<h3>refresh(
+	      
+	      )</h3>
+<p>
+				Recomputes panel dimensions.
+			</p>
+</li>
+<li id="method-explode">
+<h3>explode(
+	      pieces, [implode]
+	      )</h3>
+<p>
+				Make the accordion explode
+			</p> <ul>
+<li>pieces: Number, Number of pieces to explode into<ul></ul>
+</li>
+<li>implode: Boolean, Set to true to make the accordion implode. Leave default-false to explode.<ul></ul>
+</li>
+</ul>
+</li>
+</ul></section><section id="events"><header><h2 class="section-title">Events</h2></header><ul>
+<li id="event-beforeActivate">
+<h3>beforeActivate(
+	      event, ui	      
+	      )</h3>
+<p>
+				Triggered directly after a panel is activated. Can be cancelled to prevent the panel from activating.
+			</p> <ul>
+<li>event: Event, 
+					Type depends on event option. Commonly would be click or mouseover.
+				<ul></ul>
+</li>
+<li>ui: Object, 
+					Extra event data for the ui accordion beforeActivate event
+				<ul>
+<li>newContent: jQuery</li>
+<li>newHeader: jQuery</li>
+<li>oldContent: jQuery</li>
+<li>oldHeader: jQuery</li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="event-activate">
+<h3>activate(
+	      event, ui	      
+	      )</h3>
+<p>
+				Triggered after the accordion panel has be activated (after animation completes).
+			</p> <ul>
+<li>event: Event</li>
+<li>ui: Object, 
+					Extra event data for the ui accordion activate event
+				<ul>
+<li>newContent: jQuery, Refers to the activated content panel</li>
+<li>newHeader: jQuery</li>
+<li>oldContent: jQuery</li>
+<li>oldHeader: jQuery</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></section><section id="theming"><header><h2 class="section-title">Theming</h2></header><xsl-copy-of select="theming/node()"></xsl-copy-of></section><section id="examples"><header><h2 class="section-title">Examples</h2></header><h4>Example: <span class="desc">Initialize an accordion with default options.</span>
+</h4>
+<pre><code class="example demo-code">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Initialize an accordion with default options.&lt;/title&gt;
+  &lt;link rel="stylesheet" href="jquery-ui.css"&gt;
+  &lt;script src="jquery.js"&gt;&lt;/script&gt;
+  &lt;script src="jquery-ui.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div id="accordion"&gt;
+		&lt;h3&gt;&lt;a href="#"&gt;Section 1&lt;/a&gt;&lt;/h3&gt;
+		&lt;div&gt;
+			&lt;p&gt;
+			Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+			&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;h3&gt;&lt;a href="#"&gt;Section 2&lt;/a&gt;&lt;/h3&gt;
+		&lt;div&gt;
+			&lt;p&gt;
+			Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+			purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+			&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;h3&gt;&lt;a href="#"&gt;Section 3&lt;/a&gt;&lt;/h3&gt;
+		&lt;div&gt;
+			&lt;p&gt;
+			Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+			Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+			&lt;/p&gt;
+			&lt;ul&gt;
+				&lt;li&gt;List item one&lt;/li&gt;
+				&lt;li&gt;List item two&lt;/li&gt;
+				&lt;li&gt;List item three&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;script&gt;
+		$("#accordion").accordion();
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4>Demo:</h4>
+<div class="demo code-demo"></div>
+<h4>Example: <span class="desc">Initialize an accordion with default options.</span>
+</h4>
+<pre><code class="example demo-code">&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;title&gt;Initialize an accordion with default options.&lt;/title&gt;
+  &lt;link rel="stylesheet" href="jquery-ui.css"&gt;
+  &lt;style&gt;
+		.accordion-container {
+			padding: 10px;
+			width: 350px;
+			height: 220px;
+		}
+	  &lt;/style&gt;
+  &lt;script src="jquery.js"&gt;&lt;/script&gt;
+  &lt;script src="jquery-ui.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="accordion-container"&gt;
+		&lt;div id="accordion"&gt;
+			&lt;h3&gt;&lt;a href="#"&gt;Section 1&lt;/a&gt;&lt;/h3&gt;
+			&lt;div&gt;
+				&lt;p&gt;
+				Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;h3&gt;&lt;a href="#"&gt;Section 2&lt;/a&gt;&lt;/h3&gt;
+			&lt;div&gt;
+				&lt;p&gt;
+				Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+				purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+				&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;h3&gt;&lt;a href="#"&gt;Section 3&lt;/a&gt;&lt;/h3&gt;
+			&lt;div&gt;
+				&lt;p&gt;
+				Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+				Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+				&lt;/p&gt;
+				&lt;ul&gt;
+					&lt;li&gt;List item one&lt;/li&gt;
+					&lt;li&gt;List item two&lt;/li&gt;
+					&lt;li&gt;List item three&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;script&gt;
+		$( "#accordion" ).accordion({
+			heightStyle: "fill"
+		});
+	&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4>Demo:</h4>
+<div class="demo code-demo"></div></section></article>
+
+               
+    </div>
+    <!-- /inner -->
+    
+            		<div id="sidebar" class="widget-area" role="complementary">
+			
+				<aside id="archives" class="widget">
+					<h3 class="widget-title">Archives</h3>
+					<ul>
+							<li><a href='http://li367-225.members.linode.com/2011/11/' title='November 2011'>November 2011</a></li>
+					</ul>
+				</aside>
+
+				<aside id="meta" class="widget">
+					<h3 class="widget-title">Meta</h3>
+					<ul>
+												<li><a href="http://li367-225.members.linode.com/wp-login.php">Log in</a></li>
+											</ul>
+				</aside>
+
+					</div><!-- #sidebar .widget-area -->
+        
+  </div>
+  <!-- /body -->
+
+</div>
+<!-- /container -->
+
+<!-- footer -->
+<footer id="site-footer" class="clearfix">
+	  
+  <div class="constrain">
+  	
+  	  	
+    <div class="col3-2 col">
+      <h3><span>Quick Access</span></h3>
+      <div class="cdn">
+        <strong>CDN <em>CSS</em></strong>
+        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css</span>
+      </div>
+      <div class="cdn">
+        <strong>CDN <em>JS</em></strong>
+        <span>//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</span>
+      </div>
+      <div class="cdn">
+        <strong>CDN <em>JS</em></strong>
+        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js</span>
+      </div>
+      <div class="download">
+        <strong>Download jQuery UI 1.8.16 (for jQuery 1.3.2+):</strong>
+        <span><a href="#">Development Bundle</a>
+        <a href="#">Themes</a></span>
+      </div>
+      <ul class="footer-icon-links">
+        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-ui">Github <small>jQuery UI <br>Source</small></a></li>
+        <li class="footer-icon icon-forum"><a href="http://forum.jquery.com/using-jquery-ui">Forum <small>Community <br>Support</small></a></li>
+        <li class="footer-icon icon-bugs"><a href="http://bugs.jqueryui.com">Bugs <small>Issue <br>Tracker</small></a></li>
+      </ul>
+    </div>
+    
+    <div class="col3-1 col">
+      <h3><span>Books</span></h3>
+      <ul class="books">
+        <li>
+          <a href="#">
+            <span class="bottom"><img src="http://li367-225.members.linode.com/wp-content/themes/jquery/content/books/jquery-ui-1.8.jpg" width="92" height="114" /></span>
+            <strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br />
+            <cite>Dan Wellman</cite>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><img src="http://li367-225.members.linode.com/wp-content/themes/jquery/content/books/jquery-ui-themes.jpg" width="92" height="114" /></span>
+            <strong>jQuery UI Themes</strong><br />
+            <cite>Adam Boduch</cite>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="legal">
+      <ul class="footer-site-links">
+        <li class="icon-learning-center icon"><a href="#">Learning Center</a></li>
+        <li class="icon-forum icon"><a href="http://forum.jquery.com/using-jquery-ui">Forum</a></li>
+        <li class="icon-api icon"><a href="http://li367-225.members.linode.com/">API</a></li>
+        <li class="icon-twitter icon"><a href="http://twitter.com/jqueryui">Twitter</a></li>
+        <li class="icon-irc icon"><a href="#">IRC</a></li>
+      </ul>
+        <p class="copyright">Copyright &copy; 2011 by <a href="http://jquery.org/team/">The jQuery Project</a>.<br /><span class="sponsor-line">Sponsored by <a href="http://mediatemple.net" class="mt-link">Media Temple</a> and <a href="http://jquery.org/sponsors/">others</a>.</span></p>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="resources/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+
+<script id="tooltip-template" type="text/html"> 
+  <div class="tooltip">
+    <a href="${url}" title="${title}" class="jq-tooltip-branding"><img src="${preview}" /></a>
+    <ul>{{each(i,link) links}}<li><a href="${link[1]}">${link[0]}</a></li>{{/each}}</ul>
+  </div>
+</script> 
+
+<script src="resources/js/plugins/jquery.ba-outside-events.min.js"></script>
+<script src="resources/js/plugins/syntaxhighlighter.min.js"></script>
+<script src="resources/js/plugins/jquery.infieldlabel.min.js"></script>
+<script src="resources/js/plugins/app.base.js"></script>
+<script src="resources/js/plugins.js"></script>
+<script src="resources/js/scripts.js"></script>
+
+<!-- /scripts -->
+
+
+</body>
+</html>
