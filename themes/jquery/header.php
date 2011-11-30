@@ -114,43 +114,41 @@ if (stristr($site, "qunitjs-com")) {
       <li class="jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
       <li class="jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
       <li class="jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
-      <li class="toggle-projects"><a href="#" title="All Projects">All Projects</a></li>
+      <li class="toggle-projects"><a href="http://jquery.org/projects/" title="All Projects">All Projects</a></li>
     </ul>
     <ul class="links">
       <li><a href="http://learn.jquery.com/">Learning</a></li>
-      <li class="dropdown"><a href="#" title="Support">Support</a>
+      <li class="dropdown"><a href="http://jquery.org/support/" title="Support">Support</a>
         <ul>
-          <li><a href="#" title="Forum">Forum</a></li>
-          <li><a href="#" title="IRC/Chat">IRC/Chat</a></li>
-          <li><a href="#" title="Getting Help">Getting Help</a></li>
-          <li><a href="#" title="Report a Bug">Report a Bug</a></li>
-          <li><a href="#" title="Enterprise Support">Enterprise Support</a></li>
+          <li><a href="http://forum.jquery.com/" title="Forum">Forum</a></li>
+          <li><a href="http://irc.jquery.org/" title="IRC/Chat">IRC/Chat</a></li>
+          <li><a href="http://jquery.org/bugs" title="Report a Bug">Report a Bug</a></li>
+          <li><a href="http://jquery.org/support#enterprise-support" title="Enterprise Support">Enterprise Support</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="#" title="Community">Community</a>
         <ul>
            <li><a href="http://blog.jquery.com/" title="Blog">Blog</a></li>
-               <li><a href="#" title="Podcast">Podcast</a></li>
-               <li><a href="#" title="Forums">Forums</a></li>
-               <li><a href="#" title="Meetups">Meetups</a></li>
-               <li><a href="#" title="Events">Events</a></li>
+               <li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
+               <li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
+               <li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
+               <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
         </ul>
       </li>
-      <li class="dropdown"><a href="#" title="Contribute">Contribute</a>
+      <li class="dropdown"><a href="http://jquery.org/getting-involved/" title="Contribute">Contribute</a>
         <ul>
           <li><a href="http://jquery.org/donate/" title="Donate">Donate</a></li>
-          <li><a href="#">Fix Bugs</a></li>
-          <li><a href="#">Answer Questions</a></li>
-          <li><a href="#">Write Documentation</a></li>
+          <li><a href="http://jquery.org/getting-involved/#fix-bugs">Fix Bugs</a></li>
+          <li><a href="http://jquery.org/getting-involved/#answer-questions">Answer Questions</a></li>
+          <li><a href="http://jquery.org/getting-involved/#write-documentation">Write Documentation</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="http://jquery.org/about/" title="">About</a>
         <ul class="last">
-              <li><a href="#" title="Projects">Projects</a></li>
+              <li><a href="http://jquery.org/projects/" title="Projects">Projects</a></li>
               <li><a href="http://jquery.org/team/" title="Team">Team</a></li>
               <li><a href="http://jquery.org/history/" title="History">History</a></li>
               <li><a href="http://jquery.org/sponsors/" title="Sponsors">Sponsors</a></li>
-              <li><a href="#" title="Contact">Contact</a></li>
         </ul>
       </li>
     </ul>
