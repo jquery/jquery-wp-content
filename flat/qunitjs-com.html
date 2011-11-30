@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 qunitjs-com qunitjs"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 qunitjs-com qunitjs"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 qunitjs-com qunitjs"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9 qunitjs-com qunitjs"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js qunitjs-com qunitjs"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>QUnit</title>
+
+  
+  <meta name="description" content="	QUnit: A JavaScript Unit Testing framework.			What is QUnit?					QUnit is a powerful, easy-to-use, JavaScript test suite. It&#8217;s used by the j...">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  
+  <link rel="canonical" href="http://qunitjs.com/">
+  <link href="/atom.xml" rel="alternate" title="QUnit" type="application/atom+xml">
+
+  <link rel="shortcut icon" href="resources/i/favicon.ico">
+  <link rel="stylesheet" href="resources/css/style.css?v=1">
+
+  <script src="resources/js/respond.min.js"></script>
+  <script src="resources/js/modernizr-1.5.min.js"></script>
+  <!--[if (gte IE 6)&(lte IE 8)]>
+  <script src="/static/resources/js/selectivizr.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<!-- projects -->
+<div class="project-select">
+  <ul class="constrain"> 
+    <li>
+      <a href="#" title="" class=""> 
+        <img src="resources/i/logo-top-jquery.png" alt="jQuery" /> 
+        <em>The core JS framework that allows you to write less, do more.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="#" title="" class=""> 
+        <img src="resources/i/logo-top-ui.png" alt="jQuery UI" /> 
+        <em>The officially supported User Interface library for jQuery.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="#" title="" class=""> 
+        <img src="resources/i/logo-top-mobile.png" alt="jQuery Mobile"> 
+        <em>Build mobile web apps with jQuery using this framework.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="#" title="" class=""> 
+        <img src="resources/i/logo-top-sizzle.png" alt="SizzleJS" /> 
+        <em>A smoking fast CSS selector engine for JavaScript.</em> 
+      </a>
+    </li> 
+    <li>
+      <a href="#" title="" class=""> 
+        <img src="resources/i/logo-top-qunit.png" alt="QUnit" /> 
+        <em>Write solid JavaScript apps by unit testing with QUnit.</em> 
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- /projects -->
+
+<!-- nav -->
+<header class="border clearfix">
+  
+  <nav class="constrain clearfix top">
+    <ul class="projects">
+      <li class="jquery"><a href="#" title="jQuery">jQuery</a></li>
+      <li class="jquery-ui"><a href="#" title="jQuery UI">jQuery UI</a></li>
+      <li class="jquery-mobile"><a href="#" title="jQuery Mobile">jQuery Mobile</a></li>
+      <li class="toggle-projects"><a href="#" title="All Projects">All Projects</a></li>
+    </ul>
+    <ul class="links">
+      <li class="dropdown"><a href="#" title="Support">Support</a>
+        <ul>
+          <li><a href="#" title="Forum">Forum</a></li>
+          <li><a href="#" title="IRC/Chat">IRC/Chat</a></li>
+          <li><a href="#" title="Getting Help">Getting Help</a></li>
+          <li><a href="#" title="Report a Bug">Report a Bug</a></li>
+          <li><a href="#" title="Enterprise Support">Enterprise Support</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="#" title="Community">Community</a>
+        <ul>
+           <li><a href="#" title="Blog">Blog</a></li>
+               <li><a href="#" title="Podcast">Podcast</a></li>
+               <li><a href="#" title="Forums">Forums</a></li>
+               <li><a href="#" title="Meetups">Meetups</a></li>
+               <li><a href="#" title="Events">Events</a></li>
+        </ul>
+      </li>
+      <li><a href="#" title="Contribute">Contribute</a></li>
+      <li><a href="#" title="Donate">Donate</a></li>
+      <li class="dropdown"><a href="#" title="">About</a>
+        <ul class="last">
+          <li><a href="#" title="Overview">Overview</a></li>
+              <li><a href="#" title="Projects">Projects</a></li>
+              <li><a href="#" title="Team">Team</a></li>
+              <li><a href="#" title="History">History</a></li>
+              <li><a href="#" title="Sponsors">Sponsors</a></li>
+              <li><a href="#" title="Contact">Contact</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+</header>
+<!-- /nav -->
+
+<!-- tooltips -->
+<div class="tooltips constrain">
+
+	<div class="jquery tooltip">     
+		<a href="http://jquery.com" title="jQuery" class="branding">
+			<img src="resources/i/logo-top-jquery.png">
+		</a>     
+		<ul>
+			<li><a href="http://jquery.com">Overview</a></li>
+			<li><a href="http://docs.jquery.com/Downloading_jQuery">Download</a></li>
+			<li><a href="http://plugins.jquery.com">Plugins</a></li>
+			<li><a href="http://api.pixelgraphics.us">API</a></li>
+			<li><a href="http://docs.jquery.com">Documentation</a></li>
+		</ul>    
+	</div>
+	
+	<div class="jquery-ui tooltip">     
+		<a href="http://jqueryui.com" title="jQuery UI" class="branding">
+			<img src="resources/i/logo-top-ui.png">
+		</a>     
+		<ul>
+			<li><a href="http://jqueryui.com">Overview</a></li>
+			<li><a href="http://jqueryui.com/download">Download</a></li>
+			<li><a href="http://jqueryui.com/themeroller">ThemeRoller</a></li>
+			<li><a href="http://jqueryui.com/demos">Demos</a></li>
+			<li><a href="http://jqueryui.com/demos/draggable/">Documentation</a></li>
+		</ul>   
+	</div>
+	
+	<div class="jquery-mobile tooltip">     
+		<a href="http://jquerymobile.com" title="jQuery Mobile" class="branding">
+			<img src="resources/i/logo-top-mobile.png">
+		</a>     
+		<ul>
+			<li><a href="http://jquerymobile.com">Overview</a></li>
+			<li><a href="http://jquerymobile.com">Download</a></li>
+			<li><a href="http://jquerymobile.com">Development</a></li>
+			<li><a href="http://jquerymobile.com">Demos</a></li>
+			<li><a href="http://jquerymobile.com">Documentation</a></li>
+		</ul>    
+	</div>
+	
+</div>
+<!-- /tooltips -->
+
+	<!-- container --> 
+	<div id="container" class="constrain"> 
+		
+		<!-- header -->
+		<header class="clearfix">
+		
+			<!-- logo -->
+			<h1 class="site-title"><a href="/" title="jQuery">jQuery</a></h1>
+			<!-- /logo -->
+			
+			<!-- ads or events -->
+			<aside></aside>
+			<!-- /ads  or events -->
+			
+			<!-- secondary nav -->
+			<nav class="clearfix">
+				
+<ul>
+
+	<li class="active"><a href="/" title="Overview">Overview</a></li>
+	<li><a href="/api-documentation" title="API Documentation">API Documentation</a></li>
+	<li><a href="/tutorial" title="Tutorial">Tutorial</a></li>
+	<li><a href="/extensions" title="Extensions">Extensions</a></li>
+</ul>
+
+				<form method="get" action="" class="search">
+	<input type="text" id="search" name="search"></li>
+	<label for="search" class="text">Search QUnitjs.com</label>
+	<a href="#" class="icon icon-search" title="Submit Search">Submit Search</a>
+</form>
+
+			</nav>
+			<!-- /secondary nav -->
+
+		</header>
+		<!-- /header -->
+		
+		<!-- body -->
+		<div id="body" class="clearfix">
+			<div class="clearfix inner">
+	<h2 class="title">QUnit: A JavaScript Unit Testing framework.</h2>
+	<div class="col2-1">
+		<h2>What is QUnit?</h2>
+		<p>
+			QUnit is a powerful, easy-to-use, JavaScript test suite. It&#8217;s used by the jQuery project to test its code and plugins but is capable of testing any generic JavaScript code (and even capable of testing JavaScript code on the server-side).
+		</p>
+		<p>
+			QUnit is especially useful for regression testing: Whenever a bug is reported, write a test that asserts the existence of that particular bug. Then fix it and commit both. Every time you work on the code again, run the tests. If the bug comes up again - a regression - you&#8217;ll spot it immediately and know how to fix it, because you know what code you just changed.
+		</p>
+		<p>
+			Having good unit test coverage makes safe refactoring easy and cheap. You can run the tests after each small refactoring step and always know what change broke something.
+		</p>
+		<p>
+			QUnit is similar to other unit testing frameworks like JUnit, but makes use of the features JavaScript provides and helps with testing code in the browser, eg. with its stop/start facilities for testing asynchronous code.
+		</p>
+		<p>
+			The code is located at: <a href="http://github.com/jquery/qunit">http://github.com/jquery/qunit</a>.
+		</p>
+		<p>
+			Planning for QUnit and other testing tools also happens on the on the <a href="http://jquerytesting.pbworks.com/">jQuery Testing Team planning wiki</a>.
+		</p>
+		<p>
+		Please post to the <a href="http://forum.jquery.com/qunit-and-testing">QUnit and testing forum</a> for anything related to QUnit or testing in general.
+		</p>
+		<p>
+			For announcements, follow <a href="http://twitter.com/qunitjs">@qunitjs</a>
+		</p>
+	</div>
+
+	<div class="col2-1">
+		<h2>Getting Started</h2>
+		<p>
+			To get started, let’s look at a minimal QUnit testsuite, the Hello World of QUnit:
+		</p>
+		<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;!DOCTYPE html>
+</span><span class='line'>		&lt;link rel="stylesheet" href="qunit.css">
+</span><span class='line'>		&lt;script src="qunit.js">&lt;/script>
+</span><span class='line'>		&lt;script>
+</span><span class='line'>		test("hello", function() {
+</span><span class='line'>		    ok(true, "world");
+</span><span class='line'>	    });
+</span><span class='line'>	    &lt;/script>
+</span><span class='line'>	    &lt;h1 id="qunit-header">QUnit Hello World&lt;/h1>
+</span><span class='line'>	    &lt;h2 id="qunit-banner">&lt;/h2>
+</span><span class='line'>	    &lt;ol id="qunit-tests">&lt;/ol></span></code></pre></td></tr></table></div></figure>
+
+		<p>
+			This is a very minimalistic testsuite. It declares a doctype, includes the CSS and JS files for QUnit, defines another script element with a single QUnit test and assert, and a little bit of additional markup for QUnit to output testresults. The call to the test() function defines a test with the name of “hello”. QUnit will then run this test once the page has loaded. The second argument, a function passed to test(), contains the actual testcode to run, here a call to ok(). The first argument defines if the assertion passes or not, the second specifies a message to output. In this case, the boolean true will always pass, as we’re not yet testing anything really.
+		</p>
+		<!-- TODO merge this into the above
+		The #qunit-header element should contain the name of the testsuite, and won't be modified by QUnit. The #qunit-banner element will set to show up as red if a test failed, green if all tests passed. The #qunit-userAgent elements is set to display the navigator.userAgent property. The #qunit-tests element will be used as a container for the test results.
+
+The #qunit-fixture element can be used to provide and manipulate test markup, and will be automatically reset after each test (see QUnit.reset). The element is styled with position:absolute; top:-10000px; left:-10000; - with these, it won't be obstructing the result, without affecting code the relies on the affected elements to be visible (instead of display:none). Older QUnit versions would only work with the #main element, which is deprecated, but still supported. It just won't get any default styles.
+-->
+		<p>
+			If we open this as a html file in a browser, we’ll see this output:
+		</p>
+
+		<p>
+			[live output?]
+		</p>
+		<p>
+			To see more examples, check out the unit tests of <a href="https://github.com/jquery/jquery/tree/master/test/unit">jQuery</a>, <a href="https://github.com/jquery/jquery-ui/tree/master/tests/unit">jQuery UI</a> or the <a href="https://github.com/jzaefferer/jquery-validation/tree/master/test">jQuery Validation Plugin</a>.
+		</p>
+	</div>
+</div>
+		</div>
+		<!-- /body -->
+
+	</div>
+	<!-- /container -->
+
+	<!-- footer -->
+<footer id="site-footer" class="clearfix">
+
+  <div class="constrain">
+
+    <div class="col7-3 col">
+      <h3><span>Quick Access</span></h3>
+      <div class="cdn">
+        <strong>CDN</strong>
+        <span>http://code.jquery.com/qunit/qunit-git.js</span>
+      </div>
+      <div class="download">
+        <strong>Download QUnit 1.2.0:</strong>
+        <span><a href="#">qunit.js</a><a href="#">qunit.css</a></span>
+      </div>
+      <ul class="footer-icon-links">
+        <li class="footer-icon icon-github"><a href="http://github.com/jquery/qunit">Github <small>QUnit <br>Source</small></a></li>
+        <li class="footer-icon icon-forum"><a href="http://forum.jquery.com/qunit-and-testing">Forum <small>Community <br>Support</small></a></li>
+        <li class="footer-icon icon-bugs"><a href="github.com/jquery/qunit/issues">Bugs <small>Issue <br>Tracker</small></a></li>
+      </ul>
+    </div>
+
+    <div class="col7-2 col">
+      <h3><span>Presentations</span></h3>
+      <ul class="presentations">
+        <li>
+          <a href="#">
+            <span><img src="/static/content/presentations/building-spas-jquerys-best-friends.jpg" width="142" height="92" /></span>
+            <strong>Building Single Page Applications With jQuery’s Best Friends</strong><br />
+            <cite>Addy Osmoni</cite>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><img src="/static/content/presentations/addyosmani-2.jpg" width="142" height="92" /></span>
+            <strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
+            <cite>Addy Osmoni</cite>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col7-2 col">
+      <h3><span>Books</span></h3>
+      <ul class="books">
+        <li>
+          <a href="#">
+            <span class="bottom"><img src="/static/content/books/learning-jquery-1.3.jpg" width="92" height="114" /></span>
+            <strong>Learning jQuery 1.3</strong><br />
+            <cite>Karl Swedberg and Jonathan Chaffer</cite>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><img src="/static/content/books/jquery-in-action.jpg" width="92" height="114" /></span>
+            <strong>jQuery in Action</strong><br />
+            <cite>Bear Bibeault and Yehuda Katz</cite>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span><img src="/static/content/books/jquery-enlightenment.jpg" width="92" height="114" /></span>
+            <strong>jQuery Enlightenment</strong><br />
+            <cite>Cody Lindley</cite>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="legal">
+      <ul class="footer-site-links">
+        <li class="icon-learning-center icon"><a href="#">Learning Center</a></li>
+        <li class="icon-forum icon"><a href="#">Forum</a></li>
+        <li class="icon-api icon"><a href="#">API</a></li>
+        <li class="icon-twitter icon"><a href="#">Twitter</a></li>
+        <li class="icon-irc icon"><a href="#">IRC</a></li>
+      </ul>
+        <p class="copyright">Copyright &copy; 2011 by <a href="#">The jQuery Project</a>.<br /><span class="sponsor-line">Sponsored by <a href="http://mediatemple.net" class="mt-link">Media Temple</a> and <a href="#">others</a>.</span></p>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+	<!-- scripts // Must use either 1.5.0 or 1.5.2, but 1.5.1 will break our menus -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="resources/js/jquery-1.5.min.js"%3E%3C/script%3E'))</script>
+
+<script id="tooltip-template" type="text/html"> 
+  <div class="tooltip">
+    <a href="${url}" title="${title}" class="jq-tooltip-branding"><img src="${preview}" /></a>
+    <ul><li><a href="${link[1]}">${link[0]}</a></li></ul>
+  </div>
+</script> 
+
+<script src="resources/js/plugins/jquery.ba-outside-events.min.js"></script>
+<script src="resources/js/plugins/syntaxhighlighter.min.js"></script>
+<script src="resources/js/plugins/jquery.infieldlabel.min.js"></script>
+<script src="resources/js/plugins/app.base.js"></script>
+<script src="resources/js/plugins.js"></script>
+<script src="resources/js/scripts.js"></script>
+
+
+<!-- /scripts -->
+
+</body> 
+</html>
