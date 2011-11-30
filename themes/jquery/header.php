@@ -146,7 +146,6 @@ if (stristr($site, "qunitjs-com")) {
       </li>
       <li class="dropdown"><a href="http://jquery.org/about/" title="">About</a>
         <ul class="last">
-          <li><a href="http://jquery.org/" title="Overview">Overview</a></li>
               <li><a href="#" title="Projects">Projects</a></li>
               <li><a href="http://jquery.org/team/" title="Team">Team</a></li>
               <li><a href="http://jquery.org/history/" title="History">History</a></li>
