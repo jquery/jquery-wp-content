@@ -1,0 +1,179 @@
+/*
+Theme Name: jquery-org
+Template: jquery
+*/
+
+.avatar{float: left;padding: 3px ;margin: 18px 5px 5px 0;border: 1px solid #c2c2c2}
+
+
+.team-image-and-links {
+    width: 870px;
+    background: #ffffee;
+    border: solid 1px #cab585;
+    margin: 0 auto 20px auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 20;
+}
+
+
+.team-links {
+    position: absolute;
+    z-index: 30;
+    bottom: 4px;
+    right: 4px;
+    width: 400px;
+}
+
+.team-image-and-links .team-links a {
+    height: 32px;
+    line-height: 32px;
+    font-size: 1.4em;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0 15px 0 32px;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: #ffffee !important;
+    border: solid 1px rgba(188,179,151,0.3);
+    border-bottom: 0;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius: 10px 10px 0 0 ;
+    text-shadow: rgba(255,255,255,0.6) 0 1px 0;
+}
+
+#jq-content .team-image-and-links .team-links a:hover {
+    color: #000 !important;
+    height: 35px;
+    position: relative;
+    margin-bottom: -3px;
+    top: -3px;
+}
+
+.team-image-and-links a.twitter-link {
+    background: url(twitter_16.png) 10px 8px no-repeat;
+}
+
+.team-image-and-links a.blog-link {
+    background: url(rss_16.png) 10px 8px no-repeat;
+}
+
+div.team-header {
+    width: 830px;
+    margin: 0px 30px;
+}
+
+div.team {
+    float: left;
+    width: 400px;
+    margin-left: 30px;
+}
+
+div.team-header h2, div.team h2 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: #4f3806;
+    margin-bottom: 0;
+    font-size: 2.5em;
+    border-bottom: solid 1px #cab585 !important;
+}
+
+div.team p {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-left: 20px;
+}
+
+div.team p small {
+    font-size: 1em;
+    font-style: italic;
+    display: none;
+}
+
+div.current p small {
+    display: block;
+}
+
+div.team-header p.team-desc, div.team p.team-desc {
+    font-size: 1.4em;
+    margin-left: 0;
+    background: #ffffee;
+    margin-top: 0;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    padding: 10px 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+    color: #777;
+    border-bottom: solid 1px #cab585 !important;
+}
+
+div.team img {
+    margin-right: -10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: relative;
+    left: -20px;
+}
+
+div.team a {
+    text-decoration: none;
+}
+
+div.past a {
+    font-weight: bold;
+}
+
+div.team h2:first-child {
+    padding-top: 20px;
+}
+
+div.team h3 {
+    margin-top: 20px;
+}
+
+div.team h3 small {
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: .5em;
+}
+div.team ul.list {
+    padding-left: 10px;
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+
+div.team ul.list li {
+
+    margin: 0 0 5px 0;
+}
+
+div.team-image-and-links p.disclaimer {
+    position: absolute;
+    z-index: 30;
+    left:14px;
+    bottom: 5px;
+    font-size: 1.3em;
+    line-height: 130%;
+    font-family: helvetica, arial, sans-serif;
+    color: #fff;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: normal;
+    font-style: italic;
+}
+
+#jq-content div.team-image-and-links p.disclaimer a {
+    color: #fff !important;
+    color: rgba(255,255,255,0.75) !important;
+    text-decoration:none;
+    font-style: normal;
+}
+
+#jq-content div.team-image-and-links p.disclaimer a:hover {
+    text-decoration: underline;
+    color: #fff;
+}

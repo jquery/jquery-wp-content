@@ -1,0 +1,27 @@
+/*
+Theme Name: sizzlejs-org
+Template: jquery
+*/
+
+p{margin:0;}
+a{color:#ff8200;}
+::-moz-selection{color:#fff;background:#78645a;}
+::selection{color:#fff;background:#78645a;}
+#page-container{width:820px;margin:42px auto 0;}
+#header p,
+#header span{width:515px;margin:0 auto;background:url(i/separator.png) no-repeat 0 0;}
+#header span{display:block;width:auto;padding:6px 30px;line-height:24px;text-align:center;font:19px "Helvetica Light", Arial, Helvetica, sans-serif;color:#ff6400;background-position:0 100%;}
+#header span::-moz-selection{color:#fff;background:#ff6400;}
+#header span::selection{color:#fff;background:#ff6400;}
+#content{padding-bottom:32px;background:url(i/page.png) no-repeat -1640px 100%;zoom:1;}
+.link{width:240px;margin:0 auto;line-height:25px;}
+.link a{margin-left:20px;color:#ff8200;}
+.link a:hover,
+.link a:focus{color:#fea100;}
+.link a:active{color:#ff6400;}
+.inner .download{margin-top:29px;margin-bottom:10px;padding:0;}
+.inner .download a{display:block;overflow:hidden;height:67px;margin:0;text-indent:-9999px;background:url(i/download.png) no-repeat 0 0;zoom:1;}
+.inner .download a:hover,
+.inner .download a:focus{background-position:0 -67px;}
+.inner .download a:active{background-position:0 -134px;}
+.features{margin-top:35px;}

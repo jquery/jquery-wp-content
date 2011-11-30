@@ -1,0 +1,179 @@
+/*
+Theme Name: jquerymobile-com
+Template: jquery
+*/
+
+.page-header { margin-right: 400px; }
+
+#manufacturers {
+  list-style: none;
+  width: 730px;
+  height: 120px;
+  margin: 20px 0;
+  position: relative;
+  left: -10px;
+}
+
+#manufacturers,
+#manufacturers a:hover {
+  background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
+}
+
+#manufacturers li {
+  margin:0;
+  padding:0;
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.ie6 #manufacturers li,
+.ie6 #manufacturers li a {
+  display: inline;
+}
+
+#manufacturers li a {
+  display: block;
+  height: 62px;
+  text-indent: -9999px;
+  overflow: hidden;
+  float: left;
+}
+                                         
+#manufacturers a.ios              { width: 140px; margin-right: 35px;}
+#manufacturers a.android          { width: 160px; margin-right: 35px;}
+#manufacturers a.blackberry       { width: 160px; margin-right: 50px;}
+#manufacturers a.bada             { width: 120px; }
+#manufacturers a.windows          { width: 160px; margin-right: 15px; height: 40px;}
+#manufacturers a.palm             { width: 170px; margin-right: 35px; height: 40px;}
+#manufacturers a.symbian          { width: 140px; margin-right: 70px; height: 40px;}
+#manufacturers a.meego           { width: 120px; height: 40px; }
+
+#manufacturers a.ios:hover        { background-position: -16px  -155px;}
+#manufacturers a.android:hover    { background-position: -196px -155px;}
+#manufacturers a.blackberry:hover { background-position: -396px -155px;}
+#manufacturers a.bada:hover       { background-position: -611px -155px;}
+#manufacturers a.windows:hover    { background-position: -16px  -237px;}
+#manufacturers a.palm:hover       { background-position: -196px -237px;}
+#manufacturers a.symbian:hover    { background-position: -406px -237px;}
+#manufacturers a.meego:hover      { background-position: -621px -237px;}
+
+#sponsors {
+   background-color:#f7f8f8;
+   padding: 10px 0 25px 0;
+   margin-bottom:40px;
+   overflow: hidden;
+   list-style: none;
+}
+#sponsors li {
+   margin: 0;
+   padding: 0;
+   display:block;
+   float:left;
+   width:33%;
+}
+
+#sponsors li a {  
+   padding: 10px 15px;
+   display: block;
+}
+
+.a, .graded td.a { background: #5FB221; color: #fff; }
+.b, .graded td.b { background: #ff9b0a; color: #fff; }
+.c, .graded td.c { background: #d80700; color: #fff; }
+.f, .graded td.f { background: #333; color: #fff; }
+.next { font-style: italic; }
+.graded td.next { color: rgba(255,255,255,0.6);}
+.cur, .graded td.cur { font-weight: bold; background: #bddcf1 }
+#page .graded td.cur a {font-weight: bold !important }
+
+.graded {
+  width: 100%;
+  margin: 0 0 30px 0;
+  border-style: collapse;
+  border-spacing: 3px;
+}
+
+#page .graded caption {
+  left: -46px;
+  top: -45px;
+}
+
+#page .graded caption em {
+  padding: 7px 0;
+  text-align: left;
+}
+
+.graded thead th {
+  font-size: 1.4em;
+  width: 30px;
+  padding: 5px 0 5px 0;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.graded td {
+  background: #f5f5f5;
+  border-right: solid 1px #fafafa;
+  border-bottom: solid 1px #fafafa;
+  font-size: 1.6em;
+  text-align: center !important;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+ tr.platform { border-bottom: 5px solid #FFF; }
+
+
+.graded td.platform {
+  text-align: left;
+  padding: 0 5px;
+  white-space: nowrap;
+  font-size: 1.5em;
+  text-align: center;
+  border-right: none;
+  background: #bddcf1;
+  text-shadow: #fff 0 1px 0;
+}
+
+#page .graded td.version a {
+  font-weight: normal;
+}
+
+#page .graded .platform a:hover,
+#page .graded td.version a:hover {
+  text-decoration: underline;
+}
+
+#page .graded td.platform a,
+#page .graded td.cur a {
+  color: #0f212e !important;
+}
+
+.graded td.version {
+  white-space: nowrap;
+  font-size: 1.3em;
+  color: #555;
+  padding: 0 5px;
+}
+.graded thead tr.gr-versions th {
+  font-size: 1.2em;
+  padding: 0 0 5px 0;
+  color: #555;
+}
+
+ul .a, ul .b, ul .c, ul .f, ul .next {
+  padding: 2px 4px;
+}
+
+ul .next {
+  border: solid 1px #ddd;
+  padding: 1px 3px;
+  color: #555;
+}
+
+#graded-support {
+  position: relative;
+  margin-top: 70px;
+}

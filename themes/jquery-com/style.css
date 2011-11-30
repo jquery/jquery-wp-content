@@ -1,0 +1,84 @@
+/*
+Theme Name: jquery-com
+Template: jquery
+*/
+
+.jq-checkpoints li, .jq-checkpoints li {
+list-style: none;
+}
+.jq-checkpoints li {
+margin: 0;
+padding: 0;
+}
+div#jq-whosUsing {
+    position: relative;
+    clear: both;
+    height: 45px;
+    background: #131C25;
+}
+
+h2.jq-whosUsing {
+position: absolute;
+top: 15px;
+left: 25px;
+font-size: 1em;
+font-weight: bold;
+text-transform: uppercase;
+color: #C4CDD7;
+}
+ul.jq-whosUsing, ul.jq-whosUsing li {list-style:none;}
+ul.jq-whosUsing {
+position: absolute;
+top: 10px;
+left: 170px;
+}
+ul.jq-whosUsing li {
+float: left;
+margin: 0 5px;
+}
+ul.jq-whosUsing li a {
+float: left;
+height: 25px;
+width: 50px;
+text-indent: -9999999px;
+background: url(i/icon_whouseslogos.gif) 0 0 no-repeat;
+overflow: hidden;
+}
+ul.jq-whosUsing li a.jq-google {background-position: 0 0; width: 48px;}
+ul.jq-whosUsing li a.jq-google:hover {background-position: 0 -25px;}
+
+ul.jq-whosUsing li a.jq-dell {background-position: -140px 0; width: 38px;}
+ul.jq-whosUsing li a.jq-dell:hover {background-position: -140px -25px;}
+
+ul.jq-whosUsing li a.jq-boa {background-position: -185px 0; width: 30px;}
+ul.jq-whosUsing li a.jq-boa:hover {background-position: -185px -25px;}
+
+ul.jq-whosUsing li a.jq-mlb {background-position: -225px 0; width: 35px;}
+ul.jq-whosUsing li a.jq-mlb:hover {background-position: -225px -25px;}
+
+ul.jq-whosUsing li a.jq-digg {background-position: -59px 0; width: 37px;}
+ul.jq-whosUsing li a.jq-digg:hover {background-position: -59px -25px;}
+
+ul.jq-whosUsing li a.jq-nbc {background-position: -107px 0; width: 25px;}
+ul.jq-whosUsing li a.jq-nbc:hover {background-position: -107px -25px;}
+
+ul.jq-whosUsing li a.jq-cbs {background-position: -335px 0; width: 47px;}
+ul.jq-whosUsing li a.jq-cbs:hover {background-position: -335px -25px;}
+
+ul.jq-whosUsing li a.jq-netflix {background-position: -403px 0; width: 55px;}
+ul.jq-whosUsing li a.jq-netflix:hover {background-position: -403px -25px;}
+
+ul.jq-whosUsing li a.jq-technorati {background-position: -263px 0; width: 63px;}
+ul.jq-whosUsing li a.jq-technorati:hover {background-position: -263px -25px;}
+
+ul.jq-whosUsing li a.jq-mozilla {background-position: -469px 0; width: 93px;}
+ul.jq-whosUsing li a.jq-mozilla:hover {background-position: -469px -25px;}
+
+ul.jq-whosUsing li a.jq-wordpress {background-position: -570px 0; width: 20px;}
+ul.jq-whosUsing li a.jq-wordpress:hover {background-position: -570px -25px;}
+
+ul.jq-whosUsing li a.jq-drupal {background-position: -596px 0; width: 23px;}
+ul.jq-whosUsing li a.jq-drupal:hover {background-position: -596px -25px;}
+
+ul.jq-whosUsing li a.jq-turbotax {background-position: -626px 0; width: 78px;}
+ul.jq-whosUsing li a.jq-turbotax:hover {background-position: -626px -25px;}
