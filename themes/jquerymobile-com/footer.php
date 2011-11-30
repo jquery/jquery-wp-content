@@ -11,15 +11,15 @@
     <div class="col3-2 col">
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
-        <strong>CSS</strong>
+        <strong>CDN <em>CSS</em></strong>
         <span>//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css</span>
       </div>
       <div class="cdn">
-        <strong>JS</strong>
+        <strong>CDN <em>JS</em></strong>
         <span>//code.jquery.com/jquery-1.6.4.min.js</span>
       </div>
       <div class="cdn">
-        <strong>JS</strong>
+        <strong>CDN <em>JS</em></strong>
         <span>//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js</span>
       </div>
       <div class="download">

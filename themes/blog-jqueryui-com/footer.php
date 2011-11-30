@@ -11,15 +11,15 @@
     <div class="col3-2 col">
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
-        <strong>CSS</strong>
+        <strong>CDN <em>CSS</em></strong>
         <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css</span>
       </div>
       <div class="cdn">
-        <strong>JS</strong>
+        <strong>CDN <em>JS</em></strong>
         <span>//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</span>
       </div>
       <div class="cdn">
-        <strong>JS</strong>
+        <strong>CDN <em>JS</em></strong>
         <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js</span>
       </div>
       <div class="download">
