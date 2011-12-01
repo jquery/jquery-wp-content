@@ -1,4 +1,3 @@
-
 jQuery.InFieldLabels.defaultOptions.defaultOpacity = 1;
 jQuery.InFieldLabels.defaultOptions.fadeOpacity    = 0.5;
 
@@ -21,30 +20,27 @@ App.subscribe("init", function(){
   //
   // Project Select Show/Hide
   //
-  $(".toggle-projects").bind("click", function(e){
+  $(".toggle-projects").on( "click", function(e) {
     e.preventDefault();
-    var el = $(this);
-    if(el.hasClass('active')){
-      el.removeClass('active');
-      $("body").animate({"marginTop":"0"}, 300, function(){
-        el.removeClass('down');
-      });
-    } else {
-      el.addClass('active');
-      $("body").animate({"marginTop":"150px"}, 300, function(){
-        el.addClass('down');
-      });
-    }
+
+    var el = $(this).toggleClass("active");
+
+    $("body").animate({"marginTop": ( el.hasClass("active") ? "150px" : "0" ) }, 300, function(){
+      el.toggleClass("down");
+    });
   });
   
   //
   // Project Select Clickoutside
   //
-  $(".project-select").bind("clickoutside", function(e){
+  $(".project-select").on( "clickoutside", function(e) {
     var el = $(".toggle-projects");
-    if(el.hasClass('down')){
-      el.removeClass("active down");
-      $("body").animate({"marginTop":"0"}, 300);
+    if ( e.target.parentNode === el[0] || e.target === el[0] ) {
+      return;
+    }
+
+    if ( el.hasClass("down") ) {
+      el.click();
     }
   });
   
