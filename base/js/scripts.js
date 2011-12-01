@@ -47,7 +47,7 @@ App.subscribe("init", function(){
   //
   // Project Tooltips
   //  
-  $(".projects .jquery, .projects .jquery-ui, .projects .jquery-mobile").bind("mouseover", function(){
+  $(".projects").find(".jquery, .jquery-ui, .jquery-mobile").on("mouseover", function(){
     var el = $(this), tooltips = $(".tooltips"), tooltip = {};
     if(el.hasClass('jquery')){
       tooltip = $(".tooltips .jquery");
@@ -65,7 +65,7 @@ App.subscribe("init", function(){
     }
   });	
   
-  $(".tooltips .jquery, .tooltips .jquery-ui, .tooltips .jquery-mobile").bind("mouseout", function(){
+  $(".tooltips").find(".jquery, .jquery-ui, .jquery-mobile").on("mouseout", function(){
     var el = $(this);
     App.tooltip_timeout = setTimeout(function(){ el.fadeOut(200) }, 300);
   }).bind("mouseover", function(){
