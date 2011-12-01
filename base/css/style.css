@@ -2025,18 +2025,21 @@
 	/*******************************************************************************/
 
 		.jquery-ui .inner .entry .section-title
-	{	background: #3e92c6;
+	{	background: #ce8c04 url(../i/examples-back.png) center -50px no-repeat;
 		border: 1px solid #955803;
 		padding: 10px 15px;
 		font-size: 16px;
 		color: #fff;
 		text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
 		letter-spacing: 0;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		border-radius: 3px;
-		font-weight: normal;
-		background: #ce8c04; }
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px ;
+		-webkit-box-shadow: #955803 0 -1px 0;
+		-moz-box-shadow: #955803 0 -1px 0;
+		box-shadow: #955803 0 -1px 0;
+		border-top: solid 1px #ECC308;
+		font-weight: normal; }
 
 		.jquery-ui .inner .entry .section-title .name
 	{	}

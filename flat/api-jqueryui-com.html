@@ -1,10 +1,9 @@
 <!DOCTYPE html> 
- 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 jquery-ui"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 jquery-ui"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 jquery-ui"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9 jquery-ui"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js jquery-ui"> <!--<![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6 api-jqueryui-com jquery-ui"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7 api-jqueryui-com jquery-ui"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8 api-jqueryui-com jquery-ui"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9 api-jqueryui-com jquery-ui"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js api-jqueryui-com jquery-ui"> <!--<![endif]-->
 <head> 
 
 <meta charset="utf-8">
@@ -17,13 +16,14 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-<link rel="shortcut icon" href="resources/i/favicon.ico">
-<link rel="stylesheet" href="resources/css/style.css?v=1">
+<link rel="shortcut icon" href="themes/api-jqueryui-com/i/favicon.ico">
+<link rel="stylesheet" href="base/css/style.css">
+<link rel="stylesheet" href="themes/api-jqueryui-com/style.css">
 
-<script src="resources/js/respond.min.js"></script>
-<script src="resources/js/modernizr-1.5.min.js"></script>
+<script src="base/js/respond.min.js"></script>
+<script src="base/js/modernizr-1.5.min.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
-<script src="resources/js/selectivizr.js"></script>
+<script src="base/js/selectivizr.js"></script>
 <![endif]-->
 
 <style>
@@ -40,32 +40,32 @@
 <div class="project-select">
   <ul class="constrain"> 
     <li>
-      <a href="#" title="" class=""> 
-        <img src="resources/i/logo-top-jquery.png" alt="jQuery" /> 
+      <a href="http://jquery.com/" title="" class=""> 
+        <img src="base/i/logo-top-jquery.png" alt="jQuery" /> 
         <em>The core JS framework that allows you to write less, do more.</em> 
       </a>
     </li> 
     <li>
-      <a href="#" title="" class=""> 
-        <img src="resources/i/logo-top-ui.png" alt="jQuery UI" /> 
+      <a href="http://jqueryui.com/" title="" class=""> 
+        <img src="base/i/logo-top-ui.png" alt="jQuery UI" /> 
         <em>The officially supported User Interface library for jQuery.</em> 
       </a>
     </li> 
     <li>
-      <a href="#" title="" class=""> 
-        <img src="resources/i/logo-top-mobile.png" alt="jQuery Mobile"> 
+      <a href="http://jquerymobile.com/" title="" class=""> 
+        <img src="base/i/logo-top-mobile.png" alt="jQuery Mobile"> 
         <em>Build mobile web apps with jQuery using this framework.</em> 
       </a>
     </li> 
     <li>
-      <a href="#" title="" class=""> 
-        <img src="resources/i/logo-top-sizzle.png" alt="SizzleJS" /> 
+      <a href="http://sizzlejs.com/" title="" class=""> 
+        <img src="base/i/logo-top-sizzle.png" alt="SizzleJS" /> 
         <em>A smoking fast CSS selector engine for JavaScript.</em> 
       </a>
     </li> 
     <li>
-      <a href="#" title="" class=""> 
-        <img src="resources/i/logo-top-qunit.png" alt="QUnit" /> 
+      <a href="http://qunitjs.com/" title="" class=""> 
+        <img src="base/i/logo-top-qunit.png" alt="QUnit" /> 
         <em>Write solid JavaScript apps by unit testing with QUnit.</em> 
       </a>
     </li>
@@ -78,40 +78,45 @@
   
   <nav class="constrain clearfix top">
     <ul class="projects">
-      <li class="jquery"><a href="#" title="jQuery">jQuery</a></li>
-      <li class="jquery-ui"><a href="#" title="jQuery UI">jQuery UI</a></li>
-      <li class="jquery-mobile"><a href="#" title="jQuery Mobile">jQuery Mobile</a></li>
-      <li class="toggle-projects"><a href="#" title="All Projects">All Projects</a></li>
+      <li class="jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
+      <li class="jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+      <li class="jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+      <li class="toggle-projects"><a href="http://jquery.org/projects/" title="All Projects">All Projects</a></li>
     </ul>
     <ul class="links">
-      <li class="dropdown"><a href="#" title="Support">Support</a>
+      <li><a href="http://learn.jquery.com/">Learning</a></li>
+      <li class="dropdown"><a href="http://jquery.org/support/" title="Support">Support</a>
         <ul>
-          <li><a href="#" title="Forum">Forum</a></li>
-          <li><a href="#" title="IRC/Chat">IRC/Chat</a></li>
-          <li><a href="#" title="Getting Help">Getting Help</a></li>
-          <li><a href="#" title="Report a Bug">Report a Bug</a></li>
-          <li><a href="#" title="Enterprise Support">Enterprise Support</a></li>
+          <li><a href="http://forum.jquery.com/" title="Forum">Forum</a></li>
+          <li><a href="http://irc.jquery.org/" title="IRC/Chat">IRC/Chat</a></li>
+          <li><a href="http://jquery.org/bugs" title="Report a Bug">Report a Bug</a></li>
+          <li><a href="http://jquery.org/support#enterprise-support" title="Enterprise Support">Enterprise Support</a></li>
         </ul>
       </li>
       <li class="dropdown"><a href="#" title="Community">Community</a>
         <ul>
-           <li><a href="#" title="Blog">Blog</a></li>
-               <li><a href="#" title="Podcast">Podcast</a></li>
-               <li><a href="#" title="Forums">Forums</a></li>
-               <li><a href="#" title="Meetups">Meetups</a></li>
-               <li><a href="#" title="Events">Events</a></li>
+           <li><a href="http://blog.jquery.com/" title="Blog">Blog</a></li>
+               <li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
+               <li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
+               <li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
+               <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
         </ul>
       </li>
-      <li><a href="#" title="Contribute">Contribute</a></li>
-      <li><a href="#" title="Donate">Donate</a></li>
-      <li class="dropdown"><a href="#" title="">About</a>
+      <li class="dropdown"><a href="http://jquery.org/getting-involved/" title="Contribute">Contribute</a>
+        <ul>
+          <li><a href="http://jquery.org/donate/" title="Donate">Donate</a></li>
+          <li><a href="http://jquery.org/sponsor/" title="Sponsor">Sponsor</a></li>
+          <li><a href="http://jquery.org/getting-involved/#fix-bugs">Fix Bugs</a></li>
+          <li><a href="http://jquery.org/getting-involved/#answer-questions">Answer Questions</a></li>
+          <li><a href="http://jquery.org/getting-involved/#write-documentation">Write Documentation</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="http://jquery.org/about/" title="">About</a>
         <ul class="last">
-          <li><a href="#" title="Overview">Overview</a></li>
-              <li><a href="#" title="Projects">Projects</a></li>
-              <li><a href="#" title="Team">Team</a></li>
-              <li><a href="#" title="History">History</a></li>
-              <li><a href="#" title="Sponsors">Sponsors</a></li>
-              <li><a href="#" title="Contact">Contact</a></li>
+              <li><a href="http://jquery.org/projects/" title="Projects">Projects</a></li>
+              <li><a href="http://jquery.org/team/" title="Team">Team</a></li>
+              <li><a href="http://jquery.org/history/" title="History">History</a></li>
+              <li><a href="http://jquery.org/sponsors/" title="Sponsors">Sponsors</a></li>
         </ul>
       </li>
     </ul>
@@ -127,27 +132,31 @@
   <header class="clearfix">
   
     <!-- logo -->
-    <h1><a href="#" title="jQuery">jQuery</a></h1>
+    <h1 class="site-title"><a href="/" title="api.jqueryui.com">api.jqueryui.com</a></h1>
     <!-- /logo -->
     
     <!-- ads or events -->
     <aside></aside>
     <!-- /ads  or events -->
-    
+
+
+
     <!-- secondary nav -->
     <nav class="clearfix">
-      <ul>
-        <li class="active"><a href="#" title="Overview">Overview</a></li>
-        <li><a href="#" title="Plugins">Plugins</a></li>
-        <li><a href="#" title="API">API</a></li>
-        <li><a href="#" title="Documentation">Documentation</a></li>
-        <li><a href="#" title="Development">Development</a></li>
-        <li><a href="#" title="Download">Download</a></li>
-      </ul>
-      <form method="get" action="" class="search">
-        <input type="text" id="search" name="search"></li>
-        <label for="search" class="text">Search jQuery.com</label> 
+
+      <div class="menu-top-container"><ul id="menu-top" class="menu"><li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6"><a href="http://jakewearyui.com/demos/">Demos</a></li>
+<li id="menu-item-7" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7"><a href="http://jakewearyui.com/download/">Download</a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-8"><a href="http://li367-225.members.linode.com/">API Documentation</a></li>
+<li id="menu-item-9" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9"><a href="http://jakewearyui.com/themes/">Themes</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10"><a href="http://jakewearyui.com/development/">Development</a></li>
+<li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11"><a href="http://forum.jquery.com/using-jquery-ui">Forum</a></li>
+<li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="http://blog.jakewearyui.com/">Blog</a></li>
+</ul></div>
+            <form method="get" id="searchform" class="search" action="/">
+        <input type="text" id="search" name="s"></li>
+        <label for="search" class="text">Search api.jqueryui.com</label>
         <a href="#" class="icon icon-search" title="Submit Search">Submit Search</a>
+        <input type="hidden" name="searchblogs" value="1,2,3,4,5,6,7,8,9,10,11,12">
       </form>
     </nav>
     <!-- /secondary nav -->
@@ -243,74 +252,51 @@
 
 <!-- footer -->
 <footer id="site-footer" class="clearfix">
-  
+	  
   <div class="constrain">
-  
-    <div class="col7-3 col">
+  	
+  	  	
+    <div class="col3-2 col">
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
-        <strong>CDN <em>JS</em></strong>
-        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js</span>
+        <strong>CDN <em>CSS</em></strong>
+        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css</span>
       </div>
       <div class="cdn">
-        <strong><em>CSS</em></strong>
-        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/base/jquery-ui.css</span>
+        <strong>CDN <em>JS</em></strong>
+        <span>//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</span>
+      </div>
+      <div class="cdn">
+        <strong>CDN <em>JS</em></strong>
+        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js</span>
       </div>
       <div class="download">
-        <strong>Download jQuery UI 1.8.10:</strong>
-        <span><a href="#">Production</a>
-        <a href="#">Source</a>
-        <a href="#">Download Builder &rarr;</a></span>
+        <strong>Download jQuery UI 1.8.16 (for jQuery 1.3.2+):</strong>
+        <span><a href="#">Development Bundle</a>
+        <a href="#">Themes</a></span>
       </div>
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-ui">Github <small>jQuery UI <br>Source</small></a></li>
-        <li class="footer-icon icon-forum"><a href="http://forum.jquery.com">Forum <small>Community <br>Support</small></a></li>
+        <li class="footer-icon icon-forum"><a href="http://forum.jquery.com/using-jquery-ui">Forum <small>Community <br>Support</small></a></li>
         <li class="footer-icon icon-bugs"><a href="http://bugs.jqueryui.com">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>
     </div>
     
-    <div class="col7-2 col">
-      <h3><span>Presentations</span></h3>
-      <ul class="presentations">
-        <li>
-          <a href="#">
-            <span><img src="content/presentations/building-spas-jquerys-best-friends.jpg" width="142" height="92" /></span>
-            <strong>Building Single Page Applications With jQuery’s Best Friends</strong><br />
-            <cite>Addy Osmoni</cite>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span><img src="content/presentations/addyosmani-2.jpg" width="142" height="92" /></span>
-            <strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
-            <cite>Addy Osmoni</cite>
-          </a>
-        </li>
-      </ul>
-    </div>
-    
-    <div class="col7-2 col">
+    <div class="col3-1 col">
       <h3><span>Books</span></h3>
       <ul class="books">
         <li>
           <a href="#">
-            <span class="bottom"><img src="content/books/learning-jquery-1.3.jpg" width="92" height="114" /></span>
-            <strong>Learning jQuery 1.3</strong><br />
-            <cite>Karl Swedberg and Jonathan Chaffer</cite>
+            <span class="bottom"><img src="../themes/jquery/content/books/jquery-ui-1.8.jpg" width="92" height="114" /></span>
+            <strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br />
+            <cite>Dan Wellman</cite>
           </a>
         </li>
         <li>
           <a href="#">
-            <span><img src="content/books/jquery-in-action.jpg" width="92" height="114" /></span>
-            <strong>jQuery in Action</strong><br />
-            <cite>Bear Bibeault and Yehuda Katz</cite>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span><img src="content/books/jquery-enlightenment.jpg" width="92" height="114" /></span>
-            <strong>jQuery Enlightenment</strong><br />
-            <cite>Cody Lindley</cite>
+            <span><img src="../themes/jquery/content/books/jquery-ui-themes.jpg" width="92" height="114" /></span>
+            <strong>jQuery UI Themes</strong><br />
+            <cite>Adam Boduch</cite>
           </a>
         </li>
       </ul>
@@ -318,12 +304,12 @@
     <div id="legal">
       <ul class="footer-site-links">
         <li class="icon-learning-center icon"><a href="#">Learning Center</a></li>
-        <li class="icon-forum icon"><a href="#">Forum</a></li>
-        <li class="icon-api icon"><a href="#">API</a></li>
-        <li class="icon-twitter icon"><a href="#">Twitter</a></li>
+        <li class="icon-forum icon"><a href="http://forum.jquery.com/using-jquery-ui">Forum</a></li>
+        <li class="icon-api icon"><a href="http://li367-225.members.linode.com/">API</a></li>
+        <li class="icon-twitter icon"><a href="http://twitter.com/jqueryui">Twitter</a></li>
         <li class="icon-irc icon"><a href="#">IRC</a></li>
       </ul>
-        <p class="copyright">Copyright &copy; 2011 by <a href="#">The jQuery Project</a>.<br /><span class="sponsor-line">Sponsored by <a href="http://mediatemple.net" class="mt-link">Media Temple</a> and <a href="#">others</a>.</span></p>
+        <p class="copyright">Copyright &copy; 2011 by <a href="http://jquery.org/team/">The jQuery Project</a>.<br /><span class="sponsor-line">Sponsored by <a href="http://mediatemple.net" class="mt-link">Media Temple</a> and <a href="http://jquery.org/sponsors/">others</a>.</span></p>
     </div>
   </div>
 </footer>
@@ -331,7 +317,7 @@
 
 <!-- scripts -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>!window.jQuery && document.write(unescape('%3Cscript src="resources/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="base/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
 
 <script id="tooltip-template" type="text/html"> 
   <div class="tooltip">
@@ -340,16 +326,15 @@
   </div>
 </script> 
 
-
-<script src="resources/js/plugins/jquery.ba-outside-events.min.js"></script>
-<script src="resources/js/plugins/syntaxhighlighter.min.js"></script>
-<script src="resources/js/plugins/jquery.infieldlabel.min.js"></script>
-<script src="resources/js/plugins/app.base.js"></script>
-<script src="resources/js/plugins.js"></script>
-
-<script src="resources/js/scripts.js"></script>
+<script src="base/js/plugins/jquery.ba-outside-events.min.js"></script>
+<script src="base/js/plugins/syntaxhighlighter.min.js"></script>
+<script src="base/js/plugins/jquery.infieldlabel.min.js"></script>
+<script src="base/js/plugins/app.base.js"></script>
+<script src="base/js/plugins.js"></script>
+<script src="base/js/scripts.js"></script>
 
 <!-- /scripts -->
+
 
 </body> 
 </html>
