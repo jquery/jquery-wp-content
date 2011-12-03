@@ -40,14 +40,14 @@
       <ul class="books">
         <li>
           <a href="#">
-            <span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-1.8.jpg" width="92" height="114" /></span>
+            <span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-1.8.jpg" alt="jQuery UI 1.8: The User Interface Library for jQuery by Dan Wellman" width="92" height="114" /></span>
             <strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br />
             <cite>Dan Wellman</cite>
           </a>
         </li>
         <li>
           <a href="#">
-            <span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-themes.jpg" width="92" height="114" /></span>
+            <span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-themes.jpg" alt="jQuery UI Themes by Adam Boduch" width="92" height="114" /></span>
             <strong>jQuery UI Themes</strong><br />
             <cite>Adam Boduch</cite>
           </a>
