@@ -1233,13 +1233,6 @@
 	#site-footer .col:first-child 
 {	margin-left: 0 }
 	
-	#site-footer .constrain.fake 
-{	background: url(../i/footer-comp.png) center 45px no-repeat;
-	height: 283px; }
-	
-	#site-footer .constrain.fake > div 
-{	display: none; }
-	
 	#site-footer ul 
 {	}
 	
