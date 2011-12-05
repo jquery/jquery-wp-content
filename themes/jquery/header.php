@@ -53,8 +53,7 @@ if (stristr($site, "qunitjs-com")) {
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<script src="<?php echo content_url(); ?>/base/js/respond.min.js"></script>
-<script src="<?php echo content_url(); ?>/base/js/modernizr-1.5.min.js"></script>
+<script src="<?php echo content_url(); ?>/base/js/modernizr.custom.2.0.6.min.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script src="<?php echo content_url(); ?>/base/js/selectivizr.js"></script>
 <![endif]-->
