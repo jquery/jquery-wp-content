@@ -960,7 +960,7 @@
 	#site-footer .cdn ~ .cdn strong 
 {	text-align: right; }
 	
-	.no-cssboxshadow 
+	.no-boxshadow 
 {	border-bottom: solid 1px #333; }
 	
 	#site-footer .cdn strong 
