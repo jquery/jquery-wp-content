@@ -92,13 +92,13 @@ if (stristr($site, "qunitjs-com")) {
     </li> 
     <li>
       <a href="http://sizzlejs.com/" title="" class=""> 
-        <img src="<?php echo content_url(); ?>/base/i/logo-top-sizzle.png" alt="SizzleJS" /> 
+        <img src="<?php echo content_url(); ?>/base/i/logo-top-sizzlejs.png" alt="SizzleJS" /> 
         <em>A smoking fast CSS selector engine for JavaScript.</em> 
       </a>
     </li> 
     <li>
       <a href="http://qunitjs.com/" title="" class=""> 
-        <img src="<?php echo content_url(); ?>/base/i/logo-top-qunit.png" alt="QUnit" /> 
+        <img src="<?php echo content_url(); ?>/base/i/logo-top-qunitjs.png" alt="QUnit" /> 
         <em>Write solid JavaScript apps by unit testing with QUnit.</em> 
       </a>
     </li>
