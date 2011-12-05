@@ -99,7 +99,6 @@
 <script src="<?php echo content_url(); ?>/base/js/plugins/jquery.ba-outside-events.min.js"></script>
 <script src="<?php echo content_url(); ?>/base/js/plugins/syntaxhighlighter.min.js"></script>
 <script src="<?php echo content_url(); ?>/base/js/plugins/jquery.infieldlabel.min.js"></script>
-<script src="<?php echo content_url(); ?>/base/js/plugins/app.base.js"></script>
 <script src="<?php echo content_url(); ?>/base/js/plugins.js"></script>
 <script src="<?php echo content_url(); ?>/base/js/scripts.js"></script>
 

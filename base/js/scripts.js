@@ -3,7 +3,9 @@ jQuery.InFieldLabels.defaultOptions.fadeOpacity    = 0.5;
 
 
 // Executes on DOM ready
-App.subscribe("init", function() {
+jQuery(function() {
+  
+  var tooltip_timeout;
   
   // Add Syntax Highlighting
   SyntaxHighlighter.all();
@@ -53,7 +55,7 @@ App.subscribe("init", function() {
 
     $tooltip = $( ".tooltip:visible" ,tooltips );
     if ( $tooltip !== tooltip ) {
-      clearTimeout( App.tooltip_timeout );
+      clearTimeout( tooltip_timeout );
       $tooltip.fadeOut(200);
     }
 
@@ -64,9 +66,9 @@ App.subscribe("init", function() {
   
   $(".tooltips").find(".jquery, .jquery-ui, .jquery-mobile").on("mouseout", function() {
     var el = $( this );
-    App.tooltip_timeout = setTimeout(function() { el.fadeOut(200); }, 300);
+    tooltip_timeout = setTimeout(function() { el.fadeOut(200); }, 300);
   }).bind("mouseover", function() {
-    clearTimeout( App.tooltip_timeout );
+    clearTimeout( tooltip_timeout );
   });
   
   // Fancy Dropdown
