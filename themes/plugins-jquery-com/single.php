@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div id="body" class="clearfix">
+		<div id="body" class="clearfix sidebar-left">
 			<div class="inner" role="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>
@@ -19,6 +19,9 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- .inner -->
+
+			<div id="sidebar" class="widget-area" role="complementary">
+			</div><!-- #sidebar -->
 		</div><!-- #body -->
 
 <?php get_footer(); ?>

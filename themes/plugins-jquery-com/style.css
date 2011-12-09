@@ -2,3 +2,14 @@
 Theme Name: plugins-jquery-com
 Template: jquery
 */
+
+.single h1 { font-size: 200%; margin-bottom: 0.5em; }
+.single hr { margin: 0; margin-bottom: 0.5em; }
+
+.single .block { border-top: 1px solid #CCC; padding-top: 0.5em; font-size: 1.2em; margin-top: 4px; }
+.single .block h2 { font-size: 90%; font-weight: normal; color: #999; margin-bottom: 8px; }
+.single .right { text-align: right; }
+
+.single .block ul, .single .block li { list-style-type: none; margin: 0; padding: 0; }
+.single .block ul { font-size: 110%; margin-bottom: 1em; }
+.single .block li { margin: 0.6em 0; }
