@@ -25,12 +25,26 @@
 
 	a.inset-link
 {
-	font-weight: bold;
-	text-align: center;
 	background: #999;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 1px 1px 1px #666;
+	-moz-box-shadow: inset 1px 1px 1px #666;
 	box-shadow: inset 1px 1px 1px #666;
 	color: #FFF;
-	border-radius: 3px;
-	padding: 6px 8px;
-	display: inline-block; }
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	padding: 6px 8px; }
+
+	#sidebar ul
+{
+	list-style: none; }
+
+	#sidebar li
+{
+	padding: 0;
+	margin: 0; }

@@ -50,6 +50,7 @@ if (stristr($site, "qunitjs-com")) {
 
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
 <link rel="stylesheet" href="<?php echo content_url() ?>/base/css/style.css?v=1">
+<link rel="stylesheet" href="<?php echo content_url() ?>/base/css/blog.css?v=1">
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 

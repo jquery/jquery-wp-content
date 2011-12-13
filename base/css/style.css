@@ -236,18 +236,18 @@
 	/*******************************************************************************/
 	
 	h1.title, h1.entry-title, h2.title, h2.entry-title 
-{	background: #f7b535;
-	width: 100%;
+{	width: 100%;
 	text-shadow: 0 1px 1px #fff;
 	margin: 0 0 20px -30px;
 	padding: 10px 30px 10px 30px;
-	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.25);
-	-moz-box-shadow: 0 1px 0 rgba(0,0,0,0.25);
-	box-shadow: 0 1px 0 rgba(0,0,0,0.25);
+	border-top: 1px solid #DDD;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.35);
 	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
 	background: -moz-linear-gradient(top,  #e5e5e5,  #d5d5d5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5'); }
-	
+
 	/*******************************************************************************/
 	/* Buttons */
 	/*******************************************************************************/
