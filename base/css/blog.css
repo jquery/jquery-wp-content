@@ -1,0 +1,36 @@
+/* Blog-specific code, perhaps more from style.css should be moved into this file */
+
+	h1.title, h1.entry-title, h2.title, h2.entry-title
+{
+	font-size: 22px; }
+
+	h1.title a, h1.entry-title a, h2.title a, h2.entry-title a
+{
+	text-decoration: none; }
+
+	.comments-link-top a
+{
+	font-size: 12px;
+	float: right; }
+
+	.entry-meta
+{
+	color: #999;
+	font-size: 12px;
+	margin: 20px 0; }
+
+	.post
+{
+	padding-bottom: 20px; }
+
+	a.inset-link
+{
+	font-weight: bold;
+	text-align: center;
+	background: #999;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	box-shadow: inset 1px 1px 1px #666;
+	color: #FFF;
+	border-radius: 3px;
+	padding: 6px 8px;
+	display: inline-block; }
