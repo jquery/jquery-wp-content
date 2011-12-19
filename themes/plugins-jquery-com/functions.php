@@ -1,9 +1,13 @@
 <?php
 
-function jq_plugin_versions() {
+function jq_plugin_meta( $attr ) {
 	$post = get_post( get_the_ID() );
 	$main_post = empty( $post->post_parent ) ? $post->ID : $post->post_parent;
-	$versions = get_post_meta( $main_post, "versions", true );
+	return get_post_meta( $main_post, $attr[ "key" ], true );
+}
+
+function jq_plugin_versions() {
+	$versions = jq_plugin_meta( array( "key" => "versions" ) );
 	if ( !$versions ) {
 		return;
 	}
@@ -18,4 +22,5 @@ function jq_plugin_versions() {
 }
 
 add_shortcode( "jq_plugin_versions", "jq_plugin_versions" );
+add_shortcode( "jq_plugin_meta", "jq_plugin_meta" );
 
