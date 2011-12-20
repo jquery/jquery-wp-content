@@ -25,6 +25,11 @@ function jq_plugin_keywords() {
 	return get_the_tag_list( "<ul><li>", "</li><li>", "</li></ul>" );
 }
 
+function jq_plugin_date() {
+	return get_the_date();
+}
+
 add_shortcode( "jq_plugin_versions", "jq_plugin_versions" );
 add_shortcode( "jq_plugin_meta", "jq_plugin_meta" );
 add_shortcode( "jq_plugin_keywords", "jq_plugin_keywords" );
+add_shortcode( "jq_plugin_date", "jq_plugin_date" );
