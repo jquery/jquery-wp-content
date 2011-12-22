@@ -413,7 +413,7 @@
 	html.jquery-mobile, .jquery-mobile #container 
 {	background: #598611 url(../i/bg-body-mobile.jpg) no-repeat center -30px; }
 	
-	.jquery-mobile h1 a 
+	.jquery-mobile h1.site-title a 
 {	background: url(../i/logo-mobile.png) no-repeat;
 	height: 72px;
 	width: 275px;
