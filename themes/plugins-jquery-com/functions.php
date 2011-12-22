@@ -12,11 +12,28 @@ function jq_plugin_versions() {
 		return;
 	}
 
-	$out = "";
+	$post = get_post( get_the_ID() );
+	$main_post = empty( $post->post_parent ) ? $post->ID : $post->post_parent;
+	$parent = get_post( $main_post );
+
+	$out = "<ul>";
 	$versions = json_decode( $versions );
+	$first = true;
 	foreach( $versions as $version ) {
-		$out .= "$version<br>";
+		if ( $post->post_name == $version ) {
+			$out .= "<li>$version</li>";
+		} elseif ( $first && empty( $post->post_parent ) ) {
+			$out .= "<li>$version</li>";
+		} else {
+			if ( $first ) {
+				$out .= "<li><a href=\"/$parent->post_name/\">$version</a></li>";				
+			} else {
+				$out .= "<li><a href=\"/$parent->post_name/$version/\">$version</a></li>";
+			}
+		}
+		$first = false;
 	}
+	$out .= "</ul>";
 
 	return $out;
 }
