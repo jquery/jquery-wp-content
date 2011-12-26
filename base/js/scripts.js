@@ -133,6 +133,11 @@ jQuery(function() {
 			}
 		});
 	}
+
+  // CDN auto-select-all
+  $('#site-footer .cdn input').click(function() {
+    this.select && this.select();
+  });
 	
 });
 

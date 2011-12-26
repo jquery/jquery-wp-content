@@ -12,15 +12,15 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN <em>CSS</em></strong>
-        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css</span>
+        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css"/>
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <span>//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js</span>
+        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"/>
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <span>//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js</span>
+        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"/>
       </div>
       <div class="download">
         <strong>Download jQuery UI 1.8.16 (for jQuery 1.3.2+):</strong>

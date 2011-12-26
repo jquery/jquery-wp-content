@@ -1016,13 +1016,19 @@
 	padding-right: 4px;
 	text-align: right; }
 	
-	#site-footer .cdn span 
+	#site-footer .cdn input 
 {	display: inline-block;
+	width: 100%;
+	background: inherit;
+	border: 0;
 	font-family: Consolas, monospace;
 	padding-left: 5px;
 	white-space: nowrap;
 	color: #ccc;
 	font-size: 12px; }
+
+	#site-footer .cdn input:focus 
+{	outline: none; }
 	
 	#site-footer .download 
 {	text-align: center;
