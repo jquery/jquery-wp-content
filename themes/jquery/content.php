@@ -16,7 +16,11 @@
 					<h3 class="entry-format"><?php _e( 'Featured', 'twentyeleven' ); ?></h3>
 				</hgroup>
 			<?php else : ?>
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+				<span class="comments-link-top">
+					<?php comments_popup_link( '0 Comments', '1 Comment' , '% Comments', 'inset-link'); ?>
+				</span>
+			</h1>
 			<?php endif; ?>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
@@ -25,11 +29,11 @@
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 
-			<?php if ( comments_open() && ! post_password_required() ) : ?>
+			<!--<?php if ( comments_open() && ! post_password_required() ) : ?>
 			<div class="comments-link">
 				<?php comments_popup_link( '<span class="leave-reply">' . __( 'Reply', 'twentyeleven' ) . '</span>', _x( '1', 'comments number', 'twentyeleven' ), _x( '%', 'comments number', 'twentyeleven' ) ); ?>
 			</div>
-			<?php endif; ?>
+			<?php endif; ?>-->
 		</header><!-- .entry-header -->
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
