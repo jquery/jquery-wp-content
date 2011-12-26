@@ -72,31 +72,31 @@ if (stristr($site, "qunitjs-com")) {
 <div class="project-select">
   <ul class="constrain"> 
     <li>
-      <a href="http://jquery.com/" title="" class=""> 
+      <a href="http://jquery.com/" title="" class="" tabindex="-1"> 
         <img src="<?php echo content_url(); ?>/base/i/logo-top-jquery.png" alt="jQuery" /> 
         <em>The core JS framework that allows you to write less, do more.</em> 
       </a>
     </li> 
     <li>
-      <a href="http://jqueryui.com/" title="" class=""> 
+      <a href="http://jqueryui.com/" title="" class="" tabindex="-1"> 
         <img src="<?php echo content_url(); ?>/base/i/logo-top-ui.png" alt="jQuery UI" /> 
         <em>The officially supported User Interface library for jQuery.</em> 
       </a>
     </li> 
     <li>
-      <a href="http://jquerymobile.com/" title="" class=""> 
+      <a href="http://jquerymobile.com/" title="" class="" tabindex="-1"> 
         <img src="<?php echo content_url(); ?>/base/i/logo-top-mobile.png" alt="jQuery Mobile"> 
         <em>Build mobile web apps with jQuery using this framework.</em> 
       </a>
     </li> 
     <li>
-      <a href="http://sizzlejs.com/" title="" class=""> 
+      <a href="http://sizzlejs.com/" title="" class="" tabindex="-1"> 
         <img src="<?php echo content_url(); ?>/base/i/logo-top-sizzlejs.png" alt="SizzleJS" /> 
         <em>A smoking fast CSS selector engine for JavaScript.</em> 
       </a>
     </li> 
     <li>
-      <a href="http://qunitjs.com/" title="" class=""> 
+      <a href="http://qunitjs.com/" title="" class="" tabindex="-1"> 
         <img src="<?php echo content_url(); ?>/base/i/logo-top-qunitjs.png" alt="QUnit" /> 
         <em>Write solid JavaScript apps by unit testing with QUnit.</em> 
       </a>

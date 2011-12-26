@@ -13,7 +13,12 @@
 	background: transparent; }
 	
 	*:focus
-{	outline: none; }
+{	outline: 1px dotted #FFF; }
+
+	/* Darker focus border inside #body where the background is
+	   white-ish: */
+	#body *:focus
+{	outline: 1px dotted #666; }
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section 
 {	display: block; }
