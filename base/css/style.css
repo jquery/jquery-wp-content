@@ -484,44 +484,6 @@
 	-moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
 	box-shadow: rgba(136,196,26,0.5) -1px 0 0; }
 	
-	/*******************************************************************************/
-	/* jQuery Learning Site  */
-	/*******************************************************************************/
-	
-	html.jquery-learning
-{	background: #000 url(../i/learning_bg.jpg) no-repeat center 0; }
-
-	.jquery-learning h1.site-title a
-{	background: url(../i/logo-learning.png) no-repeat;
-	height: 78px;
-	width: 550px;
-	left: -5px;
-	top: -1px;
-	position: relative;
-	margin-bottom: 9px; }
-	
-	.jquery-learning .border, .jquery-learning #site-footer 
-{	border-color: #686868; }
-	
-	.jquery-learning a, .jquery-learning .title, .jquery-learning .entry-title
-{	color: #393939; }
-	
-	.jquery-learning #container header nav ul li a, .jquery-learning #container header nav .search::-webkit-input-placeholder, .jquery-learning #container header nav .search label 
-{	color: #fff; }
-	
-	.jquery-learning #container header nav 
-{	border-top: solid 1px rgba(255,255,255,0.15);
-	background: rgba(0,0,0,0.5);
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
-	-moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
-	box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px; }
-	
-	.jquery-learning #container header nav .search .icon-search 
-{	-webkit-box-shadow: rgba(255,255,255,0.25) -1px 0 0;
-	-moz-box-shadow: rgba(255,255,255,0.25) -1px 0 0;
-	box-shadow: rgba(255,255,255,0.25) -1px 0 0; }
-	
-
 		/* ===[ Sizzle ]=== */
 
 		html.sizzlejs, .sizzlejs #container
