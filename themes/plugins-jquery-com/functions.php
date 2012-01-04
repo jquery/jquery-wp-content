@@ -8,30 +8,26 @@ function jq_plugin_meta( $attr ) {
 
 function jq_plugin_versions() {
 	$versions = jq_plugin_meta( array( "key" => "versions" ) );
-	if ( !$versions ) {
+	$latest = jq_plugin_meta( array( "key" => "latest" ) );
+	if ( !$versions || !$latest ) {
 		return;
 	}
 
 	$post = get_post( get_the_ID() );
 	$main_post = empty( $post->post_parent ) ? $post->ID : $post->post_parent;
 	$parent = get_post( $main_post );
+	$currentVersion = $main_post === get_the_ID() ? $latest : $post->post_name;
 
 	$out = "<ul>";
-	$versions = json_decode( $versions );
-	$first = true;
+	$versions = array_reverse( json_decode( $versions ) );
 	foreach( $versions as $version ) {
-		if ( $post->post_name == $version ) {
+		if ( $version === $currentVersion ) {
 			$out .= "<li>$version</li>";
-		} elseif ( $first && empty( $post->post_parent ) ) {
-			$out .= "<li>$version</li>";
+		} else if ( $version === $latest ) {
+			$out .= "<li><a href=\"/$parent->post_name/\">$version</a></li>";
 		} else {
-			if ( $first ) {
-				$out .= "<li><a href=\"/$parent->post_name/\">$version</a></li>";				
-			} else {
-				$out .= "<li><a href=\"/$parent->post_name/$version/\">$version</a></li>";
-			}
+			$out .= "<li><a href=\"/$parent->post_name/$version/\">$version</a></li>";
 		}
-		$first = false;
 	}
 	$out .= "</ul>";
 
