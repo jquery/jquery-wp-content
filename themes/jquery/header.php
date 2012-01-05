@@ -177,7 +177,7 @@ if (stristr($site, "qunitjs-com")) {
     <!-- secondary nav -->
     <nav class="clearfix">
 
-      <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+      <?php get_template_part('menu', 'header'); ?>
 
       <?php get_search_form(); ?>
     </nav>
