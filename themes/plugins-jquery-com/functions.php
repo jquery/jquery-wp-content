@@ -55,6 +55,15 @@ function jq_plugin_versions() {
 // version number release of a plugin
 //
 
+function person( $person ) {
+	$ret = htmlspecialchars( $person->name );
+	if ( !empty( $person->url ) ) {
+		$url = htmlspecialchars( $person->url );
+		$ret = "<a href='$url'>$ret</a>";
+	}
+	return $ret;
+}
+
 function jq_release_download_url() {
 	return get_post_meta( get_the_ID(), "download_url", true );
 }
@@ -79,32 +88,39 @@ function jq_release_version() {
 
 function jq_release_licenses() {
 	$pkg = jq_release_package();
-	$license = $pkg->licenses;
-	// TODO
-	return "<li>TODO</li>";
+	$ret = "";
+	foreach( $pkg->licenses as $license ) {
+		$url = htmlspecialchars( $license->url );
+		$type = empty( $license->type ) ? $url : htmlspecialchars( $license->type );
+		$ret .= "<li><a href='$url'>$type</a></li>";
+	}
+	return $ret;
 }
 
 function jq_release_maintainers() {
 	$pkg = jq_release_package();
-	$maintainers = json_decode( $pkg->maintainers );
-	// TODO
-	return "<li>TODO</li>";
+	$ret = "";
+	foreach( $pkg->maintainers as $maintainer ) {
+		$ret .= person( $maintainer ) . ", ";
+	}
+	return substr( $ret, 0, -2 );
 }
 
 function jq_release_author() {
 	$pkg = jq_release_package();
-	$author = json_decode( $pkg->author );
-	// TODO
-	return "<a href=#>TODO</a>";
+	return person( $pkg->author );
 }
 
 function jq_release_dependencies() {
 	$pkg = jq_release_package();
-	$dependencies = json_decode( $pkg->dependencies );
-	// TODO
-	return "<li>TODO</li>"; 
+	$ret = "";
+	foreach( $pkg->dependencies as $plugin => $version ) {
+		$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
+	}
+	return $ret;
 }
 
 function jq_release_keywords() {
 	return get_the_tag_list( "<ul><li>", "</li><li>", "</li></ul>" );
 }
+
