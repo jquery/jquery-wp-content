@@ -86,12 +86,14 @@
 				<?php echo jq_release_dependencies(); ?>
 				</ul>
 			</div>
+			<?php if ( $keywords = jq_release_keywords() ) { ?>
 			<div class="block">
 				<h2>Tags</h2>
 				<ul>
-				<?php echo jq_release_keywords(); ?>
+				<?php echo $keywords; ?>
 				</ul>
 			</div>
+			<?php } ?>
 		</div>
 
 	</div><!-- .entry-content -->
