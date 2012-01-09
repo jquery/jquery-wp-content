@@ -45,7 +45,9 @@
 				<ul>
 					<li><a href="<?php echo jq_release_download_url(); ?>"><b>Download</b> plugin</a></li>
 					<li><a href="<?php echo jq_plugin_repo_url(); ?>"><b>Fork</b> on GitHub</a></li>
+					<?php if ( jq_release_homepage() ) { ?>
 					<li><a href="<?php echo jq_release_homepage(); ?>"><b>View</b> homepage</a></li>
+					<?php } ?>
 					<?php if ( jq_release_demo() ) { ?>
 						<li><a href="<?php echo jq_release_demo(); ?>"><b>Try</b> a demo</a></li>
 					<?php } ?>
