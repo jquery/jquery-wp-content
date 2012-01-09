@@ -55,6 +55,10 @@ function jq_plugin_versions() {
 // version number release of a plugin
 //
 
+function jq_release_package() {
+	return json_decode( get_post_meta( get_the_ID(), "package_json", true ) );
+}
+
 function person( $person ) {
 	$ret = htmlspecialchars( $person->name );
 	if ( !empty( $person->url ) ) {
@@ -68,13 +72,19 @@ function jq_release_download_url() {
 	return get_post_meta( get_the_ID(), "download_url", true );
 }
 
-function jq_release_package() {
-	return json_decode( get_post_meta( get_the_ID(), "package_json", true ) );
-}
-
 function jq_release_homepage() {
 	$pkg = jq_release_package();
 	return $pkg->homepage;
+}
+
+function jq_release_demo() {
+	$pkg = jq_release_package();
+	return empty( $pkg->demo ) ? "" : $pkg->demo;
+}
+
+function jq_release_docs() {
+	$pkg = jq_release_package();
+	return empty( $pkg->docs ) ? "" : $pkg->docs;
 }
 
 function jq_release_date() {
