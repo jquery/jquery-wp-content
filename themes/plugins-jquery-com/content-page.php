@@ -23,12 +23,14 @@
 				<h2>Author</h2>
 				<?php echo jq_release_author(); ?>
 			</div>
+			<?php if ( $maintainers = jq_release_maintainers() ) { ?>
 			<div class="block">
 				<h2>Maintainers</h2>
 				<ul>
-					<?php echo jq_release_maintainers(); ?>
+					<?php echo $maintainers; ?>
 				</ul>
 			</div><!-- .block -->
+			<?php } ?>
 			<div class="block">
 				<h2>Versions</h2>
 				<ul>

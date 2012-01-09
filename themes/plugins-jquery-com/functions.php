@@ -110,6 +110,11 @@ function jq_release_licenses() {
 function jq_release_maintainers() {
 	$pkg = jq_release_package();
 	$ret = "";
+
+	if ( !$pkg->maintainers ) {
+		return $ret;
+	}
+
 	foreach( $pkg->maintainers as $maintainer ) {
 		$ret .= person( $maintainer ) . ", ";
 	}
