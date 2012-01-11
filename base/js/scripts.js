@@ -123,51 +123,52 @@ App.subscribe("init", function(){
 		}
 	});
 	
-  // Project Tooltips
-  $(".projects").find(".jquery, .jquery-ui, .jquery-mobile").on( "mouseover", function() {
-    var el = $( this ), 
-      tooltips = $(".tooltips"), 
-      tooltip = {},
-      $tooltip;
+	// Project Tooltips
+	$(".projects").find(".jquery, .jquery-ui, .jquery-mobile").on( "mouseover", function() {
+		var el = $( this ), 
+			tooltips = $(".tooltips"), 
+			tooltip = {},
+			$tooltip;
 
-    if ( el.hasClass("jquery") ) {
-      tooltip = $(".tooltips .jquery");
-    } 
-    else if ( el.hasClass("jquery-ui") ) {
-      tooltip = $(".tooltips .jquery-ui");
-    } 
-    else if ( el.hasClass("jquery-mobile") ) {
-      tooltip = $(".tooltips .jquery-mobile");
-    }
+		if ( el.hasClass("jquery") ) {
+			tooltip = $(".tooltips .jquery");
+		} 
+		else if ( el.hasClass("jquery-ui") ) {
+			tooltip = $(".tooltips .jquery-ui");
+		} 
+		else if ( el.hasClass("jquery-mobile") ) {
+			tooltip = $(".tooltips .jquery-mobile");
+		}
 
-    $tooltip = $( ".tooltip:visible" ,tooltips );
-    if ( $tooltip !== tooltip ) {
-      clearTimeout( tooltip_timeout );
-      $tooltip.fadeOut(200);
-    }
+		$tooltip = $( ".tooltip:visible" ,tooltips );
+		if ( $tooltip !== tooltip ) {
+			clearTimeout( tooltip_timeout );
+			$tooltip.fadeOut(200);
+		}
 
-    if ( tooltip.is(":hidden") ) {
-      setTimeout(function() { tooltip.fadeIn(300); }, 300);
-    }
-  });	
-  
-  $(".tooltips").find(".jquery, .jquery-ui, .jquery-mobile").on("mouseout", function() {
-    var el = $( this );
-    tooltip_timeout = setTimeout(function() { el.fadeOut(200); }, 300);
-  }).bind("mouseover", function() {
-    clearTimeout( tooltip_timeout );
-  });
-  
-  // Fancy Dropdown
-  $(".links .dropdown").hover(function() {
-    $( this ).children("ul").stop( true, true ).slideDown( 100 );
-  }, function() {
-    $( this ).children("ul").stop( true, true ).slideUp( 100 );
-  });
+		if ( tooltip.is(":hidden") ) {
+			setTimeout(function() { tooltip.fadeIn(300); }, 300);
+		}
+	});
+
+	$(".tooltips").find(".jquery, .jquery-ui, .jquery-mobile").on("mouseout", function() {
+		var el = $( this );
+		tooltip_timeout = setTimeout(function() { el.fadeOut(200); }, 300);
+	}).bind("mouseover", function() {
+		clearTimeout( tooltip_timeout );
+	});
+
+	// Fancy Dropdown
+	$(".links .dropdown").hover(function() {
+		$( this ).children("ul").stop( true, true ).slideDown( 100 );
+	}, function() {
+		$( this ).children("ul").stop( true, true ).slideUp( 100 );
+	});
 	
-  // CDN auto-select-all
-  $('#site-footer .cdn input').click(function() {
-    this.select && this.select();
-  });
-
+	// CDN auto-select-all
+	$('#site-footer .cdn input').on("click", function() {
+		if ( typeof this.select === "function" ) {
+			this.select();
+		}
+	});
 });

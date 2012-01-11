@@ -12,7 +12,7 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN</strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"/>
+        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
       </div>
       <div class="download">
         <strong>Download jQuery 1.7.1:</strong>

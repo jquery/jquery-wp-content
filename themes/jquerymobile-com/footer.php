@@ -12,15 +12,15 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN <em>CSS</em></strong>
-        <input value="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>
+        <input value="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//code.jquery.com/jquery-1.6.4.min.js"/>
+        <input value="//code.jquery.com/jquery-1.6.4.min.js">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"/>
+        <input value="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js">
       </div>
       <div class="download">
         <strong>Download jQuery Mobile 1.0:</strong>
