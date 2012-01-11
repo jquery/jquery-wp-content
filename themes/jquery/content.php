@@ -18,7 +18,7 @@
 			<?php else : ?>
 			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'twentyeleven' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
 				<span class="comments-link-top">
-					<?php comments_popup_link( '0 Comments', '1 Comment' , '% Comments', 'inset-link'); ?>
+					<?php comments_popup_link( '0 Comments', '1 Comment' , '% Comments', 'inset-btn'); ?>
 				</span>
 			</h1>
 			<?php endif; ?>

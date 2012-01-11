@@ -202,7 +202,20 @@
 	border: 1px solid #ccc;
 	border-bottom: none; }
 	
-	.entry-meta { clear: left; }
+	.entry-meta
+{	clear: left;
+	color: #999;
+	font-size: 12px;
+	margin: 20px 0; }
+
+	.comments-link-top a
+{
+	font-size: 12px;
+	float: right; }
+
+	.post
+{
+	padding-bottom: 20px; }
 
 	/*******************************************************************************/
 	/* Syntax */
@@ -242,6 +255,7 @@
 	
 	h1.title, h1.entry-title, h2.title, h2.entry-title 
 {	width: 100%;
+	font-size: 22px;
 	text-shadow: 0 1px 1px #fff;
 	margin: 0 0 20px -30px;
 	padding: 10px 30px 10px 30px;
@@ -252,6 +266,10 @@
 	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
 	background: -moz-linear-gradient(top,  #e5e5e5,  #d5d5d5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5'); }
+
+	h1.title a, h1.entry-title a, h2.title a, h2.entry-title a
+{
+	text-decoration: none; }
 
 	/*******************************************************************************/
 	/* Buttons */
@@ -303,7 +321,24 @@
 	
 	.btn 
 {	zoom: 1; }
-	
+
+	.inset-btn
+{
+	background: #999;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 1px 1px 1px #666;
+	-moz-box-shadow: inset 1px 1px 1px #666;
+	box-shadow: inset 1px 1px 1px #666;
+	color: #FFF!important;
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
+	padding: 6px 8px; }
+
 	/*******************************************************************************/
 	/* Grid
 	/*******************************************************************************/
@@ -1486,7 +1521,16 @@
 	/*******************************************************************************/
 	/* Sidebar Right */
 	/*******************************************************************************/
-	
+
+	#sidebar ul
+{
+	list-style: none; }
+
+	#sidebar li
+{
+	padding: 0;
+	margin: 0; }
+
 	#container #body.sidebar-right .inner 
 {	width: 72.25%;
 	float: left; }
