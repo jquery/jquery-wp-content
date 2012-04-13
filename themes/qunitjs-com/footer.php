@@ -84,7 +84,7 @@
 <!-- /footer -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo content_url(); ?>/base/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
 
 <script id="tooltip-template" type="text/html">
   <div class="tooltip">
@@ -93,11 +93,11 @@
   </div>
 </script>
 
-<script src="<?php echo content_url(); ?>/base/js/plugins/jquery.ba-outside-events.min.js"></script>
-<script src="<?php echo content_url(); ?>/base/js/plugins/syntaxhighlighter.min.js"></script>
-<script src="<?php echo content_url(); ?>/base/js/plugins/jquery.infieldlabel.min.js"></script>
-<script src="<?php echo content_url(); ?>/base/js/plugins.js"></script>
-<script src="<?php echo content_url(); ?>/base/js/scripts.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.ba-outside-events.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/syntaxhighlighter.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.infieldlabel.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 <!-- /scripts -->
 

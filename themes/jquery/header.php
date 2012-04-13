@@ -53,9 +53,9 @@ if (stristr($site, "qunitjs-com")) {
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
-<script src="<?php echo content_url(); ?>/base/js/modernizr.custom.2.0.6.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.0.6.min.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
-<script src="<?php echo content_url(); ?>/base/js/selectivizr.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.js"></script>
 <![endif]-->
 
 <?php 
@@ -73,31 +73,31 @@ if (stristr($site, "qunitjs-com")) {
   <ul class="constrain"> 
     <li>
       <a href="http://jquery.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo content_url(); ?>/base/i/logo-top-jquery.png" alt="jQuery" /> 
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-jquery.png" alt="jQuery" /> 
         <em>The core JS framework that allows you to write less, do more.</em> 
       </a>
     </li> 
     <li>
       <a href="http://jqueryui.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo content_url(); ?>/base/i/logo-top-ui.png" alt="jQuery UI" /> 
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-ui.png" alt="jQuery UI" /> 
         <em>The officially supported User Interface library for jQuery.</em> 
       </a>
     </li> 
     <li>
       <a href="http://jquerymobile.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo content_url(); ?>/base/i/logo-top-mobile.png" alt="jQuery Mobile"> 
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-mobile.png" alt="jQuery Mobile"> 
         <em>Build mobile web apps with jQuery using this framework.</em> 
       </a>
     </li> 
     <li>
       <a href="http://sizzlejs.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo content_url(); ?>/base/i/logo-top-sizzlejs.png" alt="SizzleJS" /> 
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-sizzlejs.png" alt="SizzleJS" /> 
         <em>A smoking fast CSS selector engine for JavaScript.</em> 
       </a>
     </li> 
     <li>
       <a href="http://qunitjs.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo content_url(); ?>/base/i/logo-top-qunitjs.png" alt="QUnit" /> 
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-qunitjs.png" alt="QUnit" /> 
         <em>Write solid JavaScript apps by unit testing with QUnit.</em> 
       </a>
     </li>
