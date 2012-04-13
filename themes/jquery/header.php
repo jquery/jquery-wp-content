@@ -49,7 +49,7 @@ if (stristr($site, "qunitjs-com")) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
-<link rel="stylesheet" href="<?php echo content_url() ?>/base/css/style.css?v=1">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css?v=1">
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
