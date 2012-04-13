@@ -1,10 +1,6 @@
 <?php
 /**
  * The template used to display Tag Archive pages
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
  */
 
 get_header(); ?>

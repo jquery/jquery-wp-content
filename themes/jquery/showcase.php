@@ -8,10 +8,6 @@
  * and a left sidebar holding aside posts.
  *
  * We are creating two queries to fetch the proper posts and a custom widget for the sidebar.
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
  */
 
 // Enqueue showcase script for the slider

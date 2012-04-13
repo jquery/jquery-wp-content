@@ -6,10 +6,6 @@
  * For example, puts together date-based pages if no date.php file exists.
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
  */
 
 get_header(); ?>

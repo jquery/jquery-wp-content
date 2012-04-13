@@ -32,10 +32,6 @@
  * </code>
  *
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
  */
 
 /**
@@ -87,12 +83,6 @@ function twentyeleven_setup() {
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
-
-	// Load up our theme options page and related code.
-	require( dirname( __FILE__ ) . '/inc/theme-options.php' );
-
-	// Grab Twenty Eleven's Ephemera widget.
-	require( dirname( __FILE__ ) . '/inc/widgets.php' );
 
 	// Add default posts and comments RSS feed links to <head>.
 	add_theme_support( 'automatic-feed-links' );
@@ -367,8 +357,6 @@ add_filter( 'wp_page_menu_args', 'twentyeleven_page_menu_args' );
  * @since Twenty Eleven 1.0
  */
 function twentyeleven_widgets_init() {
-
-	register_widget( 'Twenty_Eleven_Ephemera_Widget' );
 
 	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'twentyeleven' ),
