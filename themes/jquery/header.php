@@ -1,7 +1,7 @@
 <?php 
 global $sidebar;
 $sidebar = "sidebar-right";
-$site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", get_site_url())));
+$site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", home_url())));
 
 $tlsite = "jquery";
 if (stristr($site, "jqueryui-com")) {

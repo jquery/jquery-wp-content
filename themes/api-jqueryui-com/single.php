@@ -1,5 +1,5 @@
 <?php
-$site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", get_site_url())));
+$site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", home_url())));
 ?>
 <?php get_header(); ?>
                 
