@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying search forms in Twenty Eleven
+ * The template for displaying search forms
  */
 ?>
       <form method="get" id="searchform" class="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
