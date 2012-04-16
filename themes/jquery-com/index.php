@@ -69,7 +69,7 @@ return false;
 <li><a href="http://www.netflix.com" class="jq-netflix" title="Netflix">Netflix</a></li>
 <li><a href="http://www.technorati.com" class="jq-technorati" title="Technorati">Technorati</a></li>
 <li><a href="http://www.mozilla.org" class="jq-mozilla" title="Mozilla">Mozilla</a></li>
-<li><a href="http://www.wordpress.org" class="jq-wordpress" title="Wordpress">Wordpress</a></li>
+<li><a href="http://www.wordpress.org" class="jq-wordpress" title="WordPress">WordPress</a></li>
 <li><a href="http://www.drupal.org" class="jq-drupal" title="Drupal">Drupal</a></li>
 </ul>
 </div><!-- /#jq-whosUsing -->
