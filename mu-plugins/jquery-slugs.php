@@ -20,7 +20,7 @@ function jquery_sanitize_title_with_dashes($title, $raw_title = '', $context = '
 
 	if (seems_utf8($title)) {
 		if (function_exists('mb_strtolower')) {
-			$title = mb_strtolower($title, 'UTF-8');
+			// # JQUERY $title = mb_strtolower($title, 'UTF-8');
 		}
 		$title = utf8_uri_encode($title, 200);
 	}
@@ -42,7 +42,7 @@ function jquery_sanitize_title_with_dashes($title, $raw_title = '', $context = '
 		$title = str_replace( array( '%c2%a9', '%c2%ae', '%c2%b0', '%e2%80%a6', '%e2%84%a2' ), '', $title );
 	}
 
-	$title = preg_replace('/[^%a-z0-9 _-]/', '', $title);
+	$title = preg_replace('/[^%a-z0-9 _.-]/i', '', $title); # JQUERY added . and /i
 	$title = preg_replace('/\s+/', '-', $title);
 	$title = preg_replace('|-+|', '-', $title);
 	$title = trim($title, '-');
