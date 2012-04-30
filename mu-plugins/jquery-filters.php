@@ -4,4 +4,4 @@
  */
 
 // Disable smilies.
-add_filter( 'use_smilies', '__return_false' );
+add_filter( 'pre_option_use_smilies', '__return_false' );
