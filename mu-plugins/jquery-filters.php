@@ -4,7 +4,7 @@
  */
 
 // Disable smilies.
-add_filter( 'pre_option_use_smilies', '__return_false' );
+add_filter( 'pre_option_use_smilies', '__return_zero' );
 
-// Turn on XML RPC
-add_action( 'enable_xmlrpc', '__return_true' );
+// Turn on XML-RPC
+add_filter( 'pre_option_enable_xmlrpc', '__return_true' );
