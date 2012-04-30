@@ -8,10 +8,11 @@
   	
   	<?php // get_sidebar( 'footer' ); ?>
   	
+	<div class="col7-1 col"></div>
     <div class="col3-2 col">
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/sizzle">Github <small>Sizzle <br>Source</small></a></li>
-        <li class="footer-icon icon-forum"><a href="http://groups.google.com/group/sizzlejs">Mailing List <small>Community <br>Support</small></a></li>
+        <li class="footer-icon icon-forum"><a href="http://groups.google.com/group/sizzlejs">Forum <small>Community <br>Support</small></a></li>
         <li class="footer-icon icon-bugs"><a href="https://github.com/jquery/sizzle/issues">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>
     </div>
