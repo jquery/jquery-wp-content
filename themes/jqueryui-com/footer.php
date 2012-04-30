@@ -12,18 +12,18 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN <em>CSS</em></strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css">
+        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/base/jquery-ui.css">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js">
+        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/jquery-ui.min.js">
       </div>
       <div class="download">
-        <strong>Download jQuery UI 1.8.16 (for jQuery 1.3.2+):</strong>
+        <strong>Download jQuery UI 1.8.19 (for jQuery 1.3.2+):</strong>
         <span><a href="#">Development Bundle</a>
         <a href="#">Themes</a>
         <a href="#">Download Builder →</a></span>
