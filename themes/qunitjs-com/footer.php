@@ -77,7 +77,7 @@
         <li class="icon-twitter icon"><a href="#">Twitter</a></li>
         <li class="icon-irc icon"><a href="#">IRC</a></li>
       </ul>
-        <p class="copyright">Copyright &copy; 2011 by <a href="#">The jQuery Project</a>.<br /><span class="sponsor-line">Sponsored by <a href="http://mediatemple.net" class="mt-link">Media Temple</a> and <a href="#">others</a>.</span></p>
+        <p class="copyright">Copyright &copy; 2012 by <a href="#">The jQuery Project</a>.<br /><span class="sponsor-line">Sponsored by <a href="http://mediatemple.net" class="mt-link">Media Temple</a> and <a href="#">others</a>.</span></p>
     </div>
   </div>
 </footer>
