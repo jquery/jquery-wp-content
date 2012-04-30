@@ -8,6 +8,8 @@
 //
 App.subscribe("init", function(){
 
+var tooltip_timeout;
+
 	//
 	// Set Auto Height
 	//
@@ -141,7 +143,7 @@ App.subscribe("init", function(){
 		}
 
 		$tooltip = $( ".tooltip:visible" ,tooltips );
-		if ( $tooltip !== tooltip ) {
+		if ( $tooltip !== tooltip && tooltip_timeout ) {
 			clearTimeout( tooltip_timeout );
 			$tooltip.fadeOut(200);
 		}
