@@ -6,7 +6,8 @@
 
   <div class="constrain">
 
-    <div class="col7-3 col">
+	<div class="col7-1 col"></div>
+    <div class="col3-2 col">
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN</strong>
@@ -23,52 +24,6 @@
       </ul>
     </div>
 
-    <div class="col7-2 col">
-      <h3><span>Presentations</span></h3>
-      <ul class="presentations">
-        <li>
-          <a href="#">
-            <span><img src="<?php echo get_template_directory_uri(); ?>content/presentations/building-spas-jquerys-best-friends.jpg" width="142" height="92" alt="" /></span>
-            <strong>Building Single Page Applications With jQuery’s Best Friends</strong><br />
-            <cite>Addy Osmoni</cite>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span><img src="<?php echo get_template_directory_uri(); ?>content/presentations/addyosmani-2.jpg" width="142" height="92" alt="" /></span>
-            <strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
-            <cite>Addy Osmoni</cite>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="col7-2 col">
-      <h3><span>Books</span></h3>
-      <ul class="books">
-        <li>
-          <a href="#">
-            <span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>content/books/learning-jquery-1.3.jpg" width="92" height="114" alt="" /></span>
-            <strong>Learning jQuery 1.3</strong><br />
-            <cite>Karl Swedberg and Jonathan Chaffer</cite>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span><img src="<?php echo get_template_directory_uri(); ?>content/books/jquery-in-action.jpg" width="92" height="114" alt="" /></span>
-            <strong>jQuery in Action</strong><br />
-            <cite>Bear Bibeault and Yehuda Katz</cite>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <span><img src="<?php echo get_template_directory_uri(); ?>content/books/jquery-enlightenment.jpg" width="92" height="114" alt="" /></span>
-            <strong>jQuery Enlightenment</strong><br />
-            <cite>Cody Lindley</cite>
-          </a>
-        </li>
-      </ul>
-    </div>
     <div id="legal">
       <ul class="footer-site-links">
         <li class="icon-learning-center icon"><a href="#">Learning Center</a></li>
