@@ -14,8 +14,8 @@
         <span>http://code.jquery.com/qunit/qunit-git.js</span>
       </div>
       <div class="download">
-        <strong>Download QUnit 1.2.0:</strong>
-        <span><a href="http://code.jquery.com/qunit/qunit-1.2.0.js">qunit.js</a><a href="http://code.jquery.com/qunit/qunit-1.2.0.css">qunit.css</a></span>
+        <strong>Download QUnit 1.5.0:</strong>
+        <span><a href="http://code.jquery.com/qunit/qunit-1.5.0.js">qunit.js</a><a href="http://code.jquery.com/qunit/qunit-1.5.0.css">qunit.css</a></span>
       </div>
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/qunit">Github <small>QUnit <br>Source</small></a></li>
