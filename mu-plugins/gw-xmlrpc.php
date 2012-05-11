@@ -13,10 +13,12 @@ function gw_get_post_paths( $post_type = "" ) {
 		'post_status' => 'publish',
 		'posts_per_page' => -1,
 		'update_post_term_cache' => false,
-		'update_post_meta_cache' => false,
 	) );
 	foreach ( $query->posts as $post ) {
-		$results[ $post->post_type . '/' . get_page_uri( $post->ID ) ] = $post->ID;
+		$results[ $post->post_type . '/' . get_page_uri( $post->ID ) ] = array(
+			'id' => $post->ID,
+			'checksum' => get_post_meta( $post->ID, 'gwcs', true ),
+		);
 	}
 
 	return $results;
