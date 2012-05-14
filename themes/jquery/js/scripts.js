@@ -96,13 +96,6 @@ var tooltip_timeout;
 		});
 		
 	//
-	// Run Van Gogh - Syntax Highlighting
-	//
-	$("pre").children("code").text(function(i, t) {
-		return $.trim( t );
-	}).parent().vanGogh();
-	
-	//
 	// Learning Site Specific
 	//
 	$("#sidebar .paper").bind("click", function(e){
