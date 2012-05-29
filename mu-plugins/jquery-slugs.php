@@ -10,6 +10,10 @@ Author URI: http://www.learningjquery.com/
 
 // Based on sanitize_title_with_dashes method (wp-includes/formatting.php)
 function jquery_sanitize_title_with_dashes($title, $raw_title = '', $context = 'display') {
+	// Special case during the install process.
+	if ( 'Uncategorized' == $raw_title )
+		return 'uncategorized';
+
 	$title = strip_tags($title);
 	// Preserve escaped octets.
 	$title = preg_replace('|%([a-fA-F0-9][a-fA-F0-9])|', '---$1---', $title);
