@@ -11,3 +11,6 @@ add_filter( 'pre_option_enable_xmlrpc', '__return_true' );
 
 // Disable WordPress auto-paragraphing for posts.
 remove_filter( 'the_content', 'wpautop' );
+
+// Disable more restrictive multisite upload settings.
+remove_filter( 'upload_mimes', 'check_upload_mimes' );
