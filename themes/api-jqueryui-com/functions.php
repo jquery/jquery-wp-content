@@ -1,4 +1,8 @@
 <?php
+
+global $tlsite;
+$tlsite = "jquery-ui";
+
 /*
 This file is part of SANDBOX.
 
