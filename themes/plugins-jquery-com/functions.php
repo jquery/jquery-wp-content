@@ -79,12 +79,12 @@ function jq_release_homepage() {
 
 function jq_release_demo() {
 	$pkg = jq_release_package();
-	return empty( $pkg->demo ) ? "" : $pkg->demo;
+	return empty( $pkg->jquery->demo ) ? "" : $pkg->jquery->demo;
 }
 
 function jq_release_docs() {
 	$pkg = jq_release_package();
-	return empty( $pkg->docs ) ? "" : $pkg->docs;
+	return empty( $pkg->jquery->docs ) ? "" : $pkg->jquery->docs;
 }
 
 function jq_release_date() {
@@ -129,7 +129,7 @@ function jq_release_author() {
 function jq_release_dependencies() {
 	$pkg = jq_release_package();
 	$ret = "";
-	foreach( $pkg->dependencies as $plugin => $version ) {
+	foreach( $pkg->jquery->dependencies as $plugin => $version ) {
 		$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
 	}
 	return $ret;
