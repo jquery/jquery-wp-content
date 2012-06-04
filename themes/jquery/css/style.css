@@ -232,9 +232,6 @@
 	p code
 {	background: #FFC; }
 
-	pre 
-{	border: 1px solid #ccc; }
-	
 	iframe 
 {	border: 1px solid #bfbfbf;
 	padding: 1px; }
@@ -243,11 +240,9 @@
 	 * Pygments style: Tango
 	 * TODO: Improve
 	 */
-	.highlighttable { margin: 1em 0; }
+	.highlightblock { margin: 1em 0; width: 100%; overflow: auto; border: 1px solid #ccc; background: #f8f8f8; }
 	.highlighttable .linenodiv pre, .highlight pre { padding: .5em; }
-	.highlighttable .highlight pre { border-left: none; }
-	.highlighttable .hll { background-color: #ffffcc }
-	.highlight  { background: #f8f8f8; }
+	.highlighttable .linenodiv pre { border-right: 1px solid #ccc; background: #fff; }
 	.highlight .c { color: #8f5902; font-style: italic } /* Comment */
 	.highlight .err { color: #a40000; border: 1px solid #ef2929 } /* Error */
 	.highlight .g { color: #000000 } /* Generic */
