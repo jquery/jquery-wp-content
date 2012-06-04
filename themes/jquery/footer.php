@@ -1,12 +1,14 @@
+<?php
+$site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", home_url())));
+?>
 </div>
 <!-- /container -->
-
 <!-- footer -->
 <footer id="site-footer" class="clearfix">
 
   <div class="constrain">
 
-  	<?php // get_sidebar( 'footer' ); ?>
+    <?php // get_sidebar( 'footer' ); ?>
 
     <div class="col7-3 col">
       <h3><span>Quick Access</span></h3>
@@ -98,6 +100,11 @@
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.ba-outside-events.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
+
+<?php if ( is_single() && stristr($site, 'api')) { ?>
+  <script src="<?php echo get_template_directory_uri(); ?>/js/prettify.js"></script>
+<?php } ?>
+
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
 
 <!-- /scripts -->

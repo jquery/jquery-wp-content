@@ -35,7 +35,11 @@ if (!isset($tlsite)) {
 
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css?v=1">
+<?php if (stristr($site, "api")) { ?>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/prettify.css?v=1">
+<?php } ?>
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.0.6.min.js"></script>
