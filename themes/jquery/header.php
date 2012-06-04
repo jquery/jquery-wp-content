@@ -3,24 +3,9 @@ global $sidebar;
 $sidebar = "sidebar-right";
 $site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", home_url())));
 
-$tlsite = "jquery";
-if (stristr($site, "jqueryui-com")) {
-  $tlsite = "jquery-ui";
-}
-if (stristr($site, "jquery-org")) {
-  $tlsite = "jquery-project";
-}
-if (stristr($site, "jquerymobile-com")) {
-  $tlsite = "jquery-mobile";
-}
-if (stristr($site, "learn-jquery-com")) {
-  $tlsite = "jquery-learning";
-}
-if (stristr($site, "sizzlejs-com")) {
-  $tlsite = "sizzlejs";
-}
-if (stristr($site, "qunitjs-com")) {
-  $tlsite = "qunitjs";
+global $tlsite;
+if (!isset($tlsite)) {
+  $tlsite = "jquery";
 }
 ?>
 <!DOCTYPE html>
