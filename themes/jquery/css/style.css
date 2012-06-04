@@ -233,7 +233,7 @@
 {	background: #FFC; }
 
 	pre 
-{	border: 1px solid #ccc !important; }
+{	border: 1px solid #ccc; }
 	
 	iframe 
 {	border: 1px solid #bfbfbf;
@@ -243,6 +243,9 @@
 	 * Pygments style: Tango
 	 * TODO: Improve
 	 */
+	.highlighttable { margin: 1em 0; }
+	.highlighttable .linenodiv pre, .highlighttable .highlight pre { padding: .5em; }
+	.highlighttable .highlight pre { border-left: none; }
 	.highlighttable .hll { background-color: #ffffcc }
 	.highlighttable  { background: #f8f8f8; }
 	.highlighttable .c { color: #8f5902; font-style: italic } /* Comment */
