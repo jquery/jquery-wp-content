@@ -3,28 +3,26 @@ global $sidebar;
 $sidebar = "sidebar-right";
 $site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", home_url())));
 
-global $tlsite;
-if (!isset($tlsite)) {
-  $tlsite = "jquery";
-  if (stristr($site, "jqueryui-com")) {
-    $tlsite = "jquery-ui";
-  }
-  if (stristr($site, "jquery-org")) {
-    $tlsite = "jquery-project";
-  }
-  if (stristr($site, "jquerymobile-com")) {
-    $tlsite = "jquery-mobile";
-  }
-  if (stristr($site, "learn-jquery-com")) {
-    $tlsite = "jquery-learning";
-  }
-  if (stristr($site, "sizzlejs-com")) {
-    $tlsite = "sizzlejs";
-  }
-  if (stristr($site, "qunitjs-com")) {
-    $tlsite = "qunitjs";
-  }
+$tlsite = "jquery";
+if (stristr($site, "jqueryui-com")) {
+  $tlsite = "jquery-ui";
 }
+if (stristr($site, "jquery-org")) {
+  $tlsite = "jquery-project";
+}
+if (stristr($site, "jquerymobile-com")) {
+  $tlsite = "jquery-mobile";
+}
+if (stristr($site, "learn-jquery-com")) {
+  $tlsite = "jquery-learning";
+}
+if (stristr($site, "sizzlejs-com")) {
+  $tlsite = "sizzlejs";
+}
+if (stristr($site, "qunitjs-com")) {
+  $tlsite = "qunitjs";
+}
+?>
 <!DOCTYPE html> 
 <!--[if lt IE 7 ]> <html class="no-js ie6 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js ie7 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
