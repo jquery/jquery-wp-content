@@ -111,7 +111,7 @@ function jq_release_maintainers() {
 	$pkg = jq_release_package();
 	$ret = "";
 
-	if ( !$pkg->maintainers ) {
+	if ( empty( $pkg->maintainers ) ) {
 		return $ret;
 	}
 
