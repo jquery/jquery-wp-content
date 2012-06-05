@@ -130,7 +130,11 @@ function jq_release_dependencies() {
 	$pkg = jq_release_package();
 	$ret = "";
 	foreach( $pkg->jquery->dependencies as $plugin => $version ) {
-		$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
+		if ( get_page_by_path( $plugin ) ) {
+			$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
+		} else {
+			$ret .= "<li>$plugin $version</li>";
+		}
 	}
 	return $ret;
 }
