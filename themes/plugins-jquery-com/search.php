@@ -21,7 +21,6 @@ get_header(); ?>
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-				      	<?php switch_to_blog($post->blog_id); ?>
 					<?php
 						/* Include the Post-Format-specific template for the content.
 						 * If you want to overload this in a child theme then include a file
