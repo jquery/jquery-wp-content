@@ -35,6 +35,17 @@ function ks_prev_next($user='') {
   endif;
 }
 
+function ks_categories_and_parents() {
+  $all_cats = get_categories();
+  $cat_list = array();
+  foreach ($all_cats as $cat => $catinfo) {
+    $catid = $catinfo->term_id;
+    if (in_category( $catid ) && strpos($catinfo->cat_name, "Version") === false) {
+      $cat_list[] = '<span class="category">' . substr(get_category_parents($catid, true, ' &gt; '), 0, -6) . '</span>';
+    }
+  }
+  return implode(' | ', $cat_list);
+}
 // checks if the post is in a descendant of the specified category
 function ks_in_descendant_category( $cats, $_post = null ) {
   foreach ( (array) $cats as $cat ) {
