@@ -5,13 +5,13 @@
 
 get_header(); ?>
 
-        <!-- body -->
-        <?php global $sidebar; ?>
+    <!-- body -->
+    <?php global $sidebar; ?>
     <div id="body" class="clearfix <?php echo $sidebar; ?>">
       <div class="inner" role="main">
       <?php
       $args = array(
-        'orderby' => 'title',
+        'orderby' => 'slug',
         'order' => 'ASC',
         'posts_per_page' => -1
       );
