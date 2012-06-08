@@ -35,6 +35,29 @@ function ks_prev_next($user='') {
   endif;
 }
 
+function ks_get_subcategories( $cat_id=0, $cat_args = array() ) {
+  if ( !is_category() ) {
+    return '';
+  }
+
+  $cat_default_args = array(
+    'depth' => '1',
+    'title_li' => '',
+    'show_option_none' => '',
+    'echo' => 0
+  );
+  $cat_args = array_merge( $cat_default_args, $cat_args );
+  $cat_data = get_term_by( 'id', (int)$cat_id, 'category' );
+  $cat_parent = $cat_data->parent;
+
+  if ($cat_parent == 0) {
+    $cat_parent = $cat_id;
+  }
+
+  $cat_args['parent'] = $cat_parent;
+  return wp_list_categories( $cat_args );
+}
+
 function ks_categories_and_parents() {
   $all_cats = get_categories();
   $cat_list = array();
