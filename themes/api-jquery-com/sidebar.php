@@ -12,7 +12,7 @@
 						<?php wp_list_categories( $cat_args ); ?>
 					</ul>
           <?php
-          $subcats = ks_get_subcategories( get_query_var('cat') );
+          $subcats = jq_get_subcategories( get_query_var('cat') );
           if ($subcats):
           ?>
           <ul class="sub-categories">

@@ -30,7 +30,7 @@
 		<footer class="entry-meta">
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 			<?php
-        echo ks_categories_and_parents();
+        echo jq_categories_and_parents();
 			?>
 
 			<?php endif; // End if 'post' == get_post_type() ?>
