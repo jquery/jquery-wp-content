@@ -20,6 +20,18 @@ function post_type_jquery_plugin_init() {
 	) );
 }
 
+// Rewrite jquery_plugin posts to be at the root
+add_action( 'parse_request', function( $wp ) {
+	if ( isset( $wp->query_vars['name'] ) )
+		$wp->query_vars['post_type'] = 'jquery_plugin';
+} );
+add_filter( 'post_type_link', function( $post_link, $post ) {
+	if ( 'jquery_plugin' === $post->post_type ) {
+		return user_trailingslashit( home_url( $post->post_name ) );
+	}
+	return $post_link;
+}, 10, 2 );
+
 // Only search against parent jquery_plugin posts
 function jquery_plugin_posts_only_for_searches( $query ) {
 	if ( $query->is_main_query() && $query->is_search() ) {
