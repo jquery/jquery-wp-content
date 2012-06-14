@@ -3,13 +3,14 @@ Theme Name: plugins-jquery-com
 Template: jquery
 */
 
-.page h1 { font-size: 200%; margin-bottom: 0.5em; }
-.page hr { margin: 0; margin-bottom: 0.5em; }
+.jquery_plugin h1 { font-size: 200%; margin-bottom: 0.5em; }
+.jquery_plugin hr { margin: 0; margin-bottom: 0.5em; }
 
-.page .block { border-top: 1px solid #CCC; padding-top: 0.5em; font-size: 1.2em; margin-top: 4px; }
-.page .block h2 { font-size: 90%; font-weight: normal; color: #999; margin-bottom: 8px; }
-.page .right { text-align: right; }
+.jquery_plugin .block { border-top: 1px solid #CCC; padding-top: 0.5em; font-size: 1.2em; margin-top: 4px; }
+.jquery_plugin .block h2 { font-size: 90%; font-weight: normal; color: #999; margin-bottom: 8px; }
+.jquery_plugin .right { text-align: right; }
 
-.page .block ul, .page .block li { list-style-type: none; margin: 0; padding: 0; }
-.page .block ul { font-size: 110%; margin-bottom: 1em; }
-.page .block li { margin: 0.6em 0; }
+.jquery_plugin .block ul,
+.jquery_plugin .block li { list-style-type: none; margin: 0; padding: 0; }
+.jquery_plugin .block ul { font-size: 110%; margin-bottom: 1em; }
+.jquery_plugin .block li { margin: 0.6em 0; }

@@ -1,35 +1,20 @@
-<?php 
+<?php
 global $sidebar;
 $sidebar = "sidebar-right";
 $site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", home_url())));
 
-$tlsite = "jquery";
-if (stristr($site, "jqueryui-com")) {
-  $tlsite = "jquery-ui";
-}
-if (stristr($site, "jquery-org")) {
-  $tlsite = "jquery-project";
-}
-if (stristr($site, "jquerymobile-com")) {
-  $tlsite = "jquery-mobile";
-}
-if (stristr($site, "learn-jquery-com")) {
-  $tlsite = "jquery-learning";
-}
-if (stristr($site, "sizzlejs-com")) {
-  $tlsite = "sizzlejs";
-}
-if (stristr($site, "qunitjs-com")) {
-  $tlsite = "qunitjs";
+global $tlsite;
+if (!isset($tlsite)) {
+  $tlsite = "jquery";
 }
 ?>
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="no-js ie6 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js ie7 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js ie8 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 9 ]>    <html class="no-js ie9 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <!--<![endif]-->
-<head> 
+<head>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -41,10 +26,10 @@ if (stristr($site, "qunitjs-com")) {
 	$site_description = get_bloginfo( 'description', 'display' );
 	if ( $site_description && ( is_home() || is_front_page() ) )
 		echo " | $site_description";
-	?></title> 
- 
-<meta name="author" content="The jQuery Project - jQuery.org"> 
-<meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library"> 
+	?></title>
+
+<meta name="author" content="The jQuery Project - jQuery.org">
+<meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
@@ -58,47 +43,47 @@ if (stristr($site, "qunitjs-com")) {
 <script src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.js"></script>
 <![endif]-->
 
-<?php 
+<?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
-	
-	wp_head(); 
+
+	wp_head();
 ?>
 
-</head> 
+</head>
 <body <?php body_class(); ?>>
 
 <!-- projects -->
 <div class="project-select">
-  <ul class="constrain"> 
+  <ul class="constrain">
     <li>
-      <a href="http://jquery.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-jquery.png" alt="jQuery" /> 
-        <em>The core JS framework that allows you to write less, do more.</em> 
+      <a href="http://jquery.com/" title="" class="" tabindex="-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-jquery.png" alt="jQuery" />
+        <em>The core JS framework that allows you to write less, do more.</em>
       </a>
-    </li> 
+    </li>
     <li>
-      <a href="http://jqueryui.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-ui.png" alt="jQuery UI" /> 
-        <em>The officially supported User Interface library for jQuery.</em> 
+      <a href="http://jqueryui.com/" title="" class="" tabindex="-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-ui.png" alt="jQuery UI" />
+        <em>The officially supported User Interface library for jQuery.</em>
       </a>
-    </li> 
+    </li>
     <li>
-      <a href="http://jquerymobile.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-mobile.png" alt="jQuery Mobile"> 
-        <em>Build mobile web apps with jQuery using this framework.</em> 
+      <a href="http://jquerymobile.com/" title="" class="" tabindex="-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-mobile.png" alt="jQuery Mobile">
+        <em>Build mobile web apps with jQuery using this framework.</em>
       </a>
-    </li> 
+    </li>
     <li>
-      <a href="http://sizzlejs.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-sizzlejs.png" alt="SizzleJS" /> 
-        <em>A smoking fast CSS selector engine for JavaScript.</em> 
+      <a href="http://sizzlejs.com/" title="" class="" tabindex="-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-sizzlejs.png" alt="SizzleJS" />
+        <em>A smoking fast CSS selector engine for JavaScript.</em>
       </a>
-    </li> 
+    </li>
     <li>
-      <a href="http://qunitjs.com/" title="" class="" tabindex="-1"> 
-        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-qunitjs.png" alt="QUnit" /> 
-        <em>Write solid JavaScript apps by unit testing with QUnit.</em> 
+      <a href="http://qunitjs.com/" title="" class="" tabindex="-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/i/logo-top-qunitjs.png" alt="QUnit" />
+        <em>Write solid JavaScript apps by unit testing with QUnit.</em>
       </a>
     </li>
   </ul>
@@ -107,7 +92,7 @@ if (stristr($site, "qunitjs-com")) {
 
 <!-- nav -->
 <header class="border clearfix">
-  
+
   <nav class="constrain clearfix top">
     <ul class="projects">
       <li class="jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
@@ -153,24 +138,24 @@ if (stristr($site, "qunitjs-com")) {
       </li>
     </ul>
   </nav>
-  
+
 </header>
 <!-- /nav -->
 
-<!-- container --> 
-<div id="container" class="constrain"> 
-  
+<!-- container -->
+<div id="container" class="constrain">
+
   <!-- header -->
   <header class="clearfix">
-  
+
     <!-- logo -->
     <h1 class="site-title"><a href="/" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
     <!-- /logo -->
-    
+
     <!-- ads or events -->
     <aside></aside>
     <!-- /ads  or events -->
-    
+
 
 
     <!-- secondary nav -->

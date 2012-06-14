@@ -6,6 +6,24 @@
 
 define( 'GW_RESOURCE_DIR', WP_CONTENT_DIR . '/gw-resources/' . $_SERVER['HTTP_HOST'] );
 
+function gw_get_version( $args ) {
+	global $wp_xmlrpc_server;
+	$wp_xmlrpc_server->escape( $args );
+
+	// Authenticate
+	$blog_id = $args[0];
+	$username = $args[1];
+	$password = $args[2];
+
+	// We require authentication so that we can ensure that the username
+	// and password provided will work for other methods.
+	if ( ! $user = $wp_xmlrpc_server->login( $username, $password ) ) {
+		return $wp_xmlrpc_server->error;
+	}
+
+	return "0.1.1";
+}
+
 function gw_get_post_paths( $post_type = "" ) {
 	$results = array();
 	$query = new WP_Query( array(
@@ -13,14 +31,17 @@ function gw_get_post_paths( $post_type = "" ) {
 		'post_status' => 'publish',
 		'posts_per_page' => -1,
 		'update_post_term_cache' => false,
-		'update_post_meta_cache' => false,
 	) );
 	foreach ( $query->posts as $post ) {
-		$results[ $post->post_type . '/' . get_page_uri( $post->ID ) ] = $post->ID;
+		$results[ $post->post_type . '/' . get_page_uri( $post->ID ) ] = array(
+			'id' => $post->ID,
+			'checksum' => get_post_meta( $post->ID, 'gwcs', true ),
+		);
 	}
 
 	return $results;
 }
+
 
 function gw_get_resources() {
 	$filename = GW_RESOURCE_DIR . "/__gw.json";
@@ -116,6 +137,7 @@ function gw_delete_resource( $args ) {
 }
 
 function gw_register_xmlrpc_methods( $methods ) {
+	$methods['gw.getVersion'] = 'gw_get_version';
 	$methods['gw.getPostPaths'] = 'gw_get_post_paths';
 	$methods['gw.getResources'] = 'gw_get_resources';
 	$methods['gw.addResource'] = 'gw_add_resource';

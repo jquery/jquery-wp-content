@@ -23,6 +23,12 @@
 
 		<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 		<div class="entry-summary">
+			<p>
+				Version <?php $latest = get_post_meta( $post->ID, 'latest' ); echo $latest[0]; ?> -
+				Released <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago.'; ?>
+				<br>
+				Tags: <?php the_terms( $post->ID, 'post_tag' ); ?>
+			</p>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 		<?php else : ?>

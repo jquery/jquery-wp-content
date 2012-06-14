@@ -62,7 +62,7 @@ function twentyeleven_custom_excerpt_more( $output ) {
 	}
 	return $output;
 }
-add_filter( 'get_the_excerpt', 'twentyeleven_custom_excerpt_more' );
+// add_filter( 'get_the_excerpt', 'twentyeleven_custom_excerpt_more' );
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.

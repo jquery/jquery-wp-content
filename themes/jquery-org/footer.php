@@ -35,7 +35,6 @@
 </script> 
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.ba-outside-events.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/plugins/syntaxhighlighter.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.infieldlabel.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>

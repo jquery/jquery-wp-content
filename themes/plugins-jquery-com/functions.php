@@ -79,12 +79,12 @@ function jq_release_homepage() {
 
 function jq_release_demo() {
 	$pkg = jq_release_package();
-	return empty( $pkg->demo ) ? "" : $pkg->demo;
+	return empty( $pkg->jquery->demo ) ? "" : $pkg->jquery->demo;
 }
 
 function jq_release_docs() {
 	$pkg = jq_release_package();
-	return empty( $pkg->docs ) ? "" : $pkg->docs;
+	return empty( $pkg->jquery->docs ) ? "" : $pkg->jquery->docs;
 }
 
 function jq_release_date() {
@@ -111,7 +111,7 @@ function jq_release_maintainers() {
 	$pkg = jq_release_package();
 	$ret = "";
 
-	if ( !$pkg->maintainers ) {
+	if ( empty( $pkg->maintainers ) ) {
 		return $ret;
 	}
 
@@ -129,8 +129,12 @@ function jq_release_author() {
 function jq_release_dependencies() {
 	$pkg = jq_release_package();
 	$ret = "";
-	foreach( $pkg->dependencies as $plugin => $version ) {
-		$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
+	foreach( $pkg->jquery->dependencies as $plugin => $version ) {
+		if ( get_page_by_path( $plugin ) ) {
+			$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
+		} else {
+			$ret .= "<li>$plugin $version</li>";
+		}
 	}
 	return $ret;
 }
