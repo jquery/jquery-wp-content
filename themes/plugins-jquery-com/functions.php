@@ -34,20 +34,19 @@ function jq_plugin_versions() {
 	$parent = get_post( $main_post );
 	$currentVersion = $main_post === get_the_ID() ? $latest : $post->post_name;
 
-	$out = "<ul>";
-	$versions = array_reverse( json_decode( $versions ) );
-	foreach( $versions as $version ) {
+	return array_map( function( $version ) use ( $currentVersion, $latest, $parent ) {
+		$version_path = "$parent->post_name/$version";
+		$post = get_page_by_path( $version_path, OBJECT, 'jquery_plugin' );
+		$ret = array( 'date' => $post->post_date );
 		if ( $version === $currentVersion ) {
-			$out .= "<li>$version</li>";
+			$ret[ 'link' ] = $version;
 		} else if ( $version === $latest ) {
-			$out .= "<li><a href=\"/$parent->post_name/\">$version</a></li>";
+			$ret[ 'link' ] = "<a href=\"/$parent->post_name/\">$version</a>";
 		} else {
-			$out .= "<li><a href=\"/$parent->post_name/$version/\">$version</a></li>";
+			$ret[ 'link' ] = "<a href=\"/$version_path/\">$version</a>";
 		}
-	}
-	$out .= "</ul>";
-
-	return $out;
+		return $ret;
+	}, array_reverse( json_decode( $versions ) ) );
 }
 
 //
