@@ -47,3 +47,6 @@ function jquery_plugin_posts_only_for_searches( $query ) {
 
 add_action( 'init', 'post_type_jquery_plugin_init' );
 add_action( 'pre_get_posts', 'jquery_plugin_posts_only_for_searches' );
+add_filter( 'pre_option_permalink_structure', function() {
+	return '/%postname%';
+} );
