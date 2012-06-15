@@ -38,7 +38,7 @@ Partial Category Archive Template Called by API Sites
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php
-				get_template_part( 'content' );
+				get_template_part( 'content', 'api' );
 			?>
 
 		<?php endwhile; ?>
@@ -61,7 +61,7 @@ Partial Category Archive Template Called by API Sites
 
 	</div><!-- .inner -->
   <?php if($sidebar): ?>
-        <?php get_sidebar(); ?>
+      <?php get_sidebar( 'api' ); ?>
   <?php endif; ?>
 
 </section><!-- #body -->
