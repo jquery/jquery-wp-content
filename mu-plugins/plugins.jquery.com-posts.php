@@ -12,7 +12,7 @@ function post_type_jquery_plugin_init() {
 		),
 		'public' => true,
 		'map_meta_cap' => true,
-		'hierarchichal' => true,
+		'hierarchical' => true,
 		'taxonomies' => array( 'post_tag' ),
 		'rewrite' => false,
 		'query_var' => 'plugin',
