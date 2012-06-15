@@ -15,22 +15,27 @@ function post_type_jquery_plugin_init() {
 		'hierarchichal' => true,
 		'taxonomies' => array( 'post_tag' ),
 		'rewrite' => false,
-		'query_var' => false,
+		'query_var' => 'plugin',
 		'delete_with_user' => false,
 	) );
 }
 
 // Rewrite jquery_plugin posts to be at the root
-add_action( 'parse_request', function( $wp ) {
-	if ( isset( $wp->query_vars['name'] ) )
-		$wp->query_vars['post_type'] = 'jquery_plugin';
-} );
 add_filter( 'post_type_link', function( $post_link, $post ) {
 	if ( 'jquery_plugin' === $post->post_type ) {
-		return user_trailingslashit( home_url( $post->post_name ) );
+		return user_trailingslashit( home_url( get_page_uri( $post ) ) );
 	}
 	return $post_link;
 }, 10, 2 );
+
+// Copy the page rewrite rules and have them catch plugins (after pages are checked).
+add_filter( 'page_rewrite_rules', function( $rules ) {
+	foreach ( $rules as $rule => $match ) {
+		if ( false === strpos( $rule, 'attachment/' ) )
+			$rules[ str_replace( '.?.+?', '.*?.+?', $rule ) ] = str_replace( 'pagename=', 'plugin=', $match );
+	}
+	return $rules;
+} );
 
 // Only search against parent jquery_plugin posts
 function jquery_plugin_posts_only_for_searches( $query ) {

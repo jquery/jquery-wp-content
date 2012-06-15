@@ -33,9 +33,22 @@
 			<?php } ?>
 			<div class="block">
 				<h2>Versions</h2>
-				<ul>
-					<?php echo jq_plugin_versions(); ?>
-				</ul>
+				<table>
+					<thead>
+						<tr>
+							<th>Version</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+					<tbody>
+					<?php foreach( jq_plugin_versions() as $version ) : ?>
+						<tr>
+							<td><?php echo $version[ 'link' ]; ?></td>
+							<td><?php echo $version[ 'date' ]; ?></td>
+						</tr>
+					<?php endforeach; ?>
+					</tbody>
+				</table>
 			</div><!-- .block -->
 		</div><!-- .col -->
 
