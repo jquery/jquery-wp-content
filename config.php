@@ -54,6 +54,9 @@ unset( $domains, $cookie_domain, $live_domain ); // Leave $blog_id!
 
 if ( ! defined( 'MULTISITE' ) )
 	define( 'MULTISITE', true );
+if ( MULTISITE )
+	define( 'SUNRISE', true );
+
 define( 'SUBDOMAIN_INSTALL', true );
 $base = '/';
 define( 'DOMAIN_CURRENT_SITE', ( JQUERY_STAGING ? JQUERY_STAGING_PREFIX : '' ) . 'jquery.com' );
