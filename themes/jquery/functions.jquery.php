@@ -37,6 +37,7 @@ function jq_get_subcategories( $cat_id=0, $cat_args = array() ) {
   Returns a post's categories, along with their parent categories
 */
 function jq_categories_and_parents() {
+  $ret = '';
   $all_cats = get_categories();
   $cat_list = array();
   $current_cat = is_category() ? single_cat_title( '', false ) : 'ZZZ';
@@ -49,8 +50,10 @@ function jq_categories_and_parents() {
     }
   }
 
-  $ret = is_category() ? 'Also in: ' : '';
-  $ret .= implode(' | ', $cat_list);
+  if ( is_category() && !empty($cat_list) ) {
+    $ret = 'Also in: ' . implode(' | ', $cat_list);
+  }
+
   return $ret;
 }
 
