@@ -3,8 +3,8 @@
 function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated = '', $user_password = '' ) {
 	global $wpdb;
 
-	$base = '/beta/';
-	$domain = 'localhost';
+	$base = '/';
+	$domain = 'dev.jquery.com';
 
 	wp_check_mysql_version();
 	wp_cache_flush();
@@ -43,29 +43,27 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	}
 	update_option( 'fileupload_url', get_option( 'siteurl' ) . '/' . $upload_path );
 
-	jquery_install_remaining_sites();
+	jquery_install_remaining_sites( $domain );
 
 	wp_new_blog_notification( $blog_title, $guess_url, $user_id, __( 'The password you chose during the install.' ) );
 	wp_cache_flush();
 
 	echo '<h1>' . 'Success!' . '</h1>';
-	echo '<p>' . 'The jQuery network has been installed. You must now go into <code>wp-config.php</code> and add these lines:' . '</p>';
+	echo '<p>' . 'The jQuery network has been installed. You must now go into <code>wp-config.php</code> and remove these lines:' . '</p>';
 	?>
-	<textarea class="code" readonly="readonly" cols="100" rows="7">
-define('MULTISITE', true);
-define('SUBDOMAIN_INSTALL', true);
-$base = '<?php echo $base; ?>';
-define('DOMAIN_CURRENT_SITE', '<?php echo $domain; ?>');
-define('PATH_CURRENT_SITE', '<?php echo $base; ?>');
-define('SITE_ID_CURRENT_SITE', 1);
-define('BLOG_ID_CURRENT_SITE', 1);</textarea>
+	<textarea class="code" readonly="readonly" cols="100" rows="3">
+// The install script is going to ask you to remove this line:
+define( 'MULTISITE', false );
+</textarea>
 	<p class="step"><a href="../wp-login.php" class="button"><?php _e( 'Log In' ); ?></a></p>
 	</body>
 	</html>
 	<?php exit;
 }
 
-function jquery_install_remaining_sites() {
+function jquery_install_remaining_sites( $network_domain ) {
+
+	$dev_prefix = str_replace( 'jquery.com', '', $network_domain );
 
 	// Must be in order for blog_id 2+
 
@@ -126,7 +124,7 @@ function jquery_install_remaining_sites() {
 	);
 
 	foreach ( $sites as $domain => $site ) {
-		$blog_id = insert_blog( $domain, '/', 1 );
+		$blog_id = insert_blog( $dev_prefix . $domain, '/', 1 );
 		switch_to_blog( $blog_id );
 		install_blog( $blog_id, $blogname );
 		foreach ( $default_options as $option => $value ) {
