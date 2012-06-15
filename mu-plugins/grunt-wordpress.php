@@ -146,3 +146,56 @@ function gw_register_xmlrpc_methods( $methods ) {
 }
 
 add_filter( 'xmlrpc_methods', 'gw_register_xmlrpc_methods' );
+
+
+
+function gw_sanitize_title_with_dashes( $title, $raw_title = '', $context = 'display' ) {
+	// Special case during the install process.
+	if ( 'Uncategorized' == $raw_title )
+		return 'uncategorized';
+
+	$title = strip_tags($title);
+	// Preserve escaped octets.
+	$title = preg_replace( '|%([a-fA-F0-9][a-fA-F0-9])|', '---$1---', $title );
+	// Remove percent signs that are not part of an octet.
+	$title = str_replace( '%', '', $title );
+	// Restore octets.
+	$title = preg_replace( '|---([a-fA-F0-9][a-fA-F0-9])---|', '%$1', $title );
+
+	// CHANGE: Don't lowercase
+	if ( seems_utf8( $title ) ) {
+		$title = utf8_uri_encode( $title, 200 );
+	}
+
+	// CHANGE: Don't lowercase and don't remove dots
+	$title = preg_replace( '/&.+?;/', '', $title ); // kill entities
+
+	if ( 'save' == $context ) {
+		// Convert nbsp, ndash and mdash to hyphens
+		$title = str_replace( array( '%c2%a0', '%e2%80%93', '%e2%80%94' ), '-', $title );
+
+		// Strip these characters entirely
+		$title = str_replace( array(
+			// iexcl and iquest
+			'%c2%a1', '%c2%bf',
+			// angle quotes
+			'%c2%ab', '%c2%bb', '%e2%80%b9', '%e2%80%ba',
+			// curly quotes
+			'%e2%80%98', '%e2%80%99', '%e2%80%9c', '%e2%80%9d',
+			'%e2%80%9a', '%e2%80%9b', '%e2%80%9e', '%e2%80%9f',
+			// copy, reg, deg, hellip and trade
+			'%c2%a9', '%c2%ae', '%c2%b0', '%e2%80%a6', '%e2%84%a2',
+		), '', $title );
+	}
+
+	// CHANGE: Allow dots and case-insensitive
+	$title = preg_replace( '/[^%a-z0-9 _.-]/i', '', $title );
+	$title = preg_replace( '/\s+/', '-', $title );
+	$title = preg_replace( '|-+|', '-', $title );
+	$title = trim( $title, '-' );
+
+	return $title;
+}
+
+remove_filter( 'sanitize_title', 'sanitize_title_with_dashes', 10, 3 );
+add_filter( 'sanitize_title', 'gw_sanitize_title_with_dashes', 10, 3 );
