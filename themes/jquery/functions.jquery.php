@@ -49,11 +49,10 @@ function jq_categories_and_parents() {
       $cat_list[] = '<span class="category">' . $cat_and_parents . '</span>';
     }
   }
-
+  $ret = implode(' | ', $cat_list);
   if ( is_category() && !empty($cat_list) ) {
-    $ret = 'Also in: ' . implode(' | ', $cat_list);
+    $ret = 'Also in: ' . $ret;
   }
-
   return $ret;
 }
 
