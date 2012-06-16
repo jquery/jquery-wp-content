@@ -50,8 +50,12 @@ function jq_categories_and_parents() {
     }
   }
   $ret = implode(' | ', $cat_list);
-  if ( is_category() && !empty($cat_list) ) {
-    $ret = 'Also in: ' . $ret;
+  if ( !empty($cat_list) ) {
+    if ( is_category() ) {
+      $ret = 'Also in: ' . $ret;
+    } elseif ( is_single() ) {
+      $ret = 'Categories: ' . $ret;
+    }
   }
   return $ret;
 }
