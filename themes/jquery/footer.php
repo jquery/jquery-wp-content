@@ -15,7 +15,7 @@
         <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
       </div>
       <div class="download">
-        <strong>Download jQuery 1.7.1:</strong>
+        <strong>Download jQuery 1.7.2:</strong>
         <span><a href="http://code.jquery.com/jquery-1.7.2.min.js">Minified <em>(32KB)</em></a>
         <a href="http://code.jquery.com/jquery-1.7.2.js">Unminified <em>(247KB)</em></a></span>
       </div>
