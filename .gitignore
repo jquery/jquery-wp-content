@@ -1,4 +1,5 @@
-gw-resources
+gw-resources/*
+blogs.dir/*
 # Mac OS X Files
 .DS_Store
 # Thumbnails
