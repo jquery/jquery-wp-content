@@ -18,7 +18,7 @@
         <span><a href="http://code.jquery.com/qunit/qunit-1.5.0.js">qunit.js</a><a href="http://code.jquery.com/qunit/qunit-1.5.0.css">qunit.css</a></span>
       </div>
       <ul class="footer-icon-links">
-        <li class="footer-icon icon-github"><a href="http://github.com/jquery/qunit">Github <small>QUnit <br>Source</small></a></li>
+        <li class="footer-icon icon-github"><a href="http://github.com/jquery/qunit">GitHub <small>QUnit <br>Source</small></a></li>
         <li class="footer-icon icon-forum"><a href="http://forum.jquery.com/qunit-and-testing">Forum <small>Community <br>Support</small></a></li>
         <li class="footer-icon icon-bugs"><a href="http://github.com/jquery/qunit/issues">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>

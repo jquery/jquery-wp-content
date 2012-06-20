@@ -20,7 +20,7 @@
         <a href="http://code.jquery.com/jquery-1.7.2.js">Unminified <em>(247KB)</em></a></span>
       </div>
       <ul class="footer-icon-links">
-        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery">Github <small>jQuery <br>Source</small></a></li>
+        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
         <li class="footer-icon icon-forum"><a href="http://forum.jquery.com">Forum <small>Community <br>Support</small></a></li>
         <li class="footer-icon icon-bugs"><a href="http://bugs.jquery.com">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>

@@ -27,7 +27,7 @@
         <span><a href="#">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
       </div>
       <ul class="footer-icon-links">
-        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-mobile">Github <small>jQuery Mobile <br>Source</small></a></li>
+        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-mobile">GitHub <small>jQuery Mobile <br>Source</small></a></li>
         <li class="footer-icon icon-forum"><a href="http://forum.jquery.com/jquery-mobile">Forum <small>Community <br>Support</small></a></li>
         <li class="footer-icon icon-bugs"><a href="http://github.com/jquery/jquery-mobile/issues">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>

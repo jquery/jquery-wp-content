@@ -29,7 +29,7 @@
         <a href="#">Download Builder →</a></span>
       </div>
       <ul class="footer-icon-links">
-        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-ui">Github <small>jQuery UI <br>Source</small></a></li>
+        <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-ui">GitHub <small>jQuery UI <br>Source</small></a></li>
         <li class="footer-icon icon-forum"><a href="http://forum.jquery.com/using-jquery-ui">Forum <small>Community <br>Support</small></a></li>
         <li class="footer-icon icon-bugs"><a href="http://bugs.jqueryui.com">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>
