@@ -24,9 +24,9 @@
       </div>
       <div class="download">
         <strong>Download jQuery UI 1.8.19 (for jQuery 1.3.2+):</strong>
-        <span><a href="#">Development Bundle</a>
-        <a href="#">Themes</a>
-        <a href="#">Download Builder →</a></span>
+        <span><a href="http://jqueryui.com/download/jquery-ui-1.8.21.custom.zip">Development Bundle</a>
+        <a href="http://jqueryui.com/download#stable-themes">Themes</a>
+        <a href="http://jqueryui.com/download">Download Builder →</a></span>
       </div>
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-ui">GitHub <small>jQuery UI <br>Source</small></a></li>
