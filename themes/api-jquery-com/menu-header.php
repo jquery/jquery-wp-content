@@ -1,1 +1,1 @@
-<?php get_template_part('menuheader', 'jquery'); ?>
+<?php get_template_part('menu', 'header-jquery'); ?>
