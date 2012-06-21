@@ -12,7 +12,7 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN <em>CSS</em></strong>
-        <input value="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css">
+        <input value="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
@@ -20,11 +20,11 @@
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js">
+        <input value="//code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
       </div>
       <div class="download">
-        <strong>Download jQuery Mobile 1.0:</strong>
-        <span><a href="#">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
+        <strong>Download jQuery Mobile 1.1.0:</strong>
+        <span><a href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.zip">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
       </div>
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-mobile">GitHub <small>jQuery Mobile <br>Source</small></a></li>
