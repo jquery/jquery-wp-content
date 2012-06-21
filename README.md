@@ -6,18 +6,17 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
 
 0. Configure your local webserver with a virtual host that covers the relevant jQuery domains, such as `*.jquery.com` and `*.jqueryui.com`, all pointing to the same root. For example, in Apache:
 
-  <VirtualHost *:80>
-	ServerName dev.jquery.com
-	ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
-	DocumentRoot "/srv/www/jquery"
-	<Directory "/srv/www/jquery">
-	</Directory>
-	</VirtualHost>
+    <VirtualHost *:80>
+    ServerName dev.jquery.com
+    ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
+    DocumentRoot "/srv/www/jquery"
+    </VirtualHost>
 
 1. Configure your `/etc/hosts` file to point `dev.jquery.com`, `dev.jqueryui.com`, etc. to your local machine. For example:
-	127.0.0.1 dev.jquery.com dev.api.jquery.com dev.plugins.jquery.com dev.blog.jquery.com dev.learn.jquery.com
-	127.0.0.1 dev.jqueryui.com dev.blog.jqueryui.com dev.api.jqueryui.com
-	127.0.0.1 dev.jquery.org dev.qunitjs.com dev.sizzlejs.com dev.jquerymobile.com dev.api.jquerymobile.com
+
+    127.0.0.1 dev.jquery.com dev.api.jquery.com dev.plugins.jquery.com dev.blog.jquery.com dev.learn.jquery.com
+    127.0.0.1 dev.jqueryui.com dev.blog.jqueryui.com dev.api.jqueryui.com
+    127.0.0.1 dev.jquery.org dev.qunitjs.com dev.sizzlejs.com dev.jquerymobile.com dev.api.jquerymobile.com
 
 Be sure to flush your DNS when you are done. On a Mac, that would be `dscacheutil -flushcache`.
 
@@ -29,6 +28,7 @@ Be sure to flush your DNS when you are done. On a Mac, that would be `dscacheuti
 </ul>
 
 3. Clone `web-base-template` into place, so you have a file tree that looks like this:
+
     web-base-template/
     wp-admin/
     wp-content/
