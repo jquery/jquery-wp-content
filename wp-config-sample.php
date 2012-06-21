@@ -3,9 +3,6 @@
  * The base configuration of the WordPress jQuery.com setup.
  */
 
-// The install script is going to ask you to remove this line:
-define( 'MULTISITE', false );
-
 /*
  * jQuery.com settings
  */

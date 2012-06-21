@@ -35,10 +35,11 @@ $blog_id = $domains[ $live_domain ]['blog_id'];
 define( 'COOKIE_DOMAIN', $domains[ $live_domain ]['cookie_domain'] );
 unset( $domains, $live_domain ); // Leave $blog_id.
 
-if ( ! defined( 'MULTISITE' ) )
-	define( 'MULTISITE', true );
-if ( MULTISITE )
-	define( 'SUNRISE', true );
+if ( defined( 'MULTISITE' ) && ! MULTISITE )
+	die( "Remove define( 'MULTISITE', false ); from wp-config.php. Maybe check out web-base-template/wp-config-sample.php for the current sample." );
+
+define( 'MULTISITE', true );
+define( 'SUNRISE', true );
 
 define( 'SUBDOMAIN_INSTALL', true );
 $base = '/';
