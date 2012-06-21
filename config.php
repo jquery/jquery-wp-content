@@ -1,7 +1,9 @@
 <?php
 
+require dirname( __FILE__ ) . '/domains.php';
+
 if ( ! defined( 'WP_CONTENT_DIR' ) )
-	define( 'WP_CONTENT_DIR', dirname( ABSPATH ) . '/web-base-template' );
+	define( 'WP_CONTENT_DIR', ABSPATH . 'web-base-template' );
 if ( ! defined( 'WP_CONTENT_URL' ) )
 	define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/web-base-template' );
 
@@ -15,24 +17,6 @@ if ( ! defined( 'JQUERY_STAGING_PREFIX' ) )
 
 global $blog_id;
 
-function jquery_domains() {
-	return array( /* blog_id, cookie domain */
-		'jquery.com' => array( 1, '.jquery.com' ),
-		'blog.jquery.com' => array( 2, '.jquery.com' ),
-		'api.jquery.com' => array( 3, '.jquery.com' ),
-		'plugins.jquery.com' => array( 4, '.jquery.com' ),
-		'learn.jquery.com' => array( 5, '.jquery.com' ),
-
-		'jqueryui.com' => array( 6, '.jqueryui.com' ),
-		'api.jqueryui.com' => array( 7, '.jqueryui.com' ),
-
-		'jquery.org' => array( 8, '.jquery.org' ),
-		'qunitjs.com' => array( 9, '.qunitjs.com' ),
-		'sizzlejs.com' => array( 10, '.sizzlejs.com' ),
-		'jquerymobile.com' => array( 11, '.jquerymobile.com' ),
-	);
-}
-
 $domains = jquery_domains();
 
 if ( ! isset( $_SERVER['HTTP_HOST'] ) )
@@ -43,14 +27,13 @@ if ( JQUERY_STAGING )
 	$live_domain = str_replace( JQUERY_STAGING_PREFIX, '', $live_domain );
 
 if ( ! isset( $domains[ $live_domain ] ) )
-	die( '<!-- Domain mapping issue. -->' );
+	die( 'Domain mapping issue. You have web-base-template configured for ' . JQUERY_STAGING_PREFIX . 'jquery.com.' );
 
 define( 'JQUERY_LIVE_SITE', $live_domain );
 
-list( $blog_id, $cookie_domain ) = $domains[ $live_domain ];
-
-define( 'COOKIE_DOMAIN', $cookie_domain );
-unset( $domains, $cookie_domain, $live_domain ); // Leave $blog_id!
+$blog_id = $domains[ $live_domain ]['blog_id'];
+define( 'COOKIE_DOMAIN', $domains[ $live_domain ]['cookie_domain'] );
+unset( $domains, $live_domain ); // Leave $blog_id.
 
 if ( ! defined( 'MULTISITE' ) )
 	define( 'MULTISITE', true );
