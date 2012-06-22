@@ -1744,205 +1744,192 @@
 		/* Learning Site */
 		/*******************************************************************************/
 		
-		#sidebar .nav
-	{	margin: 0;
-		padding: 0;
-		width: 100%; }
-	
-		#sidebar .nav li
-	{	list-style: none;
-		border-bottom: 1px solid #c5c5c5;
-		-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
-		-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
-		box-shadow: 0 1px 0 rgba(255,255,255,0.25);
-		padding: 0;
-		margin: 0;
-		width: 100%; }
-		
-		#sidebar .nav li.active
-	{	border: 0; }
-				
-		#sidebar .nav li.active a
-	{	color: #fff;
-		text-shadow: 0 -1px 1px #000;
-		background: #393939;
-		-webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
-		-moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
-		box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
-		border-top: 1px solid #000; }
-	
-		#sidebar .nav li:last-child
-	{	border: none;
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none; }
-	
-		#sidebar .nav li a
-	{	font-weight: bold;
-		color: #3f3f3f;
-		text-shadow: 0 1px 0 rgba(255,255,255,1);
-		font-size: 13px;
-		text-decoration: none;
-		width: 100%;
-		display: block;
-		width: 96%;
-		padding: 5% 10%;
-		margin: -1px 0 0 -8%; }
-		
-		.jquery-learning #sidebar h2
-	{	background: url(../i/learning_category_icon.png) no-repeat 0 5px;
-		padding-left: 26px; }
-		
-		.jquery-learning #sidebar .paper
-	{	display: none; }
-	
-		.jquery-learning #sidebar .paper.subnav
-	{	position: absolute;
-		height: 100%;
-		width: 24%; 
-		margin: -43px 0 0 -30.5%; /* 6.5% */
-		overflow: hidden; }
-		
-		.jquery-learning #sidebar .paper.subnav .shadow
-	{	height: 100%;
-		width: 5px;
-		position: absolute;
-		-webkit-box-shadow: inset -2px 0 3px rgba(0,0,0,0.15);
-		z-index: 999;
-		right: 0; }
-		
-		.jquery-learning #sidebar .paper.subnav .paper_edges
-	{	background: url(../i/learning_paper_bg.png) no-repeat 0 0;
-		width: 1px;
-		height: 1px;
-		padding: 238px 0 0 110px;
-		margin: -12px 0 0 0px;
-		overflow: hidden;
-		display: block;
-		z-index: 1;
-		text-indent: -999;
-		-webkit-transform: rotate(28deg);
-		-moz-transform: rotate(28deg);
-		transform: rotate(28deg);
-		-webkit-transition: all 500ms ease-in-out;
-	    -moz-transition: all 500ms ease-in-out;
-	    -o-transition: all 500ms ease-in-out;
-	    -ms-transition: all 500ms ease-in-out;
-	    transition: all 500ms ease-in-out; }
-		
-		.jquery-learning #sidebar .paper.subnav.closed:hover .paper_edges
-	{	-webkit-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		transform: rotate(0deg); }
-		
-		.jquery-learning #sidebar .paper.subnav.closed:hover 
-	{	width: 30%;
-		margin-left: -36.5%; }
-		
-		.jquery-learning #sidebar .paper.subnav .inner
-	{	width: 300px;
-		display: block;
-		background: #fff;
-		border-left: 1px solid rgba(0,0,0,0.25);
-		height: 100%;
-		margin: -120px 0 0 59px; }
-		
-		.jquery-learning #sidebar .paper.subnav .inner .white_bg
-	{	background: #fff;
-		margin-top: -110px;
-		width: 84%;
-		height: 100%;
-		position: absolute;
-		margin-left: -2%; }
-		
-		.jquery-learning #sidebar .paper.subnav .inner .white_bg ul
-	{	padding: 0 6.5% 0 0;
-		height: 100%;
-		background: #fff url(../i/learning_paper_line_bg.png) repeat-y 0 0;
-		position: absolute;
-		opacity: 0;
-		-webkit-transition: all 500ms ease-in-out;
-	    -moz-transition: all 500ms ease-in-out;
-	    -o-transition: all 500ms ease-in-out;
-	    -ms-transition: all 500ms ease-in-out;
-	    transition: all 500ms ease-in-out; }
-	    
-	    .jquery-learning #sidebar .paper.subnav.open .inner .white_bg ul
-	{	opacity: 1; }
-	
-	    .jquery-learning #sidebar .paper.subnav .inner ul li a
-	{	/* font-family: 'Gloria Hallelujah', cursive; */
-	    font-size: 14px;
-	    line-height: 21px;
-	    font-weight: normal;
-		text-decoration: none; }
-		
-		.jquery-learning #sidebar .paper.subnav .inner ul li.active a
-	{	font-weight: bold; }
-		
-		.jquery-learning #sidebar .paper.subnav .inner ul li a:hover
-	{	font-weight: bold; }
-		
-		.jquery-learning #sidebar .paper.subnav .inner ul li 
-	{	margin: 0 0 11px 44px; 
-		list-style: none; }
-		
-		.jquery-learning #sidebar .paper.subnav .inner ul li:first-child
-	{	padding-top: 38px; }
-	
-	    
-	
-	/*******************************************************************************/
-	/* Author Meta
-	/*******************************************************************************/
-	
-		#body .inner .meta
-	{	background: #e8e8e8 url(../i/github.png) no-repeat 102% 50%;
-		border: 1px solid #b7b7b7;
-		padding: 10px;
-		text-shadow: 0 1px 1px #fff;
-		color: #5d5d5d; }
+	html.jquery-learning
+{	background: #000 url(../i/learning_bg.jpg) no-repeat center 0; }
 
-		#body .inner .meta .github
-	{	float: left;
-		display: block;
-		width: 35%;
-		min-height: 45px;
-		border-right: 1px solid #fff;
-		-webkit-box-shadow: 1px 0 0 #b7b7b7; }
+	.jquery-learning h1.site-title a
+{	background: url(../i/logo-learning.png) no-repeat;
+	height: 78px;
+	width: 550px;
+	left: -5px;
+	top: -1px;
+	position: relative;
+	margin-bottom: 9px; }
 	
-		#body .inner .meta .github .avatar
-	{	border: 5px solid #fff;
-		width: auto;
-		height: 40px;
-		-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
-		-moz-box-shadow: 0 0 5px rgba(0,0,0,0.25);
-		box-shadow: 0 0 5px rgba(0,0,0,0.25);
-		display: block;
-		float: left; }
+	.jquery-learning .border, .jquery-learning #site-footer 
+{	border-color: #686868; }
 	
-		#body .inner .meta .github .author
-	{	font-size: 12px;
-		font-weight: normal;
-		letter-spacing: normal;
-		float: left;
-		display: block;
-		margin: 10px 0 0 20px; }
-		
-		#body .inner .meta .github .author a
-	{	font-weight: bold; }
-		
-		#body .inner .meta .feedback
-	{	float: left;
-		display: block;
-		width: 62%;
-		padding: 0 0 0 3%; }
-		
-		#body .inner .meta .feedback h4
-	{	font-size: 18px;
-		font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
-		letter-spacing: 0;
-		margin: 4px 0 0 0; }
+	.jquery-learning a, .jquery-learning .title, .jquery-learning .entry-title
+{	color: #393939; }
+	
+	.jquery-learning #container header nav ul li a, .jquery-learning #container header nav .search::-webkit-input-placeholder, .jquery-learning #container header nav .search label 
+{	color: #fff; }
+	
+	.jquery-learning #container header nav 
+{	border-top: solid 1px rgba(255,255,255,0.15);
+	background: rgba(0,0,0,0.5);
+	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
+	-moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
+	box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px; }
+	
+	.jquery-learning #container header nav .search .icon-search 
+{	-webkit-box-shadow: rgba(255,255,255,0.25) -1px 0 0;
+	-moz-box-shadow: rgba(255,255,255,0.25) -1px 0 0;
+	box-shadow: rgba(255,255,255,0.25) -1px 0 0; }
+	
+  #sidebar aside > ul
+{	margin: 0;
+  padding: 0;
+  width: 100%; }
+
+  #sidebar aside > ul li
+{	list-style: none;
+  border-bottom: 1px solid #c5c5c5;
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.25);
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+  
+  /* temporarily suppress display of children posts via css */
+  #container #body #sidebar aside ul.children {
+    display: none;
+  }
+
+
+  #sidebar aside > ul li.current_page_item,
+  #sidebar aside > ul li.current_page_parent
+{	border: 0; }
+      
+  #sidebar aside > ul li.current_page_item a,
+  #sidebar aside > ul li.current_page_parent a
+{	color: #fff;
+  text-shadow: 0 -1px 1px #000;
+  background: #393939;
+  -webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
+  box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
+  border-top: 1px solid #000; }
+
+  #sidebar aside > ul li:last-child
+{	border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
+  #sidebar aside > ul li a
+{	font-weight: bold;
+  color: #3f3f3f;
+  text-shadow: 0 1px 0 rgba(255,255,255,1);
+  font-size: 13px;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  width: 96%;
+  padding: 5% 10%;
+  margin: -1px 0 0 -8%; }
+  
+  .jquery-learning #sidebar h3
+{	background: url(../i/learning_category_icon.png) no-repeat 0 5px;
+  padding-left: 26px; }
+  
+  .jquery-learning #sidebar .paper
+{	display: none; }
+
+  .jquery-learning #sidebar .paper.subnav
+{	position: absolute;
+  height: 100%;
+  width: 24%; 
+  margin: -43px 0 0 -30.5%; /* 6.5% */
+  overflow: hidden; }
+  
+  .jquery-learning #sidebar .paper.subnav .shadow
+{	height: 100%;
+  width: 5px;
+  position: absolute;
+  -webkit-box-shadow: inset -2px 0 3px rgba(0,0,0,0.15);
+  z-index: 999;
+  right: 0; }
+  
+  .jquery-learning #sidebar .paper.subnav .paper_edges
+{	background: url(../i/learning_paper_bg.png) no-repeat 0 0;
+  width: 1px;
+  height: 1px;
+  padding: 238px 0 0 110px;
+  margin: -12px 0 0 0px;
+  overflow: hidden;
+  display: block;
+  z-index: 1;
+  text-indent: -999;
+  -webkit-transform: rotate(28deg);
+  -moz-transform: rotate(28deg);
+  transform: rotate(28deg);
+  -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
+  
+  .jquery-learning #sidebar .paper.subnav.closed:hover .paper_edges
+{	-webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  transform: rotate(0deg); }
+  
+  .jquery-learning #sidebar .paper.subnav.closed:hover 
+{	width: 30%;
+  margin-left: -36.5%; }
+  
+  .jquery-learning #sidebar .paper.subnav .inner
+{	width: 300px;
+  display: block;
+  background: #fff;
+  border-left: 1px solid rgba(0,0,0,0.25);
+  height: 100%;
+  margin: -120px 0 0 59px; }
+  
+  .jquery-learning #sidebar .paper.subnav .inner .white_bg
+{	background: #fff;
+  margin-top: -110px;
+  width: 84%;
+  height: 100%;
+  position: absolute;
+  margin-left: -2%; }
+  
+  .jquery-learning #sidebar .paper.subnav .inner .white_bg ul
+{	padding: 0 6.5% 0 0;
+  height: 100%;
+  background: #fff url(../i/learning_paper_line_bg.png) repeat-y 0 0;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out; }
+    
+    .jquery-learning #sidebar .paper.subnav.open .inner .white_bg ul
+{	opacity: 1; }
+
+    .jquery-learning #sidebar .paper.subnav .inner ul li a
+{	/* font-family: 'Gloria Hallelujah', cursive; */
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+  text-decoration: none; }
+  
+  .jquery-learning #sidebar .paper.subnav .inner ul li.active a
+{	font-weight: bold; }
+  
+  .jquery-learning #sidebar .paper.subnav .inner ul li a:hover
+{	font-weight: bold; }
+  
+  .jquery-learning #sidebar .paper.subnav .inner ul li 
+{	margin: 0 0 11px 44px; 
+  list-style: none; }
+  
+  .jquery-learning #sidebar .paper.subnav .inner ul li:first-child
+{	padding-top: 38px; }
 	
 	/*******************************************************************************/
 	/* Pagination
