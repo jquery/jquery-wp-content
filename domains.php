@@ -84,6 +84,9 @@ function jquery_domains() {
 			'options' => array( 
 				'blogname' => 'Sizzle JS',
 				'stylesheet' => 'sizzlejs-com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'jquerymobile.com' => array(
