@@ -5,6 +5,13 @@ function jquery_domains() {
 		'jquery.com' => array(
 			'blog_id' => 1,
 			'cookie_domain' => '.jquery.com',
+			'options' => array(
+				'blogname' => 'jQuery',
+				'stylesheet' => 'jquery-com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
 		),
 		'blog.jquery.com' => array(
 			'blog_id' => 2,
@@ -44,6 +51,9 @@ function jquery_domains() {
 			'options' => array( 
 				'blogname' => 'jQuery UI',
 				'stylesheet' => 'jqueryui-com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'blog.jqueryui.com' => array(
@@ -68,6 +78,9 @@ function jquery_domains() {
 			'options' => array( 
 				'blogname' => 'jQuery Foundation',
 				'stylesheet' => 'jquery-org',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'qunitjs.com' => array(
@@ -76,6 +89,9 @@ function jquery_domains() {
 			'options' => array( 
 				'blogname' => 'QUnit',
 				'stylesheet' => 'qunitjs-com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'sizzlejs.com' => array(
@@ -95,6 +111,9 @@ function jquery_domains() {
 			'options' => array( 
 				'blogname' => 'jQuery Mobile',
 				'stylesheet' => 'jquerymobile-com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'api.jquerymobile.com' => array(
