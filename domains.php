@@ -74,7 +74,7 @@ function jquery_domains() {
 			'blog_id' => 10,
 			'cookie_domain' => '.qunitjs.com',
 			'options' => array( 
-				'blogname' => 'qUnit',
+				'blogname' => 'QUnit',
 				'stylesheet' => 'qunitjs-com',
 			),
 		),
@@ -103,6 +103,30 @@ function jquery_domains() {
 			'options' => array( 
 				'blogname' => 'jQuery Mobile API Documentation',
 				'stylesheet' => 'api-jquerymobile-com',
+			),
+		),
+		'api.qunitjs.com' => array(
+			'blog_id' => 14,
+			'cookie_domain' => '.qunitjs.com',
+			'options' => array( 
+				'blogname' => 'QUnit',
+				'stylesheet' => 'api-qunitjs-com',
+			),
+		),
+		'books.jquery.com' => array(
+			'blog_id' => 15,
+			'cookie_domain' => '.jquery.com',
+			'options' => array( 
+				'blogname' => 'jQuery Books',
+				'stylesheet' => 'books-jquery-com',
+			),
+		),
+		'events.jquery.org' => array(
+			'blog_id' => 16,
+			'cookie_domain' => '.jquery.org',
+			'options' => array( 
+				'blogname' => 'jQuery Events',
+				'stylesheet' => 'events-jquery-org',
 			),
 		),
 	);
