@@ -48,6 +48,10 @@ define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 
+// Never display WP_DEBUG notices during XML-RPC requests.
+if ( defined( 'XMLRPC_REQUEST' ) )
+    define( 'WP_DEBUG_DISPLAY', false );
+
 // jQuery staging URLs
 if ( JQUERY_STAGING && ! defined( 'XMLRPC_REQUEST' ) )
 	ob_start( 'jquery_com_staging_urls' );
