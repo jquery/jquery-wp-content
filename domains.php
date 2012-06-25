@@ -32,7 +32,7 @@ function jquery_domains() {
 		'plugins.jquery.com' => array(
 			'blog_id' => 4,
 			'cookie_domain' => '.jquery.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery Plugins',
 				'stylesheet' => 'plugins-jquery-com',
 			),
@@ -40,7 +40,7 @@ function jquery_domains() {
 		'learn.jquery.com' => array(
 			'blog_id' => 5,
 			'cookie_domain' => '.jquery.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'Learn jQuery',
 				'stylesheet' => 'learn-jquery-com',
 			),
@@ -48,7 +48,7 @@ function jquery_domains() {
 		'jqueryui.com' => array(
 			'blog_id' => 6,
 			'cookie_domain' => '.jqueryui.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery UI',
 				'stylesheet' => 'jqueryui-com',
 				'active_plugins' => array(
@@ -59,7 +59,7 @@ function jquery_domains() {
 		'blog.jqueryui.com' => array(
 			'blog_id' => 7,
 			'cookie_domain' => '.jqueryui.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery UI Blog',
 				'stylesheet' => 'blog-jqueryui-com',
 			),
@@ -67,7 +67,7 @@ function jquery_domains() {
 		'api.jqueryui.com' => array(
 			'blog_id' => 8,
 			'cookie_domain' => '.jqueryui.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery UI API Documentation',
 				'stylesheet' => 'api-jqueryui-com',
 			),
@@ -75,7 +75,7 @@ function jquery_domains() {
 		'jquery.org' => array(
 			'blog_id' => 9,
 			'cookie_domain' => '.jquery.org',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery Foundation',
 				'stylesheet' => 'jquery-org',
 				'active_plugins' => array(
@@ -86,7 +86,7 @@ function jquery_domains() {
 		'qunitjs.com' => array(
 			'blog_id' => 10,
 			'cookie_domain' => '.qunitjs.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'QUnit',
 				'stylesheet' => 'qunitjs-com',
 				'active_plugins' => array(
@@ -97,7 +97,7 @@ function jquery_domains() {
 		'sizzlejs.com' => array(
 			'blog_id' => 11,
 			'cookie_domain' => '.sizzlejs.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'Sizzle JS',
 				'stylesheet' => 'sizzlejs-com',
 				'active_plugins' => array(
@@ -108,7 +108,7 @@ function jquery_domains() {
 		'jquerymobile.com' => array(
 			'blog_id' => 12,
 			'cookie_domain' => '.jquerymobile.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery Mobile',
 				'stylesheet' => 'jquerymobile-com',
 				'active_plugins' => array(
@@ -119,7 +119,7 @@ function jquery_domains() {
 		'api.jquerymobile.com' => array(
 			'blog_id' => 13,
 			'cookie_domain' => '.jquerymobile.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery Mobile API Documentation',
 				'stylesheet' => 'api-jquerymobile-com',
 			),
@@ -127,15 +127,15 @@ function jquery_domains() {
 		'api.qunitjs.com' => array(
 			'blog_id' => 14,
 			'cookie_domain' => '.qunitjs.com',
-			'options' => array( 
-				'blogname' => 'QUnit',
+			'options' => array(
+				'blogname' => 'QUnit API Documentation',
 				'stylesheet' => 'api-qunitjs-com',
 			),
 		),
 		'books.jquery.com' => array(
 			'blog_id' => 15,
 			'cookie_domain' => '.jquery.com',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery Books',
 				'stylesheet' => 'books-jquery-com',
 			),
@@ -143,7 +143,7 @@ function jquery_domains() {
 		'events.jquery.org' => array(
 			'blog_id' => 16,
 			'cookie_domain' => '.jquery.org',
-			'options' => array( 
+			'options' => array(
 				'blogname' => 'jQuery Events',
 				'stylesheet' => 'events-jquery-org',
 			),
