@@ -56,12 +56,8 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 function jquery_install_remaining_sites( $user ) {
 	$domains = jquery_domains();
 
-	$default_options = array(
-		'enable_xmlrpc' => true,
-		'template' => 'jquery',
-		'admin_email' => $user->user_email,
-		'blogdescription' => '',
-	);
+	$default_options = jquery_default_site_options();
+	$default_options['admin_email'] = $user->user_email;
 
 	foreach ( $domains as $domain => $details ) {
 		if ( 1 !== $details['blog_id'] ) {

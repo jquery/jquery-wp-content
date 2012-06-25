@@ -150,3 +150,13 @@ function jquery_domains() {
 		),
 	);
 }
+
+function jquery_default_site_options() {
+	return array(
+		'enable_xmlrpc' => true,
+		'template' => 'jquery',
+		'blogdescription' => '',
+		'permalink_structure' => '/%postname%',
+	);
+
+}
