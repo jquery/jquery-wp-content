@@ -1,7 +1,7 @@
 <?php
 
 if ( 1 != $blog_id && false !== strpos( $_SERVER['PHP_SELF'], 'wp-admin/install.php' ) ) {
-	wp_redirect( DOMAIN_CURRENT_SITE . '/wp-admin/install.php' );
+	wp_redirect( 'http://' . DOMAIN_CURRENT_SITE . '/wp-admin/install.php' );
 	exit;
 }
 
@@ -20,17 +20,9 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	populate_options();
 	populate_roles();
 
-	update_option( 'blogname', 'jQuery' );
-	update_option( 'admin_email', $user_email );
-	update_option( 'stylesheet', 'jquery-com' );
-	update_option( 'template', 'jquery' );
-	update_option( 'allowedthemes', array( 'jquery-com' ) );
-
 	$user_id = wp_create_user( $user_name, trim( $user_password ), $user_email );
 	$user = new WP_User( $user_id );
 	$user->set_role( 'administrator' );
-
-	flush_rewrite_rules();
 
 	$guess_url = wp_guess_url();
 
@@ -39,6 +31,7 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 
 	install_network();
 	populate_network( 1, $domain, $user_email, 'jQuery Network', $base, false );
+
 	update_site_option( 'site_admins', array( $user->user_login ) );
 	update_site_option( 'allowedthemes', array() );
 
@@ -52,41 +45,41 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	}
 	update_option( 'fileupload_url', get_option( 'siteurl' ) . '/' . $upload_path );
 
-	jquery_install_remaining_sites( $domain, $user_id );
+	jquery_install_remaining_sites( $user );
 
 	wp_new_blog_notification( $blog_title, $guess_url, $user_id, $message = __( 'The password you chose during the install.' ) );
 	wp_cache_flush();
 
-	return array( 'url' => wp_guess_url(), 'user_id' => $user_id, 'password' => $user_password, 'password_message' => $message );
+	return array( 'url' => $guess_url, 'user_id' => $user_id, 'password' => $user_password, 'password_message' => $message );
 }
 
-function jquery_install_remaining_sites( $network_domain, $user_id ) {
-
-	$dev_prefix = str_replace( 'jquery.com', '', $network_domain );
-
-	$domains = jquery_domains(); // Must be in order.
+function jquery_install_remaining_sites( $user ) {
+	$domains = jquery_domains();
 
 	$default_options = array(
 		'enable_xmlrpc' => true,
 		'template' => 'jquery',
+		'admin_email' => $user->user_email,
+		'blogdescription' => '',
 	);
 
 	foreach ( $domains as $domain => $details ) {
-		if ( 1 === $details['blog_id'] )
-			continue;
+		if ( 1 !== $details['blog_id'] ) {
+			$blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, '/', 1 );
+			if ( $blog_id != $details['blog_id'] )
+				wp_die( "Something went very wrong when trying to install $domain as site $blog_id-{$details['blog_id']}. Find nacin." );
 
-		$blog_id = insert_blog( $dev_prefix . $domain, '/', 1 );
+			switch_to_blog( $blog_id );
 
-		if ( $blog_id != $details['blog_id'] )
-			wp_die( "Something went very wrong when trying to install $domain as site $blog_id-{$details['blog_id']}. Find nacin." );
-
-		switch_to_blog( $blog_id );
-		install_blog( $blog_id, $details['options']['blogname'] );
-		add_user_to_blog( $blog_id, $user_id, 'administrator' );
+			install_blog( $blog_id, $details['options']['blogname'] );
+			add_user_to_blog( $blog_id, $user->ID, 'administrator' );
+		}
 
 		$options = array_merge( $default_options, $details['options'] );
 		foreach ( $options as $option => $value )
 			update_option( $option, $value );
+
+		flush_rewrite_rules();
 		restore_current_blog();
 	}
 }
