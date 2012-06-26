@@ -18,7 +18,8 @@ function jquery_domains() {
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'jQuery Blog',
-				'stylesheet' => 'blog.jquery.com',
+				'stylesheet' => 'blog-jquery-com',
+        // http://codex.wordpress.org/Using_Permalinks#Using_.25category.25_with_multiple_categories_on_a_post
         // 'permalink_structure' => '/%category%/%postname%/',
 			),
 		),
