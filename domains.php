@@ -154,10 +154,11 @@ function jquery_domains() {
 
 function jquery_default_site_options() {
 	return array(
-		'enable_xmlrpc' => true,
+		'enable_xmlrpc' => 1,
 		'template' => 'jquery',
 		'blogdescription' => '',
 		'permalink_structure' => '/%postname%/',
+		'use_smilies' => 0,
 	);
 
 }

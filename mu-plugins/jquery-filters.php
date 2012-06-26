@@ -3,11 +3,21 @@
  * Description: Default filters, option values, and other tweaks.
  */
 
-// Disable smilies.
-add_filter( 'pre_option_use_smilies', '__return_zero' );
-
-// Turn on XML-RPC.
-add_filter( 'pre_option_enable_xmlrpc', '__return_true' );
+$live_domain = $_SERVER['HTTP_HOST'];
+if ( JQUERY_STAGING )
+        $live_domain = str_replace( JQUERY_STAGING_PREFIX, '', $live_domain );
+$options = jquery_default_site_options();
+$domains = jquery_domains();
+$live_domain = str_replace( JQUERY_STAGING_PREFIX, '', $_SERVER['HTTP_HOST'] );
+$options = array_merge( $options, $domains[ $live_domain ]['options'] );
+foreach ( $options as $option => $value ) {
+	if ( 'stylesheet' === $option || 'template' === $option )
+		continue; // Don't mess with themes for now.
+	add_filter( 'pre_option_' . $option, function( $null ) use ( $value ) {
+		return $value;
+	} );
+}
+unset( $domains, $live_domain, $options, $option, $value );
 
 // Disable WordPress auto-paragraphing for posts.
 remove_filter( 'the_content', 'wpautop' );
