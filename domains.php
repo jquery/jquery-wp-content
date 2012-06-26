@@ -19,6 +19,7 @@ function jquery_domains() {
 			'options' => array(
 				'blogname' => 'jQuery Blog',
 				'stylesheet' => 'blog-jquery-com',
+        // 'permalink_structure' => '/%category%/%postname%/',
 			),
 		),
 		'api.jquery.com' => array(
@@ -156,7 +157,7 @@ function jquery_default_site_options() {
 		'enable_xmlrpc' => true,
 		'template' => 'jquery',
 		'blogdescription' => '',
-		'permalink_structure' => '/%postname%',
+		'permalink_structure' => '/%postname%/',
 	);
 
 }
