@@ -76,13 +76,14 @@ function jquery_install_remaining_sites( $user ) {
 			update_option( $option, $value );
 
 		// Work around a superficial bug in install_blog(), fixed in WP r21172.
-		update_option( 'home', untrailingslashit( get_option( 'home' ) ) );
-		update_option( 'siteurl', untrailingslashit( get_option( 'siteurl' ) ) );
+		$home = untrailingslashit( get_option( 'home' ) );
+		$siteurl = untrailingslashit( get_option( 'siteurl' ) );
+		update_option( 'home', 'http://example.com' ); // Please just don't ask.
+		update_option( 'siteurl', 'http://example.com' );
+		update_option( 'home', $home );
+		update_option( 'siteurl', $siteurl );
 
 		flush_rewrite_rules();
-		// Trigger new rewrite rules on the next admin page hit.
-		update_option( 'db_upgraded', true );
-
 		restore_current_blog();
 	}
 }
