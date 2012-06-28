@@ -10,8 +10,14 @@ if ( ! defined( 'WP_CONTENT_URL' ) )
 // jQuery.com staging
 if ( ! defined( 'JQUERY_STAGING' ) )
 	define( 'JQUERY_STAGING', true );
-if ( ! defined( 'JQUERY_STAGING_PREFIX' ) )
-	define( 'JQUERY_STAGING_PREFIX', 'dev.' );
+if ( ! defined( 'JQUERY_STAGING_PREFIX' ) ) {
+	if ( JQUERY_STAGING )
+		define( 'JQUERY_STAGING_PREFIX', 'dev.' );
+	else
+		define( 'JQUERY_STAGING_PREFIX', '' );
+} elseif ( ! JQUERY_STAGING && JQUERY_STAGING_PREFIX ) {
+	die( "If you are not staging, you should not have a JQUERY_STAGING_PREFIX." );
+} // else ( JQUERY_STAGING && ! JQUERY_STAGING_PREFIX ) -- this case is okay.
 
 // jQuery.com Multisite and domain staging configuration
 
@@ -20,7 +26,7 @@ global $blog_id;
 $domains = jquery_domains();
 
 if ( ! isset( $_SERVER['HTTP_HOST'] ) )
-	$_SERVER['HTTP_HOST'] = (JQUERY_STAGING ? JQUERY_STAGING_PREFIX : '') . 'jquery.com';
+	$_SERVER['HTTP_HOST'] = JQUERY_STAGING_PREFIX . 'jquery.com';
 
 $live_domain = $_SERVER['HTTP_HOST'];
 if ( JQUERY_STAGING )
@@ -43,7 +49,7 @@ define( 'SUNRISE', true );
 
 define( 'SUBDOMAIN_INSTALL', true );
 $base = '/';
-define( 'DOMAIN_CURRENT_SITE', ( JQUERY_STAGING ? JQUERY_STAGING_PREFIX : '' ) . 'jquery.com' );
+define( 'DOMAIN_CURRENT_SITE', JQUERY_STAGING_PREFIX . 'jquery.com' );
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
