@@ -45,4 +45,18 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
 
 1. Copy `web-base-template/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
 
+1. Create an .htaccess file with the following content into that same document root:
+
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^index\.php$ - [L]
+
+    RewriteRule ^files/(.+) wp-includes/ms-files.php?file=$1 [L]
+    RewriteRule ^resources/(.*) gw-resources/%{HTTP_HOST}/$1 [L]
+
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} -d
+    RewriteRule ^ - [L]
+    RewriteRule . index.php [L]
+
 1. Go to `http://dev.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
