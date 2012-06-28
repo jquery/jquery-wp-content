@@ -47,6 +47,7 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
 
 1. Create an .htaccess file with the following content into that same document root:
 
+    ```
     RewriteEngine On
     RewriteBase /
     RewriteRule ^index\.php$ - [L]
@@ -58,5 +59,6 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
     RewriteRule . index.php [L]
+    ```
 
 1. Go to `http://dev.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
