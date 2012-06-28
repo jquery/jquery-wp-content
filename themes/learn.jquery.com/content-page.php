@@ -14,7 +14,7 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
 		<?php if (!is_subpage()) { ?>
 			<ul>
-				<?php wp_list_pages("title_li=&child_of=" . $post->ID); ?>
+				<?php wp_list_pages("title_li=&sort_column=menu_order&child_of=" . $post->ID); ?>
 			</ul>
 		<?php }?>
 	</div><!-- .entry-content -->
