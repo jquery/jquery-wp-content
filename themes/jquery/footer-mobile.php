@@ -16,7 +16,7 @@
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//code.jquery.com/jquery-1.6.4.min.js">
+        <input value="//code.jquery.com/jquery-1.7.1.min.js">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
