@@ -6,8 +6,8 @@ function jq_plugin_meta( $attr ) {
 	return get_post_meta( $main_post, $attr[ "key" ], true );
 }
 
-function jq_plugin_package() {
-	return json_decode( jq_plugin_meta( array( "key" => "package_json" ) ) );
+function jq_plugin_manifest() {
+	return json_decode( jq_plugin_meta( array( "key" => "manifest" ) ) );
 }
 
 function jq_plugin_repo_url() {
@@ -54,8 +54,8 @@ function jq_plugin_versions() {
 // version number release of a plugin
 //
 
-function jq_release_package() {
-	return json_decode( get_post_meta( get_the_ID(), "package_json", true ) );
+function jq_release_manifest() {
+	return json_decode( get_post_meta( get_the_ID(), "manifest", true ) );
 }
 
 function person( $person ) {
@@ -72,18 +72,18 @@ function jq_release_download_url() {
 }
 
 function jq_release_homepage() {
-	$pkg = jq_release_package();
+	$pkg = jq_release_manifest();
 	return $pkg->homepage;
 }
 
 function jq_release_demo() {
-	$pkg = jq_release_package();
-	return empty( $pkg->jquery->demo ) ? "" : $pkg->jquery->demo;
+	$pkg = jq_release_manifest();
+	return empty( $pkg->demo ) ? "" : $pkg->demo;
 }
 
 function jq_release_docs() {
-	$pkg = jq_release_package();
-	return empty( $pkg->jquery->docs ) ? "" : $pkg->jquery->docs;
+	$pkg = jq_release_manifest();
+	return empty( $pkg->docs ) ? "" : $pkg->docs;
 }
 
 function jq_release_date() {
@@ -91,12 +91,12 @@ function jq_release_date() {
 }
 
 function jq_release_version() {
-	$pkg = jq_release_package();
+	$pkg = jq_release_manifest();
 	return $pkg->version;
 }
 
 function jq_release_licenses() {
-	$pkg = jq_release_package();
+	$pkg = jq_release_manifest();
 	$ret = "";
 	foreach( $pkg->licenses as $license ) {
 		$url = htmlspecialchars( $license->url );
@@ -107,7 +107,7 @@ function jq_release_licenses() {
 }
 
 function jq_release_maintainers() {
-	$pkg = jq_release_package();
+	$pkg = jq_release_manifest();
 	$ret = "";
 
 	if ( empty( $pkg->maintainers ) ) {
@@ -121,14 +121,14 @@ function jq_release_maintainers() {
 }
 
 function jq_release_author() {
-	$pkg = jq_release_package();
+	$pkg = jq_release_manifest();
 	return person( $pkg->author );
 }
 
 function jq_release_dependencies() {
-	$pkg = jq_release_package();
+	$pkg = jq_release_manifest();
 	$ret = "";
-	foreach( $pkg->jquery->dependencies as $plugin => $version ) {
+	foreach( $pkg->dependencies as $plugin => $version ) {
 		if ( get_page_by_path( $plugin ) ) {
 			$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
 		} else {
