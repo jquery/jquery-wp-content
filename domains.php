@@ -147,6 +147,9 @@ function jquery_domains() {
 			'options' => array(
 				'blogname' => 'jQuery Events',
 				'stylesheet' => 'events.jquery.org',
+				'active_plugins' => array(
+					'allow-numeric-stubs/allow-numeric-stubs.php',
+				),
 			),
 		),
 	);
