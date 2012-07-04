@@ -22,6 +22,9 @@ unset( $domains, $live_domain, $options, $option, $value );
 // Disable WordPress auto-paragraphing for posts.
 remove_filter( 'the_content', 'wpautop' );
 
+// Disable WordPress text transformations (smart quotes, etc.) for posts.
+remove_filter( 'the_content', 'wptexturize' );
+
 // Disable more restrictive multisite upload settings.
 remove_filter( 'upload_mimes', 'check_upload_mimes' );
 
