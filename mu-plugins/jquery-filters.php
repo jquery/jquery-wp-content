@@ -27,6 +27,8 @@ remove_filter( 'the_content', 'wptexturize' );
 
 // Disable more restrictive multisite upload settings.
 remove_filter( 'upload_mimes', 'check_upload_mimes' );
+// Give unfiltered upload ability to super admins.
+define( 'ALLOW_UNFILTERED_UPLOADS', true );
 
 // Allow full HTML in term descriptions.
 add_action( 'init', 'jquery_unfiltered_html_for_term_descriptions' );
