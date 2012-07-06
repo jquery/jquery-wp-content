@@ -3,14 +3,108 @@ Theme Name: plugins-jquery-com
 Template: jquery
 */
 
-.jquery_plugin h1 { font-size: 200%; margin-bottom: 0.5em; }
-.jquery_plugin hr { margin: 0; margin-bottom: 0.5em; }
+.single-jquery_plugin #container #body .inner
+{
+  padding: 0;
+}
 
-.jquery_plugin .block { border-top: 1px solid #CCC; padding-top: 0.5em; font-size: 1.2em; margin-top: 4px; }
-.jquery_plugin .block h2 { font-size: 90%; font-weight: normal; color: #999; margin-bottom: 8px; }
-.jquery_plugin .right { text-align: right; }
+.jquery_plugin
+{
+  padding: 20px 0;
+}
+
+.jquery_plugin h1.entry-title
+{
+  margin: 0;
+  border-style: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  background: transparent;
+  font-size: 200%;
+  color: #d18f4f;
+}
+
+.jquery_plugin hr
+{
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.jquery_plugin .block
+{
+  border-top: 1px solid #CCC;
+  padding-top: 0.5em;
+  font-size: 1.2em;
+  margin-top: 4px;
+}
+
+.jquery_plugin .block h2
+{
+  font-size: 90%;
+  font-weight: normal;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.jquery_plugin .right
+{
+  text-align: right;
+}
 
 .jquery_plugin .block ul,
-.jquery_plugin .block li { list-style-type: none; margin: 0; padding: 0; }
-.jquery_plugin .block ul { font-size: 110%; margin-bottom: 1em; }
-.jquery_plugin .block li { margin: 0.6em 0; }
+.jquery_plugin .block li
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.jquery_plugin .block ul
+{
+  font-size: 110%;
+  margin-bottom: 1em;
+}
+
+.jquery_plugin .block li
+{
+  margin: 0.6em 0;
+}
+
+.jquery_plugin .plugin-main,
+.jquery_plugin .plugin-metadata
+{
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.jquery_plugin .plugin-main
+{
+  padding: 10px 50px;
+  width: 70%;
+}
+
+.jquery_plugin .plugin-metadata
+{
+  border-left: 1px;
+  -moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  -webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
+  -webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  -o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  padding: 10px 35px;
+  width: 30%;
+  -webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  -moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
+  background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: -moz-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
+}
