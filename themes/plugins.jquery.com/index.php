@@ -3,8 +3,9 @@
   <!-- body -->
   <div id="body" class="clearfix">
 
-    <div class="col col3-2">
-      <div class="inner">
+    <!-- inner -->
+    <div class="inner">
+
 <?php
 
 // TODO
@@ -15,15 +16,14 @@
 
 $toplvlpages = get_pages( array( 'parent' => 0 ) );
 foreach( $toplvlpages as $post ) {
-	setup_postdata($post);
-	if ( $post->post_name !== 'update' ) {
-	   get_template_part('excerpt', 'index');
-	}
+  setup_postdata($post);
+  if ( $post->post_name !== 'update' ) {
+     get_template_part('excerpt', 'index');
+  }
 }
 ?>
 
-      </div>
-    </div>
+    </div> <!-- /.inner -->
     <?php if($sidebar): ?>
 
       <?php get_sidebar( ); ?>

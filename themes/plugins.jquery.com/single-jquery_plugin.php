@@ -14,14 +14,14 @@
 
 get_header(); ?>
 
-		<div id="body" class="clearfix">
-			<div class="inner" role="main">
+    <div id="body" class="clearfix">
+      <div class="inner" role="main">
 
-				<?php the_post(); ?>
+        <?php the_post(); ?>
 
-				<?php get_template_part( 'content', 'jquery_plugin' ); ?>
+        <?php get_template_part( 'content', 'jquery_plugin' ); ?>
 
-			</div><!-- .inner -->
-		</div><!-- #body -->
+      </div><!-- .inner -->
+    </div><!-- #body -->
 
 <?php get_footer(); ?>
