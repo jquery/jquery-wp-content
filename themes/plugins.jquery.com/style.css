@@ -136,6 +136,8 @@ Template: jquery
   color: #808080;
 }
 
+/*----------[ tags ]------------------------------------------------------------
+*/
 .jquery_plugin li.tag
 {
   display: inline-block;
@@ -168,6 +170,8 @@ Template: jquery
   }
 }
 
+/*----------[ versions table ]--------------------------------------------------
+*/
 .jquery_plugin .versions table
 {
   -webkit-box-sizing: border-box;
@@ -255,14 +259,379 @@ Template: jquery
   width: 20%;
 }
 
-.jquery_plugin .plugin-metadata h2
+/*----------[ general sidebar styles ]------------------------------------------
+*/
+.jquery_plugin .plugin-metadata .github-activity, .jquery_plugin .plugin-metadata .author-info, .jquery_plugin .plugin-metadata .maintainer-info, .jquery_plugin .plugin-metadata .licenses, .jquery_plugin .plugin-metadata .dependencies
 {
-  color: #999;
+  color: #7f7f7f;
 }
 
-.jquery_plugin .plugin-metadata li
+.jquery_plugin .plugin-metadata .github-activity h2, .jquery_plugin .plugin-metadata .author-info h2, .jquery_plugin .plugin-metadata .maintainer-info h2, .jquery_plugin .plugin-metadata .licenses h2, .jquery_plugin .plugin-metadata .dependencies h2
 {
-  margin: 0.6em 0;
+  padding-left: 24px;
+  background: no-repeat left center;
+  color: #7f7f7f;
+  text-shadow: 0 1px 0 white;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .github-activity h2, .jquery_plugin .plugin-metadata .author-info h2, .jquery_plugin .plugin-metadata .maintainer-info h2, .jquery_plugin .plugin-metadata .licenses h2, .jquery_plugin .plugin-metadata .dependencies h2
+  {
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+
+}
+
+.jquery_plugin .plugin-metadata .github-activity h2
+{
+  background-image: url('images/octocat-grey.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .github-activity h2
+  {
+    background-image: url('images/octocat-grey@2x.png');
+  }
+
+}
+
+.jquery_plugin .plugin-metadata .author-info h2
+{
+  background-image: url('images/person.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .author-info h2
+  {
+    background-image: url('images/person@2x.png');
+  }
+
+}
+
+.jquery_plugin .plugin-metadata .maintainer-info h2
+{
+  background-image: url('images/wrench.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .maintainer-info h2
+  {
+    background-image: url('images/wrench@2x.png');
+  }
+
+}
+
+.jquery_plugin .plugin-metadata .licenses h2
+{
+  background-image: url('images/book.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .licenses h2
+  {
+    background-image: url('images/book@2x.png');
+  }
+
+}
+
+.jquery_plugin .plugin-metadata .dependencies h2
+{
+  background-image: url('images/tree.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .dependencies h2
+  {
+    background-image: url('images/tree@2x.png');
+  }
+
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box
+{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box p
+{
+  margin: 0;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box .info-block
+{
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box .info-block .number
+{
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: black url('images/dark-grey-tile.png');
+  padding: 2px 10px;
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: bold;
+  color: white;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box .info-block .caption
+{
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 2px 10px;
+  background-color: #8ccffa;
+  font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.jquery_plugin .plugin-metadata ul
+{
+  margin-left: 24px;
+  list-style-image: url('images/bullet.png');
+  list-style-position: inside;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata ul
+  {
+    list-style-image: url('images/bullet@2x.png');
+  }
+
+}
+
+/*----------[ toolbox ]---------------------------------------------------------
+*/
+.jquery_plugin .toolbox
+{
+  border: 1px solid black;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 15px 3px #e7e7e7;
+  -moz-box-shadow: 0 0 15px 3px #e7e7e7;
+  box-shadow: 0 0 15px 3px #e7e7e7;
+}
+
+.jquery_plugin .toolbox > .inner
+{
+  border: 1px solid #666;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #202020;
+  color: white;
+}
+
+.jquery_plugin .toolbox header
+{
+  padding: 8px 20px 12px;
+}
+
+.jquery_plugin .toolbox header p
+{
+  margin: 0;
+}
+
+.jquery_plugin .toolbox header .caption
+{
+  color: #888;
+  font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+}
+
+.jquery_plugin .toolbox header .version-info, .jquery_plugin .toolbox header .release-info
+{
+  float: left;
+  width: 50%;
+}
+
+.jquery_plugin .toolbox header .release-info
+{
+  text-align: right;
+}
+
+.jquery_plugin .toolbox header .version-number, .jquery_plugin .toolbox header .date
+{
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.jquery_plugin .toolbox .body
+{
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 12px 20px 16px;
+  background: url('images/dark-grey-tile.png');
+}
+
+.jquery_plugin .toolbox a.download
+{
+  display: block;
+  margin-bottom: 1.2em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 1.25em; /*1.25 * 16px = 20px*/
+  line-height: 1.6em; /*1.6 * 20px = 32px*/
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 -1px #bc7531, 0 1px #dca977;
+  text-decoration: none;
+}
+
+.jquery_plugin .toolbox a.download .inner-wrapper
+{
+  display: block;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #e1b68c;
+  padding: 0 30px;
+  background: #d18f4f url('images/download.png') no-repeat 8px center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.download .inner
+  {
+    background-image: url('images/download@2x.png');
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+
+}
+
+.jquery_plugin .toolbox a.other-link
+{
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0 32px;
+  background: no-repeat 8px center;
+  color: white;
+  text-decoration: none;
+}
+
+.jquery_plugin .toolbox a.other-link:hover
+{
+  text-decoration: underline;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link
+  {
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+
+}
+
+.jquery_plugin .toolbox a.other-link.gh-fork
+{
+  background-image: url('images/octocat-blue.png');
+  background-position: 6px center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.gh-fork
+  {
+    background-image: url('images/octocat-blue@2x.png');
+  }
+
+}
+
+.jquery_plugin .toolbox a.other-link.view-homepage
+{
+  background-image: url('images/link.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.view-homepage
+  {
+    background-image: url('images/link@2x.png');
+  }
+
+}
+
+.jquery_plugin .toolbox a.other-link.demo
+{
+  background-image: url('images/eye.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.demo
+  {
+    background-image: url('images/eye@2x.png');
+  }
+
+}
+
+.jquery_plugin .toolbox a.other-link.read-docs
+{
+  background-image: url('images/document.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.read-docs
+  {
+    background-image: url('images/document@2x.png');
+  }
+
+}
 
