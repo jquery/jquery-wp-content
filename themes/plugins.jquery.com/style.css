@@ -3,6 +3,8 @@ Theme Name: plugins-jquery-com
 Template: jquery
 */
 
+/*-----[ containers ]-----------------------------------------------------------
+*/
 .single-jquery_plugin #container #body .inner
 {
   padding: 0;
@@ -10,67 +12,15 @@ Template: jquery
 
 .jquery_plugin
 {
-  padding: 20px 0;
-}
-
-.jquery_plugin h1.entry-title
-{
-  margin: 0;
-  border-style: none;
-  padding: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  text-shadow: none;
-  background: transparent;
-  font-size: 200%;
-  color: #d18f4f;
-}
-
-.jquery_plugin hr
-{
-  margin: 0;
-  margin-bottom: 0.5em;
+  padding: 1.5em 0; /*1.5 * 16px = 24px*/
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em; /*1.5 * 16px = 24px*/
 }
 
 .jquery_plugin .block
 {
-  border-top: 1px solid #CCC;
-  padding-top: 0.5em;
-  font-size: 1.2em;
-  margin-top: 4px;
-}
-
-.jquery_plugin .block h2
-{
-  font-size: 90%;
-  font-weight: normal;
-  color: #999;
-  margin-bottom: 8px;
-}
-
-.jquery_plugin .right
-{
-  text-align: right;
-}
-
-.jquery_plugin .block ul,
-.jquery_plugin .block li
-{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.jquery_plugin .block ul
-{
-  font-size: 110%;
-  margin-bottom: 1em;
-}
-
-.jquery_plugin .block li
-{
-  margin: 0.6em 0;
+  margin-bottom: 1.5em; /*1.5 * 16px = 24px*/
 }
 
 .jquery_plugin .plugin-main,
@@ -84,8 +34,22 @@ Template: jquery
 
 .jquery_plugin .plugin-main
 {
-  padding: 10px 50px;
+  padding: 0.5em 50px; /*0.5 * 16px = 8px*/
   width: 70%;
+}
+
+.jquery_plugin .plugin-main .block:after
+{
+  display: block;
+  margin: 1em 0;
+  height: 1em;
+  background: url("images/gauze.png");
+  content: ' ';
+}
+
+.jquery_plugin .plugin-main .block:last-child:after
+{
+  display: none;
 }
 
 .jquery_plugin .plugin-metadata
@@ -96,7 +60,7 @@ Template: jquery
   -webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
   -o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
   border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-  padding: 10px 35px;
+  padding: 0.5em 35px; /*0.5 * 16px = 8px*/
   width: 30%;
   -webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
   -moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
@@ -108,3 +72,197 @@ Template: jquery
   background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
   background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
 }
+
+/*-----[ content ]--------------------------------------------------------------
+*/
+.jquery_plugin h1,
+.jquery_plugin h2,
+.jquery_plugin h3
+{
+  letter-spacing: 0;
+}
+
+.jquery_plugin h1.entry-title
+{
+  margin: 0 0 .25em; /*0.25 * 32px = 8px*/
+  border-style: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  background: transparent;
+  font-size: 2em; /*2 * 16px = 32px*/
+  line-height: 1.25em; /*1.25 * 32px = 40px*/
+  color: #d18f4f;
+}
+
+.jquery_plugin h2
+{
+  margin-bottom: 0.6em; /*0.6 * 20px = 12px*/
+  font-size: 1.25em; /*1.25 * 16px = 20px*/
+  line-height: 1.2em; /*1.2 * 20px = 24px*/
+}
+
+.jquery_plugin .block ul,
+.jquery_plugin .block li
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.jquery_plugin p,
+.jquery_plugin dl,
+.jquery_plugin ol,
+.jquery_plugin ul,
+.jquery_plugin table
+{
+  margin-bottom: 1.5em; /*1.5 * 16px = 24px*/
+  line-height: 1.5em; /*1.5 * 16px = 24px*/
+}
+
+.jquery_plugin table
+{
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.jquery_plugin .attribution
+{
+  color: #808080;
+}
+
+.jquery_plugin li.tag
+{
+  display: inline-block;
+}
+
+.jquery_plugin li.tag a
+{
+  display: block;
+  margin-right: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 5px;
+  padding: 0 5px 0 25px;
+  background: #305e91 url("images/tag-blue.png") no-repeat 5px 5px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (-webkit-device-pixel-ratio: 2)
+{
+  .jquery_plugin li.tag a
+  {
+    background-image: url("images/tag-blue@2x.png");
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+}
+
+.jquery_plugin .versions table
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-style: none;
+  width: 100%;
+}
+
+.jquery_plugin .versions table th,
+.jquery_plugin .versions table td
+{
+  border: 1px solid #ccc;
+  border-top-style: none;
+  padding: 4px 10px;
+}
+
+.jquery_plugin .versions table tbody tr:nth-child(even) td
+{
+  background-color: #f2f2f2;
+}
+
+.jquery_plugin .versions table tbody tr:last-of-type td.version
+{
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -ms-border-bottom-left-radius: 8px;
+  -o-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.jquery_plugin .versions table tbody tr:last-of-type td.release-date
+{
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -ms-border-bottom-right-radius: 8px;
+  -o-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.jquery_plugin .versions table thead tr
+{
+  background: black url('images/dark-grey-tile.png');
+}
+
+.jquery_plugin .versions table thead th
+{
+  border-style: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.jquery_plugin .versions table thead th.version
+{
+  -webkit-border-radius: 8px 0 0 0;
+  -moz-border-radius: 8px 0 0 0;
+  -ms-border-radius: 8px 0 0 0;
+  -o-border-radius: 8px 0 0 0;
+  border-radius: 8px 0 0 0;
+}
+
+.jquery_plugin .versions table thead th.release-date
+{
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -ms-border-top-right-radius: 8px;
+  -o-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.jquery_plugin .versions table .version
+{
+  border-right-style: none;
+}
+
+.jquery_plugin .versions table .release-date
+{
+  border-left-style: none;
+  width: 20%;
+}
+
+.jquery_plugin .plugin-metadata h2
+{
+  color: #999;
+}
+
+.jquery_plugin .plugin-metadata li
+{
+  margin: 0.6em 0;
+}
+
+

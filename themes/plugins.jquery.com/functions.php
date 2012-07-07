@@ -210,6 +210,6 @@ function jq_release_dependencies() {
 }
 
 function jq_release_keywords() {
-  return get_the_tag_list( "<ul><li>", "</li><li>", "</li></ul>" );
+  return get_the_tag_list( "<ul><li class=\"tag\">", "</li><li class=\"tag\">", "</li></ul>" );
 }
 
