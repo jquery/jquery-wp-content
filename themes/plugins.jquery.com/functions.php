@@ -115,9 +115,9 @@ function jq_release_maintainers() {
   }
 
   foreach( $pkg->maintainers as $maintainer ) {
-    $ret .= person( $maintainer ) . ", ";
+    $ret .= "<li>" . person( $maintainer ) . "</li>";
   }
-  return substr( $ret, 0, -2 );
+  return $ret;
 }
 
 function jq_release_author() {
