@@ -282,23 +282,31 @@ Template: jquery
 .jquery_plugin .related-plugins ul
 {
   margin-left: 0px;
-  list-style-image: url('images/bullet.png');
-  list-style-position: inside;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .related-plugins ul
-  {
-    list-style-image: url('images/bullet@2x.png');
-  }
+  list-style-type: none;
 }
 
 .jquery_plugin .related-plugins li
 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   float: left;
   margin-bottom: 8px;
+  padding-left: 16px;
   width: 33%;
+  background: url('images/bullet.png') no-repeat left center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .related-plugins li
+  {
+    background-image: url('images/bullet@2x.png');
+    -webkit-background-size: 5px 11px;
+    -moz-background-size: 5px 11px;
+    -o-background-size: 5px 11px;
+    background-size: 5px 11px;
+  }
 }
 
 /*----------[ general sidebar styles ]------------------------------------------
@@ -462,17 +470,25 @@ Template: jquery
 .jquery_plugin .plugin-metadata ul
 {
   margin-left: 24px;
-  list-style-image: url('images/bullet.png');
-  list-style-position: inside;
+  list-style-type: none;
+}
+
+.jquery_plugin .plugin-metadata li
+{
+  padding-left: 16px;
+  background: url('images/bullet.png') no-repeat left center;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2)
 {
-  .jquery_plugin .plugin-metadata ul
+  .jquery_plugin .plugin-metadata li
   {
-    list-style-image: url('images/bullet@2x.png');
+    background-image: url('images/bullet@2x.png');
+    -webkit-background-size: 5px 11px;
+    -moz-background-size: 5px 11px;
+    -o-background-size: 5px 11px;
+    background-size: 5px 11px;
   }
-
 }
 
 /*----------[ toolbox ]---------------------------------------------------------
