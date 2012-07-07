@@ -259,6 +259,48 @@ Template: jquery
   width: 20%;
 }
 
+/*----------[ related plugins ]-------------------------------------------------
+*/
+.jquery_plugin .related-plugins .box
+{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 16px 20px;
+}
+
+.jquery_plugin .related-plugins h3
+{
+  font-size: 18px;
+  line-height: 1.33em;
+  color: #7f7f7f;
+}
+
+.jquery_plugin .related-plugins ul
+{
+  margin-left: 0px;
+  list-style-image: url('images/bullet.png');
+  list-style-position: inside;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .related-plugins ul
+  {
+    list-style-image: url('images/bullet@2x.png');
+  }
+}
+
+.jquery_plugin .related-plugins li
+{
+  float: left;
+  margin-bottom: 8px;
+  width: 33%;
+}
+
 /*----------[ general sidebar styles ]------------------------------------------
 */
 .jquery_plugin .plugin-metadata .github-activity, .jquery_plugin .plugin-metadata .author-info, .jquery_plugin .plugin-metadata .maintainer-info, .jquery_plugin .plugin-metadata .licenses, .jquery_plugin .plugin-metadata .dependencies
