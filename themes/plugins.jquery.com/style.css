@@ -504,6 +504,7 @@ Template: jquery
   -webkit-box-shadow: 0 0 15px 3px #e7e7e7;
   -moz-box-shadow: 0 0 15px 3px #e7e7e7;
   box-shadow: 0 0 15px 3px #e7e7e7;
+  background-color: black;
 }
 
 .jquery_plugin .toolbox > .inner
