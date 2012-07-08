@@ -41,7 +41,7 @@
           </tbody>
         </table>
       </div><!-- /.versions -->
-      <div class="block related-plugins">
+      <div class="block related-plugins last">
         <h3>Related Plugins</h3>
         <div class="box clearfix">
           <ul>
