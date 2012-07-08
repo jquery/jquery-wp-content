@@ -3,14 +3,823 @@ Theme Name: plugins-jquery-com
 Template: jquery
 */
 
-.jquery_plugin h1 { font-size: 200%; margin-bottom: 0.5em; }
-.jquery_plugin hr { margin: 0; margin-bottom: 0.5em; }
+/*-----[ containers ]-----------------------------------------------------------
+*/
+.single-jquery_plugin #container #body .inner
+{
+  padding: 0;
+}
 
-.jquery_plugin .block { border-top: 1px solid #CCC; padding-top: 0.5em; font-size: 1.2em; margin-top: 4px; }
-.jquery_plugin .block h2 { font-size: 90%; font-weight: normal; color: #999; margin-bottom: 8px; }
-.jquery_plugin .right { text-align: right; }
+.jquery_plugin
+{
+  padding: 1.5em 0; /*1.5 * 16px = 24px*/
+  font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em; /*1.5 * 16px = 24px*/
+}
+
+.jquery_plugin .block
+{
+  margin-bottom: 1.5em; /*1.5 * 16px = 24px*/
+}
+
+.jquery_plugin .plugin-main,
+.jquery_plugin .plugin-metadata
+{
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.jquery_plugin .plugin-main
+{
+  padding: 0.5em 50px; /*0.5 * 16px = 8px*/
+  width: 70%;
+}
+
+.jquery_plugin .plugin-main .block:after
+{
+  display: block;
+  margin: 1em 0;
+  height: 1em;
+  background: url("images/gauze.png");
+  content: ' ';
+}
+
+.jquery_plugin .plugin-main .block:last-child:after
+{
+  display: none;
+}
+
+.jquery_plugin .plugin-metadata
+{
+  border-left: 1px;
+  -moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  -webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
+  -webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  -o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  padding: 0.5em 35px; /*0.5 * 16px = 8px*/
+  width: 30%;
+  -webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  -moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
+  background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: -moz-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
+  background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
+}
+
+/*-----[ content ]--------------------------------------------------------------
+*/
+.jquery_plugin h1,
+.jquery_plugin h2,
+.jquery_plugin h3
+{
+  letter-spacing: 0;
+}
+
+.jquery_plugin h1.entry-title
+{
+  margin: 0 0 .25em; /*0.25 * 32px = 8px*/
+  border-style: none;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+  background: transparent;
+  font-size: 2em; /*2 * 16px = 32px*/
+  line-height: 1.25em; /*1.25 * 32px = 40px*/
+  color: #d18f4f;
+}
+
+.jquery_plugin h2
+{
+  margin-bottom: 0.6em; /*0.6 * 20px = 12px*/
+  font-size: 1.25em; /*1.25 * 16px = 20px*/
+  line-height: 1.2em; /*1.2 * 20px = 24px*/
+}
 
 .jquery_plugin .block ul,
-.jquery_plugin .block li { list-style-type: none; margin: 0; padding: 0; }
-.jquery_plugin .block ul { font-size: 110%; margin-bottom: 1em; }
-.jquery_plugin .block li { margin: 0.6em 0; }
+.jquery_plugin .block li
+{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.jquery_plugin p,
+.jquery_plugin dl,
+.jquery_plugin ol,
+.jquery_plugin ul,
+.jquery_plugin table
+{
+  margin-bottom: 1.5em; /*1.5 * 16px = 24px*/
+  line-height: 1.5em; /*1.5 * 16px = 24px*/
+}
+
+.jquery_plugin table
+{
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.jquery_plugin .attribution
+{
+  color: #808080;
+}
+
+/*----------[ tags ]------------------------------------------------------------
+*/
+.jquery_plugin li.tag
+{
+  display: inline-block;
+}
+
+.jquery_plugin li.tag a
+{
+  display: block;
+  margin-right: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 5px;
+  padding: 0 5px 0 25px;
+  background: #305e91 url("images/tag-blue.png") no-repeat 5px 5px;
+  color: white;
+  text-decoration: none;
+}
+
+@media (-webkit-device-pixel-ratio: 2)
+{
+  .jquery_plugin li.tag a
+  {
+    background-image: url("images/tag-blue@2x.png");
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+}
+
+/*----------[ versions table ]--------------------------------------------------
+*/
+.jquery_plugin .versions table
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-style: none;
+  width: 100%;
+}
+
+.jquery_plugin .versions table th,
+.jquery_plugin .versions table td
+{
+  border: 1px solid #ccc;
+  border-top-style: none;
+  padding: 4px 10px;
+}
+
+.jquery_plugin .versions table tbody tr:nth-child(even) td
+{
+  background-color: #f2f2f2;
+}
+
+.jquery_plugin .versions table tbody tr:last-of-type td.version
+{
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  -ms-border-bottom-left-radius: 8px;
+  -o-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.jquery_plugin .versions table tbody tr:last-of-type td.release-date
+{
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  -ms-border-bottom-right-radius: 8px;
+  -o-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.jquery_plugin .versions table thead tr
+{
+  background: black url('images/dark-grey-tile.png');
+}
+
+.jquery_plugin .versions table thead th
+{
+  border-style: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.jquery_plugin .versions table thead th.version
+{
+  -webkit-border-radius: 8px 0 0 0;
+  -moz-border-radius: 8px 0 0 0;
+  -ms-border-radius: 8px 0 0 0;
+  -o-border-radius: 8px 0 0 0;
+  border-radius: 8px 0 0 0;
+}
+
+.jquery_plugin .versions table thead th.release-date
+{
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -ms-border-top-right-radius: 8px;
+  -o-border-top-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.jquery_plugin .versions table .version
+{
+  border-right-style: none;
+}
+
+.jquery_plugin .versions table .release-date
+{
+  border-left-style: none;
+  width: 20%;
+}
+
+/*----------[ related plugins ]-------------------------------------------------
+*/
+.jquery_plugin .related-plugins .box
+{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 16px 20px;
+}
+
+.jquery_plugin .related-plugins h3
+{
+  font-size: 18px;
+  line-height: 1.33em;
+  color: #7f7f7f;
+}
+
+.jquery_plugin .related-plugins ul
+{
+  margin-left: 0px;
+  list-style-type: none;
+}
+
+.jquery_plugin .related-plugins li
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  width: 33%;
+  background: url('images/bullet.png') no-repeat left center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .related-plugins li
+  {
+    background-image: url('images/bullet@2x.png');
+    -webkit-background-size: 5px 11px;
+    -moz-background-size: 5px 11px;
+    -o-background-size: 5px 11px;
+    background-size: 5px 11px;
+  }
+}
+
+/*----------[ general sidebar styles ]------------------------------------------
+*/
+.jquery_plugin .plugin-metadata .github-activity, .jquery_plugin .plugin-metadata .author-info, .jquery_plugin .plugin-metadata .maintainer-info, .jquery_plugin .plugin-metadata .licenses, .jquery_plugin .plugin-metadata .dependencies
+{
+  color: #7f7f7f;
+}
+
+.jquery_plugin .plugin-metadata .github-activity h2, .jquery_plugin .plugin-metadata .author-info h2, .jquery_plugin .plugin-metadata .maintainer-info h2, .jquery_plugin .plugin-metadata .licenses h2, .jquery_plugin .plugin-metadata .dependencies h2
+{
+  padding-left: 24px;
+  background: no-repeat left center;
+  color: #7f7f7f;
+  text-shadow: 0 1px 0 white;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .github-activity h2, .jquery_plugin .plugin-metadata .author-info h2, .jquery_plugin .plugin-metadata .maintainer-info h2, .jquery_plugin .plugin-metadata .licenses h2, .jquery_plugin .plugin-metadata .dependencies h2
+  {
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+}
+
+.jquery_plugin .plugin-metadata .github-activity h2
+{
+  background-image: url('images/octocat-grey.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .github-activity h2
+  {
+    background-image: url('images/octocat-grey@2x.png');
+  }
+}
+
+.jquery_plugin .plugin-metadata .author-info h2
+{
+  background-image: url('images/person.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .author-info h2
+  {
+    background-image: url('images/person@2x.png');
+  }
+}
+
+.jquery_plugin .plugin-metadata .maintainer-info h2
+{
+  background-image: url('images/wrench.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .maintainer-info h2
+  {
+    background-image: url('images/wrench@2x.png');
+  }
+}
+
+.jquery_plugin .plugin-metadata .licenses h2
+{
+  background-image: url('images/book.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .licenses h2
+  {
+    background-image: url('images/book@2x.png');
+  }
+}
+
+.jquery_plugin .plugin-metadata .dependencies h2
+{
+  background-image: url('images/tree.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata .dependencies h2
+  {
+    background-image: url('images/tree@2x.png');
+  }
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box
+{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box p
+{
+  margin: 0;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box .info-block
+{
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box .info-block .number
+{
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: black url('images/dark-grey-tile.png');
+  padding: 2px 10px;
+  font-size: 2em;
+  line-height: 1.25em;
+  font-weight: bold;
+  color: white;
+}
+
+.jquery_plugin .plugin-metadata .github-activity .box .info-block .caption
+{
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 2px 10px;
+  background-color: #8ccffa;
+  font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.jquery_plugin .plugin-metadata ul
+{
+  margin-left: 24px;
+  list-style-type: none;
+}
+
+.jquery_plugin .plugin-metadata li
+{
+  padding-left: 16px;
+  background: url('images/bullet.png') no-repeat left center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .plugin-metadata li
+  {
+    background-image: url('images/bullet@2x.png');
+    -webkit-background-size: 5px 11px;
+    -moz-background-size: 5px 11px;
+    -o-background-size: 5px 11px;
+    background-size: 5px 11px;
+  }
+}
+
+/*----------[ toolbox ]---------------------------------------------------------
+*/
+.jquery_plugin .toolbox
+{
+  border: 1px solid black;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 15px 3px #e7e7e7;
+  -moz-box-shadow: 0 0 15px 3px #e7e7e7;
+  box-shadow: 0 0 15px 3px #e7e7e7;
+  background-color: black;
+}
+
+.jquery_plugin .toolbox > .inner
+{
+  border: 1px solid #666;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #202020;
+  color: white;
+}
+
+.jquery_plugin .toolbox header
+{
+  padding: 8px 20px 12px;
+}
+
+.jquery_plugin .toolbox header p
+{
+  margin: 0;
+}
+
+.jquery_plugin .toolbox header .caption
+{
+  color: #888;
+  font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+}
+
+.jquery_plugin .toolbox header .version-info, .jquery_plugin .toolbox header .release-info
+{
+  float: left;
+  width: 50%;
+}
+
+.jquery_plugin .toolbox header .release-info
+{
+  text-align: right;
+}
+
+.jquery_plugin .toolbox header .version-number, .jquery_plugin .toolbox header .date
+{
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.jquery_plugin .toolbox .body
+{
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 12px 20px 16px;
+  background: url('images/dark-grey-tile.png');
+}
+
+.jquery_plugin .toolbox a.download
+{
+  display: block;
+  margin-bottom: 1.2em;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 1.25em; /*1.25 * 16px = 20px*/
+  line-height: 1.6em; /*1.6 * 20px = 32px*/
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 -1px #bc7531, 0 1px #dca977;
+  text-decoration: none;
+}
+
+.jquery_plugin .toolbox a.download .inner-wrapper
+{
+  display: block;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #e1b68c;
+  padding: 0 30px;
+  background: #d18f4f url('images/download.png') no-repeat 8px center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.download .inner
+  {
+    background-image: url('images/download@2x.png');
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+}
+
+.jquery_plugin .toolbox a.other-link
+{
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 0 32px;
+  background: no-repeat 8px center;
+  color: white;
+  text-decoration: none;
+}
+
+.jquery_plugin .toolbox a.other-link:hover
+{
+  text-decoration: underline;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link
+  {
+    -webkit-background-size: 16px;
+    -moz-background-size: 16px;
+    -o-background-size: 16px;
+    background-size: 16px;
+  }
+}
+
+.jquery_plugin .toolbox a.other-link.gh-fork
+{
+  background-image: url('images/octocat-blue.png');
+  background-position: 6px center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.gh-fork
+  {
+    background-image: url('images/octocat-blue@2x.png');
+  }
+}
+
+.jquery_plugin .toolbox a.other-link.view-homepage
+{
+  background-image: url('images/link.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.view-homepage
+  {
+    background-image: url('images/link@2x.png');
+  }
+}
+
+.jquery_plugin .toolbox a.other-link.demo
+{
+  background-image: url('images/eye.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.demo
+  {
+    background-image: url('images/eye@2x.png');
+  }
+}
+
+.jquery_plugin .toolbox a.other-link.read-docs
+{
+  background-image: url('images/document.png');
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2)
+{
+  .jquery_plugin .toolbox a.other-link.read-docs
+  {
+    background-image: url('images/document@2x.png');
+  }
+}
+
+/*----------[ IE hacks ]--------------------------------------------------------
+*/
+.lte7 .jquery_plugin .plugin-main
+{
+  width: 60%;
+}
+
+.lte7 .jquery_plugin .related-plugins ul, .lte7 .jquery_plugin .plugin-metadata ul
+{
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none none;
+  list-style-position: none;
+}
+
+.lte7 .jquery_plugin .plugin-metadata ul
+{
+  margin-left: 24px;
+}
+
+.lte7 .jquery_plugin .related-plugins ul li, .lte7 .jquery_plugin .plugin-metadata ul li
+{
+  zoom: 1;
+}
+
+.lte7 .jquery_plugin .related-plugins li
+{
+  width: 30%;
+}
+
+.lte7 .jquery_plugin .tags li
+{
+  display: inline;
+}
+
+.lte7 .jquery_plugin .versions table
+{
+  border-collapse: collapse;
+}
+
+.lte7 .jquery_plugin .versions table th, .lte7 .jquery_plugin .versions table td
+{
+  border: 1px solid #ccc;
+}
+
+.lte7 .jquery_plugin .versions table th
+{
+  border-color: black;
+  background-color: black;
+}
+
+.lte7 .jquery_plugin .plugin-metadata
+{
+  width: 25%;
+}
+
+.lte7 .jquery_plugin .plugin-metadata .github-activity .box .info-block
+{
+  display: inline;
+}
+
+.ie8 .jquery_plugin .plugin-main .block.last:after
+{
+  display: none;
+}
+
+.lte8 .jquery_plugin .clearfix
+{
+  zoom: 1;
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.gh-fork
+{
+  background-image: url("images/octocat-blue.png");
+  background-position: 6px center;
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.view-homepage
+{
+  background-image: url("images/link.png");
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.demo
+{
+  background-image: url("images/eye.png");
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.read-docs
+{
+  background-image: url("images/document.png");
+}
+
+.lte8 .jquery_plugin .plugin-metadata
+{
+  border-left: 1px solid #e7e7e7 !important;
+}
+
+.lte8 .jquery_plugin .related-plugins li,
+.lte8 .jquery_plugin .plugin-metadata li
+{
+  background: url('images/bullet.png') no-repeat left center;
+}
+
+.lte8 .jquery_plugin .plugin-metadata .github-activity h2
+{
+  background-image: url('images/octocat-grey.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .author-info h2
+{
+  background-image: url('images/person.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .maintainer-info h2
+{
+  background-image: url('images/wrench.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .licenses h2
+{
+  background-image: url('images/book.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .dependencies h2
+{
+  background-image: url('images/tree.png');
+}
+
+
+.lte9 .jquery_plugin h1.entry-title
+{
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.lte9 .jquery_plugin .tags li a
+{
+  height: 24px;
+}
+
