@@ -333,7 +333,6 @@ Template: jquery
     -o-background-size: 16px;
     background-size: 16px;
   }
-
 }
 
 .jquery_plugin .plugin-metadata .github-activity h2
@@ -347,7 +346,6 @@ Template: jquery
   {
     background-image: url('images/octocat-grey@2x.png');
   }
-
 }
 
 .jquery_plugin .plugin-metadata .author-info h2
@@ -361,7 +359,6 @@ Template: jquery
   {
     background-image: url('images/person@2x.png');
   }
-
 }
 
 .jquery_plugin .plugin-metadata .maintainer-info h2
@@ -375,7 +372,6 @@ Template: jquery
   {
     background-image: url('images/wrench@2x.png');
   }
-
 }
 
 .jquery_plugin .plugin-metadata .licenses h2
@@ -389,7 +385,6 @@ Template: jquery
   {
     background-image: url('images/book@2x.png');
   }
-
 }
 
 .jquery_plugin .plugin-metadata .dependencies h2
@@ -403,7 +398,6 @@ Template: jquery
   {
     background-image: url('images/tree@2x.png');
   }
-
 }
 
 .jquery_plugin .plugin-metadata .github-activity .box
@@ -607,7 +601,6 @@ Template: jquery
     -o-background-size: 16px;
     background-size: 16px;
   }
-
 }
 
 .jquery_plugin .toolbox a.other-link
@@ -634,7 +627,6 @@ Template: jquery
     -o-background-size: 16px;
     background-size: 16px;
   }
-
 }
 
 .jquery_plugin .toolbox a.other-link.gh-fork
@@ -649,7 +641,6 @@ Template: jquery
   {
     background-image: url('images/octocat-blue@2x.png');
   }
-
 }
 
 .jquery_plugin .toolbox a.other-link.view-homepage
@@ -663,7 +654,6 @@ Template: jquery
   {
     background-image: url('images/link@2x.png');
   }
-
 }
 
 .jquery_plugin .toolbox a.other-link.demo
@@ -677,7 +667,6 @@ Template: jquery
   {
     background-image: url('images/eye@2x.png');
   }
-
 }
 
 .jquery_plugin .toolbox a.other-link.read-docs
@@ -691,6 +680,146 @@ Template: jquery
   {
     background-image: url('images/document@2x.png');
   }
+}
 
+/*----------[ IE hacks ]--------------------------------------------------------
+*/
+.lte7 .jquery_plugin .plugin-main
+{
+  width: 60%;
+}
+
+.lte7 .jquery_plugin .related-plugins ul, .lte7 .jquery_plugin .plugin-metadata ul
+{
+  zoom: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none none;
+  list-style-position: none;
+}
+
+.lte7 .jquery_plugin .plugin-metadata ul
+{
+  margin-left: 24px;
+}
+
+.lte7 .jquery_plugin .related-plugins ul li, .lte7 .jquery_plugin .plugin-metadata ul li
+{
+  zoom: 1;
+}
+
+.lte7 .jquery_plugin .related-plugins li
+{
+  width: 30%;
+}
+
+.lte7 .jquery_plugin .tags li
+{
+  display: inline;
+}
+
+.lte7 .jquery_plugin .versions table
+{
+  border-collapse: collapse;
+}
+
+.lte7 .jquery_plugin .versions table th, .lte7 .jquery_plugin .versions table td
+{
+  border: 1px solid #ccc;
+}
+
+.lte7 .jquery_plugin .versions table th
+{
+  border-color: black;
+  background-color: black;
+}
+
+.lte7 .jquery_plugin .plugin-metadata
+{
+  width: 25%;
+}
+
+.lte7 .jquery_plugin .plugin-metadata .github-activity .box .info-block
+{
+  display: inline;
+}
+
+.ie8 .jquery_plugin .plugin-main .block.last:after
+{
+  display: none;
+}
+
+.lte8 .jquery_plugin .clearfix
+{
+  zoom: 1;
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.gh-fork
+{
+  background-image: url("images/octocat-blue.png");
+  background-position: 6px center;
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.view-homepage
+{
+  background-image: url("images/link.png");
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.demo
+{
+  background-image: url("images/eye.png");
+}
+
+.lte8 .jquery_plugin .toolbox a.other-link.read-docs
+{
+  background-image: url("images/document.png");
+}
+
+.lte8 .jquery_plugin .plugin-metadata
+{
+  border-left: 1px solid #e7e7e7 !important;
+}
+
+.lte8 .jquery_plugin .related-plugins li,
+.lte8 .jquery_plugin .plugin-metadata li
+{
+  background: url('images/bullet.png') no-repeat left center;
+}
+
+.lte8 .jquery_plugin .plugin-metadata .github-activity h2
+{
+  background-image: url('images/octocat-grey.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .author-info h2
+{
+  background-image: url('images/person.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .maintainer-info h2
+{
+  background-image: url('images/wrench.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .licenses h2
+{
+  background-image: url('images/book.png');
+}
+
+.lte8 .jquery_plugin .plugin-metadata .dependencies h2
+{
+  background-image: url('images/tree.png');
+}
+
+
+.lte9 .jquery_plugin h1.entry-title
+{
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.lte9 .jquery_plugin .tags li a
+{
+  height: 24px;
 }
 

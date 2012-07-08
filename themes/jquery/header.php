@@ -9,10 +9,10 @@ if (!isset($tlsite)) {
 }
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html class="no-js ie6 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9 ]>    <html class="no-js ie9 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
+<!--[if lt IE 7 ]> <html class="no-js ie ie6 lte6 lte7 lte8 lte9 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie ie7 lte7 lte8 lte9 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie ie8 lte8 lte9 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie ie9 lte9 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <!--<![endif]-->
 <head>
 
