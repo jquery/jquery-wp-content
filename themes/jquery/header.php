@@ -119,10 +119,12 @@ if (!isset($tlsite)) {
       <li class="dropdown"><a href="#" title="Community">Community</a>
         <ul>
            <li><a href="http://blog.jquery.com/" title="Blog">Blog</a></li>
-               <li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
-               <li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
-               <li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
-               <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
+              <!-- lets put this back once there is actual new content
+              <li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
+              -->
+              <li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
+              <li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
+              <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
         </ul>
       </li>
       <!-- was http://jquery.org/getting-involved/ -->
@@ -130,9 +132,11 @@ if (!isset($tlsite)) {
         <ul>
           <li><a href="http://jquery.org/donate/" title="Donate">Donate</a></li>
           <li><a href="http://jquery.org/sponsor/" title="Sponsor">Sponsor</a></li>
+          <!-- all 404
           <li><a href="http://jquery.org/getting-involved/#fix-bugs">Fix Bugs</a></li>
           <li><a href="http://jquery.org/getting-involved/#answer-questions">Answer Questions</a></li>
           <li><a href="http://jquery.org/getting-involved/#write-documentation">Write Documentation</a></li>
+          -->
         </ul>
       </li>
       <li class="dropdown"><a href="http://jquery.org/about/" title="">About</a>
