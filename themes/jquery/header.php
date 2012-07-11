@@ -101,13 +101,19 @@ if (!isset($tlsite)) {
       <li class="toggle-projects"><a href="http://jquery.org/projects/" title="All Projects">All Projects</a></li>
     </ul>
     <ul class="links">
+      <!-- put it back once the site is live
       <li><a href="http://learn.jquery.com/">Learning</a></li>
-      <li class="dropdown"><a href="http://jquery.org/support/" title="Support">Support</a>
+      -->
+      <!-- this used to link to http://jquery.org/support - doesn't yet exist -->
+      <li class="dropdown"><a href="#" title="Support">Support</a>
         <ul>
           <li><a href="http://forum.jquery.com/" title="Forum">Forum</a></li>
-          <li><a href="http://irc.jquery.org/" title="IRC/Chat">IRC/Chat</a></li>
+          <li><a href="http://irc.jquery.com/" title="IRC/Chat">IRC/Chat</a></li>
+          <li><a href="http://stackoverflow.com/tags/jquery/info" title="IRC/Chat">Stackoverflow</a></li>
+          <!-- both 404
           <li><a href="http://jquery.org/bugs" title="Report a Bug">Report a Bug</a></li>
           <li><a href="http://jquery.org/support#enterprise-support" title="Enterprise Support">Enterprise Support</a></li>
+          -->
         </ul>
       </li>
       <li class="dropdown"><a href="#" title="Community">Community</a>
@@ -119,7 +125,8 @@ if (!isset($tlsite)) {
                <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
         </ul>
       </li>
-      <li class="dropdown"><a href="http://jquery.org/getting-involved/" title="Contribute">Contribute</a>
+      <!-- was http://jquery.org/getting-involved/ -->
+      <li class="dropdown"><a href="#" title="Contribute">Contribute</a>
         <ul>
           <li><a href="http://jquery.org/donate/" title="Donate">Donate</a></li>
           <li><a href="http://jquery.org/sponsor/" title="Sponsor">Sponsor</a></li>
