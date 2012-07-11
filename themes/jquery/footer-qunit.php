@@ -14,8 +14,8 @@
         <span>http://code.jquery.com/qunit/qunit-git.js</span>
       </div>
       <div class="download">
-        <strong>Download QUnit 1.5.0:</strong>
-        <span><a href="http://code.jquery.com/qunit/qunit-1.5.0.js">qunit.js</a><a href="http://code.jquery.com/qunit/qunit-1.5.0.css">qunit.css</a></span>
+        <strong>Download QUnit 1.9.0:</strong>
+        <span><a href="http://code.jquery.com/qunit/qunit-1.9.0.js">qunit.js</a><a href="http://code.jquery.com/qunit/qunit-1.9.0.css">qunit.css</a></span>
       </div>
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/qunit">GitHub <small>QUnit <br>Source</small></a></li>
@@ -26,7 +26,9 @@
 
     <div id="legal">
       <ul class="footer-site-links">
+        <!-- put it back once the learning site is live
         <li class="icon-learning-center icon"><a href="http://learn.jquery.com/">Learning Center</a></li>
+        -->
         <li class="icon-forum icon"><a href="http://forum.jquery.com/qunit-and-testing">Forum</a></li>
         <li class="icon-api icon"><a href="http://api.qunitjs.com/">API</a></li>
         <li class="icon-twitter icon"><a href="http://twitter.com/qunitjs">Twitter</a></li>
