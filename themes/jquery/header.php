@@ -20,13 +20,13 @@ if (!isset($tlsite)) {
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 <title><?php
-	global $page, $paged;
-	wp_title( '|', true, 'right' );
-	bloginfo( 'name' );
-	$site_description = get_bloginfo( 'description', 'display' );
-	if ( $site_description && ( is_home() || is_front_page() ) )
-		echo " | $site_description";
-	?></title>
+  global $page, $paged;
+  wp_title( '|', true, 'right' );
+  bloginfo( 'name' );
+  $site_description = get_bloginfo( 'description', 'display' );
+  if ( $site_description && ( is_home() || is_front_page() ) )
+    echo " | $site_description";
+  ?></title>
 
 <meta name="author" content="The jQuery Project - jQuery.org">
 <meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library">
@@ -44,10 +44,10 @@ if (!isset($tlsite)) {
 <![endif]-->
 
 <?php
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
+  if ( is_singular() && get_option( 'thread_comments' ) )
+    wp_enqueue_script( 'comment-reply' );
 
-	wp_head();
+  wp_head();
 ?>
 
 </head>
@@ -118,13 +118,13 @@ if (!isset($tlsite)) {
       </li>
       <li class="dropdown"><a href="#" title="Community">Community</a>
         <ul>
-           <li><a href="http://blog.jquery.com/" title="Blog">Blog</a></li>
-              <!-- lets put this back once there is actual new content
-              <li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
-              -->
-              <li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
-              <li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
-              <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
+          <li><a href="http://blog.jquery.com/" title="Blog">Blog</a></li>
+          <!-- lets put this back once there is actual new content
+          <li><a href="http://podcast.jquery.com/" title="Podcast">Podcast</a></li>
+          -->
+          <li><a href="http://forum.jquery.com/" title="Forums">Forums</a></li>
+          <li><a href="http://meetups.jquery.com/" title="Meetups">Meetups</a></li>
+          <li><a href="http://events.jquery.org/" title="Events">Events</a></li>
         </ul>
       </li>
       <!-- was http://jquery.org/getting-involved/ -->
@@ -141,10 +141,10 @@ if (!isset($tlsite)) {
       </li>
       <li class="dropdown"><a href="http://jquery.org/about/" title="">About</a>
         <ul class="last">
-              <li><a href="http://jquery.org/projects/" title="Projects">Projects</a></li>
-              <li><a href="http://jquery.org/team/" title="Team">Team</a></li>
-              <li><a href="http://jquery.org/history/" title="History">History</a></li>
-              <li><a href="http://jquery.org/sponsors/" title="Sponsors">Sponsors</a></li>
+          <li><a href="http://jquery.org/projects/" title="Projects">Projects</a></li>
+          <li><a href="http://jquery.org/team/" title="Team">Team</a></li>
+          <li><a href="http://jquery.org/history/" title="History">History</a></li>
+          <li><a href="http://jquery.org/sponsors/" title="Sponsors">Sponsors</a></li>
         </ul>
       </li>
     </ul>
