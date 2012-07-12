@@ -45,14 +45,14 @@
         <h3>Related Plugins</h3>
         <div class="box clearfix">
           <ul>
-            <li><a href="javascript:;">plugin 1</a></li>
-            <li><a href="javascript:;">plugin 2</a></li>
-            <li><a href="javascript:;">plugin 3</a></li>
-            <li><a href="javascript:;">plugin 4</a></li>
-            <li><a href="javascript:;">plugin 5</a></li>
-            <li><a href="javascript:;">plugin 6</a></li>
-            <li><a href="javascript:;">plugin 7</a></li>
-            <li><a href="javascript:;">plugin 8</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 1</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 2</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 3</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 4</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 5</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 6</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 7</a></li>
+            <li class="icon-caret-right"><a href="javascript:;">plugin 8</a></li>
           </ul>
         </div> <!-- /.box -->
       </div> <!-- /.related-plugins -->
@@ -72,17 +72,17 @@
           </header>
           <div class="body">
             <a class="download" href="<?php echo jq_release_download_url(); ?>">
-              <span class="inner-wrapper">Download now</span>
+              <span class="inner-wrapper"><span class="icon-download-alt"></span>Download now</span>
             </a>
-            <a class="other-link gh-fork" href="<?php echo jq_plugin_repo_url(); ?>">Fork on GitHub</a>
-            <a class="other-link view-homepage" href="<?php echo jq_release_homepage(); ?>">View homepage</a>
-            <a class="other-link demo" href="<?php echo jq_release_demo(); ?>">Try a demo</a>
-            <a class="other-link read-docs" href="<?php echo jq_release_docs(); ?>">Read the docs</a>
+            <a class="other-link gh-fork" href="<?php echo jq_plugin_repo_url(); ?>"><span class="icon-github"></span>Fork on GitHub</a>
+            <a class="other-link view-homepage" href="<?php echo jq_release_homepage(); ?>"><span class="icon-external-link"></span>View homepage</a>
+            <a class="other-link demo" href="<?php echo jq_release_demo(); ?>"><span class="icon-eye-open"></span>Try a demo</a>
+            <a class="other-link read-docs" href="<?php echo jq_release_docs(); ?>"><span class="icon-file"></span>Read the docs</a>
           </div> <!-- /.body -->
         </div> <!-- /.inner -->
       </div> <!-- /.toolbox -->
       <div class="block github-activity group">
-        <h2>GitHub Activity</h2>
+        <h2><span class="icon-github"></span>GitHub Activity</h2>
         <div class="box">
           <div class="info-block watchers">
             <p class="number"><?php echo jq_plugin_watchers(); ?></p>
@@ -95,27 +95,27 @@
         </div> <!-- /.box -->
       </div> <!-- /.github-activity -->
       <div class="block author-info">
-        <h2>Author</h2>
+        <h2><span class="icon-user"></span>Author</h2>
         <ul>
-          <li><?php echo jq_release_author(); ?></li>
+          <li class="icon-caret-right"><?php echo jq_release_author(); ?></li>
         </ul>
       </div> <!-- /.author-info -->
       <?php if ( $maintainers = jq_release_maintainers() ) { ?>
       <div class="block maintainer-info">
-        <h2>Maintainers</h2>
+        <h2><span class="icon-wrench"></span>Maintainers</h2>
         <ul>
           <?php echo $maintainers; ?>
         </ul>
       </div> <!-- /.maintainer-info -->
       <?php } ?>
       <div class="block licenses">
-        <h2>Licenses</h2>
+        <h2><span class="icon-book"></span>Licenses</h2>
         <ul>
           <?php echo jq_release_licenses(); ?>
         </ul>
       </div> <!-- /.licenses -->
       <div class="block dependencies">
-        <h2>Dependencies</h2>
+        <h2><span class="icon-sitemap"></span>Dependencies</h2>
         <ul>
           <?php echo jq_release_dependencies(); ?>
         </ul>

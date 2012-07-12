@@ -3,6 +3,8 @@ Theme Name: plugins-jquery-com
 Template: jquery
 */
 
+@import url("font-awesome.css");
+
 /*-----[ containers ]-----------------------------------------------------------
 */
 .single-jquery_plugin #container #body .inner
@@ -141,33 +143,29 @@ Template: jquery
 .jquery_plugin li.tag
 {
   display: inline-block;
-}
-
-.jquery_plugin li.tag a
-{
-  display: block;
   margin-right: 10px;
+  padding: 0 5px 0 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 5px;
-  padding: 0 5px 0 25px;
-  background: #305e91 url("images/tag-blue.png") no-repeat 5px 5px;
-  color: white;
-  text-decoration: none;
+  background-color: #305e91;
 }
 
-@media (-webkit-device-pixel-ratio: 2)
+.jquery_plugin li.tag[class^="icon-"]:before,
+.jquery_plugin li.tag[class*=" icon-"]:before
 {
-  .jquery_plugin li.tag a
-  {
-    background-image: url("images/tag-blue@2x.png");
-    -webkit-background-size: 16px;
-    -moz-background-size: 16px;
-    -o-background-size: 16px;
-    background-size: 16px;
-  }
+  margin-right: -12px;
+  width: 15px;
+  text-align: center;
+  color: #8ccffa;
+}
+
+.jquery_plugin li.tag a
+{
+  color: white;
+  text-decoration: none;
 }
 
 /*----------[ versions table ]--------------------------------------------------
@@ -216,6 +214,11 @@ Template: jquery
 
 .jquery_plugin .versions table thead tr
 {
+  -moz-border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px 8px 0 0;
+  -ms-border-radius: 8px 8px 0 0;
+  -o-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
   background: black url('images/dark-grey-tile.png');
 }
 
@@ -232,11 +235,11 @@ Template: jquery
 
 .jquery_plugin .versions table thead th.version
 {
-  -webkit-border-radius: 8px 0 0 0;
-  -moz-border-radius: 8px 0 0 0;
-  -ms-border-radius: 8px 0 0 0;
-  -o-border-radius: 8px 0 0 0;
-  border-radius: 8px 0 0 0;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  -ms-border-top-left-radius: 8px;
+  -o-border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .jquery_plugin .versions table thead th.release-date
@@ -294,110 +297,49 @@ Template: jquery
   margin-bottom: 8px;
   padding-left: 16px;
   width: 33%;
-  background: url('images/bullet.png') no-repeat left center;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
+.jquery_plugin .related-plugins li:before,
+.jquery_plugin .plugin-metadata li:before
 {
-  .jquery_plugin .related-plugins li
-  {
-    background-image: url('images/bullet@2x.png');
-    -webkit-background-size: 5px 11px;
-    -moz-background-size: 5px 11px;
-    -o-background-size: 5px 11px;
-    background-size: 5px 11px;
-  }
+  text-indent: -1.6em;
+  color: #e0e0e0;
 }
 
 /*----------[ general sidebar styles ]------------------------------------------
 */
-.jquery_plugin .plugin-metadata .github-activity, .jquery_plugin .plugin-metadata .author-info, .jquery_plugin .plugin-metadata .maintainer-info, .jquery_plugin .plugin-metadata .licenses, .jquery_plugin .plugin-metadata .dependencies
+.jquery_plugin .plugin-metadata .github-activity,
+.jquery_plugin .plugin-metadata .author-info,
+.jquery_plugin .plugin-metadata .maintainer-info,
+.jquery_plugin .plugin-metadata .licenses,
+.jquery_plugin .plugin-metadata .dependencies
 {
   color: #7f7f7f;
 }
 
-.jquery_plugin .plugin-metadata .github-activity h2, .jquery_plugin .plugin-metadata .author-info h2, .jquery_plugin .plugin-metadata .maintainer-info h2, .jquery_plugin .plugin-metadata .licenses h2, .jquery_plugin .plugin-metadata .dependencies h2
+.jquery_plugin .plugin-metadata .github-activity h2,
+.jquery_plugin .plugin-metadata .author-info h2,
+.jquery_plugin .plugin-metadata .maintainer-info h2,
+.jquery_plugin .plugin-metadata .licenses h2,
+.jquery_plugin .plugin-metadata .dependencies h2
 {
-  padding-left: 24px;
+  padding-left: 30px;
   background: no-repeat left center;
   color: #7f7f7f;
   text-shadow: 0 1px 0 white;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
+.jquery_plugin .plugin-metadata h2 [class^="icon-"],
+.jquery_plugin .plugin-metadata h2 [class*=" icon-"]
 {
-  .jquery_plugin .plugin-metadata .github-activity h2, .jquery_plugin .plugin-metadata .author-info h2, .jquery_plugin .plugin-metadata .maintainer-info h2, .jquery_plugin .plugin-metadata .licenses h2, .jquery_plugin .plugin-metadata .dependencies h2
-  {
-    -webkit-background-size: 16px;
-    -moz-background-size: 16px;
-    -o-background-size: 16px;
-    background-size: 16px;
-  }
-}
-
-.jquery_plugin .plugin-metadata .github-activity h2
-{
-  background-image: url('images/octocat-grey.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .plugin-metadata .github-activity h2
-  {
-    background-image: url('images/octocat-grey@2x.png');
-  }
-}
-
-.jquery_plugin .plugin-metadata .author-info h2
-{
-  background-image: url('images/person.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .plugin-metadata .author-info h2
-  {
-    background-image: url('images/person@2x.png');
-  }
-}
-
-.jquery_plugin .plugin-metadata .maintainer-info h2
-{
-  background-image: url('images/wrench.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .plugin-metadata .maintainer-info h2
-  {
-    background-image: url('images/wrench@2x.png');
-  }
-}
-
-.jquery_plugin .plugin-metadata .licenses h2
-{
-  background-image: url('images/book.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .plugin-metadata .licenses h2
-  {
-    background-image: url('images/book@2x.png');
-  }
-}
-
-.jquery_plugin .plugin-metadata .dependencies h2
-{
-  background-image: url('images/tree.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .plugin-metadata .dependencies h2
-  {
-    background-image: url('images/tree@2x.png');
-  }
+  display: inline-block;
+  margin-left: -30px;
+  margin-right: 6px;
+  width: 24px;
+  background: no-repeat left center;
+  color: #7f7f7f;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
 }
 
 .jquery_plugin .plugin-metadata .github-activity .box
@@ -463,26 +405,13 @@ Template: jquery
 
 .jquery_plugin .plugin-metadata ul
 {
-  margin-left: 24px;
+  margin-left: 30px;
   list-style-type: none;
 }
 
 .jquery_plugin .plugin-metadata li
 {
   padding-left: 16px;
-  background: url('images/bullet.png') no-repeat left center;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .plugin-metadata li
-  {
-    background-image: url('images/bullet@2x.png');
-    -webkit-background-size: 5px 11px;
-    -moz-background-size: 5px 11px;
-    -o-background-size: 5px 11px;
-    background-size: 5px 11px;
-  }
 }
 
 /*----------[ toolbox ]---------------------------------------------------------
@@ -587,20 +516,34 @@ Template: jquery
   -o-border-radius: 8px;
   border-radius: 8px;
   border: 1px solid #e1b68c;
-  padding: 0 30px;
-  background: #d18f4f url('images/download.png') no-repeat 8px center;
+  padding: 0 32px;
+  background: #d18f4f;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
+.jquery_plugin .toolbox a.download .inner-wrapper [class^="icon-"],
+.jquery_plugin .toolbox a.download .inner-wrapper [class*=" icon-"]
 {
-  .jquery_plugin .toolbox a.download .inner
-  {
-    background-image: url('images/download@2x.png');
-    -webkit-background-size: 16px;
-    -moz-background-size: 16px;
-    -o-background-size: 16px;
-    background-size: 16px;
-  }
+  margin-left: -25px;
+  margin-right: 5px;
+  color: #81502e;
+  text-shadow: 0 1px #dca977;
+  text-align: center;
+}
+
+.jquery_plugin .toolbox [class^="icon-"], .jquery_plugin .toolbox [class*=" icon-"]
+{
+  margin-left: -25px;
+  margin-right: 7px;
+  width: 25px;
+  color: #8ccffa;
+  text-decoration: none;
+  text-shadow: 0 -1px black;
+}
+
+.jquery_plugin .toolbox [class^="icon-"]:before, .jquery_plugin .toolbox [class*=" icon-"]:before
+{
+  width: 25px;
+  text-align: center;
 }
 
 .jquery_plugin .toolbox a.other-link
@@ -618,200 +561,8 @@ Template: jquery
   text-decoration: underline;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .toolbox a.other-link
-  {
-    -webkit-background-size: 16px;
-    -moz-background-size: 16px;
-    -o-background-size: 16px;
-    background-size: 16px;
-  }
-}
-
-.jquery_plugin .toolbox a.other-link.gh-fork
-{
-  background-image: url('images/octocat-blue.png');
-  background-position: 6px center;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .toolbox a.other-link.gh-fork
-  {
-    background-image: url('images/octocat-blue@2x.png');
-  }
-}
-
-.jquery_plugin .toolbox a.other-link.view-homepage
-{
-  background-image: url('images/link.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .toolbox a.other-link.view-homepage
-  {
-    background-image: url('images/link@2x.png');
-  }
-}
-
-.jquery_plugin .toolbox a.other-link.demo
-{
-  background-image: url('images/eye.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .toolbox a.other-link.demo
-  {
-    background-image: url('images/eye@2x.png');
-  }
-}
-
-.jquery_plugin .toolbox a.other-link.read-docs
-{
-  background-image: url('images/document.png');
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2)
-{
-  .jquery_plugin .toolbox a.other-link.read-docs
-  {
-    background-image: url('images/document@2x.png');
-  }
-}
-
 /*----------[ IE hacks ]--------------------------------------------------------
 */
-.lte7 .jquery_plugin .plugin-main
-{
-  width: 60%;
-}
-
-.lte7 .jquery_plugin .related-plugins ul, .lte7 .jquery_plugin .plugin-metadata ul
-{
-  zoom: 1;
-  margin: 0;
-  padding: 0;
-  list-style: none none;
-  list-style-position: none;
-}
-
-.lte7 .jquery_plugin .plugin-metadata ul
-{
-  margin-left: 24px;
-}
-
-.lte7 .jquery_plugin .related-plugins ul li, .lte7 .jquery_plugin .plugin-metadata ul li
-{
-  zoom: 1;
-}
-
-.lte7 .jquery_plugin .related-plugins li
-{
-  width: 30%;
-}
-
-.lte7 .jquery_plugin .tags li
-{
-  display: inline;
-}
-
-.lte7 .jquery_plugin .versions table
-{
-  border-collapse: collapse;
-}
-
-.lte7 .jquery_plugin .versions table th, .lte7 .jquery_plugin .versions table td
-{
-  border: 1px solid #ccc;
-}
-
-.lte7 .jquery_plugin .versions table th
-{
-  border-color: black;
-  background-color: black;
-}
-
-.lte7 .jquery_plugin .plugin-metadata
-{
-  width: 25%;
-}
-
-.lte7 .jquery_plugin .plugin-metadata .github-activity .box .info-block
-{
-  display: inline;
-}
-
-.ie8 .jquery_plugin .plugin-main .block.last:after
-{
-  display: none;
-}
-
-.lte8 .jquery_plugin .clearfix
-{
-  zoom: 1;
-}
-
-.lte8 .jquery_plugin .toolbox a.other-link.gh-fork
-{
-  background-image: url("images/octocat-blue.png");
-  background-position: 6px center;
-}
-
-.lte8 .jquery_plugin .toolbox a.other-link.view-homepage
-{
-  background-image: url("images/link.png");
-}
-
-.lte8 .jquery_plugin .toolbox a.other-link.demo
-{
-  background-image: url("images/eye.png");
-}
-
-.lte8 .jquery_plugin .toolbox a.other-link.read-docs
-{
-  background-image: url("images/document.png");
-}
-
-.lte8 .jquery_plugin .plugin-metadata
-{
-  border-left: 1px solid #e7e7e7 !important;
-}
-
-.lte8 .jquery_plugin .related-plugins li,
-.lte8 .jquery_plugin .plugin-metadata li
-{
-  background: url('images/bullet.png') no-repeat left center;
-}
-
-.lte8 .jquery_plugin .plugin-metadata .github-activity h2
-{
-  background-image: url('images/octocat-grey.png');
-}
-
-.lte8 .jquery_plugin .plugin-metadata .author-info h2
-{
-  background-image: url('images/person.png');
-}
-
-.lte8 .jquery_plugin .plugin-metadata .maintainer-info h2
-{
-  background-image: url('images/wrench.png');
-}
-
-.lte8 .jquery_plugin .plugin-metadata .licenses h2
-{
-  background-image: url('images/book.png');
-}
-
-.lte8 .jquery_plugin .plugin-metadata .dependencies h2
-{
-  background-image: url('images/tree.png');
-}
-
-
 .lte9 .jquery_plugin h1.entry-title
 {
   background: transparent;
