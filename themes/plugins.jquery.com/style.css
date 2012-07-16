@@ -14,3 +14,8 @@ Template: jquery
 .jquery_plugin .block li { list-style-type: none; margin: 0; padding: 0; }
 .jquery_plugin .block ul { font-size: 110%; margin-bottom: 1em; }
 .jquery_plugin .block li { margin: 0.6em 0; }
+
+.sidebar {
+  background-color: #eee;
+  padding: 2%;
+}

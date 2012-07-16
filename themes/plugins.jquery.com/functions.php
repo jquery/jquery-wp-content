@@ -50,6 +50,77 @@ function jq_plugin_versions() {
 }
 
 //
+// Display a list of the newest plugins (for the sidebar)
+//
+
+function jq_new_plugins($total = 10) {
+	global $post;
+	$new_plugins_args = array(
+		'post_type' => 'jquery_plugin',
+		'posts_per_page' => $total,
+		'order' => 'DESC',
+		'orderby' => 'date',
+		'post_parent' => 0,
+	);
+
+	$new_plugins = new WP_Query( $new_plugins_args );
+	if ( $new_plugins->have_posts() ):
+		echo '<ul>';
+		while ( $new_plugins->have_posts() ) :
+			$new_plugins->the_post();
+	?>
+		<li>
+			<a href="/<?php echo $post->post_name; ?>/"><?php echo $post->post_title; ?></a>
+		</li>
+	<?php
+		endwhile;
+		echo '</ul>';
+	endif;
+	wp_reset_postdata();
+}
+
+//
+// Display a list of the most recently updated plugins (for the sidebar)
+//
+function jq_updated_plugins( $total = 10 ) {
+	global $post;
+	$updated_plugins_args = array(
+		'post_type' => 'jquery_plugin',
+		'order' => 'DESC',
+		'orderby' => 'date',
+	);
+
+	$added = array();
+	$updated_plugins = new WP_Query( $updated_plugins_args );
+	if ( $updated_plugins->have_posts() ):
+		echo '<ul>';
+		while ( $updated_plugins->have_posts() ) :
+			$updated_plugins->the_post();
+			$parent_id = $post->post_parent;
+
+			// Only add children of the main plugin post
+			// And only add if no other child of same parent has been added
+			if ( $parent_id && !in_array($parent_id, $added)):
+				$added[] = $parent_id;
+				$parent = get_post( $parent_id );
+
+	?>
+		<li>
+			<a href="/<?php echo $parent->post_name . '/' . $post->post_name ?>/"><?php echo $post->post_title; ?></a>
+			(version <?php echo $post->post_name; ?>)
+		</li>
+	<?php
+				if ( count($added) == $total ) {
+					break;
+				}
+			endif;
+		endwhile;
+		echo '</ul>';
+	endif;
+	wp_reset_postdata();
+}
+
+//
 // The functions below (with the jq_release_ prefix) relate to a specific
 // version number release of a plugin
 //

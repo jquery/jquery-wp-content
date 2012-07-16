@@ -1,11 +1,10 @@
 <?php get_header(); ?>
-		
+
   <!-- body -->
   <div id="body" class="clearfix">
-    
-    <!-- inner -->
-    <div class="inner">
-  
+
+    <div class="col col3-2">
+      <div class="inner">
 <?php
 
 // TODO
@@ -22,9 +21,15 @@ foreach( $toplvlpages as $post ) {
 	}
 }
 ?>
-  
+
+      </div>
     </div>
-    <!-- /inner -->
+    <?php if($sidebar): ?>
+
+      <?php get_sidebar( ); ?>
+
+    <?php endif; ?>
+
   </div>
   <!-- /body -->
 
