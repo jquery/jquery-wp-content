@@ -172,7 +172,7 @@ function jq_release_licenses() {
 	foreach( $pkg->licenses as $license ) {
 		$url = htmlspecialchars( $license->url );
 		$type = empty( $license->type ) ? $url : htmlspecialchars( $license->type );
-		$ret .= "<li><a href='$url'>$type</a></li>";
+		$ret .= "<li class=\"icon-caret-right\"><a href='$url'>$type</a></li>";
 	}
 	return $ret;
 }
@@ -186,9 +186,9 @@ function jq_release_maintainers() {
 	}
 
 	foreach( $pkg->maintainers as $maintainer ) {
-		$ret .= person( $maintainer ) . ", ";
+		$ret .= "<li class=\"icon-caret-right\">" . person( $maintainer ) . "</li>";
 	}
-	return substr( $ret, 0, -2 );
+	return $ret;
 }
 
 function jq_release_author() {
@@ -201,15 +201,15 @@ function jq_release_dependencies() {
 	$ret = "";
 	foreach( $pkg->dependencies as $plugin => $version ) {
 		if ( get_page_by_path( $plugin ) ) {
-			$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
+			$ret .= "<li class=\"icon-caret-right\"><a href='/$plugin'>$plugin</a> $version</li>";
 		} else {
-			$ret .= "<li>$plugin $version</li>";
+			$ret .= "<li class=\"icon-caret-right\">$plugin $version</li>";
 		}
 	}
 	return $ret;
 }
 
 function jq_release_keywords() {
-	return get_the_tag_list( "<ul><li>", "</li><li>", "</li></ul>" );
+	return get_the_tag_list( "<ul><li class=\"tag icon-tag\">", "</li><li class=\"tag icon-tag\">", "</li></ul>" );
 }
 
