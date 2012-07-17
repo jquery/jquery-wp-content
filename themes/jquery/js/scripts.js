@@ -9,6 +9,7 @@
 App.subscribe("init", function(){
 
 var tooltip_timeout;
+var $search = $('#search');
 
 	//
 	// Set Auto Height
@@ -25,22 +26,25 @@ var tooltip_timeout;
     //		commented 12/29/11 unclear as to purpose
 //		$("#container #body").css({"overflow":"visible"});
 	});
-	
+
 	//
 	// Add Search Interactions
 	//
-	$("#search").bind('focus', function(){
+	$search.bind('focus', function(){
 		$(this).parent().find("label").animate({opacity:'0.5'}, 200);
 	}).bind('blur', function(){
 		$(this).parent().find("label").animate({opacity:'1'}, 200);
 	}).bind('keypress', function(){
 		$(this).parent().find('label').hide();
 	}).bind('keyup', function(){
-		if($(this).val() == ''){
+		if($(this).val() === ''){
 			$(this).parent().find('label').show();
 		}
 	});
 
+	if ( $search.val() !== '' ) {
+		$search.trigger('keypress');
+	}
 	//
 	// Project Select Show/Hide
 	//
@@ -80,7 +84,7 @@ var tooltip_timeout;
 		$span.css("background-image", "url(" + $img.attr('src') + ")");
 		$img.css("visibility", "hidden");
 	});
-	
+
 	//
 	// Footer Social Icons
 	//
@@ -94,7 +98,7 @@ var tooltip_timeout;
 		.delegate("li a", "mouseleave", function () {
 			$(this).find("span").stop(true, false).fadeOut(250);
 		});
-		
+
 	//
 	// Learning Site Specific
 	//
@@ -117,20 +121,20 @@ var tooltip_timeout;
 			el.removeClass("open").addClass("closed").animate({"width":"24%","margin-left":"-30.5%"}, 500);
 		}
 	});
-	
+
 	// Project Tooltips
 	$(".projects").find(".jquery, .jquery-ui, .jquery-mobile").on( "mouseover", function() {
-		var el = $( this ), 
-			tooltips = $(".tooltips"), 
+		var el = $( this ),
+			tooltips = $(".tooltips"),
 			tooltip = {},
 			$tooltip;
 
 		if ( el.hasClass("jquery") ) {
 			tooltip = $(".tooltips .jquery");
-		} 
+		}
 		else if ( el.hasClass("jquery-ui") ) {
 			tooltip = $(".tooltips .jquery-ui");
-		} 
+		}
 		else if ( el.hasClass("jquery-mobile") ) {
 			tooltip = $(".tooltips .jquery-mobile");
 		}
@@ -159,7 +163,7 @@ var tooltip_timeout;
 	}, function() {
 		$( this ).children("ul").stop( true, true ).slideUp( 100 );
 	});
-	
+
 	// CDN auto-select-all
 	$('#site-footer .cdn input').on("click", function() {
 		if ( typeof this.select === "function" ) {

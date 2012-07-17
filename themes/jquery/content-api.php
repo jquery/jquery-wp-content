@@ -17,15 +17,10 @@
 			<?php endif; ?>
 		</header><!-- .entry-header -->
 
-		<?php if ( true ) : //  is_search() Only display Excerpts for Search ?>
+		<?php // Only display Excerpts ?>
 		<div class="entry-summary">
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
-		<?php else : ?>
-		<div class="entry-content">
-			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
-		</div><!-- .entry-content -->
-		<?php endif; ?>
 
 		<footer class="entry-meta">
 			<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
