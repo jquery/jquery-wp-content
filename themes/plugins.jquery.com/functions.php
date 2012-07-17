@@ -129,11 +129,14 @@ function jq_release_manifest() {
 	return json_decode( get_post_meta( get_the_ID(), "manifest", true ) );
 }
 
-function person( $person ) {
+function person( $person, $avatar ) {
 	$ret = htmlspecialchars( $person->name );
 	if ( !empty( $person->url ) ) {
 		$url = htmlspecialchars( $person->url );
 		$ret = "<a href='$url'>$ret</a>";
+	}
+	if ( $avatar && !empty( $person->email ) ) {
+		$ret = get_avatar( $person->email, '80' ) . $ret;
 	}
 	return $ret;
 }
@@ -177,7 +180,7 @@ function jq_release_licenses() {
 	return $ret;
 }
 
-function jq_release_maintainers() {
+function jq_release_maintainers( $options = array('avatar' => false) ) {
 	$pkg = jq_release_manifest();
 	$ret = "";
 
@@ -186,14 +189,14 @@ function jq_release_maintainers() {
 	}
 
 	foreach( $pkg->maintainers as $maintainer ) {
-		$ret .= person( $maintainer ) . ", ";
+		$ret .= person( $maintainer, $options['avatar'] ) . ", ";
 	}
 	return substr( $ret, 0, -2 );
 }
 
-function jq_release_author() {
+function jq_release_author( $options = array('avatar' => false) ) {
 	$pkg = jq_release_manifest();
-	return person( $pkg->author );
+	return person( $pkg->author, $options['avatar'] );
 }
 
 function jq_release_dependencies() {

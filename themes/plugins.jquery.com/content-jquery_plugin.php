@@ -15,15 +15,16 @@
 
 	<div class="entry-content">
 		<div class="col col3-2">
+
 			by <?php echo jq_release_author(); ?>
 			<div class="block">
 				<?php the_content(); ?>
 			</div>
 			<div class="block">
 				<h2>Author</h2>
-				<?php echo jq_release_author(); ?>
+				<?php echo jq_release_author( array('avatar' => true) ); ?>
 			</div>
-			<?php if ( $maintainers = jq_release_maintainers() ) { ?>
+			<?php if ( $maintainers = jq_release_maintainers( array('avatar' => true) ) ) { ?>
 			<div class="block">
 				<h2>Maintainers</h2>
 				<ul>
