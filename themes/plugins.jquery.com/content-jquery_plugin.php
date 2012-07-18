@@ -41,21 +41,6 @@
 					</tbody>
 				</table>
 			</div><!-- /.versions -->
-			<div class="block related-plugins last">
-				<h3>Related Plugins</h3>
-				<div class="box clearfix">
-					<ul>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 1</a></li>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 2</a></li>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 3</a></li>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 4</a></li>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 5</a></li>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 6</a></li>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 7</a></li>
-						<li class="icon-caret-right"><a href="javascript:;">plugin 8</a></li>
-					</ul>
-				</div> <!-- /.box -->
-			</div> <!-- /.related-plugins -->
 		</div> <!-- /.plugin-main -->
 		<div class="plugin-metadata">
 			<div class="block toolbox">
