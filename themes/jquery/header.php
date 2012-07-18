@@ -41,6 +41,12 @@ if (!isset($tlsite)) {
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.0.6.min.js"></script>
 <!--[if (gte IE 6)&(lte IE 8)]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.js"></script>
+
+<!--Typekit-->
+<script type="text/javascript" src="http://use.typekit.com/wde1aof.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
 <![endif]-->
 
 <?php
