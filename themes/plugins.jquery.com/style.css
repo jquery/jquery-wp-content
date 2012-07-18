@@ -1,12 +1,11 @@
 /* @override 
 	http://stage.plugins.jquery.com/web-base-template/themes/plugins.jquery.com/style.css */
 
+
 /*
 Theme Name: plugins-jquery-com
 Template: jquery
 */
-
-@import url("font-awesome.css");
 
 /*-----[ containers ]-----------------------------------------------------------
 */
@@ -82,24 +81,10 @@ Template: jquery
 .jquery_plugin h1.entry-title
 {
 	margin: 0 0 .25em; /*0.25 * 32px = 8px*/
-	border-style: none;
-	padding: 0;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	text-shadow: none;
-	background: transparent;
-	font-size: 2em; /*2 * 16px = 32px*/
-	line-height: 1.25em; /*1.25 * 32px = 40px*/
 	color: #d18f4f;
 }
 
-.jquery_plugin h2
-{
-	margin-bottom: 0.6em; /*0.6 * 20px = 12px*/
-	font-size: 1.25em; /*1.25 * 16px = 20px*/
-	line-height: 1.2em; /*1.2 * 20px = 24px*/
-}
+
 
 .jquery_plugin .block ul,
 .jquery_plugin .block li
@@ -115,8 +100,7 @@ Template: jquery
 .jquery_plugin ul,
 .jquery_plugin table
 {
-	margin-bottom: 1.5em; /*1.5 * 16px = 24px*/
-	line-height: 1.5em; /*1.5 * 16px = 24px*/
+	margin-bottom: 1.6em; /*1.6 * 15px = 24px*/
 }
 
 .jquery_plugin table
@@ -131,6 +115,8 @@ Template: jquery
 .jquery_plugin .attribution
 {
 	color: #808080;
+	font: 13px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: -5px;
 }
 
 /*----------[ tags ]------------------------------------------------------------

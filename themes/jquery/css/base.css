@@ -3,6 +3,8 @@
 	http://stage.jquery.com/web-base-template/themes/jquery/css/base.css?v=1 */
 
 
+@import url("font-awesome.css");
+
 /*******************************************************************************/
 /*	Reset */
 /*******************************************************************************/
@@ -101,19 +103,24 @@
 }
 	
 	h1 
-{	font-family: "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px; }
+{
+	letter-spacing: -1px;
+	font: bold 32px/32px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 	h2, h3, h4
 {	margin: 0 0 15px 0; }
 
 	h2
-{	font-size: 26px;
-	font-family: "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; }
+{
+	font: bold 23px/23px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 	h3
-{	font-size: 20px;
-	font-family: "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; }
+{
+	font: bold 20px/20px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #666;
+}
 
 	h4
 {	font-size: 14px; }
@@ -329,18 +336,9 @@
 	/*******************************************************************************/
 
 	h1.title, h1.entry-title, h2.title, h2.entry-title
-{	width: 100%;
-	font-size: 22px;
+{	
 	text-shadow: 0 1px 1px #fff;
-	margin: 0 0 20px -30px;
-	padding: 10px 30px 10px 30px;
-	border-top: 1px solid #DDD;
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.35);
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.35);
-	box-shadow: 0 1px 3px rgba(0,0,0,0.35);
-	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
-	background: -moz-linear-gradient(top,  #e5e5e5,  #d5d5d5);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5'); }
+	margin: 0 0 20px; }
 
 	h1.title a, h1.entry-title a, h2.title a, h2.entry-title a
 {
@@ -819,7 +817,9 @@
 	/*******************************************************************************/
 
 	body > header
-{	background: url(../i/jq-global-nav.png) 0 -68px repeat-x; }
+{	background: url(../i/jq-global-nav.png) 0 -68px repeat-x;
+	font-size: 13px;
+}
 
 	header nav.top
 {	height: 32px; }
@@ -1472,7 +1472,9 @@
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	width: 70%; }
+	width: 70%;
+	font-size: 13px;
+}
 
 	#container header nav ul li
 {	margin: 0;
