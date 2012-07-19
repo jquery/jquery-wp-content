@@ -213,6 +213,12 @@ function jq_release_dependencies() {
 }
 
 function jq_release_keywords() {
-	return get_the_tag_list( "<ul><li class=\"tag icon-tag\">", "</li><li class=\"tag icon-tag\">", "</li></ul>" );
+   $ret = '<ul>';
+   foreach( get_the_tags() as $tag ) {
+       $ret .= '<li><a class="tag icon-tag" href="' . get_tag_link( $tag->term_id ) . '">' .
+           $tag->name . '</a></li>';
+   }
+   $ret .= '</ul>';
+   return $ret;
 }
 
