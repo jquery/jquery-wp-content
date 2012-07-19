@@ -133,6 +133,7 @@ Template: jquery
 	-o-border-radius: 3px;
 	border-radius: 3px;
 	background-color: #305e91;
+	margin-bottom: 10px;
 }
 
 .jquery_plugin li.tag[class^="icon-"]:before,
@@ -599,9 +600,15 @@ Template: jquery
 	
 @media all and (max-width: 1100px){
 	.jquery_plugin .plugin-main {
-		width: 60%;
+		width: 65%;
 	}
 }	
+
+@media all and (max-width: 900px){
+	.jquery_plugin .plugin-main {
+		width: 60%;
+	}
+}
 
 @media all and (max-width: 768px){
 
