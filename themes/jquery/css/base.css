@@ -105,7 +105,7 @@
 	h1 
 {
 	letter-spacing: -1px;
-	font: bold 32px/32px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 33px/33px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 	h2, h3, h4
@@ -1163,6 +1163,10 @@ a:hover {
 	height: 32px;
 	line-height: 31px;
 	text-shadow: black 0px -1px 0px, black 0px 0px 2px; }
+	
+	header nav.top li a {
+		color: #fff !important;
+	}
 
 	.jquery header nav.top li.jquery, .jquery-ui header nav.top li.jquery-ui, .jquery-mobile header nav.top li.jquery-mobile
 {	border: none;

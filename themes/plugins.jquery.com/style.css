@@ -42,7 +42,7 @@ Template: jquery
 .jquery_plugin .plugin-main .block:after
 {
 	display: block;
-	margin: 1em 0;
+	margin: 2em 0;
 	height: 1em;
 	background: url("images/gauze.png");
 	content: ' ';
@@ -310,8 +310,12 @@ Template: jquery
 {
 	padding-left: 30px;
 	background: no-repeat left center;
-	color: #7f7f7f;
 	text-shadow: 0 1px 0 white;
+}
+
+.jquery_plugin .plugin-metadata h2 {
+	margin-bottom: 3px;
+	font-size: 1.4em;
 }
 
 .jquery_plugin .plugin-metadata h2 [class^="icon-"],
@@ -329,11 +333,11 @@ Template: jquery
 
 .jquery_plugin .plugin-metadata .github-activity .box
 {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
 	border: 1px solid #ccc;
 	padding: 10px;
 	background-color: white;
@@ -354,6 +358,7 @@ Template: jquery
 	-o-border-radius: 4px;
 	border-radius: 4px;
 	text-align: center;
+	min-width: 80px;
 }
 
 .jquery_plugin .plugin-metadata .github-activity .box .info-block .number
@@ -366,10 +371,8 @@ Template: jquery
 	border-top-right-radius: 4px;
 	background: black url('images/dark-grey-tile.png');
 	padding: 2px 10px;
-	font-size: 2em;
-	line-height: 1.25em;
-	font-weight: bold;
 	color: white;
+	font: bold 3em/1em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .jquery_plugin .plugin-metadata .github-activity .box .info-block .caption
@@ -380,12 +383,12 @@ Template: jquery
 	-moz-border-radius-bottomright: 4px;
 	-webkit-border-bottom-right-radius: 4px;
 	border-bottom-right-radius: 4px;
-	padding: 2px 10px;
+	padding: 4px 10px;
 	background-color: #8ccffa;
-	font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
-	font-size: 14px;
 	color: white;
 	text-transform: uppercase;
+	font: bold 11px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
 }
 
 .jquery_plugin .plugin-metadata ul
@@ -397,6 +400,11 @@ Template: jquery
 .jquery_plugin .plugin-metadata li
 {
 	padding-left: 16px;
+	text-shadow: 0 1px 0 white;
+}
+
+.jquery_plugin .plugin-metadata li.icon-caret-right:before {
+	font-size: .9em;
 }
 
 /*----------[ toolbox ]---------------------------------------------------------
@@ -409,9 +417,9 @@ Template: jquery
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
 	border-radius: 8px;
-	-webkit-box-shadow: 0 0 15px 3px #e7e7e7;
-	-moz-box-shadow: 0 0 15px 3px #e7e7e7;
-	box-shadow: 0 0 15px 3px #e7e7e7;
+	   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	background-color: black;
 }
 
@@ -429,7 +437,7 @@ Template: jquery
 
 .jquery_plugin .toolbox header
 {
-	padding: 8px 20px 12px;
+	padding: 10px 20px;
 }
 
 .jquery_plugin .toolbox header p
@@ -441,7 +449,6 @@ Template: jquery
 {
 	color: #999;
 	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px;
 }
 
 .jquery_plugin .toolbox header .version-info, .jquery_plugin .toolbox header .release-info
@@ -460,8 +467,10 @@ Template: jquery
 	font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-.version-number {
-	font-size: 2em;
+.jquery_plugin .toolbox header .version-number {
+	font-size: 1.9em;
+	letter-spacing: -2px;
+	line-height: .9em;
 }
 
 .jquery_plugin .toolbox .body
@@ -472,7 +481,7 @@ Template: jquery
 	-moz-border-radius-bottomright: 8px;
 	-webkit-border-bottom-right-radius: 8px;
 	border-bottom-right-radius: 8px;
-	padding: 12px 20px 16px;
+	padding: 12px 15px 5px;
 	background: url('images/dark-grey-tile.png');
 }
 
@@ -480,31 +489,32 @@ Template: jquery
 {
 	display: block;
 	margin-bottom: 1.2em;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
-	border-radius: 8px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
 	border: 1px solid black;
-	font-size: 1.25em; /*1.25 * 16px = 20px*/
-	line-height: 1.6em; /*1.6 * 20px = 32px*/
-	font-weight: bold;
+	 /*1.25 * 16px = 20px*/
+	 /*1.6 * 20px = 32px*/
+	
 	color: white;
 	text-shadow: 0 -1px #bc7531, 0 1px #dca977;
 	text-decoration: none;
+	font: bold 1.4em/1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .jquery_plugin .toolbox a.download .inner-wrapper
 {
 	display: block;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
-	border-radius: 8px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
 	border: 1px solid #e1b68c;
-	padding: 0 32px;
 	background: #d18f4f;
+	padding: 0 5px 0 32px;
 }
 
 .jquery_plugin .toolbox a.download .inner-wrapper [class^="icon-"],
@@ -515,6 +525,8 @@ Template: jquery
 	color: #81502e;
 	text-shadow: 0 1px #dca977;
 	text-align: center;
+	top: 3px;
+	position: relative;
 }
 
 .jquery_plugin .toolbox [class^="icon-"], .jquery_plugin .toolbox [class*=" icon-"]
@@ -531,16 +543,20 @@ Template: jquery
 {
 	width: 25px;
 	text-align: center;
+	font-size: 1.2em;
 }
 
 .jquery_plugin .toolbox a.other-link
 {
 	display: block;
-	margin-bottom: 0.5em;
-	padding: 0 32px;
+	margin-bottom: 0.8em;
 	background: no-repeat 8px center;
 	color: white;
 	text-decoration: none;
+	font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 32px;
 }
 
 .jquery_plugin .toolbox a.other-link:hover

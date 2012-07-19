@@ -60,9 +60,9 @@
 							<span class="inner-wrapper"><span class="icon-download-alt"></span>Download now</span>
 						</a>
 						<a class="other-link gh-fork" href="<?php echo jq_plugin_repo_url(); ?>"><span class="icon-github"></span>Fork on GitHub</a>
-						<a class="other-link view-homepage" href="<?php echo jq_release_homepage(); ?>"><span class="icon-external-link"></span>View homepage</a>
-						<a class="other-link demo" href="<?php echo jq_release_demo(); ?>"><span class="icon-eye-open"></span>Try a demo</a>
-						<a class="other-link read-docs" href="<?php echo jq_release_docs(); ?>"><span class="icon-file"></span>Read the docs</a>
+						<a class="other-link view-homepage" href="<?php echo jq_release_homepage(); ?>"><span class="icon-external-link"></span>View Homepage</a>
+						<a class="other-link demo" href="<?php echo jq_release_demo(); ?>"><span class="icon-eye-open"></span>Try a Demo</a>
+						<a class="other-link read-docs" href="<?php echo jq_release_docs(); ?>"><span class="icon-file"></span>Read the Docs</a>
 					</div> <!-- /.body -->
 				</div> <!-- /.inner -->
 			</div> <!-- /.toolbox -->
