@@ -167,7 +167,7 @@ Template: jquery
 {
 	border: 1px solid #ccc;
 	border-top-style: none;
-	padding: 4px 10px;
+	padding: 8px 14px;
 }
 
 .jquery_plugin .versions table tbody tr:nth-child(even) td
@@ -203,16 +203,7 @@ Template: jquery
 	background: black url('images/dark-grey-tile.png');
 }
 
-.jquery_plugin .versions table thead th
-{
-	border-style: none;
-	color: white;
-	font-size: 14px;
-	font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
-	font-weight: normal;
-	text-align: left;
-	text-transform: uppercase;
-}
+
 
 .jquery_plugin .versions table thead th.version
 {
@@ -235,12 +226,25 @@ Template: jquery
 .jquery_plugin .versions table .version
 {
 	border-right-style: none;
+	font: bold 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
 }
 
 .jquery_plugin .versions table .release-date
 {
 	border-left-style: none;
 	width: 20%;
+}
+
+.jquery_plugin .versions table thead th
+{
+	border-style: none;
+	color: white;
+	text-align: left;
+	text-transform: uppercase;
+	font: bold 12px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /*----------[ related plugins ]-------------------------------------------------

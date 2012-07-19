@@ -692,6 +692,10 @@
 	a
 {	color: #0d619c; }
 
+a:hover {
+	color: #333;
+}
+
 	#site-footer a {
 	color: #fff;
 	text-decoration: none;
@@ -713,6 +717,10 @@
 
 	.jquery a, .jquery .title, .jquery .entry-title
 {	color: #065791; }
+
+.jquery a:hover {
+	color: #333;
+}
 
 	.jquery #container header nav ul li a, .jquery #container header nav .search::-webkit-input-placeholder, .jquery #container header nav .search label
 {	color: #FFF; }

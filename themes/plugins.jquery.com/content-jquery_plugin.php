@@ -27,8 +27,8 @@
 				<table>
 					<thead>
 						<tr>
-							<th class="version">Version</th>
-							<th class="release-date">Date</th>
+							<th>Version</th>
+							<th>Date</th>
 						</tr>
 					</thead>
 					<tbody>
