@@ -122,11 +122,28 @@ Template: jquery
 
 /*----------[ tags ]------------------------------------------------------------
 */
-.jquery_plugin li.tag
+.jquery_plugin .tags li
 {
 	display: inline-block;
 	margin-right: 10px;
-	padding: 2px 5px 2px 20px;
+	
+	width: auto;
+}
+
+.jquery_plugin li a.tag[class^="icon-"]:before,
+.jquery_plugin li a.tag[class*=" icon-"]:before
+{
+	
+	width: 20px;
+	text-align: left;
+	color: #8ccffa;
+}
+
+.jquery_plugin li a.tag
+{
+	color: white;
+	text-decoration: none;
+	display: block;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -134,21 +151,12 @@ Template: jquery
 	border-radius: 3px;
 	background-color: #305e91;
 	margin-bottom: 10px;
+	padding: 2px 7px 2px 7px;
+	width: auto;
 }
 
-.jquery_plugin li.tag[class^="icon-"]:before,
-.jquery_plugin li.tag[class*=" icon-"]:before
-{
-	margin-right: -12px;
-	width: 15px;
-	text-align: center;
-	color: #8ccffa;
-}
-
-.jquery_plugin li.tag a
-{
-	color: white;
-	text-decoration: none;
+.jquery_plugin li a.tag:hover {
+	background-color: #333;
 }
 
 /*----------[ versions table ]--------------------------------------------------
