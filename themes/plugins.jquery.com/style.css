@@ -205,7 +205,7 @@ Template: jquery
 
 
 
-.jquery_plugin .versions table thead th.version
+.jquery_plugin .versions table thead th.version-head
 {
 	-moz-border-radius-topleft: 8px;
 	-webkit-border-top-left-radius: 8px;
@@ -214,7 +214,7 @@ Template: jquery
 	border-top-left-radius: 8px;
 }
 
-.jquery_plugin .versions table thead th.release-date
+.jquery_plugin .versions table thead th.release-date-head
 {
 	-moz-border-radius-topright: 8px;
 	-webkit-border-top-right-radius: 8px;
@@ -439,9 +439,9 @@ Template: jquery
 
 .jquery_plugin .toolbox header .caption
 {
-	color: #888;
-	font-family: "Gill Sans", GillSans, Calibri, "Trebuchet MS", sans-serif;
-	font-size: 14px;
+	color: #999;
+	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
 }
 
 .jquery_plugin .toolbox header .version-info, .jquery_plugin .toolbox header .release-info
@@ -457,9 +457,11 @@ Template: jquery
 
 .jquery_plugin .toolbox header .version-number, .jquery_plugin .toolbox header .date
 {
-	font-size: 1.25em;
-	line-height: 1.2em;
-	font-weight: bold;
+	font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.version-number {
+	font-size: 2em;
 }
 
 .jquery_plugin .toolbox .body
