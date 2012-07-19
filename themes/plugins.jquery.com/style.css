@@ -16,7 +16,7 @@ Template: jquery
 
 .jquery_plugin
 {
-	padding: 1.6em 0; /*1.6 * 15px = 24px*/
+	padding: 1.6em 1em; /*1.6 * 15px = 24px*/
 }
 
 .jquery_plugin .block
@@ -35,8 +35,8 @@ Template: jquery
 
 .jquery_plugin .plugin-main
 {
-	padding: 0.5em 50px; /*0.5 * 16px = 8px*/
-	width: 70%;
+	padding: 0.5em 30px 0.5em 30px; /*0.5 * 16px = 8px*/
+	width: 68%;
 }
 
 .jquery_plugin .plugin-main .block:after
@@ -55,14 +55,14 @@ Template: jquery
 
 .jquery_plugin .plugin-metadata
 {
+	float: right;
 	border-left: 1px;
 	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
 	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 0.5em 35px; /*0.5 * 16px = 8px*/
-	width: 30%;
+	padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
 	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	-moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
@@ -72,6 +72,7 @@ Template: jquery
 	background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
 	background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
 	background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
+	width: 320px;
 }
 
 /*-----[ content ]--------------------------------------------------------------
@@ -437,7 +438,7 @@ Template: jquery
 
 .jquery_plugin .toolbox header
 {
-	padding: 10px 20px;
+	padding: 10px 15px;
 }
 
 .jquery_plugin .toolbox header p
@@ -451,10 +452,15 @@ Template: jquery
 	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-.jquery_plugin .toolbox header .version-info, .jquery_plugin .toolbox header .release-info
+.jquery_plugin .toolbox header .version-info
 {
 	float: left;
-	width: 50%;
+	width: 30%;
+}
+
+.jquery_plugin .toolbox header .release-info {
+	float: right;
+	width: 70%;
 }
 
 .jquery_plugin .toolbox header .release-info
@@ -517,6 +523,10 @@ Template: jquery
 	padding: 0 5px 0 32px;
 }
 
+.jquery_plugin .toolbox a.download:hover .inner-wrapper {
+	background-color: #cc8540;
+}
+
 .jquery_plugin .toolbox a.download .inner-wrapper [class^="icon-"],
 .jquery_plugin .toolbox a.download .inner-wrapper [class*=" icon-"]
 {
@@ -577,3 +587,57 @@ Template: jquery
 	height: 24px;
 }
 
+
+
+@media all and (max-width: 1100px){
+	
+	.jquery_plugin .plugin-metadata {
+		width: 280px;
+	}
+
+	}
+	
+@media all and (max-width: 1100px){
+	.jquery_plugin .plugin-main {
+		width: 60%;
+	}
+}	
+
+@media all and (max-width: 768px){
+
+		.jquery_plugin .plugin-main,
+		.jquery_plugin .plugin-metadata {
+			width: 100%;
+			padding: 0;
+			clear: both;
+			float: none;
+			border-left: none;
+			-moz-border-image: none;
+			-webkit-border-image: none;
+			-webkit-border-image: none;
+			-o-border-image: none;
+			border-image: none;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+			background-image: none;
+			background-image: none;
+			background-image: none;
+			background-image: none;
+			background-image: none;
+			background-image: none;
+		}
+	}
+
+@media all and (max-width: 660px){
+
+	}		
+@media all and (max-width: 400px){
+
+			
+	}
+
+@media all and (max-width: 320px){
+
+
+	}

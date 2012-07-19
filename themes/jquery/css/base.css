@@ -2508,7 +2508,19 @@ a:hover {
 			h1 a
 		{	margin: 20px auto;
 			float: none; }
-
+			
+		h1.site-title {
+			float: left;
+			width: 100%;
+		}	
+		
+		h1.site-title a {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			float: none;
+		}
+		
 			header nav.constrain
 		{	padding: 0; }
 
