@@ -47,12 +47,12 @@
 				<div class="inner">
 					<header class="clearfix">
 						<div class="version-info">
-							<p class="caption">Version</p>
 							<p class="version-number"><?php echo jq_release_version(); ?></p>
+							<p class="caption">Version</p>
 						</div> <!-- /.version-info -->
 						<div class="release-info">
-							<p class="caption">Released</p>
 							<p class="date"><?php echo jq_release_date(); ?></p>
+							<p class="caption">Released</p>
 						</div>
 					</header>
 					<div class="body">
