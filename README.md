@@ -53,7 +53,8 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
     RewriteRule ^index\.php$ - [L]
 
     RewriteRule ^files/(.+) wp-includes/ms-files.php?file=$1 [L]
-    RewriteRule ^resources/(.*) gw-resources/%{HTTP_HOST}/$1 [L]
+    RewriteRule ^resources/?$ index.php [L]
+    RewriteRule ^resources/(.+) gw-resources/%{HTTP_HOST}/$1 [L]
 
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
