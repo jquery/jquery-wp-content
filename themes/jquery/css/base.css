@@ -1,9 +1,22 @@
 /* @override 
 	http://stage.plugins.jquery.com/web-base-template/themes/jquery/css/base.css?v=1
-	http://stage.jquery.com/web-base-template/themes/jquery/css/base.css?v=1 */
+	http://stage.jquery.com/web-base-template/themes/jquery/css/base.css?v=1
+	http://dev.plugins.jquery.com/web-base-template/themes/jquery/css/base.css?v=1 */
 
 
 @import url("font-awesome.css");
+
+@font-face {
+    font-family: 'JournalRegular';
+    src: url('fonts/journal-webfont.eot');
+    src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/journal-webfont.woff') format('woff'),
+         url('fonts/journal-webfont.ttf') format('truetype'),
+         url('fonts/journal-webfont.svg#JournalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*******************************************************************************/
 /*	Reset */
@@ -1258,6 +1271,38 @@ a:hover {
 {	background-position: 100% -32px;
 	background-color: transparent;
 	/* text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0, rgba(255, 255, 255, 0.8) 0 0 6px;*/ }
+	
+	
+	
+/*******************************************************************************/
+/* Global Banner */
+/*******************************************************************************/	
+
+#banner {
+	background: url(../i/dark-grey-tile.png) #333333;
+	margin-left: -25px;
+	margin-right: -25px;
+	margin-top: -25px;
+}
+
+#banner h1 {
+	text-align: center;
+	
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#b5b5b5));
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  font-size: 60px;
+	  line-height: 63px;
+	  font-weight: bold;
+	  /* WebKit (Safari/Chrome) Only */
+	    -webkit-text-stroke: 1px #fff;
+	}
+	
+#banner h2 {
+	color: #71d1ff;
+	font: normal normal 56px/56px "JournalRegular", Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+}	
 
 	/*******************************************************************************/
 	/* Global Footer */
