@@ -68,15 +68,15 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
 
 Copyright 2012 jQuery Foundation and other contributors. All rights reserved.
 
-The web-base-template repository contains templates for rendering all jQuery Foundation web sites.
+The web-base-template repository contains themes for rendering all jQuery Foundation web sites.
 
 ### What is licensed
 
 The contents of these web sites are all available under terms of the MIT license ( http://jquery.org/license ).
 
-Special exception: Code samples are given away for you to freely use, for any purpose. For code samples in API
-references and Learn articles (unlike the source code of jQuery projects) you don't even have to say where you got
-the code from. Just use it.
+Special exception: Code samples are given away for you to freely use, for any purpose. For code samples in API sites
+and Learn articles (unlike the source code of jQuery projects) you don't even have to say where you got the code from.
+Just use it.
 
 ### What is not licensed
 
