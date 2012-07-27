@@ -49,11 +49,13 @@ foreach( $toplvlpages as $post ) {
 		  $tag_html = '';
 		  foreach ($tags as $tag){
 		    $tag_link = get_tag_link($tag->term_id);
-		    $tag_html .= '<li>';
+		    $tag_html .= '<li class="icon-caret-right">';
 		    $tag_html .= '<a href="' . $tag_link . '">';
 		      $tag_html .= $tag->name;
 		    $tag_html .= '</a>';
+		     $tag_html .= ' (';
 		    $tag_html .=  $tag->count;
+		     $tag_html .= ')';
 		    $tag_html .= '</li>';
 		  }
 		

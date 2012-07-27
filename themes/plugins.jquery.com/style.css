@@ -637,6 +637,19 @@ Template: jquery
 	width: 46%;
 }
 
+.home .sidebar ul {
+	margin-left: 25px;
+}
+
+.home .sidebar li {
+	color: #b3b3b3;
+}
+
+.home .sidebar li.icon-caret-right:before {
+	font-size: 10px;
+	color: #ccc;
+}
+
 /*----------[ IE hacks ]--------------------------------------------------------
 */
 .lte9 .jquery_plugin h1.entry-title

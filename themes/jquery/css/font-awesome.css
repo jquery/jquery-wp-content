@@ -1,3 +1,6 @@
+/* @override 
+	http://dev.plugins.jquery.com/web-base-template/themes/jquery/css/font-awesome.css */
+
 /*	Font Awesome
 		the iconic font designed for use with Twitter Bootstrap
 		-------------------------------------------------------
@@ -68,7 +71,7 @@ li[class^="icon-"], li[class*=" icon-"] {
 	list-style-type: none;
 }
 li[class^="icon-"]:before, li[class*=" icon-"]:before {
-	text-indent: -2em;
+	text-indent: -.8em;
 	text-align: center;
 }
 li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
