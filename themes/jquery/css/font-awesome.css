@@ -40,7 +40,6 @@
 	font-style: normal;
 	display: inline-block;
 	text-decoration: inherit;
-	margin-right: 5px;
 }
 a [class^="icon-"], a [class*=" icon-"] {
 	display: inline-block;
@@ -51,6 +50,16 @@ a [class^="icon-"], a [class*=" icon-"] {
 	vertical-align: top;
 	font-size: 1.3333333333333333em;
 }
+
+h2 [class^="icon-"],
+h2 [class*=" icon-"],
+h3 [class^="icon-"],
+h3 [class*=" icon-"],
+h4 [class^="icon-"],
+h4 [class*=" icon-"] {
+	margin-right: 7px;
+}
+
 .btn [class^="icon-"], .btn [class*=" icon-"] {
 	/* keeps button heights with and without icons the same */
 

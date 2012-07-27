@@ -643,6 +643,7 @@ Template: jquery
 
 .home .sidebar li {
 	color: #b3b3b3;
+	padding-bottom: 7px;
 }
 
 .home .sidebar li.icon-caret-right:before {

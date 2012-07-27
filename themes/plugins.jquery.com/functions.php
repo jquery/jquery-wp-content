@@ -105,8 +105,8 @@ function jq_updated_plugins( $total = 10 ) {
 				$parent = get_post( $parent_id );
 
 	?>
-		<li>
-			<a href="/<?php echo $parent->post_name . '/' . $post->post_name ?>/"><?php echo $post->post_title; ?></a>
+		<li class="icon-caret-right">
+			<a href="/<?php echo $parent->post_name . '/' . $post->post_name ?>/"><?php echo $post->post_title; ?></a><br />
 			(version <?php echo $post->post_name; ?>)
 		</li>
 	<?php

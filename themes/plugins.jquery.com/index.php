@@ -66,7 +66,7 @@ foreach( $toplvlpages as $post ) {
 		
 		
 		<div class="sidebar right">
-			<h3>Recent Updates</h3>
+			<h3><i class="icon-calendar"></i>Recent Updates</h3>
 			<?php jq_updated_plugins(); ?>
 		</div> 
 		
