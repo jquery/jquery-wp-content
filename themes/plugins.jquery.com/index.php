@@ -7,11 +7,12 @@
 		<div class="inner">
 
 <div id="banner">
+	<div class="glow">
 	<h1>Plugins Make jQuery More Awesomer</h1>
 	<h2>Level up your project, not your grammar</h2>
 	
 	<?php get_search_form(); ?>
-	
+	</div>
 </div>
 
 <?php
@@ -32,12 +33,15 @@ foreach( $toplvlpages as $post ) {
 ?>
 
 		</div> <!-- /.inner -->
+		
+		<div id="content">
 		 <h3>New Plugins</h3>
 		  <?php jq_new_plugins(); ?>
-		  <h3>Recent Updates</h3>
-		  <?php jq_updated_plugins(); ?>
-		
-		  <h3>Popular Tags</h3>
+		 </div>
+		   
+		  
+		<div class="sidebar left">
+		  <h3><i class="icon-tags"></i>Popular Tags</h3>
 		  <ul>
 		  <?php
 		  $tags_args = array('orderby' => 'count', 'order' => 'DESC', 'number' => 10);
@@ -56,7 +60,14 @@ foreach( $toplvlpages as $post ) {
 		  echo $tag_html;
 		  ?>
 		  </ul>
-
+		</div>
+		
+		
+		<div class="sidebar right">
+			<h3>Recent Updates</h3>
+			<?php jq_updated_plugins(); ?>
+		</div> 
+		
 	</div>
 	<!-- /body -->
 

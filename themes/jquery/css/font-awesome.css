@@ -37,6 +37,7 @@
 	font-style: normal;
 	display: inline-block;
 	text-decoration: inherit;
+	margin-right: 5px;
 }
 a [class^="icon-"], a [class*=" icon-"] {
 	display: inline-block;
