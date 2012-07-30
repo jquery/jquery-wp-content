@@ -78,6 +78,9 @@ Special exception: Code samples are given away for you to freely use, for any pu
 and Learn articles (unlike the source code of jQuery projects) you don't even have to say where you got the code from.
 Just use it.
 
+The PHP files in the web-base-template repository are a derivative work of WordPress, and available under the
+terms of the GPL license ( http://codex.wordpress.org/License )
+
 ### What is not licensed
 
 The theme, design, layout, look-and-feel of the web-base-template repository, including all html, css, images, and
