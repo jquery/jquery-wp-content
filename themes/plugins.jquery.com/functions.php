@@ -213,12 +213,16 @@ function jq_release_dependencies() {
 }
 
 function jq_release_keywords() {
-   $ret = '<ul>';
-   foreach( get_the_tags() as $tag ) {
-       $ret .= '<li><a class="tag icon-tag" href="' . get_tag_link( $tag->term_id ) . '">' .
-           $tag->name . '</a></li>';
-   }
-   $ret .= '</ul>';
-   return $ret;
-}
+	$tags = get_the_tags();
+	if ( !$tags || !count( $tags ) ) {
+		return '';
+	}
 
+	$ret = '<ul>';
+	foreach( $tags as $tag ) {
+		$ret .= '<li><a class="tag icon-tag" href="' . get_tag_link( $tag->term_id ) . '">' .
+			$tag->name . '</a></li>';
+	}
+	$ret .= '</ul>';
+	return $ret;
+}
