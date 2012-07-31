@@ -35,6 +35,7 @@ foreach( $toplvlpages as $post ) {
 		</div> <!-- /.inner -->
 
 		<div id="content" class="clearfix">
+<<<<<<< HEAD
 			<h3><i class="icon-star"></i>New Plugins</h3>
 			<?php
 			$new_plugins = new WP_Query( array(
@@ -54,6 +55,39 @@ foreach( $toplvlpages as $post ) {
 			<?php endwhile; wp_reset_postdata(); ?>
 		</div>
 
+=======
+		 <h3><i class="icon-star"></i>New Plugins</h3>
+		  <!--NEED TO HOOK THIS UP TO A NEW FUNCTION - STATIC ONLY AT THE MOMENT <?php jq_new_plugins(); ?>-->
+		  <article class="clearfix">
+		  	<h4><a href="#">jQuery Color</a></h4>
+		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
+		  	<div class="action">
+		  	<a class="button" href="#">View Plugin</a>
+		  	<p class="date">Updated 3/23/12</p>
+		  	</div>
+		  </article>
+		  
+		  <article class="clearfix">
+		  	<h4><a href="#">jQuery Color</a></h4>
+		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
+		  	<div class="action">
+		  	<a class="button" href="#">View Plugin</a>
+		  	<p class="date">Updated 3/23/12</p>
+		  	</div>
+		  </article>
+		  
+		  <article class="clearfix">
+		  	<h4><a href="#">jQuery Color</a></h4>
+		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
+		  	<div class="action">
+		  	<a class="button" href="#">View Plugin</a>
+		  	<p class="date">Updated 3/23/12</p>
+		  	</div>
+		  </article>
+		 </div>
+		   
+		  
+>>>>>>> Started on Search Page
 		<div class="sidebar left">
 		  <h3><i class="icon-tags"></i>Popular Tags</h3>
 		  <ul>
