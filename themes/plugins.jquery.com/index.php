@@ -45,7 +45,7 @@ foreach( $toplvlpages as $post ) {
 			?>
 				<article class="clearfix">
 					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-					<p><?php the_excerpt(); ?></p>
+					<?php the_excerpt(); ?>
 					<div class="action">
 						<a class="button" href="<?php the_permalink(); ?>">View Plugin</a>
 						<p class="date">Updated <?php the_date(); ?></p>
