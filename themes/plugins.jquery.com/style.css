@@ -733,9 +733,19 @@ Template: jquery
 
 	}
 	
-@media all and (max-width: 1100px){
+@media all and (max-width: 1000px){
 	.jquery_plugin .plugin-main {
 		width: 65%;
+	}
+	
+	.home .sidebar.left {
+		position: relative;
+		float: right;
+	}
+	
+	.home #content {
+		width: 60%;
+		margin-left: 5%;
 	}
 }	
 
@@ -743,12 +753,16 @@ Template: jquery
 	.jquery_plugin .plugin-main {
 		width: 60%;
 	}
+	
+	
 }
 
 @media all and (max-width: 768px){
 
 		.jquery_plugin .plugin-main,
-		.jquery_plugin .plugin-metadata {
+		.jquery_plugin .plugin-metadata,
+		.home .sidebar,
+		.home .sidebar.left {
 			width: 100%;
 			padding: 0;
 			clear: both;
@@ -768,18 +782,99 @@ Template: jquery
 			background-image: none;
 			background-image: none;
 			background-image: none;
+			position: relative;
 		}
+		
+		.home #content
+		 {
+			width: 90%;
+			margin: 0;
+			padding-left: 5%;
+			padding-right: 5%;
+			margin-bottom: 30px;
+		}
+		
+		.home .sidebar.left {
+			float: left;
+			width: 45%;
+			clear: none;
+			margin-left: 5%;
+		}
+		
+		.home .sidebar.right {
+			float: right;
+			width: 45%;
+			clear: none;
+			margin-right: 5%;
+		}
+		
 	}
 
 @media all and (max-width: 660px){
+		#banner h1 {
+			font-size: 60px;
+			line-height: 60px;
+		}
+		
+		#banner h2 {
+			font-size: 40px;
+			line-height: 35px;
 
+		}
+		
+		#banner .search {
+			margin-top: 20px;
+		}
+		
+		#banner .search label {
+			font-size: 16px;
+			line-height: 30px;
+		}
 	}		
-@media all and (max-width: 400px){
-
+@media all and (max-width: 480px){
+		#banner h1 {
+			font-size: 43px;
+			line-height: 43px;
+		}
+		
+		.home .sidebar.left,
+		.home .sidebar.right {
+			width: 90%;
+			margin-left: 5%;
+			margin-right: 5%;
+		}
+		
+		.home #content article p {
+			width: 100%;
+		}
+		
+		.home #content article {
+			text-align: center;
+		}
+		
+		.home #content article .action {
+			float: none;
+			clear: both;
+			width: 90%;
+		}
+		
+		.home #content article .action a.button {
+			width: 90%;
+		}
+		
+		
 			
 	}
 
 @media all and (max-width: 320px){
-
-
+	
+		#banner .search {
+			width: 90%;
+		}
+		
+		#banner .search label {
+			font-size: 14px;
+			line-height: 30px;
+			margin-left: 30px;
+		}
 	}
