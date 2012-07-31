@@ -158,6 +158,24 @@
 	hr.light
 {	border-bottom: 1px solid #e5e5e5; }
 
+	hr.dots
+{	height: 10px;
+	background-color: #eee;
+	background:
+		radial-gradient(circle, #eee 1px, transparent 0),
+		radial-gradient(circle, #ddd 1px, #eee 1px) 1px 1px;
+	background:
+		-webkit-radial-gradient(circle, #eee 1px, transparent 0),
+		-webkit-radial-gradient(circle, #ddd 1px, #eee 1px) 1px 1px;
+	background:
+		-moz-radial-gradient(circle, #eee 1px, transparent 0),
+		-moz-radial-gradient(circle, #ddd 1px, #eee 1px) 1px 1px;
+	background:
+		-o-radial-gradient(circle, #eee 1px, transparent 0),
+		-o-radial-gradient(circle, #ddd 1px, #eee 1px) 1px 1px;
+	background-size:3px 3px;
+	border: none; }
+
 	.clearBoth
 {	clear: both;
 	width: 100%;
@@ -745,6 +763,49 @@ a:hover {
 	#site-footer a {
 	color: #fff;
 	text-decoration: none;
+	}
+
+	#searchform label {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	}
+
+	.home .post {
+		padding: 10px 10px 10px 20px;
+	    margin-bottom: 20px;
+	    border: 1px solid rgba(0, 0, 0, 0.2);
+	    border-radius: 5px;
+	    -moz-border-radius: 5px;
+	    background-color: #eeeeee;
+	    position: relative;
+	}
+
+	.home .post header .entry-meta {
+	    float: right;
+	    margin: 0;
+	}
+
+	.home .post header .entry-meta .category {
+	    padding: 3px;
+	    margin-left: 5px;
+	    background-color: #dddddd;
+	    border: 1px solid #dddddd;
+	    border-radius: 5px 5px 5px 5px;
+	    -moz-border-radius: 5px 5px 5px 5px;
+	}
+
+	.home .post header .entry-meta .category:hover {
+	    background-color: #cccccc;
+	}
+
+	.home .post header .entry-meta .category a {
+	    color: #888888;
+	    text-decoration: none;
+	}
+
+	.home .post .category-divider {
+		display: none;
 	}
 
 	/*******************************************************************************/
@@ -2637,6 +2698,10 @@ a:hover {
 		{	width: 100%;
 			clear: left; }
 
+			.home .post .entry-title {
+				font-size: 28px;
+			}
+
 	}
 
 	@media all and (max-width: 700px){
@@ -2645,6 +2710,9 @@ a:hover {
 		{	width: 100%;
 			clear: left; }
 
+			.home .post .entry-title {
+				font-size: 20px;
+			}
 	}
 
 	@media all and (max-width: 660px){
