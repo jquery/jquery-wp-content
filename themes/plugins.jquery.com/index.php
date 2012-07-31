@@ -4,7 +4,7 @@
 	<div id="body" class="clearfix">
 
 		<!-- inner -->
-		<div class="inner">
+		<div class="inner" class="clearfix">
 
 <div id="banner">
 	<div class="glow">
@@ -34,9 +34,35 @@ foreach( $toplvlpages as $post ) {
 
 		</div> <!-- /.inner -->
 		
-		<div id="content">
-		 <h3>New Plugins</h3>
-		  <?php jq_new_plugins(); ?>
+		<div id="content" class="clearfix">
+		 <h3><i class="icon-star"></i>New Plugins</h3>
+		  <!--<?php jq_new_plugins(); ?>-->
+		  <article class="clearfix">
+		  	<h4><a href="#">jQuery Color</a></h4>
+		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
+		  	<div class="action">
+		  	<a class="button" href="#">View Plugin</a>
+		  	<p class="date">Updated 3/23/12</p>
+		  	</div>
+		  </article>
+		  
+		  <article class="clearfix">
+		  	<h4><a href="#">jQuery Color</a></h4>
+		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
+		  	<div class="action">
+		  	<a class="button" href="#">View Plugin</a>
+		  	<p class="date">Updated 3/23/12</p>
+		  	</div>
+		  </article>
+		  
+		  <article class="clearfix">
+		  	<h4><a href="#">jQuery Color</a></h4>
+		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
+		  	<div class="action">
+		  	<a class="button" href="#">View Plugin</a>
+		  	<p class="date">Updated 3/23/12</p>
+		  	</div>
+		  </article>
 		 </div>
 		   
 		  

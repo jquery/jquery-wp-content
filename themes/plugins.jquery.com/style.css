@@ -630,11 +630,18 @@ Template: jquery
 	width: 20%
 }
 
-.home #content {
+.home .sidebar.left {
+	left: 0px;
 	position: absolute;
+}
+
+.home #content {
+	position: relative;
 	margin-left: 27%;
-	margin-right: 27%;
 	width: 46%;
+	float: left;
+	margin-bottom: 30px;
+	
 }
 
 .home .sidebar ul {
@@ -649,6 +656,58 @@ Template: jquery
 .home .sidebar li.icon-caret-right:before {
 	font-size: 10px;
 	color: #ccc;
+}
+
+.home #content h3 {
+	font-size: 32px;
+	text-align: center;
+	color: #e18d3b;
+	margin-bottom: 30px;
+}
+
+.home #content article {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+.home #content article h4 {
+	font-size: 20px;
+	line-height: 20px;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.home #content article h4 a {
+	color: #333;
+	text-decoration: none;
+}
+
+.home #content article p {
+	float: left;
+	width: 70%;
+}
+
+.home #content article .action {
+	float: right;
+	width: 25%;
+	margin-left: 5%;
+}
+
+.home #content article .action p.date {
+	color: #999;
+	font-size: 11px;
+	line-height: 11px;
+	text-align: center;
+	width: 100%;
+}
+
+.home #content a.button {
+	margin-bottom: 5px;
+	float: left;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
 }
 
 /*----------[ IE hacks ]--------------------------------------------------------

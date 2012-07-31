@@ -669,6 +669,39 @@
 	text-decoration: none;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.3);
 	padding: 6px 8px; }
+	
+a.button {
+	background-color: #d18f4f;
+	
+		-webkit-border-radius: 5px;
+		   -moz-border-radius: 5px;
+		        border-radius: 5px;
+		border: 1px solid #999;
+		   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28), 
+		   					inset 0px 1px 0px #f5d9bd, 
+		   					inset 0px -1px 0px #f5d9bd, 
+		  					inset 1px 0px 0px #f5d9bd, 
+		   					inset -1px 1px 0px #f5d9bd;
+		-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28), 
+							inset 0px 1px 0px #f5d9bd, 
+							inset 0px -1px 0px #f5d9bd, 
+							inset 1px 0px 0px #f5d9bd, 
+							inset -1px 1px 0px #f5d9bd;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.28), 
+							inset 0px 1px 0px #f5d9bd, 
+							inset 0px -1px 0px #f5d9bd, 
+							inset 1px 0px 0px #f5d9bd, 
+							inset -1px 1px 0px #f5d9bd;
+							text-decoration: none;
+		color: #fff !important;
+		text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
+		padding: 5px 12px;
+		font: bold 16px/16px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	}
+	
+	a.button:hover {
+		background-color: #cc8540;
+	}
 
 	/*******************************************************************************/
 	/* Grid
@@ -1988,6 +2021,7 @@ a:hover {
 
 .sidebar.right {
 		float: right;
+		position: relative;
 		border-left: 1px;
 		-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 		-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
