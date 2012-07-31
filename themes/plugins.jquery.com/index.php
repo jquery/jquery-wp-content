@@ -33,39 +33,27 @@ foreach( $toplvlpages as $post ) {
 ?>
 
 		</div> <!-- /.inner -->
-		
+
 		<div id="content" class="clearfix">
-		 <h3><i class="icon-star"></i>New Plugins</h3>
-		  <!--<?php jq_new_plugins(); ?>-->
-		  <article class="clearfix">
-		  	<h4><a href="#">jQuery Color</a></h4>
-		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
-		  	<div class="action">
-		  	<a class="button" href="#">View Plugin</a>
-		  	<p class="date">Updated 3/23/12</p>
-		  	</div>
-		  </article>
-		  
-		  <article class="clearfix">
-		  	<h4><a href="#">jQuery Color</a></h4>
-		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
-		  	<div class="action">
-		  	<a class="button" href="#">View Plugin</a>
-		  	<p class="date">Updated 3/23/12</p>
-		  	</div>
-		  </article>
-		  
-		  <article class="clearfix">
-		  	<h4><a href="#">jQuery Color</a></h4>
-		  	<p>This is a description of the plugin. It’s great and awesome and bacon-flavored. Tasty? Yes. You’d better believe it suckah. I need another sentence to make this look nice...</p>
-		  	<div class="action">
-		  	<a class="button" href="#">View Plugin</a>
-		  	<p class="date">Updated 3/23/12</p>
-		  	</div>
-		  </article>
-		 </div>
-		   
-		  
+			<h3><i class="icon-star"></i>New Plugins</h3>
+			<?php
+			$new_plugins = get_posts( array(
+				'post_type' => 'jquery_plugin',
+				'post_parent' => 0
+			));
+			foreach( $new_plugins as $post ) : setup_postdata( $post );
+			?>
+				<article class="clearfix">
+					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					<p><?php the_excerpt(); ?></p>
+					<div class="action">
+						<a class="button" href="<?php the_permalink(); ?>">View Plugin</a>
+						<p class="date">Updated <?php the_date(); ?></p>
+					</div>
+				</article>
+			<?php endforeach; ?>
+		</div>
+
 		<div class="sidebar left">
 		  <h3><i class="icon-tags"></i>Popular Tags</h3>
 		  <ul>
