@@ -12,7 +12,6 @@ get_header(); ?>
 		<section id="body" class="clearfix">
 			<div class="inner" role="main">
 
-		<div id="content">
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
@@ -47,13 +46,8 @@ get_header(); ?>
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
-			
-			</div>
 
-			
-			<?php get_sidebar(); ?>
-			
-		</div><!-- .inner -->
+			</div><!-- .inner -->
 		</section><!-- #body -->
 
 <?php get_footer(); ?>
