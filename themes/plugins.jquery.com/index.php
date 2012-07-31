@@ -37,11 +37,11 @@ foreach( $toplvlpages as $post ) {
 		<div id="content" class="clearfix">
 			<h3><i class="icon-star"></i>New Plugins</h3>
 			<?php
-			$new_plugins = get_posts( array(
+			$new_plugins = new WP_Query( array(
 				'post_type' => 'jquery_plugin',
 				'post_parent' => 0
 			));
-			foreach( $new_plugins as $post ) : setup_postdata( $post );
+			while ( $new_plugins->have_posts() ) : $new_plugins->the_post();
 			?>
 				<article class="clearfix">
 					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
@@ -51,7 +51,7 @@ foreach( $toplvlpages as $post ) {
 						<p class="date">Updated <?php the_date(); ?></p>
 					</div>
 				</article>
-			<?php endforeach; ?>
+			<?php endwhile; wp_reset_postdata(); ?>
 		</div>
 
 		<div class="sidebar left">
