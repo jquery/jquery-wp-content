@@ -88,22 +88,16 @@
 			<?php if ( $maintainers = jq_release_maintainers() ) { ?>
 			<div class="block maintainer-info">
 				<h2><span class="icon-wrench"></span>Maintainers</h2>
-				<ul>
-					<?php echo $maintainers; ?>
-				</ul>
+				<?php echo $maintainers; ?>
 			</div> <!-- /.maintainer-info -->
 			<?php } ?>
 			<div class="block licenses">
 				<h2><span class="icon-book"></span>Licenses</h2>
-				<ul>
-					<?php echo jq_release_licenses(); ?>
-				</ul>
+				<?php echo jq_release_licenses(); ?>
 			</div> <!-- /.licenses -->
 			<div class="block dependencies">
 				<h2><span class="icon-sitemap"></span>Dependencies</h2>
-				<ul>
-					<?php echo jq_release_dependencies(); ?>
-				</ul>
+				<?php echo jq_release_dependencies(); ?>
 			</div> <!-- /.dependencies -->
 		</div> <!-- /.plugin-metadata -->
 	</div><!-- .entry-content -->

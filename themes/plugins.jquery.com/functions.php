@@ -126,7 +126,7 @@ function jq_updated_plugins( $total = 10 ) {
 //
 
 function jq_release_manifest() {
-	return json_decode( get_post_meta( get_the_ID(), "manifest", true ) );
+	return json_decode( get_post_meta( get_the_ID(), 'manifest', true ) );
 }
 
 function person( $person, $avatar ) {
@@ -142,7 +142,7 @@ function person( $person, $avatar ) {
 }
 
 function jq_release_download_url() {
-	return get_post_meta( get_the_ID(), "download_url", true );
+	return get_post_meta( get_the_ID(), 'download_url', true );
 }
 
 function jq_release_homepage() {
@@ -152,12 +152,12 @@ function jq_release_homepage() {
 
 function jq_release_demo() {
 	$pkg = jq_release_manifest();
-	return empty( $pkg->demo ) ? "" : $pkg->demo;
+	return empty( $pkg->demo ) ? '' : $pkg->demo;
 }
 
 function jq_release_docs() {
 	$pkg = jq_release_manifest();
-	return empty( $pkg->docs ) ? "" : $pkg->docs;
+	return empty( $pkg->docs ) ? '' : $pkg->docs;
 }
 
 function jq_release_date() {
@@ -171,27 +171,29 @@ function jq_release_version() {
 
 function jq_release_licenses() {
 	$pkg = jq_release_manifest();
-	$ret = "";
+	$ret = '<ul>';
 	foreach( $pkg->licenses as $license ) {
 		$url = htmlspecialchars( $license->url );
 		$type = empty( $license->type ) ? $url : htmlspecialchars( $license->type );
 		$ret .= "<li class=\"icon-caret-right\"><a href='$url'>$type</a></li>";
 	}
+	$ret .= '</ul>';
 	return $ret;
 }
 
 function jq_release_maintainers( $options = array('avatar' => false) ) {
 	$pkg = jq_release_manifest();
-	$ret = "";
 
 	if ( empty( $pkg->maintainers ) ) {
-		return $ret;
+		return '';
 	}
 
+	$ret = '<ul>';
 	foreach( $pkg->maintainers as $maintainer ) {
-		$ret .= person( $maintainer, $options['avatar'] ) . ", ";
+		$ret .= '<li class="icon-caret-right">' . person( $maintainer, $options['avatar'] ) . '</li>';
 	}
-	return substr( $ret, 0, -2 );
+	$ret .= '</ul>';
+	return $ret;
 }
 
 function jq_release_author( $options = array('avatar' => false) ) {
@@ -201,7 +203,7 @@ function jq_release_author( $options = array('avatar' => false) ) {
 
 function jq_release_dependencies() {
 	$pkg = jq_release_manifest();
-	$ret = "";
+	$ret = '<ul>';
 	foreach( $pkg->dependencies as $plugin => $version ) {
 		if ( get_page_by_path( $plugin ) ) {
 			$ret .= "<li class=\"icon-caret-right\"><a href='/$plugin'>$plugin</a> $version</li>";
@@ -209,6 +211,7 @@ function jq_release_dependencies() {
 			$ret .= "<li class=\"icon-caret-right\">$plugin $version</li>";
 		}
 	}
+	$ret .= '</ul>';
 	return $ret;
 }
 
