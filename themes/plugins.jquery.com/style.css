@@ -80,6 +80,74 @@ Template: jquery
 */
 
 
+.notify {
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#eeeaa2), to(#f2efbf));
+	background-image: -moz-linear-gradient(90deg, #eeeaa2 0%, #f2efbf 100%);
+	border-bottom: 1px solid #e4db3e;
+	color: #baa452;
+	text-shadow: 0 1px 0 #ffffff;
+	font-size: 18px;
+	padding: 20px 3.5% 15px;
+	position: relative;
+}
+
+.notify a {
+	background-color: #c6b372;
+	color: #edf49f;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
+	padding: 2px 4px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+			text-decoration: none;
+			margin-left: 5px;
+			margin-right: 2px;
+}
+
+.notify p {
+	margin: 0;
+	margin-right: 30px;
+	line-height: .8em;
+}
+
+.notify p i {
+	font-size: 1.9em;
+	margin-right: 5px;
+	position: absolute;
+}
+
+.notify a:hover {
+	background-color: #97894f;
+	color: #fff;
+}
+
+.notify a.close {
+	background-color: transparent;
+	color: #d7ca9b;
+	text-shadow: 0 1px 0 #ffffff;
+	position: absolute;
+	right: 1.5%;
+	top: .6em;
+	font-size: 1.5em;
+	cursor: pointer;
+	-webkit-border-radius: 20px;
+	   -moz-border-radius: 20px;
+	        border-radius: 20px;
+	        
+}
+
+.notify span {
+	margin-left: 40px;
+	display: block;
+	line-height: 24px;
+}
+
+.notify a.close:hover {
+	background-color: #d7ca9b;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
+	color: #edf49f;
+}
+
 .jquery_plugin h1.entry-title
 {
 	margin: 0 0 .25em; /*0.25 * 32px = 8px*/
@@ -829,6 +897,19 @@ Template: jquery
 		#banner .search label {
 			font-size: 16px;
 			line-height: 30px;
+		}
+		
+		.notify p {
+			font-size: .8em;
+			line-height: .7em;
+		}
+		
+		.notify p i {
+			font-size: 1.8em;
+		}
+		
+		.notify a.close {
+			font-size: 1em;
 		}
 	}		
 @media all and (max-width: 480px){

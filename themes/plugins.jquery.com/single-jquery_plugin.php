@@ -16,7 +16,10 @@ get_header(); ?>
 
 		<div id="body" class="clearfix">
 			<div class="inner" role="main">
-
+				<div class="notify">
+					<p><i class="icon-warning-sign"></i><span>This version is old school. To get the latest version<a href="#">go here</a></span></p>
+					<a class="close"><i class="icon-remove-circle"></i></a>
+				</div>
 				<?php the_post(); ?>
 
 				<?php get_template_part( 'content', 'jquery_plugin' ); ?>
