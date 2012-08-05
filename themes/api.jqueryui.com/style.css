@@ -6,3 +6,7 @@ Template: jquery
 .method-list, .method-list li { list-style: none; }
 .method-list li { margin: 0; padding: 0; }
 .method-list .title-link { text-decoration: none; }
+
+h1.page-title {
+	color: #2666a1;
+}
