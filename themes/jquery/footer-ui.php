@@ -3,11 +3,11 @@
 
 <!-- footer -->
 <footer id="site-footer" class="clearfix">
-	  
+
   <div class="constrain">
-  	
+
   	<?php // get_sidebar( 'footer' ); ?>
-  	
+
     <div class="col3-2 col">
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
@@ -34,7 +34,7 @@
         <li class="footer-icon icon-bugs"><a href="http://bugs.jqueryui.com">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>
     </div>
-    
+
     <div class="col3-1 col">
       <h3><span>Books</span></h3>
       <ul class="books">
@@ -68,15 +68,15 @@
 </footer>
 <!-- /footer -->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.7.1.min.js"%3E%3C/script%3E'))</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
 
-<script id="tooltip-template" type="text/html"> 
+<script id="tooltip-template" type="text/html">
   <div class="tooltip">
     <a href="${url}" title="${title}" class="jq-tooltip-branding"><img src="${preview}" /></a>
     <ul>{{each(i,link) links}}<li><a href="${link[1]}">${link[0]}</a></li>{{/each}}</ul>
   </div>
-</script> 
+</script>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.ba-outside-events.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.infieldlabel.min.js"></script>

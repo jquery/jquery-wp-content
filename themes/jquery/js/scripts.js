@@ -170,4 +170,33 @@ var $search = $('#search');
 			this.select();
 		}
 	});
+
+	$(".syntaxhighlighter").each(function(index) {
+		var input = $(this).find("td.code"),
+			output = $('div.code-demo').eq(index);
+
+		var source = input.text()
+			.replace(/\s+/g, " ")
+			.replace("</head>", "<style>html,body{border:0; margin:0; padding:0;} body { font-size: 62.5%; font-family: 'Trebuchet MS', 'Helvetica', 'Arial',  'Verdana', 'sans-serif';}</style></head>");
+
+		var iframe = document.createElement("iframe");
+		iframe.src = "/index-blank.html";
+		iframe.width = "100%";
+		iframe.height = output.attr("rel") || "250";
+		iframe.style.border = "1px solid #eee";
+		output.html(iframe);
+
+		var doc = iframe.contentDocument ||
+			(iframe.contentWindow && iframe.contentWindow.document) ||
+			iframe.document ||
+			null;
+
+		if (doc === null) {
+			return true;
+		}
+
+		doc.open();
+		doc.write( source );
+		doc.close();
+	});
 });
