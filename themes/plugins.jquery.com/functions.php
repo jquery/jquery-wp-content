@@ -229,3 +229,7 @@ function jq_release_keywords() {
 	$ret .= '</ul>';
 	return $ret;
 }
+
+function jq_release_is_stable() {
+	return preg_match( '/^\d+\.\d+\.\d+$/', jq_release_version() );
+}

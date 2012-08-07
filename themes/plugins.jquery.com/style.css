@@ -121,31 +121,10 @@ Template: jquery
 	color: #fff;
 }
 
-.notify a.close {
-	background-color: transparent;
-	color: #d7ca9b;
-	text-shadow: 0 1px 0 #ffffff;
-	position: absolute;
-	right: 1.5%;
-	top: .6em;
-	font-size: 1.5em;
-	cursor: pointer;
-	-webkit-border-radius: 20px;
-	   -moz-border-radius: 20px;
-	        border-radius: 20px;
-	        
-}
-
 .notify span {
 	margin-left: 40px;
 	display: block;
 	line-height: 24px;
-}
-
-.notify a.close:hover {
-	background-color: #d7ca9b;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
-	color: #edf49f;
 }
 
 .jquery_plugin h1.entry-title
