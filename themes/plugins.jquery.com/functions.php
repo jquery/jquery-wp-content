@@ -69,7 +69,7 @@ function jq_new_plugins($total = 10) {
 		while ( $new_plugins->have_posts() ) :
 			$new_plugins->the_post();
 	?>
-		<li>
+		<li class="icon-caret-right">
 			<a href="/<?php echo $post->post_name; ?>/"><?php echo $post->post_title; ?></a>
 		</li>
 	<?php

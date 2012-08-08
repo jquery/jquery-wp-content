@@ -2049,6 +2049,29 @@ a:hover {
 	/*******************************************************************************/
 
 .sidebar {
+		float: right;
+		position: relative;
+		border-left: 1px;
+		-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+		-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
+		-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+		-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+		border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+		padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
+		-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+		-moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+		box-shadow: inset 15px 0 5px -16px #e7e7e7;
+		background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
+		background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
+		background-image: -moz-radial-gradient(left, #f2f2f2, #ffffff 80%);
+		background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
+		background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
+		background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
+		width: 320px;
+}
+
+
+.sidebar.left {
 		float: left;
 		border-right: 1px;
 		-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
@@ -2071,27 +2094,6 @@ a:hover {
 		margin-bottom: 30px;
 }
 
-.sidebar.right {
-		float: right;
-		position: relative;
-		border-left: 1px;
-		-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-		-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
-		-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-		-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-		border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-		padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
-		-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-		-moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-		box-shadow: inset 15px 0 5px -16px #e7e7e7;
-		background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
-		background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
-		background-image: -moz-radial-gradient(left, #f2f2f2, #ffffff 80%);
-		background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
-		background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
-		background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
-		width: 320px;
-}
 
 
 

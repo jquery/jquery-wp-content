@@ -10,7 +10,9 @@
 get_header(); ?>
 
 		<section id="body" class="clearfix">
-			<div class="inner" role="main">
+			<div class="inner clearfix" role="main">
+
+<div id="content">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -26,7 +28,7 @@ get_header(); ?>
 						 * If you want to overload this in a child theme then include a file
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
-						get_template_part( 'content', get_post_format() );
+						get_template_part( 'content-listing', get_post_format() );
 					?>
 
 				<?php endwhile; ?>
@@ -46,8 +48,17 @@ get_header(); ?>
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
-
+			
+			<!--NEED TO HOOK UP PAGINATION FOR REAL-->
+			<div class="pagination"><span class="current">1</span><a class="inactive" href="#">2</a><a class="inactive" href="#">3</a><a href="#">›</a><a href="#2">»</a></div>
+			
+	</div><!--End Content-->		
+<?php get_sidebar(); ?>
 			</div><!-- .inner -->
+			
+			
 		</section><!-- #body -->
+		
+		
 
 <?php get_footer(); ?>

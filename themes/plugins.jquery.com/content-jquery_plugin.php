@@ -16,11 +16,17 @@
 			<div class="block description">
 				<?php the_content(); ?>
 			</div> <!-- /.description -->
+			
+			<hr />
+			
 			<?php if ( $keywords = jq_release_keywords() ) { ?>
 			<div class="block tags">
 				<h2>Tags</h2>
 				<?php echo $keywords; ?>
 			</div> <!-- /.tags -->
+			
+			<hr />
+			
 			<?php } ?>
 			<div class="block versions">
 				<h2>Versions</h2>
@@ -66,8 +72,9 @@
 					</div> <!-- /.body -->
 				</div> <!-- /.inner -->
 			</div> <!-- /.toolbox -->
+			
 			<div class="block github-activity group">
-				<h2><span class="icon-github"></span>GitHub Activity</h2>
+				<h3><span class="icon-github"></span>GitHub Activity</h3>
 				<div class="box">
 					<div class="info-block watchers">
 						<p class="number"><?php echo jq_plugin_watchers(); ?></p>
@@ -80,23 +87,23 @@
 				</div> <!-- /.box -->
 			</div> <!-- /.github-activity -->
 			<div class="block author-info">
-				<h2><span class="icon-user"></span>Author</h2>
+				<h3><span class="icon-user"></span>Author</h3>
 				<ul>
 					<li class="icon-caret-right"><?php echo jq_release_author(); ?></li>
 				</ul>
 			</div> <!-- /.author-info -->
 			<?php if ( $maintainers = jq_release_maintainers() ) { ?>
 			<div class="block maintainer-info">
-				<h2><span class="icon-wrench"></span>Maintainers</h2>
+				<h3><span class="icon-wrench"></span>Maintainers</h3>
 				<?php echo $maintainers; ?>
 			</div> <!-- /.maintainer-info -->
 			<?php } ?>
 			<div class="block licenses">
-				<h2><span class="icon-book"></span>Licenses</h2>
+				<h3><span class="icon-book"></span>Licenses</h3>
 				<?php echo jq_release_licenses(); ?>
 			</div> <!-- /.licenses -->
 			<div class="block dependencies">
-				<h2><span class="icon-sitemap"></span>Dependencies</h2>
+				<h3><span class="icon-sitemap"></span>Dependencies</h3>
 				<?php echo jq_release_dependencies(); ?>
 			</div> <!-- /.dependencies -->
 		</div> <!-- /.plugin-metadata -->

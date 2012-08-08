@@ -10,9 +10,15 @@ Template: jquery
 
 /*-----[ containers ]-----------------------------------------------------------
 */
-.single-jquery_plugin #container #body .inner
+.single-jquery_plugin #container #body .inner,
+.search #container #body .inner
 {
 	padding: 0;
+}
+
+.search #container #body .inner {
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 .jquery_plugin
@@ -26,7 +32,9 @@ Template: jquery
 }
 
 .jquery_plugin .plugin-main,
-.jquery_plugin .plugin-metadata
+.jquery_plugin .plugin-metadata,
+#content,
+.sidebar
 {
 	float: left;
 	-webkit-box-sizing: border-box;
@@ -34,27 +42,26 @@ Template: jquery
 	box-sizing: border-box;
 }
 
-.jquery_plugin .plugin-main
+.jquery_plugin .plugin-main,
+#content
 {
 	padding: 0.5em 30px 0.5em 30px; /*0.5 * 16px = 8px*/
 	width: 68%;
 }
 
-.jquery_plugin .plugin-main .block:after
+#content hr, 
+.plugin-main hr
 {
 	display: block;
 	margin: 2em 0;
 	height: 1em;
 	background: url("images/gauze.png");
 	content: ' ';
+	border: none;
 }
 
-.jquery_plugin .plugin-main .block:last-child:after
-{
-	display: none;
-}
-
-.jquery_plugin .plugin-metadata
+.jquery_plugin .plugin-metadata,
+.sidebar
 {
 	float: right;
 	border-left: 1px;
@@ -74,6 +81,11 @@ Template: jquery
 	background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
 	background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
 	width: 320px;
+	
+}
+
+.search .sidebar {
+	padding-top: 50px;
 }
 
 /*-----[ content ]--------------------------------------------------------------
@@ -127,10 +139,15 @@ Template: jquery
 	line-height: 24px;
 }
 
-.jquery_plugin h1.entry-title
+.jquery_plugin h1.entry-title,
+h1.page-title
 {
 	margin: 0 0 .25em; /*0.25 * 32px = 8px*/
 	color: #d18f4f;
+}
+
+h1.page-title {
+	margin-bottom: 40px;
 }
 
 
@@ -161,11 +178,16 @@ Template: jquery
 	border-radius: 8px;
 }
 
-.jquery_plugin .attribution
+.jquery_plugin .attribution,
+p.info
 {
 	color: #808080;
 	font: 13px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-top: -5px;
+}
+
+p.info {
+	margin-top: 0;
 }
 
 /*----------[ banner ]------------------------------------------------------------
@@ -383,7 +405,8 @@ Template: jquery
 }
 
 .jquery_plugin .related-plugins li:before,
-.jquery_plugin .plugin-metadata li:before
+.jquery_plugin .plugin-metadata li:before,
+.sidebar li:before
 {
 	text-indent: -1.6em;
 	color: #e0e0e0;
@@ -411,13 +434,17 @@ Template: jquery
 	text-shadow: 0 1px 0 white;
 }
 
-.jquery_plugin .plugin-metadata h2 {
-	margin-bottom: 3px;
+.jquery_plugin .plugin-metadata h3,
+.sidebar h3 {
+	margin-bottom: 5px;
 	font-size: 1.4em;
+	color: #858585;
 }
 
 .jquery_plugin .plugin-metadata h2 [class^="icon-"],
-.jquery_plugin .plugin-metadata h2 [class*=" icon-"]
+.jquery_plugin .plugin-metadata h2 [class*=" icon-"],
+.sidebar h2 [class^="icon-"],
+.sidebar h2 [class*=" icon-"]
 {
 	display: inline-block;
 	margin-left: -30px;
@@ -489,19 +516,27 @@ Template: jquery
 	letter-spacing: 1px;
 }
 
-.jquery_plugin .plugin-metadata ul
+.jquery_plugin .plugin-metadata ul,
+.sidebar ul
 {
-	margin-left: 30px;
+	margin-left: 25px;
 	list-style-type: none;
 }
 
-.jquery_plugin .plugin-metadata li
+.jquery_plugin .plugin-metadata li,
+.sidebar li
 {
 	padding-left: 16px;
 	text-shadow: 0 1px 0 white;
 }
 
-.jquery_plugin .plugin-metadata li.icon-caret-right:before {
+.sidebar li {
+	color: #b3b3b3;
+	padding-bottom: 9px;
+}
+
+.jquery_plugin .plugin-metadata li.icon-caret-right:before,
+.sidebar li.icon-caret-right:before {
 	font-size: .9em;
 }
 
@@ -674,7 +709,7 @@ Template: jquery
 /*----------[ Home ]--------------------------------------------------------*/
 
 .home .sidebar {
-	width: 20%
+	width: 25%
 }
 
 .home .sidebar.left {
@@ -712,29 +747,38 @@ Template: jquery
 	margin-bottom: 30px;
 }
 
-.home #content article {
+.home #content article,
+.search #content article {
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 20px;
 }
 
-.home #content article h4 {
+.search #content article {
+	padding-bottom: 10px;
+}
+
+.home #content article h4,
+.search #content article h2 {
 	font-size: 20px;
 	line-height: 20px;
 	color: #333;
 	margin-bottom: 5px;
 }
 
-.home #content article h4 a {
+.home #content article h4 a,
+.search #content article h2 a {
 	color: #333;
 	text-decoration: none;
 }
 
-.home #content article p {
+.home #content article p,
+.search #content article p {
 	float: left;
 	width: 70%;
 }
 
-.home #content article .action {
+.home #content article .action,
+.search #content article .action {
 	float: right;
 	width: 25%;
 	margin-left: 5%;
@@ -748,13 +792,52 @@ Template: jquery
 	width: 100%;
 }
 
-.home #content a.button {
+.home #content a.button,
+.search #content article a.button {
 	margin-bottom: 5px;
 	float: left;
 	width: 90%;
 	padding-left: 5%;
 	padding-right: 5%;
 	text-align: center;
+}
+
+
+
+
+/*----------[ Pagination ]--------------------------------------------------------
+*/
+
+.pagination {
+	text-align: right;
+	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.pagination span,
+.pagination a {
+	display: inline-block;
+	min-width: 5px;
+	padding: 2px 9px;
+	margin-left: 5px;
+	-webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	        border-radius: 3px;
+	text-align: center;        
+}
+
+.pagination a {
+	border: 1px solid #ccc;
+	color: #333;
+	text-decoration: none;
+}
+
+.pagination a:hover {
+	background-color: #c7c7c7;
+}
+
+.pagination span.current {
+	background-color: #333;
+	color: #fff;
 }
 
 /*----------[ IE hacks ]--------------------------------------------------------
@@ -774,14 +857,16 @@ Template: jquery
 
 @media all and (max-width: 1100px){
 	
-	.jquery_plugin .plugin-metadata {
+	.jquery_plugin .plugin-metadata,
+	.search .sidebar {
 		width: 280px;
 	}
 
 	}
 	
 @media all and (max-width: 1000px){
-	.jquery_plugin .plugin-main {
+	.jquery_plugin .plugin-main,
+	.search #content {
 		width: 65%;
 	}
 	
@@ -791,13 +876,14 @@ Template: jquery
 	}
 	
 	.home #content {
-		width: 60%;
-		margin-left: 5%;
+		width: 65%;
+		margin-left: 3%;
 	}
 }	
 
 @media all and (max-width: 900px){
-	.jquery_plugin .plugin-main {
+	.jquery_plugin .plugin-main,
+	.search #content {
 		width: 60%;
 	}
 	
@@ -809,7 +895,9 @@ Template: jquery
 		.jquery_plugin .plugin-main,
 		.jquery_plugin .plugin-metadata,
 		.home .sidebar,
-		.home .sidebar.left {
+		.home .sidebar.left,
+		.search .sidebar,
+		.search #content {
 			width: 100%;
 			padding: 0;
 			clear: both;
@@ -830,11 +918,12 @@ Template: jquery
 			background-image: none;
 			background-image: none;
 			position: relative;
+			margin-bottom: 20px;
 		}
 		
 		.home #content
 		 {
-			width: 90%;
+			width: 100%;
 			margin: 0;
 			padding-left: 5%;
 			padding-right: 5%;
@@ -853,6 +942,11 @@ Template: jquery
 			width: 45%;
 			clear: none;
 			margin-right: 5%;
+		}
+		
+		.search #container #body .inner {
+			padding-left: 1.2em;
+			padding-right: 1.2em;
 		}
 		
 	}
@@ -904,15 +998,18 @@ Template: jquery
 			margin-right: 5%;
 		}
 		
-		.home #content article p {
+		.home #content article p,
+		.search #content article p {
 			width: 100%;
 		}
 		
-		.home #content article {
+		.home #content article,
+		.search #content article {
 			text-align: center;
 		}
 		
-		.home #content article .action {
+		.home #content article .action,
+		.search #content article .action {
 			float: none;
 			clear: both;
 			width: 90%;
@@ -922,7 +1019,9 @@ Template: jquery
 			width: 90%;
 		}
 		
-		
+		.search #content h1.page-title {
+			text-align: center;
+		}
 			
 	}
 
