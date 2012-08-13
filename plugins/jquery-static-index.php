@@ -26,7 +26,7 @@ function jquery_filter_page_on_front( $value ) {
 
 // Nuke the main query, we don't need it.
 function jquery_on_posts_request( $request, $query ) {
-	if ( $query->is_page && $query->get('p') == get_option( 'page_on_front' ) && $query->is_main_query() ) {
+	if ( $query->is_page && $query->get('p') && $query->get('p') == get_option( 'page_on_front' ) && $query->is_main_query() ) {
 		add_filter( 'posts_results', 'jquery_on_posts_results', 10, 2 );
 		return false;
 	}
