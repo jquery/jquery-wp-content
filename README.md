@@ -64,6 +64,9 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
 
 1. Go to `http://dev.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
 
+## Auto-Updates
+Changes pushed to master will be pulled onto the stage domain.
+
 ## Copyright
 
 Copyright 2012 jQuery Foundation and other contributors. All rights reserved.
