@@ -3,6 +3,9 @@
  * Description: Default filters, option values, and other tweaks.
  */
 
+if ( defined( 'WP_INSTALLING' ) )
+	return;
+
 $live_domain = $_SERVER['HTTP_HOST'];
 if ( JQUERY_STAGING )
         $live_domain = str_replace( JQUERY_STAGING_PREFIX, '', $live_domain );

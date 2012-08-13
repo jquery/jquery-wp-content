@@ -1,5 +1,7 @@
 <?php
 
+global $blog_id;
+
 if ( 1 != $blog_id && false !== strpos( $_SERVER['PHP_SELF'], 'wp-admin/install.php' ) ) {
 	wp_redirect( 'http://' . DOMAIN_CURRENT_SITE . '/wp-admin/install.php' );
 	exit;
@@ -45,7 +47,8 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	}
 	update_option( 'fileupload_url', get_option( 'siteurl' ) . '/' . $upload_path );
 
-	jquery_install_remaining_sites( $user );
+	foreach ( jquery_domains() as $domain => $details )
+		jquery_install_site( $domain, $user );
 
 	wp_new_blog_notification( $blog_title, $guess_url, $user_id, $message = __( 'The password you chose during the install.' ) );
 	wp_cache_flush();
@@ -53,37 +56,37 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	return array( 'url' => $guess_url, 'user_id' => $user_id, 'password' => $user_password, 'password_message' => $message );
 }
 
-function jquery_install_remaining_sites( $user ) {
+function jquery_install_site( $domain, $user ) {
 	$domains = jquery_domains();
+	$details = $domains[ $domain ];
 
 	$default_options = jquery_default_site_options();
 	$default_options['admin_email'] = $user->user_email;
 
-	foreach ( $domains as $domain => $details ) {
-		if ( 1 !== $details['blog_id'] ) {
-			$blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, '/', 1 );
-			if ( $blog_id != $details['blog_id'] )
-				wp_die( "Something went very wrong when trying to install $domain as site $blog_id-{$details['blog_id']}. Find nacin." );
+	if ( 1 !== $details['blog_id'] ) {
+		$blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, '/', 1 );
+		if ( $blog_id != $details['blog_id'] )
+			wp_die( "Something went very wrong when trying to install $domain as site $blog_id-{$details['blog_id']}. Find nacin." );
 
-			switch_to_blog( $blog_id );
+		switch_to_blog( $blog_id );
 
-			install_blog( $blog_id, $details['options']['blogname'] );
-			add_user_to_blog( $blog_id, $user->ID, 'administrator' );
-		}
+		install_blog( $blog_id, $details['options']['blogname'] );
 
-		$options = array_merge( $default_options, $details['options'] );
-		foreach ( $options as $option => $value )
-			update_option( $option, $value );
-
-		// Work around a superficial bug in install_blog(), fixed in WP r21172.
-		$home = untrailingslashit( get_option( 'home' ) );
-		$siteurl = untrailingslashit( get_option( 'siteurl' ) );
-		update_option( 'home', 'http://example.com' ); // Please just don't ask.
-		update_option( 'siteurl', 'http://example.com' );
-		update_option( 'home', $home );
-		update_option( 'siteurl', $siteurl );
-
-		flush_rewrite_rules();
-		restore_current_blog();
+		add_user_to_blog( $blog_id, $user->ID, 'administrator' );
 	}
+
+	$options = array_merge( $default_options, $details['options'] );
+	foreach ( $options as $option => $value )
+		update_option( $option, $value );
+
+	// Work around a superficial bug in install_blog(), fixed in WP r21172.
+	$home = get_option( 'home' );
+	$siteurl = get_option( 'siteurl' );
+	update_option( 'home', 'http://example.com' ); // Please just don't ask.
+	update_option( 'siteurl', 'http://example.com' );
+	update_option( 'home', $home );
+	update_option( 'siteurl', $siteurl );
+
+	flush_rewrite_rules();
+	restore_current_blog();
 }
