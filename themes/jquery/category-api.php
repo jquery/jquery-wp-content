@@ -27,7 +27,7 @@ Partial Category Archive Template Called by API Sites
 		<?php /* Start the Loop */ ?>
 		<?php
 			$args = array(
-				'orderby' => 'slug',
+				'orderby' => 'title',
 				'order' => 'ASC',
 				'posts_per_page' => -1
 			);
