@@ -25,16 +25,15 @@ Partial Category Archive Template Called by API Sites
 		<?php //twentyeleven_content_nav( 'nav-above' ); ?>
 
 		<?php /* Start the Loop */ ?>
-    <?php
-    $args = array(
-      'orderby' => 'slug',
-      'order' => 'ASC',
-      'posts_per_page' => -1
-    );
-    $args = array_merge( $wp_query->query, $args );
-    query_posts( $args );
-
-    ?>
+		<?php
+			$args = array(
+				'orderby' => 'slug',
+				'order' => 'ASC',
+				'posts_per_page' => -1
+			);
+			$args = array_merge( $wp_query->query, $args );
+			query_posts( $args );
+		?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php
@@ -60,8 +59,8 @@ Partial Category Archive Template Called by API Sites
 	<?php endif; ?>
 
 	</div><!-- .inner -->
-  <?php if($sidebar): ?>
-      <?php get_sidebar( 'api' ); ?>
-  <?php endif; ?>
+	<?php if($sidebar): ?>
+		<?php get_sidebar( 'api' ); ?>
+	<?php endif; ?>
 
 </section><!-- #body -->
