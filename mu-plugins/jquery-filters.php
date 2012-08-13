@@ -34,6 +34,11 @@ remove_filter( 'the_content', 'wptexturize' );
 remove_filter( 'upload_mimes', 'check_upload_mimes' );
 // Give unfiltered upload ability to super admins.
 define( 'ALLOW_UNFILTERED_UPLOADS', true );
+// Until unfiltered uploads make it into XML-RPC:
+add_filter( 'upload_mimes', function( $mimes ) {
+	$mimes['eot'] = 'application/vnd.ms-fontobject';
+	return $mimes;
+} );
 
 // Allow full HTML in term descriptions.
 add_action( 'init', 'jquery_unfiltered_html_for_term_descriptions' );
