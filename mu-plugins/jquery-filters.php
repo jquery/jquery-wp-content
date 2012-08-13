@@ -13,8 +13,10 @@ $options = array_merge( $options, $domains[ $live_domain ]['options'] );
 foreach ( $options as $option => $value ) {
 	if ( 'stylesheet' === $option || 'template' === $option )
 		continue; // Don't mess with themes for now.
-	add_filter( 'pre_option_' . $option, function( $null ) use ( $value ) {
-		return $value;
+	add_filter( 'pre_option_' . $option, function( $null ) use ( $value, $blog_id ) {
+		if ( $blog_id == get_current_blog_id() )
+			return $value;
+		return $null;
 	} );
 }
 unset( $domains, $live_domain, $options, $option, $value );
