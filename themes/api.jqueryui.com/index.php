@@ -33,7 +33,10 @@ get_header();
 		<p>To get started, use the search at the top of the page, view the
 			<a href="/category/All/">full listing of entries</a>, or browse by
 			category:</p>
+
+		<ul>
 		<?php wp_list_categories( array( 'title_li' => null ) ); ?>
+		</ul>
 
 		<p>jQuery UI 1.9 supports jQuery 1.6 and newer.</p>
 	</div><!-- .inner -->
