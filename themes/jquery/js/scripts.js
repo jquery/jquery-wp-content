@@ -171,7 +171,7 @@ var $search = $('#search');
 		}
 	});
 
-	$(".syntaxhighlighter").each(function(index) {
+	$("#examples .syntaxhighlighter").each(function(index) {
 		var input = $(this).find("td.code"),
 			output = $('div.code-demo').eq(index);
 
