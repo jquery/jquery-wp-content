@@ -37,6 +37,9 @@ define( 'ALLOW_UNFILTERED_UPLOADS', true );
 // Until unfiltered uploads make it into XML-RPC:
 add_filter( 'upload_mimes', function( $mimes ) {
 	$mimes['eot'] = 'application/vnd.ms-fontobject';
+	$mimes['svg'] = 'image/svg+xml';
+	$mimes['ttf'] = 'application/x-font-ttf';
+	$mimes['woff'] = 'application/font-woff';
 	return $mimes;
 } );
 
