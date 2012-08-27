@@ -7,6 +7,11 @@ global $tlsite;
 if (!isset($tlsite)) {
 	$tlsite = "jquery";
 }
+
+$site = str_replace(array("dev-", "stage-"), "", $site);
+if ( strpos($site, "api-") !== false ) {
+	$site .= " api";
+}
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]> <html class="no-js ie ie6 lte6 lte7 lte8 lte9 <?php echo $site . " " . $tlsite; ?>" <?php language_attributes(); ?>> <![endif]-->
