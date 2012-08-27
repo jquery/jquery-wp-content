@@ -3,8 +3,12 @@ Theme Name: jquery-org
 Template: jquery
 */
 
-.avatar{float: left;padding: 3px ;margin: 18px 5px 5px 0;border: 1px solid #c2c2c2}
-
+.avatar {
+	float: left;
+	padding: 3px;
+	margin: 18px 5px 5px 0;
+	border: 1px solid #c2c2c2;
+}
 
 .team-image-and-links {
     width: 870px;
@@ -15,7 +19,6 @@ Template: jquery
     position: relative;
     z-index: 20;
 }
-
 
 .team-links {
     position: absolute;

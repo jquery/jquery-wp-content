@@ -2,56 +2,61 @@
 Theme Name: learn-jquery-com
 Template: jquery
 */
-    
+
 
 /*******************************************************************************/
 /* Author Meta
 /*******************************************************************************/
 
-  #body .inner .meta
-{	background: #e8e8e8 url(i/github.png) no-repeat 102% 50%;
-  border: 1px solid #b7b7b7;
-  padding: 10px;
-  text-shadow: 0 1px 1px #fff;
-  color: #5d5d5d; }
+#body .inner .meta {
+	background: #e8e8e8 url(i/github.png) no-repeat 102% 50%;
+	border: 1px solid #b7b7b7;
+	padding: 10px;
+	text-shadow: 0 1px 1px #fff;
+	color: #5d5d5d;
+}
 
-  #body .inner .meta .github
-{	float: left;
-  display: block;
-  width: 35%;
-  min-height: 45px;
-  border-right: 1px solid #fff;
-  -webkit-box-shadow: 1px 0 0 #b7b7b7; }
+#body .inner .meta .github {
+	float: left;
+	display: block;
+	width: 35%;
+	min-height: 45px;
+	border-right: 1px solid #fff;
+	-webkit-box-shadow: 1px 0 0 #b7b7b7;
+}
 
-  #body .inner .meta .github .avatar
-{	border: 5px solid #fff;
-  width: auto;
-  height: 40px;
-  -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0 0 5px rgba(0,0,0,0.25);
-  box-shadow: 0 0 5px rgba(0,0,0,0.25);
-  display: block;
-  float: left; }
+#body .inner .meta .github .avatar {
+	border: 5px solid #fff;
+	width: auto;
+	height: 40px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	box-shadow: 0 0 5px rgba(0,0,0,0.25);
+	display: block;
+	float: left;
+}
 
-  #body .inner .meta .github .author
-{	font-size: 12px;
-  font-weight: normal;
-  letter-spacing: normal;
-  float: left;
-  display: block;
-  margin: 10px 0 0 20px; }
-  
-  #body .inner .meta .github .author a
-{	font-weight: bold; }
-  
-  #body .inner .meta .feedback
-{	float: left;
-  display: block;
-  width: 62%;
-  padding: 0 0 0 3%; }
-  
-  #body .inner .meta .feedback h4
-{	font-size: 18px;
-  font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
-  letter-spacing: 0;
-  margin: 4px 0 0 0; }
+#body .inner .meta .github .author {
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: normal;
+	float: left;
+	display: block;
+	margin: 10px 0 0 20px;
+}
+
+#body .inner .meta .github .author a {	font-weight: bold; }
+
+#body .inner .meta .feedback {
+	float: left;
+	display: block;
+	width: 62%;
+	padding: 0 0 0 3%;
+}
+
+#body .inner .meta .feedback h4 {
+	font-size: 18px;
+	font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
+	letter-spacing: 0;
+	margin: 4px 0 0 0;
+}

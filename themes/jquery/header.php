@@ -171,7 +171,7 @@ if (!isset($tlsite)) {
 
 		<!-- ads or events -->
 		<aside></aside>
-		<!-- /ads	 or events -->
+		<!-- /ads or events -->
 
 
 

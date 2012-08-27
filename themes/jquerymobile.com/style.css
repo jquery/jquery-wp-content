@@ -39,7 +39,7 @@ Template: jquery
   overflow: hidden;
   float: left;
 }
-                                         
+
 #manufacturers a.ios              { width: 140px; margin-right: 35px;}
 #manufacturers a.android          { width: 160px; margin-right: 35px;}
 #manufacturers a.blackberry       { width: 160px; margin-right: 50px;}
@@ -47,7 +47,7 @@ Template: jquery
 #manufacturers a.windows          { width: 160px; margin-right: 15px; height: 40px;}
 #manufacturers a.palm             { width: 170px; margin-right: 35px; height: 40px;}
 #manufacturers a.symbian          { width: 140px; margin-right: 70px; height: 40px;}
-#manufacturers a.meego           { width: 120px; height: 40px; }
+#manufacturers a.meego            { width: 120px; height: 40px; }
 
 #manufacturers a.ios:hover        { background-position: -16px  -155px;}
 #manufacturers a.android:hover    { background-position: -196px -155px;}
@@ -73,7 +73,7 @@ Template: jquery
    width:33%;
 }
 
-#sponsors li a {  
+#sponsors li a {
    padding: 10px 15px;
    display: block;
 }
