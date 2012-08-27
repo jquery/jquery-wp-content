@@ -1,6 +1,6 @@
 <?php
 global $sidebar;
-$sidebar = "sidebar-right";
+$sidebar = "sidebar-left";
 $site = str_replace(".", "-", str_replace("https://", "", str_replace("http://", "", home_url())));
 
 global $tlsite;
