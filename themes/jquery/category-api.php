@@ -5,7 +5,7 @@ Partial Category Archive Template Called by API Sites
 ?>
 <?php global $sidebar; ?>
 
-<section id="body" class="clearfix <?php echo $sidebar; ?>">
+	<section id="body" class="clearfix <?php echo $sidebar; ?>">
 	<div class="inner" role="main">
 
 	<?php if ( have_posts() ) : ?>
@@ -14,7 +14,7 @@ Partial Category Archive Template Called by API Sites
 			<h1 class="page-title"><?php
 				printf( __( '%s', 'twentyeleven' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 			?></h1>
-
+			<hr class="dots">
 			<?php
 				$category_description = category_description();
 				if ( ! empty( $category_description ) )
