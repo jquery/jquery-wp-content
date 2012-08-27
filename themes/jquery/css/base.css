@@ -270,7 +270,15 @@ hr.dots {
 /*******************************************************************************/
 /* Syntax */
 /*******************************************************************************/
-code { background: #FFC; }
+code {
+	background: #e7e7e7;
+	padding: 1px 2px;
+	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+
+}
 
 iframe {
 	border: 1px solid #bfbfbf;
@@ -764,9 +772,10 @@ a:hover {
 	overflow: hidden;
 }
 
-.home .post {
+.home .post,
+.category .post {
 	padding: 10px 10px 10px 20px;
-	margin-bottom: 20px;
+	margin: 20px 0;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -774,12 +783,20 @@ a:hover {
 	position: relative;
 }
 
-.home .post header .entry-meta {
+.home .post .entry-title,
+.category .post .entry-title {
+	font-size: 140%;
+	margin-bottom: .2em;
+}
+
+.home .post header .entry-meta,
+.category .post header .entry-meta {
 	float: right;
 	margin: 0;
 }
 
-.home .post header .entry-meta .category {
+.home .post header .entry-meta .category,
+.category .post header .entry-meta .category {
 	padding: 3px;
 	margin-left: 5px;
 	background-color: #dddddd;
@@ -788,16 +805,19 @@ a:hover {
 	-moz-border-radius: 5px 5px 5px 5px;
 }
 
-.home .post header .entry-meta .category:hover {
+.home .post header .entry-meta .category:hover,
+.category .post header .entry-meta .category:hover {
 	background-color: #cccccc;
 }
 
-.home .post header .entry-meta .category a {
+.home .post header .entry-meta .category a,
+.category .post header .entry-meta .category a {
 	color: #888888;
 	text-decoration: none;
 }
 
-.home .post .category-divider {
+.home .post .category-divider,
+.category .post .category-divider {
 	display: none;
 }
 
@@ -835,6 +855,10 @@ html.jquery, .jquery #container { background: #065791 url(../i/bg-body-jquery.jp
 	-moz-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
 	box-shadow: rgba(12,157,214,0.5) -1px 0 0;
 }
+
+/*******************************************************************************/
+/* API Sites
+/*******************************************************************************/
 
 /*******************************************************************************/
 /* jQuery UI
@@ -2736,7 +2760,7 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	}
 
 	.home .post .entry-title {
-		font-size: 28px;
+		font-size: 24px;
 	}
 
 }
