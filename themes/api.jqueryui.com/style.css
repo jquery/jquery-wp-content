@@ -7,6 +7,6 @@ Template: jquery
 .method-list li { margin: 0; padding: 0; }
 .method-list .title-link { text-decoration: none; }
 
-h1.page-title {
+.single h1.entry-title, h1.page-title {
 	color: #2666a1;
 }

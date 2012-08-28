@@ -2618,22 +2618,32 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 /*	jquery-ui Single Page Documentation */
 /*******************************************************************************/
 
+.jquery-ui .inner .entry .entry-wrapper {
+	border: 1px solid #CCC;
+	border-top: 0;
+	padding: 10px;
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
 .jquery-ui .inner .entry .section-title {
-	background: #ce8c04 url(../i/examples-back.png) center -50px no-repeat;
-	border: 1px solid #955803;
+	background: #333 url(../i/examples-back.png) center -50px no-repeat;
+	border: 1px solid #111;
 	padding: 10px 15px;
 	font-size: 16px;
-	color: #fff;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 	letter-spacing: 0;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px ;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
 	-webkit-box-shadow: #955803 0 -1px 0;
 	-moz-box-shadow: #955803 0 -1px 0;
 	box-shadow: #955803 0 -1px 0;
-	border-top: solid 1px #ECC308;
+	border-top: solid 1px #ecc308;
 	font-weight: normal;
+	margin-bottom: 0;
 }
 
 .jquery-ui .inner .entry .section-title .name {	}
@@ -2641,9 +2651,16 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 .jquery-ui .inner .entry .section-title .returns {
 	float: right;
 	font-style: italic;
+	background-color: #000;
+	padding: 10px;
+	margin-top: -10px;
+	margin-right: -15px;
+	-webkit-border-radius: 0 7px 0 0;
+	-moz-border-radius: 0 7px 0 0;
+	border-radius: 0 7px 0 0;
 }
 
-.jquery-ui .inner .entry .section-title .returns a { color: #fff; }
+.jquery-ui .inner .entry .section-title .returns a { color: #2666A1; }
 
 .jquery-ui .inner .entry .desc {
 	font-size: 16px;
@@ -2652,31 +2669,51 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	font-style: italic;
 }
 
-.jquery-ui .inner .entry .desc strong { color: #444; }
+.jquery-ui .inner .entry .desc strong {
+	color: #444;
+	font-style: normal;
+}
 
 .jquery-ui .inner .entry .signatures {
 	background: #eee;
 	border: 1px solid #ccc;
-	padding: 3%;
 	margin: 0 auto 30px;
 	max-width: 750px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	color: #333;
 	text-shadow: 0 1px 0 #fff;
 }
 
 .jquery-ui .inner .entry .signatures li {
 	list-style: none;
-	margin: 0 0 20px;
-	padding: 0;
+	margin: 0;
+	padding: 10px;
+}
+
+.jquery-ui .inner .entry .signatures li li {
+	border-top: 1px solid #999;
+}
+
+.jquery-ui .inner .entry .signatures li li:first-child {
+	border-top: none;
 }
 
 .jquery-ui .inner .entry .signatures li h4 {
-	border-bottom: 1px solid #ccc;
-	padding: 0 0 10px 0;
 	font-size: 16px;
 	letter-spacing: 0;
+	background: #CE8C04 url(../i/examples-back.png) center -50px no-repeat;
+	padding: 10px;
+	margin: -10px -10px 0;
+	color: #fff;
+	text-shadow: 0 1px 0 #444;
+}
+
+.jquery-ui .inner .entry .signatures li h4:first-child {
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
 }
 
 .jquery-ui .inner .entry .signatures li .versionAdded {
