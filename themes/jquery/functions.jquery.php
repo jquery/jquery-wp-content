@@ -43,12 +43,13 @@ function jq_categories_and_parents() {
   $current_cat = is_category() ? single_cat_title( '', false ) : 'ZZZ';
   // $ccat = get_category_by_name($current_cat);
   foreach ($all_cats as $cat => $catinfo) {
-    $catid = $catinfo->term_id;
+    $catid = intval( $catinfo->term_id );
     if ($catinfo->name !== $current_cat && in_category( $catid ) && strpos($catinfo->cat_name, "Version") === false) {
       $cat_and_parents = substr(get_category_parents($catid, true, ' &gt; '), 0, -6);
       $cat_list[] = '<span class="category">' . $cat_and_parents . '</span>';
     }
   }
+
   $ret = implode('<span class="category-divider"> | </span>', $cat_list);
   if ( !empty($cat_list) ) {
     if ( is_category() ) {
