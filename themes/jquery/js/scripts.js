@@ -185,12 +185,12 @@ var $search = $('#search');
 			.replace( "</head>",
 				"<style>" +
 					"html, body { border:0; margin:0; padding:0; }" +
-					"body { font-size: 62.5%; font-family: 'Trebuchet MS', 'Helvetica', 'Arial',  'Verdana', 'sans-serif'; }" +
+					"body { font-family: 'Helvetica', 'Arial',  'Verdana', 'sans-serif'; }" +
 				"</style>" +
 				"</head>" );
 
 		var iframe = document.createElement( "iframe" );
-		iframe.src = "/index-blank.html";
+		iframe.src = "/web-base-template/themes/jquery/index-blank.html";
 		iframe.width = "100%";
 		iframe.height = output.attr( "data-height" ) || 250;
 		iframe.style.border = "1px solid #eee";
