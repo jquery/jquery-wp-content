@@ -2033,7 +2033,7 @@ header nav.top li.toggle-projects.active a {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 	position: relative;
 	z-index: 20;
-	overflow: hidden;
+/*	overflow: hidden;*/
 }
 
 #container #body .inner { padding: 2%; }
@@ -2133,15 +2133,13 @@ header nav.top li.toggle-projects.active a {
 }
 
 
-
-
 #container #body #sidebar {
 	width: 20.5%;
-	position: relative;
+	position: absolute;
 	background: #eeeeee;
 	height: 100%;
-	padding: 0 1.5% 10000px;
-	margin-bottom: -10000px;
+	padding: 0 1.5% 0;
+/*	margin-bottom: -10000px;*/
 }
 
 #container #body #sidebar ul {
@@ -2859,7 +2857,7 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 		padding: 30px 0 0;
 		margin-left: 0;
 		margin-right: 0;
-		background: none;
+		background: none;;
 	}
 
 	#container header nav, #container header nav ul {
@@ -2896,10 +2894,12 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 
 	#container #body.sidebar-left #sidebar,
 	#container #body.sidebar-right #sidebar {
+/*		position: relative;*/
 		clear: both;
-		float: left;
+/*		float: left;*/
 		padding:  0 3% 3%;
 		width: 94%;
+		margin-left: -110%;
 	}
 
 	#container #body #sidebar hr {
