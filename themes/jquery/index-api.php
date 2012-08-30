@@ -8,16 +8,6 @@
     <?php global $sidebar; ?>
     <div id="body" class="clearfix <?php echo $sidebar; ?>">
       <div class="inner" role="main">
-      <?php
-      $args = array(
-        'orderby' => 'slug',
-        'order' => 'ASC',
-        'posts_per_page' => -1
-      );
-      $args = array_merge( $wp_query->query, $args );
-      query_posts( $args );
-
-      ?>
       <?php if ( have_posts() ) : ?>
 
         <?php // twentyeleven_content_nav( 'nav-above' ); ?>
