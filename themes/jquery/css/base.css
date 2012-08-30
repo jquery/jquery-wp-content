@@ -616,6 +616,9 @@ iframe {
 .syntaxhighlighter .line.alt2 {
   background-color: transparent !important;
 }
+.syntaxhighlighter.nogutter td.code .container textarea, .syntaxhighlighter.nogutter td.code .line {
+  padding-left: 1em !important;
+}
 .syntaxhighlighter .plain, .syntaxhighlighter .plain a {
   color: #eee !important;
 }
