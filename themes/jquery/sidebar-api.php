@@ -11,14 +11,6 @@
 					<ul>
 						<?php wp_list_categories( $cat_args ); ?>
 					</ul>
-          <?php
-          $subcats = jq_get_subcategories( get_query_var('cat') );
-          if ($subcats):
-          ?>
-          <ul class="sub-categories">
-            <?= $subcats; ?>
-          </ul>
-        <?php endif; ?>
 				</aside>
 
 			<?php endif; // end sidebar widget area ?>
