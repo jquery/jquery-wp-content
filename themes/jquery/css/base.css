@@ -608,15 +608,28 @@ iframe {
 .syntaxhighlighter {
   margin: 0 -10px !important;
   width: auto !important;
+  background-color: #222 !important;
+}
+.syntaxhighlighter .line.alt1 {
+  background-color: transparent !important;
+}
+.syntaxhighlighter .line.alt2 {
+  background-color: transparent !important;
 }
 .syntaxhighlighter .plain, .syntaxhighlighter .plain a {
-  color: #ffffff !important;
+  color: #eee !important;
 }
 .syntaxhighlighter .comments, .syntaxhighlighter .comments a {
   color: #5ba1cf !important;
 }
 .syntaxhighlighter .keyword {
-  color: #ffd600 !important;
+  color: #c84 !important;
+}
+.syntaxhighlighter .color1 {
+  color: #8df !important;
+}
+.syntaxhighlighter .string {
+  color: #9a6 !important;
 }
 
 /*******************************************************************************/
