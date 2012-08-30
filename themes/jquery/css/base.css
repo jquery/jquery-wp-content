@@ -136,7 +136,7 @@ h4 { font-size: 14px; }
 
 p, ul, ol {
 	line-height: 18px;
-	margin: 0 0 15px 0;
+	margin: 1em 0;
 }
 
 ul li, ol li {
