@@ -41,6 +41,29 @@ a:hover { color: #333; }
 	color: #2666a1;
 }
 
+/*****/
+/* Widgets */
+/*****/
+
+#options, #methods, #events {
+	border: 1px solid #CCC;
+	margin: 0 15px 30px 15px;
+	padding: 10px;
+}
+
+#options header h2, #methods header h2, #events header h2 {
+	background: #cccccc; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 17%, #cccccc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(17%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	margin: -10px -10px 10px -10px;
+	padding: 10px;
+}
+
 /*******************************************************************************/
 /*	List Page Documentation */
 /*******************************************************************************/

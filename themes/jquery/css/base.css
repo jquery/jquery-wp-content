@@ -876,6 +876,16 @@ a:hover {
 	border-radius: 0 7px 0 0;
 }
 
+.inner .entry .section-title .versionAdded {
+    float: right;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.inner .entry .section-title .versionAdded a {
+	font-weight: bold;
+}
+
 .inner .entry .signatures {
     background: #eee;
     border: 1px solid #ccc;
