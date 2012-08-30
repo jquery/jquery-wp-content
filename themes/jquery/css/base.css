@@ -607,6 +607,7 @@ iframe {
 /*******************************************************************************/
 .syntaxhighlighter {
   margin: 0 -10px !important;
+  width: auto !important;
 }
 .syntaxhighlighter .plain, .syntaxhighlighter .plain a {
   color: #ffffff !important;
