@@ -6,3 +6,22 @@ Template: jquery
 .method-list, .method-list li { list-style: none; }
 .method-list li { margin: 0; padding: 0; }
 .method-list .title-link { text-decoration: none; }
+
+.inner .entry .section-title {
+    -webkit-box-shadow: #004609 0 -1px 0;
+    -moz-box-shadow: #004609 0 -1px 0;
+    box-shadow: #004609 0 -1px 0;
+    border-top: 1px solid #01C265;
+}
+
+.inner .entry .signatures li h4 {
+    background: #21763D url(../i/examples-back.png) center -50px no-repeat;
+}
+
+.inner .entry .signatures li .versionAdded {
+    color: #999;
+}
+
+.inner .entry .signatures li .versionAdded a {
+    color: #999;
+}
