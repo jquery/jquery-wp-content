@@ -15,7 +15,7 @@ Template: jquery
 }
 
 .inner .entry .signatures li h4 {
-    background: #21763D url(../i/examples-back.png) center -50px no-repeat;
+    background: #21763D url(../jquery/i/examples-back.png) center -50px no-repeat;
 }
 
 .inner .entry .signatures li .versionAdded {

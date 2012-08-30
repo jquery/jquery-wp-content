@@ -3,6 +3,35 @@ Theme Name: jquerymobile-com
 Template: jquery
 */
 
+html.jquery-mobile, #container { background: #598611 url(../jquery/i/bg-body-mobile.jpg) no-repeat center -30px; }
+
+h1.site-title a {
+    background: url(../jquery/i/logo-mobile.png) no-repeat;
+    height: 72px;
+    width: 275px;
+    left: -5px;
+    top: -1px;
+    position: relative;
+}
+
+.border, #site-footer { border-color: #88C41A; }
+
+a, .title, .entry-title { color: #598611; }
+
+#container header nav {
+    border-top: solid 1px rgba(136,196,26,0.3);
+    background: rgba(80,118,17,0.4);
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
+}
+
+#container header nav .search .icon-search {
+    -webkit-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
+    -moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
+    box-shadow: rgba(136,196,26,0.5) -1px 0 0;
+}
+
 .page-header { margin-right: 400px; }
 
 #manufacturers {
