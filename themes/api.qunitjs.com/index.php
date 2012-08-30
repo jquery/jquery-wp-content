@@ -21,7 +21,7 @@ get_header();
 			<a href="http://qunitjs.com/">main site</a>.</p>
 
 		<p>To get started, use the search at the top of the page, view the
-			<a href="/category/All/">full listing of entries</a>, or browse by
+			<a href="/category/all/">full listing of entries</a>, or browse by
 			category:</p>
 
 		<ul>

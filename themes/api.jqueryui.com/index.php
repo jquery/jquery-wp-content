@@ -31,7 +31,7 @@ get_header();
 			to find out more about jQuery UI 1.9.</p>
 
 		<p>To get started, use the search at the top of the page, view the
-			<a href="/category/All/">full listing of entries</a>, or browse by
+			<a href="/category/all/">full listing of entries</a>, or browse by
 			category:</p>
 
 		<ul>
