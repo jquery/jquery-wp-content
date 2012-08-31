@@ -22,16 +22,11 @@ Partial Category Archive Template Called by API Sites
 			?>
 		</header>
 
-		<?php //twentyeleven_content_nav( 'nav-above' ); ?>
-
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php
+		<?php
+			while ( have_posts() ) : the_post();
 				get_template_part( 'content', 'api' );
-			?>
-
-		<?php endwhile; ?>
+			endwhile;
+		?>
 
 		<?php twentyeleven_content_nav( 'nav-below' ); ?>
 
@@ -50,8 +45,7 @@ Partial Category Archive Template Called by API Sites
 	<?php endif; ?>
 
 	</div><!-- .inner -->
-	<?php if($sidebar): ?>
-		<?php get_sidebar( 'api' ); ?>
-	<?php endif; ?>
+
+	<?php if ( $sidebar ) : get_sidebar( 'api' ); endif; ?>
 
 </section><!-- #body -->
