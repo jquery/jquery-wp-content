@@ -7,22 +7,26 @@
 @import url("font-awesome.css");
 
 @font-face {
-    font-family: 'JournalRegular';
-    src: url('fonts/journal-webfont.eot');
-    src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/journal-webfont.woff') format('woff'),
-         url('fonts/journal-webfont.ttf') format('truetype'),
-         url('fonts/journal-webfont.svg#JournalRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: 'JournalRegular';
+	src: url('fonts/journal-webfont.eot');
+	src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/journal-webfont.woff') format('woff'),
+			 url('fonts/journal-webfont.ttf') format('truetype'),
+			 url('fonts/journal-webfont.svg#JournalRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /*******************************************************************************/
 /*	Reset */
 /*******************************************************************************/
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd,
+q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
+th, td, article, aside, canvas, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -32,17 +36,26 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 	background: transparent;
 }
 
-*:focus { outline: 1px dotted #FFF; }
+*:focus {
+	outline: 1px dotted #FFF;
+}
 
-/* Darker focus border inside #body where the background is
-white-ish: */
-#body *:focus { outline: 1px dotted #666; }
+/* Darker focus border inside #body where the background is white-ish: */
+#body *:focus {
+	outline: 1px dotted #666;
+}
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
-nav ul { list-style: none; }
+nav ul {
+	list-style: none;
+}
 
-blockquote, q { quotes: none; }
+blockquote, q {
+	quotes: none;
+}
 
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
@@ -70,7 +83,9 @@ mark {
 	font-weight: bold;
 }
 
-del { text-decoration: line-through; }
+del {
+	text-decoration: line-through;
+}
 
 abbr[title], dfn[title] {
 	border-bottom: 1px dotted;
@@ -91,7 +106,9 @@ hr {
 	padding: 0;
 }
 
-input, select { vertical-align: middle }
+input, select {
+	vertical-align: middle;
+}
 
 
 /*******************************************************************************/
@@ -103,7 +120,9 @@ html, body {
 	height: 100%;
 }
 
-html { background: #444; }
+html {
+	background: #444;
+}
 
 body {
 	width: 100%;
@@ -121,7 +140,9 @@ h1 {
 	font: bold 33px/33px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-h2, h3, h4 { margin: 0 0 15px 0; }
+h2, h3, h4 {
+	margin: 0 0 15px 0;
+}
 
 h2 {
 	font: bold 23px/23px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -132,7 +153,9 @@ h3 {
 	color: #666;
 }
 
-h4 { font-size: 14px; }
+h4 {
+	font-size: 14px;
+}
 
 p, ul, ol {
 	line-height: 18px;
@@ -151,9 +174,13 @@ hr {
 	width: 100%;
 }
 
-hr.dark { border-bottom: 1px solid #777777; }
+hr.dark {
+	border-bottom: 1px solid #777777;
+}
 
-hr.light { border-bottom: 1px solid #e5e5e5; }
+hr.light {
+	border-bottom: 1px solid #e5e5e5;
+}
 
 hr.dots {
 	height: 10px;
@@ -181,9 +208,13 @@ hr.dots {
 	height: 1px;
 }
 
-.alignLeft { float: left; }
+.alignLeft {
+	float: left;
+}
 
-.alignRight { float: right; }
+.alignRight {
+	float: right;
+}
 
 .constrain {
 	max-width: 1200px;
@@ -191,7 +222,9 @@ hr.dots {
 	padding: 0 20px;
 }
 
-.border { border-bottom: 1px solid #333; }
+.border {
+	border-bottom: 1px solid #333;
+}
 
 .underline {
 	border-bottom: 1px solid #bfbfbf;
@@ -209,7 +242,9 @@ hr.dots {
 	background: url(../i/icons.png) no-repeat;
 }
 
-.icon-search { background-position: -158px -110px; }
+.icon-search {
+	background-position: -158px -110px;
+}
 
 .rss {
 	background: url(../i/icon-rss.png) no-repeat 100% 0;
@@ -231,9 +266,13 @@ hr.dots {
 	visibility: hidden;
 }
 
-.clearfix:after { clear: both; }
+.clearfix:after {
+	clear: both;
+}
 
-.clearfix { zoom: 1 }
+.clearfix {
+	zoom: 1
+}
 
 /*******************************************************************************/
 /* Article content
@@ -265,7 +304,9 @@ hr.dots {
 	float: right;
 }
 
-.post { padding-bottom: 20px;  }
+.post {
+	padding-bottom: 20px;
+}
 
 /*******************************************************************************/
 /* Syntax */
@@ -273,7 +314,8 @@ hr.dots {
 code {
 	background: #e7e7e7;
 	padding: 1px 2px;
-	-webkit-background-clip: padding-box; /* fix WebKit background bleed on border-radius */
+	/* fix WebKit background bleed on border-radius */
+	-webkit-background-clip: padding-box;
 	border-radius: 2px;
 
 }
@@ -301,335 +343,336 @@ iframe {
 .syntaxhighlighter table thead,
 .syntaxhighlighter table caption,
 .syntaxhighlighter textarea {
-  border-radius: 0 0 0 0 !important;
-  background: none !important;
-  border: 0 !important;
-  bottom: auto !important;
-  float: none !important;
-  height: auto !important;
-  left: auto !important;
-  line-height: 1.1em !important;
-  margin: 0 !important;
-  outline: 0 !important;
-  overflow: visible !important;
-  padding: 0 !important;
-  position: static !important;
-  right: auto !important;
-  text-align: left !important;
-  top: auto !important;
-  vertical-align: baseline !important;
-  width: auto !important;
-  box-sizing: content-box !important;
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
-  font-weight: normal !important;
-  font-style: normal !important;
-  font-size: 1em !important;
-  min-height: inherit !important;
-  min-height: auto !important;
+	border-radius: 0 0 0 0 !important;
+	background: none !important;
+	border: 0 !important;
+	bottom: auto !important;
+	float: none !important;
+	height: auto !important;
+	left: auto !important;
+	line-height: 1.1em !important;
+	margin: 0 !important;
+	outline: 0 !important;
+	overflow: visible !important;
+	padding: 0 !important;
+	position: static !important;
+	right: auto !important;
+	text-align: left !important;
+	top: auto !important;
+	vertical-align: baseline !important;
+	width: auto !important;
+	box-sizing: content-box !important;
+	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+	font-weight: normal !important;
+	font-style: normal !important;
+	font-size: 1em !important;
+	min-height: inherit !important;
+	min-height: auto !important;
 }
 
 .syntaxhighlighter {
-  width: 100% !important;
-  margin: 1em 0 1em 0 !important;
-  position: relative !important;
-  overflow: auto !important;
-  font-size: 1em !important;
+	width: 100% !important;
+	margin: 1em 0 1em 0 !important;
+	position: relative !important;
+	overflow: auto !important;
+	font-size: 1em !important;
 }
 .syntaxhighlighter.source {
-  overflow: hidden !important;
+	overflow: hidden !important;
 }
 .syntaxhighlighter .bold {
-  font-weight: bold !important;
+	font-weight: bold !important;
 }
 .syntaxhighlighter .italic {
-  font-style: italic !important;
+	font-style: italic !important;
 }
 .syntaxhighlighter .line {
-  white-space: pre !important;
+	white-space: pre !important;
 }
 .syntaxhighlighter table {
-  width: 100% !important;
+	width: 100% !important;
 }
 .syntaxhighlighter table caption {
-  text-align: left !important;
-  padding: .5em 0 0.5em 1em !important;
+	text-align: left !important;
+	padding: .5em 0 0.5em 1em !important;
 }
 .syntaxhighlighter table td.code {
-  width: 100% !important;
+	width: 100% !important;
 }
 .syntaxhighlighter table td.code .container {
-  position: relative !important;
+	position: relative !important;
 }
 .syntaxhighlighter table td.code .container textarea {
-  box-sizing: border-box !important;
-  position: absolute !important;
-  left: 0 !important;
-  top: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
-  background: white !important;
-  padding-left: 1em !important;
-  overflow: hidden !important;
-  white-space: pre !important;
+	box-sizing: border-box !important;
+	position: absolute !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	border: none !important;
+	background: white !important;
+	padding-left: 1em !important;
+	overflow: hidden !important;
+	white-space: pre !important;
 }
 .syntaxhighlighter table td.gutter .line {
-  text-align: right !important;
-  padding: 0 0.5em 0 1em !important;
+	text-align: right !important;
+	padding: 0 0.5em 0 1em !important;
 }
 .syntaxhighlighter table td.code .line {
-  padding: 0 1em !important;
+	padding: 0 1em !important;
 }
-.syntaxhighlighter.nogutter td.code .container textarea, .syntaxhighlighter.nogutter td.code .line {
-  padding-left: 0em !important;
+.syntaxhighlighter.nogutter td.code .container textarea,
+.syntaxhighlighter.nogutter td.code .line {
+	padding-left: 0em !important;
 }
 .syntaxhighlighter.show {
-  display: block !important;
+	display: block !important;
 }
 .syntaxhighlighter.collapsed table {
-  display: none !important;
+	display: none !important;
 }
 .syntaxhighlighter.collapsed .toolbar {
-  padding: 0.1em 0.8em 0em 0.8em !important;
-  font-size: 1em !important;
-  position: static !important;
-  width: auto !important;
-  height: auto !important;
+	padding: 0.1em 0.8em 0em 0.8em !important;
+	font-size: 1em !important;
+	position: static !important;
+	width: auto !important;
+	height: auto !important;
 }
 .syntaxhighlighter.collapsed .toolbar span {
-  display: inline !important;
-  margin-right: 1em !important;
+	display: inline !important;
+	margin-right: 1em !important;
 }
 .syntaxhighlighter.collapsed .toolbar span a {
-  padding: 0 !important;
-  display: none !important;
+	padding: 0 !important;
+	display: none !important;
 }
 .syntaxhighlighter.collapsed .toolbar span a.expandSource {
-  display: inline !important;
+	display: inline !important;
 }
 .syntaxhighlighter .toolbar {
-  position: absolute !important;
-  right: 1px !important;
-  top: 1px !important;
-  width: 11px !important;
-  height: 11px !important;
-  font-size: 10px !important;
-  z-index: 10 !important;
+	position: absolute !important;
+	right: 1px !important;
+	top: 1px !important;
+	width: 11px !important;
+	height: 11px !important;
+	font-size: 10px !important;
+	z-index: 10 !important;
 }
 .syntaxhighlighter .toolbar span.title {
-  display: inline !important;
+	display: inline !important;
 }
 .syntaxhighlighter .toolbar a {
-  display: block !important;
-  text-align: center !important;
-  text-decoration: none !important;
-  padding-top: 1px !important;
+	display: block !important;
+	text-align: center !important;
+	text-decoration: none !important;
+	padding-top: 1px !important;
 }
 .syntaxhighlighter .toolbar a.expandSource {
-  display: none !important;
+	display: none !important;
 }
 .syntaxhighlighter.ie {
-  font-size: .9em !important;
-  padding: 1px 0 1px 0 !important;
+	font-size: .9em !important;
+	padding: 1px 0 1px 0 !important;
 }
 .syntaxhighlighter.ie .toolbar {
-  line-height: 8px !important;
+	line-height: 8px !important;
 }
 .syntaxhighlighter.ie .toolbar a {
-  padding-top: 0px !important;
+	padding-top: 0px !important;
 }
 .syntaxhighlighter.printing .line.alt1 .content,
 .syntaxhighlighter.printing .line.alt2 .content,
 .syntaxhighlighter.printing .line.highlighted .number,
 .syntaxhighlighter.printing .line.highlighted.alt1 .content,
 .syntaxhighlighter.printing .line.highlighted.alt2 .content {
-  background: none !important;
+	background: none !important;
 }
 .syntaxhighlighter.printing .line .number {
-  color: #bbbbbb !important;
+	color: #bbbbbb !important;
 }
 .syntaxhighlighter.printing .line .content {
-  color: black !important;
+	color: black !important;
 }
 .syntaxhighlighter.printing .toolbar {
-  display: none !important;
+	display: none !important;
 }
 .syntaxhighlighter.printing a {
-  text-decoration: none !important;
+	text-decoration: none !important;
 }
 .syntaxhighlighter.printing .plain, .syntaxhighlighter.printing .plain a {
-  color: black !important;
+	color: black !important;
 }
 .syntaxhighlighter.printing .comments, .syntaxhighlighter.printing .comments a {
-  color: #008200 !important;
+	color: #008200 !important;
 }
 .syntaxhighlighter.printing .string, .syntaxhighlighter.printing .string a {
-  color: blue !important;
+	color: blue !important;
 }
 .syntaxhighlighter.printing .keyword {
-  color: #006699 !important;
-  font-weight: bold !important;
+	color: #006699 !important;
+	font-weight: bold !important;
 }
 .syntaxhighlighter.printing .preprocessor {
-  color: gray !important;
+	color: gray !important;
 }
 .syntaxhighlighter.printing .variable {
-  color: #aa7700 !important;
+	color: #aa7700 !important;
 }
 .syntaxhighlighter.printing .value {
-  color: #009900 !important;
+	color: #009900 !important;
 }
 .syntaxhighlighter.printing .functions {
-  color: #ff1493 !important;
+	color: #ff1493 !important;
 }
 .syntaxhighlighter.printing .constants {
-  color: #0066cc !important;
+	color: #0066cc !important;
 }
 .syntaxhighlighter.printing .script {
-  font-weight: bold !important;
+	font-weight: bold !important;
 }
 .syntaxhighlighter.printing .color1, .syntaxhighlighter.printing .color1 a {
-  color: gray !important;
+	color: gray !important;
 }
 .syntaxhighlighter.printing .color2, .syntaxhighlighter.printing .color2 a {
-  color: #ff1493 !important;
+	color: #ff1493 !important;
 }
 .syntaxhighlighter.printing .color3, .syntaxhighlighter.printing .color3 a {
-  color: red !important;
+	color: red !important;
 }
 .syntaxhighlighter.printing .break, .syntaxhighlighter.printing .break a {
-  color: black !important;
+	color: black !important;
 }
 
 .syntaxhighlighter {
-  background-color: #0f192a !important;
+	background-color: #0f192a !important;
 }
 .syntaxhighlighter .line.alt1 {
-  background-color: #0f192a !important;
+	background-color: #0f192a !important;
 }
 .syntaxhighlighter .line.alt2 {
-  background-color: #0f192a !important;
+	background-color: #0f192a !important;
 }
 .syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
-  background-color: #253e5a !important;
+	background-color: #253e5a !important;
 }
 .syntaxhighlighter .line.highlighted.number {
-  color: #38566f !important;
+	color: #38566f !important;
 }
 .syntaxhighlighter table caption {
-  color: #d1edff !important;
+	color: #d1edff !important;
 }
 .syntaxhighlighter .gutter {
-  color: #afafaf !important;
+	color: #afafaf !important;
 }
 .syntaxhighlighter .gutter .line {
-  border-right: 3px solid #435a5f !important;
+	border-right: 3px solid #435a5f !important;
 }
 .syntaxhighlighter .gutter .line.highlighted {
-  background-color: #435a5f !important;
-  color: #0f192a !important;
+	background-color: #435a5f !important;
+	color: #0f192a !important;
 }
 .syntaxhighlighter.printing .line .content {
-  border: none !important;
+	border: none !important;
 }
 .syntaxhighlighter.collapsed {
-  overflow: visible !important;
+	overflow: visible !important;
 }
 .syntaxhighlighter.collapsed .toolbar {
-  color: #428bdd !important;
-  background: black !important;
-  border: 1px solid #435a5f !important;
+	color: #428bdd !important;
+	background: black !important;
+	border: 1px solid #435a5f !important;
 }
 .syntaxhighlighter.collapsed .toolbar a {
-  color: #428bdd !important;
+	color: #428bdd !important;
 }
 .syntaxhighlighter.collapsed .toolbar a:hover {
-  color: #1dc116 !important;
+	color: #1dc116 !important;
 }
 .syntaxhighlighter .toolbar {
-  color: #d1edff !important;
-  background: #435a5f !important;
-  border: none !important;
+	color: #d1edff !important;
+	background: #435a5f !important;
+	border: none !important;
 }
 .syntaxhighlighter .toolbar a {
-  color: #d1edff !important;
+	color: #d1edff !important;
 }
 .syntaxhighlighter .toolbar a:hover {
-  color: #8aa6c1 !important;
+	color: #8aa6c1 !important;
 }
 .syntaxhighlighter .plain, .syntaxhighlighter .plain a {
-  color: #d1edff !important;
+	color: #d1edff !important;
 }
 .syntaxhighlighter .comments, .syntaxhighlighter .comments a {
-  color: #428bdd !important;
+	color: #428bdd !important;
 }
 .syntaxhighlighter .string, .syntaxhighlighter .string a {
-  color: #1dc116 !important;
+	color: #1dc116 !important;
 }
 .syntaxhighlighter .keyword {
-  color: #b43d3d !important;
+	color: #b43d3d !important;
 }
 .syntaxhighlighter .preprocessor {
-  color: #8aa6c1 !important;
+	color: #8aa6c1 !important;
 }
 .syntaxhighlighter .variable {
-  color: #ffaa3e !important;
+	color: #ffaa3e !important;
 }
 .syntaxhighlighter .value {
-  color: #f7e741 !important;
+	color: #f7e741 !important;
 }
 .syntaxhighlighter .functions {
-  color: #ffaa3e !important;
+	color: #ffaa3e !important;
 }
 .syntaxhighlighter .constants {
-  color: #e0e8ff !important;
+	color: #e0e8ff !important;
 }
 .syntaxhighlighter .script {
-  font-weight: bold !important;
-  color: #b43d3d !important;
-  background-color: none !important;
+	font-weight: bold !important;
+	color: #b43d3d !important;
+	background-color: none !important;
 }
 .syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
-  color: #f8bb00 !important;
+	color: #f8bb00 !important;
 }
 .syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
-  color: white !important;
+	color: white !important;
 }
 .syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
-  color: #ffaa3e !important;
+	color: #ffaa3e !important;
 }
 
 /*******************************************************************************/
 /* SyntaxHighlighter Theme Overrides */
 /*******************************************************************************/
 .syntaxhighlighter {
-  margin: 0 -10px !important;
-  width: auto !important;
-  background-color: #222 !important;
+	margin: 0 -10px !important;
+	width: auto !important;
+	background-color: #222 !important;
 }
 .syntaxhighlighter .line.alt1 {
-  background-color: transparent !important;
+	background-color: transparent !important;
 }
 .syntaxhighlighter .line.alt2 {
-  background-color: transparent !important;
+	background-color: transparent !important;
 }
 .syntaxhighlighter.nogutter td.code .container textarea, .syntaxhighlighter.nogutter td.code .line {
-  padding-left: 1em !important;
+	padding-left: 1em !important;
 }
 .syntaxhighlighter .plain, .syntaxhighlighter .plain a {
-  color: #eee !important;
+	color: #eee !important;
 }
 .syntaxhighlighter .comments, .syntaxhighlighter .comments a {
-  color: #5ba1cf !important;
+	color: #5ba1cf !important;
 }
 .syntaxhighlighter .keyword {
-  color: #c84 !important;
+	color: #c84 !important;
 }
 .syntaxhighlighter .color1 {
-  color: #8df !important;
+	color: #8df !important;
 }
 .syntaxhighlighter .string {
-  color: #9a6 !important;
+	color: #9a6 !important;
 }
 
 /*******************************************************************************/
@@ -641,7 +684,9 @@ h1.title, h1.entry-title, h2.title, h2.entry-title {
 	margin: 0 0 20px;
 }
 
-h1.title a, h1.entry-title a, h2.title a, h2.entry-title a { text-decoration: none;  }
+h1.title a, h1.entry-title a, h2.title a, h2.entry-title a {
+	text-decoration: none;
+}
 
 /*******************************************************************************/
 /* Buttons */
@@ -691,9 +736,13 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a { text-decoration: no
 	visibility: hidden;
 }
 
-.btn:after { clear: both; }
+.btn:after {
+	clear: both;
+}
 
-.btn { zoom: 1; }
+.btn {
+	zoom: 1;
+}
 
 .inset-btn {
 	background: #999;
@@ -701,7 +750,7 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a { text-decoration: no
 	-webkit-box-shadow: inset 1px 1px 1px #666;
 	-moz-box-shadow: inset 1px 1px 1px #666;
 	box-shadow: inset 1px 1px 1px #666;
-	color: #FFF!important;
+	color: #FFF !important;
 	display: inline-block;
 	font-weight: bold;
 	text-align: center;
@@ -713,32 +762,32 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a { text-decoration: no
 a.button {
 	background-color: #d18f4f;
 
-		border-radius: 5px;
-		border: 1px solid #999;
-		   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
-		   					inset 0px 1px 0px #f5d9bd,
-		   					inset 0px -1px 0px #f5d9bd,
-		  					inset 1px 0px 0px #f5d9bd,
-		   					inset -1px 1px 0px #f5d9bd;
-		-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
-							inset 0px 1px 0px #f5d9bd,
-							inset 0px -1px 0px #f5d9bd,
-							inset 1px 0px 0px #f5d9bd,
-							inset -1px 1px 0px #f5d9bd;
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
-							inset 0px 1px 0px #f5d9bd,
-							inset 0px -1px 0px #f5d9bd,
-							inset 1px 0px 0px #f5d9bd,
-							inset -1px 1px 0px #f5d9bd;
-							text-decoration: none;
-		color: #fff !important;
-		text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
-		padding: 5px 12px;
-		font: bold 16px/16px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border-radius: 5px;
+	border: 1px solid #999;
+	 -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0px 1px 0px #f5d9bd,
+		inset 0px -1px 0px #f5d9bd,
+		inset 1px 0px 0px #f5d9bd,
+		inset -1px 1px 0px #f5d9bd;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0px 1px 0px #f5d9bd,
+		inset 0px -1px 0px #f5d9bd,
+		inset 1px 0px 0px #f5d9bd,
+		inset -1px 1px 0px #f5d9bd;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0px 1px 0px #f5d9bd,
+		inset 0px -1px 0px #f5d9bd,
+		inset 1px 0px 0px #f5d9bd,
+		inset -1px 1px 0px #f5d9bd;
+	text-decoration: none;
+	color: #fff !important;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
+	padding: 5px 12px;
+	font: bold 16px/16px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 a.button:hover {
-		background-color: #cc8540;
+	background-color: #cc8540;
 }
 
 /*******************************************************************************/
@@ -876,9 +925,9 @@ a:hover {
 }
 
 .inner .entry .section-title .versionAdded {
-    float: right;
-    font-size: 14px;
-    color: #ffffff;
+		float: right;
+		font-size: 14px;
+		color: #ffffff;
 }
 
 .inner .entry .section-title .versionAdded a {
@@ -886,13 +935,13 @@ a:hover {
 }
 
 .inner .entry .signatures {
-    background: #eee;
-    border: 1px solid #ccc;
-    margin: 0 auto 30px;
-    max-width: 750px;
-    border-radius: 3px;
-    color: #333;
-    text-shadow: 0 1px 0 #fff;
+		background: #eee;
+		border: 1px solid #ccc;
+		margin: 0 auto 30px;
+		max-width: 750px;
+		border-radius: 3px;
+		color: #333;
+		text-shadow: 0 1px 0 #fff;
 }
 
 .inner .entry .signatures li {
@@ -902,12 +951,12 @@ a:hover {
 }
 
 .inner .entry .signatures li h4 {
-    font-size: 16px;
-    letter-spacing: 0;
-    padding: 10px;
-    margin: -10px -10px 0;
-    color: #fff;
-    text-shadow: 0 1px 0 #444;
+		font-size: 16px;
+		letter-spacing: 0;
+		padding: 10px;
+		margin: -10px -10px 0;
+		color: #fff;
+		text-shadow: 0 1px 0 #444;
 }
 
 .inner .entry .signatures li:first-child h4 {
@@ -915,11 +964,11 @@ a:hover {
 }
 
 .inner .entry .signatures li .versionAdded {
-    float: right;
-    font-size: 12px;
-    color: #999;
-    font-weight: normal;
-    letter-spacing: 0;
+		float: right;
+		font-size: 12px;
+		color: #999;
+		font-weight: normal;
+		letter-spacing: 0;
 }
 
 .inner .entry .signatures li .versionAdded a {
@@ -1030,14 +1079,14 @@ html.sizzlejs, .sizzlejs #container { background: #8c0000 url(../i/bg-body-sizzl
 	border-top: solid 1px rgba(236,0,0,0.3);
 		background: rgba(110,0,0,0.5);
 		-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
-		   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
-		        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
+			 -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
+						box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
 }
 
 .sizzlejs #container header nav .search .icon-search {
 	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-		   -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-		        box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+			 -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+						box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 }
 
 
@@ -1065,14 +1114,14 @@ html.qunitjs, .qunitjs #container { background: #00733c url(../i/bg-body-qunitjs
 border-top: solid 1px rgba(58,178,59,0.5);
 	background: rgba(0,85,44,0.5);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
-	   -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
-	        box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
+		 -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
+					box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
 }
 
 .qunitjs #container header nav .search .icon-search {
 -webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	   -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	        box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+		 -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+					box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 }
 
 
@@ -1216,10 +1265,10 @@ h1 a:hover { cursor: pointer; }
 	position: absolute;
 	text-decoration: none;
 	-webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
-    -ms-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+		-moz-transition: all 500ms ease-in-out;
+		-o-transition: all 500ms ease-in-out;
+		-ms-transition: all 500ms ease-in-out;
+		transition: all 500ms ease-in-out;
 }
 
 .project-select ul li a img {
@@ -1441,13 +1490,13 @@ header nav.top li.toggle-projects.active a {
 	text-align: center;
 
 	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#b5b5b5));
-	  -webkit-background-clip: text;
-	  -webkit-text-fill-color: transparent;
-	  font-size: 60px;
-	  line-height: 63px;
-	  font-weight: bold;
-	  /* WebKit (Safari/Chrome) Only */
-	  -webkit-text-stroke: 1px #fff;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 60px;
+		line-height: 63px;
+		font-weight: bold;
+		/* WebKit (Safari/Chrome) Only */
+		-webkit-text-stroke: 1px #fff;
 }
 
 #banner h2 {
@@ -2394,19 +2443,19 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	z-index: 1;
 	text-indent: -999;
 	-webkit-transform: rotate(28deg);
-	   -moz-transform: rotate(28deg);
-	        transform: rotate(28deg);
+		 -moz-transform: rotate(28deg);
+					transform: rotate(28deg);
 	-webkit-transition: all 500ms ease-in-out;
-	   -moz-transition: all 500ms ease-in-out;
-	     -o-transition: all 500ms ease-in-out;
-	    -ms-transition: all 500ms ease-in-out;
-	        transition: all 500ms ease-in-out;
+		 -moz-transition: all 500ms ease-in-out;
+			 -o-transition: all 500ms ease-in-out;
+			-ms-transition: all 500ms ease-in-out;
+					transition: all 500ms ease-in-out;
 }
 
 .jquery-learning #sidebar .paper.subnav.closed:hover .paper_edges {
 	-webkit-transform: rotate(0deg);
-	   -moz-transform: rotate(0deg);
-	        transform: rotate(0deg);
+		 -moz-transform: rotate(0deg);
+					transform: rotate(0deg);
 }
 
 .jquery-learning #sidebar .paper.subnav.closed:hover {
@@ -2439,10 +2488,10 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	position: absolute;
 	opacity: 0;
 	-webkit-transition: all 500ms ease-in-out;
-	   -moz-transition: all 500ms ease-in-out;
-	     -o-transition: all 500ms ease-in-out;
-	    -ms-transition: all 500ms ease-in-out;
-	        transition: all 500ms ease-in-out;
+		 -moz-transition: all 500ms ease-in-out;
+			 -o-transition: all 500ms ease-in-out;
+			-ms-transition: all 500ms ease-in-out;
+					transition: all 500ms ease-in-out;
 }
 
 .jquery-learning #sidebar .paper.subnav.open .inner .white_bg ul { opacity: 1; }
