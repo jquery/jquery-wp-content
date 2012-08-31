@@ -844,6 +844,7 @@ a:hover {
 }
 
 .home .post,
+.search .post,
 .category .post {
 	padding: 10px 10px 10px 20px;
 	margin: 20px 0;
@@ -854,18 +855,21 @@ a:hover {
 }
 
 .home .post .entry-title,
+.search .post .entry-title,
 .category .post .entry-title {
 	font-size: 140%;
 	margin-bottom: .2em;
 }
 
 .home .post header .entry-meta,
+.search .post header .entry-meta,
 .category .post header .entry-meta {
 	float: right;
 	margin: 0;
 }
 
 .home .post header .entry-meta .category,
+.search .post header .entry-meta .category,
 .category .post header .entry-meta .category {
 	padding: 3px;
 	margin-left: 5px;
@@ -875,17 +879,20 @@ a:hover {
 }
 
 .home .post header .entry-meta .category:hover,
+.search .post header .entry-meta .category:hover,
 .category .post header .entry-meta .category:hover {
 	background-color: #cccccc;
 }
 
 .home .post header .entry-meta .category a,
+.search .post header .entry-meta .category a,
 .category .post header .entry-meta .category a {
 	color: #888888;
 	text-decoration: none;
 }
 
 .home .post .category-divider,
+.search .post .category-divider,
 .category .post .category-divider {
 	display: none;
 }
