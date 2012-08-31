@@ -748,7 +748,6 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a {
 	background: #999;
 	border-radius: 3px;
 	-webkit-box-shadow: inset 1px 1px 1px #666;
-	-moz-box-shadow: inset 1px 1px 1px #666;
 	box-shadow: inset 1px 1px 1px #666;
 	color: #FFF !important;
 	display: inline-block;
@@ -764,11 +763,6 @@ a.button {
 
 	border-radius: 5px;
 	border: 1px solid #999;
-	 -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
-		inset 0px 1px 0px #f5d9bd,
-		inset 0px -1px 0px #f5d9bd,
-		inset 1px 0px 0px #f5d9bd,
-		inset -1px 1px 0px #f5d9bd;
 	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.28),
 		inset 0px 1px 0px #f5d9bd,
 		inset 0px -1px 0px #f5d9bd,
@@ -1015,13 +1009,11 @@ html.jquery, .jquery #container { background: #065791 url(../i/bg-body-jquery.jp
 	border-top: solid 1px rgba(12,157,214,0.4);
 	background: rgba(0, 64, 108, 0.3);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px;
-	-moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px;
 	box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(0, 64, 108, 0.5) 0 -3px 5px;
 }
 
 .jquery #container header nav .search .icon-search {
 	-webkit-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
-	-moz-box-shadow: rgba(12,157,214,0.5) -1px 0 0;
 	box-shadow: rgba(12,157,214,0.5) -1px 0 0;
 }
 
@@ -1052,13 +1044,11 @@ html.jquery-project { background: #861143 url(../i/bg-body-jquery-project.jpg) n
 	border-top: solid 1px rgba(219,30,113,0.2);
 	background: rgba(92,12,47,0.5);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
-	-moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
 	box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
 }
 
 .jquery-project #container header nav .search .icon-search {
 	-webkit-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
-	-moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
 	box-shadow: rgba(136,196,26,0.5) -1px 0 0;
 }
 
@@ -1084,16 +1074,14 @@ html.sizzlejs, .sizzlejs #container { background: #8c0000 url(../i/bg-body-sizzl
 
 .sizzlejs #container header nav {
 	border-top: solid 1px rgba(236,0,0,0.3);
-		background: rgba(110,0,0,0.5);
-		-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
-			 -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
-						box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
+	background: rgba(110,0,0,0.5);
+	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
+		box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(90,0,0,0.5) 0 -3px 5px;
 }
 
 .sizzlejs #container header nav .search .icon-search {
 	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-			 -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-						box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+		box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 }
 
 
@@ -1118,17 +1106,15 @@ html.qunitjs, .qunitjs #container { background: #00733c url(../i/bg-body-qunitjs
 .qunitjs #container header nav ul li a, .qunitjs #container header nav .search::-webkit-input-placeholder, .qunitjs #container header nav .search label { color: #fff; }
 
 .qunitjs #container header nav {
-border-top: solid 1px rgba(58,178,59,0.5);
+	border-top: solid 1px rgba(58,178,59,0.5);
 	background: rgba(0,85,44,0.5);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
-		 -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
-					box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
+		box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(1,67,35,0.5) 0 -3px 5px;
 }
 
 .qunitjs #container header nav .search .icon-search {
--webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-		 -moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-					box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
+		box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 }
 
 
@@ -1192,7 +1178,6 @@ h1 a:hover { cursor: pointer; }
 	border-left: solid 1px rgba(255,255,255,0.1);
 	text-shadow: rgba(0,0,0,0.9) 0 1px 0;
 	-webkit-box-shadow: rgba(0,0,0,0.2) -1px 0 0;
-	-moz-box-shadow: rgba(0,0,0,0.2) -1px 0 0;
 	box-shadow: rgba(0,0,0,0.2) -1px 0 0;
 	display: block;
 	float: none;
@@ -1338,7 +1323,6 @@ header nav.top li ul {
 	border-bottom: solid 1px #111;
 	padding: 0 0 5px 0;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
 	box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 4px;
 	z-index: 999;
 	background: transparent url(../i/jq-global-noise-only.png);
@@ -1388,7 +1372,6 @@ header nav.top li a {
 	border: none;
 	margin: 1px 0 0 -5px;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
 }
 
@@ -1537,7 +1520,6 @@ header nav.top li.toggle-projects.active a {
 	overflow: hidden;
 	white-space: nowrap;
 	-webkit-box-shadow: rgba(255,255,255,0.15) 0 1px 0;
-	-moz-box-shadow: rgba(255,255,255,0.15) 0 1px 0;
 	box-shadow: rgba(255,255,255,0.15) 0 1px 0;
 }
 
@@ -1631,7 +1613,6 @@ header nav.top li.toggle-projects.active a {
 	margin: 0 2%;
 	border-top: solid 1px #333;
 	-webkit-box-shadow: #000 0 -1px 0;
-	-moz-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0;
 }
 
@@ -1842,7 +1823,6 @@ header nav.top li.toggle-projects.active a {
 	display: block;
 	border-top: solid 1px #333;
 	-webkit-box-shadow: #000 0 -1px 0;
-	-moz-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0;
 }
 
@@ -1974,7 +1954,6 @@ header nav.top li.toggle-projects.active a {
 	display: block;
 	border: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
 	width: 70%;
 	font-size: 13px;
@@ -1987,7 +1966,6 @@ header nav.top li.toggle-projects.active a {
 	display: block;
 	border: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
 }
 
@@ -2009,7 +1987,6 @@ header nav.top li.toggle-projects.active a {
 #container header nav ul li a:hover, #container header nav ul li.active a, #container header nav ul li.current-menu-item a {
 	background: none;
 	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
-	-moz-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
 	box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
 	border-radius: 4px;
 	padding: 6px 10px;
@@ -2031,7 +2008,6 @@ header nav.top li.toggle-projects.active a {
 	font-family: "Lucida Grande", Helvetica, Arial, Sans-serif;
 	line-height: 18px;
 	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
-	-moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 	box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 	border-radius: 2em;
 }
@@ -2075,7 +2051,6 @@ header nav.top li.toggle-projects.active a {
 	margin: -2px -5px 0 0;
 	border-left: rgba(0,0,0,0.15) 1px solid;
 	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	-moz-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 	box-shadow: rgba(255,215,124,0.5) -1px 0 0;
 	opacity: 0.5;
 	text-decoration: none;
@@ -2096,7 +2071,6 @@ header nav.top li.toggle-projects.active a {
 	background: #fff;
 	display: block;
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 	position: relative;
 	z-index: 20;
@@ -2162,7 +2136,6 @@ header nav.top li.toggle-projects.active a {
 		border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 		padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
 		-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-		-moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 		box-shadow: inset 15px 0 5px -16px #e7e7e7;
 		background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
 		background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
@@ -2184,7 +2157,6 @@ header nav.top li.toggle-projects.active a {
 		border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 		padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
 		-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-		-moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 		box-shadow: inset 15px 0 5px -16px #e7e7e7;
 		background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
 		background-image: -webkit-radial-gradient(right, #f2f2f2, #ffffff 80%);
@@ -2240,7 +2212,6 @@ header nav.top li.toggle-projects.active a {
 	background: #cccccc;
 	border-radius: 3px;
 	-webkit-box-shadow: 0 1px 1px #fff;
-	-moz-box-shadow: 0 1px 1px #fff;
 	box-shadow: 0 1px 1px #fff;
 }
 
@@ -2276,7 +2247,6 @@ header nav.top li.toggle-projects.active a {
 	background: #fff;
 	padding: 4%;
 	-webkit-box-shadow: #ccc -1px -1px 0;
-	-moz-box-shadow: #ccc -1px -1px 0;
 	box-shadow: #ccc -1px -1px 0;
 	border-radius: 6px;
 	width: 94%;
@@ -2348,13 +2318,11 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	border-top: solid 1px rgba(255,255,255,0.15);
 	background: rgba(0,0,0,0.5);
 	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
-	-moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
 	box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
 }
 
 .jquery-learning #container header nav .search .icon-search {
 	-webkit-box-shadow: rgba(255,255,255,0.25) -1px 0 0;
-	-moz-box-shadow: rgba(255,255,255,0.25) -1px 0 0;
 	box-shadow: rgba(255,255,255,0.25) -1px 0 0;
 }
 
@@ -2368,7 +2336,6 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	list-style: none;
 	border-bottom: 1px solid #c5c5c5;
 	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
 	box-shadow: 0 1px 0 rgba(255,255,255,0.25);
 	padding: 0;
 	margin: 0;
@@ -2390,7 +2357,6 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	text-shadow: 0 -1px 1px #000;
 	background: #393939;
 	-webkit-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
-	-moz-box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
 	box-shadow: inset 0 2px 2px rgba(0,0,0,0.25);
 	border-top: 1px solid #000;
 }
@@ -2398,7 +2364,6 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 #sidebar aside > ul li:last-child {
 	border: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
 	box-shadow: none;
 }
 
@@ -2692,7 +2657,6 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 		padding: 0 !important;
 		border: none !important;
 		-webkit-box-shadow: none !important;
-		-moz-box-shadow: none !important;
 		box-shadow: none !important;
 		color: #fff !important;
 		float: none !important;
