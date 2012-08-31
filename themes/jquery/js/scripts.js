@@ -1,31 +1,7 @@
-
-/*******************************************************************************/
-/*	Subscriptions */
-/*******************************************************************************/
-
-//
-// Executes on DOM ready
-//
-App.subscribe("init", function(){
+$(function() {
 
 var tooltip_timeout;
 var $search = $('#search');
-
-	//
-	// Set Auto Height
-	//
-	$(window).bind("load resize", function(){
-		$(".autoHeight").each(function(){
-			var el = $(this), parent = el.parent();
-			if(parent.height() >= el.height("auto").height()){
-				el.css({"margin-bottom":0,"padding-bottom":"25px","height":parent.height()});
-			} else {
-				el.css({"margin-bottom":0,"padding-bottom":"25px","height":el.height("auto").height()});
-			}
-		});
-    //		commented 12/29/11 unclear as to purpose
-//		$("#container #body").css({"overflow":"visible"});
-	});
 
 	//
 	// Add Search Interactions
