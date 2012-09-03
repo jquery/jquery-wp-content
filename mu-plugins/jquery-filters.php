@@ -40,6 +40,8 @@ add_filter( 'upload_mimes', function( $mimes ) {
 	$mimes['svg'] = 'image/svg+xml';
 	$mimes['ttf'] = 'application/x-font-ttf';
 	$mimes['woff'] = 'application/font-woff';
+	$mimes['xml'] = 'text/xml';
+	$mimes['php'] = 'application/x-php';
 	return $mimes;
 } );
 
