@@ -43,13 +43,6 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
 
-<script id="tooltip-template" type="text/html">
-  <div class="tooltip">
-    <a href="${url}" title="${title}" class="jq-tooltip-branding"><img src="${preview}" /></a>
-    <ul>{{each(i,link) links}}<li><a href="${link[1]}">${link[0]}</a></li>{{/each}}</ul>
-  </div>
-</script>
-
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins/jquery.ba-outside-events.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
