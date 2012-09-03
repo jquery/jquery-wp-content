@@ -163,10 +163,19 @@ var $search = $('#search');
 					"html, body { border:0; margin:0; padding:0; }" +
 					"body { font-family: 'Helvetica', 'Arial',  'Verdana', 'sans-serif'; }" +
 				"</style>" +
-				"</head>" );
+				"</head>" )
+			// IE <10 executes scripts in the order in which they're loaded,
+			// not the order in which they're written. So we need to defer inline
+			// scripts so that scripts which need to be fetched are executed first.
+			.replace( /<script>(.+)<\/script>/,
+				"<script>" +
+				"window.onload = function() {" +
+					"$1" +
+				"};" +
+				"</script>" );
 
 		var iframe = document.createElement( "iframe" );
-		iframe.src = "/web-base-template/themes/jquery/index-blank.html";
+		iframe.src = "about:blank";
 		iframe.width = "100%";
 		iframe.height = output.attr( "data-height" ) || 250;
 		iframe.style.border = "1px solid #eee";
