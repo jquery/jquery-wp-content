@@ -41,9 +41,9 @@ a:hover { color: #333; }
 	color: #2666a1;
 }
 
-/*****/
+/*******************************************************************************/
 /* Widgets */
-/*****/
+/*******************************************************************************/
 
 #options, #methods, #events {
 	border: 1px solid #CCC;
@@ -62,6 +62,32 @@ a:hover { color: #333; }
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 	margin: -10px -10px 10px -10px;
 	padding: 10px;
+}
+
+.quick-nav {
+	border: 1px solid #CCC;
+	padding: 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+.quick-nav h2 {
+	padding: 10px;
+	margin: -30px -30px 0 -30px;
+	background-color: #EEE;
+	border-bottom: 3px solid #CCC;
+	margin-bottom: 20px;
+}
+
+.quick-nav-section {
+	width: 33%;
+	float: left;
+}
+
+.quick-nav-section h3 {
+	color: #2666A1;
 }
 
 /*******************************************************************************/
