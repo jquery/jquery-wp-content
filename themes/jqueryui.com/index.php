@@ -1,16 +1,7 @@
 <?php get_header(); ?>
-		
-  <!-- body -->
-  <div id="body" class="clearfix">
-    
-    <!-- inner -->
-    <div class="inner">
-    
 
-	       
-    </div>
-    <!-- /inner -->
-  </div>
-  <!-- /body -->
+<div id="body" class="clearfix">
+	<div class="inner"></div>
+</div>
 
 <?php get_footer(); ?>
