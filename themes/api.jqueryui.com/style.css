@@ -127,8 +127,3 @@ a:hover {
 .signatures li h4 {
 	background: #CE8C04 url(../jquery/i/examples-back.png) center -50px no-repeat;
 }
-
-.signatures li .versionAdded,
-.signatures li .versionAdded a {
-	color: #999;
-}
