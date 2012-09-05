@@ -897,14 +897,14 @@ a:hover {
 	margin: 30px 0;
 }
 
-.entry .entry-wrapper {
+.entry-wrapper {
 	border: 1px solid #CCC;
 	border-top: 0;
 	padding: 10px;
 	border-radius: 0 0 5px 5px;
 }
 
-.entry .section-title {
+.section-title {
 	background: #333 url(../i/examples-back.png) center -50px no-repeat;
 	border: 1px solid #111;
 	padding: 10px 15px;
@@ -922,24 +922,14 @@ a:hover {
 	font-style: italic;
 }
 
-.versionAdded {
-		float: right;
-		font-size: 14px;
-		color: #ffffff;
-}
-
-.versionAdded a {
-	font-weight: bold;
-}
-
 .signatures {
-		background: #eee;
-		border: 1px solid #ccc;
-		margin: 0 auto 30px;
-		max-width: 750px;
-		border-radius: 3px;
-		color: #333;
-		text-shadow: 0 1px 0 #fff;
+	background: #eee;
+	border: 1px solid #ccc;
+	margin: 0 auto 30px;
+	max-width: 750px;
+	border-radius: 3px;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
 }
 
 .signatures li {
@@ -948,20 +938,20 @@ a:hover {
 	padding: 10px;
 }
 
-.signatures li h4 {
-		font-size: 16px;
-		letter-spacing: 0;
-		padding: 10px;
-		margin: -10px -10px 0;
-		color: #fff;
-		text-shadow: 0 1px 0 #444;
+.signatures h4 {
+	font-size: 16px;
+	letter-spacing: 0;
+	padding: 10px;
+	margin: -10px -10px 0;
+	color: #fff;
+	text-shadow: 0 1px 0 #444;
 }
 
 .signature:first-child h4 {
 	border-radius: 3px 3px 0 0;
 }
 
-.signatures li .versionAdded {
+.versionAdded {
 	float: right;
 	font-size: 12px;
 	color: #999;
@@ -969,16 +959,22 @@ a:hover {
 	letter-spacing: 0;
 }
 
-.signatures li .versionAdded a {
+.versionAdded a {
 	font-weight: bold;
 }
 
-.signature li {
+.api-item {
+	padding: 20px 10px;
+}
+.signature li,
+.api-item {
 	border-top: 1px solid #CCC;
 }
 
-.signature li:first-child {
+.signature li:first-child,
+.api-item.first-item {
 	border-top: none;
+	padding-top: 10px;
 }
 
 /*******************************************************************************/
