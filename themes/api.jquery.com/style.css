@@ -8,37 +8,21 @@ Template: jquery
 /*******************************************************************************/
 
 .inner .entry .section-title {
-    -webkit-box-shadow: #054873 0 -1px 0;
-    box-shadow: #054873 0 -1px 0;
-    border-top: 1px solid #0195E9;
+	-webkit-box-shadow: #054873 0 -1px 0;
+	box-shadow: #054873 0 -1px 0;
+	border-top: 1px solid #0195E9;
 }
 
-.inner .entry .section-title .returns {
-    float: right;
-    font-style: italic;
+.returns a {
+	color: #CB7C39;
 }
 
-.inner .entry .section-title .returns a { color: #CB7C39; }
-
-.inner .entry .desc {
-    font-size: 16px;
-    padding: 10px 15px;
-    color: #999;
-    font-style: italic;
+.signatures li h4 {
+	background: #25649F url(../i/examples-back.png) center -50px no-repeat;
 }
 
-.inner .entry .desc strong { color: #444; }
-
-.inner .entry .signatures li h4 {
-    background: #25649F url(../i/examples-back.png) center -50px no-repeat;
-}
-
-.inner .entry .signatures li .versionAdded {
-    color: #fff;
-}
-
-.inner .entry .signatures li .versionAdded a {
-    color: #00D6FF;
+.versionAdded a {
+	color: #00D6FF;
 }
 
 .single h1.entry-title,

@@ -112,18 +112,6 @@ a:hover {
 	color: #BB6F04;
 }
 
-.desc {
-	font-size: 16px;
-	padding: 10px 15px;
-	color: #999;
-	font-style: italic;
-}
-
-.desc strong {
-	color: #444;
-	font-style: normal;
-}
-
 .signatures li h4 {
 	background: #CE8C04 url(../jquery/i/examples-back.png) center -50px no-repeat;
 }

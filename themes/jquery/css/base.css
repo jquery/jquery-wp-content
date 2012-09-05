@@ -954,7 +954,7 @@ a:hover {
 .versionAdded {
 	float: right;
 	font-size: 12px;
-	color: #999;
+	color: #fff;
 	font-weight: normal;
 	letter-spacing: 0;
 }
@@ -975,6 +975,18 @@ a:hover {
 .api-item.first-item {
 	border-top: none;
 	padding-top: 10px;
+}
+
+.desc {
+	font-size: 16px;
+	padding: 10px 15px;
+	color: #999;
+	font-style: italic;
+}
+
+.desc strong {
+	color: #444;
+	font-style: normal;
 }
 
 /*******************************************************************************/
