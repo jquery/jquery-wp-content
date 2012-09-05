@@ -65,7 +65,6 @@ Template: jquery
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
 	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	-moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
 	background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
@@ -184,7 +183,6 @@ p.info {
 	background-color: #666;
 	height: 30px;
 	border: 1px solid #ccc;
-	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 	        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 }
@@ -200,15 +198,14 @@ p.info {
 	position: absolute;
 	left: 20px;
 	top: 10px;
-	   -moz-box-shadow: none;
 	-webkit-box-shadow: none;
 	        box-shadow: none;
-	        border-left: rgba(0,0,0,0.0) 1px solid;
-	        background-image: none;
-			font-size: 24px;
-			overflow: hidden;
-			color: #999;
-			text-decoration: none;
+	border-left: rgba(0,0,0,0.0) 1px solid;
+	background-image: none;
+	font-size: 24px;
+	overflow: hidden;
+	color: #999;
+	text-decoration: none;
 }
 
 
@@ -453,7 +450,6 @@ p.info {
 .jquery_plugin .toolbox {
 	border: 1px solid black;
 	border-radius: 8px;
-	   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	background-color: black;
@@ -778,7 +774,6 @@ p.info {
 		-o-border-image: none;
 		border-image: none;
 		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
 		box-shadow: none;
 		background-image: none;
 		background-image: none;

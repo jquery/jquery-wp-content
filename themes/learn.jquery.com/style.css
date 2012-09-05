@@ -30,7 +30,6 @@ Template: jquery
 	width: auto;
 	height: 40px;
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.25);
-	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.25);
 	box-shadow: 0 0 5px rgba(0,0,0,0.25);
 	display: block;
 	float: left;

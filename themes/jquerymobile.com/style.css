@@ -22,13 +22,11 @@ a, .title, .entry-title { color: #598611; }
     border-top: solid 1px rgba(136,196,26,0.3);
     background: rgba(80,118,17,0.4);
     -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
-    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
     box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
 }
 
 #container header nav .search .icon-search {
     -webkit-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
-    -moz-box-shadow: rgba(136,196,26,0.5) -1px 0 0;
     box-shadow: rgba(136,196,26,0.5) -1px 0 0;
 }
 
