@@ -15,6 +15,10 @@ h1.site-title a {
 	position: relative;
 }
 
+h3 {
+	color: #BB6F04;
+}
+
 .border, #site-footer {
 	border-color: #d69a06;
 }
@@ -104,28 +108,27 @@ a:hover {
 	border-top: solid 1px #ecc308;
 }
 
-.inner .entry .section-title .returns a { color: #2666A1; }
+.returns a {
+	color: #BB6F04;
+}
 
-.inner .entry .desc {
+.desc {
 	font-size: 16px;
 	padding: 10px 15px;
 	color: #999;
 	font-style: italic;
 }
 
-.inner .entry .desc strong {
+.desc strong {
 	color: #444;
 	font-style: normal;
 }
 
-.inner .entry .signatures li h4 {
-	background: #CE8C04 url(../i/examples-back.png) center -50px no-repeat;
+.signatures li h4 {
+	background: #CE8C04 url(../jquery/i/examples-back.png) center -50px no-repeat;
 }
 
-.inner .entry .signatures li .versionAdded {
-	color: #999;
-}
-
-.inner .entry .signatures li .versionAdded a {
+.signatures li .versionAdded,
+.signatures li .versionAdded a {
 	color: #999;
 }
