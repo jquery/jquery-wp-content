@@ -4,36 +4,11 @@ Template: jquery
 */
 
 /*******************************************************************************/
-/*  List Page Documentation */
-/*******************************************************************************/
-
-.inner .method-list li {
-    border-bottom: 1px solid #eee;
-        margin: 0 0 15px 0;
-}
-
-.inner .method-list li .entry-title {
-    font-size: 18px;
-        letter-spacing: 0;
-}
-
-.inner .method-list li .entry-meta .cat-links {
-    float: right;
-    border: 1px solid #eee;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    padding: 3px 10px;
-    margin: -20px 0 0 0;
-}
-
-/*******************************************************************************/
 /*  Single Page Documentation */
 /*******************************************************************************/
 
 .inner .entry .section-title {
     -webkit-box-shadow: #054873 0 -1px 0;
-    -moz-box-shadow: #054873 0 -1px 0;
     box-shadow: #054873 0 -1px 0;
     border-top: 1px solid #0195E9;
 }
@@ -65,10 +40,6 @@ Template: jquery
 .inner .entry .signatures li .versionAdded a {
     color: #00D6FF;
 }
-
-.method-list, .method-list li { list-style: none; }
-.method-list li { margin: 0; padding: 0; }
-.method-list .title-link { text-decoration: none; }
 
 .single h1.entry-title,
 h1.page-title {
