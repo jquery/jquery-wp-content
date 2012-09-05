@@ -957,8 +957,14 @@ a:hover {
 	border-radius: 3px 3px 0 0;
 }
 
-#methods .api-item li {
+#methods .api-item li,
+#events .api-item li {
 	margin-bottom: 1em;
+}
+
+#methods .api-item li ul,
+#events .api-item li ul {
+	list-style: none;
 }
 
 .versionAdded {
