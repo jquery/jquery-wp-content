@@ -101,12 +101,10 @@ Template: jquery
 	color: #edf49f;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
 	padding: 2px 4px;
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-	        border-radius: 3px;
-			text-decoration: none;
-			margin-left: 5px;
-			margin-right: 2px;
+	border-radius: 3px;
+	text-decoration: none;
+	margin-left: 5px;
+	margin-right: 2px;
 }
 
 .notify p {
@@ -160,10 +158,6 @@ h1.page-title {
 }
 
 .jquery_plugin table {
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
 	border-radius: 8px;
 }
 
@@ -238,10 +232,6 @@ p.info {
 	color: white;
 	text-decoration: none;
 	display: block;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
 	border-radius: 3px;
 	background-color: #305e91;
 	margin-bottom: 10px;
@@ -277,26 +267,14 @@ p.info {
 }
 
 .jquery_plugin .versions table tbody tr:last-of-type td.version {
-	-moz-border-radius-bottomleft: 8px;
-	-webkit-border-bottom-left-radius: 8px;
-	-ms-border-bottom-left-radius: 8px;
-	-o-border-bottom-left-radius: 8px;
 	border-bottom-left-radius: 8px;
 }
 
 .jquery_plugin .versions table tbody tr:last-of-type td.release-date {
-	-moz-border-radius-bottomright: 8px;
-	-webkit-border-bottom-right-radius: 8px;
-	-ms-border-bottom-right-radius: 8px;
-	-o-border-bottom-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 }
 
 .jquery_plugin .versions table thead tr {
-	-moz-border-radius: 8px 8px 0 0;
-	-webkit-border-radius: 8px 8px 0 0;
-	-ms-border-radius: 8px 8px 0 0;
-	-o-border-radius: 8px 8px 0 0;
 	border-radius: 8px 8px 0 0;
 	background: black url('images/dark-grey-tile.png');
 }
@@ -304,18 +282,10 @@ p.info {
 
 
 .jquery_plugin .versions table thead th.version-head {
-	-moz-border-radius-topleft: 8px;
-	-webkit-border-top-left-radius: 8px;
-	-ms-border-top-left-radius: 8px;
-	-o-border-top-left-radius: 8px;
 	border-top-left-radius: 8px;
 }
 
 .jquery_plugin .versions table thead th.release-date-head {
-	-moz-border-radius-topright: 8px;
-	-webkit-border-top-right-radius: 8px;
-	-ms-border-top-right-radius: 8px;
-	-o-border-top-right-radius: 8px;
 	border-top-right-radius: 8px;
 }
 
@@ -343,10 +313,6 @@ p.info {
 /*----------[ related plugins ]-------------------------------------------------
 */
 .jquery_plugin .related-plugins .box {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
 	border-radius: 4px;
 	border: 1px solid #ccc;
 	padding: 16px 20px;
@@ -422,10 +388,6 @@ p.info {
 }
 
 .jquery_plugin .plugin-metadata .github-activity .box {
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
 	border-radius: 3px;
 	border: 1px solid #ccc;
 	padding: 10px;
@@ -439,21 +401,13 @@ p.info {
 .jquery_plugin .plugin-metadata .github-activity .box .info-block {
 	display: inline-block;
 	margin-right: 10px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-ms-border-radius: 4px;
-	-o-border-radius: 4px;
 	border-radius: 4px;
 	text-align: center;
 	min-width: 80px;
 }
 
 .jquery_plugin .plugin-metadata .github-activity .box .info-block .number {
-	-moz-border-radius-topleft: 4px;
-	-webkit-border-top-left-radius: 4px;
 	border-top-left-radius: 4px;
-	-moz-border-radius-topright: 4px;
-	-webkit-border-top-right-radius: 4px;
 	border-top-right-radius: 4px;
 	background: black url('images/dark-grey-tile.png');
 	padding: 2px 10px;
@@ -462,11 +416,7 @@ p.info {
 }
 
 .jquery_plugin .plugin-metadata .github-activity .box .info-block .caption {
-	-moz-border-radius-bottomleft: 4px;
-	-webkit-border-bottom-left-radius: 4px;
 	border-bottom-left-radius: 4px;
-	-moz-border-radius-bottomright: 4px;
-	-webkit-border-bottom-right-radius: 4px;
 	border-bottom-right-radius: 4px;
 	padding: 4px 10px;
 	background-color: #8ccffa;
@@ -502,10 +452,6 @@ p.info {
 */
 .jquery_plugin .toolbox {
 	border: 1px solid black;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
 	border-radius: 8px;
 	   -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -515,10 +461,6 @@ p.info {
 
 .jquery_plugin .toolbox > .inner {
 	border: 1px solid #666;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	-ms-border-radius: 8px;
-	-o-border-radius: 8px;
 	border-radius: 8px;
 	background-color: #202020;
 	color: white;
@@ -562,11 +504,7 @@ p.info {
 }
 
 .jquery_plugin .toolbox .body {
-	-moz-border-radius-bottomleft: 8px;
-	-webkit-border-bottom-left-radius: 8px;
 	border-bottom-left-radius: 8px;
-	-moz-border-radius-bottomright: 8px;
-	-webkit-border-bottom-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 	padding: 12px 15px 5px;
 	background: url('images/dark-grey-tile.png');
@@ -575,10 +513,6 @@ p.info {
 .jquery_plugin .toolbox a.download {
 	display: block;
 	margin-bottom: 1.2em;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
 	border-radius: 5px;
 	border: 1px solid black;
 	 /*1.25 * 16px = 20px*/
@@ -592,10 +526,6 @@ p.info {
 
 .jquery_plugin .toolbox a.download .inner-wrapper {
 	display: block;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
 	border-radius: 5px;
 	border: 1px solid #e1b68c;
 	background: #d18f4f;
@@ -761,9 +691,7 @@ p.info {
 	min-width: 5px;
 	padding: 2px 9px;
 	margin-left: 5px;
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-	        border-radius: 3px;
+	border-radius: 3px;
 	text-align: center;
 }
 

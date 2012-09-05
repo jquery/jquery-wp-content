@@ -42,9 +42,7 @@ Template: jquery
     background-color: #ffffee !important;
     border: solid 1px rgba(188,179,151,0.3);
     border-bottom: 0;
-    -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius: 10px 10px 0 0 ;
+    border-radius: 10px 10px 0 0;
     text-shadow: rgba(255,255,255,0.6) 0 1px 0;
 }
 
