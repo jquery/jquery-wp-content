@@ -922,6 +922,12 @@ a:hover {
 	font-style: italic;
 }
 
+.api-item .returns {
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+}
+
 .signatures {
 	background: #eee;
 	border: 1px solid #ccc;
