@@ -314,10 +314,7 @@ hr.dots {
 code {
 	background: #e7e7e7;
 	padding: 1px 2px;
-	/* fix WebKit background bleed on border-radius */
-	-webkit-background-clip: padding-box;
 	border-radius: 2px;
-
 }
 
 iframe {
@@ -1671,8 +1668,6 @@ header nav.top li.toggle-projects.active a {
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(0,0,0,0.3)),color-stop(1, rgba(0,0,0,0.0))), url(../i/bg-footer-noise.jpg); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../i/bg-footer-noise.jpg); /* Chrome 10+, Saf6 */
 	background-repeat: repeat-x, repeat;
-	-webkit-background-size: 100px 15px, 140px 140px;
-	-moz-background-size: 100px 15px, 140px 140px;
 	background-size: 100px 15px, 140px 140px;
 }
 
@@ -1852,8 +1847,6 @@ header nav.top li.toggle-projects.active a {
 	height: 92px;
 	margin-bottom: 5px;
 	overflow: hidden;
-	-webkit-background-clip: padding-box;
-	-moz-background-clip: padding-box;
 	background-clip: padding-box;
 }
 
