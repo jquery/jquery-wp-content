@@ -957,6 +957,10 @@ a:hover {
 	border-radius: 3px 3px 0 0;
 }
 
+#methods .api-item li {
+	margin-bottom: 1em;
+}
+
 .versionAdded {
 	float: right;
 	font-size: 12px;
