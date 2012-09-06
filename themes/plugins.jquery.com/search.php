@@ -33,7 +33,12 @@ get_header(); ?>
 
 				<?php endwhile; ?>
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
+					<div class="nav-previous">
+						<?php next_posts_link( '&larr; Older plugins' ); ?>
+					</div>
+					<div class="nav-next">
+						<?php previous_posts_link( 'Newer plugins &rarr;' ); ?>
+					</div>
 
 			<?php else : ?>
 
@@ -48,17 +53,10 @@ get_header(); ?>
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
-			
-			<!--NEED TO HOOK UP PAGINATION FOR REAL-->
-			<div class="pagination"><span class="current">1</span><a class="inactive" href="#">2</a><a class="inactive" href="#">3</a><a href="#">›</a><a href="#2">»</a></div>
-			
-	</div><!--End Content-->		
+
+	</div><!--End Content-->
 <?php get_sidebar(); ?>
 			</div><!-- .inner -->
-			
-			
 		</section><!-- #body -->
-		
-		
 
 <?php get_footer(); ?>

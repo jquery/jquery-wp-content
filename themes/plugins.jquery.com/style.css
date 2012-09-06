@@ -636,41 +636,21 @@ p.info {
 
 
 
-/*----------[ Pagination ]--------------------------------------------------------
-*/
+/*----------[ Pagination ]----------------------------------------------------*/
 
-.pagination {
+.nav-previous {
+	float: left;
+	width: 45%;
+}
+
+.nav-next {
+	float: right;
 	text-align: right;
-	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 45%;
 }
 
-.pagination span,
-.pagination a {
-	display: inline-block;
-	min-width: 5px;
-	padding: 2px 9px;
-	margin-left: 5px;
-	border-radius: 3px;
-	text-align: center;
-}
+/*----------[ IE hacks ]------------------------------------------------------*/
 
-.pagination a {
-	border: 1px solid #ccc;
-	color: #333;
-	text-decoration: none;
-}
-
-.pagination a:hover {
-	background-color: #c7c7c7;
-}
-
-.pagination span.current {
-	background-color: #333;
-	color: #fff;
-}
-
-/*----------[ IE hacks ]--------------------------------------------------------
-*/
 .lte9 .jquery_plugin h1.entry-title {
 	background: transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
