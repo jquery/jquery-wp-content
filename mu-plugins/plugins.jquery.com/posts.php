@@ -39,7 +39,7 @@ add_filter( 'page_rewrite_rules', function( $rules ) {
 
 // Only search against parent jquery_plugin posts
 function jquery_plugin_posts_only_for_searches( $query ) {
-	if ( $query->is_main_query() && $query->is_search() ) {
+	if ( $query->is_main_query() && ($query->is_search() || $query->is_tag()) ) {
 		$query->set( 'post_type', 'jquery_plugin' );
 		$query->set( 'post_parent', 0 );
 	}

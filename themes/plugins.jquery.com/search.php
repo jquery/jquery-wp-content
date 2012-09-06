@@ -38,7 +38,7 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<p><?php _e( 'Sorry, but nothing matched your search criteria.', 'twentyeleven' ); ?></p>
+						<p>Sorry, but nothing matched your search criteria.</p>
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 

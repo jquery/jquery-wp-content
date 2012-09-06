@@ -10,7 +10,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content clearfix">
-		<div class="plugin-main">
+		<div id="content">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<p class="attribution">by <?php echo jq_release_author(); ?></p>
 			<div class="block description">

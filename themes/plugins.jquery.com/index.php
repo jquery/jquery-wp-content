@@ -10,7 +10,7 @@
 	<div class="glow">
 	<h1>Plugins Make jQuery More Awesomer</h1>
 	<h2>Level up your project, not your grammar</h2>
-	
+
 	<?php get_search_form(); ?>
 	</div>
 </div>
@@ -44,7 +44,9 @@ foreach( $toplvlpages as $post ) {
 			while ( $new_plugins->have_posts() ) : $new_plugins->the_post();
 			?>
 				<article class="clearfix">
-					<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+					<h4 class="plugin-title">
+						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+					</h4>
 					<?php the_excerpt(); ?>
 					<div class="action">
 						<a class="button" href="<?php the_permalink(); ?>">View Plugin</a>
@@ -55,35 +57,29 @@ foreach( $toplvlpages as $post ) {
 		</div>
 
 		<div class="sidebar left">
-		  <h3><i class="icon-tags"></i>Popular Tags</h3>
-		  <ul>
-		  <?php
-		  $tags_args = array('orderby' => 'count', 'order' => 'DESC', 'number' => 10);
-		  $tags = get_tags( $tags_args );
-		  $tag_html = '';
-		  foreach ($tags as $tag){
-		    $tag_link = get_tag_link($tag->term_id);
-		    $tag_html .= '<li class="icon-caret-right">';
-		    $tag_html .= '<a href="' . $tag_link . '">';
-		      $tag_html .= $tag->name;
-		    $tag_html .= '</a>';
-		     $tag_html .= ' (';
-		    $tag_html .=  $tag->count;
-		     $tag_html .= ')';
-		    $tag_html .= '</li>';
-		  }
-		
-		  echo $tag_html;
-		  ?>
-		  </ul>
+			<h3><i class="icon-tags"></i>Popular Tags</h3>
+			<ul><?php
+				$tags_args = array(
+					'orderby' => 'count',
+					'order' => 'DESC',
+					'number' => 10
+				);
+				$tags = get_tags( $tags_args );
+				foreach ( $tags as $tag ) {
+					echo
+					'<li class="icon-caret-right">' .
+						'<a href="' . get_tag_link( $tag->term_id ) . '">' .
+							$tag->name . '</a>' .
+						' (' . $tag->count . ')' .
+					'</li>';
+				}
+			?></ul>
 		</div>
-		
-		
+
 		<div class="sidebar right">
 			<h3><i class="icon-calendar"></i>Recent Updates</h3>
 			<?php jq_updated_plugins(); ?>
-		</div> 
-		
+		</div>
 	</div>
 	<!-- /body -->
 
