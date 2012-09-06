@@ -42,11 +42,6 @@ a:hover {
 		inset rgba(137,81,6,0.5) 0 -3px 5px;
 }
 
-#container header nav .search .icon-search {
-	-webkit-box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-	box-shadow: rgba(255,215,124,0.5) -1px 0 0;
-}
-
 .single h1.entry-title, h1.page-title {
 	color: #2666a1;
 }

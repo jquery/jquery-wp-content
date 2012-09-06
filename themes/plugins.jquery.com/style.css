@@ -171,43 +171,6 @@ p.info {
 	margin-top: 0;
 }
 
-/*----------[ banner ]------------------------------------------------------------
-*/
-
-#banner .search {
-	width: 70%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 60px;
-	float: none;
-	background-color: #666;
-	height: 30px;
-	border: 1px solid #ccc;
-	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-	        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-}
-
-#banner .search label {
-	float: left;
-	font: 22px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	width: auto;
-	margin-left: 40px;
-}
-
-#banner .search .icon-search {
-	position: absolute;
-	left: 20px;
-	top: 10px;
-	-webkit-box-shadow: none;
-	        box-shadow: none;
-	border-left: rgba(0,0,0,0.0) 1px solid;
-	background-image: none;
-	font-size: 24px;
-	overflow: hidden;
-	color: #999;
-	text-decoration: none;
-}
-
 
 /*----------[ tags ]------------------------------------------------------------
 */
@@ -824,16 +787,6 @@ p.info {
 	#banner h2 {
 		font-size: 40px;
 		line-height: 35px;
-
-	}
-
-	#banner .search {
-		margin-top: 20px;
-	}
-
-	#banner .search label {
-		font-size: 16px;
-		line-height: 30px;
 	}
 
 	.notify p {
@@ -887,19 +840,5 @@ p.info {
 
 	.search #content h1.page-title {
 		text-align: center;
-	}
-
-}
-
-@media all and (max-width: 320px) {
-
-	#banner .search {
-		width: 90%;
-	}
-
-	#banner .search label {
-		font-size: 14px;
-		line-height: 30px;
-		margin-left: 30px;
 	}
 }
