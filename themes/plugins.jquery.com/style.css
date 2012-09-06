@@ -14,7 +14,8 @@ Template: jquery
 	padding: 0;
 }
 
-.home #container #body .inner {
+.home #container #body .inner,
+.page #container #body .inner {
 	padding: 2%;
 }
 
