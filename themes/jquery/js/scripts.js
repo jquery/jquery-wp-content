@@ -1,7 +1,5 @@
 $(function() {
 
-var tooltip_timeout;
-
 //
 // Project Select Show/Hide
 //
@@ -77,41 +75,6 @@ $("#sidebar").bind("clickoutside", function(e){
 	if(el.hasClass("open")){
 		el.removeClass("open").addClass("closed").animate({"width":"24%","margin-left":"-30.5%"}, 500);
 	}
-});
-
-// Project Tooltips
-$(".projects").find(".jquery, .jquery-ui, .jquery-mobile").on( "mouseover", function() {
-	var el = $( this ),
-		tooltips = $(".tooltips"),
-		tooltip = {},
-		$tooltip;
-
-	if ( el.hasClass("jquery") ) {
-		tooltip = $(".tooltips .jquery");
-	}
-	else if ( el.hasClass("jquery-ui") ) {
-		tooltip = $(".tooltips .jquery-ui");
-	}
-	else if ( el.hasClass("jquery-mobile") ) {
-		tooltip = $(".tooltips .jquery-mobile");
-	}
-
-	$tooltip = $( ".tooltip:visible" ,tooltips );
-	if ( $tooltip !== tooltip && tooltip_timeout ) {
-		clearTimeout( tooltip_timeout );
-		$tooltip.fadeOut(200);
-	}
-
-	if ( tooltip.is(":hidden") ) {
-		setTimeout(function() { tooltip.fadeIn(300); }, 300);
-	}
-});
-
-$(".tooltips").find(".jquery, .jquery-ui, .jquery-mobile").on("mouseout", function() {
-	var el = $( this );
-	tooltip_timeout = setTimeout(function() { el.fadeOut(200); }, 300);
-}).bind("mouseover", function() {
-	clearTimeout( tooltip_timeout );
 });
 
 // Fancy Dropdown
