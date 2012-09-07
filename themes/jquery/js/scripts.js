@@ -85,6 +85,7 @@ $('#site-footer .cdn input').on("click", function() {
 	}
 });
 
+// all API sites
 $( ".entry-example" ).each(function() {
 	var iframeSrc,
 		src = $( this ).find( ".syntaxhighlighter" ),
@@ -131,6 +132,23 @@ $( ".entry-example" ).each(function() {
 	doc.open();
 	doc.write( iframeSrc );
 	doc.close();
+});
+
+// jqueryui.com
+var demoFrame = $( ".demo-frame" ),
+	demoDescription = $( ".demo-description" );
+$( ".demo-list" ).on( "click", "a", function( event ) {
+	event.preventDefault();
+
+	var filename = event.target.pathname,
+		parts = filename.split( "/" ),
+		plugin = parts[ 3 ],
+		demo = parts[ 4 ].substr( 0, parts[ 4 ].length - 5 );
+
+	$.getJSON( "/resources/demos/demo-list.json" ).then(function( demoList ) {
+		demoDescription.html( demoList[ plugin ][ demo ].description );
+		demoFrame.attr( "src", filename );
+	});
 });
 
 });

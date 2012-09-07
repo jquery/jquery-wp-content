@@ -25,7 +25,7 @@ add_filter( 'the_content', function( $content ) {
 	$demoContent .= '</ul>';
 
 	$demoContent .= '<iframe src="/resources/demos/' . $plugin . '/default.html" class="demo-frame"></iframe>';
-	$demoContent .= $defaultDemo->description;
+	$demoContent .= '<div class="demo-description">' . $defaultDemo->description . '</div>';
 
 	return str_replace( $content, '<!--demos-->', $demoContent );
 } );
