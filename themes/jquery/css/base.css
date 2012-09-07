@@ -1475,14 +1475,11 @@ header nav.top li.toggle-projects.active a {
 #banner h1 {
 	text-align: center;
 
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#b5b5b5));
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		font-size: 60px;
-		line-height: 63px;
-		font-weight: bold;
-		/* WebKit (Safari/Chrome) Only */
-		-webkit-text-stroke: 1px #fff;
+	color: #AAA;
+	text-shadow: #fff 1px 1px 0;
+	font-size: 60px;
+	line-height: 63px;
+	font-weight: bold;
 }
 
 #banner h2 {
