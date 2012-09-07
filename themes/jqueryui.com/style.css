@@ -37,3 +37,25 @@ a:hover {
 		rgba(0,0,0,0.2) 0 -1px 0,
 		inset rgba(137,81,6,0.5) 0 -3px 5px;
 }
+
+.demo-list {
+	float: right;
+	width: 25%;
+	list-style: none;
+	border-top: 1px solid #333;
+}
+
+.demo-list li {
+	border-bottom: 1px solid #333;
+	margin: 0;
+	padding: .2em .5em;
+}
+
+.demo-list a {
+	text-decoration: none;
+}
+
+.demo-frame {
+	width: 70%;
+	height: 350px;
+}

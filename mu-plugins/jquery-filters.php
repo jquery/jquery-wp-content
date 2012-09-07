@@ -42,6 +42,7 @@ add_filter( 'upload_mimes', function( $mimes ) {
 	$mimes['woff'] = 'application/font-woff';
 	$mimes['xml'] = 'text/xml';
 	$mimes['php'] = 'application/x-php';
+	$mimes['json'] = 'application/json';
 	return $mimes;
 } );
 
