@@ -136,7 +136,9 @@ $( ".entry-example" ).each(function() {
 
 // jqueryui.com
 var demoFrame = $( ".demo-frame" ),
-	demoDescription = $( ".demo-description" );
+	demoDescription = $( ".demo-description" ),
+	sourceView = $( ".view-source pre" );
+
 $( ".demo-list" ).on( "click", "a", function( event ) {
 	event.preventDefault();
 
@@ -148,6 +150,17 @@ $( ".demo-list" ).on( "click", "a", function( event ) {
 	$.getJSON( "/resources/demos/demo-list.json" ).then(function( demoList ) {
 		demoDescription.html( demoList[ plugin ][ demo ].description );
 		demoFrame.attr( "src", filename );
+	});
+
+	$.get( filename ).then(function( content ) {
+		sourceView.text( content );
+	});
+});
+
+$( ".view-source a" ).on( "click", function() {
+	sourceView.animate({
+		opacity: "toggle",
+		height: "toggle"
 	});
 });
 

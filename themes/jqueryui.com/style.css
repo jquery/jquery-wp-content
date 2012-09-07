@@ -59,3 +59,14 @@ a:hover {
 	width: 70%;
 	height: 350px;
 }
+
+.view-source a {
+	cursor: pointer;
+}
+
+.view-source pre {
+	width: 100%;
+	border: 1px solid #333;
+	overflow: hidden;
+	display: none;
+}

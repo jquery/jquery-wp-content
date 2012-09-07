@@ -27,6 +27,14 @@ add_filter( 'the_content', function( $content ) {
 	$demoContent .= '<iframe src="/resources/demos/' . $plugin . '/default.html" class="demo-frame"></iframe>';
 	$demoContent .= '<div class="demo-description">' . $defaultDemo->description . '</div>';
 
+	$demoContent .=
+		'<div class="view-source">' .
+			'<a tabindex="0">view source<a>' .
+			'<pre>' .
+				htmlspecialchars( file_get_contents( GW_RESOURCE_DIR . '/demos/' . $plugin . '/default.html' ) ) .
+			'</pre>' .
+		'</div>';
+
 	return str_replace( $content, '<!--demos-->', $demoContent );
 } );
 
