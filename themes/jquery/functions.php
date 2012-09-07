@@ -5,6 +5,8 @@
  * For more information on hooks, actions, and filters, see http://codex.wordpress.org/Plugin_API.
  */
 
+require_once( 'functions.jquery.php' );
+
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
@@ -279,4 +281,3 @@ function twentyeleven_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'twentyeleven_body_classes' );
-

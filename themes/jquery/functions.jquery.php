@@ -77,4 +77,23 @@ function jq_other_cats($glue = ', ') {
 	return trim(join( $glue, $cats ));
 }
 
+function jq_pages_for_category( $category ) {
+	return get_posts( array(
+		'post_type' => 'page',
+		'category_name' => $category,
+		'posts_per_page' => -1,
+		'orderby' => 'title',
+		'order' => 'ASC'
+	) );
+}
+
+function jq_page_links_for_category( $category ) {
+	$ret = '';
+	foreach ( jq_pages_for_category( $category ) as $post ) {
+		$ret .= '<li><a href="' . get_permalink( $post->ID ) . '">' .
+			$post->post_title . '</a></li>';
+	}
+	return $ret;
+}
+
 ?>

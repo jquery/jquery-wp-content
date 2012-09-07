@@ -7,8 +7,9 @@
  * Version: 1.0
  */
 
-add_action( 'init', 'jquery_tags_on_pages' );
-function jquery_tags_on_pages() {
+add_action( 'init', 'jquery_taxonomies_on_pages' );
+function jquery_taxonomies_on_pages() {
 	register_taxonomy_for_object_type( 'post_tag', 'page' );
+	register_taxonomy_for_object_type( 'category', 'page' );
 }
 

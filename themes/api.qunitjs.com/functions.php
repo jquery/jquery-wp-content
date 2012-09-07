@@ -2,6 +2,3 @@
 
 global $tlsite;
 $tlsite = "qunitjs";
-
-// Common functions that can be used across all child themes:
-require_once get_template_directory() . '/functions.jquery.php';
