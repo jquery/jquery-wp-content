@@ -30,3 +30,32 @@ a, .title, .entry-title { color: #598611; }
     box-shadow: #004609 0 -1px 0;
     border-top: 1px solid #01C218;
 }
+
+.quick-nav {
+    border: 1px solid #CCC;
+    padding: 30px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.quick-nav h2 {
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 17%, #cccccc 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(17%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+    margin: -30px -30px 20px -30px;
+    padding: 10px;
+}
+
+.quick-nav-section {
+    width: 33%;
+    float: left;
+}
+
+.quick-nav-section h3 {
+    color: #2666A1;
+}

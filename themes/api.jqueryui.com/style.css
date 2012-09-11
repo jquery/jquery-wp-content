@@ -56,7 +56,7 @@ a:hover {
 	padding: 10px;
 }
 
-#options header h2, #methods header h2, #events header h2 {
+#options header h2, #methods header h2, #events header h2, .quick-nav h2 {
 	background: #cccccc; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 17%, #cccccc 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(17%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
@@ -77,11 +77,7 @@ a:hover {
 }
 
 .quick-nav h2 {
-	padding: 10px;
-	margin: -30px -30px 0 -30px;
-	background-color: #EEE;
-	border-bottom: 3px solid #CCC;
-	margin-bottom: 20px;
+	margin: -30px -30px 20px -30px;
 }
 
 .quick-nav-section {
