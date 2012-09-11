@@ -58,7 +58,6 @@ a:hover {
 	background: -moz-linear-gradient(left, #fff 0%, #bb6f04 100%);
 	background: -webkit-linear-gradient(left, #fff 0%, #bb6f04 100%);
 	background: -o-linear-gradient(left, #fff 0%, #bb6f04 100%);
-	background: -ms-linear-gradient(left, #fff 0%, #bb6f04 100%);
 	background: linear-gradient(to right, #fff 0%, #bb6f04 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bb6f04',GradientType=1 );
 }
