@@ -11,4 +11,10 @@
 			<?php echo jq_page_links_for_category( 'widgets' ); ?>
 		</ul>
 	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Effects</h3>
+		<ul>
+			<?php echo jq_page_links_for_category( 'effects' ); ?>
+		</ul>
+	</aside>
 </div>
