@@ -35,7 +35,7 @@ add_filter( 'the_content', function( $content ) {
 			'</pre>' .
 		'</div>';
 
-	return str_replace( $content, '<!--demos-->', $demoContent );
+	return str_replace( '<!--demos-->', $demoContent, $content );
 } );
 
 ?>
