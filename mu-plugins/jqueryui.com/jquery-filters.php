@@ -29,7 +29,7 @@ add_filter( 'the_content', function( $content ) {
 
 	$demoContent .=
 		'<div class="view-source">' .
-			'<a tabindex="0">view source<a>' .
+			'<a tabindex="0">view source</a>' .
 			'<pre>' .
 				htmlspecialchars( file_get_contents( GW_RESOURCE_DIR . '/demos/' . $plugin . '/default.html' ) ) .
 			'</pre>' .
