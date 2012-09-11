@@ -137,9 +137,11 @@ $( ".entry-example" ).each(function() {
 // jqueryui.com
 var demoFrame = $( ".demo-frame" ),
 	demoDescription = $( ".demo-description" ),
-	sourceView = $( ".view-source pre" );
+	sourceView = $( ".view-source pre" ),
+	demoList = $( ".demo-list" );
+	currentDemo = location.hash.substr( 1 );
 
-$( ".demo-list" ).on( "click", "a", function( event ) {
+demoList.on( "click", "a", function( event ) {
 	event.preventDefault();
 
 	var filename = event.target.pathname,
@@ -155,6 +157,10 @@ $( ".demo-list" ).on( "click", "a", function( event ) {
 	$.get( filename ).then(function( content ) {
 		sourceView.text( content );
 	});
+
+	demoList.find( ".active" ).removeClass( "active" );
+	$( this ).parent().addClass( "active" );
+	location.hash = "#" + demo;
 });
 
 $( ".view-source a" ).on( "click", function() {
@@ -163,5 +169,11 @@ $( ".view-source a" ).on( "click", function() {
 		height: "toggle"
 	});
 });
+
+if ( currentDemo ) {
+	demoList.find( "a" ).filter(function() {
+		return this.pathname.split( "/" )[ 4 ] === (currentDemo + ".html");
+	}).click();
+}
 
 });

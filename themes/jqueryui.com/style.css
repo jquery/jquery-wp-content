@@ -41,6 +41,10 @@ a:hover {
 .demo-list {
 	float: right;
 	width: 25%;
+}
+
+.demo-list ul {
+	width: 100%;
 	list-style: none;
 	border-top: 1px solid #333;
 }
@@ -48,11 +52,26 @@ a:hover {
 .demo-list li {
 	border-bottom: 1px solid #333;
 	margin: 0;
-	padding: .2em .5em;
+}
+
+.demo-list .active {
+	background: -moz-linear-gradient(left, #fff 0%, #bb6f04 100%);
+	background: -webkit-linear-gradient(left, #fff 0%, #bb6f04 100%);
+	background: -o-linear-gradient(left, #fff 0%, #bb6f04 100%);
+	background: -ms-linear-gradient(left, #fff 0%, #bb6f04 100%);
+	background: linear-gradient(to right, #fff 0%, #bb6f04 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bb6f04',GradientType=1 );
+}
+
+.demo-list .active a {
+	color: #333;
+	text-shadow: 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 .demo-list a {
 	text-decoration: none;
+	display: block;
+	padding: .2em .5em;
 }
 
 .demo-frame {

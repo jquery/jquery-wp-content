@@ -13,16 +13,21 @@ add_filter( 'the_content', function( $content ) {
 	$demoList = json_decode( file_get_contents( GW_RESOURCE_DIR . '/demos/demo-list.json' ) );
 	$defaultDemo = $demoList->$plugin->default;
 
-	$demoContent .= '<ul class="demo-list">';
+	$demoContent .=
+		'<div class="demo-list">' .
+			'<h2>Examples</h2>' .
+			'<ul class="demo-list">';
 	foreach ( $demoList->$plugin as $filename => $demo ) {
 		$demoContent .=
-			'<li>' .
+			($filename === 'default' ? '<li class="active">' : '<li>') .
 				'<a href="/resources/demos/' . $plugin . '/' . $filename . '.html">' .
 					$demo->title .
 				'</a>' .
 			'</li>';
 	}
-	$demoContent .= '</ul>';
+	$demoContent .=
+			'</ul>' .
+		'</div>';
 
 	$demoContent .= '<iframe src="/resources/demos/' . $plugin . '/default.html" class="demo-frame"></iframe>';
 	$demoContent .= '<div class="demo-description">' . $defaultDemo->description . '</div>';
