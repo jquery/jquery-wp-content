@@ -17,4 +17,10 @@
 			<?php echo jq_page_links_for_category( 'effects' ); ?>
 		</ul>
 	</aside>
+	<aside class="widget">
+		<h3 class="widget-title">Utilities</h3>
+		<ul>
+			<?php echo jq_page_links_for_category( 'utilities' ); ?>
+		</ul>
+	</aside>
 </div>
