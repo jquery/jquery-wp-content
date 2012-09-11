@@ -1740,6 +1740,11 @@ header nav.top li.toggle-projects.active a {
 	margin: 1px 0 0 0;
 }
 
+#site-footer p.copyright a.mt-link {
+	background: url(../i/logo-mediatemple.png) left 1px no-repeat;
+	padding-left: 31px;
+}
+
 #site-footer li.icon {
 	position: relative;
 	background: none;

@@ -5,7 +5,7 @@
 
 				<div id="jq-credits">
 					<p id="jq-copyright">&copy; 2012 <a href="http://jquery.org/">The jQuery Foundation</a></p>
-					<p id="jq-hosting">Sponsored by <a href="http://mediatemple.net" class="jq-mediaTemple">Media Temple</a> and <a href="http://jquery.org/sponsors">others</a>.</p>
+					<p id="jq-hosting"><a href="http://mediatemple.net" class="jq-mediaTemple">Web hosting by Media Temple</a> | <a href="http://jquery.org/sponsors">View sponsors</a></p>
 				</div>
 
 				<div id="jq-footerNavigation">
