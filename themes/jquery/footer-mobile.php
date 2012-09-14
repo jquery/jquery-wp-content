@@ -3,9 +3,9 @@
 
 <!-- footer -->
 <footer id="site-footer" class="clearfix">
-	  
+
   <div class="constrain">
-  	
+
   	<?php // get_sidebar( 'footer' ); ?>
   <div class="col7-1 col"></div>
     <div class="col3-2 col">
@@ -32,7 +32,7 @@
         <li class="footer-icon icon-bugs"><a href="http://github.com/jquery/jquery-mobile/issues">Bugs <small>Issue <br>Tracker</small></a></li>
       </ul>
     </div>
-    
+
     <div id="legal">
       <ul class="footer-site-links">
         <li class="icon-learning-center icon"><a href="http://learn.jquery.com/">Learning Center</a></li>
@@ -46,14 +46,6 @@
   </div>
 </footer>
 <!-- /footer -->
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>!window.jQuery && document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.7.2.min.js"%3E%3C/script%3E'))</script>
-
-<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/scripts.js"></script>
-
-<!-- /scripts -->
 
 <?php wp_footer(); ?>
 
