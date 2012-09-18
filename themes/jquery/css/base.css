@@ -295,7 +295,8 @@ hr.dots {
 	margin: 20px 0;
 }
 
-.comments-link-top a {
+.comments-link-top a,
+.comments-link-top span {
 	font-size: 12px;
 	float: right;
 }
