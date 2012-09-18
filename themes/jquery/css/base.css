@@ -956,16 +956,15 @@ a:hover {
 	list-style: none;
 }
 
-.versionAdded {
+.version-details {
+	font-weight: bold;
+}
+
+.section-title .version-details,
+.name .version-details {
 	float: right;
 	font-size: 12px;
 	color: #fff;
-	font-weight: normal;
-	letter-spacing: 0;
-}
-
-.versionAdded a {
-	font-weight: bold;
 }
 
 .api-item {
