@@ -10,7 +10,15 @@
 		<script src="http://static.jquery.com/files/rocker/scripts/custom.js"></script>
 		<link rel="alternate" type="application/rss+xml" title="jQuery Blog" href="http://jquery.com/blog/feed/" />
 		<link rel="shortcut icon" href="http://static.jquery.com/favicon.ico" type="image/x-icon"/>
-		<style>#jq-footer #jq-credits{width:290px}</style>
+		<style>
+		#jq-footer #jq-credits{
+			width: 290px;
+		}
+		#jq-secondaryNavigation ul,
+		#jq-footerNavigation ul {
+			width: 38em;
+		}
+		</style>
 	</head>
 	<body>
 	<div id="jq-siteContain">
@@ -41,8 +49,4 @@
 					</ul>
 				</div><!-- /#secondaryNavigation -->
 
-
-
 			</div><!-- /#header -->
-
-      
