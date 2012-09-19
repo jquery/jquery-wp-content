@@ -30,6 +30,54 @@
 		<div class="latest-news">
 			<p><span>Latest News:</span> jQuery UI 1.9.0 released with hundreds of bug fixes and three new widgets. <a href="http://blog.jqueryui.com/">read more...</a></p>
 		</div>
+
+		<div class="dev-links">
+			<h3>Developer Links</h3>
+			<ul>
+				<li><a href="https://github.com/jquery/jquery-ui">Source Code (GitHub)</a></li>
+				<li><a href="http://code.jquery.com/ui/jquery-ui-git.js">jQuery UI Git (WIP Build)</a>
+					<ul>
+						<li><a href="http://code.jquery.com/ui/jquery-ui-git.css">Theme (WIP Build)</a></li>
+					</ul>
+				</li>
+				<li><a href="http://bugs.jqueryui.com/">Bug Tracker</a>
+					<ul>
+						<li><a href="http://bugs.jqueryui.com/newticket/">Submit a New Bug Report</a></li>
+					</ul>
+				</li>
+				<li><a href="http://forum.jquery.com/">Discussion Forum</a>
+					<ul>
+						<li><a href="http://forum.jquery.com/using-jquery-ui/">Using jQuery UI</a></li>
+						<li><a href="http://forum.jquery.com/developing-jquery-ui/">Developing jQuery UI</a></li>
+					</ul>
+				</li>
+				<li><a href="http://wiki.jqueryui.com/">Development Planning Wiki</a></li>
+				<li><a href="http://wiki.jqueryui.com/Roadmap/">Roadmap</a></li>
+			</ul>
+		</div>
+
+		<h2>What's New in jQuery UI 1.9?</h2>
+		<p>The <a href="/menu/">menu widget</a> creates nestable menus, great for
+		inline menus, popup menus, or as a building block for complex menu systems.</p>
+
+		<p>The <a href="/spinner/">spinner widget</a> displays buttons to easily
+		input numberic values via the keyboard or mouse. When used in combination
+		with <a href="https://github.com/jquery/globalize">Globalize</a>, the
+		spinner supports numbers, currencies, and dates in hundreds of locales.</p>
+
+		<p>The <a href="/tooltip/">tooltip widget</a> shows additional information
+		for any element on hover or focus, with support for static content and
+		remote content loaded via Ajax.</p>
+
+		<p>The accordion, autocomplete, and tabs widgets have also received huge
+		accessibility improvements. In addition, we've
+		<a href="http://blog.jqueryui.com/2011/03/api-redesigns-the-past-present-and-future/">
+		improved the APIs</a> of several widgets, making them easier to use and
+		creating more consistency across plugins.</p>
+
+		<p>Interested in the full details of what changed? Check out the
+		<a href="/changelog/1.9.0/">changelog</a> and
+		<a href="/upgrade-guide/1.9/">upgrade guide</a>.</p>
 	</div>
 
 	<?php get_sidebar(); ?>
