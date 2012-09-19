@@ -27,9 +27,7 @@
 			</div>
 		</div></div>
 
-		<div class="latest-news">
-			<p><span>Latest News:</span> jQuery UI 1.9.0 released with hundreds of bug fixes and three new widgets. <a href="http://blog.jqueryui.com/">read more...</a></p>
-		</div>
+
 
 		<div class="dev-links">
 			<h3>Developer Links</h3>
@@ -56,7 +54,10 @@
 			</ul>
 		</div>
 
+
+
 		<h2>What's New in jQuery UI 1.9?</h2>
+
 		<p>The <a href="/menu/">menu widget</a> creates nestable menus, great for
 		inline menus, popup menus, or as a building block for complex menu systems.</p>
 
@@ -78,6 +79,21 @@
 		<p>Interested in the full details of what changed? Check out the
 		<a href="/changelog/1.9.0/">changelog</a> and
 		<a href="/upgrade-guide/1.9/">upgrade guide</a>.</p>
+
+
+		<hr class="dots">
+		<h2>Dive In!</h2>
+
+		<p>jQuery UI is built for designers and developers alike. We've designed
+		all of our plugins to get you up and running quickly while being flexible
+		enough to evolve with your needs and solve a plethora of use cases. Play
+		around with the <a href="/demos/">demos</a> and read through the
+		<a href="http://api.jqueryui.com/">API documentation</a> to get an idea
+		of what's possible.</p>
+
+		<p>Stay informed about what's going on with jQuery UI by subscribing to
+		our <a href="http://blog.jqueryui.com/">blog</a>.</p>
+
 	</div>
 
 	<?php get_sidebar(); ?>

@@ -1453,9 +1453,7 @@ header nav.top li.toggle-projects.active a {
 
 #banner {
 	background: url(../i/dark-grey-tile.png) #333;
-	margin-left: -25px;
-	margin-right: -25px;
-	margin-top: -25px;
+	margin: -25px -25px 15px;
 	color: #fff;
 }
 

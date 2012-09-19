@@ -89,22 +89,6 @@ a:hover {
 	color: #71D1FF;
 }
 
-.latest-news {
-	position: relative;
-	background: #ddd;
-	background: -moz-linear-gradient(top, #eee 0%, #ddd 100%);
-	background: -webkit-linear-gradient(top, #eee 0%, #ddd 100%);
-	background: -o-linear-gradient(top, #eee 0%, #ddd 100%);
-	background: linear-gradient(to bottom, #eee 0%, #ddd 100%);
-	margin: -25px -25px 1em -25px;
-	padding: 10px 25px;
-}
-
-.latest-news span {
-	text-transform: uppercase;
-	font-weight: bold;
-}
-
 .dev-links {
 	float: right;
 	width: 30%;
@@ -114,6 +98,16 @@ a:hover {
 	border-width: 0 0 1px 1px;
 	border-radius: 0 0 0 5px;
 	box-shadow: -2px 2px 10px -2px #666;
+}
+
+.dev-links ul {
+	list-style: none;
+	margin: 0;
+}
+
+.dev-links li {
+	padding: 0;
+	margin: .25em 0 .25em 1em;
 }
 
 .demo-list {
