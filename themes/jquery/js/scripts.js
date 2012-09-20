@@ -150,6 +150,9 @@ $( ".entry-example" ).each(function() {
 	doc.close();
 });
 
+if ( sidebar.height() < $( "#body" ).children( "div.inner" ).height() ) {
+	sidebar.css( "position", "absolute" );
+}
 
 // jqueryui.com
 demoList.on( "click", "a", function( event ) {

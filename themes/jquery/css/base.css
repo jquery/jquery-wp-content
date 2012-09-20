@@ -2147,7 +2147,7 @@ nav .searchform .icon-search {
 
 #container #body #sidebar {
 	width: 20.5%;
-	position: absolute;
+	position: relative;
 	background: #eeeeee;
 	height: 100%;
 	padding: 0 1.5% 0;
