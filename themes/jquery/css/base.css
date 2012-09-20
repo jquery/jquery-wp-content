@@ -319,9 +319,6 @@ iframe {
 	padding: 1px;
 }
 
-.syntaxhighlighter {
-	padding: 1em 0;
-}
 /*******************************************************************************/
 /* Syntax Highlighting*/
 /* Core Styles */
@@ -367,6 +364,7 @@ iframe {
 .syntaxhighlighter {
 	width: 100% !important;
 	margin: 1em 0 1em 0 !important;
+	padding: 1em 0;
 	position: relative !important;
 	overflow: auto !important;
 	font-size: 1em !important;
@@ -640,7 +638,7 @@ iframe {
 /* SyntaxHighlighter Theme Overrides */
 /*******************************************************************************/
 .syntaxhighlighter {
-	margin: 0 -10px !important;
+	margin: 0 -10px 1em -10px !important;
 	width: auto !important;
 	background-color: #222 !important;
 }
@@ -1040,7 +1038,7 @@ html.jquery, .jquery #container { background: #065791 url(../i/bg-body-jquery.jp
 /* jQuery Project  */
 /*******************************************************************************/
 
-html.jquery-project { background: #861143 url(../i/bg-body-jquery-project.jpg) no-repeat center -30px; }
+html.jquery-project { background: #cab57e url(../i/bg-body-jquery-project.jpg) no-repeat center -30px; }
 
 .jquery-project h1.site-title a {
 	background: url(../i/logo-project.png) no-repeat;
@@ -1051,17 +1049,8 @@ html.jquery-project { background: #861143 url(../i/bg-body-jquery-project.jpg) n
 	position: relative;
 	margin-bottom: 9px;
 }
+/* other styles in jquery.org theme's style.css */
 
-.jquery-project .border, .jquery-project #site-footer { border-color: #b2175b; }
-
-.jquery-project a, .jquery-project .title, .jquery-project .entry-title { color: #b2175b; }
-
-.jquery-project #container header nav {
-	border-top: solid 1px rgba(219,30,113,0.2);
-	background: rgba(92,12,47,0.5);
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
-	box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(92,12,47,0.5) 0 -3px 5px;
-}
 
 /* ===[ Sizzle ]=== */
 
