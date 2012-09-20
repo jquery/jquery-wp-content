@@ -1,5 +1,16 @@
 $(function() {
 
+var sidebar = $( "#sidebar" );
+
+// jqueryui.com variables
+var demoFrame = $( ".demo-frame" ),
+	demoDescription = $( ".demo-description" ),
+	sourceView = $( ".view-source pre" ),
+	demoList = $( ".demo-list" ),
+	currentDemo = location.hash.substr( 1 );
+
+
+// project toggle
 var projectToggle = $( ".toggle-projects" ).on( "click", function( event ) {
 	event.preventDefault();
 
@@ -11,7 +22,6 @@ var projectToggle = $( ".toggle-projects" ).on( "click", function( event ) {
 		$( "body" ).css( "marginTop", 150 );
 	}
 });
-
 
 $( document ).click(function( event ) {
 	var target = $( event.target );
@@ -27,59 +37,65 @@ $( document ).click(function( event ) {
 //
 // Footer Books + Presentations
 //
-$(".presentations img, .books img").each(function (i, el) {
-	var $img = $(this),
+$( ".presentations img, .books img" ).each(function( i, el ) {
+	var $img = $( this ),
 	$span = $img.parent();
-	$span.css("background-image", "url(" + $img.attr('src') + ")");
-	$img.css("visibility", "hidden");
+	$span.css( "background-image", "url(" + $img.attr('src') + ")" );
+	$img.css( "visibility", "hidden" );
 });
 
 //
 // Footer Social Icons
 //
-$(".footer-icon-links")
-	.find("li a")
-	.append("<span></span>")
+$( ".footer-icon-links" )
+	.find( "li a" )
+	.append( "<span></span>" )
 	.end()
-	.delegate("li a", "mouseenter", function () {
-		$(this).find("span").stop(true, false).fadeTo(250, 1.0);
+	.delegate( "li a", "mouseenter", function() {
+		$( this ).find( "span" ).stop( true, false ).fadeTo( 250, 1.0 );
 	})
-	.delegate("li a", "mouseleave", function () {
-		$(this).find("span").stop(true, false).fadeOut(250);
+	.delegate( "li a", "mouseleave", function() {
+		$( this ).find( "span" ).stop( true, false ).fadeOut( 250 );
 	});
 
 //
 // Learning Site Specific
 //
-$("#sidebar .paper").bind("click", function(e){
+sidebar.find( ".paper" ).bind( "click", function(e) {
 	// Allow the actual links inside to take the normal link behaviour
-	if ($(e.target).is("li a")) {
+	if ( $(e.target).is( "li a" ) ) {
 		return;
 	}
 	e.preventDefault();
-	var el = $(this);
-	if(el.hasClass("open")){
-		el.removeClass("open").addClass("closed").animate({"width":"24%","margin-left":"-30.5%"}, 500);
+	var el = $( this );
+	if( el.hasClass( "open" ) ) {
+		el.removeClass( "open" ).addClass( "closed" ) .animate({"width":"24%","margin-left":"-30.5%"}, 500);
 	} else {
-		el.removeClass("closed").addClass("open").animate({"width":"120%","margin-left":"-126.5%"}, 500);
+		el.removeClass( "closed" ).addClass( "open" ).animate({"width":"120%","margin-left":"-126.5%"}, 500);
 	}
 });
-$("#sidebar").bind("clickoutside", function(e){
-	var el = $(".paper",this);
-	if(el.hasClass("open")){
-		el.removeClass("open").addClass("closed").animate({"width":"24%","margin-left":"-30.5%"}, 500);
+
+sidebar.bind( "clickoutside", function(e) {
+	var el = $( this ).find( ".paper" );
+	if( el.hasClass( "open" ) ) {
+		el.removeClass( "open" ).addClass( "closed" ).animate({"width":"24%","margin-left":"-30.5%"}, 500);
 	}
 });
 
 // Fancy Dropdown
-$(".links .dropdown").hover(function() {
-	$( this ).children("ul").stop( true, true ).slideDown( 100 );
-}, function() {
-	$( this ).children("ul").stop( true, true ).slideUp( 100 );
+$( ".links .dropdown" ).on( "mouseenter mouseleave", function( event ) {
+	var ul = $( this ).children("ul");
+
+	ul.stop( true, true );
+	if ( event.type === "mouseenter" ) {
+		ul.slideDown( 100 );
+	} else {
+		ul.slideUp( 100 );
+	}
 });
 
 // CDN auto-select-all
-$('#site-footer .cdn input').on("click", function() {
+$( "#site-footer .cdn input" ).on( "click", function() {
 	if ( typeof this.select === "function" ) {
 		this.select();
 	}
@@ -134,13 +150,8 @@ $( ".entry-example" ).each(function() {
 	doc.close();
 });
 
-// jqueryui.com
-var demoFrame = $( ".demo-frame" ),
-	demoDescription = $( ".demo-description" ),
-	sourceView = $( ".view-source pre" ),
-	demoList = $( ".demo-list" );
-	currentDemo = location.hash.substr( 1 );
 
+// jqueryui.com
 demoList.on( "click", "a", function( event ) {
 	event.preventDefault();
 
