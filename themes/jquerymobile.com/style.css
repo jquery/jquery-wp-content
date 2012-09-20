@@ -3,6 +3,9 @@ Theme Name: jquerymobile-com
 Template: jquery
 */
 
+#container { padding-bottom: 450px; }
+#site-footer { height: 405px; }
+
 html.jquery-mobile, #container { background: #598611 url(../jquery/i/bg-body-mobile.jpg) no-repeat center -30px; }
 
 h1.site-title a {

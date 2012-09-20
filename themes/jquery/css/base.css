@@ -117,16 +117,17 @@ input, select {
 
 html, body {
 	width: 100%;
-	height: 100%;
 }
 
 html {
+	height: 100%;
 	background: #444;
 }
 
 body {
+	position: relative;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	display: block;
 	color: #333;
 	font-family: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
@@ -1480,12 +1481,14 @@ header nav.top li.toggle-projects.active a {
 /*******************************************************************************/
 
 #site-footer {
+	position: absolute;
+	bottom: 0;
+	height: 135px;
 	width: 100%;
 	margin: 30px 0 0 0;
 	padding-bottom: 15px;
 	border-top: 1px solid #6b6868;
 	background-color: #212121;
-	position: relative;
 	z-index: 10;
 }
 
@@ -1913,7 +1916,9 @@ header nav.top li.toggle-projects.active a {
 /* Global Container */
 /*******************************************************************************/
 
-#container {	}
+#container {
+	padding-bottom: 180px;
+}
 
 #container header {	}
 
@@ -2315,6 +2320,10 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	display: none;
 }
 
+#container #body #sidebar aside .current-cat ul.children {
+	display: block;
+	padding-left: 60px;
+}
 
 #sidebar aside > ul li.current_page_item,
 #sidebar aside > ul li.current_page_parent { border: 0; }
@@ -2348,112 +2357,7 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	margin: -1px 0 0 -8%;
 }
 
-.jquery-learning #sidebar h3 {
-	background: url(../i/learning_category_icon.png) no-repeat 0 5px;
-	padding-left: 26px;
-}
 
-.jquery-learning #sidebar .paper { display: none; }
-
-.jquery-learning #sidebar .paper.subnav {
-	position: absolute;
-	height: 100%;
-	width: 24%;
-	margin: -43px 0 0 -30.5%; /* 6.5% */
-	overflow: hidden;
-}
-
-.jquery-learning #sidebar .paper.subnav .shadow {
-	height: 100%;
-	width: 5px;
-	position: absolute;
-	-webkit-box-shadow: inset -2px 0 3px rgba(0,0,0,0.15);
-	z-index: 999;
-	right: 0;
-}
-
-.jquery-learning #sidebar .paper.subnav .paper_edges {
-	background: url(../i/learning_paper_bg.png) no-repeat 0 0;
-	width: 1px;
-	height: 1px;
-	padding: 238px 0 0 110px;
-	margin: -12px 0 0 0px;
-	overflow: hidden;
-	display: block;
-	z-index: 1;
-	text-indent: -999;
-	-webkit-transform: rotate(28deg);
-		 -moz-transform: rotate(28deg);
-					transform: rotate(28deg);
-	-webkit-transition: all 500ms ease-in-out;
-		 -moz-transition: all 500ms ease-in-out;
-			 -o-transition: all 500ms ease-in-out;
-			-ms-transition: all 500ms ease-in-out;
-					transition: all 500ms ease-in-out;
-}
-
-.jquery-learning #sidebar .paper.subnav.closed:hover .paper_edges {
-	-webkit-transform: rotate(0deg);
-		 -moz-transform: rotate(0deg);
-					transform: rotate(0deg);
-}
-
-.jquery-learning #sidebar .paper.subnav.closed:hover {
-	width: 30%;
-	margin-left: -36.5%;
-}
-
-.jquery-learning #sidebar .paper.subnav .inner {
-	width: 300px;
-	display: block;
-	background: #fff;
-	border-left: 1px solid rgba(0,0,0,0.25);
-	height: 100%;
-	margin: -120px 0 0 59px;
-}
-
-.jquery-learning #sidebar .paper.subnav .inner .white_bg {
-	background: #fff;
-	margin-top: -110px;
-	width: 84%;
-	height: 100%;
-	position: absolute;
-	margin-left: -2%;
-}
-
-.jquery-learning #sidebar .paper.subnav .inner .white_bg ul {
-	padding: 0 6.5% 0 0;
-	height: 100%;
-	background: #fff url(../i/learning_paper_line_bg.png) repeat-y 0 0;
-	position: absolute;
-	opacity: 0;
-	-webkit-transition: all 500ms ease-in-out;
-		 -moz-transition: all 500ms ease-in-out;
-			 -o-transition: all 500ms ease-in-out;
-			-ms-transition: all 500ms ease-in-out;
-					transition: all 500ms ease-in-out;
-}
-
-.jquery-learning #sidebar .paper.subnav.open .inner .white_bg ul { opacity: 1; }
-
-.jquery-learning #sidebar .paper.subnav .inner ul li a {
-	/* font-family: 'Gloria Hallelujah', cursive; */
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: normal;
-	text-decoration: none;
-}
-
-.jquery-learning #sidebar .paper.subnav .inner ul li.active a { font-weight: bold; }
-
-.jquery-learning #sidebar .paper.subnav .inner ul li a:hover { font-weight: bold; }
-
-.jquery-learning #sidebar .paper.subnav .inner ul li {
-	margin: 0 0 11px 44px;
-	list-style: none;
-}
-
-.jquery-learning #sidebar .paper.subnav .inner ul li:first-child { padding-top: 38px; }
 
 /*******************************************************************************/
 /* Pagination

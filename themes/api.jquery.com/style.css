@@ -3,6 +3,9 @@ Theme Name: api-jquery-com
 Template: jquery
 */
 
+#container { padding-bottom: 450px; }
+#site-footer { height: 405px; }
+
 /*******************************************************************************/
 /*  Single Page Documentation */
 /*******************************************************************************/
