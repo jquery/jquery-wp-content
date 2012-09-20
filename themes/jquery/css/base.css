@@ -232,6 +232,16 @@ hr.dots {
 	padding-bottom: 10px;
 }
 
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
 
 /*******************************************************************************/
 /* Icons */
@@ -2266,6 +2276,23 @@ nav .searchform .icon-search {
 	font-size: 11px;
 	font-color: #666;
 	line-height: 15px;
+}
+
+
+
+.toc-linked {
+	position: relative;
+}
+
+.toc-linked a {
+	position: absolute;
+	left: -1em;
+	text-decoration: none;
+	opacity: 0;
+}
+
+.toc-linked:hover a {
+	opacity: 1;
 }
 
 /*******************************************************************************/
