@@ -168,8 +168,8 @@ demoList.on( "click", "a", function( event ) {
 		demoFrame.attr( "src", filename );
 	});
 
-	$.get( filename ).then(function( content ) {
-		sourceView.text( content );
+	$.get( filename.replace( "demos", "demos-highlight" ) ).then(function( content ) {
+		sourceView.html( content );
 	});
 
 	demoList.find( ".active" ).removeClass( "active" );
