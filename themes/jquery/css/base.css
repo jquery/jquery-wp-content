@@ -2063,7 +2063,20 @@ nav .searchform .icon-search {
 	box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 	position: relative;
 	z-index: 20;
-/*	overflow: hidden;*/
+	overflow: hidden;
+}
+
+#body:before {
+	content: "";
+	position: absolute;
+	height: 100%;
+	background-color: #eee;
+	border-right: 1px solid #cccccc;
+	width: 20.5%;
+	padding: 0 1.5% 0;
+	visibility: visible;
+	z-index: -1;
+	border-radius: 0 0 0 8px;
 }
 
 #container #body .inner { padding: 2%; }
@@ -2158,20 +2171,21 @@ nav .searchform .icon-search {
 		margin-bottom: 30px;
 }
 
-
 #container #body #sidebar {
 	width: 20.5%;
 	position: relative;
 	background: #eeeeee;
 	height: 100%;
 	padding: 0 1.5% 0;
-/*	margin-bottom: -10000px;*/
+/*	margin-bottom: -10000px;
+	padding-bottom: 10000px; */
 }
 
 #container #body #sidebar ul {
 	float: left;
 	display: block;
 }
+
 
 #container #body #sidebar ul.api {
 	-webkit-column-count: 2;
@@ -2325,6 +2339,11 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0, inset rgba(0,0,0,0.5) 0 -3px 5px;
 }
 
+
+/*******************************************************************************/
+/* Sidebar Navigation
+/*******************************************************************************/
+
 #sidebar aside > ul {
 	margin: 0;
 	padding: 0;
@@ -2339,16 +2358,12 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	padding: 0;
 	margin: 0;
 	width: 100%;
+	clear: left;
 }
 
 /* temporarily suppress display of children posts via css */
 #container #body #sidebar aside ul.children {
 	display: none;
-}
-
-#container #body #sidebar aside .current-cat ul.children {
-	display: block;
-	padding-left: 60px;
 }
 
 #sidebar aside > ul li.current_page_item,
@@ -2381,6 +2396,36 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 	width: 96%;
 	padding: 5% 10%;
 	margin: -1px 0 0 -8%;
+}
+
+#sidebar aside > ul a:active {
+	background: #c3c3c3;
+	background: -moz-linear-gradient(top,  #c3c3c3 0%, #e7e7e7 59%, #fcfcfc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3c3c3), color-stop(59%,#e7e7e7), color-stop(100%,#fcfcfc));
+	background: -webkit-linear-gradient(top,  #c3c3c3 0%,#e7e7e7 59%,#fcfcfc 100%);
+	background: -o-linear-gradient(top,  #c3c3c3 0%,#e7e7e7 59%,#fcfcfc 100%);
+	background: -ms-linear-gradient(top,  #c3c3c3 0%,#e7e7e7 59%,#fcfcfc 100%);
+	background: linear-gradient(to bottom,  #c3c3c3 0%,#e7e7e7 59%,#fcfcfc 100%);
+}
+
+/* Display children of current top-level category */
+#container #body #sidebar aside .current-cat-parent ul,
+#container #body #sidebar aside .current-cat ul.children {
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+#container #sidebar .current-cat-parent ul a,
+#container #sidebar .current-cat ul.children a {
+	padding-left: 25%;
+	width: 75%
+}
+#sidebar aside > ul li.current-cat li {
+	border-bottom: 1px solid #c5c5c5;
+}
+#sidebar aside > ul li.current-cat > a {
+	color: #000;
 }
 
 
@@ -2526,7 +2571,9 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 		margin-top: 20px;
 		border-radius: 8px;
 	}
-
+	#body:before {
+		display: none;
+	}
 	#container header nav .searchform {
 		float: none;
 		clear: left;
@@ -2575,12 +2622,11 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 
 	#container #body.sidebar-left #sidebar,
 	#container #body.sidebar-right #sidebar {
-/*		position: relative;*/
+		position: relative;
 		clear: both;
-/*		float: left;*/
 		padding:  0 3% 3%;
 		width: 94%;
-		margin-left: -110%;
+		/*margin-left: -110%;*/
 	}
 
 	#container #body #sidebar hr {
@@ -2593,6 +2639,12 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 		padding: 3%;
 		width: 94%;
 	}
+
+	#container #body #sidebar li a {
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+
 
 	#container #body #sidebar .nav li a {
 		width: 87%;
