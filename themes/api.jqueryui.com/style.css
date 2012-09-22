@@ -3,9 +3,6 @@ Theme Name: api-jqueryui-com
 Template: jquery
 */
 
-#container { padding-bottom: 450px; }
-#site-footer { height: 405px; }
-
 html.jquery-ui, #container {
 	background: #BB6F04 url(../jquery/i/bg-body-ui.jpg) no-repeat center -20px;
 }

@@ -3,9 +3,6 @@ Theme Name: api-qunitjs-com
 Template: jquery
 */
 
-#container { padding-bottom: 380px; }
-#site-footer { height: 335px; }
-
 .inner .entry .section-title {
     -webkit-box-shadow: #004609 0 -1px 0;
     box-shadow: #004609 0 -1px 0;

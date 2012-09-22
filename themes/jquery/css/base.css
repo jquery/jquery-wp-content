@@ -1491,9 +1491,8 @@ header nav.top li.toggle-projects.active a {
 /*******************************************************************************/
 
 #site-footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
-	height: 135px;
 	width: 100%;
 	margin: 30px 0 0 0;
 	padding-bottom: 15px;
@@ -1927,7 +1926,7 @@ header nav.top li.toggle-projects.active a {
 /*******************************************************************************/
 
 #container {
-	padding-bottom: 180px;
+	padding-bottom: 0;
 }
 
 #container header {	}
