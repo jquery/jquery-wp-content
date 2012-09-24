@@ -2066,7 +2066,7 @@ nav .searchform .icon-search {
 	overflow: hidden;
 }
 
-#body:before {
+.sidebar-left:before {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -2571,7 +2571,7 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 		margin-top: 20px;
 		border-radius: 8px;
 	}
-	#body:before {
+	.sidebar-left:before {
 		display: none;
 	}
 	#container header nav .searchform {
