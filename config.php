@@ -64,6 +64,6 @@ if ( JQUERY_STAGING && ! defined( 'XMLRPC_REQUEST' ) )
 
 function jquery_com_staging_urls( $content ) {
 	foreach ( array_keys( jquery_domains() ) as $domain )
-		$content = str_replace( 'http://' . $domain, 'http://' . JQUERY_STAGING_PREFIX . $domain, $content );
+		$content = str_replace( '//' . $domain, '//' . JQUERY_STAGING_PREFIX . $domain, $content );
 	return $content;
 }
