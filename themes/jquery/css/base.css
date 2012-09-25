@@ -1994,6 +1994,7 @@ header nav.top li.toggle-projects.active a {
 	position: relative;
 	font-family: "Lucida Grande", Helvetica, Arial, Sans-serif;
 	border-radius: 2em;
+	background: #fff;
 	line-height: 1em;
 	padding: 4px 31px 4px 15px;
 }
@@ -2024,7 +2025,7 @@ nav .searchform {
 .searchform input {
 	padding: 0;
 	width: 100%;
-	color: #fff;
+	color: #555;
 	border: none;
 	background: none;
 }
