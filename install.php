@@ -47,8 +47,8 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	}
 	update_option( 'fileupload_url', get_option( 'siteurl' ) . '/' . $upload_path );
 
-	foreach ( jquery_domains() as $domain => $details )
-		jquery_install_site( $domain, $user );
+	foreach ( jquery_sites() as $site => $details )
+		jquery_install_site( $site, $user );
 
 	wp_new_blog_notification( $blog_title, $guess_url, $user_id, $message = __( 'The password you chose during the install.' ) );
 	wp_cache_flush();
@@ -56,15 +56,25 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	return array( 'url' => $guess_url, 'user_id' => $user_id, 'password' => $user_password, 'password_message' => $message );
 }
 
-function jquery_install_site( $domain, $user ) {
-	$domains = jquery_domains();
-	$details = $domains[ $domain ];
+function jquery_install_site( $site, $user ) {
+	$sites = jquery_sites();
+	$details = $sites[ $site ];
+
+	if ( strpos( $site, '/' ) ) {
+		list( $domain, $path ) = explode( '/', $site, 2 );
+		$path = '/' . trim( $path, '/' ) . '/';
+	} else {
+		$domain = $site;
+		$path = '/';
+	}
 
 	$default_options = jquery_default_site_options();
 	$default_options['admin_email'] = $user->user_email;
 
+	var_dump( $domain, $path, $site );
+
 	if ( 1 !== $details['blog_id'] ) {
-		$blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, '/', 1 );
+		$blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, $path, 1 );
 		if ( $blog_id != $details['blog_id'] )
 			wp_die( "Something went very wrong when trying to install $domain as site $blog_id-{$details['blog_id']}. Find nacin." );
 
@@ -78,14 +88,6 @@ function jquery_install_site( $domain, $user ) {
 	$options = array_merge( $default_options, $details['options'] );
 	foreach ( $options as $option => $value )
 		update_option( $option, $value );
-
-	// Work around a superficial bug in install_blog(), fixed in WP r21172.
-	$home = get_option( 'home' );
-	$siteurl = get_option( 'siteurl' );
-	update_option( 'home', 'http://example.com' ); // Please just don't ask.
-	update_option( 'siteurl', 'http://example.com' );
-	update_option( 'home', $home );
-	update_option( 'siteurl', $siteurl );
 
 	flush_rewrite_rules();
 	restore_current_blog();

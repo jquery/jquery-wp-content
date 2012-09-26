@@ -1,6 +1,6 @@
 <?php
 
-function jquery_domains() {
+function jquery_sites() {
 	return array( /* blog_id, cookie domain */
 		'jquery.com' => array(
 			'blog_id' => 1,
@@ -67,10 +67,19 @@ function jquery_domains() {
 			),
 		),
 		'api.jqueryui.com' => array(
+			'subsites' => 1, // Has one level of sub-sites (api.jqueryui.com/([^/]+))
 			'blog_id' => 8,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI API Documentation',
+				'stylesheet' => 'api.jqueryui.com',
+			),
+		),
+		'api.jqueryui.com/1.8' => array(
+			'blog_id' => 17,
+			'cookie_domain' => '.jqueryui.com',
+			'options' => array(
+				'blogname' => 'jQuery UI 1.8 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
 			),
 		),

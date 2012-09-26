@@ -35,12 +35,18 @@ if ( isset( $blog_id ) ) {
 					$super_admin = get_user_by( 'login', reset( $super_admins ) );
 				}
 				require ABSPATH . 'wp-admin/includes/upgrade.php';
-				jquery_install_site( str_replace( JQUERY_STAGING_PREFIX, '', $_SERVER['HTTP_HOST'] ), $super_admin );
-				wp_safe_redirect( 'http://' . $_SERVER['HTTP_HOST'] );
+				$sites = jquery_sites();
+				$site = str_replace( JQUERY_STAGING_PREFIX, '', $_SERVER['HTTP_HOST'] );
+				if ( ! empty( $sites[ $site ]['subsites'] ) ) {
+					list( $first_path_segment ) = explode( '/', trim( $_SERVER['REQUEST_URI'], '/' ), 2 );
+					if ( $first_path_segment && isset( $sites[ $site . '/' . $first_path_segment ] ) )
+						$site .= '/' . $first_path_segment;
+				}
+
+				jquery_install_site( $site, $super_admin );
+				wp_safe_redirect( 'http://' . JQUERY_STAGING_PREFIX . $site );
 				exit;
 			} );
 		}
 	}
-	$current_blog->domain = $_SERVER['HTTP_HOST'];
-	$current_blog->path   = '/';
 }

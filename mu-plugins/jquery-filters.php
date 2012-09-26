@@ -6,13 +6,9 @@
 if ( defined( 'WP_INSTALLING' ) )
 	return;
 
-$live_domain = $_SERVER['HTTP_HOST'];
-if ( JQUERY_STAGING )
-        $live_domain = str_replace( JQUERY_STAGING_PREFIX, '', $live_domain );
 $options = jquery_default_site_options();
-$domains = jquery_domains();
-$live_domain = str_replace( JQUERY_STAGING_PREFIX, '', $_SERVER['HTTP_HOST'] );
-$options = array_merge( $options, $domains[ $live_domain ]['options'] );
+$sites = jquery_sites();
+$options = array_merge( $options, $sites[ JQUERY_LIVE_SITE ]['options'] );
 foreach ( $options as $option => $value ) {
 	if ( 'stylesheet' === $option || 'template' === $option )
 		continue; // Don't mess with themes for now.
@@ -22,7 +18,7 @@ foreach ( $options as $option => $value ) {
 		return $null;
 	} );
 }
-unset( $domains, $live_domain, $options, $option, $value );
+unset( $sites, $options, $option );
 
 // Disable WordPress auto-paragraphing for posts.
 remove_filter( 'the_content', 'wpautop' );

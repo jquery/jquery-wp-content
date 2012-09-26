@@ -52,13 +52,20 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
     RewriteBase /
     RewriteRule ^index\.php$ - [L]
 
-    RewriteRule ^files/(.+) wp-includes/ms-files.php?file=$1 [L]
     RewriteRule ^resources/?$ index.php [L]
     RewriteRule ^resources/(.+) gw-resources/%{HTTP_HOST}/$1 [L]
+
+    # Add a trailing slash to the wp-admin of a subsite.
+    RewriteRule ^([_0-9a-zA-Z\.-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 
     RewriteCond %{REQUEST_FILENAME} -f [OR]
     RewriteCond %{REQUEST_FILENAME} -d
     RewriteRule ^ - [L]
+
+    # Handle wp-admin, wp-includes, and root PHP files for subsites.
+    RewriteRule  ^[_0-9a-zA-Z\.-]+/((wp-admin|wp-includes).*) $1 [L]
+    RewriteRule  ^[_0-9a-zA-Z\.-]+/(.*\.php)$ $1 [L]
+
     RewriteRule . index.php [L]
     ```
 
