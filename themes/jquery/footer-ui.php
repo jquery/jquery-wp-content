@@ -39,14 +39,14 @@
       <h3><span>Books</span></h3>
       <ul class="books">
         <li>
-          <a href="#">
+          <a href="http://link.packtpub.com/SHnqUf">
             <span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-1.8.jpg" alt="jQuery UI 1.8: The User Interface Library for jQuery by Dan Wellman" width="92" height="114" /></span>
             <strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br />
             <cite>Dan Wellman</cite>
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="http://link.packtpub.com/PG9pAC">
             <span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-themes.jpg" alt="jQuery UI Themes by Adam Boduch" width="92" height="114" /></span>
             <strong>jQuery UI Themes</strong><br />
             <cite>Adam Boduch</cite>
