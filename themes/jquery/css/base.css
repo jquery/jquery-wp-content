@@ -913,6 +913,7 @@ a:hover {
 	border-radius: 5px 5px 0 0;
 	font-weight: normal;
 	margin-bottom: 0;
+	overflow: hidden;
 }
 
 .returns {
@@ -972,6 +973,7 @@ a:hover {
 .section-title .version-details,
 .name .version-details {
 	float: right;
+	clear: right;
 	font-size: 12px;
 	color: #fff;
 }
