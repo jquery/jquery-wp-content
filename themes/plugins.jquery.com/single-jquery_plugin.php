@@ -17,7 +17,7 @@ get_header(); ?>
 		<div id="body" class="clearfix">
 			<div class="inner" role="main">
 				<?php the_post(); ?>
-				<?php if ( $post->post_parent ) : ?>
+				<?php if ( $post->post_parent && (jq_release_version() !== jq_release_version( $post->post_parent )) ) : ?>
 					<div class="notify">
 						<p><i class="icon-warning-sign"></i>
 						<?php if ( jq_release_is_stable() ) : ?>

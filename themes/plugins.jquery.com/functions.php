@@ -125,8 +125,11 @@ function jq_updated_plugins( $total = 10 ) {
 // version number release of a plugin
 //
 
-function jq_release_manifest() {
-	return json_decode( get_post_meta( get_the_ID(), 'manifest', true ) );
+function jq_release_manifest( $id = null ) {
+	if ( !$id ) {
+		$id = get_the_ID();
+	}
+	return json_decode( get_post_meta( $id, 'manifest', true ) );
 }
 
 function person( $person, $avatar ) {
@@ -164,8 +167,8 @@ function jq_release_date() {
 	return get_the_date();
 }
 
-function jq_release_version() {
-	$pkg = jq_release_manifest();
+function jq_release_version( $id = null ) {
+	$pkg = jq_release_manifest( $id );
 	return $pkg->version;
 }
 
