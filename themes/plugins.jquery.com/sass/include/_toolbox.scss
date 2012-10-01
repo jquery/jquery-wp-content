@@ -1,0 +1,235 @@
+/*----------[ toolbox ]---------------------------------------------------------
+*/
+.jquery_plugin .toolbox {
+	border: 1px solid black;
+	border-radius: 8px;
+	@include box-shadow (0px 0px 5px rgba(0, 0, 0, 0.5));
+	background-color: black;
+}
+
+.jquery_plugin .toolbox > .inner {
+	border: 1px solid #666;
+	border-radius: 8px;
+	background-color: #202020;
+	color: white;
+}
+
+.jquery_plugin .toolbox header {
+	padding: 10px 15px;
+}
+
+.jquery_plugin .toolbox header p {
+	margin: 0;
+}
+
+.jquery_plugin .toolbox header .caption {
+	color: #999;
+	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jquery_plugin .toolbox header .version-info {
+	float: left;
+	width: 30%;
+}
+
+.jquery_plugin .toolbox header .release-info {
+	float: right;
+	width: 70%;
+}/*----------[ toolbox ]---------------------------------------------------------
+*/
+
+.jquery_plugin .toolbox {
+  border: 1px solid black;
+  border-radius: 8px;
+  @include box-shadow (0px 0px 5px rgba(0, 0, 0, 0.5));
+ 
+  background-color: black;
+  > .inner {
+    border: 1px solid #666;
+    border-radius: 8px;
+    background-color: #202020;
+    color: white;
+  }
+  header {
+    padding: 10px 15px;
+    p {
+      margin: 0;
+    }
+    .caption {
+      color: #999;
+      font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    }
+    .version-info {
+      float: left;
+      width: 30%;
+    }
+    .release-info {
+      float: right;
+      width: 70%;
+      text-align: right;
+    }
+    .version-number, .date {
+      font: bold 1.25em / 1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    }
+    .version-number {
+      font-size: 1.9em;
+      letter-spacing: -2px;
+      line-height: .9em;
+    }
+  }
+  .body {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 12px 15px 5px;
+    background: url('images/dark-grey-tile.png');
+  }
+  a.download {
+    display: block;
+    margin-bottom: 1.2em;
+    border-radius: 5px;
+    border: 1px solid black;
+    /*1.25 * 16px = 20px*/
+    /*1.6 * 20px = 32px*/
+    color: white;
+    @include text-shadow (0 -1px #bc7531, 0 1px #dca977);
+    text-decoration: none;
+    font: bold 1.4em / 1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    .inner-wrapper {
+      display: block;
+      border-radius: 5px;
+      border: 1px solid #e1b68c;
+      background: #d18f4f;
+      padding: 0 5px 0 32px;
+    }
+    &:hover .inner-wrapper {
+      background-color: #cc8540;
+    }
+    .inner-wrapper {
+      [class^="icon-"], [class*=" icon-"] {
+        margin-left: -25px;
+        margin-right: 5px;
+        color: #81502e;
+        @include text-shadow( 0 1px #dca977);
+        text-align: center;
+        top: 3px;
+        position: relative;
+      }
+    }
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    margin-left: -25px;
+    margin-right: 7px;
+    width: 25px;
+    color: #8ccffa;
+    text-decoration: none;
+    @include text-shadow( 0 -1px black);
+  }
+  [class^="icon-"]:before, [class*=" icon-"]:before {
+    width: 25px;
+    text-align: center;
+    font-size: 1.2em;
+  }
+  a.other-link {
+    display: block;
+    margin-bottom: 0.8em;
+    background: no-repeat 8px center;
+    color: white;
+    text-decoration: none;
+    font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 32px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.jquery_plugin .toolbox header .release-info {
+	text-align: right;
+}
+
+.jquery_plugin .toolbox header .version-number, .jquery_plugin .toolbox header .date {
+	font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jquery_plugin .toolbox header .version-number {
+	font-size: 1.9em;
+	letter-spacing: -2px;
+	line-height: .9em;
+}
+
+.jquery_plugin .toolbox .body {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 12px 15px 5px;
+	background: url('images/dark-grey-tile.png');
+}
+
+.jquery_plugin .toolbox a.download {
+	display: block;
+	margin-bottom: 1.2em;
+	border-radius: 5px;
+	border: 1px solid black;
+	 /*1.25 * 16px = 20px*/
+	 /*1.6 * 20px = 32px*/
+
+	color: white;
+	@include text-shadow( 0 -1px #bc7531, 0 1px #dca977);
+	text-decoration: none;
+	font: bold 1.4em/1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jquery_plugin .toolbox a.download .inner-wrapper {
+	display: block;
+	border-radius: 5px;
+	border: 1px solid #e1b68c;
+	background: #d18f4f;
+	padding: 0 5px 0 32px;
+}
+
+.jquery_plugin .toolbox a.download:hover .inner-wrapper {
+	background-color: #cc8540;
+}
+
+.jquery_plugin .toolbox a.download .inner-wrapper [class^="icon-"],
+.jquery_plugin .toolbox a.download .inner-wrapper [class*=" icon-"] {
+	margin-left: -25px;
+	margin-right: 5px;
+	color: #81502e;
+	@include text-shadow( 0 1px #dca977);
+	text-align: center;
+	top: 3px;
+	position: relative;
+}
+
+.jquery_plugin .toolbox [class^="icon-"], .jquery_plugin .toolbox [class*=" icon-"] {
+	margin-left: -25px;
+	margin-right: 7px;
+	width: 25px;
+	color: #8ccffa;
+	text-decoration: none;
+	@include text-shadow (0 -1px black);
+}
+
+.jquery_plugin .toolbox [class^="icon-"]:before, .jquery_plugin .toolbox [class*=" icon-"]:before {
+	width: 25px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.jquery_plugin .toolbox a.other-link {
+	display: block;
+	margin-bottom: 0.8em;
+	background: no-repeat 8px center;
+	color: white;
+	text-decoration: none;
+	font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 32px;
+}
+
+.jquery_plugin .toolbox a.other-link:hover {
+	text-decoration: underline;
+}

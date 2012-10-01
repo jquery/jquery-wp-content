@@ -1,806 +1,1073 @@
 /* @override
 	http://stage.plugins.jquery.com/web-base-template/themes/plugins.jquery.com/style.css
 	http://dev.plugins.jquery.com/web-base-template/themes/plugins.jquery.com/style.css */
-
-
 /*
 Theme Name: plugins-jquery-com
 Template: jquery
 */
-
 /*-----[ containers ]-----------------------------------------------------------
 */
+/* line 13, sass/include/_containers.scss */
 .single-jquery_plugin #container #body .inner {
-	padding: 0;
+  padding: 0;
 }
 
-.home #container #body .inner,
-.page #container #body .inner {
-	padding: 2%;
+/* line 17, sass/include/_containers.scss */
+.home #container #body .inner, .page #container #body .inner {
+  padding: 2%;
 }
 
+/* line 21, sass/include/_containers.scss */
 #container #body .inner {
-	padding: 2em 0;
+  padding: 2em 0;
 }
 
+/* line 25, sass/include/_containers.scss */
 .jquery_plugin {
-	padding: 1.6em 1em;
+  padding: 1.6em 1em;
 }
-
+/* line 27, sass/include/_containers.scss */
 .jquery_plugin .block {
-	margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
+}
+/* line 30, sass/include/_containers.scss */
+.jquery_plugin .plugin-metadata {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.jquery_plugin .plugin-metadata,
-#content,
-.sidebar {
-	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+/* line 36, sass/include/_containers.scss */
+#content, .sidebar {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+/* line 41, sass/include/_containers.scss */
 #content {
-	padding: 0.5em 30px 0.5em 30px;
-	width: 68%;
+  padding: 0.5em 30px 0.5em 30px;
+  width: 68%;
 }
-
+/* line 44, sass/include/_containers.scss */
 #content hr {
-	display: block;
-	margin: 2em 0;
-	height: 1em;
-	background: url("images/gauze.png");
-	content: ' ';
-	border: none;
+  display: block;
+  margin: 2em 0;
+  height: 1em;
+  background: url("images/gauze.png");
+  content: ' ';
+  border: none;
 }
 
-.jquery_plugin .plugin-metadata,
-.sidebar {
-	float: right;
-	border-left: 1px;
-	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
-	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
-	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
-	background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: -moz-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
-	width: 320px;
-
+/* line 54, sass/include/_containers.scss */
+.jquery_plugin .plugin-metadata, .sidebar {
+  float: right;
+  border-left: 1px;
+  -moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  -webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
+  -webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  -o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
+  background: -webkit-radial-gradient(#f2f2f2, #ffffff 80%);
+  background: -moz-radial-gradient(#f2f2f2, #ffffff 80%);
+  background: -o-radial-gradient(#f2f2f2, #ffffff 80%);
+  background: radial-gradient(#f2f2f2, #ffffff 80%);
+  padding: 0.5em 20px 0.5em 35px;
+  /*0.5 * 16px = 8px*/
+  -webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  -moz-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  box-shadow: inset 15px 0 5px -16px #e7e7e7;
+  width: 320px;
 }
 
 /*-----[ content ]--------------------------------------------------------------
 */
-
-
+/* line 4, sass/include/_content.scss */
 .notify {
-	background-image: -webkit-gradient(linear, left bottom, left top, from(#eeeaa2), to(#f2efbf));
-	background-image: -moz-linear-gradient(90deg, #eeeaa2 0%, #f2efbf 100%);
-	border-bottom: 1px solid #e4db3e;
-	color: #baa452;
-	text-shadow: 0 1px 0 #ffffff;
-	font-size: 18px;
-	padding: 20px 3.5% 15px;
-	position: relative;
+  background: -webkit-gradient(linear, 0% 100%, 100% 0%, color-stop(0%, #eeeaa2), color-stop(100%, #f2efbf));
+  background: -webkit-linear-gradient(bottom top, #eeeaa2, #f2efbf);
+  background: -moz-linear-gradient(bottom top, #eeeaa2, #f2efbf);
+  background: -o-linear-gradient(bottom top, #eeeaa2, #f2efbf);
+  background: linear-gradient(bottom top, #eeeaa2, #f2efbf);
+  border-bottom: 1px solid #e4db3e;
+  color: #baa452;
+  text-shadow: 0 1px 0 white;
+  font-size: 18px;
+  padding: 20px 3.5% 15px;
+  position: relative;
 }
-
+/* line 13, sass/include/_content.scss */
 .notify a {
-	background-color: #c6b372;
-	color: #edf49f;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
-	padding: 2px 4px;
-	border-radius: 3px;
-	text-decoration: none;
-	margin-left: 5px;
-	margin-right: 2px;
+  background-color: #c6b372;
+  color: #edf49f;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
+  padding: 2px 4px;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 2px;
 }
-
+/* line 23, sass/include/_content.scss */
 .notify p {
-	margin: 0;
-	margin-right: 30px;
-	line-height: .8em;
+  margin: 0;
+  margin-right: 30px;
+  line-height: .8em;
 }
-
+/* line 27, sass/include/_content.scss */
 .notify p i {
-	font-size: 1.9em;
-	margin-right: 5px;
-	position: absolute;
+  font-size: 1.9em;
+  margin-right: 5px;
+  position: absolute;
 }
-
+/* line 33, sass/include/_content.scss */
 .notify a:hover {
-	background-color: #97894f;
-	color: #fff;
+  background-color: #97894f;
+  color: #fff;
 }
-
+/* line 37, sass/include/_content.scss */
 .notify span {
-	margin-left: 40px;
-	display: block;
-	line-height: 24px;
+  margin-left: 40px;
+  display: block;
+  line-height: 24px;
 }
 
-.jquery_plugin h1.entry-title,
+/* line 44, sass/include/_content.scss */
+.jquery_plugin h1.entry-title {
+  margin: 0 0 .25em;
+  /*0.25 * 32px = 8px*/
+  color: #d18f4f;
+}
+
+/* line 50, sass/include/_content.scss */
 h1.page-title {
-	margin: 0 0 .25em; /*0.25 * 32px = 8px*/
-	color: #d18f4f;
+  margin: 0 0 .25em;
+  /*0.25 * 32px = 8px*/
+  color: #d18f4f;
+  margin-bottom: 40px;
 }
 
-h1.page-title {
-	margin-bottom: 40px;
+/* line 59, sass/include/_content.scss */
+.jquery_plugin .block ul, .jquery_plugin .block li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-
-
-
-.jquery_plugin .block ul,
-.jquery_plugin .block li {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+/* line 65, sass/include/_content.scss */
+.jquery_plugin p, .jquery_plugin dl, .jquery_plugin ol, .jquery_plugin ul {
+  margin-bottom: 1.6em;
+  /*1.6 * 15px = 24px*/
 }
-
-.jquery_plugin p,
-.jquery_plugin dl,
-.jquery_plugin ol,
-.jquery_plugin ul,
+/* line 69, sass/include/_content.scss */
 .jquery_plugin table {
-	margin-bottom: 1.6em; /*1.6 * 15px = 24px*/
+  margin-bottom: 1.6em;
+  /*1.6 * 15px = 24px*/
+  border-radius: 8px;
+}
+/* line 74, sass/include/_content.scss */
+.jquery_plugin .attribution {
+  color: #808080;
+  font: 13px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin-top: -5px;
 }
 
-.jquery_plugin table {
-	border-radius: 8px;
-}
-
-.jquery_plugin .attribution,
+/* line 81, sass/include/_content.scss */
 p.info {
-	color: #808080;
-	font: 13px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-top: -5px;
+  color: #808080;
+  font: 13px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  margin-top: -5px;
+  margin-top: 0;
 }
-
-p.info {
-	margin-top: 0;
-}
-
 
 /*----------[ tags ]------------------------------------------------------------
 */
+/* line 92, sass/include/_content.scss */
 .jquery_plugin .tags li {
-	display: inline-block;
-	margin-right: 10px;
-	width: auto;
+  display: inline-block;
+  margin-right: 10px;
+  width: auto;
 }
-
-.jquery_plugin li a.tag[class^="icon-"]:before,
-.jquery_plugin li a.tag[class*=" icon-"]:before {
-
-	width: 20px;
-	text-align: left;
-	color: #8ccffa;
-}
-
+/* line 97, sass/include/_content.scss */
 .jquery_plugin li a.tag {
-	color: white;
-	text-decoration: none;
-	display: block;
-	border-radius: 3px;
-	background-color: #305e91;
-	margin-bottom: 10px;
-	padding: 2px 7px 2px 7px;
-	width: auto;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-radius: 3px;
+  background-color: #305e91;
+  margin-bottom: 10px;
+  padding: 2px 7px 2px 7px;
+  width: auto;
 }
-
+/* line 98, sass/include/_content.scss */
+.jquery_plugin li a.tag[class^="icon-"]:before, .jquery_plugin li a.tag[class*=" icon-"]:before {
+  width: 20px;
+  text-align: left;
+  color: #8ccffa;
+}
+/* line 111, sass/include/_content.scss */
 .jquery_plugin li a.tag:hover {
-	background-color: #333;
+  background-color: #333;
+}
+/* line 115, sass/include/_content.scss */
+.jquery_plugin .versions table {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-style: none;
+  width: 100%;
+}
+/* line 121, sass/include/_content.scss */
+.jquery_plugin .versions table th, .jquery_plugin .versions table td {
+  border: 1px solid #ccc;
+  border-top-style: none;
+  padding: 8px 14px;
+}
+/* line 127, sass/include/_content.scss */
+.jquery_plugin .versions table tbody tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+/* line 131, sass/include/_content.scss */
+.jquery_plugin .versions table tbody tr:last-of-type td.version {
+  border-bottom-left-radius: 8px;
+}
+/* line 134, sass/include/_content.scss */
+.jquery_plugin .versions table tbody tr:last-of-type td.release-date {
+  border-bottom-right-radius: 8px;
+}
+/* line 140, sass/include/_content.scss */
+.jquery_plugin .versions table thead tr {
+  border-radius: 8px 8px 0 0;
+  background: black url("images/dark-grey-tile.png");
+}
+/* line 145, sass/include/_content.scss */
+.jquery_plugin .versions table thead th.version-head {
+  border-top-left-radius: 8px;
+}
+/* line 148, sass/include/_content.scss */
+.jquery_plugin .versions table thead th.release-date-head {
+  border-top-right-radius: 8px;
+}
+/* line 153, sass/include/_content.scss */
+.jquery_plugin .versions table .version {
+  border-right-style: none;
+  font: bold 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  letter-spacing: -1px;
+}
+/* line 158, sass/include/_content.scss */
+.jquery_plugin .versions table .release-date {
+  border-left-style: none;
+  width: 20%;
+}
+/* line 162, sass/include/_content.scss */
+.jquery_plugin .versions table thead th {
+  border-style: none;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  font: bold 12px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*----------[ versions table ]--------------------------------------------------
 */
-.jquery_plugin .versions table {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border-collapse: separate;
-	border-spacing: 0;
-	border-style: none;
-	width: 100%;
-}
-
-.jquery_plugin .versions table th,
-.jquery_plugin .versions table td {
-	border: 1px solid #ccc;
-	border-top-style: none;
-	padding: 8px 14px;
-}
-
-.jquery_plugin .versions table tbody tr:nth-child(even) td {
-	background-color: #f2f2f2;
-}
-
-.jquery_plugin .versions table tbody tr:last-of-type td.version {
-	border-bottom-left-radius: 8px;
-}
-
-.jquery_plugin .versions table tbody tr:last-of-type td.release-date {
-	border-bottom-right-radius: 8px;
-}
-
-.jquery_plugin .versions table thead tr {
-	border-radius: 8px 8px 0 0;
-	background: black url('images/dark-grey-tile.png');
-}
-
-
-
-.jquery_plugin .versions table thead th.version-head {
-	border-top-left-radius: 8px;
-}
-
-.jquery_plugin .versions table thead th.release-date-head {
-	border-top-right-radius: 8px;
-}
-
-.jquery_plugin .versions table .version {
-	border-right-style: none;
-	font: bold 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px;
-}
-
-.jquery_plugin .versions table .release-date {
-	border-left-style: none;
-	width: 20%;
-}
-
-.jquery_plugin .versions table thead th {
-	border-style: none;
-	color: white;
-	text-align: left;
-	text-transform: uppercase;
-	font: bold 12px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-/*----------[ related plugins ]-------------------------------------------------
-*/
+/*----------[ related plugins ]-------------------------------------------------*/
+/* line 5, sass/include/_sidebars.scss */
 .jquery_plugin .related-plugins .box {
-	border-radius: 4px;
-	border: 1px solid #ccc;
-	padding: 16px 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 16px 20px;
 }
-
+/* line 10, sass/include/_sidebars.scss */
 .jquery_plugin .related-plugins h3 {
-	font-size: 18px;
-	line-height: 1.33em;
-	color: #7f7f7f;
+  font-size: 18px;
+  line-height: 1.33em;
+  color: #7f7f7f;
 }
-
+/* line 15, sass/include/_sidebars.scss */
 .jquery_plugin .related-plugins ul {
-	margin-left: 0px;
-	list-style-type: none;
+  margin-left: 0px;
+  list-style-type: none;
 }
-
+/* line 19, sass/include/_sidebars.scss */
 .jquery_plugin .related-plugins li {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	float: left;
-	margin-bottom: 8px;
-	padding-left: 16px;
-	width: 33%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  width: 33%;
+}
+/* line 25, sass/include/_sidebars.scss */
+.jquery_plugin .related-plugins li:before {
+  text-indent: -1.6em;
+  color: #e0e0e0;
+}
+/* line 31, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata li:before {
+  text-indent: -1.6em;
+  color: #e0e0e0;
 }
 
-.jquery_plugin .related-plugins li:before,
-.jquery_plugin .plugin-metadata li:before,
+/* line 37, sass/include/_sidebars.scss */
 .sidebar li:before {
-	text-indent: -1.6em;
-	color: #e0e0e0;
+  text-indent: -1.6em;
+  color: #e0e0e0;
 }
 
-/*----------[ general sidebar styles ]------------------------------------------
-*/
-.jquery_plugin .plugin-metadata .github-activity,
-.jquery_plugin .plugin-metadata .author-info,
-.jquery_plugin .plugin-metadata .maintainer-info,
-.jquery_plugin .plugin-metadata .licenses,
-.jquery_plugin .plugin-metadata .dependencies {
-	color: #7f7f7f;
+/*----------[ general sidebar styles ]------------------------------------------ */
+/* line 45, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata .github-activity, .jquery_plugin .plugin-metadata .author-info, .jquery_plugin .plugin-metadata .maintainer-info, .jquery_plugin .plugin-metadata .licenses, .jquery_plugin .plugin-metadata .dependencies {
+  color: #7f7f7f;
+}
+/* line 48, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata .github-activity h2, .jquery_plugin .plugin-metadata .author-info h2, .jquery_plugin .plugin-metadata .maintainer-info h2, .jquery_plugin .plugin-metadata .licenses h2, .jquery_plugin .plugin-metadata .dependencies h2 {
+  padding-left: 30px;
+  background: no-repeat left center;
+  text-shadow: 0 1px 0 white;
+}
+/* line 53, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata h3 {
+  margin-bottom: 5px;
+  font-size: 1.4em;
+  color: #858585;
 }
 
-.jquery_plugin .plugin-metadata .github-activity h2,
-.jquery_plugin .plugin-metadata .author-info h2,
-.jquery_plugin .plugin-metadata .maintainer-info h2,
-.jquery_plugin .plugin-metadata .licenses h2,
-.jquery_plugin .plugin-metadata .dependencies h2 {
-	padding-left: 30px;
-	background: no-repeat left center;
-	text-shadow: 0 1px 0 white;
-}
-
-.jquery_plugin .plugin-metadata h3,
+/* line 60, sass/include/_sidebars.scss */
 .sidebar h3 {
-	margin-bottom: 5px;
-	font-size: 1.4em;
-	color: #858585;
+  margin-bottom: 5px;
+  font-size: 1.4em;
+  color: #858585;
 }
 
-.jquery_plugin .plugin-metadata h2 [class^="icon-"],
-.jquery_plugin .plugin-metadata h2 [class*=" icon-"],
-.sidebar h2 [class^="icon-"],
-.sidebar h2 [class*=" icon-"] {
-	display: inline-block;
-	margin-left: -30px;
-	margin-right: 6px;
-	width: 24px;
-	background: no-repeat left center;
-	color: #7f7f7f;
-	text-align: center;
-	text-shadow: 0 1px 0 white;
+/* line 67, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata h2 [class^="icon-"], .jquery_plugin .plugin-metadata h2 [class*=" icon-"] {
+  display: inline-block;
+  margin-left: -30px;
+  margin-right: 6px;
+  width: 24px;
+  background: no-repeat left center;
+  color: #7f7f7f;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
 }
 
+/* line 80, sass/include/_sidebars.scss */
+.sidebar h2 [class^="icon-"], .sidebar h2 [class*=" icon-"] {
+  display: inline-block;
+  margin-left: -30px;
+  margin-right: 6px;
+  width: 24px;
+  background: no-repeat left center;
+  color: #7f7f7f;
+  text-align: center;
+  text-shadow: 0 1px 0 white;
+}
+
+/* line 93, sass/include/_sidebars.scss */
 .jquery_plugin .plugin-metadata .github-activity .box {
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	padding: 10px;
-	background-color: white;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
 }
-
+/* line 98, sass/include/_sidebars.scss */
 .jquery_plugin .plugin-metadata .github-activity .box p {
-	margin: 0;
+  margin: 0;
 }
-
+/* line 101, sass/include/_sidebars.scss */
 .jquery_plugin .plugin-metadata .github-activity .box .info-block {
-	display: inline-block;
-	margin-right: 10px;
-	border-radius: 4px;
-	text-align: center;
-	min-width: 80px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+  text-align: center;
+  min-width: 80px;
 }
-
+/* line 107, sass/include/_sidebars.scss */
 .jquery_plugin .plugin-metadata .github-activity .box .info-block .number {
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	background: black url('images/dark-grey-tile.png');
-	padding: 2px 10px;
-	color: white;
-	font: bold 3em/1em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background: black url("images/dark-grey-tile.png");
+  padding: 2px 10px;
+  color: white;
+  font: bold 3em/1em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-
+/* line 115, sass/include/_sidebars.scss */
 .jquery_plugin .plugin-metadata .github-activity .box .info-block .caption {
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	padding: 4px 10px;
-	background-color: #8ccffa;
-	color: white;
-	text-transform: uppercase;
-	font: bold 11px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: 1px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding: 4px 10px;
+  background-color: #8ccffa;
+  color: white;
+  text-transform: uppercase;
+  font: bold 11px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  letter-spacing: 1px;
+}
+/* line 127, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata ul {
+  margin-left: 25px;
+  list-style-type: none;
 }
 
-.jquery_plugin .plugin-metadata ul,
+/* line 133, sass/include/_sidebars.scss */
 .sidebar ul {
-	margin-left: 25px;
-	list-style-type: none;
+  margin-left: 25px;
+  list-style-type: none;
 }
 
-.jquery_plugin .plugin-metadata li,
+/* line 138, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata li {
+  padding-left: 16px;
+  text-shadow: 0 1px 0 white;
+}
+
+/* line 143, sass/include/_sidebars.scss */
 .sidebar li {
-	padding-left: 16px;
-	text-shadow: 0 1px 0 white;
+  padding-left: 16px;
+  text-shadow: 0 1px 0 white;
+  color: #b3b3b3;
+  padding-bottom: 9px;
 }
 
-.sidebar li {
-	color: #b3b3b3;
-	padding-bottom: 9px;
-}
-
-.jquery_plugin .plugin-metadata li.icon-caret-right:before,
-.sidebar li.icon-caret-right:before {
-	font-size: .9em;
+/* line 150, sass/include/_sidebars.scss */
+.jquery_plugin .plugin-metadata li.icon-caret-right:before, .sidebar li.icon-caret-right:before {
+  font-size: .9em;
 }
 
 /*----------[ toolbox ]---------------------------------------------------------
 */
+/* line 3, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox {
-	border: 1px solid black;
-	border-radius: 8px;
-	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	background-color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background-color: black;
 }
 
+/* line 10, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox > .inner {
-	border: 1px solid #666;
-	border-radius: 8px;
-	background-color: #202020;
-	color: white;
+  border: 1px solid #666;
+  border-radius: 8px;
+  background-color: #202020;
+  color: white;
 }
 
+/* line 17, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header {
-	padding: 10px 15px;
+  padding: 10px 15px;
 }
 
+/* line 21, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header p {
-	margin: 0;
+  margin: 0;
 }
 
+/* line 25, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header .caption {
-	color: #999;
-	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  color: #999;
+  font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+/* line 30, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header .version-info {
-	float: left;
-	width: 30%;
+  float: left;
+  width: 30%;
 }
 
+/* line 35, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header .release-info {
-	float: right;
-	width: 70%;
+  float: right;
+  width: 70%;
 }
 
+ /*----------[ toolbox ]---------------------------------------------------------
+*/
+/* line 41, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox {
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background-color: black;
+}
+/* line 47, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox > .inner {
+  border: 1px solid #666;
+  border-radius: 8px;
+  background-color: #202020;
+  color: white;
+}
+/* line 53, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox header {
+  padding: 10px 15px;
+}
+/* line 55, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox header p {
+  margin: 0;
+}
+/* line 58, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox header .caption {
+  color: #999;
+  font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+/* line 62, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox header .version-info {
+  float: left;
+  width: 30%;
+}
+/* line 66, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header .release-info {
-	text-align: right;
+  float: right;
+  width: 70%;
+  text-align: right;
 }
-
+/* line 71, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header .version-number, .jquery_plugin .toolbox header .date {
-	font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-
+/* line 74, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox header .version-number {
-	font-size: 1.9em;
-	letter-spacing: -2px;
-	line-height: .9em;
+  font-size: 1.9em;
+  letter-spacing: -2px;
+  line-height: .9em;
 }
-
+/* line 80, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox .body {
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
-	padding: 12px 15px 5px;
-	background: url('images/dark-grey-tile.png');
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 12px 15px 5px;
+  background: url("images/dark-grey-tile.png");
 }
-
+/* line 86, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox a.download {
-	display: block;
-	margin-bottom: 1.2em;
-	border-radius: 5px;
-	border: 1px solid black;
-	 /*1.25 * 16px = 20px*/
-	 /*1.6 * 20px = 32px*/
-
-	color: white;
-	text-shadow: 0 -1px #bc7531, 0 1px #dca977;
-	text-decoration: none;
-	font: bold 1.4em/1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  display: block;
+  margin-bottom: 1.2em;
+  border-radius: 5px;
+  border: 1px solid black;
+  /*1.25 * 16px = 20px*/
+  /*1.6 * 20px = 32px*/
+  color: white;
+  text-shadow: 0 -1px #bc7531, 0 1px #dca977;
+  text-decoration: none;
+  font: bold 1.4em/1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-
+/* line 97, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox a.download .inner-wrapper {
-	display: block;
-	border-radius: 5px;
-	border: 1px solid #e1b68c;
-	background: #d18f4f;
-	padding: 0 5px 0 32px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #e1b68c;
+  background: #d18f4f;
+  padding: 0 5px 0 32px;
 }
-
+/* line 104, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox a.download:hover .inner-wrapper {
-	background-color: #cc8540;
+  background-color: #cc8540;
+}
+/* line 108, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox a.download .inner-wrapper [class^="icon-"], .jquery_plugin .toolbox a.download .inner-wrapper [class*=" icon-"] {
+  margin-left: -25px;
+  margin-right: 5px;
+  color: #81502e;
+  text-shadow: 0 1px #dca977;
+  text-align: center;
+  top: 3px;
+  position: relative;
+}
+/* line 119, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox [class^="icon-"], .jquery_plugin .toolbox [class*=" icon-"] {
+  margin-left: -25px;
+  margin-right: 7px;
+  width: 25px;
+  color: #8ccffa;
+  text-decoration: none;
+  text-shadow: 0 -1px black;
+}
+/* line 127, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox [class^="icon-"]:before, .jquery_plugin .toolbox [class*=" icon-"]:before {
+  width: 25px;
+  text-align: center;
+  font-size: 1.2em;
+}
+/* line 132, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox a.other-link {
+  display: block;
+  margin-bottom: 0.8em;
+  background: no-repeat 8px center;
+  color: white;
+  text-decoration: none;
+  font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
+}
+/* line 142, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox a.other-link:hover {
+  text-decoration: underline;
 }
 
+/* line 148, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox header .release-info {
+  text-align: right;
+}
+
+/* line 152, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox header .version-number, .jquery_plugin .toolbox header .date {
+  font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* line 156, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox header .version-number {
+  font-size: 1.9em;
+  letter-spacing: -2px;
+  line-height: .9em;
+}
+
+/* line 162, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox .body {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 12px 15px 5px;
+  background: url("images/dark-grey-tile.png");
+}
+
+/* line 169, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox a.download {
+  display: block;
+  margin-bottom: 1.2em;
+  border-radius: 5px;
+  border: 1px solid black;
+  /*1.25 * 16px = 20px*/
+  /*1.6 * 20px = 32px*/
+  color: white;
+  text-shadow: 0 -1px #bc7531, 0 1px #dca977;
+  text-decoration: none;
+  font: bold 1.4em/1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* line 183, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox a.download .inner-wrapper {
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #e1b68c;
+  background: #d18f4f;
+  padding: 0 5px 0 32px;
+}
+
+/* line 191, sass/include/_toolbox.scss */
+.jquery_plugin .toolbox a.download:hover .inner-wrapper {
+  background-color: #cc8540;
+}
+
+/* line 196, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox a.download .inner-wrapper [class^="icon-"],
 .jquery_plugin .toolbox a.download .inner-wrapper [class*=" icon-"] {
-	margin-left: -25px;
-	margin-right: 5px;
-	color: #81502e;
-	text-shadow: 0 1px #dca977;
-	text-align: center;
-	top: 3px;
-	position: relative;
+  margin-left: -25px;
+  margin-right: 5px;
+  color: #81502e;
+  text-shadow: 0 1px #dca977;
+  text-align: center;
+  top: 3px;
+  position: relative;
 }
 
+/* line 206, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox [class^="icon-"], .jquery_plugin .toolbox [class*=" icon-"] {
-	margin-left: -25px;
-	margin-right: 7px;
-	width: 25px;
-	color: #8ccffa;
-	text-decoration: none;
-	text-shadow: 0 -1px black;
+  margin-left: -25px;
+  margin-right: 7px;
+  width: 25px;
+  color: #8ccffa;
+  text-decoration: none;
+  text-shadow: 0 -1px black;
 }
 
+/* line 215, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox [class^="icon-"]:before, .jquery_plugin .toolbox [class*=" icon-"]:before {
-	width: 25px;
-	text-align: center;
-	font-size: 1.2em;
+  width: 25px;
+  text-align: center;
+  font-size: 1.2em;
 }
 
+/* line 221, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox a.other-link {
-	display: block;
-	margin-bottom: 0.8em;
-	background: no-repeat 8px center;
-	color: white;
-	text-decoration: none;
-	font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: 32px;
+  display: block;
+  margin-bottom: 0.8em;
+  background: no-repeat 8px center;
+  color: white;
+  text-decoration: none;
+  font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 32px;
 }
 
+/* line 233, sass/include/_toolbox.scss */
 .jquery_plugin .toolbox a.other-link:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*----------[ Home ]--------------------------------------------------------*/
-
+/* line 4, sass/include/_home.scss */
 .home .sidebar {
-	width: 25%
+  width: 25%;
 }
-
+/* line 6, sass/include/_home.scss */
 .home .sidebar.left {
-	left: 0px;
-	position: absolute;
+  left: 0px;
+  position: absolute;
 }
-
+/* line 12, sass/include/_home.scss */
+.home .glow .searchform {
+  padding: 0;
+}
+/* line 14, sass/include/_home.scss */
+.home .glow .searchform input {
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  border-radius: 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  padding: 4px 13px;
+  display: block;
+  -webkit-transition: box-shadow 0.3s ease-in;
+  -moz-transition: box-shadow 0.3s ease-in;
+  -o-transition: box-shadow 0.3s ease-in;
+  transition: box-shadow 0.3s ease-in;
+}
+/* line 21, sass/include/_home.scss */
+.home .glow .searchform input::-webkit-input-placeholder {
+  color: #E6E6E6;
+}
+/* line 24, sass/include/_home.scss */
+.home .glow .searchform input:-moz-placeholder {
+  color: #E6E6E6;
+}
+/* line 27, sass/include/_home.scss */
+.home .glow .searchform input:focus {
+  -webkit-box-shadow: 0 0 15px #0c9dd6;
+  -moz-box-shadow: 0 0 15px #0c9dd6;
+  box-shadow: 0 0 15px #0c9dd6;
+}
+/* line 35, sass/include/_home.scss */
 .home #content {
-	position: relative;
-	margin-left: 27%;
-	width: 46%;
-	float: left;
-	margin-bottom: 30px;
-
+  position: relative;
+  margin-left: 27%;
+  width: 46%;
+  float: left;
+  margin-bottom: 30px;
 }
-
+/* line 43, sass/include/_home.scss */
 .home .sidebar ul {
-	margin-left: 25px;
+  margin-left: 25px;
 }
-
+/* line 46, sass/include/_home.scss */
 .home .sidebar li {
-	color: #b3b3b3;
-	padding-bottom: 7px;
+  color: #b3b3b3;
+  padding-bottom: 7px;
 }
-
+/* line 49, sass/include/_home.scss */
 .home .sidebar li.icon-caret-right:before {
-	font-size: 10px;
-	color: #ccc;
+  font-size: 10px;
+  color: #ccc;
 }
-
+/* line 55, sass/include/_home.scss */
 .home #content h3 {
-	font-size: 32px;
-	text-align: center;
-	color: #e18d3b;
-	margin-bottom: 30px;
+  font-size: 32px;
+  text-align: center;
+  color: #e18d3b;
+  margin-bottom: 30px;
 }
 
+/* line 63, sass/include/_home.scss */
 #content article {
-	border-bottom: 1px solid #ccc;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
+/* line 69, sass/include/_home.scss */
 .plugin-title {
-	font-size: 20px;
-	line-height: 20px;
-	color: #333;
-	margin-bottom: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #333;
+  margin-bottom: 5px;
 }
-
+/* line 74, sass/include/_home.scss */
 .plugin-title a {
-	color: #333;
-	text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
+/* line 81, sass/include/_home.scss */
 #content article p {
-	float: left;
-	width: 70%;
+  float: left;
+  width: 70%;
 }
-
+/* line 85, sass/include/_home.scss */
 #content article .action {
-	float: right;
-	width: 25%;
-	margin-left: 5%;
+  float: right;
+  width: 25%;
+  margin-left: 5%;
 }
 
+/* line 93, sass/include/_home.scss */
 .home #content article .action p.date {
-	color: #999;
-	font-size: 11px;
-	line-height: 11px;
-	text-align: center;
-	width: 100%;
+  color: #999;
+  font-size: 11px;
+  line-height: 11px;
+  text-align: center;
+  width: 100%;
+}
+/* line 100, sass/include/_home.scss */
+.home #content a.button {
+  margin-bottom: 5px;
+  float: left;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
 }
 
-.home #content a.button,
+/* line 110, sass/include/_home.scss */
 #content article a.button {
-	margin-bottom: 5px;
-	float: left;
-	width: 90%;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: center;
+  margin-bottom: 5px;
+  float: left;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
 }
-
-
-
 
 /*----------[ Pagination ]----------------------------------------------------*/
-
+/* line 4, sass/include/_nav.scss */
 .nav-previous {
-	float: left;
-	width: 45%;
+  float: left;
+  width: 45%;
 }
 
+/* line 9, sass/include/_nav.scss */
 .nav-next {
-	float: right;
-	text-align: right;
-	width: 45%;
+  float: right;
+  text-align: right;
+  width: 45%;
 }
 
 /*----------[ IE hacks ]------------------------------------------------------*/
-
+/* line 4, sass/include/_iehacks.scss */
 .lte9 .jquery_plugin h1.entry-title {
-	background: transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background: transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
-
+/* line 8, sass/include/_iehacks.scss */
 .lte9 .jquery_plugin .tags li a {
-	height: 24px;
+  height: 24px;
 }
-
-
 
 @media all and (max-width: 1100px) {
-
-	.jquery_plugin .plugin-metadata,
-	.sidebar {
-		width: 280px;
-	}
-
+  /* line 2, sass/include/_responsive.scss */
+  .jquery_plugin .plugin-metadata, .sidebar {
+    width: 280px;
+  }
 }
-
 @media all and (max-width: 1000px) {
+  /* line 8, sass/include/_responsive.scss */
+  #content {
+    width: 65%;
+  }
 
-	#content {
-		width: 65%;
-	}
-
-	.home #content {
-		width: 65%;
-		margin-left: 3%;
-	}
-
-	.home .sidebar.left {
-		position: relative;
-		float: right;
-	}
+  /* line 12, sass/include/_responsive.scss */
+  .home #content {
+    width: 65%;
+    margin-left: 3%;
+  }
+  /* line 16, sass/include/_responsive.scss */
+  .home .sidebar.left {
+    position: relative;
+    float: right;
+  }
 }
-
 @media all and (max-width: 900px) {
-
-	#content {
-		width: 60%;
-	}
-
+  /* line 24, sass/include/_responsive.scss */
+  #content {
+    width: 60%;
+  }
 }
-
 @media all and (max-width: 768px) {
+  /* line 30, sass/include/_responsive.scss */
+  .jquery_plugin .plugin-metadata {
+    width: 100%;
+    padding: 0;
+    clear: both;
+    float: none;
+    border-left: none;
+    -moz-border-image: none;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    position: relative;
+    margin-bottom: 20px;
+  }
 
-	.jquery_plugin .plugin-metadata,
-	.home .sidebar,
-	.home .sidebar.left,
-	.sidebar,
-	#content {
-		width: 100%;
-		padding: 0;
-		clear: both;
-		float: none;
-		border-left: none;
-		-moz-border-image: none;
-		-webkit-border-image: none;
-		-webkit-border-image: none;
-		-o-border-image: none;
-		border-image: none;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		position: relative;
-		margin-bottom: 20px;
-	}
+  /* line 46, sass/include/_responsive.scss */
+  .home .sidebar {
+    width: 100%;
+    padding: 0;
+    clear: both;
+    float: none;
+    border-left: none;
+    -moz-border-image: none;
+    -webkit-border-image: none;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  /* line 62, sass/include/_responsive.scss */
+  .home .sidebar.left {
+    width: 100%;
+    padding: 0;
+    clear: both;
+    float: none;
+    border-left: none;
+    -moz-border-image: none;
+    -webkit-border-image: none;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    position: relative;
+    margin-bottom: 20px;
+  }
 
-	.home #content {
-		width: 100%;
-		margin: 0;
-		padding-left: 5%;
-		padding-right: 5%;
-		margin-bottom: 30px;
-	}
+  /* line 81, sass/include/_responsive.scss */
+  .sidebar, #content {
+    width: 100%;
+    padding: 0;
+    clear: both;
+    float: none;
+    border-left: none;
+    -moz-border-image: none;
+    -webkit-border-image: none;
+    -o-border-image: none;
+    border-image: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    position: relative;
+    margin-bottom: 20px;
+  }
 
-	.home .sidebar.left {
-		float: left;
-		width: 45%;
-		clear: none;
-		margin-left: 5%;
-	}
+  /* line 99, sass/include/_responsive.scss */
+  .home #content {
+    width: 100%;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 30px;
+  }
+  /* line 107, sass/include/_responsive.scss */
+  .home .sidebar.left {
+    float: left;
+    width: 45%;
+    clear: none;
+    margin-left: 5%;
+  }
+  /* line 113, sass/include/_responsive.scss */
+  .home .sidebar.right {
+    float: right;
+    width: 45%;
+    clear: none;
+    margin-right: 5%;
+  }
 
-	.home .sidebar.right {
-		float: right;
-		width: 45%;
-		clear: none;
-		margin-right: 5%;
-	}
-
-	#container #body .inner {
-		padding-left: 1.2em;
-		padding-right: 1.2em;
-	}
-
+  /* line 121, sass/include/_responsive.scss */
+  #container #body .inner {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+  }
 }
-
 @media all and (max-width: 660px) {
+  /* line 129, sass/include/_responsive.scss */
+  #banner h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  /* line 133, sass/include/_responsive.scss */
+  #banner h2 {
+    font-size: 40px;
+    line-height: 35px;
+  }
 
-	#banner h1 {
-		font-size: 60px;
-		line-height: 60px;
-	}
-
-	#banner h2 {
-		font-size: 40px;
-		line-height: 35px;
-	}
-
-	.notify p {
-		font-size: .8em;
-		line-height: .7em;
-	}
-
-	.notify p i {
-		font-size: 1.8em;
-	}
-
-	.notify a.close {
-		font-size: 1em;
-	}
+  /* line 139, sass/include/_responsive.scss */
+  .notify p {
+    font-size: .8em;
+    line-height: .7em;
+  }
+  /* line 142, sass/include/_responsive.scss */
+  .notify p i {
+    font-size: 1.8em;
+  }
+  /* line 146, sass/include/_responsive.scss */
+  .notify a.close {
+    font-size: 1em;
+  }
 }
-
 @media all and (max-width: 480px) {
+  /* line 153, sass/include/_responsive.scss */
+  #banner h1 {
+    font-size: 43px;
+    line-height: 43px;
+  }
 
-	#banner h1 {
-		font-size: 43px;
-		line-height: 43px;
-	}
+  /* line 158, sass/include/_responsive.scss */
+  .home .sidebar.left, .home .sidebar.right {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-	.home .sidebar.left,
-	.home .sidebar.right {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
+  /* line 164, sass/include/_responsive.scss */
+  #content article {
+    text-align: center;
+  }
+  /* line 165, sass/include/_responsive.scss */
+  #content article p {
+    width: 100%;
+  }
+  /* line 169, sass/include/_responsive.scss */
+  #content article .action {
+    float: none;
+    clear: both;
+    width: 90%;
+  }
 
-	#content article p {
-		width: 100%;
-	}
+  /* line 175, sass/include/_responsive.scss */
+  .home #content article .action a.button {
+    width: 90%;
+  }
 
-	#content article {
-		text-align: center;
-	}
-
-	#content article .action {
-		float: none;
-		clear: both;
-		width: 90%;
-	}
-
-	.home #content article .action a.button {
-		width: 90%;
-	}
-
-	#content h1.page-title {
-		text-align: center;
-	}
+  /* line 178, sass/include/_responsive.scss */
+  #content h1.page-title {
+    text-align: center;
+  }
 }

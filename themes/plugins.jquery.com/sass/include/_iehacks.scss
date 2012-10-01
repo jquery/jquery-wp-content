@@ -1,0 +1,11 @@
+/*----------[ IE hacks ]------------------------------------------------------*/
+
+.lte9 .jquery_plugin {
+  h1.entry-title {
+    background: transparent;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  }
+  .tags li a {
+    height: 24px;
+  }
+}
