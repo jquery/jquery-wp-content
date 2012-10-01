@@ -1,0 +1,117 @@
+/*----------[ Home ]--------------------------------------------------------*/
+
+.home {
+  .sidebar {
+	width: 25%;
+	&.left {
+	  left: 0px;
+	  position: absolute;
+	}
+  }
+  .glow {
+	.searchform {
+	  padding: 0;
+	  input {
+	    @include border-radius (2em);
+	    @include box-sizing(border-box);
+	    color: white;
+	    padding:4px 13px;
+	    display:block;
+	    @include transition(box-shadow 0.3s ease-in);
+	    &::-webkit-input-placeholder {
+		  color: #E6E6E6;
+	    }
+	    &:-moz-placeholder {
+		  color: #E6E6E6;
+	    }
+	    &:focus {
+		  @include box-shadow(0 0 15px #0c9dd6);
+	    }
+	  }
+    }
+  }
+  
+  
+  #content {
+	position: relative;
+	margin-left: 27%;
+	width: 46%;
+	float: left;
+	margin-bottom: 30px;
+  }
+  .sidebar {
+	ul {
+	  margin-left: 25px;
+	}
+	li {
+	  color: #b3b3b3;
+	  padding-bottom: 7px;
+	  &.icon-caret-right:before {
+		font-size: 10px;
+		color: #ccc;
+	  }
+	}
+  }
+  #content h3 {
+	font-size: 32px;
+	text-align: center;
+	color: #e18d3b;
+	margin-bottom: 30px;
+  }
+}
+
+#content article {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.plugin-title {
+  font-size: 20px;
+  line-height: 20px;
+  color: #333;
+  margin-bottom: 5px;
+  a {
+	color: #333;
+	text-decoration: none;
+  }
+}
+
+#content article {
+  p {
+	float: left;
+	width: 70%;
+  }
+  .action {
+	float: right;
+	width: 25%;
+	margin-left: 5%;
+  }
+}
+
+.home #content {
+  article .action p.date {
+	color: #999;
+	font-size: 11px;
+	line-height: 11px;
+	text-align: center;
+	width: 100%;
+  }
+  a.button {
+	margin-bottom: 5px;
+	float: left;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+  }
+}
+
+#content article a.button {
+  margin-bottom: 5px;
+  float: left;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
