@@ -5,7 +5,8 @@
  */
 
 if ( ! defined( 'GW_RESOURCE_DIR' ) )
-	define( 'GW_RESOURCE_DIR', dirname( WP_CONTENT_DIR ) . '/gw-resources/' . $_SERVER['HTTP_HOST'] );
+	define( 'GW_RESOURCE_DIR', dirname( WP_CONTENT_DIR ) . '/gw-resources/' .
+		preg_replace( '/^\w+:\/\//', '', home_url() ) );
 
 function gw_get_version( $args ) {
 	global $wp_xmlrpc_server;
