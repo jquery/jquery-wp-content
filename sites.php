@@ -73,6 +73,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI API Documentation',
 				'stylesheet' => 'api.jqueryui.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'api.jqueryui.com/1.8' => array(
