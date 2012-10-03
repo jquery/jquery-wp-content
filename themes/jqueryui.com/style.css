@@ -64,7 +64,7 @@ a:hover {
 }
 
 #banner .download-box h2 {
-	font-size: 40px;
+	font: bold 23px/23px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .download-box .btn {
