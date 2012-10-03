@@ -12,20 +12,20 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN <em>CSS</em></strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/themes/base/jquery-ui.css">
+        <input value="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        <input value="http://code.jquery.com/jquery-1.8.2.js">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.19/jquery-ui.min.js">
+        <input value="http://code.jquery.com/ui/1.9.0/jquery-ui.js">
       </div>
       <div class="download">
-        <strong>Download jQuery UI 1.8.19 (for jQuery 1.3.2+):</strong>
-        <span><a href="http://jqueryui.com/download/jquery-ui-1.8.21.custom.zip">Development Bundle</a>
-        <a href="http://jqueryui.com/download#stable-themes">Themes</a>
+        <div><strong>Download jQuery UI 1.9.0 (for jQuery 1.6+):</strong></div>
+        <span><a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-1.9.0.zip">Development Bundle</a>
+        <a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-themes-1.9.0.zip">Themes</a>
         <a href="http://jqueryui.com/download">Download Builder →</a></span>
       </div>
       <ul class="footer-icon-links">
