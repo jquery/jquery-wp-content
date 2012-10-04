@@ -16,3 +16,5 @@ add_filter( 'the_content', function( $content ) use ( $subsite ) {
 	$content = preg_replace( '~(href|src)=(["\'])/(?!\d+\.\d+/)~', '$1=$2/' . $subsite . '/', $content );
 	return $content;
 } );
+
+unset( $subsite );
