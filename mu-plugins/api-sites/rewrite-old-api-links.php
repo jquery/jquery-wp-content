@@ -12,9 +12,12 @@ if ( false === strpos( JQUERY_LIVE_SITE, '/' ) )
 
 list( , $subsite ) = explode( '/', JQUERY_LIVE_SITE, 2 );
 
-add_filter( 'the_content', function( $content ) use ( $subsite ) {
+$callback = function( $content ) use ( $subsite ) {
 	$content = preg_replace( '~(href|src)=(["\'])/(?!\d+\.\d+/)~', '$1=$2/' . $subsite . '/', $content );
 	return $content;
-} );
+};
 
-unset( $subsite );
+add_filter( 'the_content',          $callback );
+add_filter( 'category_description', $callback );
+
+unset( $subsite, $callback );
