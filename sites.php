@@ -180,7 +180,6 @@ function jquery_sites() {
 			return 1;
 		return -1;
 	} );
-	var_dump( $sites );
 	return $sites;
 }
 
