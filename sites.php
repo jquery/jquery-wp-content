@@ -1,7 +1,11 @@
 <?php
 
 function jquery_sites() {
-	return array( /* blog_id, cookie domain */
+	static $sites;
+	if ( isset( $sites ) )
+		return $sites;
+
+	$sites = array( /* blog_id, cookie domain */
 		'jquery.com' => array(
 			'blog_id' => 1,
 			'cookie_domain' => '.jquery.com',
@@ -19,8 +23,7 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Blog',
 				'stylesheet' => 'blog-jquery-com',
-        // http://codex.wordpress.org/Using_Permalinks#Using_.25category.25_with_multiple_categories_on_a_post
-        // 'permalink_structure' => '/%category%/%postname%/',
+			//	'permalink_structure' => '/%category%/%postname%/',
 			),
 		),
 		'api.jquery.com' => array(
@@ -169,6 +172,16 @@ function jquery_sites() {
 			),
 		),
 	);
+
+	uasort( $sites, function( $a, $b ) {
+		if ( $a['blog_id'] == $b['blog_id'] )
+			die( 'Two sites have the same blog_id. Blame nacin?' );
+		if ( $a['blog_id'] > $b['blog_id'] )
+			return 1;
+		return -1;
+	} );
+	var_dump( $sites );
+	return $sites;
 }
 
 function jquery_default_site_options() {
