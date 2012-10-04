@@ -10,8 +10,12 @@
     <div class="col3-2 col">
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
-        <strong>CDN</strong>
-        <span>http://code.jquery.com/qunit/qunit-git.js</span>
+        <strong>CDN <em>CSS</em></strong>
+        <input value="//code.jquery.com/qunit/qunit-1.10.0.css">
+      </div>
+      <div class="cdn">
+        <strong>CDN <em>JS</em></strong>
+        <input value="//code.jquery.com/qunit/qunit-1.10.0.js">
       </div>
       <div class="download">
         <strong>Download QUnit 1.10.0:</strong>
