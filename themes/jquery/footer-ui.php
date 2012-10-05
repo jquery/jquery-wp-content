@@ -26,7 +26,7 @@
         <div><strong>Download jQuery UI 1.9.0 (for jQuery 1.6+):</strong></div>
         <span><a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-1.9.0.zip">Development Bundle</a>
         <a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-themes-1.9.0.zip">Themes</a>
-        <a href="http://jqueryui.com/download">Download Builder →</a></span>
+        <a href="http://jqueryui.com/download/">Download Builder →</a></span>
       </div>
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery-ui">GitHub <small>jQuery UI <br>Source</small></a></li>
