@@ -42,6 +42,11 @@ add_filter( 'upload_mimes', function( $mimes ) {
 	return $mimes;
 } );
 
+// Increase file size limit to 1GB
+add_filter( 'pre_site_option_fileupload_maxk', function() {
+	return 1024 * 1024;
+} );
+
 // Allow full HTML in term descriptions.
 add_action( 'init', 'jquery_unfiltered_html_for_term_descriptions' );
 add_action( 'set_current_user', 'jquery_unfiltered_html_for_term_descriptions' );
