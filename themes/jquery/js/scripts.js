@@ -158,7 +158,7 @@ $( ".entry-example" ).each(function() {
 demoList.on( "click", "a", function( event ) {
 	event.preventDefault();
 
-	var filename = event.target.pathname,
+	var filename = "/" + event.target.pathname.replace( /^\//, "" ),
 		parts = filename.split( "/" ),
 		plugin = parts[ 3 ],
 		demo = parts[ 4 ].substring( 0, parts[ 4 ].length - 5 );
