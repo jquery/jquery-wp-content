@@ -7,7 +7,7 @@ var demoFrame = $( ".demo-frame" ),
 	demoDescription = $( ".demo-description" ),
 	sourceView = $( ".view-source pre" ),
 	demoList = $( ".demo-list" ),
-	currentDemo = location.hash.substr( 1 );
+	currentDemo = location.hash.substring( 1 );
 
 
 // project toggle
@@ -161,7 +161,7 @@ demoList.on( "click", "a", function( event ) {
 	var filename = event.target.pathname,
 		parts = filename.split( "/" ),
 		plugin = parts[ 3 ],
-		demo = parts[ 4 ].substr( 0, parts[ 4 ].length - 5 );
+		demo = parts[ 4 ].substring( 0, parts[ 4 ].length - 5 );
 
 	$.getJSON( "/resources/demos/demo-list.json" ).then(function( demoList ) {
 		demoDescription.html( demoList[ plugin ][ demo ].description );
