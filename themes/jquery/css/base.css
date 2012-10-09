@@ -2685,6 +2685,7 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 
 	header nav.top li a { font-size: 0.85em; }
 
+	#site-footer .download > span { white-space: normal }
 }
 
 @media all and (max-width: 320px) {
