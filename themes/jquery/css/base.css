@@ -706,6 +706,7 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a {
 	border-radius: 3px;
 	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
 	background: -moz-linear-gradient(top,  #e5e5e5,  #d5d5d5);
+	background: -o-linear-gradient(top,  #e5e5e5,  #d5d5d5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5');
 }
 
@@ -713,6 +714,7 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a {
 	text-shadow: 0 -1px 1px #fff;
 	background: -webkit-gradient(linear, left top, left bottom, from(#d5d5d5), to(#e5e5e5));
 	background: -moz-linear-gradient(top,  #d5d5d5,  #e5e5e5);
+	background: -o-linear-gradient(top,  #d5d5d5,  #e5e5e5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d5d5d5', endColorstr='#e5e5e5');
 }
 
@@ -721,6 +723,7 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a {
 	text-shadow: 0 -1px 1px #000;
 	background: -webkit-gradient(linear, left top, left bottom, from(#3492d5), to(#065791));
 	background: -moz-linear-gradient(top,  #3492d5,  #065791);
+	background: -o-linear-gradient(top,  #3492d5,  #065791);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3492d5', endColorstr='#065791');
 	border-color: #065791;
 }
@@ -729,6 +732,7 @@ h1.title a, h1.entry-title a, h2.title a, h2.entry-title a {
 	text-shadow: 0 1px 1px #000;
 	background: -webkit-gradient(linear, left top, left bottom, from(#065791), to(#3492d5));
 	background: -moz-linear-gradient(top,  #065791,  #3492d5);
+	background: -o-linear-gradient(top,  #065791,  #3492d5);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#065791', endColorstr='#3492d5');
 }
 
@@ -1539,6 +1543,7 @@ header nav.top li.toggle-projects.active a {
 	font-weight: normal;
 	background-color: #7a7a7a;
 	background-image: -moz-linear-gradient(top, #7a7a7a, #5e5e5e); /* FF3.6 */
+	background-image: -o-linear-gradient(top, #7a7a7a, #5e5e5e); /* Opera 12.0 */
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #7a7a7a),color-stop(1, #5e5e5e)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(#7a7a7a, #5e5e5e); /* Chrome 10+, Saf6 */
 	background-image: linear-gradient(top, #7a7a7a, #5e5e5e);
