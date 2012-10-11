@@ -115,30 +115,35 @@ a:hover {
 	width: 25%;
 }
 
+.demo-list h2 {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
 .demo-list ul {
 	width: 100%;
 	list-style: none;
-	border-top: 1px solid #333;
+	border-top: 1px solid #ccc;
 }
 
 .demo-list li {
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid #ccc;
 	margin: 0;
-	background-color: #ddd;
+	background-color: #eee;
 }
 
 .demo-list .active {
 	background-color: #fff;
 }
 
-.demo-list .active a {
-	color: #333;
-}
-
 .demo-list a {
 	text-decoration: none;
 	display: block;
-	padding: .2em .5em;
+	font-weight: bold;
+	font-size: 13px;
+	color: #3f3f3f;
+	text-shadow: 1px 1px #fff;
+	padding: 2% 4%;
 }
 
 .demo-frame {

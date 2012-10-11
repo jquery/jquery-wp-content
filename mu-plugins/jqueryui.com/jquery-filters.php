@@ -16,7 +16,7 @@ add_filter( 'the_content', function( $content ) {
 	$demoContent .=
 		'<div class="demo-list">' .
 			'<h2>Examples</h2>' .
-			'<ul class="demo-list">';
+			'<ul>';
 	foreach ( $demoList->$plugin as $filename => $demo ) {
 		$demoContent .=
 			($filename === 'default' ? '<li class="active">' : '<li>') .
