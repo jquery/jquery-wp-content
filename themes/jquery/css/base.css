@@ -2238,7 +2238,7 @@ nav .searchform .icon-search {
 }
 
 #container #body #sidebar h2, #container #body #sidebar h3.widget-title {
-	margin: 10px 0;
+	margin: 25px 0 10px 0;
 	font-size: 20px;
 	text-shadow: 0 1px 1px #fff;
 }
