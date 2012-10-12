@@ -2009,7 +2009,7 @@ header nav.top li.toggle-projects.active a {
 nav .searchform {
 	float: right;
 	margin: 8px 10px 0 0;
-	width: 22%;
+	width: 19%;
 	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 	        box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 }
