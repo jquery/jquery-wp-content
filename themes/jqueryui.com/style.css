@@ -159,3 +159,18 @@ a:hover {
 	overflow: hidden;
 	display: none;
 }
+
+@media all and (max-width: 600px) {
+	.intro, .download-box {
+		float: none;
+		width: auto;
+	}
+
+	.intro {
+		font-size: 18px;
+	}
+
+	.download-box {
+		overflow: auto;
+	}
+}
