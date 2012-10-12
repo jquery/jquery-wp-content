@@ -7,5 +7,6 @@
     <li class="menu-item"><a href="http://jqueryui.com/development">Development</a></li>
     <li class="menu-item"><a href="http://jqueryui.com/support">Support</a></li>
     <li class="menu-item"><a href="http://blog.jqueryui.com/">Blog</a></li>
+    <li class="menu-item"><a href="http://jqueryui.com/about">About</a></li>
   </ul>
 </div>
