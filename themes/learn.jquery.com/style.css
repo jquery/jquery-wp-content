@@ -63,3 +63,25 @@ Template: jquery
 #body .inner .icon-github {
         color:#30b9f8;
 }
+#body .inner .bottom-links {
+        background:lightGray;
+        overflow:auto;
+        padding:0px 20px;
+        clear:left;
+}
+#body .inner .bottom-links i{
+}
+#body .inner .bottom-links a{
+        text-decoration:none;
+}
+#body .inner .bottom-links .prev, #body .inner .bottom-links .next  {
+        color:gray;
+        font-size:1.5em;
+        line-height:2em;
+}
+#body .inner .bottom-links .prev {
+        float:left;
+}
+#body .inner .bottom-links .next  {
+        float:right;
+}
