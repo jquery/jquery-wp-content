@@ -56,3 +56,6 @@ function jquery_unfiltered_html_for_term_descriptions() {
 	if ( ! current_user_can( 'unfiltered_html' ) )
 		add_filter( 'pre_term_description', 'wp_filter_post_kses' );
 }
+
+// Bypass multisite checks.
+add_filter( 'ms_site_check', '__return_true' );
