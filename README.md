@@ -68,6 +68,12 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
 
     RewriteRule . index.php [L]
     ```
+1. Make sure that you have assigned your WordPress files and directories the correct permissions.  
+For example, if your WordPress files are in the directory ```wordpress```, and you are running Apache under Mac OS X with the ```_www``` user:
+    ```
+    sudo chown -R _www wordpress
+    sudo chmod -R g+w wordpress
+    ```
 
 1. Go to `http://dev.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
 
