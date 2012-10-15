@@ -96,4 +96,22 @@ function jq_page_links_for_category( $category ) {
 	return $ret;
 }
 
+function jq_get_github_url() {
+    $url = $_SERVER['REQUEST_URI'];
+    $path = parse_url($url)['path'];
+    $github_prefix = 'https://github.com/jquery/'.get_stylesheet().'/tree/master/page';
+
+    return $github_prefix . str_lreplace('/','.md', $path);
+}
+
+function str_lreplace($search, $replace, $subject) {
+    $pos = strrpos($subject, $search);
+
+    if($pos !== false) {
+        $subject = substr_replace($subject, $replace, $pos, strlen($search));
+    }
+
+    return $subject;
+}
+
 ?>

@@ -59,3 +59,7 @@ Template: jquery
 	letter-spacing: 0;
 	margin: 4px 0 0 0;
 }
+
+#body .inner .icon-github {
+        color:#30b9f8;
+}

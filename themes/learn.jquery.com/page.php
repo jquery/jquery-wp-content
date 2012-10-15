@@ -11,7 +11,9 @@
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php comments_template( '', true ); ?>
-	       
+				<h2>Suggestions, Problems, Feedback</h2>
+				<a class="btn" href="<?php echo jq_get_github_url(); ?>"><i class="icon-github"></i>  Open an Issue or Submit a Pull Request on GitHub</a>
+
     </div>
     <!-- /inner -->
     
