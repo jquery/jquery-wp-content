@@ -59,3 +59,12 @@ function jquery_unfiltered_html_for_term_descriptions() {
 
 // Bypass multisite checks.
 add_filter( 'ms_site_check', '__return_true' );
+
+// Add body classes found in postmeta.
+add_filter( 'body_class', function( $classes ) {
+	if ( ! is_singular() )
+		return $classes;
+	if ( ! $post_classes = get_post_meta( get_queried_object_id(), 'body_class', true ) )
+		return $classes;
+	return array_merge( $classes, explode( ' ', $post_classes ) );
+});
