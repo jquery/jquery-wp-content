@@ -12,6 +12,8 @@ if ( isset( $blog_id ) ) {
 		$current_blog->blog_id = $current_blog->site_id = $current_blog->public = 1;
 		$current_blog->archived = $current_blog->deleted = $current_blog->spam = 0;
 
+		add_filter( 'ms_site_check', '__return_true' );
+
 		if ( ! defined( 'WP_INSTALLING' ) ) {
 			// Okay, see if we can find the main site in the DB.
 			// If not, time for a new network install.
