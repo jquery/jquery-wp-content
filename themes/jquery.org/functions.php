@@ -1,4 +1,4 @@
 <?php
 
 global $tlsite;
-$tlsite = "jquery-project";
+$tlsite = "jquery-foundation";
