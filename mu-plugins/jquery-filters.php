@@ -64,7 +64,9 @@ add_filter( 'ms_site_check', '__return_true' );
 add_filter( 'body_class', function( $classes ) {
 	if ( ! is_singular() )
 		return $classes;
-	if ( ! $post_classes = get_post_meta( get_queried_object_id(), 'body_class', true ) )
-		return $classes;
-	return array_merge( $classes, explode( ' ', $post_classes ) );
+	if ( is_page() )
+		$classes[] = 'page-slug-' . sanitize_html_class( strtolower( get_queried_object()->post_name ) );
+	if ( $post_classes = get_post_meta( get_queried_object_id(), 'body_class', true ) )
+		$classes = array_merge( $classes, explode( ' ', $post_classes ) );
+	return $classes;
 });
