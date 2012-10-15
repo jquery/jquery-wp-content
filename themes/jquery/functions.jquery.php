@@ -98,7 +98,8 @@ function jq_page_links_for_category( $category ) {
 
 function jq_get_github_url() {
     $url = $_SERVER['REQUEST_URI'];
-    $path = parse_url($url)['path'];
+    $parts = parse_url($url);
+    $path = $parts['path'];
     $github_prefix = 'https://github.com/jquery/'.get_stylesheet().'/tree/master/page';
 
     return $github_prefix . str_lreplace('/','.md', $path);
