@@ -23,7 +23,7 @@ Template: jquery
 
 
 .signatures li h4 {
-	background: #25649F url(../i/examples-back.png) center -50px no-repeat;
+	background: #25649F url(../jquery/i/examples-back.png) center -50px no-repeat;
 }
 
 .versionAdded a {
