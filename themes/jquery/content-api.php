@@ -1,6 +1,9 @@
 <?php
 /**
- * The default template for displaying content
+ * The template for displaying individual aspects of the API documentation.
+ *
+ * The content displayed by this template is managed in a GitHub repository at:
+ * https://github.com/jquery/api.jquery.com
  */
 ?>
 

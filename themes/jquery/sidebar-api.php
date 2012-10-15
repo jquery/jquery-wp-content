@@ -1,6 +1,6 @@
 <?php
 /**
- * The Sidebar containing the main widget area.
+ * The Sidebar containing the main widget area for API sites.
  */
 ?>
 		<div id="sidebar" class="widget-area" role="complementary">
