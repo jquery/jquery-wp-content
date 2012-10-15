@@ -12,7 +12,7 @@ if ( ! defined( 'JQUERY_STAGING' ) )
 	define( 'JQUERY_STAGING', true );
 if ( ! defined( 'JQUERY_STAGING_PREFIX' ) ) {
 	if ( JQUERY_STAGING )
-		define( 'JQUERY_STAGING_PREFIX', 'dev.' );
+		define( 'JQUERY_STAGING_PREFIX', 'local.' );
 	else
 		define( 'JQUERY_STAGING_PREFIX', '' );
 } elseif ( ! JQUERY_STAGING && JQUERY_STAGING_PREFIX ) {

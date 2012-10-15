@@ -8,21 +8,13 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
 
     ```
     <VirtualHost *:80>
-    ServerName dev.jquery.com
+    ServerName local.jquery.com
     ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
     DocumentRoot "/srv/www/jquery"
     </VirtualHost>
     ```
 
-1. Configure your `/etc/hosts` file to point `dev.jquery.com`, `dev.jqueryui.com`, etc. to your local machine. For example:
-
-    ```
-    127.0.0.1 dev.jquery.com dev.api.jquery.com dev.plugins.jquery.com dev.blog.jquery.com dev.learn.jquery.com
-    127.0.0.1 dev.jqueryui.com dev.blog.jqueryui.com dev.api.jqueryui.com
-    127.0.0.1 dev.jquery.org dev.qunitjs.com dev.api.qunitjs.com dev.sizzlejs.com dev.jquerymobile.com dev.api.jquerymobile.com
-    ```
-
-    Be sure to flush your DNS when you are done. On a Mac, that would be `dscacheutil -flushcache`.
+You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
 
 1. Place the WordPress core files in the document root you chose. (Don't install it.) You can do this any number of ways:
 
@@ -69,7 +61,7 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
     RewriteRule . index.php [L]
     ```
 
-1. Go to `http://dev.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
+1. Go to `http://local.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
 
 ## Auto-Updates
 Changes pushed to master will be pulled onto the stage domain.
