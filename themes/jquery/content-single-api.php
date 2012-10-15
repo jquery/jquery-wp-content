@@ -1,8 +1,11 @@
 <?php
 /**
- * The template for displaying content in the single.php template
- */
-?>
+ * The template for displaying a detailed view of individual aspects of the API documentation.
+ *
+ * The content displayed by this template is managed in a GitHub repository at:
+ * https://github.com/jquery/api.jquery.com
+ **/
+ ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
