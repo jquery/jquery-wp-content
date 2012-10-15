@@ -14,7 +14,7 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
     </VirtualHost>
     ```
 
-You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
+    You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
 
 1. Place the WordPress core files in the document root you chose. (Don't install it.) You can do this any number of ways:
 
