@@ -71,8 +71,6 @@ function jquery_install_site( $site, $user ) {
 	$default_options = jquery_default_site_options();
 	$default_options['admin_email'] = $user->user_email;
 
-	var_dump( $domain, $path, $site );
-
 	if ( 1 !== $details['blog_id'] ) {
 		$blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, $path, 1 );
 		if ( $blog_id != $details['blog_id'] )
@@ -89,6 +87,6 @@ function jquery_install_site( $site, $user ) {
 	foreach ( $options as $option => $value )
 		update_option( $option, $value );
 
-	flush_rewrite_rules();
+	delete_option( 'rewrite_rules' );
 	restore_current_blog();
 }
