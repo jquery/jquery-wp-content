@@ -132,16 +132,39 @@ function jq_release_manifest( $id = null ) {
 	return json_decode( get_post_meta( $id, 'manifest', true ) );
 }
 
-function person( $person, $avatar ) {
-	$ret = htmlspecialchars( $person->name );
-	if ( !empty( $person->url ) ) {
+//////////////////////////////////////////////////////////////////////////////
+// Produces a block of markup describing the given person, optionally with
+// a gravatar image at the given size.
+
+function person( $person, $avatar, $size = 96 ) {
+
+	$name = htmlspecialchars( $person->name );
+
+	// If an avatar is requested, build a little gravatar tile; otherwise
+	// just use the name by itself.
+
+	if ( $avatar ) {
+		if (!empty( $person->email )) {
+			$content = get_avatar( $person->email, $size );
+		} else {
+			$content = get_avatar( null, $size );
+		}
+		$content = $content . $name;
+	} else {
+		$content = $name;
+	}
+
+	// Wrap the content in a link to the person's page or email address
+
+	if (!empty( $person->url )) {
 		$url = htmlspecialchars( $person->url );
-		$ret = "<a href='$url'>$ret</a>";
+		return "<a href='$url'>$content</a>";
+	} elseif (!empty( $person->email )) {
+		$email = htmlspecialchars( $person->email );
+		return "<a href='mailto:$email'>$content</a>";
+	} else {
+		return $content;
 	}
-	if ( $avatar && !empty( $person->email ) ) {
-		$ret = get_avatar( $person->email, '80' ) . $ret;
-	}
-	return $ret;
 }
 
 function jq_release_download_url() {
@@ -184,7 +207,7 @@ function jq_release_licenses() {
 	return $ret;
 }
 
-function jq_release_maintainers( $options = array('avatar' => false) ) {
+function jq_release_maintainers( $options = array('avatar' => false, 'size' => 48) ) {
 	$pkg = jq_release_manifest();
 
 	if ( empty( $pkg->maintainers ) ) {
@@ -193,15 +216,15 @@ function jq_release_maintainers( $options = array('avatar' => false) ) {
 
 	$ret = '<ul>';
 	foreach( $pkg->maintainers as $maintainer ) {
-		$ret .= '<li>' . person( $maintainer, $options['avatar'] ) . '</li>';
+		$ret .= '<li>' . person( $maintainer, $options['avatar'], $options['size'] ) . '</li>';
 	}
 	$ret .= '</ul>';
 	return $ret;
 }
 
-function jq_release_author( $options = array('avatar' => false) ) {
+function jq_release_author( $options = array('avatar' => false, 'size' => 48) ) {
 	$pkg = jq_release_manifest();
-	return person( $pkg->author, $options['avatar'] );
+	return person( $pkg->author, $options['avatar'], $options['size'] );
 }
 
 function jq_release_dependencies() {
