@@ -3,7 +3,7 @@ Theme Name: api-jqueryui-com
 Template: jquery
 */
 
-html.jquery-ui, #container {
+body.jquery-ui, #container {
 	background: #BB6F04 url(../jquery/i/bg-body-ui.jpg) no-repeat center -20px;
 }
 

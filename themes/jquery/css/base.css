@@ -1025,7 +1025,7 @@ a:hover {
 /* jQuery Core */
 /*******************************************************************************/
 
-html.jquery, .jquery #container { background: #065791 url(../i/bg-body-jquery.jpg) no-repeat center -20px; }
+body.jquery, .jquery #container { background: #065791 url(../i/bg-body-jquery.jpg) no-repeat center -20px; }
 
 .jquery h1.site-title a {
 	height: 72px;
@@ -1055,7 +1055,7 @@ html.jquery, .jquery #container { background: #065791 url(../i/bg-body-jquery.jp
 /* jQuery Project  */
 /*******************************************************************************/
 
-html.jquery-project { background: #cab57e url(../i/bg-body-jquery-project.jpg) no-repeat center -30px; }
+body.jquery-project { background: #cab57e url(../i/bg-body-jquery-project.jpg) no-repeat center -30px; }
 
 .jquery-project h1.site-title a {
 	background: url(../i/logo-project.png) no-repeat;
@@ -1071,7 +1071,7 @@ html.jquery-project { background: #cab57e url(../i/bg-body-jquery-project.jpg) n
 
 /* ===[ Sizzle ]=== */
 
-html.sizzlejs, .sizzlejs #container { background: #8c0000 url(../i/bg-body-sizzlejs.jpg) no-repeat center -20px; }
+body.sizzlejs, .sizzlejs #container { background: #8c0000 url(../i/bg-body-sizzlejs.jpg) no-repeat center -20px; }
 
 .sizzlejs h1.site-title a {
 	background: url(../i/logo-sizzlejs.png) no-repeat;
@@ -1097,7 +1097,7 @@ html.sizzlejs, .sizzlejs #container { background: #8c0000 url(../i/bg-body-sizzl
 
 /* ===[ QUnit ]=== */
 
-html.qunitjs, .qunitjs #container { background: #00733c url(../i/bg-body-qunitjs.jpg) no-repeat center -20px; }
+body.qunitjs, .qunitjs #container { background: #00733c url(../i/bg-body-qunitjs.jpg) no-repeat center -20px; }
 
 .qunitjs h1.site-title a {
 	background: url(../i/logo-qunitjs.png) no-repeat;
@@ -2324,7 +2324,7 @@ nav .searchform .icon-search {
 /* Learning Site */
 /*******************************************************************************/
 
-html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat center 0; }
+body.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat center 0; }
 
 .jquery-learning h1.site-title a {
 	background: url(../i/logo-learning.png) no-repeat;
