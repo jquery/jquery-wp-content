@@ -1,10 +1,10 @@
-/* @override 
+/* @override
 		  http://jon-mbp.local/~jon/jquery/css/main.css
 		  http://jon-mbp.local/~jon/jquery/css/base.css
 		  http://jquerybase.47dev.com/css/base.css
 		  http://nate-mbp.local/~natecroft/jquery/css/base.css */
-		  
-		  
+
+
 /*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 
 /* ==========================================================================
@@ -494,7 +494,160 @@ input::-moz-focus-inner {
 
 textarea {
     overflow: auto; /* 1 */
-    vertical-align: top; /* 2 */
+    vertical-align: top; * 2 */
+}
+
+/* General Form Styles
+   ========================================================================== */
+
+form {
+    padding: 10px 0;
+}
+
+input[type=text],
+textarea {
+    color: #666;
+
+    width: 70%;
+    min-width: 300px;
+}
+
+/**
+ * Text Inputs
+ */
+
+input[type=text],
+textarea {
+    margin: 5px 0 10px 0;
+    padding: 8px 12px;
+
+    background: rgba(245,245,245,0.37);
+
+    border: 1px solid rgba(192,192,192,0.49);
+    border-radius: 2px;
+
+    -moz-box-shadow:    inset 0px 1px 3px rgba(0,0,0,0.17);
+    -webkit-box-shadow: inset 0px 1px 3px rgba(0,0,0,0.17);
+    box-shadow:         inset 0px 1px 3px rgba(0,0,0,0.17);
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder {
+    color: #ff0000;
+}
+
+input:focus,
+input[type=text]:focus,
+textarea:focus {
+    outline: none;
+
+    color: #333;
+    background: #FFF;
+
+    border: 1px solid #178A9C;
+
+    -webkit-box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
+                        inset 0px 1px 3px rgba(0,0,0,0.2);
+
+    -moz-box-shadow:    0px 0px 6px rgba(23,138,156,0.5),
+                        inset 0px 1px 3px rgba(0,0,0,0.2);
+
+    box-shadow:         0px 0px 6px rgba(23,138,156,0.5),
+                        inset 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+textarea {
+    min-height: 150px;
+}
+
+/**
+ * Radio Buttons
+ */
+
+.radio {
+    margin: 15px 0;
+}
+
+#content .radio ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#content .radio ul li {
+    margin: 0;
+    padding: 0;
+    background: none;
+    list-style-type: none;
+}
+
+.radio label {
+    margin: 5px 0;
+}
+
+input[type=radio] {
+    margin: 0 5px 0 0;
+}
+
+/**
+ * Checkboxes
+ */
+
+input[type="checkbox"] {
+    margin: 0 5px 0 0;
+}
+
+/**
+ * Submit Buttons
+ */
+
+form input[type="submit"] {
+    margin: 40px 0;
+    float: none;
+}
+
+/**
+ * Top aligned labels
+ */
+
+.top-labels label,
+.top-labels .radio label,
+.top-labels input[type=text],
+.top-labels textarea {
+    display: block;
+}
+
+/**
+ * Left aligned labels
+ */
+
+.left-labels label {
+    padding: 5px 0 0 0;
+    display: block;
+}
+
+.left-labels span {
+    margin: 0 10px 0 0;
+    min-width: 100px;
+
+    float: left;
+
+    text-align: left;
+}
+
+.left-labels .radio span {
+    padding-top: 5px;
+}
+
+.left-labels .radio {
+    display: block;
+}
+
+.left-labels .radio li label {
+    margin: 0;
+    padding: 0 0 5px 0;
+
+    border: 0;
 }
 
 /* ==========================================================================
@@ -509,13 +662,13 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-		  
-		  
+
+
 
 /* HTML5 Boilerplate styles
    ========================================================================== */
-   
-/* Basic Styles from HTML5 Boilerplate http://h5bp.com (generated via initializr.com)*/   
+
+/* Basic Styles from HTML5 Boilerplate http://h5bp.com (generated via initializr.com)*/
 
 html,
 button,
@@ -569,16 +722,16 @@ textarea {
 
 /* @Fontface
    ========================================================================== */
-   
-/* Add the Journal typeface to your CSS by including `JournalRegular` in the family font-stack. Font Awesome info next.  
+
+/* Add the Journal typeface to your CSS by including `JournalRegular` in the family font-stack. Font Awesome info next.
 
     <div id="banner"><h3>I'm a Journal Header</h3></div>
-    
+
 Additionally, Proxima Nova is served via Typekit for global use. Add `proxima-nova` to the fontstack.
 
-    <div id="content"><h2>Proxima Nova Header</h2></div>   
-*/ 
-   
+    <div id="content"><h2>Proxima Nova Header</h2></div>
+*/
+
 @font-face {
 	font-family: 'JournalRegular';
 	src: url('fonts/journal-webfont.eot');
@@ -597,17 +750,17 @@ Additionally, Proxima Nova is served via Typekit for global use. Add `proxima-no
     font-weight: normal;
     font-style: normal;
 }
-   
+
 /* Font Awesome styles
      ========================================================================== */
-     
+
 /*FontAwesome icons can be added via the `i` element or onto `h1`, `h2`, `h3`, `li` elements, etc. Some additional CSS styling may need to be done to get it to show up correctly.
 
     <p><i class="icon-twitter"> Twitter</p>
 
 FontAwesome full icon reference found here http://fortawesome.github.com/Font-Awesome/#all-icons
 */
-     
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
  font-family: FontAwesome;
  font-weight: normal;
@@ -905,19 +1058,19 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 		*/
 
 /* Global Structure
-   ========================================================================== */   
-   
+   ========================================================================== */
+
 body {
 	-webkit-font-smoothing: antialiased;
 	color: #333;
 	font: 15px/20px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
-}  
+}
 
 #container {
 	background: url(../images/bg-body-jquery.jpg) no-repeat center top #065691;
 	margin: 0 auto;
 	padding: 0 20px;
-	
+
 }
 
 #body-jquery-ui #container {
@@ -1034,19 +1187,19 @@ body {
 
 #global-nav {
 	background: url(../images/jq-global-nav.png) repeat-x 0 bottom #1b1b1b;
-}   
-   
-   
+}
+
+
 #global-project-select {
 	background: url(../images/bg-top.jpg) repeat;
 	height: 150px;
 	display: none;
-}   
-   
+}
+
 #global-nav ul {
 	margin: 0;
 	padding: 0;
-}   
+}
 
 #global-project-select li {
 	display: inline-block;
@@ -1066,7 +1219,7 @@ body {
 	padding: 0;
 	height: 110px;
 	position: relative;
-	
+
 }
 
 #global-project-select li:first-child a {
@@ -1184,9 +1337,9 @@ body {
 	left: -62px;
 }
 
-#global-nav nav ul li ul li { 
-  background: url(../images/bg-footer-noise.jpg) #000; 
-  display: block; 
+#global-nav nav ul li ul li {
+  background: url(../images/bg-footer-noise.jpg) #000;
+  display: block;
   color: #fff;
   float: none;
 }
@@ -1377,23 +1530,25 @@ nav#main .searchform {
 	float: right;
 	width: 28%;
 	margin-top: 12px;
+	padding: 0;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 	position: relative;
 }
-  
 
 nav#main .searchform input {
 	text-decoration: none;
 	font: 12px/12px "Lucida Grande", Lucida, Verdana, sans-serif;
 	padding: 5px 10px;
+	margin: 0;
 	background-color: transparent;
 	border-style: none;
 	color: #fff;
 	line-height: 1.3;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.76);
 	width: 85%;
+	box-shadow: none;
 }
 
 nav#main .searchform input:focus {
@@ -1427,7 +1582,7 @@ nav#main .searchform label span{
    ========================================================================== */
 
 #content a {
-	text-decoration: underline;  
+	text-decoration: underline;
 }
 
 #content a:hover {
@@ -1447,9 +1602,9 @@ p {
 	margin-top: 0;
 }
 
-b, strong { 
-	font-weight: bold; 
-	color: #1a1a1a; 
+b, strong {
+	font-weight: bold;
+	color: #1a1a1a;
 }
 
 em, i {
@@ -1685,7 +1840,7 @@ pre strong, pre b {
 	height: 0;
 	overflow: hidden;
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
-	margin-bottom: 20px;            
+	margin-bottom: 20px;
 }
 
 #portfolio.media #banner .embed {
@@ -1758,7 +1913,7 @@ p.author a {
 #banner-large-image {
 	text-align: center;
 	margin-bottom: 30px;
-	
+
 }
 
 #banner-large-image .vertically-centered-black-bg {
@@ -1844,22 +1999,22 @@ p.author a {
    ========================================================================== */
 
 a.button,
-#content a.button, 
+#content a.button,
 .button,
 input[type="submit"] {
 	border-radius: 5px;
 	border: 1px solid #999;
-	-webkit-box-shadow: 
-		0 0 5px rgba(0, 0, 0, 0.28), 
-		inset 0 1px 0 rgba(255, 255, 255, 0.45), 
-		inset 0px -1px 0px rgba(255, 255, 255, 0.45), 
-		inset 1px 0px 0px rgba(255, 255, 255, 0.45), 
+	-webkit-box-shadow:
+		0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0 1px 0 rgba(255, 255, 255, 0.45),
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
 		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
-	box-shadow: 
-		0 0 5px rgba(0, 0, 0, 0.28), 
-		inset 0 1px 0 rgba(255, 255, 255, 0.45), 
-		inset 0px -1px 0px rgba(255, 255, 255, 0.45), 
-		inset 1px 0px 0px rgba(255, 255, 255, 0.45), 
+	box-shadow:
+		0 0 5px rgba(0, 0, 0, 0.28),
+		inset 0 1px 0 rgba(255, 255, 255, 0.45),
+		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
+		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
 		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
 	text-decoration: none;
 	color: #fff !important;
@@ -1883,7 +2038,7 @@ input[type="submit"]:hover {
 }
 
 a.button.large,
-#content a.button.large, 
+#content a.button.large,
 button.large,
 input[type="submit"].large {
 	font-size: 20px;
@@ -1891,7 +2046,7 @@ input[type="submit"].large {
 }
 
 a.button.dark,
-#content a.button.dark, 
+#content a.button.dark,
 .button.dark,
 input[type="submit"].dark {
 	background-color: #666;
@@ -1971,7 +2126,7 @@ input[type="submit"].dark:hover {
 	clear: left;
 }
 
-/* == Footer 
+/* == Footer
    ========================================================================== */
 
 footer {
@@ -2186,7 +2341,7 @@ footer h3:after {
 	border: solid 1px #333;
 	border-bottom: none;
 	border-radius: 4px 4px 0 0;
-	
+
 }
 
 .footer-site-links {
@@ -2385,24 +2540,24 @@ footer li img {
 
 /* Media Queries
    ========================================================================== */
-   
+
 @media only screen and (max-width: 1100px) {
-	
+
 }
 
 @media only screen and (max-width: 940px) {
-	
+
 }
 
 @media only screen and (max-width: 860px) {
-	
+
 }
 
 @media only screen and (max-width: 768px) {
 	#global-nav ul.projects li.toggle-projects {
 		display: none;
 	}
-	
+
 	#sidebar {
 		width: auto;
 		float: none;
@@ -2424,7 +2579,7 @@ footer li img {
 		background-image: none;
 		background-image: none;
 	}
-	
+
 	#content,
 	.col7-3.col,
 	footer #legal p.copyright,
@@ -2433,7 +2588,7 @@ footer li img {
 		float: none;
 		clear: both;
 	}
-	
+
 	footer #legal ul.footer-site-links {
 		display: inline;
 		text-align: center !important;
@@ -2441,53 +2596,53 @@ footer li img {
 		float: left;
 		width: 100%;
 	}
-	
+
 	footer #legal ul.footer-site-links li:first-child {
 		margin-left: 0;
 	}
-	
+
 	footer #legal p.copyright {
 		text-align: center;
 		margin-bottom: 10px;
 	}
-	
+
 	.col7-2.col {
 		margin: 0;
 		width: 100%;
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	
+
 }
 
 @media only screen and (max-width: 600px) {
 	#global-nav ul.projects {
 		display: none;
 	}
-	
+
 	#global-nav nav ul.links {
 		float: left;
 	}
-	
+
 	#global-nav nav ul.links li {
 		font-size: 12px;
 	}
-	
+
 	#logo-events {
 		padding-top: 20px;
 		padding-bottom: 10px;
 	}
-	
+
 	#logo-events aside {
 		display: none;
 	}
-	
+
 	#logo-events h2.logo {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+
 	nav#main {
 		background-color: rgba(0, 0, 0, 0.0);
 		border-radius: 10px 10px 0 0;
@@ -2497,18 +2652,18 @@ footer li img {
 		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
-	
+
 	nav#main .searchform {
 		display: none;
 	}
-	
+
 	nav#main ul {
 		width: 100% !important;
 		text-align: center !important;
 		float: left;
 		margin-bottom: 10px;
 	}
-	
+
 	nav#main ul li,
 	nav#main ul li a {
 		position: relative;
@@ -2517,7 +2672,7 @@ footer li img {
 		text-transform: none;
 		float: none;
 	}
-	
+
 	nav#main li a:hover,
 	nav#main li.current a {
 		background: none;
@@ -2526,7 +2681,7 @@ footer li img {
 		border-radius: 4px;
 		border: 1px solid rgba(0,0,0,0.0);
 	}
-	
+
 	#content-wrapper {
 		-webkit-border-top-left-radius: 10px;
 		-webkit-border-top-right-radius: 10px;
@@ -2535,7 +2690,7 @@ footer li img {
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 	}
-	
+
 	#banner-secondary {
 		-webkit-border-top-left-radius: 9px;
 		-webkit-border-top-right-radius: 9px;
@@ -2544,28 +2699,28 @@ footer li img {
 		border-top-left-radius: 9px;
 		border-top-right-radius: 9px;
 	}
-	
+
 	#banner-secondary h2 {
 		font-size: 35px;
 		line-height: 35px;
 	}
-	
+
 	#content h1 {
 		font-size: 26px;
 		line-height: 26px;
 	}
-	
+
 	#banner-secondary.large-banner h1,
 	#banner-secondary.large-banner h2 {
 		font-size: 36px;
 		line-height: 36px;
 	}
-	
+
 	#banner-secondary.large-banner p {
 		font-size: 22px;
 		padding: 0;
 	}
-	
+
 	footer .presentations li,
 	footer .books li {
 		clear: both;
@@ -2575,40 +2730,40 @@ footer li img {
 		margin-right: auto;
 		text-align: center;
 	}
-	
+
 	footer .presentations li span,
 	footer .books li span {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	
+
 }
 
 @media only screen and (max-width: 480px) {
-	
+
 	.constrain,
 	#container {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	
+
 	.content-full #content {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	
+
 	#content-wrapper {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
-	
+
 	#banner-secondary,
 	#content pre {
 		margin-left: -25px;
 		margin-right: -25px;
 	}
-	
+
 	#content img.left,
 	#content figure.left,
 	#content img.right,
@@ -2619,11 +2774,11 @@ footer li img {
 		margin-left: 0;
 		margin-right: 0;
 	}
-	
+
 	footer .footer-icon-links li a:before {
 		display: none;
 	}
-	
+
 	footer .footer-icon-links li:first-child {
 		margin-left: 0;
 	}
@@ -2635,27 +2790,27 @@ footer li img {
 		background: url(../images/logo-jquery@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
-	
+
 	#body-jquery-ui h2.logo a {
 		background: url(../images/logo-jquer-uiy@2x.png) no-repeat;
 		background-size: 253px 66px;
 	}
-	
+
 	#body-jquery-mobile h2.logo a {
 		background: url(../images/logo-jquery-mobile@2x.png) no-repeat;
 		background-size: 268px 66px;
 	}
-	
+
 	#body-sizzlejs h2.logo a {
 		background: url(../images/logo-sizzle@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
-	
+
 	#body-qunitjs h2.logo a {
 		background: url(../images/logo-qunit@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
-	
+
 	#body-jquery-foundation h2.logo a {
 		background: url(../images/logo-jquery-foundation@2x.png) no-repeat;
 		background-size: 243px 66px;
@@ -2798,10 +2953,10 @@ footer li img {
     }
 }
 
-/* @override 
+/* @override
 	http://jon-mbp.local/~jon/jquery/css/grid.css */
 
-/* The Grid ---------------------- 
+/* The Grid ----------------------
 Based on Zurb Foundation's Grid
 */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -2948,8 +3103,8 @@ img { -ms-interpolation-mode: bicubic; }
   .pull-two-mobile { right: 50%; }
   .push-three-mobile { left: 75%; }
   .pull-three-mobile { right: 75%; } }
-  
-  
+
+
 /* Block Grids ---------------------- */
 /* These are 2-up, 3-up, 4-up and 5-up ULs, suited
 for repeating blocks of content. Add 'mobile' to
@@ -2979,7 +3134,7 @@ that IE7/8 do not support :nth-child.
 .block-grid.five-up > li:nth-child(5n+1), #content .block-grid.five-up > li:nth-child(5n+1) { clear: both; }
 
 /* Mobile Block Grids */
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 767px) {
   .block-grid.mobile > li { float: none !important; width: 100% !important; margin-left: 0 !important; }
   .block-grid > li { clear: none !important; }
   .block-grid.mobile-two-up > li { width: 50% !important; }
@@ -3007,7 +3162,7 @@ that IE7/8 do not support :nth-child.
 .cboxIframe{width:100%; height:100%; display:block; border:0;}
 #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
 
-/* 
+/*
     User Style:
     Change the following styles to modify the appearance of ColorBox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
