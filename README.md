@@ -20,7 +20,7 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
     </VirtualHost>
     ```
 
-You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
+    You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
 
 1. Place the WordPress core files in the document root you chose. (Don't install it.) You can do this any number of ways:
 
@@ -66,8 +66,16 @@ You do not need to configure your `/etc/hosts` file for `local.*` because `jquer
 
     RewriteRule . index.php [L]
     ```
+1. Make sure that you have assigned your WordPress files and directories the correct permissions.  
+For example, if your WordPress files are in the directory ```wordpress```, and you are running Apache under Mac OS X with the ```_www``` user:
+    ```
+    sudo chown -R _www wordpress
+    sudo chmod -R g+w wordpress
+    ```
 
 1. Go to `http://local.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
+
+1. Be sure to have node >= 0.8 installed on your system.  Some sites, such as download.jqueryui.com, require that version or greater.
 
 ## Auto-Updates
 Changes pushed to master will be pulled onto the stage domain.
