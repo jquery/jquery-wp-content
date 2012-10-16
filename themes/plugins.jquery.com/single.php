@@ -9,19 +9,12 @@
 
 get_header(); ?>
 
-		<div id="body" class="clearfix sidebar-left">
-			<div class="inner" role="main">
+<div id="content" role="main">
+	<?php while ( have_posts() ) : the_post(); ?>
+		<?php get_template_part( 'content', 'single' ); ?>
+	<?php endwhile; ?>
+</div><!-- #content -->
 
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'content', 'single' ); ?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- .inner -->
-
-			<div id="sidebar" class="widget-area" role="complementary">
-			</div><!-- #sidebar -->
-		</div><!-- #body -->
+<div id="sidebar" role="complementary"></div>
 
 <?php get_footer(); ?>

@@ -69,7 +69,7 @@ function jq_new_plugins($total = 10) {
 		while ( $new_plugins->have_posts() ) :
 			$new_plugins->the_post();
 	?>
-		<li class="icon-caret-right">
+		<li>
 			<a href="/<?php echo $post->post_name; ?>/"><?php echo $post->post_title; ?></a>
 		</li>
 	<?php
@@ -105,7 +105,7 @@ function jq_updated_plugins( $total = 10 ) {
 				$parent = get_post( $parent_id );
 
 	?>
-		<li class="icon-caret-right">
+		<li>
 			<a href="/<?php echo $parent->post_name . '/' . $post->post_name ?>/"><?php echo $post->post_title; ?></a><br />
 			(version <?php echo $post->post_name; ?>)
 		</li>
@@ -178,7 +178,7 @@ function jq_release_licenses() {
 	foreach( $pkg->licenses as $license ) {
 		$url = htmlspecialchars( $license->url );
 		$type = empty( $license->type ) ? $url : htmlspecialchars( $license->type );
-		$ret .= "<li class=\"icon-caret-right\"><a href='$url'>$type</a></li>";
+		$ret .= "<li><a href='$url'>$type</a></li>";
 	}
 	$ret .= '</ul>';
 	return $ret;
@@ -193,7 +193,7 @@ function jq_release_maintainers( $options = array('avatar' => false) ) {
 
 	$ret = '<ul>';
 	foreach( $pkg->maintainers as $maintainer ) {
-		$ret .= '<li class="icon-caret-right">' . person( $maintainer, $options['avatar'] ) . '</li>';
+		$ret .= '<li>' . person( $maintainer, $options['avatar'] ) . '</li>';
 	}
 	$ret .= '</ul>';
 	return $ret;
@@ -209,9 +209,9 @@ function jq_release_dependencies() {
 	$ret = '<ul>';
 	foreach( $pkg->dependencies as $plugin => $version ) {
 		if ( get_page_by_path( $plugin ) ) {
-			$ret .= "<li class=\"icon-caret-right\"><a href='/$plugin'>$plugin</a> $version</li>";
+			$ret .= "<li><a href='/$plugin'>$plugin</a> $version</li>";
 		} else {
-			$ret .= "<li class=\"icon-caret-right\">$plugin $version</li>";
+			$ret .= "<li>$plugin $version</li>";
 		}
 	}
 	$ret .= '</ul>';
