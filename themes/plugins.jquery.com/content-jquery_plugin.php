@@ -6,7 +6,8 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-?>
+
+wp_enqueue_script( 'jquery-plugin-download' ); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content clearfix">
