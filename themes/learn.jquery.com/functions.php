@@ -1,8 +1,5 @@
 <?php
 
-global $tlsite;
-$tlsite = "jquery-learning";
-
 function is_subpage() {
     global $post;                              // load details about this page
 
