@@ -681,6 +681,24 @@ p.info {
 
 /*----------[ Media queries ]-----------------------------------------------*/
 
+@media all and (max-width: 1200px) {
+
+	#sidebar.jquery-plugin p.date {
+		font-size: 16px;
+	}
+}
+
+@media all and (max-width: 1100px) {
+
+	#sidebar.jquery-plugin a.download {
+		font-size: 16px;
+	}
+
+	#sidebar.jquery-plugin p.date {
+		font-size: 14px;
+	}
+}
+
 @media all and (max-width: 1000px) {
 
 	#content, .home #content {
@@ -690,6 +708,10 @@ p.info {
 
 	#sidebar, .home #sidebar, .home .info-bar {
 		width: 220px;
+	}
+
+	#sidebar.jquery-plugin a.download {
+		font-size: 12px;
 	}
 
 	.home .info-bar {
@@ -724,7 +746,7 @@ p.info {
 		font-size: 16px;
 	}
 
-	#sidebar, .info-bar, #content,
+	#sidebar, .info-bar, #content, #content.jquery-plugin,
 	.home #sidebar, .home .info-bar, .home #content {
 		width: 100%;
 		padding: 0;
@@ -755,6 +777,14 @@ p.info {
 	.info-bar h3, .home .info-bar h3 {
 		margin-left: -20px;
 		margin-right: -20px;
+	}
+
+	#sidebar.jquery-plugin a.download {
+		font-size: 20px;
+	}
+
+	#sidebar.jquery-plugin p.date {
+		font-size: 18px;
 	}
 }
 
