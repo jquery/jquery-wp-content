@@ -81,7 +81,6 @@ h4 [class*=" icon-"] {
 #content article p {
 	float: left;
 	width: 70%;
-	margin: 1em 0;
 }
 
 #content article .action {
@@ -96,6 +95,22 @@ h4 [class*=" icon-"] {
 	padding-left: 5%;
 	padding-right: 5%;
 	text-align: center;
+}
+
+#content .plugin-title {
+	font-size: 20px;
+	line-height: 20px;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+#content .plugin-title a {
+	color: #333;
+	text-decoration: none;
+}
+
+#content .plugin-title a:hover {
+	text-decoration: underline;
 }
 
 /*----------[ Home page ]---------------------------------------------------*/
@@ -158,25 +173,16 @@ h4 [class*=" icon-"] {
 	padding: 0;
 }
 
+.home #content article p {
+	margin: 1em 0;
+}
+
 .home #content article .action p.date {
 	width: 100%;
-	margin: 1em 0;
 	line-height: 11px;
 	text-align: center;
 	font-size: 11px;
 	color: #999;
-}
-
-.plugin-title {
-	font-size: 20px;
-	line-height: 20px;
-	color: #333;
-	margin-bottom: 5px;
-}
-
-.plugin-title a {
-	color: #333;
-	text-decoration: none;
 }
 
 /*----------[ Home page info sidebar ]----------------------------------------
@@ -229,7 +235,12 @@ unfortunately need to replicate some stuff from base.css here.
 }
 
 .info-bar li a {
+	text-decoration: none;
 	color: #4d4d4d;
+}
+
+.info-bar li a:hover {
+	text-decoration: underline;
 }
 
 .info-bar nav#secondary li {
@@ -249,7 +260,6 @@ unfortunately need to replicate some stuff from base.css here.
 
 #content.jquery-plugin {
 	width: 71%;	/* 71% | 29% */
-	padding: 1.6em 1em;
 }
 
 #content.jquery-plugin h2 {
@@ -265,14 +275,12 @@ unfortunately need to replicate some stuff from base.css here.
 }
 
 .jquery-plugin h1.entry-title, h1.page-title {
-	margin: 0 0 .25em; /* 0.25 * 32px = 8px */
-	font: bold 33px/33px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	text-align: left;
+	font: bold 33px/33px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #d18f4f;
 }
 
-.jquery-plugin h1.page-title {
-	margin-bottom: 40px;
+.jquery-plugin h1.entry-title {
+	margin: 0 0 .25em; /* 0.25 * 32px = 8px */
 }
 
 .jquery-plugin .block ul,
@@ -294,9 +302,10 @@ unfortunately need to replicate some stuff from base.css here.
 	border-radius: 8px;
 }
 
-.jquery-plugin .attribution, p.info {
+#content.jquery-plugin .attribution, p.info {
+	float: none;
 	color: #808080;
-	font: 13px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 13px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-top: -5px;
 }
 
@@ -367,7 +376,7 @@ p.info {
 	background: black url('images/dark-grey-tile.png');
 	padding: 2px 10px;
 	color: white;
-	font: bold 3em/1em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 3em/1em Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .jquery-plugin .github-activity .box .info-block .caption {
@@ -377,7 +386,7 @@ p.info {
 	background-color: #8ccffa;
 	color: white;
 	text-transform: uppercase;
-	font: bold 11px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 11px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 1px;
 }
 
@@ -408,7 +417,7 @@ p.info {
 
 .jquery-plugin .toolbox header .caption {
 	color: #999;
-	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 14px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .jquery-plugin .toolbox header .version-info {
@@ -426,7 +435,7 @@ p.info {
 }
 
 .jquery-plugin .toolbox header .version-number, .jquery-plugin .toolbox header .date {
-	font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 1.25em/1.2em Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .jquery-plugin .toolbox header .version-number {
@@ -453,7 +462,7 @@ p.info {
 	color: white;
 	text-shadow: 0 -1px #bc7531, 0 1px #dca977;
 	text-decoration: none;
-	font: bold 1.4em/1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 1.4em/1.6em Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .jquery-plugin .toolbox a.download .inner-wrapper {
@@ -500,7 +509,7 @@ p.info {
 	background: no-repeat 8px center;
 	color: white;
 	text-decoration: none;
-	font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 18px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	padding-top: 0;
 	padding-bottom: 0;
 	padding-left: 32px;
@@ -592,7 +601,7 @@ p.info {
 
 .jquery-plugin .versions table .version {
 	border-right-style: none;
-	font: bold 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 18px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: -1px;
 }
 
@@ -606,7 +615,7 @@ p.info {
 	color: white;
 	text-align: left;
 	text-transform: uppercase;
-	font: bold 12px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 12px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
