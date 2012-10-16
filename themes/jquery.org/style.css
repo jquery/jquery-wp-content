@@ -122,7 +122,7 @@ ul.flex-direction-nav {
 }
 
 .dark-callout-box {
-    background-image: url(../images/dark-grey-tile.png);
+    background-image: url(images/dark-grey-tile.png);
     margin-bottom: 30px;
     border-bottom: 10px solid #c1c1c1;
     border-top: 10px solid #c1c1c1;
@@ -196,7 +196,7 @@ ul.flex-direction-nav {
     float: left;
     display: inline;
     margin-right: 2%;
-    background: url(../images/dark-grey-tile.png);
+    background: url(images/dark-grey-tile.png);
     position: relative;
     overflow: hidden;
 }
@@ -620,7 +620,7 @@ nav#main ul {
     }
     
     .dark-callout-box {
-        background-image: url(../images/dark-grey-tile.png);
+        background-image: url(images/dark-grey-tile.png);
         border-bottom: 10px solid #c1c1c1;
         border-top: 10px solid #c1c1c1;
         text-align: center;
