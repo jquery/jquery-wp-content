@@ -4,10 +4,6 @@
  */
 ?>
 <form method="get" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<span class="icon-search"></span>
-	<label>
-		<span>Search <?php bloginfo( 'name' ); ?></span>
-		<input type="text" name="s" value="<?php echo get_search_query(); ?>"
-			placeholder="Search <?php bloginfo( 'name' ); ?>">
-	</label>
+	<i class="icon-search"></i>
+	<input type="text" name="s" onclick="this.value='Search jQuery'?'':this.value;" onfocus="this.select()" onblur="this.value=!this.value?'Search jQuery':this.value;" value="Search jQuery" />
 </form>
