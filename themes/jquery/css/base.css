@@ -1392,7 +1392,11 @@ nav#main .searchform input {
 	border-style: none;
 	color: #fff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.76);
-	width: 75%;
+	width: 85%;
+}
+
+nav#main .searchform input:focus{
+    outline: none;
 }
 
 nav#main .searchform i {
