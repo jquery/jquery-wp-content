@@ -10,8 +10,7 @@
 
 get_header(); ?>
 
-		<div id="body" class="clearfix">
-			<div class="inner" role="main">
+		<div id="content" class="clearfix">
 
 				<?php the_post(); ?>
 
@@ -19,7 +18,6 @@ get_header(); ?>
 
 				<?php comments_template( '', true ); ?>
 
-			</div><!-- .inner -->
 		</div><!-- #body -->
 
 <?php get_footer(); ?>
