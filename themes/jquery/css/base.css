@@ -2695,6 +2695,10 @@ html.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 
 @media all and (max-width: 320px) {
 
+	.syntaxhighlighter table td.gutter .line {
+		padding: 0.5em 0.5em 0 0.5em !important;
+	}
+
 	.download { text-align: center; }
 
 	header nav.top li a { padding: 0 8px; }
