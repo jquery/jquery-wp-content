@@ -432,7 +432,9 @@ a.icon-search::before {
     border-top: 1px solid #dddddd;
     padding-top: 30px;
 }
-
+.sponsors-page #content ul.block-grid li:first-child, .sponsors-page #content ul.block-grid li:nth-child(2) {
+  border-top: medium none;
+}
 .sponsors-page ul.block-grid li img {
     float: left;
     width: 30%;
