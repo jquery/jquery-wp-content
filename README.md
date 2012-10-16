@@ -2,6 +2,14 @@
 
 This is a set of plugins, themes, and configuration files for jQuery's website infrastructure, which is powered by WordPress. It is designed as a custom content directory. So think of `web-base-template` as your `wp-content` directory.
 
+## Prerequisites 
+
+This install guide assumes you already have certain prerequisites already configured within your environment.
+
+* Apache
+* Mysql
+* PHP
+
 ## Installation
 
 1. Configure your local webserver with a virtual host that covers the relevant jQuery domains, such as `*.jquery.com` and `*.jqueryui.com`, all pointing to the same root. For example, in Apache:
@@ -11,12 +19,12 @@ This is a set of plugins, themes, and configuration files for jQuery's website i
     ServerName local.jquery.com
     ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
     DocumentRoot "/srv/www/jquery"
-    <Directory "/srv/www/jquery">
-		Options All
-	    AllowOverride All
-	    Order allow,deny
-	    Allow from all
-	</Directory>
+      <Directory /srv/www/jquery>
+         Options All
+         AllowOverride All
+         Order allow,deny
+         Allow from all
+      </Directory>
     </VirtualHost>
     ```
 
