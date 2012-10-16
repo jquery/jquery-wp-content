@@ -1391,11 +1391,23 @@ nav#main .searchform input {
 	background-color: transparent;
 	border-style: none;
 	color: #fff;
+	line-height: 1.3;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.76);
-	width: 75%;
+	width: 85%;
 }
 
-nav#main .searchform i {
+nav#main .searchform input:focus {
+	outline: none;
+}
+
+nav#main .searchform input::-webkit-input-placeholder,
+nav#main .searchform input::-ms-input-placeholder,
+nav#main .searchform input::-moz-placeholder,
+nav#main .searchform input::placeholder {
+	color: #fff;
+}
+
+nav#main .searchform .icon-search {
 	position: absolute;
 	right: 10px;
 	top: 3px;
@@ -1404,6 +1416,11 @@ nav#main .searchform i {
 	padding-left: 7px;
 	opacity: 0.33;
 	color: #fff;
+}
+
+nav#main .searchform label span{
+	left: -9999em;
+	position: absolute;
 }
 
 /* Typography & Global Styles
