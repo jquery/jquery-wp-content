@@ -390,6 +390,28 @@ p.info {
 	letter-spacing: 1px;
 }
 
+#sidebar.jquery-plugin .author-info li {
+	background: none;
+	font-size: 18px;
+}
+
+#sidebar.jquery-plugin .maintainer-info li {
+	background: none;
+	font-size: 16px;
+}
+
+#sidebar.jquery-plugin .avatar {
+	margin-right: 10px;
+}
+
+#sidebar.jquery-plugin .avatar-80 {
+	border-radius: 8px;
+}
+
+#sidebar.jquery-plugin .avatar-48 {
+	border-radius: 4px;
+}
+
 /*----------[ Individual plugin page sidebar toolbox ]----------------------*/
 
 .jquery-plugin .toolbox {
