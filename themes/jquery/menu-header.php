@@ -1,35 +1,10 @@
 <?php
-
-$tld = explode( '.', JQUERY_LIVE_SITE );
-$func = 'menu_header_' . implode( '_', $tld );
-if ( ! function_exists( $func ) ) {
-	array_shift( $tld );
-	$func = 'menu_header_' . implode( '_', $tld );
-}
-if ( function_exists( $func ) )
-	jquery_render_menu( call_user_func( $func ) );
-unset( $tld, $func );
-
-function jquery_render_menu( $items ) {
-	$current = trailingslashit( set_url_scheme( 'http://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] ) );
-	error_log( $current );
-	?>
-<div class="menu-top-container">
-  <ul id="menu-top" class="menu">
-<?php
- 	foreach ( $items as $url => $anchor ) {
- 		$class = 'menu-item';
- 		$url = set_url_scheme( $url );
- 		error_log( $url );
- 		if ( 0 === strpos( $current, $url ) )
- 			$class .= ' current';
- 		echo '    <li class="' . $class . '"><a href="' . $url . '">' . $anchor . "</a></li>\n";
- 	}
-?>
-  </ul>
-</div>
-<?php
-}
+/*
+ * The main header navigation menu for each project site.
+ *
+ * If a function exists for a subdomain (such as projects_jquery_com) it will
+ * be used instead of the jquery_com function.
+ */
 
 function menu_header_jquery_com() {
 	return array(
@@ -80,4 +55,41 @@ function menu_header_jqueryui_com() {
 		'http://blog.jqueryui.com/' => 'Blog',
 		'http://jqueryui.com/about' => 'About',
 	);
+}
+
+
+/*
+ * Avert your eyes.
+ */
+
+
+$domain = explode( '.', JQUERY_LIVE_SITE );
+$func = 'menu_header_' . implode( '_', $domain );
+if ( ! function_exists( $func ) ) {
+	array_shift( $domain );
+	$func = 'menu_header_' . implode( '_', $domain );
+}
+if ( function_exists( $func ) )
+	jquery_render_menu( call_user_func( $func ) );
+unset( $domain, $func );
+
+function jquery_render_menu( $items ) {
+	$current = trailingslashit( set_url_scheme( 'http://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] ) );
+	error_log( $current );
+	?>
+<div class="menu-top-container">
+  <ul id="menu-top" class="menu">
+<?php
+ 	foreach ( $items as $url => $anchor ) {
+ 		$class = 'menu-item';
+ 		$url = set_url_scheme( $url );
+ 		error_log( $url );
+ 		if ( 0 === strpos( $current, $url ) )
+ 			$class .= ' current';
+ 		echo '    <li class="' . $class . '"><a href="' . $url . '">' . $anchor . "</a></li>\n";
+ 	}
+?>
+  </ul>
+</div>
+<?php
 }
