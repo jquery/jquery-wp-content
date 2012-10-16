@@ -61,6 +61,30 @@ function jq_categories_and_parents() {
 	return $ret;
 }
 
+
+/**
+ * Get the category id for a post to allow the sidebar to reflect what category the currently displayed page is on
+ * @returns int The category id
+ */
+function jq_post_category () {
+	$current_category = 0;
+	if ( is_category() ) {
+		$current_category = get_queried_object_id();
+	} elseif ( is_singular( 'post' ) ) {
+		$categories = get_the_category();
+		foreach ( $categories as $category ) {
+			if ( false === strpos( $category->name, 'Version' ) ) {
+				$current_category = $category->term_id;
+				break;
+			}
+		}
+	}
+
+	return $current_category;
+}
+
+
+
 // For category lists on category archives: Returns other categories except the current one (redundant)
 function jq_other_cats($glue = ', ') {
 	$current_cat = single_cat_title( '', false );
@@ -96,4 +120,3 @@ function jq_page_links_for_category( $category ) {
 	return $ret;
 }
 
-?>
