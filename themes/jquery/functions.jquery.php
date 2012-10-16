@@ -96,4 +96,12 @@ function jq_page_links_for_category( $category ) {
 	return $ret;
 }
 
+function jq_get_github_url() {
+    global $post;
+    $source_path = get_post_meta( $post->ID, "source_path" )[0];
+    $github_prefix = 'https://github.com/jquery/'.get_stylesheet().'/tree/master/'.$source_path;
+
+    return $github_prefix;
+}
+
 ?>
