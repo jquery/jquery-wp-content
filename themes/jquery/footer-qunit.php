@@ -11,11 +11,11 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN <em>CSS</em></strong>
-        <input value="//code.jquery.com/qunit/qunit-1.10.0.css">
+        <input value="http://code.jquery.com/qunit/qunit-1.10.0.css">
       </div>
       <div class="cdn">
         <strong>CDN <em>JS</em></strong>
-        <input value="//code.jquery.com/qunit/qunit-1.10.0.js">
+        <input value="http://code.jquery.com/qunit/qunit-1.10.0.js">
       </div>
       <div class="download">
         <strong>Download QUnit 1.10.0:</strong>
