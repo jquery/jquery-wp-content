@@ -51,11 +51,11 @@
 	<div class="block author-info">
 		<h3><span class="icon-user"></span>Author</h3>
 		<ul>
-			<li><?php echo jq_release_author(); ?></li>
+			<li><?php echo jq_release_author(array('avatar' => true, 'size' => 80)); ?></li>
 		</ul>
 	</div> <!-- /.author-info -->
 
-	<?php if ( $maintainers = jq_release_maintainers() ) { ?>
+	<?php if ( $maintainers = jq_release_maintainers(array('avatar' => true, 'size' => 48)) ) { ?>
 	<div class="block maintainer-info">
 		<h3><span class="icon-wrench"></span>Maintainers</h3>
 		<?php echo $maintainers; ?>
