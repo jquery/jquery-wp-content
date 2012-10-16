@@ -655,7 +655,7 @@ p.info {
 	color: #e0e0e0;
 }
 
-/*----------[ Pagination ]----------------------------------------------------*/
+/*----------[ Pagination ]--------------------------------------------------*/
 
 .nav-previous {
 	float: left;
@@ -668,7 +668,7 @@ p.info {
 	width: 45%;
 }
 
-/*----------[ IE hacks ]------------------------------------------------------*/
+/*----------[ IE hacks ]----------------------------------------------------*/
 
 .lte9 .jquery-plugin h1.entry-title {
 	background: transparent;
@@ -679,31 +679,23 @@ p.info {
 	height: 24px;
 }
 
-/*----------[ Media queries ]------------------------------------------------------*/
-/*
-@media all and (max-width: 1100px) {
-
-	.jquery-plugin .plugin-metadata,
-	.sidebar {
-		width: 280px;
-	}
-
-}
+/*----------[ Media queries ]-----------------------------------------------*/
 
 @media all and (max-width: 1000px) {
 
-	#content {
+	#content, .home #content {
 		width: 65%;
+		margin: 0;
 	}
 
-	.home #content {
-		width: 65%;
-		margin-left: 3%;
+	#sidebar, .home #sidebar, .home .info-bar {
+		width: 220px;
 	}
 
-	.home .sidebar.left {
-		position: relative;
+	.home .info-bar {
 		float: right;
+		margin-left: 0;
+		margin-right: -40px;
 	}
 }
 
@@ -712,21 +704,36 @@ p.info {
 	#content {
 		width: 60%;
 	}
-
 }
 
 @media all and (max-width: 768px) {
 
-	.jquery-plugin .plugin-metadata,
-	.home .sidebar,
-	.home .sidebar.left,
-	.sidebar,
-	#content {
+	.home #banner-secondary h1 {
+		font-size: 42px;
+		line-height: 42px;
+	}
+
+	.home #banner-secondary p {
+		font-size: 42px;
+		line-height: 42px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.home #banner-secondary .searchform {
+		font-size: 16px;
+	}
+
+	#sidebar, .info-bar, #content,
+	.home #sidebar, .home .info-bar, .home #content {
 		width: 100%;
 		padding: 0;
 		clear: both;
 		float: none;
+		border-top: none;
 		border-left: none;
+		border-right: none;
+		border-bottom: none;
 		-moz-border-image: none;
 		-webkit-border-image: none;
 		-webkit-border-image: none;
@@ -744,45 +751,25 @@ p.info {
 		margin-bottom: 20px;
 	}
 
-	.home #content {
-		width: 100%;
-		margin: 0;
-		padding-left: 5%;
-		padding-right: 5%;
-		margin-bottom: 30px;
+	#sidebar h3, .home #sidebar h3,
+	.info-bar h3, .home .info-bar h3 {
+		margin-left: -20px;
+		margin-right: -20px;
 	}
-
-	.home .sidebar.left {
-		float: left;
-		width: 45%;
-		clear: none;
-		margin-left: 5%;
-	}
-
-	.home .sidebar.right {
-		float: right;
-		width: 45%;
-		clear: none;
-		margin-right: 5%;
-	}
-
-	#container #body .inner {
-		padding-left: 1.2em;
-		padding-right: 1.2em;
-	}
-
 }
 
 @media all and (max-width: 660px) {
 
-	#banner-secondary h1 {
-		font-size: 60px;
-		line-height: 60px;
+	.home #banner-secondary h1 {
+		font-size: 36px;
+		line-height: 36px;
 	}
 
-	#banner-secondary h2 {
-		font-size: 40px;
-		line-height: 35px;
+	.home #banner-secondary p {
+		font-size: 36px;
+		line-height: 36px;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 	.notify p {
@@ -801,13 +788,18 @@ p.info {
 
 @media all and (max-width: 480px) {
 
-	#banner-secondary h1 {
-		font-size: 43px;
-		line-height: 43px;
+	.home #banner-secondary h1 {
+		font-size: 32px;
+		line-height: 32px;
 	}
 
-	.home .sidebar.left,
-	.home .sidebar.right {
+	.home #banner-secondary p {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	.home #sidebar,
+	.home .info-bar {
 		width: 90%;
 		margin-left: 5%;
 		margin-right: 5%;
@@ -831,4 +823,3 @@ p.info {
 		text-align: center;
 	}
 }
-*/
