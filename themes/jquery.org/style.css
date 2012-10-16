@@ -475,10 +475,6 @@ nav#main ul {
     width: 80%;
 }
 
-nav#main .children{
-  display: none;
-}
-
 @media only screen and (max-width: 767px) {
     .sponsors-page ul.block-grid li img {
         float: none;
@@ -622,7 +618,7 @@ nav#main .children{
     }
     
     .dark-callout-box {
-        background-image: url(../images/dark-grey-tile.png);
+        background-image: url(images/dark-grey-tile.png);
         border-bottom: 10px solid #c1c1c1;
         border-top: 10px solid #c1c1c1;
         text-align: center;

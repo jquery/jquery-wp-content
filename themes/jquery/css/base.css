@@ -1552,7 +1552,7 @@ nav#main .searchform input {
 }
 
 nav#main .searchform input:focus {
-    outline: none;
+	outline: none;
 }
 
 nav#main .searchform input::-webkit-input-placeholder,

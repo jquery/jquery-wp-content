@@ -8,77 +8,22 @@ Theme Name: plugins-jquery-com
 Template: jquery
 */
 
-/*-----[ containers ]-----------------------------------------------------------
-*/
-.single-jquery_plugin #container #body .inner {
-	padding: 0;
+/*-----[ Containers and shared content ]------------------------------------*/
+
+h2 [class^="icon-"],
+h2 [class*=" icon-"],
+h3 [class^="icon-"],
+h3 [class*=" icon-"],
+h4 [class^="icon-"],
+h4 [class*=" icon-"] {
+	margin-right: 7px;
 }
 
-.home #container #body .inner,
-.page #container #body .inner {
-	padding: 2%;
+#sidebar li {
+	color: #b3b3b3;
 }
 
-#container #body .inner {
-	padding: 2em 0;
-}
-
-.jquery_plugin {
-	padding: 1.6em 1em;
-}
-
-.jquery_plugin .block {
-	margin-bottom: 1.5em;
-}
-
-.jquery_plugin .plugin-metadata,
-#content,
-.sidebar {
-	float: left;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-#content {
-	padding: 0.5em 30px 0.5em 30px;
-	width: 68%;
-}
-
-#content hr {
-	display: block;
-	margin: 2em 0;
-	height: 1em;
-	background: url("images/gauze.png");
-	content: ' ';
-	border: none;
-}
-
-.jquery_plugin .plugin-metadata,
-.sidebar {
-	float: right;
-	border-left: 1px;
-	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
-	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 0.5em 20px 0.5em 35px; /*0.5 * 16px = 8px*/
-	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
-	background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: -moz-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
-	width: 320px;
-
-}
-
-/*-----[ content ]--------------------------------------------------------------
-*/
-
+/*----------[ Notifications ]-----------------------------------------------*/
 
 .notify {
 	background-image: -webkit-gradient(linear, left bottom, left top, from(#eeeaa2), to(#f2efbf));
@@ -125,471 +70,12 @@ Template: jquery
 	line-height: 24px;
 }
 
-.jquery_plugin h1.entry-title,
-h1.page-title {
-	margin: 0 0 .25em; /*0.25 * 32px = 8px*/
-	color: #d18f4f;
-}
-
-h1.page-title {
-	margin-bottom: 40px;
-}
-
-
-
-.jquery_plugin .block ul,
-.jquery_plugin .block li {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-.jquery_plugin p,
-.jquery_plugin dl,
-.jquery_plugin ol,
-.jquery_plugin ul,
-.jquery_plugin table {
-	margin-bottom: 1.6em; /*1.6 * 15px = 24px*/
-}
-
-.jquery_plugin table {
-	border-radius: 8px;
-}
-
-.jquery_plugin .attribution,
-p.info {
-	color: #808080;
-	font: 13px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-top: -5px;
-}
-
-p.info {
-	margin-top: 0;
-}
-
-
-/*----------[ tags ]------------------------------------------------------------
-*/
-.jquery_plugin .tags li {
-	display: inline-block;
-	margin-right: 10px;
-	width: auto;
-}
-
-.jquery_plugin li a.tag[class^="icon-"]:before,
-.jquery_plugin li a.tag[class*=" icon-"]:before {
-
-	width: 20px;
-	text-align: left;
-	color: #8ccffa;
-}
-
-.jquery_plugin li a.tag {
-	color: white;
-	text-decoration: none;
-	display: block;
-	border-radius: 3px;
-	background-color: #305e91;
-	margin-bottom: 10px;
-	padding: 2px 7px 2px 7px;
-	width: auto;
-}
-
-.jquery_plugin li a.tag:hover {
-	background-color: #333;
-}
-
-/*----------[ versions table ]--------------------------------------------------
-*/
-.jquery_plugin .versions table {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border-collapse: separate;
-	border-spacing: 0;
-	border-style: none;
-	width: 100%;
-}
-
-.jquery_plugin .versions table th,
-.jquery_plugin .versions table td {
-	border: 1px solid #ccc;
-	border-top-style: none;
-	padding: 8px 14px;
-}
-
-.jquery_plugin .versions table tbody tr:nth-child(even) td {
-	background-color: #f2f2f2;
-}
-
-.jquery_plugin .versions table tbody tr:last-of-type td.version {
-	border-bottom-left-radius: 8px;
-}
-
-.jquery_plugin .versions table tbody tr:last-of-type td.release-date {
-	border-bottom-right-radius: 8px;
-}
-
-.jquery_plugin .versions table thead tr {
-	border-radius: 8px 8px 0 0;
-	background: black url('images/dark-grey-tile.png');
-}
-
-
-
-.jquery_plugin .versions table thead th.version-head {
-	border-top-left-radius: 8px;
-}
-
-.jquery_plugin .versions table thead th.release-date-head {
-	border-top-right-radius: 8px;
-}
-
-.jquery_plugin .versions table .version {
-	border-right-style: none;
-	font: bold 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px;
-}
-
-.jquery_plugin .versions table .release-date {
-	border-left-style: none;
-	width: 20%;
-}
-
-.jquery_plugin .versions table thead th {
-	border-style: none;
-	color: white;
-	text-align: left;
-	text-transform: uppercase;
-	font: bold 12px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-/*----------[ related plugins ]-------------------------------------------------
-*/
-.jquery_plugin .related-plugins .box {
-	border-radius: 4px;
-	border: 1px solid #ccc;
-	padding: 16px 20px;
-}
-
-.jquery_plugin .related-plugins h3 {
-	font-size: 18px;
-	line-height: 1.33em;
-	color: #7f7f7f;
-}
-
-.jquery_plugin .related-plugins ul {
-	margin-left: 0px;
-	list-style-type: none;
-}
-
-.jquery_plugin .related-plugins li {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	float: left;
-	margin-bottom: 8px;
-	padding-left: 16px;
-	width: 33%;
-}
-
-.jquery_plugin .related-plugins li:before,
-.jquery_plugin .plugin-metadata li:before,
-.sidebar li:before {
-	text-indent: -1.6em;
-	color: #e0e0e0;
-}
-
-/*----------[ general sidebar styles ]------------------------------------------
-*/
-.jquery_plugin .plugin-metadata .github-activity,
-.jquery_plugin .plugin-metadata .author-info,
-.jquery_plugin .plugin-metadata .maintainer-info,
-.jquery_plugin .plugin-metadata .licenses,
-.jquery_plugin .plugin-metadata .dependencies {
-	color: #7f7f7f;
-}
-
-.jquery_plugin .plugin-metadata .github-activity h2,
-.jquery_plugin .plugin-metadata .author-info h2,
-.jquery_plugin .plugin-metadata .maintainer-info h2,
-.jquery_plugin .plugin-metadata .licenses h2,
-.jquery_plugin .plugin-metadata .dependencies h2 {
-	padding-left: 30px;
-	background: no-repeat left center;
-	text-shadow: 0 1px 0 white;
-}
-
-.jquery_plugin .plugin-metadata h3,
-.sidebar h3 {
-	margin-bottom: 5px;
-	font-size: 1.4em;
-	color: #858585;
-}
-
-.jquery_plugin .plugin-metadata h2 [class^="icon-"],
-.jquery_plugin .plugin-metadata h2 [class*=" icon-"],
-.sidebar h2 [class^="icon-"],
-.sidebar h2 [class*=" icon-"] {
-	display: inline-block;
-	margin-left: -30px;
-	margin-right: 6px;
-	width: 24px;
-	background: no-repeat left center;
-	color: #7f7f7f;
-	text-align: center;
-	text-shadow: 0 1px 0 white;
-}
-
-.jquery_plugin .plugin-metadata .github-activity .box {
-	border-radius: 3px;
-	border: 1px solid #ccc;
-	padding: 10px;
-	background-color: white;
-}
-
-.jquery_plugin .plugin-metadata .github-activity .box p {
-	margin: 0;
-}
-
-.jquery_plugin .plugin-metadata .github-activity .box .info-block {
-	display: inline-block;
-	margin-right: 10px;
-	border-radius: 4px;
-	text-align: center;
-	min-width: 80px;
-}
-
-.jquery_plugin .plugin-metadata .github-activity .box .info-block .number {
-	border-top-left-radius: 4px;
-	border-top-right-radius: 4px;
-	background: black url('images/dark-grey-tile.png');
-	padding: 2px 10px;
-	color: white;
-	font: bold 3em/1em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-.jquery_plugin .plugin-metadata .github-activity .box .info-block .caption {
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	padding: 4px 10px;
-	background-color: #8ccffa;
-	color: white;
-	text-transform: uppercase;
-	font: bold 11px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: 1px;
-}
-
-.jquery_plugin .plugin-metadata ul,
-.sidebar ul {
-	margin-left: 25px;
-	list-style-type: none;
-}
-
-.jquery_plugin .plugin-metadata li,
-.sidebar li {
-	padding-left: 16px;
-	text-shadow: 0 1px 0 white;
-}
-
-.sidebar li {
-	color: #b3b3b3;
-	padding-bottom: 9px;
-}
-
-.jquery_plugin .plugin-metadata li.icon-caret-right:before,
-.sidebar li.icon-caret-right:before {
-	font-size: .9em;
-}
-
-/*----------[ toolbox ]---------------------------------------------------------
-*/
-.jquery_plugin .toolbox {
-	border: 1px solid black;
-	border-radius: 8px;
-	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	background-color: black;
-}
-
-.jquery_plugin .toolbox > .inner {
-	border: 1px solid #666;
-	border-radius: 8px;
-	background-color: #202020;
-	color: white;
-}
-
-.jquery_plugin .toolbox header {
-	padding: 10px 15px;
-}
-
-.jquery_plugin .toolbox header p {
-	margin: 0;
-}
-
-.jquery_plugin .toolbox header .caption {
-	color: #999;
-	font: 14px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-.jquery_plugin .toolbox header .version-info {
-	float: left;
-	width: 30%;
-}
-
-.jquery_plugin .toolbox header .release-info {
-	float: right;
-	width: 70%;
-}
-
-.jquery_plugin .toolbox header .release-info {
-	text-align: right;
-}
-
-.jquery_plugin .toolbox header .version-number, .jquery_plugin .toolbox header .date {
-	font: bold 1.25em/1.2em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-.jquery_plugin .toolbox header .version-number {
-	font-size: 1.9em;
-	letter-spacing: -2px;
-	line-height: .9em;
-}
-
-.jquery_plugin .toolbox .body {
-	border-bottom-left-radius: 8px;
-	border-bottom-right-radius: 8px;
-	padding: 12px 15px 5px;
-	background: url('images/dark-grey-tile.png');
-}
-
-.jquery_plugin .toolbox a.download {
-	display: block;
-	margin-bottom: 1.2em;
-	border-radius: 5px;
-	border: 1px solid black;
-	 /*1.25 * 16px = 20px*/
-	 /*1.6 * 20px = 32px*/
-
-	color: white;
-	text-shadow: 0 -1px #bc7531, 0 1px #dca977;
-	text-decoration: none;
-	font: bold 1.4em/1.6em "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-.jquery_plugin .toolbox a.download .inner-wrapper {
-	display: block;
-	border-radius: 5px;
-	border: 1px solid #e1b68c;
-	background: #d18f4f;
-	padding: 0 5px 0 32px;
-}
-
-.jquery_plugin .toolbox a.download:hover .inner-wrapper {
-	background-color: #cc8540;
-}
-
-.jquery_plugin .toolbox a.download .inner-wrapper [class^="icon-"],
-.jquery_plugin .toolbox a.download .inner-wrapper [class*=" icon-"] {
-	margin-left: -25px;
-	margin-right: 5px;
-	color: #81502e;
-	text-shadow: 0 1px #dca977;
-	text-align: center;
-	top: 3px;
-	position: relative;
-}
-
-.jquery_plugin .toolbox [class^="icon-"], .jquery_plugin .toolbox [class*=" icon-"] {
-	margin-left: -25px;
-	margin-right: 7px;
-	width: 25px;
-	color: #8ccffa;
-	text-decoration: none;
-	text-shadow: 0 -1px black;
-}
-
-.jquery_plugin .toolbox [class^="icon-"]:before, .jquery_plugin .toolbox [class*=" icon-"]:before {
-	width: 25px;
-	text-align: center;
-	font-size: 1.2em;
-}
-
-.jquery_plugin .toolbox a.other-link {
-	display: block;
-	margin-bottom: 0.8em;
-	background: no-repeat 8px center;
-	color: white;
-	text-decoration: none;
-	font: 18px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: 32px;
-}
-
-.jquery_plugin .toolbox a.other-link:hover {
-	text-decoration: underline;
-}
-
-/*----------[ Home ]--------------------------------------------------------*/
-
-.home .sidebar {
-	width: 25%
-}
-
-.home .sidebar.left {
-	left: 0px;
-	position: absolute;
-}
-
-.home #content {
-	position: relative;
-	margin-left: 27%;
-	width: 46%;
-	float: left;
-	margin-bottom: 30px;
-
-}
-
-.home .sidebar ul {
-	margin-left: 25px;
-}
-
-.home .sidebar li {
-	color: #b3b3b3;
-	padding-bottom: 7px;
-}
-
-.home .sidebar li.icon-caret-right:before {
-	font-size: 10px;
-	color: #ccc;
-}
-
-.home #content h3 {
-	font-size: 32px;
-	text-align: center;
-	color: #e18d3b;
-	margin-bottom: 30px;
-}
+/*----------[ Content ]-----------------------------------------------------*/
 
 #content article {
-	border-bottom: 1px solid #ccc;
 	margin-bottom: 20px;
 	padding-bottom: 10px;
-}
-
-.plugin-title {
-	font-size: 20px;
-	line-height: 20px;
-	color: #333;
-	margin-bottom: 5px;
-}
-
-.plugin-title a {
-	color: #333;
-	text-decoration: none;
+	border-bottom: 1px solid #ccc;
 }
 
 #content article p {
@@ -603,28 +89,573 @@ p.info {
 	margin-left: 5%;
 }
 
-.home #content article .action p.date {
-	color: #999;
-	font-size: 11px;
-	line-height: 11px;
-	text-align: center;
-	width: 100%;
-}
-
-.home #content a.button,
-#content article a.button {
-	margin-bottom: 5px;
+#content a.button {
 	float: left;
-	width: 90%;
+	width: 100%;
 	padding-left: 5%;
 	padding-right: 5%;
 	text-align: center;
 }
 
+#content .plugin-title {
+	font-size: 20px;
+	line-height: 20px;
+	color: #333;
+	margin-bottom: 5px;
+}
 
+#content .plugin-title a {
+	color: #333;
+	text-decoration: none;
+}
 
+#content .plugin-title a:hover {
+	text-decoration: underline;
+}
 
-/*----------[ Pagination ]----------------------------------------------------*/
+/*----------[ Home page ]---------------------------------------------------*/
+
+.home #banner-secondary p {
+	font-family: "JournalRegular", Georgia, "Times New Roman", Times, serif;
+	font-size: 56px;
+	color: #71d1ff;
+}
+
+.home #banner-secondary .searchform {
+	position: relative;
+	width: 60%;
+	margin: 60px auto 0;
+	font-size: 22px;
+	background-color: #666;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+	border-radius: 2em;
+}
+
+.home #banner-secondary .searchform input {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 40px;
+	line-height: 1.5em;
+	border: none;
+	background: none;
+	color: #fff;
+}
+
+.home #banner-secondary .searchform i {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -10px;
+	color: #aaa;
+}
+
+.home #sidebar {
+	width: 25%
+}
+
+.home #content {
+	position: relative;
+	width: 53%;	/* 22 | 53 | 25 */
+	margin: 0 30px 30px 30px;
+}
+
+.home #content h3, .home #content h3 i {
+	font-size: 32px;
+	text-align: center;
+	color: #e18d3b;
+	margin-bottom: 30px;
+}
+
+.home article footer {
+	margin: 0;
+	padding: 0;
+}
+
+.home #content article p {
+	margin: 1em 0;
+}
+
+.home #content article .action p.date {
+	width: 100%;
+	line-height: 11px;
+	text-align: center;
+	font-size: 11px;
+	color: #999;
+}
+
+/*----------[ Home page info sidebar ]----------------------------------------
+The new-new-CSS doesn't support a secondary bar - it has only #sidebar - so we
+unfortunately need to replicate some stuff from base.css here.
+*/
+
+.info-bar {
+	float: left;
+	position: relative;
+	width: 22%;
+	margin-left: -40px;
+	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
+	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
+	padding: 3em 35px 3em 20px;
+	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
+	box-shadow: inset 15px 0 5px -16px #e7e7e7;
+	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
+	background-image: -webkit-radial-gradient(right, #f2f2f2, #ffffff 80%);
+	background-image: -moz-radial-gradient(right, #f2f2f2, #ffffff 80%);
+	background-image: -o-radial-gradient(right, #f2f2f2, #ffffff 80%);
+	background-image: -ms-radial-gradient(right, #f2f2f2, #ffffff 80%);
+	background-image: radial-gradient(right, #f2f2f2, #ffffff 80%);
+	border: 0px;
+	border-right: 1px solid #efefef;
+}
+
+.info-bar h3 {
+	font: normal normal 20px/18px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-image: -webkit-gradient(linear, left bottom, right bottom, from(#efefef), to(#f3f3f3));
+	background-image: -moz-linear-gradient(360deg, #efefef 0%, #f3f3f3 100%);
+	margin-left: -20px;
+	margin-right: -35px;
+	padding: 12px 20px 12px 30px;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+.info-bar li {
+	padding-top: 2px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	line-height: 20px;
+	list-style-type: none;
+	background: url(images/bullet.png) no-repeat 0 8px;
+	text-shadow: 0 1px 0 #ffffff;
+	color: #b3b3b3;
+}
+
+.info-bar li a {
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+.info-bar li a:hover {
+	text-decoration: underline;
+}
+
+.info-bar nav#secondary li {
+	background-image: none;
+	padding-left: 0;
+}
+
+.info-bar nav#secondary li.current {
+	background-color: #e2e2e2;
+	margin-left: -35px;
+	margin-right: -20px;
+	padding-left: 35px;
+	font-weight: bold;
+}
+
+/*----------[ Individual plugin pages ]-------------------------------------*/
+
+#content.jquery-plugin {
+	width: 71%;	/* 71% | 29% */
+}
+
+#content.jquery-plugin h2 {
+	margin-bottom: 15px;
+}
+
+#content.jquery-plugin article {
+	border-bottom: 0;
+}
+
+.jquery-plugin .block {
+	margin-bottom: 1.5em;
+}
+
+.jquery-plugin h1.entry-title, h1.page-title {
+	font: bold 33px/33px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #d18f4f;
+}
+
+.jquery-plugin h1.entry-title {
+	margin: 0 0 .25em; /* 0.25 * 32px = 8px */
+}
+
+.jquery-plugin .block ul,
+.jquery-plugin .block li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.jquery-plugin p,
+.jquery-plugin dl,
+.jquery-plugin ol,
+.jquery-plugin ul,
+.jquery-plugin table {
+	margin-bottom: 1.6em; /* 1.6 * 15px = 24px */
+}
+
+.jquery-plugin table {
+	border-radius: 8px;
+}
+
+#content.jquery-plugin .attribution, p.info {
+	float: none;
+	color: #808080;
+	font: 13px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-top: -5px;
+}
+
+p.info {
+	margin-top: 0;
+}
+
+/*----------[ Individual plugin page general sidebar styles ]---------------*/
+
+.jquery-plugin .github-activity,
+.jquery-plugin .author-info,
+.jquery-plugin .maintainer-info,
+.jquery-plugin .licenses,
+.jquery-plugin .dependencies {
+	color: #7f7f7f;
+}
+
+.jquery-plugin .github-activity h2,
+.jquery-plugin .author-info h2,
+.jquery-plugin .maintainer-info h2,
+.jquery-plugin .licenses h2,
+.jquery-plugin .dependencies h2 {
+	padding-left: 30px;
+	background: no-repeat left center;
+	text-shadow: 0 1px 0 white;
+}
+
+.jquery-plugin h3 {
+	margin-bottom: 5px;
+	font-size: 1.4em;
+	color: #858585;
+}
+
+.jquery-plugin h2 [class^="icon-"],
+.jquery-plugin h2 [class*=" icon-"] {
+	display: inline-block;
+	margin-left: -30px;
+	margin-right: 6px;
+	width: 24px;
+	background: no-repeat left center;
+	color: #7f7f7f;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+}
+
+.jquery-plugin .github-activity .box {
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	background-color: white;
+}
+
+.jquery-plugin .github-activity .box p {
+	margin: 0;
+}
+
+.jquery-plugin .github-activity .box .info-block {
+	display: inline-block;
+	margin-right: 10px;
+	border-radius: 4px;
+	text-align: center;
+	min-width: 80px;
+}
+
+.jquery-plugin .github-activity .box .info-block .number {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background: black url('images/dark-grey-tile.png');
+	padding: 2px 10px;
+	color: white;
+	font: bold 3em/1em Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jquery-plugin .github-activity .box .info-block .caption {
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding: 4px 10px;
+	background-color: #8ccffa;
+	color: white;
+	text-transform: uppercase;
+	font: bold 11px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 1px;
+}
+
+/*----------[ Individual plugin page sidebar toolbox ]----------------------*/
+
+.jquery-plugin .toolbox {
+	border: 1px solid black;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	background-color: black;
+}
+
+.jquery-plugin .toolbox > .inner {
+	border: 1px solid #666;
+	border-radius: 8px;
+	background-color: #202020;
+	color: white;
+}
+
+.jquery-plugin .toolbox header {
+	padding: 10px 15px;
+}
+
+.jquery-plugin .toolbox header p {
+	margin: 0;
+}
+
+.jquery-plugin .toolbox header .caption {
+	color: #999;
+	font: 14px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jquery-plugin .toolbox header .version-info {
+	float: left;
+	width: 30%;
+}
+
+.jquery-plugin .toolbox header .release-info {
+	float: right;
+	width: 70%;
+}
+
+.jquery-plugin .toolbox header .release-info {
+	text-align: right;
+}
+
+.jquery-plugin .toolbox header .version-number, .jquery-plugin .toolbox header .date {
+	font: bold 1.25em/1.2em Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jquery-plugin .toolbox header .version-number {
+	font-size: 1.9em;
+	letter-spacing: -2px;
+	line-height: .9em;
+}
+
+.jquery-plugin .toolbox .body {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 12px 15px 5px;
+	background: url('images/dark-grey-tile.png');
+}
+
+.jquery-plugin .toolbox a.download {
+	display: block;
+	margin-bottom: 1.2em;
+	border-radius: 5px;
+	border: 1px solid black;
+	 /*1.25 * 16px = 20px*/
+	 /*1.6 * 20px = 32px*/
+
+	color: white;
+	text-shadow: 0 -1px #bc7531, 0 1px #dca977;
+	text-decoration: none;
+	font: bold 1.4em/1.6em Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.jquery-plugin .toolbox a.download .inner-wrapper {
+	display: block;
+	border-radius: 5px;
+	border: 1px solid #e1b68c;
+	background: #d18f4f;
+	padding: 0 5px 0 32px;
+}
+
+.jquery-plugin .toolbox a.download:hover .inner-wrapper {
+	background-color: #cc8540;
+}
+
+.jquery-plugin .toolbox a.download .inner-wrapper [class^="icon-"],
+.jquery-plugin .toolbox a.download .inner-wrapper [class*=" icon-"] {
+	margin-left: -25px;
+	margin-right: 5px;
+	color: #81502e;
+	text-shadow: 0 1px #dca977;
+	text-align: center;
+	top: 3px;
+	position: relative;
+}
+
+.jquery-plugin .toolbox [class^="icon-"], .jquery-plugin .toolbox [class*=" icon-"] {
+	margin-left: -25px;
+	margin-right: 7px;
+	width: 25px;
+	color: #8ccffa;
+	text-decoration: none;
+	text-shadow: 0 -1px black;
+}
+
+.jquery-plugin .toolbox [class^="icon-"]:before, .jquery-plugin .toolbox [class*=" icon-"]:before {
+	width: 25px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.jquery-plugin .toolbox a.other-link {
+	display: block;
+	margin-bottom: 0.8em;
+	background: no-repeat 8px center;
+	color: white;
+	text-decoration: none;
+	font: 18px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 32px;
+}
+
+.jquery-plugin .toolbox a.other-link:hover {
+	text-decoration: underline;
+}
+
+/*----------[ Individual plugin page tags ]---------------------------------*/
+
+#content.jquery-plugin .tags ul {
+	margin: 0;
+}
+
+#content.jquery-plugin .tags li {
+	display: inline-block;
+	width: auto;
+	margin-right: 10px;
+	padding: 0;
+	background: none;
+}
+
+.jquery-plugin li a.tag[class^="icon-"]:before,
+.jquery-plugin li a.tag[class*=" icon-"]:before {
+	width: 20px;
+	text-align: left;
+	color: #8ccffa;
+}
+
+#content.jquery-plugin li a.tag {
+	display: block;
+	width: auto;
+	padding: 2px 7px 2px 7px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	text-decoration: none;
+	background-color: #305e91;
+	color: white;
+}
+
+.jquery-plugin li a.tag:hover {
+	background-color: #333;
+}
+
+/*----------[ Individual plugin page versions table ]-----------------------*/
+
+.jquery-plugin .versions table {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-collapse: separate;
+	border-spacing: 0;
+	border-style: none;
+	width: 100%;
+}
+
+.jquery-plugin .versions table th,
+.jquery-plugin .versions table td {
+	border: 1px solid #ccc;
+	border-top-style: none;
+	padding: 8px 14px;
+}
+
+.jquery-plugin .versions table tbody tr:nth-child(even) td {
+	background-color: #f2f2f2;
+}
+
+.jquery-plugin .versions table tbody tr:last-of-type td.version {
+	border-bottom-left-radius: 8px;
+}
+
+.jquery-plugin .versions table tbody tr:last-of-type td.release-date {
+	border-bottom-right-radius: 8px;
+}
+
+.jquery-plugin .versions table thead tr {
+	border-radius: 8px 8px 0 0;
+	background: black url('images/dark-grey-tile.png');
+}
+
+.jquery-plugin .versions table thead th.version-head {
+	border-top-left-radius: 8px;
+}
+
+.jquery-plugin .versions table thead th.release-date-head {
+	border-top-right-radius: 8px;
+}
+
+.jquery-plugin .versions table .version {
+	border-right-style: none;
+	font: bold 18px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+}
+
+.jquery-plugin .versions table .release-date {
+	border-left-style: none;
+	width: 20%;
+}
+
+.jquery-plugin .versions table thead th {
+	border-style: none;
+	color: white;
+	text-align: left;
+	text-transform: uppercase;
+	font: bold 12px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*----------[ Individual plugin page related plugins ]----------------------*/
+
+.jquery-plugin .related-plugins .box {
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: 16px 20px;
+}
+
+.jquery-plugin .related-plugins h3 {
+	font-size: 18px;
+	line-height: 1.33em;
+	color: #7f7f7f;
+}
+
+.jquery-plugin .related-plugins ul {
+	margin-left: 0px;
+	list-style-type: none;
+}
+
+.jquery-plugin .related-plugins li {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin-bottom: 8px;
+	padding-left: 16px;
+	width: 33%;
+}
+
+.jquery-plugin .related-plugins li:before,
+.jquery-plugin .plugin-metadata li:before {
+	text-indent: -1.6em;
+	color: #e0e0e0;
+}
+
+/*----------[ Pagination ]--------------------------------------------------*/
 
 .nav-previous {
 	float: left;
@@ -637,42 +668,56 @@ p.info {
 	width: 45%;
 }
 
-/*----------[ IE hacks ]------------------------------------------------------*/
+/*----------[ IE hacks ]----------------------------------------------------*/
 
-.lte9 .jquery_plugin h1.entry-title {
+.lte9 .jquery-plugin h1.entry-title {
 	background: transparent;
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
-.lte9 .jquery_plugin .tags li a {
+.lte9 .jquery-plugin .tags li a {
 	height: 24px;
 }
 
+/*----------[ Media queries ]-----------------------------------------------*/
 
+@media all and (max-width: 1200px) {
+
+	#sidebar.jquery-plugin p.date {
+		font-size: 16px;
+	}
+}
 
 @media all and (max-width: 1100px) {
 
-	.jquery_plugin .plugin-metadata,
-	.sidebar {
-		width: 280px;
+	#sidebar.jquery-plugin a.download {
+		font-size: 16px;
 	}
 
+	#sidebar.jquery-plugin p.date {
+		font-size: 14px;
+	}
 }
 
 @media all and (max-width: 1000px) {
 
-	#content {
+	#content, .home #content {
 		width: 65%;
+		margin: 0;
 	}
 
-	.home #content {
-		width: 65%;
-		margin-left: 3%;
+	#sidebar, .home #sidebar, .home .info-bar {
+		width: 220px;
 	}
 
-	.home .sidebar.left {
-		position: relative;
+	#sidebar.jquery-plugin a.download {
+		font-size: 12px;
+	}
+
+	.home .info-bar {
 		float: right;
+		margin-left: 0;
+		margin-right: -40px;
 	}
 }
 
@@ -681,21 +726,36 @@ p.info {
 	#content {
 		width: 60%;
 	}
-
 }
 
 @media all and (max-width: 768px) {
 
-	.jquery_plugin .plugin-metadata,
-	.home .sidebar,
-	.home .sidebar.left,
-	.sidebar,
-	#content {
+	.home #banner-secondary h1 {
+		font-size: 42px;
+		line-height: 42px;
+	}
+
+	.home #banner-secondary p {
+		font-size: 42px;
+		line-height: 42px;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.home #banner-secondary .searchform {
+		font-size: 16px;
+	}
+
+	#sidebar, .info-bar, #content, #content.jquery-plugin,
+	.home #sidebar, .home .info-bar, .home #content {
 		width: 100%;
 		padding: 0;
 		clear: both;
 		float: none;
+		border-top: none;
 		border-left: none;
+		border-right: none;
+		border-bottom: none;
 		-moz-border-image: none;
 		-webkit-border-image: none;
 		-webkit-border-image: none;
@@ -713,45 +773,33 @@ p.info {
 		margin-bottom: 20px;
 	}
 
-	.home #content {
-		width: 100%;
-		margin: 0;
-		padding-left: 5%;
-		padding-right: 5%;
-		margin-bottom: 30px;
+	#sidebar h3, .home #sidebar h3,
+	.info-bar h3, .home .info-bar h3 {
+		margin-left: -20px;
+		margin-right: -20px;
 	}
 
-	.home .sidebar.left {
-		float: left;
-		width: 45%;
-		clear: none;
-		margin-left: 5%;
+	#sidebar.jquery-plugin a.download {
+		font-size: 20px;
 	}
 
-	.home .sidebar.right {
-		float: right;
-		width: 45%;
-		clear: none;
-		margin-right: 5%;
+	#sidebar.jquery-plugin p.date {
+		font-size: 18px;
 	}
-
-	#container #body .inner {
-		padding-left: 1.2em;
-		padding-right: 1.2em;
-	}
-
 }
 
 @media all and (max-width: 660px) {
 
-	#banner h1 {
-		font-size: 60px;
-		line-height: 60px;
+	.home #banner-secondary h1 {
+		font-size: 36px;
+		line-height: 36px;
 	}
 
-	#banner h2 {
-		font-size: 40px;
-		line-height: 35px;
+	.home #banner-secondary p {
+		font-size: 36px;
+		line-height: 36px;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 
 	.notify p {
@@ -770,13 +818,18 @@ p.info {
 
 @media all and (max-width: 480px) {
 
-	#banner h1 {
-		font-size: 43px;
-		line-height: 43px;
+	.home #banner-secondary h1 {
+		font-size: 32px;
+		line-height: 32px;
 	}
 
-	.home .sidebar.left,
-	.home .sidebar.right {
+	.home #banner-secondary p {
+		font-size: 32px;
+		line-height: 32px;
+	}
+
+	.home #sidebar,
+	.home .info-bar {
 		width: 90%;
 		margin-left: 5%;
 		margin-right: 5%;
@@ -793,10 +846,6 @@ p.info {
 	#content article .action {
 		float: none;
 		clear: both;
-		width: 90%;
-	}
-
-	.home #content article .action a.button {
 		width: 90%;
 	}
 
