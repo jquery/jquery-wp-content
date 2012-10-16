@@ -1417,6 +1417,14 @@ nav#main .searchform i {
 	text-decoration: none;
 }
 
+#sidebar a {
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+
 p {
 	margin-bottom: 20px;
 	margin-top: 0;
