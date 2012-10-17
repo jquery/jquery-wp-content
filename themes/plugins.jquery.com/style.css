@@ -1,7 +1,6 @@
 /* @override
 	http://stage.plugins.jquery.com/web-base-template/themes/plugins.jquery.com/style.css
-	http://dev.plugins.jquery.com/web-base-template/themes/plugins.jquery.com/style.css */
-
+	http://dev.plugins.jquery.com/web-base-template/themes/plugins.jquery.com/style.css*/
 
 /*
 Theme Name: plugins-jquery-com
@@ -151,14 +150,14 @@ h4 [class*=" icon-"] {
 	color: #aaa;
 }
 
-.home #sidebar {
-	width: 25%
+.home .float-wrapper {
+	float: right;
+	width: 80%;	/* 20% | 80% */
 }
 
 .home #content {
-	position: relative;
-	width: 53%;	/* 22 | 53 | 25 */
-	margin: 0 30px 30px 30px;
+	width: 71%;	/* 71% | 29% */
+	margin-bottom: 30px;
 }
 
 .home #content h3, .home #content h3 i {
@@ -191,16 +190,16 @@ unfortunately need to replicate some stuff from base.css here.
 */
 
 .info-bar {
-	float: left;
-	position: relative;
-	width: 22%;
+	width: 20%;
 	margin-left: -40px;
+	padding: 3em 35px 3em 20px;
 	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
 	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 3em 35px 3em 20px;
+	border: 0px;
+	border-right: 1px solid #efefef;
 	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
@@ -209,8 +208,6 @@ unfortunately need to replicate some stuff from base.css here.
 	background-image: -o-radial-gradient(right, #f2f2f2, #ffffff 80%);
 	background-image: -ms-radial-gradient(right, #f2f2f2, #ffffff 80%);
 	background-image: radial-gradient(right, #f2f2f2, #ffffff 80%);
-	border: 0px;
-	border-right: 1px solid #efefef;
 }
 
 .info-bar h3 {
@@ -224,9 +221,7 @@ unfortunately need to replicate some stuff from base.css here.
 }
 
 .info-bar li {
-	padding-top: 2px;
-	padding-bottom: 5px;
-	padding-left: 20px;
+	padding: 2px 0 5px 20px;
 	line-height: 20px;
 	list-style-type: none;
 	background: url(images/bullet.png) no-repeat 0 8px;
@@ -705,12 +700,48 @@ p.info {
 
 @media all and (max-width: 1200px) {
 
+	.home #banner-secondary h1 {
+		font-size: 56px;
+		line-height: 56px;
+	}
+
 	#sidebar.jquery-plugin p.date {
 		font-size: 16px;
 	}
 }
 
 @media all and (max-width: 1100px) {
+
+	.home #banner-secondary h1 {
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	.home .float-wrapper {
+		width: 100%;
+	}
+
+	#content, #content.jquery-plugin {
+		width: 70%;
+	}
+
+	.home #content {
+		width: 75%;
+	}
+
+	#sidebar {
+		width: 280px;
+	}
+
+	.home #sidebar, .info-bar {
+		width: 220px;
+	}
+
+	.info-bar {
+		float: right;
+		margin-left: 0;
+		margin-right: -40px;
+	}
 
 	#sidebar.jquery-plugin a.download {
 		font-size: 16px;
@@ -723,30 +754,35 @@ p.info {
 
 @media all and (max-width: 1000px) {
 
-	#content, .home #content {
+	.home #banner-secondary h1 {
+		font-size: 44px;
+		line-height: 44px;
+	}
+
+	#content, #content.jquery-plugin {
 		width: 65%;
-		margin: 0;
 	}
 
-	#sidebar, .home #sidebar, .home .info-bar {
-		width: 220px;
-	}
-
-	#sidebar.jquery-plugin a.download {
-		font-size: 12px;
-	}
-
-	.home .info-bar {
-		float: right;
-		margin-left: 0;
-		margin-right: -40px;
+	.home #content {
+		width: 70%;
 	}
 }
 
 @media all and (max-width: 900px) {
 
-	#content {
+	#content, #content.jquery-plugin {
 		width: 60%;
+	}
+
+	.home #content {
+		width: 65%;
+	}
+
+	.home #banner-secondary p {
+		font-size: 46px;
+		line-height: 46px;
+		padding-left: 5%;
+		padding-right: 5%;
 	}
 }
 
@@ -760,8 +796,6 @@ p.info {
 	.home #banner-secondary p {
 		font-size: 42px;
 		line-height: 42px;
-		padding-left: 5%;
-		padding-right: 5%;
 	}
 
 	.home #banner-secondary .searchform {
@@ -820,8 +854,6 @@ p.info {
 	.home #banner-secondary p {
 		font-size: 36px;
 		line-height: 36px;
-		padding-left: 5%;
-		padding-right: 5%;
 	}
 
 	.notify p {

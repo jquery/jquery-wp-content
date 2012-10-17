@@ -1,50 +1,29 @@
 <?php get_header(); ?>
 
-<div class="home">
+<div id="banner-secondary" class="large-banner">
+	<h1>Plugins Make jQuery More Awesomer</h1>
+	<p>Level up your project, not your grammar</p>
+	<?php get_search_form(); ?>
+</div>
 
-	<div id="banner-secondary" class="large-banner">
-		<h1>Plugins Make jQuery More Awesomer</h1>
-		<p>Level up your project, not your grammar</p>
-		<?php get_search_form(); ?>
-	</div>
+<?php
 
-	<?php
+	// TODO
+	//
+	// Make a much more interesting index page
+	//
+	// TODO
 
-		// TODO
-		//
-		// Make a much more interesting index page
-		//
-		// TODO
-
-		$toplvlpages = get_pages( array( 'parent' => 0 ) );
-		foreach( $toplvlpages as $post ) {
-			setup_postdata($post);
-			if ( $post->post_name !== 'update' ) {
-				 get_template_part('excerpt', 'index');
-			}
+	$toplvlpages = get_pages( array( 'parent' => 0 ) );
+	foreach( $toplvlpages as $post ) {
+		setup_postdata($post);
+		if ( $post->post_name !== 'update' ) {
+			 get_template_part('excerpt', 'index');
 		}
-	?>
+	}
+?>
 
-	<div class="info-bar">
-		<h3><i class="icon-tags"></i>Popular Tags</h3>
-		<ul><?php
-			$tags_args = array(
-				'orderby' => 'count',
-				'order' => 'DESC',
-				'number' => 10
-			);
-			$tags = get_tags( $tags_args );
-			foreach ( $tags as $tag ) {
-				echo
-				'<li>' .
-					'<a href="' . get_tag_link( $tag->term_id ) . '">' .
-						$tag->name . '</a>' .
-					' (' . $tag->count . ')' .
-				'</li>';
-			}
-		?></ul>
-	</div>
-
+<div class="float-wrapper">
 	<div id="content">
 		<h3><i class="icon-star"></i>New Plugins</h3>
 		<?php
@@ -71,7 +50,26 @@
 		<h3><i class="icon-calendar"></i>Recent Updates</h3>
 		<?php jq_updated_plugins(); ?>
 	</div>
+</div>
 
+<div class="info-bar">
+	<h3><i class="icon-tags"></i>Popular Tags</h3>
+	<ul><?php
+		$tags_args = array(
+			'orderby' => 'count',
+			'order' => 'DESC',
+			'number' => 10
+		);
+		$tags = get_tags( $tags_args );
+		foreach ( $tags as $tag ) {
+			echo
+			'<li>' .
+				'<a href="' . get_tag_link( $tag->term_id ) . '">' .
+					$tag->name . '</a>' .
+				' (' . $tag->count . ')' .
+			'</li>';
+		}
+	?></ul>
 </div>
 
 <?php get_footer(); ?>
