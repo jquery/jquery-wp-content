@@ -11,15 +11,13 @@ add_filter( 'the_content', function( $content ) {
 
 	$plugin = $post->post_name;
 	$demoList = json_decode( file_get_contents( GW_RESOURCE_DIR . '/demos/demo-list.json' ) );
-	$demos = $demoList->$plugin;
-	$defaultDemo = $demos[ 0 ];
+	$defaultDemo = $demoList->$plugin->default;
 
 	$demoContent .=
 		'<div class="demo-list">' .
 			'<h2>Examples</h2>' .
 			'<ul>';
-	foreach ( $demoList->$plugin as $demo ) {
-		$filename = $demo->filename;
+	foreach ( $demoList->$plugin as $filename => $demo ) {
 		$demoContent .=
 			($filename === 'default' ? '<li class="active">' : '<li>') .
 				'<a href="/resources/demos/' . $plugin . '/' . $filename . '.html">' .
