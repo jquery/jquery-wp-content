@@ -164,7 +164,7 @@ demoList.on( "click", "a", function( event ) {
 		demo = parts[ 4 ].substring( 0, parts[ 4 ].length - 5 );
 
 	$.getJSON( "/resources/demos/demo-list.json" ).then(function( demoList ) {
-		demoDescription.html( $.grep( demoList[ plugin ], function( x ) { return x.filename === demo; })[ 0 ].description );
+		demoDescription.html( demoList[ plugin ][ demo ].description );
 		demoFrame.attr( "src", filename );
 	});
 
