@@ -1008,3 +1008,43 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
  itemWidth:0,itemMargin:0,minItems:0,maxItems:0,move:0,start:function(){},before:function(){},after:function(){},end:function(){},added:function(){},removed:function(){}};d.fn.flexslider=function(i){void 0===i&&(i={});if("object"===typeof i)return this.each(function(){var a=d(this),c=a.find(i.selector?i.selector:".slides > li");1===c.length?(c.fadeIn(400),i.start&&i.start(a)):void 0===a.data("flexslider")&&new d.flexslider(this,i)});var k=d(this).data("flexslider");switch(i){case "play":k.play();break;
  case "pause":k.pause();break;case "next":k.flexAnimate(k.getTarget("next"),!0);break;case "prev":case "previous":k.flexAnimate(k.getTarget("prev"),!0);break;default:"number"===typeof i&&k.flexAnimate(i,!0)}}})(jQuery);
 
+
+
+/*
+ * LIVE UPDATE
+ * for filtering lists of methods from the search field on api sites
+ */
+(function($) {
+
+  $.fn.liveUpdate = function(list) {
+    list = $(list);
+
+    var filter = function() {
+      var term = $.trim( $(this).val().toLowerCase() ), scores = [];
+
+      if ( !term ) {
+        rows.show().addClass("keynav withoutfocus");
+      } else {
+        rows.hide().removeClass("keynav withfocus withoutfocus");
+
+        cache.each(function(i){
+          if ( this.indexOf( term ) > -1 ) {
+            $(rows[i]).show().addClass("keynav withoutfocus");
+          }
+        });
+      }
+    };
+
+    if ( list.length ) {
+      var rows = list.children(),
+        cache = rows.map(function(){
+          return $(this).text().toLowerCase();
+        });
+
+      this
+        .keyup(filter).keyup();
+    }
+
+    return this;
+  };
+})(jQuery);
