@@ -78,6 +78,11 @@ a:hover {
 .quick-nav h2 {
 	margin: -30px -30px 20px -30px;
 }
+.quick-nav h2 a {
+	float: right;
+	font-size: 80%;
+	padding-left: 10px;
+}
 
 .quick-nav-section {
 	width: 33%;
