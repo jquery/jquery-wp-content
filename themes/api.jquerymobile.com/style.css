@@ -50,6 +50,12 @@ a, .title, .entry-title { color: #598611; }
     padding: 10px;
 }
 
+.quick-nav h2 a {
+    float: right;
+    font-size: 80%;
+    padding-left: 10px;
+}
+
 .quick-nav-section {
     width: 33%;
     float: left;
