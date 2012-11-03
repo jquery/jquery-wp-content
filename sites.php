@@ -159,6 +159,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Mobile API Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'api.qunitjs.com' => array(
