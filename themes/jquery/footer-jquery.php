@@ -86,6 +86,8 @@
 </footer>
 <!-- /footer -->
 
+<?php get_template_part( 'footer', 'analytics' ); ?>
+
 <?php wp_footer(); ?>
 
 </body>
