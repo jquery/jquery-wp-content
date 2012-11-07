@@ -57,6 +57,12 @@ function menu_header_jqueryui_com() {
 	);
 }
 
+function menu_header_brand_jquery_org() {
+	return array(
+		'http://brand.jquery.org/' => 'Home',
+		'http://brand.jquery.org/trademark/' => 'Trademark'
+	);
+}
 
 /*
  * Avert your eyes.
