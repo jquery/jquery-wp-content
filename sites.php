@@ -171,6 +171,18 @@ function jquery_sites() {
 				),
 			),
 		),
+		'brand.jquery.org' => array(
+			'blog_id' => 18,
+			'cookie_domain' => '.jquery.org',
+			'body_class' => 'jquery-project',
+			'options' => array(
+				'blogname' => 'jQuery Branding Guidelines',
+				'stylesheet' => 'brand.jquery.org',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
+		),
 	);
 
 	uasort( $sites, function( $a, $b ) {
