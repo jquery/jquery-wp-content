@@ -9,7 +9,7 @@ add_action( 'pre_get_posts', function( $query ) {
 	if ( ! $query->is_main_query() )
 		return;
 
-	$query->set( 'orderby', 'title' );
+	$query->set( 'orderby', 'name' );
 	$query->set( 'order', 'ASC' );
 	$query->set( 'posts_per_page', -1 );
 
