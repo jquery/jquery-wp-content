@@ -1090,7 +1090,11 @@ body {
 }
 
 #body-jquery-foundation #container {
-	background: url(../images/bg-body-foundation.jpg) no-repeat center top #178a9c;
+    background: url(../images/bg-body-foundation.jpg) no-repeat center top #178a9c;
+}
+
+#body-jquery-learning #container {
+	background: url(../images/bg-body-learning.jpg) no-repeat center top #aaa;
 }
 
 #content-wrapper {
@@ -1471,8 +1475,13 @@ h2.logo a {
 }
 
 #body-jquery-foundation h2.logo a {
-	width: 243px;
-	background: url(../images/logo-jquery-foundation.png) no-repeat;
+    width: 243px;
+    background: url(../images/logo-jquery-foundation.png) no-repeat;
+}
+
+#body-jquery-learning h2.logo a {
+	width: 550px;
+	background: url(../images/logo-jquery-learning.png) no-repeat;
 }
 
 #logo-events aside {
