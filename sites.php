@@ -53,6 +53,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'Learn jQuery',
 				'stylesheet' => 'learn.jquery.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'jqueryui.com' => array(
