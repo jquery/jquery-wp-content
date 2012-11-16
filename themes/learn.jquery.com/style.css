@@ -11,16 +11,20 @@ Template: jquery
   width: 50%;
   text-align: center;
   box-sizing: border-box;
+  padding: 0 5%;
 }
 
 #banner .banner-box p {
   margin: 0;
+  text-align: left;
+  font-weight: bold;
 }
 
 #home-features aside {
   float: left;
   width: 33%;
   box-sizing: border-box;
+  padding:0 1%;
 }
 #home-features aside h3 {
   text-align: center;
