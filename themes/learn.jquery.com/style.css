@@ -37,6 +37,45 @@ Template: jquery
 #open-source-content p {
   clear: both;
 }
+
+/*******************************************************************************/
+/* Beta Ribbon
+/*******************************************************************************/
+.beta-ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.beta-ribbon {
+  font-weight: bold;
+  color: #393939;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #ffea94;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffea94), to(#FFEA5E)); 
+  background-image: -webkit-linear-gradient(top, #ffea94, #FFEA5E); 
+  background-image:    -moz-linear-gradient(top, #ffea94, #FFEA5E); 
+  background-image:     -ms-linear-gradient(top, #ffea94, #FFEA5E); 
+  background-image:      -o-linear-gradient(top, #ffea94, #FFEA5E); 
+  color: #6a6340;
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+  box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
 /*******************************************************************************/
 /* Author Meta
 /*******************************************************************************/
