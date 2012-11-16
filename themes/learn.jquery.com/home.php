@@ -12,21 +12,46 @@ get_header(); ?>
 
 	<?php the_post(); ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<div class="entry-content">
-			<?php the_content(); ?>
-			<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
-			<?php if (!is_subpage()) { ?>
+		<?php the_content(); ?>
+
+		<div id="home-features">
+			<aside id="chapter-list">
+				<h3><?php _e( 'Chapters', 'twentyeleven' ); ?></h3>
 				<ul>
-					<?php wp_list_pages("title_li=&sort_column=menu_order&child_of=" . $post->ID); ?>
+					<?php wp_list_pages("depth=1&title_li=&sort_column=menu_order"); ?>
 				</ul>
-			<?php }?>
-		</div><!-- .entry-content -->
-		<footer class="entry-meta">
-			<?php edit_post_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-		</footer><!-- .entry-meta -->
-	</article><!-- #post-<?php the_ID(); ?> -->
+			</aside>
+
+			<aside id="recent-updates">
+				<h3><?php _e( 'Recently Updated', 'twentyeleven' ); ?></h3>
+				<?php
+				$recent_updates = new WP_Query( array(
+					'post_type' => 'page',
+					'post_limits' => 10,
+				));
+				?>
+				<ul>
+					<?php while ( $recent_updates->have_posts() ) : $recent_updates->the_post(); ?>
+						<li>
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						</li>
+					<?php endwhile; wp_reset_postdata(); ?>
+				</ul>
+			</aside>
+
+			<aside id="open-source-content">
+				<h3><?php _e( 'Open Source Content', 'twentyeleven' ); ?></h3>
+				<p>
+				 All of the content in this site is completely open source, and we welcome your contribution.
+				Whether you notice a small improvement that should be made, or want to write entirely new articles, this is one area where feature requests are encouraged!
+				</p>
+				<a class="btn" href="http://github.com/jquery/learn.jquery.com"><i class="icon-github"></i>  Open an Issue or Submit a Pull Request</a>
+				<p class="clearfix">Each of our articles has a link to the raw content on GitHub, and we urge everyone to fork, edit, and help improve this community resource!</p>
+			</aside>
+		</div>
+	</div><!-- #post-<?php the_ID(); ?> -->
 
     </div>
     <!-- /inner -->
@@ -35,4 +60,3 @@ get_header(); ?>
   <!-- /body -->
 
 <?php get_footer(); ?>
-
