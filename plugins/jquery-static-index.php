@@ -35,5 +35,6 @@ function jquery_on_posts_request( $request, $query ) {
 
 // Set up $wp_query->posts.
 function jquery_on_posts_results( $posts, $query ) {
+	remove_filter( 'posts_results', 'jquery_on_posts_results', 10, 2 );
 	return array( get_page( get_option( 'page_on_front' ) ) );
 }
