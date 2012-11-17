@@ -159,7 +159,7 @@ if ( strpos($site, "api-") !== false ) {
         	
         	<h2 class="logo"><a href="/" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
         	<!--Ads or events-->
-        	<aside>Hey extra stuff can go here!</aside>
+        	<aside></aside>
         	
        		</div><!--End Constrain-->
        		
