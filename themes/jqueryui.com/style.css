@@ -25,7 +25,6 @@ a, .title {
 #banner-secondary p.intro {
 	font-size: 24px;
 	line-height: 32px;
-	margin: 0;
 	padding: 0;
 	padding-right: 0.5em;
 	float: left;
@@ -95,7 +94,7 @@ a, .title {
 #content .dev-links {
 	float: right;
 	width: 30%;
-	margin: -15px -25px .5em 1em;
+	margin: -30px -40px .5em 1em;
 	padding: 1em;
 	border: 1px solid #666;
 	border-width: 0 0 1px 1px;
@@ -165,16 +164,16 @@ a, .title {
 }
 
 @media all and (max-width: 600px) {
-	.intro, .download-box {
+	#banner-secondary p.intro, #banner-secondary .download-box {
 		float: none;
 		width: auto;
 	}
 
-	.intro {
+	#banner-secondary p.intro {
 		font-size: 18px;
 	}
 
-	.download-box {
+	#banner-secondary .download-box {
 		overflow: auto;
 	}
 }
