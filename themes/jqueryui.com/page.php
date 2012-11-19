@@ -10,9 +10,15 @@
 
 get_header(); ?>
 
-<div id="content" class="sidebar-left clearfix">
+<?php the_post(); ?>
 
-	<?php the_post(); ?>
+<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
+<div id="banner-secondary" class="large-banner entry-header">
+	<h1 class="entry-title"><?php the_title(); ?></h1>
+</div>
+<?php endif; ?>
+
+<div id="content">
 
 	<?php get_template_part( 'content', 'page' ); ?>
 
