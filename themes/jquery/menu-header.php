@@ -22,6 +22,13 @@ function menu_header_plugins_jquery_com() {
 	);
 }
 
+function menu_header_learn_jquery_com() {
+	return array(
+		'http://learn.jquery.com' => 'Home',
+		'http://api.jquery.com/' => 'Core API Documentation',
+		'http://api.jqueryui.com/' => 'UI API Documentation',
+	);
+}
 function menu_header_qunitjs_com() {
 	return array(
 		'http://qunitjs.com/' => 'Home',
