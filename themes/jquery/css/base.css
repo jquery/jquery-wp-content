@@ -2378,6 +2378,11 @@ footer p.copyright span.sponsor-line {
 	margin: 1px 0 0 0;
 }
 
+footer p.copyright a.mt-link {
+	background: url(../images/logo-mediatemple.png) left 1px no-repeat;
+	padding-left: 31px;
+}
+
 footer .footer-site-links li {
 	position: relative;
 	background: none;

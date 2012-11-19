@@ -2,7 +2,7 @@
 <!-- /container -->
 
 <!-- footer -->
-<footer id="site-footer" class="clearfix">
+<footer class="clearfix simple">
 
   <div class="constrain">
 
@@ -56,13 +56,13 @@
     </div>
     <div id="legal">
       <ul class="footer-site-links">
-        <li class="icon-learning-center icon"><a href="http://learn.jquery.com/">Learning Center</a></li>
-        <li class="icon-forum icon"><a href="http://forum.jquery.com/using-jquery-ui">Forum</a></li>
-        <li class="icon-api icon"><a href="http://api.jqueryui.com/">API</a></li>
-        <li class="icon-twitter icon"><a href="http://twitter.com/jqueryui">Twitter</a></li>
-        <li class="icon-irc icon"><a href="http://irc.jquery.com/">IRC</a></li>
+        <li><a class="icon-pencil" href="http://learn.jquery.com/">Learning Center</a></li>
+        <li><a class="icon-group" href="http://forum.jquery.com/using-jquery-ui">Forum</a></li>
+        <li><a class="icon-wrench" href="http://api.jqueryui.com/">API</a></li>
+        <li><a class="icon-twitter" href="http://twitter.com/jqueryui">Twitter</a></li>
+        <li><a class="icon-comments" href="http://irc.jquery.com/">IRC</a></li>
       </ul>
-        <p class="copyright">Copyright <?php echo date('Y'); ?> <a href="http://jquery.org/team/">The jQuery Foundation</a>.<br /><span class="sponsor-line"><a href="http://mediatemple.net" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://jquery.org/sponsors/">View sponsors</a></span></p>
+        <p class="copyright">Copyright 2012 <a href="http://stage.jquery.org/team/">The jQuery Foundation</a>.<br><span class="sponsor-line"><a href="http://mediatemple.net" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://stage.jquery.org/sponsors/">View sponsors</a></span></p>
     </div>
   </div>
 </footer>
