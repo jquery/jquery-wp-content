@@ -57,6 +57,19 @@ function menu_header_jqueryui_com() {
 	);
 }
 
+function menu_header_jquery_org() {
+	return array(
+		'http://jquery.org/' => 'Home',
+		'http://jquery.org/credit-card/' => 'Credit Card',
+		'http://jquery.org/donate/' => 'Donate',
+		'http://jquery.org/history/' => 'History',
+		'http://jquery.org/join/' => 'Join',
+		'http://jquery.org/members/' => 'Members',
+		'http://jquery.org/meeting/' => 'Meetings',
+		'http://jquery.org/team/' => 'Team',
+	);
+}
+
 function menu_header_brand_jquery_org() {
 	return array(
 		'http://brand.jquery.org/' => 'Home',
