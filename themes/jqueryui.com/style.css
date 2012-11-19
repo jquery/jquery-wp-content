@@ -7,7 +7,7 @@ a, .title {
 	color: #BB6F04;
 }
 
-a:hover {
+#content a:hover {
 	color: #333;
 }
 
