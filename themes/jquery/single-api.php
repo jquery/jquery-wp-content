@@ -4,8 +4,9 @@
  */
  ?>
 <?php global $sidebar; ?>
-    <div id="body" class="clearfix <?php echo $sidebar; ?>">
-      <div class="inner" role="main">
+
+<div class="content-right">
+    <div id="content">
 
         <?php while ( have_posts() ) : the_post(); ?>
 
@@ -16,10 +17,9 @@
           // however, API sites aren't using comments.
           ?>
         <?php endwhile; // end of the loop. ?>
+    </div><!-- #content -->
 
-      </div><!-- .inner -->
-			<?php if($sidebar): ?>
-				<?php get_sidebar( 'api' ); ?>
-			<?php endif; ?>
-
-    </div><!-- #body -->
+		<?php if($sidebar): ?>
+			<?php get_sidebar( 'api' ); ?>
+		<?php endif; ?>
+</div>

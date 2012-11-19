@@ -18,13 +18,15 @@ get_header(); ?>
 </div>
 <?php endif; ?>
 
-<div id="content">
+<div class="content-right">
+	<div id="content">
 
-	<?php get_template_part( 'content', 'page' ); ?>
+		<?php get_template_part( 'content', 'page' ); ?>
 
-	<?php comments_template( '', true ); ?>
+		<?php comments_template( '', true ); ?>
 
+	</div>
+	<?php get_sidebar(); ?>
 </div>
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

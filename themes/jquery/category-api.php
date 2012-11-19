@@ -5,8 +5,8 @@ Partial Category Archive Template Called by API Sites
 ?>
 <?php global $sidebar; ?>
 
-	<section id="body" class="clearfix <?php echo $sidebar; ?>">
-	<div class="inner" role="main">
+<div class="content-right">
+	<div id="content">
 
 	<?php if ( have_posts() ) : ?>
 
@@ -44,8 +44,8 @@ Partial Category Archive Template Called by API Sites
 
 	<?php endif; ?>
 
-	</div><!-- .inner -->
+	</div><!-- #content -->
 
 	<?php if ( $sidebar ) : get_sidebar( 'api' ); endif; ?>
+</div>
 
-</section><!-- #body -->
