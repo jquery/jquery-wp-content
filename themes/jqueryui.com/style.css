@@ -11,17 +11,6 @@ a, .title {
 	color: #333;
 }
 
-#container nav#main {
-	border-top: solid 1px rgba(236,195,8,0.4);
-	background: rgba(187,111,4,0.5);
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0,
-		rgba(0,0,0,0.2) 0 -1px 0,
-		inset rgba(137,81,6,0.5) 0 -3px 5px;
-	box-shadow: rgba(255,255,255,0.1) 0 1px 0,
-		rgba(0,0,0,0.2) 0 -1px 0,
-		inset rgba(137,81,6,0.5) 0 -3px 5px;
-}
-
 #banner-secondary p.intro {
 	font-size: 24px;
 	line-height: 32px;
