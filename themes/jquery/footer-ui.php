@@ -62,7 +62,7 @@
         <li><a class="icon-twitter" href="http://twitter.com/jqueryui">Twitter</a></li>
         <li><a class="icon-comments" href="http://irc.jquery.com/">IRC</a></li>
       </ul>
-        <p class="copyright">Copyright 2012 <a href="http://stage.jquery.org/team/">The jQuery Foundation</a>.<br><span class="sponsor-line"><a href="http://mediatemple.net" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://stage.jquery.org/sponsors/">View sponsors</a></span></p>
+        <p class="copyright">Copyright <?php echo date('Y'); ?> <a href="http://jquery.org/team/">The jQuery Foundation</a>.<br /><span class="sponsor-line"><a href="http://mediatemple.net" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://jquery.org/sponsors/">View sponsors</a></span></p>
     </div>
   </div>
 </footer>
