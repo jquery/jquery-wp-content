@@ -2579,7 +2579,8 @@ footer li img {
 		display: none;
 	}
 
-	#sidebar {
+	#sidebar,
+    .content-right #sidebar {
 		width: auto;
 		float: none;
 		clear: both;
