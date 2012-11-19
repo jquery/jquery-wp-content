@@ -107,7 +107,7 @@ function jquery_sites() {
 		'jquery.org' => array(
 			'blog_id' => 9,
 			'cookie_domain' => '.jquery.org',
-			'body_class' => 'jquery-project',
+			'body_class' => 'jquery-foundation',
 			'options' => array(
 				'blogname' => 'jQuery Foundation',
 				'stylesheet' => 'jquery.org',

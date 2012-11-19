@@ -1073,23 +1073,23 @@ body {
 
 }
 
-#body-jquery-ui #container {
+.jquery-ui #container {
 	background: url(../images/bg-body-ui.jpg) no-repeat center top #bb6e04;
 }
 
-#body-jquery-mobile #container {
+.jquery-mobile #container {
 	background: url(../images/bg-body-mobile.jpg) no-repeat center top #598611;
 }
 
-#body-sizzlejs #container {
+.sizzlejs #container {
 	background: url(../images/bg-body-sizzlejs.jpg) no-repeat center top #871a1f;
 }
 
-#body-qunitjs #container {
+.qunitjs #container {
 	background: url(../images/bg-body-qunitjs.jpg) no-repeat center top #00733c;
 }
 
-#body-jquery-foundation #container {
+.jquery-foundation #container {
 	background: url(../images/bg-body-foundation.jpg) no-repeat center top #178a9c;
 }
 
@@ -1374,7 +1374,7 @@ body {
 	background-position: -103px 0px;
 }
 
-#body-jquery #global-nav nav ul.projects li.jquery {
+.jquery #global-nav nav ul.projects li.jquery {
 	background-position: 0 bottom;
 	width: 52px;
 	position: relative;
@@ -1382,15 +1382,15 @@ body {
 	border: none;
 }
 
-#body-jquery #global-nav nav ul.projects {
+.jquery #global-nav nav ul.projects {
 	border-left: none;
 }
 
-#body-jquery #global-nav nav ul.projects li.jquery-ui {
+.jquery #global-nav nav ul.projects li.jquery-ui {
 	border-left: none;
 }
 
-#body-jquery-ui #global-nav nav ul.projects li.jquery-ui {
+.jquery-ui #global-nav nav ul.projects li.jquery-ui {
 	background-position: -50px bottom;
 	width: 52px;
 	position: relative;
@@ -1398,15 +1398,15 @@ body {
 	border: none;
 }
 
-#body-jquery-ui #global-nav nav ul.projects li.jquery {
+.jquery-ui #global-nav nav ul.projects li.jquery {
 	border-right: none;
 }
 
-#body-jquery-ui #global-nav nav ul.projects li.jquery-mobile {
+.jquery-ui #global-nav nav ul.projects li.jquery-mobile {
 	border-left: none;
 }
 
-#body-jquery-mobile #global-nav nav ul.projects li.jquery-mobile {
+.jquery-mobile #global-nav nav ul.projects li.jquery-mobile {
 	background-position: -100px bottom;
 	width: 52px;
 	position: relative;
@@ -1414,15 +1414,15 @@ body {
 	border: none;
 }
 
-#body-jquery-mobile #global-nav nav ul.projects li.jquery-ui {
+.jquery-mobile #global-nav nav ul.projects li.jquery-ui {
 	border-right: none;
 }
 
-#body-jquery-mobile #global-nav nav ul.projects li.jquery-mobile {
+.jquery-mobile #global-nav nav ul.projects li.jquery-mobile {
 	border-right: none;
 }
 
-#body-jquery-mobile #global-nav nav ul.projects li.toggle-projects {
+.jquery-mobile #global-nav nav ul.projects li.toggle-projects {
 	border-left: none;
 }
 
@@ -1450,32 +1450,32 @@ h2.logo a {
 	text-indent: -1000px;
 }
 
-#body-jquery h2.logo a {
+.jquery h2.logo a {
 	width: 243px;
 	background: url(../images/logo-jquery.png) no-repeat;
 }
 
-#body-jquery-ui h2.logo a {
+.jquery-ui h2.logo a {
 	width: 253px;
 	background: url(../images/logo-jquery-ui.png) no-repeat;
 }
 
-#body-jquery-mobile h2.logo a {
+.jquery-mobile h2.logo a {
 	width: 268px;
 	background: url(../images/logo-jquery-mobile.png) no-repeat;
 }
 
-#body-sizzlejs h2.logo a {
+.sizzlejs h2.logo a {
 	width: 243px;
 	background: url(../images/logo-sizzle.png) no-repeat;
 }
 
-#body-qunitjs h2.logo a {
+.qunitjs h2.logo a {
 	width: 243px;
 	background: url(../images/logo-qunit.png) no-repeat;
 }
 
-#body-jquery-foundation h2.logo a {
+.jquery-foundation h2.logo a {
 	width: 243px;
 	background: url(../images/logo-jquery-foundation.png) no-repeat;
 }
@@ -2790,32 +2790,32 @@ footer li img {
 
 
 @media only screen and (-webkit-device-pixel-ratio: 2){
-	#body-jquery h2.logo a {
+	.jquery h2.logo a {
 		background: url(../images/logo-jquery@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
 
-	#body-jquery-ui h2.logo a {
+	.jquery-ui h2.logo a {
 		background: url(../images/logo-jquer-uiy@2x.png) no-repeat;
 		background-size: 253px 66px;
 	}
 
-	#body-jquery-mobile h2.logo a {
+	.jquery-mobile h2.logo a {
 		background: url(../images/logo-jquery-mobile@2x.png) no-repeat;
 		background-size: 268px 66px;
 	}
 
-	#body-sizzlejs h2.logo a {
+	.sizzlejs h2.logo a {
 		background: url(../images/logo-sizzle@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
 
-	#body-qunitjs h2.logo a {
+	.qunitjs h2.logo a {
 		background: url(../images/logo-qunit@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
 
-	#body-jquery-foundation h2.logo a {
+	.jquery-foundation h2.logo a {
 		background: url(../images/logo-jquery-foundation@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
