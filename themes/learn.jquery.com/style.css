@@ -81,13 +81,23 @@ Template: jquery
 }
 
 /*******************************************************************************/
-/* Author Meta
+/* Footer Metadata
 /*******************************************************************************/
 
-#body .inner .meta {
-	background: #e8e8e8 url(i/github.png) no-repeat 102% 50%;
-	border: 1px solid #b7b7b7;
-	padding: 10px;
+.entry-meta aside {
+  width: 49%;
+  float: left;
+  box-sizing: border-box;
+  margin:0 0 1% 0;
+  color: #333;
+}
+
+.entry-meta aside:first-child {
+  backround: #ccc;
+  margin-right: 2%;
+}
+.entry-meta .github-feedback {
+	background: #fff url(i/github.png) no-repeat 102% 50%;
 	text-shadow: 0 1px 1px #fff;
 	color: #5d5d5d;
 }
@@ -130,8 +140,6 @@ Template: jquery
 }
 
 #body .inner .meta .feedback h4 {
-	font-size: 18px;
-	font-family: 'Myriad Pro', Arial, Helvetica, sans-serif;
 	letter-spacing: 0;
 	margin: 4px 0 0 0;
 }
@@ -140,24 +148,28 @@ Template: jquery
         color:#30b9f8;
 }
 #body .inner .bottom-links {
-        background:lightGray;
+        background: #ccc;
         overflow:auto;
-        padding:0px 20px;
+        padding:0px 10px;
         clear:left;
+        margin: 1em 0;
 }
-#body .inner .bottom-links i{
+
+.bottom-links a {
+  line-height:2;
+  text-decoration: none;
+  font-size:140%;
 }
-#body .inner .bottom-links a{
-        text-decoration:none;
+
+.bottom-links a:hover {
+  text-decoration: underline;
 }
-#body .inner .bottom-links .prev, #body .inner .bottom-links .next  {
-        color:gray;
-        font-size:1.5em;
-        line-height:2em;
+.bottom-links .prev, .bottom-links .next  {
+        color: #333;
 }
-#body .inner .bottom-links .prev {
+.bottom-links .prev {
         float:left;
 }
-#body .inner .bottom-links .next  {
+.bottom-links .next  {
         float:right;
 }
