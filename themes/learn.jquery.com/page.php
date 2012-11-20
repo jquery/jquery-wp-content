@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<?php $next_prev_arr = get_next_prev_post(); ?>
 
   <!-- body -->
   <?php global $sidebar; ?>
