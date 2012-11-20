@@ -20,7 +20,12 @@ get_header(); ?>
 			<aside id="chapter-list">
 				<h3><?php _e( 'Chapters', 'twentyeleven' ); ?></h3>
 				<ul>
-					<?php wp_list_pages("depth=1&title_li=&sort_column=menu_order"); ?>
+					<?php $chapters = learn_chapter_listing(); ?>
+					<?php while ( $chapters->have_posts() ) : $chapters->the_post(); ?>
+						<li>
+							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						</li>
+					<?php endwhile; wp_reset_postdata(); ?>
 				</ul>
 			</aside>
 

@@ -42,3 +42,21 @@ function get_next_prev_post() {
         'next' => count($posts_next->posts) ? $posts_next->posts[0] : NULL
     );
 }
+
+function learn_chapter_listing() {
+  $chapters = new WP_Query( array(
+    'post_type' => 'page',
+    'post_parent' => '0',
+    'orderby' => 'menu_order',
+    'order' => 'asc',
+    'nopaging' => true,
+    'meta_query' => array(
+      array(
+      'key' => 'is_chapter',
+      'compare' => 'NOT EXISTS'
+      )
+    )
+  ));
+
+  return $chapters;
+}
