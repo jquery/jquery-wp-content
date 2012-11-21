@@ -43,9 +43,9 @@
 					<ul>
 						<li class="jq-download jq-first"><a href="http://jquery.com/download/">Download</a></li>
 
-						<li class="jq-documentation"><a href="http://docs.jquery.com/">Documentation</a></li>
+						<li class="jq-documentation"><a href="http://api.jquery.com/">API Documentation</a></li>
 						<li class="jq-bugTracker"><a href="http://bugs.jquery.com/">Bug Tracker</a></li>
-						<li class="jq-discussion jq-last"><a href="http://docs.jquery.com/Discussion">Discussion</a></li>
+						<li class="jq-discussion jq-last"><a href="http://forum.jquery.com/">Discussion</a></li>
 					</ul>
 				</div><!-- /#secondaryNavigation -->
 
