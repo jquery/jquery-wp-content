@@ -14,7 +14,12 @@
 				<?php while ( $chapters->have_posts() ) : $chapters->the_post(); ?>
 					<?php $is_active = ($active_post->ID == $chapters->post->ID) || ($active_post->post_parent == $chapters->post->ID); ?>
 					<li <?php if ($is_active) { echo "class='active'"; } ?>>
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+						<a href="<?php the_permalink(); ?>">
+							<?php if ( get_post_meta( $post->ID, "icon" ) ) : ?>
+								<i class="icon-<?php echo get_post_meta( $post->ID, "icon", true ); ?>"></i>
+							<?php endif; ?>
+							<?php the_title(); ?>
+						</a>
 					</li>
 				<?php endwhile; wp_reset_postdata(); ?>
 			</ul>
