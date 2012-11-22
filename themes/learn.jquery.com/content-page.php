@@ -23,8 +23,11 @@
 	<hr/>
 
 	<footer class="entry-meta">
-		<aside>
-			<strong>Last Updated:</strong> <?php the_modified_time('F j, Y \a\t g:i a'); ?>
+		<aside class="meta-details">
+			<h3>Details</h3>
+			<ul>
+				<li class="icon-calendar icon-large" title="Last Updated"><?php the_modified_time('F j, Y'); ?></li>
+			</ul>
 		</aside>
 		<aside class="github-feedback">
 			<h3>Suggestions, Problems, Feedback?</h3>
