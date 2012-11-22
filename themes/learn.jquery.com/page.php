@@ -6,7 +6,7 @@
     
     <!-- inner -->
     <div class="inner">
-				<div class="beta-ribbon-wrapper"><div class="beta-ribbon">Beta</div></div>
+				<div class="beta-ribbon-wrapper"><div class="beta-ribbon"><a href="/about/#beta">Beta</a></div></div>
 				<?php the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
