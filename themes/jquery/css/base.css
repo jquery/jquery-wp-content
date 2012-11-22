@@ -2342,7 +2342,8 @@ body.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 
 .jquery-learning .border, .jquery-learning #site-footer { border-color: #686868; }
 
-.jquery-learning a, .jquery-learning .title, .jquery-learning .entry-title { color: #393939; }
+.jquery-learning a, .jquery-learning .title { color: #393939; }
+.jquery-learning .entry-title { color: #30b9f8; }
 
 .jquery-learning #container header nav {
 	border-top: solid 1px rgba(255,255,255,0.15);
