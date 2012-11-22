@@ -89,26 +89,62 @@ Template: jquery
   color: #fff;
   text-shadow: none;
 }
+
 /*******************************************************************************/
 /* Footer Metadata
 /*******************************************************************************/
 
 .entry-meta aside {
   width: 49%;
-  float: left;
   box-sizing: border-box;
   margin:0 0 1% 0;
   color: #333;
 }
 
-.entry-meta aside:first-child {
-  backround: #ccc;
+.entry-meta aside.meta-details {
+  float: left;
+  -webkit-box-shadow: 0 0 5px -0.5px #ddd;
+  box-shadow: 0 0 5px -0.5px #ddd;
+  border: 1px solid white;
+  background: #fff7e3;
+  background: -webkit-linear-gradient(top, #fffaf5 0%,#fff7e3 100%,#fff7e3 100%);
+  background: linear-gradient(to bottom, #fffaf5 0%,#fff7e3 100%,#fff7e3 100%);
   margin-right: 2%;
+  margin-bottom: 1.8em;
+  padding: 1em 1em 0 1em;
+}
+.entry-meta aside.meta-details h3 {
+  color: #303030;
+  font-weight: normal;
+  padding-left: 0.4em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #ccc;
+}
+.entry-meta aside.meta-details ul {
+  font-size: 140%;
+  color: #666;
+  margin-left: 1.7em;
+}
+.entry-meta aside.meta-details li {
+  margin-bottom: 0.7em;
+}
+.entry-meta aside.meta-details [class^="icon-"]:before,
+.entry-meta aside.meta-details [class*=" icon-"]:before {
+  margin-top: 0.05em;
 }
 .entry-meta .github-feedback {
+  float: right;
+  text-align: right;
 	background: #fff url(i/github.png) no-repeat 102% 50%;
 	text-shadow: 0 1px 1px #fff;
 	color: #5d5d5d;
+  padding-top: 1em;
+}
+.entry-meta .github-feedback h3 {
+  padding-right: 0.5em;
+}
+.entry-meta .github-feedback a {
+  float: right;
 }
 
 #body .inner .meta .github {
