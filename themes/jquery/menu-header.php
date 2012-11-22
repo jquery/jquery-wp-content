@@ -25,8 +25,9 @@ function menu_header_plugins_jquery_com() {
 function menu_header_learn_jquery_com() {
 	return array(
 		'http://learn.jquery.com' => 'Home',
-		'http://api.jquery.com/' => 'Core API Documentation',
-		'http://api.jqueryui.com/' => 'UI API Documentation',
+		'http://learn.jquery.com/about' => 'About',
+		'http://learn.jquery.com/contributing' => 'Contributing',
+		'http://learn.jquery.com/style-guide' => 'Style Guide',
 	);
 }
 function menu_header_qunitjs_com() {
