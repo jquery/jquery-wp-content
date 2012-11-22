@@ -78,8 +78,24 @@ Template: jquery
   -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
   -moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
   box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+  cursor: pointer;
 }
 
+.beta-ribbon:hover {
+  background-color: #ffea5e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffea94), to(#FFEA5E)); 
+  background-image: -webkit-linear-gradient(top, #ffea5e, #FFea94); 
+  background-image:    -moz-linear-gradient(top, #ffea5e, #FFea94); 
+  background-image:     -ms-linear-gradient(top, #ffea5e, #FFea94); 
+  background-image:      -o-linear-gradient(top, #ffea5e, #FFea94); 
+}
+.beta-ribbon a {
+  text-decoration: none;
+}
+
+.beta-ribbon:hover a {
+  text-decoration: underline;
+}
 /*******************************************************************************/
 /* Sidebar
 /*******************************************************************************/
