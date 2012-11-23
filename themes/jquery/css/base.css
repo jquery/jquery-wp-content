@@ -2050,10 +2050,22 @@ nav .searchform {
 }
 
 .searchform .icon-search {
-	color: #aaa;
-	opacity: 0.5;
 	position: absolute;
 	right: 10px;
+	padding: 0;
+	margin: 0;
+	color: #aaa;
+	font-size: 1em;
+	opacity: 0.5;
+	border-width: 0;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.js .searchform .icon-search span {
+	position:absolute;
+	top: -1000em;
+	left: -1000em;
 }
 
 nav .searchform .icon-search {
