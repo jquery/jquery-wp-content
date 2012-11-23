@@ -41,7 +41,7 @@
         });
 
       this
-        .keyup(filter).keyup();
+        .keyup(filter); //.keyup();
     }
 
     return this;
