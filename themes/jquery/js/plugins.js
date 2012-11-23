@@ -1042,7 +1042,7 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
         });
 
       this
-        .keyup(filter).keyup();
+        .keyup(filter); //.keyup();
     }
 
     return this;
