@@ -102,7 +102,6 @@ unset( $domain, $func );
 
 function jquery_render_menu( $items ) {
 	$current = trailingslashit( set_url_scheme( 'http://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] ) );
-	error_log( $current );
 	?>
 <div class="menu-top-container">
   <ul id="menu-top" class="menu">
@@ -110,7 +109,6 @@ function jquery_render_menu( $items ) {
  	foreach ( $items as $url => $anchor ) {
  		$class = 'menu-item';
  		$url = set_url_scheme( $url );
- 		error_log( $url );
  		if ( 0 === strpos( $current, $url ) )
  			$class .= ' current';
  		echo '    <li class="' . $class . '"><a href="' . $url . '">' . $anchor . "</a></li>\n";
