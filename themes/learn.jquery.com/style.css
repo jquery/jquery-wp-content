@@ -11,6 +11,7 @@ Template: jquery
   width: 50%;
   text-align: center;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding: 0 5%;
 }
 
@@ -24,6 +25,7 @@ Template: jquery
   float: left;
   width: 33%;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   padding:0 1%;
 }
 #home-features aside h3 {
@@ -42,6 +44,15 @@ Template: jquery
   clear: both;
 }
 
+@media screen and (max-width: 480px) {
+  #banner .banner-box {
+    width: 100%;
+  }
+
+  #home-features aside {
+    width: 100%;
+  }
+}
 /*******************************************************************************/
 /* Beta Ribbon
 /*******************************************************************************/
