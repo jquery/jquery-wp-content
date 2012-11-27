@@ -50,13 +50,18 @@ a:hover {
 /* Widgets */
 /*******************************************************************************/
 
-#options, #methods, #events {
+#options, #methods, #events, #quick-nav {
 	border: 1px solid #CCC;
 	margin: 0 15px 30px 15px;
 	padding: 10px;
+	overflow: auto;
 }
 
-#options header h2, #methods header h2, #events header h2, .quick-nav h2 {
+#quick-nav {
+	margin-top: 30px;
+}
+
+#options header h2, #methods header h2, #events header h2, #quick-nav h2 {
 	background: #cccccc; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 17%, #cccccc 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(17%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
@@ -68,17 +73,7 @@ a:hover {
 	padding: 10px;
 }
 
-.quick-nav {
-	border: 1px solid #CCC;
-	padding: 30px;
-	border-radius: 5px;
-	overflow: auto;
-}
-
-.quick-nav h2 {
-	margin: -30px -30px 20px -30px;
-}
-.quick-nav h2 a {
+#quick-nav h2 a {
 	float: right;
 	font-size: 80%;
 	padding-left: 10px;
