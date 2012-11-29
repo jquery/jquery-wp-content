@@ -28,6 +28,27 @@
 			<ul>
 				<li class="icon-calendar icon-large" title="Last Updated"><?php the_modified_time('F j, Y'); ?></li>
 			</ul>
+			<?php if ( get_post_meta( $post->ID, "contributors" ) ) : ?>
+				<?php $contributors = json_decode(get_post_meta( $post->ID, "contributors", true)) ?>
+				<h3>Contributors</h3>
+				<ul class="contributor-list">
+				<?php foreach ($contributors as $contrib) { ?>
+					<li>
+						<?php if ( isset( $contrib ->source ) ) : ?>
+							<a href="<?php echo $contrib->source ?>">
+						<?php endif ?>
+						<?php if ( isset( $contrib ->email ) ) : ?>
+							<?php echo get_avatar( $contrib->email, 24) ?>
+						<?php endif ?>
+						<?php echo $contrib->name ?>
+						<?php if ( isset( $contrib ->source ) ) : ?>
+							</a>
+						<?php endif ?>
+
+					</li>
+				<?php } ?>
+				</ul>
+			<?php endif; ?>
 		</aside>
 		<aside class="github-feedback">
 			<h3>Suggestions, Problems, Feedback?</h3>
