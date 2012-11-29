@@ -124,6 +124,7 @@ Template: jquery
 .entry-meta aside {
   width: 49%;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   margin:0 0 1% 0;
   color: #333;
 }
@@ -174,7 +175,7 @@ Template: jquery
   float: right;
 }
 
-#body .inner .meta .github {
+.meta .github {
 	float: left;
 	display: block;
 	width: 35%;
@@ -183,7 +184,7 @@ Template: jquery
 	-webkit-box-shadow: 1px 0 0 #b7b7b7;
 }
 
-#body .inner .meta .github .avatar {
+.meta .github .avatar {
 	border: 5px solid #fff;
 	width: auto;
 	height: 40px;
@@ -193,37 +194,47 @@ Template: jquery
 	float: left;
 }
 
-#body .inner .meta .github .author {
-	font-size: 12px;
-	font-weight: normal;
-	letter-spacing: normal;
-	float: left;
-	display: block;
-	margin: 10px 0 0 20px;
+.entry-meta aside.meta-details .contributor-list {
+  list-style-type: none;
+  margin: 0;
+}
+.entry-meta aside.meta-details .contributor-list li {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 4px 0;
 }
 
-#body .inner .meta .github .author a {	font-weight: bold; }
+.entry-meta aside.meta-details .contributor-list li a {
+  text-decoration: none;
+}
 
-#body .inner .meta .feedback {
+.entry-meta aside.meta-details .contributor-list li a:hover {
+  text-decoration: underline;
+}
+.entry-meta aside.meta-details .contributor-list li img {
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.meta .feedback {
 	float: left;
 	display: block;
 	width: 62%;
 	padding: 0 0 0 3%;
 }
 
-#body .inner .meta .feedback h4 {
+.meta .feedback h4 {
 	letter-spacing: 0;
 	margin: 4px 0 0 0;
 }
 
-#body .inner .icon-github {
+.icon-github {
         color:#30b9f8;
 }
-#body .inner .bottom-links {
+.entry-meta .bottom-links {
         background: #ccc;
         overflow:auto;
         padding:0px 10px;
-        clear:left;
+        clear:both;
         margin: 1em 0;
 }
 
@@ -244,4 +255,13 @@ Template: jquery
 }
 .bottom-links .next  {
         float:right;
+}
+
+@media screen and (max-width: 480px) {
+  .entry-meta aside {
+    width: 100%;
+  }
+  .entry-meta .bottom-links {
+    width: 100%;
+  }
 }
