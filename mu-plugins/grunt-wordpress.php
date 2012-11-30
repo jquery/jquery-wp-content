@@ -23,7 +23,7 @@ function gw_get_version( $args ) {
 		return $wp_xmlrpc_server->error;
 	}
 
-	return "1.0.3";
+	return "1.0.5";
 }
 
 function gw_get_post_paths( $post_type = "" ) {
