@@ -13,7 +13,7 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'twentyeleven' ) . '</span>', 'after' => '</div>' ) ); ?>
-		<?php if (!is_subpage()) { ?>
+		<?php if ( has_children($post) ) { ?>
 			<ul>
 				<?php wp_list_pages("title_li=&sort_column=menu_order&child_of=" . $post->ID); ?>
 			</ul>

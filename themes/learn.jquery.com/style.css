@@ -111,12 +111,30 @@ Template: jquery
 /* Sidebar
 /*******************************************************************************/
 
-#chapter-listing li.active a {
-  background: #333;
+#sidebar #chapter-listing ul li a {
+  padding: 2% 10%;
+}
+
+#sidebar #chapter-listing li.active a {
+  background: #212121;
   color: #fff;
   text-shadow: none;
 }
 
+#container #body #sidebar #chapter-listing ul.sub-chapter {
+  margin: 0;
+  float: none;
+}
+
+#container #body #sidebar #chapter-listing ul.sub-chapter li {
+  border-bottom: none;
+  list-style: disc;
+}
+
+#container #body #sidebar #chapter-listing ul.sub-chapter li a {
+  padding: 1% 10% 1% 23%;
+  width: 83%;
+}
 /*******************************************************************************/
 /* Footer Metadata
 /*******************************************************************************/
