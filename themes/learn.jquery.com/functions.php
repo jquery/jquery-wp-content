@@ -60,3 +60,25 @@ function learn_chapter_listing() {
 
   return $chapters;
 }
+
+function has_children( $p ) {
+  $children = get_children( array(
+    'post_type' => 'page',
+    'post_parent' => $p->ID,
+  ));
+
+  return $children ? true : false;
+}
+function learn_nested_items( $chapter_id ) {
+
+  $items = new WP_Query( array(
+    'post_type' => 'page',
+    'post_parent' => $chapter_id,
+    'orderby' => 'menu_order',
+    'order' => 'asc',
+    'nopaging' => true,
+  ));
+
+
+  return $items;
+}
