@@ -128,7 +128,6 @@ Template: jquery
 
 #container #body #sidebar #chapter-listing ul.sub-chapter li {
   border-bottom: none;
-  list-style: disc;
 }
 
 #container #body #sidebar #chapter-listing ul.sub-chapter li a {
