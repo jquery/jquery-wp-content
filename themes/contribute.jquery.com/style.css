@@ -1,4 +1,8 @@
 /*
-Theme Name: jquery-com
+Theme Name: contribute-jquery-com
 Template: jquery
 */
+
+iframe {
+  border: 0;
+}
