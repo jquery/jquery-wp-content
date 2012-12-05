@@ -89,16 +89,23 @@ function menu_header_brand_jquery_org() {
  * Avert your eyes.
  */
 
+$site = explode( '/', JQUERY_LIVE_SITE, 2 );
+$domain = explode( '.', $site[0] );
+$path = count( $site ) === 2 ? explode( '/', str_replace( '.', '_', $site[1] ) ) : array();
+$func = 'menu_header_' . implode( '_', $domain ) .
+	(count( $path ) ? '_' . implode ( '_', $path ) : '');
+while ( !function_exists( $func ) && count( $path ) > 1 ) {
+	array_pop( $path );
+	$func = 'menu_header_' . implode( '_', $domain ) . '_' . implode( '_', $path );
+}
 
-$domain = explode( '.', JQUERY_LIVE_SITE );
-$func = 'menu_header_' . implode( '_', $domain );
-if ( ! function_exists( $func ) ) {
+while ( !function_exists( $func ) && count( $domain ) > 1 ) {
 	array_shift( $domain );
 	$func = 'menu_header_' . implode( '_', $domain );
 }
 if ( function_exists( $func ) )
 	jquery_render_menu( call_user_func( $func ) );
-unset( $domain, $func );
+unset( $site, $domain, $path, $func );
 
 function jquery_render_menu( $items ) {
 	$current = trailingslashit( set_url_scheme( 'http://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] ) );
