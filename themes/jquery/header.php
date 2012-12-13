@@ -112,7 +112,7 @@ $sidebar = "sidebar-left";
 				<ul>
 					<li><a href="http://forum.jquery.com/" title="Forum">Forum</a></li>
 					<li><a href="http://irc.jquery.com/" title="IRC/Chat">IRC/Chat</a></li>
-					<li><a href="http://stackoverflow.com/tags/jquery/info" title="IRC/Chat">Stackoverflow</a></li>
+					<li><a href="http://stackoverflow.com/tags/jquery/info" title="Stack Overflow">Stack Overflow</a></li>
 					<!-- both 404
 					<li><a href="http://jquery.org/bugs" title="Report a Bug">Report a Bug</a></li>
 					<li><a href="http://jquery.org/support#enterprise-support" title="Enterprise Support">Enterprise Support</a></li>
