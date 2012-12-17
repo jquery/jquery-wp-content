@@ -8,7 +8,7 @@ $jqpc = get_post_meta( $post->ID, "jq-primaryContent" );
 if ($jqpc[0]) { ?>
 	<style>
 	#jq-primaryContent ul ul { margin-left: 1.5em; }
-	.visuallyhidden { display: none; }
+	.visuallyhidden  { display: none; }
 	</style>
 	<div id="jq-primaryContent" style="width:auto;">
 		<?php the_content(); ?>
