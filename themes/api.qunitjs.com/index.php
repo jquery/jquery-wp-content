@@ -11,7 +11,7 @@ get_header();
 <div id="body" class="clearfix <?php echo $sidebar; ?>">
 	<div class="inner" role="main">
 		<h1>QUnit API Documentation</h1>
-		<hr class="dots">
+		<hr>
 
 		<p>QUnit is a powerful, easy-to-use JavaScript unit test suite.
 			If you're new to QUnit or even just new to unit testing, you might

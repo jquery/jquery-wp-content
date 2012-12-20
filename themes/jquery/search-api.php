@@ -21,7 +21,7 @@
 			<h1 class="page-title"><?php
 				printf( __( 'Search Results for: %s', 'twentyeleven' ), '<span>' . get_search_query() . '</span>' );
 			?></h1>
-			<hr class="dots">
+			<hr>
 		</header>
 
 		<?php

@@ -12,7 +12,7 @@ get_header(); ?>
 
 					<?php get_template_part( 'content', 'single' ); ?>
 
-					<hr />
+					<hr>
 
 					<?php comments_template( '', true ); ?>
 

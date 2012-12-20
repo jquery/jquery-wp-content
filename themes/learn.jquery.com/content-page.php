@@ -20,7 +20,7 @@
 		<?php }?>
 	</div><!-- .entry-content -->
 
-	<hr/>
+	<hr>
 
 	<footer class="entry-meta">
 		<aside class="meta-details">

@@ -14,7 +14,7 @@ Partial Category Archive Template Called by API Sites
 			<h1 class="page-title"><?php
 				printf( __( '%s', 'twentyeleven' ), '<span>' . single_cat_title( '', false ) . '</span>' );
 			?></h1>
-			<hr class="dots">
+			<hr>
 			<?php
 				$category_description = category_description();
 				if ( ! empty( $category_description ) )

@@ -16,14 +16,14 @@
 		<?php the_content(); ?>
 	</div> <!-- /.description -->
 
-	<hr/>
+	<hr>
 
 	<?php if ( $keywords = jq_release_keywords() ) { ?>
 		<div class="block tags">
 			<h2>Tags</h2>
 			<?php echo $keywords; ?>
 		</div> <!-- /.tags -->
-		<hr/>
+		<hr>
 	<?php } ?>
 
 	<div class="block versions">
