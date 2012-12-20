@@ -180,14 +180,6 @@ ul.flex-direction-nav {
     width: 85.5%;
 }
 
-/*Join Page*/
-
-
-#content.join-page-content {
-    width: 100%;
-    padding-left: 0%;
-    padding-right: 0%;
-}
 
 .member-level {
     width: 32%;
@@ -399,15 +391,15 @@ a.icon-search::before {
     color: #b71551;
 }
 
-.members-page #content h2.block {
+.page-slug-members #content h2.block {
     text-align: center;
 }
 
-.members-page #content a {
+.page-slug-members #content a {
     color: #d58349;
 }
 
-.members-page #content ul.block-grid h3 {
+.page-slug-members #content ul.block-grid h3 {
     color: #4d4d4d;
     font-weight: bold;
     font-size: 18px;
@@ -417,11 +409,11 @@ a.icon-search::before {
     padding-top: 15px;
 }
 
-.members-page #content ul.block-grid p {
+.page-slug-members #content ul.block-grid p {
     margin-bottom: 0;
 }
 
-.members-page #content ul.block-grid p a {
+.page-slug-members #content ul.block-grid p a {
     text-decoration: none;
 }
 
@@ -442,7 +434,7 @@ a.icon-search::before {
     width: 65%;
 }
 
-.donate-page #content .row .callout-block {
+.page-slug-donate #content .row .callout-block {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 40px;
