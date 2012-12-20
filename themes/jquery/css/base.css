@@ -1573,10 +1573,18 @@ nav#main .searchform .icon-search {
 	right: 10px;
 	top: 3px;
 	bottom: 3px;
+	border-width: 0;
 	border-left: 1px solid rgba(7, 7, 7, 0.65);
-	padding-left: 7px;
+	background-color: transparent;
+	padding: 0 0 0 7px;
 	opacity: 0.33;
 	color: #fff;
+}
+
+.js nav#main .searchform .icon-search span {
+	position: absolute;
+	top: -1000em;
+	left: -1000em;
 }
 
 nav#main .searchform label span{

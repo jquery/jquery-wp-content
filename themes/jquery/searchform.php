@@ -4,7 +4,7 @@
  */
 ?>
 <form method="get" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<span class="icon-search"></span>
+	<button type="submit" class="icon-search"><span>go</span></button>
 	<label>
 		<span>Search <?php bloginfo( 'name' ); ?></span>
 		<input type="text" name="s" value="<?php echo get_search_query(); ?>"
