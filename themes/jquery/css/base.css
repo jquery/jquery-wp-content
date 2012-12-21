@@ -1,10 +1,3 @@
-/* @override
-		  http://jon-mbp.local/~jon/jquery/css/main.css
-		  http://jon-mbp.local/~jon/jquery/css/base.css
-		  http://jquerybase.47dev.com/css/base.css
-		  http://nate-mbp.local/~natecroft/jquery/css/base.css */
-
-
 /*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 
 /* ==========================================================================
@@ -205,19 +198,6 @@ mark {
 p,
 pre {
 	margin: 1em 0;
-}
-
-/*
- * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
- */
-
-code,
-kbd,
-pre,
-samp {
-	font-family: monospace, serif;
-	_font-family: 'courier new', monospace;
-	font-size: 1em;
 }
 
 /*
@@ -494,7 +474,7 @@ input::-moz-focus-inner {
 
 textarea {
 	overflow: auto; /* 1 */
-	vertical-align: top; * 2 */
+	vertical-align: top; /* 2 */
 }
 
 /* General Form Styles
@@ -686,15 +666,6 @@ textarea {
 ::selection {
 	background: #b3d4fc;
 	text-shadow: none;
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
 }
 
 img {
@@ -1101,7 +1072,7 @@ body {
 	max-width: 1240px;
 	padding: 40px;
 	margin: 0 auto;
-	border-radius: 0px 0px 10px 10px;
+	border-radius: 0 0 10px 10px;
 	position: relative;
 }
 
@@ -1141,7 +1112,7 @@ body {
 	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 3em 20px 3em 35px; /*0.5 * 16px = 8px*/
+	padding: 3em 20px 3em 35px;
 	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
@@ -1220,7 +1191,6 @@ body {
 	padding: 0;
 	height: 110px;
 	position: relative;
-
 }
 
 #global-project-select li:first-child a {
@@ -1249,9 +1219,6 @@ body {
 	line-height: 15px;
 	text-shadow: black 0 -1px 0;
 	-webkit-transition: all 0.4s;
-	-moz-transition: all 0.4s;
-	-ms-transition: all 0.4s;
-	-o-transition: all 0.4s;
 	transition: all 0.4s;
 	left: 20px;
 	right: 20px;
@@ -1289,9 +1256,6 @@ body {
 	padding: 8px 12px;
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
 	transition: all 0.2s;
 	text-shadow: 0 0px 2px #000;
 	border-left: 1px solid rgba(255, 255, 255, 0.0976562);
@@ -1324,10 +1288,7 @@ body {
 	opacity: 0;
 	visibility: hidden;
 	-webkit-transiton: opacity 0.2s;
-	-moz-transition: opacity 0.2s;
-	-ms-transition: opacity 0.2s;
-	-o-transition: opacity 0.2s;
-	-transition: opacity 0.2s;
+	transition: opacity 0.2s;
 	-moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 	-webkit-box-shadow: 0 43px 5px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
@@ -1532,8 +1493,6 @@ nav#main .searchform {
 	width: 28%;
 	margin-top: 12px;
 	padding: 0;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
 	border-radius: 20px;
 	position: relative;
 }
@@ -1659,7 +1618,7 @@ code {
 	padding: 3px;
 	background-color: #e2e2e2;
 	text-shadow: 0 1px 0 #ffffff;
-	 border-radius: 3px;
+	border-radius: 3px;
 }
 
 pre code {
@@ -1673,24 +1632,21 @@ pre code {
 	text-decoration: none;
 }
 
-pre strong, pre b {
+pre strong,
+pre b {
 	color: #fff;
 	font-weight: bold;
 }
 
 #content blockquote {
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
-
 
 #content blockquote p {
 	font: italic normal 23px/26px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #828282;
 	margin-left: 0;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 	padding: 20px 30px;
 	position: relative;
 	text-shadow: 0 1px 0 #ffffff;
@@ -1706,14 +1662,11 @@ pre strong, pre b {
 	margin-bottom: 0;
 }
 
-#content li {
+#content ul li {
 	padding-bottom: 5px;
 	padding-top: 5px;
 	padding-left: 20px;
 	line-height: 20px;
-}
-
-#content ul li {
 	list-style-type: none;
 	background: url(../images/bullet.png) no-repeat 0 10px;
 }
@@ -1723,30 +1676,30 @@ pre strong, pre b {
 }
 
 #content ol {
-	counter-reset:li; /* Initiate a counter */
+	counter-reset: li; /* Initiate a counter */
 }
 
 #content ol > li {
-	position:relative; /* Give each list item a left margin to make room for the numbers */
-	list-style:none;
+	position: relative; /* Give each list item a left margin to make room for the numbers */
+	list-style: none;
 	padding-left: 10px;
 	margin-right: 0;
 	margin-top: 0;
 	margin-left: 30px;
 }
 #content ol > li:before {
-	content:counter(li); /* Use the counter as content */
-	counter-increment:li; /* Increment the counter by 1 */
+	content: counter(li); /* Use the counter as content */
+	counter-increment: li; /* Increment the counter by 1 */
 	/* Position and style the number */
-	position:absolute;
-	top:6px;
-	left:-25px;
-	box-sizing:border-box;
+	position: absolute;
+	top: 6px;
+	left: -25px;
+	box-sizing: border-box;
 	width: 20px;
-		/* Some space between the number and the content in browsers that support
-		   generated content but not positioning it */
-	color:#fff;
-	text-align:center;
+	/* Some space between the number and the content in browsers that support
+		generated content but not positioning it */
+	color: #fff;
+	text-align: center;
 	background-color: #ababab;
 	height: 19px;
 	width: 19px;
@@ -1757,7 +1710,7 @@ pre strong, pre b {
 
 .lt-ie8 #content ol,
 .lt-ie7 #content ol {
-	margin-left:20px;
+	margin-left: 20px;
 }
 
 .lt-ie8 #content ol li,
@@ -1787,7 +1740,7 @@ pre strong, pre b {
 #content img.left,
 #content img.right,
 #banner img.full {
-	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
 }
 
 #content img.noborder,
@@ -1963,7 +1916,6 @@ p.author a {
 	font-family: "JournalRegular", Georgia, "Times New Roman", Times, serif;
 }
 
-
 #banner-secondary {
 	background-image: url(../images/dark-grey-tile.png);
 	margin-top: -40px;
@@ -2039,9 +1991,6 @@ input[type="submit"] {
 	padding: 8px 15px;
 	font: bold 16px/16px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
 	transition: all 0.2s;
 	background-color: #d18f4f;
 	float: left;
@@ -2713,19 +2662,11 @@ footer li img {
 	}
 
 	#content-wrapper {
-		-webkit-border-top-left-radius: 10px;
-		-webkit-border-top-right-radius: 10px;
-		-moz-border-radius-topleft: 10px;
-		-moz-border-radius-topright: 10px;
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
 	}
 
 	#banner-secondary {
-		-webkit-border-top-left-radius: 9px;
-		-webkit-border-top-right-radius: 9px;
-		-moz-border-radius-topleft: 9px;
-		-moz-border-radius-topright: 9px;
 		border-top-left-radius: 9px;
 		border-top-right-radius: 9px;
 	}
