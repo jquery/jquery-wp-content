@@ -12,14 +12,13 @@ get_header(); ?>
 
 <?php the_post(); ?>
 
-<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
-<div id="banner-secondary" class="large-banner entry-header">
-	<h1 class="entry-title"><?php the_title(); ?></h1>
-</div>
-<?php endif; ?>
-
 <div class="content-right">
 	<div id="content">
+
+		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<hr>
+		<?php endif; ?>
 
 		<?php get_template_part( 'content', 'page' ); ?>
 
