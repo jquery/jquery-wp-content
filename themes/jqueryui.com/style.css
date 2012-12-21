@@ -112,23 +112,25 @@ a, .title {
 	margin-bottom: 0;
 }
 
-.demo-list ul {
+#content .demo-list ul {
 	width: 100%;
 	list-style: none;
 	border-top: 1px solid #ccc;
+	margin: 0;
 }
 
-.demo-list li {
+#content .demo-list li {
 	border-bottom: 1px solid #ccc;
 	margin: 0;
-	background-color: #eee;
+	padding: 0;
+	background: #eee;
 }
 
-.demo-list .active {
-	background-color: #fff;
+#content .demo-list .active {
+	background: #fff;
 }
 
-.demo-list a {
+#content .demo-list a {
 	text-decoration: none;
 	display: block;
 	font-weight: bold;

@@ -1037,6 +1037,11 @@ body {
 	font: 15px/20px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 
+iframe {
+	border: 1px solid #bfbfbf;
+	padding: 1px;
+}
+
 #container {
 	background: url(../images/bg-body-jquery.jpg) no-repeat center top #065691;
 	margin: 0 auto;
