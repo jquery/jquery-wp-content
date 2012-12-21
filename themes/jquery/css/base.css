@@ -1160,14 +1160,14 @@ body {
 .content-right #sidebar {
 		float: left;
 		border-left: 0;
-		border-right: 1px solid #cccccc;
-		margin-left: -40px;
+		border-right: 1px solid #e7e7e7;
+		margin: -40px 0 40px -40px;
+		padding: 106px 20px 0 35px;
 		-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 		-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
 		-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 		-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 		border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-		 /*0.5 * 16px = 8px*/
 		-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 		box-shadow: inset 15px 0 5px -16px #e7e7e7;
 		background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
@@ -1176,11 +1176,6 @@ body {
 		background-image: -o-radial-gradient(right, #f2f2f2, #ffffff 80%);
 		background-image: -ms-radial-gradient(right, #f2f2f2, #ffffff 80%);
 		background-image: radial-gradient(right, #f2f2f2, #ffffff 80%);
-		margin-top: -30px;
-		margin-bottom: 30px;
-		margin-bottom: 30px;
-		padding-right: 20px;
-		padding-left: 35px;
 	}
 
 .entry-summary p {
