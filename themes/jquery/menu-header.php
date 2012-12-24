@@ -24,10 +24,10 @@ function menu_header_plugins_jquery_com() {
 
 function menu_header_learn_jquery_com() {
 	return array(
-		'http://learn.jquery.com/' => 'Home',
-		'http://learn.jquery.com/about/' => 'About',
-		'http://learn.jquery.com/contributing/' => 'Contributing',
-		'http://learn.jquery.com/style-guide/' => 'Style Guide',
+		'http://learn.jquery.com' => 'Home',
+		'http://learn.jquery.com/about' => 'About',
+		'http://learn.jquery.com/contributing' => 'Contributing',
+		'http://learn.jquery.com/style-guide' => 'Style Guide',
 	);
 }
 function menu_header_qunitjs_com() {
@@ -42,26 +42,26 @@ function menu_header_qunitjs_com() {
 
 function menu_header_jquerymobile_com() {
 	return array(
-		'http://mobile.jquery.com/docs/' => 'Docs',
-		'http://mobile.jquery.com/download/' => 'Download',
-		'http://mobile.jquery.com/gbs/' => 'Platforms',
-		'http://mobile.jquery.com/themeroller/' => 'Themes',
-		'http://mobile.jquery.com/resources/' => 'Resources',
-		'http://forum.jquery.com/jquery-mobile/' => 'Forum',
-		'http://jquerymobile.com/blog/' => 'Blog',
+		'http://mobile.jquery.com/docs' => 'Docs',
+		'http://mobile.jquery.com/download' => 'Download',
+		'http://mobile.jquery.com/gbs' => 'Platforms',
+		'http://mobile.jquery.com/themeroller' => 'Themes',
+		'http://mobile.jquery.com/resources' => 'Resources',
+		'http://forum.jquery.com/jquery-mobile' => 'Forum',
+		'http://mobile.jquery.com/blog' => 'Blog',
 	);
 }
 
 function menu_header_jqueryui_com() {
 	return array(
 		'http://jqueryui.com/demos/' => 'Demos',
-		'http://jqueryui.com/download/' => 'Download',
+		'http://jqueryui.com/download' => 'Download',
 		'http://api.jqueryui.com/' => 'API Documentation',
-		'http://jqueryui.com/themeroller/' => 'Themes',
-		'http://jqueryui.com/development/' => 'Development',
-		'http://jqueryui.com/support/' => 'Support',
+		'http://jqueryui.com/themeroller' => 'Themes',
+		'http://jqueryui.com/development' => 'Development',
+		'http://jqueryui.com/support' => 'Support',
 		'http://blog.jqueryui.com/' => 'Blog',
-		'http://jqueryui.com/about/' => 'About',
+		'http://jqueryui.com/about' => 'About',
 	);
 }
 
@@ -88,8 +88,8 @@ function menu_header_brand_jquery_org() {
 function menu_header_contribute_jquery_com() {
 	return array(
 		'http://contribute.jquery.com/CLA/' => 'Contributor License Agreement',
-		'http://contribute.jquery.com/style-guide/js/' => 'JS Style Guide',
-		'http://contribute.jquery.com/style-guide/html/' => 'HTML Style Guide'
+		'http://contribute.jquery.com/style-guide/js' => 'JS Style Guide',
+		'http://contribute.jquery.com/style-guide/html' => 'HTML Style Guide'
 	);
 }
 
@@ -117,22 +117,19 @@ unset( $site, $domain, $path, $func );
 
 function jquery_render_menu( $items ) {
 	$current = trailingslashit( set_url_scheme( 'http://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] ) );
-	$currentHost = parse_url( $current, PHP_URL_HOST );
-	$currentPath = parse_url( $current, PHP_URL_PATH );
 	?>
 <div class="menu-top-container">
-	<ul id="menu-top" class="menu">
+  <ul id="menu-top" class="menu">
 <?php
-	foreach ( $items as $url => $anchor ) {
-		$class = 'menu-item';
-		if ( parse_url( $url, PHP_URL_HOST ) === $currentHost &&
-				parse_url( $url, PHP_URL_PATH ) === $currentPath ) {
-			$class .= ' current';
-		}
-		echo '<li class="' . $class . '"><a href="' . $url . '">' . $anchor . "</a></li>\n";
-	}
+ 	foreach ( $items as $url => $anchor ) {
+ 		$class = 'menu-item';
+ 		$url = set_url_scheme( $url );
+ 		if ( 0 === strpos( $current, $url ) )
+ 			$class .= ' current';
+ 		echo '    <li class="' . $class . '"><a href="' . $url . '">' . $anchor . "</a></li>\n";
+ 	}
 ?>
-	</ul>
+  </ul>
 </div>
 <?php
 }
