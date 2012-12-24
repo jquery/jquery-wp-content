@@ -2522,6 +2522,30 @@ footer li img {
 	border-radius: 4px;
 }
 
+
+/* General Styles
+   ========================================================================== */
+
+.toc-linked {
+	position: relative;
+}
+
+.toc-linked a {
+	position: absolute;
+	left: -1em;
+	text-decoration: none;
+	opacity: 0;
+}
+/* TODO: Remove (https://github.com/jquery/web-base-template/issues/143) */
+#content .toc-linked a {
+	text-decoration: none;
+}
+
+.toc-linked:hover a {
+	opacity: 1;
+}
+
+
 /* Media Queries
    ========================================================================== */
 
