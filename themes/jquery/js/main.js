@@ -7,6 +7,13 @@ $(function() {
 		$("#global-project-select").slideToggle();
 		event.preventDefault();
 	});
+
+	// CDN auto-select-all
+	$( ".cdn input" ).on( "click", function() {
+		if ( typeof this.select === "function" ) {
+			this.select();
+		}
+	});
 });
 
 
