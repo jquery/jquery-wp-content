@@ -4,10 +4,15 @@
  */
 get_header(); ?>
 
-<div id="body">
-	<div class="inner" role="main">
+<?php the_post(); ?>
 
-		<?php the_post(); ?>
+<div class="content-full full-width">
+	<div id="content">
+
+		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<hr>
+		<?php endif; ?>
 
 		<?php get_template_part( 'content', 'page' ); ?>
 
