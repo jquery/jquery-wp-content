@@ -1,42 +1,48 @@
-$(document).ready(function() {
-
-//Slide Form Open////////////////////////////////////////
-
-$('li.toggle-projects').click(function() {$('#global-project-select').slideToggle(000);
-return false;
+/*
+ * All sites
+ */
+$(function() {
+	// All projects top nav
+	$(".toggle-projects").on( "click", function( event ) {
+		$("#global-project-select").slideToggle();
+		event.preventDefault();
+	});
 });
 
-//Join Page Sign-up /////////////////////////////////////
- $(document).ready(function() {
-                  $('div.choose-gifts').hide();
-                  $('.member-level> a.join').click(function() {
-                      $(this).nextAll('div.choose-gifts').slideToggle(300).siblings('div.choose-gifts:visible').slideUp(700);
-                      $(this).toggleClass("close");
-                  });
-              });
-
-//Colorbox Enlarge//////////////
-$(".enlarge").colorbox({rel:'goodies'});
 
 
 
-<!-- Hook up the FlexSlider -->
 
-	$(window).load(function() {
-		$('.flexslider').flexslider({
-		
+/*
+ * jquery.org
+ */
+$(function() {
+	$(".flexslider").flexslider({
 		controlNav: "false"
-		});
-		
 	});
+
+	/*
+	 * Join page
+	 */
+	(function() {
+		// Enlarged goodies
+		$(".enlarge").colorbox();
+
+		// Gift forms
+		var gifts = $(".choose-gifts").hide();
+		$(".member-level .join").on( "click", function() {
+			var gift = $( this ).nextAll(".choose-gifts").slideToggle();
+			gifts.not( gift ).slideUp();
+		});
+	})();
+});
+
+
+
 
 
 // Filter lists on api sites if on home, category, or search results pages
-if ( location.hostname.indexOf("api.") > -1 &&
-     /\b(?:home|category|search-results)\b/.test( document.body.className ) ) {
-
-  $("form.searchform").find( "input[type=text]" ).liveUpdate( "#body .inner" );
-
-}
-
-}); //Close Document Ready
+// if ( location.hostname.indexOf("api.") > -1 &&
+// 		/\b(?:home|category|search-results)\b/.test( document.body.className ) ) {
+// 	$("form.searchform").find( "input[type=text]" ).liveUpdate( "#body .inner" );
+// }
