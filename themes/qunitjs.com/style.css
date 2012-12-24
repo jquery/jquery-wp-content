@@ -3,4 +3,14 @@ Theme Name: qunitjs-com
 Template: jquery
 */
 
-.blurb { font-size: 1.1em; }
+.blurb {
+	font-size: 1.1em;
+}
+
+.download-box {
+	background-color: #eee;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
