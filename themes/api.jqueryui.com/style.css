@@ -3,27 +3,7 @@ Theme Name: api-jqueryui-com
 Template: jquery
 */
 
-body.jquery-ui, #container {
-	background: #BB6F04 url(../jquery/i/bg-body-ui.jpg) no-repeat center -20px;
-}
-
-h1.site-title a {
-	background: url(../jquery/i/logo-ui.png) no-repeat;
-	width: 275px;
-	height: 72px;
-	left: -14px;
-	position: relative;
-}
-
-h3 {
-	color: #BB6F04;
-}
-
-.border, #site-footer {
-	border-color: #d69a06;
-}
-
-a, .title {
+a {
 	color: #BB6F04;
 }
 
@@ -31,77 +11,6 @@ a:hover {
 	color: #333;
 }
 
-#container header nav {
-	border-top: solid 1px rgba(236,195,8,0.4);
-	background: rgba(187,111,4,0.5);
-	-webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0,
-		rgba(0,0,0,0.2) 0 -1px 0,
-		inset rgba(137,81,6,0.5) 0 -3px 5px;
-	box-shadow: rgba(255,255,255,0.1) 0 1px 0,
-		rgba(0,0,0,0.2) 0 -1px 0,
-		inset rgba(137,81,6,0.5) 0 -3px 5px;
-}
-
-.single h1.entry-title, h1.page-title {
-	color: #2666a1;
-}
-
-/*******************************************************************************/
-/* Widgets */
-/*******************************************************************************/
-
-#options, #methods, #events, #quick-nav {
-	border: 1px solid #CCC;
-	margin: 0 15px 30px 15px;
-	padding: 10px;
-	overflow: auto;
-}
-
-#quick-nav {
-	margin-top: 30px;
-}
-
-#options header h2, #methods header h2, #events header h2, #quick-nav h2 {
-	background: #cccccc; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 17%, #cccccc 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(17%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Opera 11.10+ */
-	background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
-	margin: -10px -10px 10px -10px;
-	padding: 10px;
-}
-
-#quick-nav h2 a {
-	float: right;
-	font-size: 80%;
-	padding-left: 10px;
-}
-
-.quick-nav-section {
-	width: 33%;
-	float: left;
-}
-
-.quick-nav-section h3 {
-	color: #2666A1;
-}
-
-/*******************************************************************************/
-/*	Single Page Documentation */
-/*******************************************************************************/
-
-.inner .entry .section-title {
-	-webkit-box-shadow: #955803 0 -1px 0;
-	box-shadow: #955803 0 -1px 0;
-	border-top: solid 1px #ecc308;
-}
-
-.returns a {
-	color: #BB6F04;
-}
-
 .signatures li h4 {
-	background: #CE8C04 url(../jquery/i/examples-back.png) center -50px no-repeat;
+	background: #CE8C04;
 }
