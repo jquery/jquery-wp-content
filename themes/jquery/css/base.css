@@ -2975,7 +2975,7 @@ footer li img {
 	font-weight: normal;
 }
 
-.signatures {
+#content .signatures {
 	background: #eee;
 	border: 1px solid #ccc;
 	margin: 0 auto 30px;
@@ -2992,6 +2992,14 @@ footer li img {
 	padding: 10px;
 }
 
+#content .signatures > li {
+	padding-bottom: 0;
+}
+
+#content .signature > ul {
+	margin: 0;
+}
+
 .signatures h4 {
 	font-size: 16px;
 	letter-spacing: 0;
@@ -3003,6 +3011,10 @@ footer li img {
 
 .signature:first-child h4 {
 	border-radius: 3px 3px 0 0;
+}
+
+.argument {
+	margin-top: 1em;
 }
 
 #methods .api-item li,
