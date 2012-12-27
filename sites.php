@@ -171,6 +171,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'QUnit API Documentation',
 				'stylesheet' => 'api.qunitjs.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 		'books.jquery.com' => array(
