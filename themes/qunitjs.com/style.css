@@ -3,6 +3,10 @@ Theme Name: qunitjs-com
 Template: jquery
 */
 
+a {
+	color: #730E00;
+}
+
 .blurb {
 	font-size: 1.1em;
 }
