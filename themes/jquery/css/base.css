@@ -2877,6 +2877,11 @@ footer li img {
 	text-decoration: none;
 }
 
+.entry-meta {
+	color: #999;
+	font-size: 12px;
+}
+
 .toc-linked {
 	position: relative;
 }
@@ -2917,8 +2922,6 @@ footer li img {
 
 .listing .entry-meta {
 	float: right;
-	color: #999;
-	font-size: 12px;
 }
 
 .listing .entry-meta .category {
@@ -2930,6 +2933,141 @@ footer li img {
 .listing #content .entry-meta .category a {
 	color: #888;
 	text-decoration: none;
+}
+
+
+/* API Sites
+========================================================================== */
+
+.entry {
+	margin: 30px 0;
+}
+
+.entry-wrapper {
+	border: 1px solid #CCC;
+	border-top: 0;
+	padding: 10px;
+	border-radius: 0 0 5px 5px;
+}
+
+#content .section-title {
+	background: #333;
+	border: 1px solid #111;
+	padding: 10px 15px;
+	font-size: 16px;
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+	letter-spacing: 0;
+	border-radius: 5px 5px 0 0;
+	font-weight: normal;
+	margin-bottom: 0;
+	overflow: hidden;
+}
+
+.returns {
+	float: right;
+	font-style: italic;
+}
+
+.api-item .returns {
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+}
+
+.signatures {
+	background: #eee;
+	border: 1px solid #ccc;
+	margin: 0 auto 30px;
+	max-width: 750px;
+	border-radius: 3px;
+	color: #333;
+	text-shadow: 0 1px 0 #fff;
+}
+
+#content .signatures li {
+	list-style: none;
+	background: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.signatures h4 {
+	font-size: 16px;
+	letter-spacing: 0;
+	padding: 10px;
+	margin: -10px -10px 0;
+	color: #fff;
+	text-shadow: 0 1px 0 #444;
+}
+
+.signature:first-child h4 {
+	border-radius: 3px 3px 0 0;
+}
+
+#methods .api-item li,
+#events .api-item li {
+	margin-bottom: 1em;
+}
+
+#methods .api-item li ul,
+#events .api-item li ul {
+	list-style: none;
+}
+
+.version-details {
+	font-weight: bold;
+}
+
+.section-title .version-details,
+.name .version-details {
+	float: right;
+	clear: right;
+	font-size: 12px;
+	color: #fff;
+}
+
+.api-item {
+	padding: 20px 10px;
+}
+.signature li,
+.api-item {
+	border-top: 1px solid #CCC;
+}
+
+.signature li:first-child,
+.api-item.first-item {
+	border-top: none;
+	padding-top: 10px;
+}
+
+.option-type {
+	font-size: 16px;
+	font-weight: normal;
+	color: #333;
+	float: right;
+}
+
+#options .default {
+	text-align: right;
+	font-size: 13px;
+	margin-top: -10px;
+}
+
+.desc {
+	font-size: 16px;
+	padding: 10px 15px;
+	color: #999;
+	font-style: italic;
+}
+
+.desc strong {
+	color: #444;
+	font-style: normal;
+}
+
+.entry-summary p {
+	margin: 0;
 }
 
 
