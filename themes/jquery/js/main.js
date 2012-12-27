@@ -21,6 +21,63 @@ $(function() {
 
 
 /*
+ * API sites
+ */
+$(function() {
+	$( ".entry-example" ).each(function() {
+		var iframeSrc,
+			src = $( this ).find( ".syntaxhighlighter" ),
+			output = $( this ).find( ".code-demo" );
+
+		if ( !src.length || !output.length ) {
+			return;
+		}
+
+		iframeSrc = src.find( "td.code" ).text()
+			.replace( /\s+/g, " " )
+			.replace( "</head>",
+				"<style>" +
+					"html, body { border:0; margin:0; padding:0; }" +
+					"body { font-family: 'Helvetica', 'Arial',  'Verdana', 'sans-serif'; }" +
+				"</style>" +
+				"</head>" )
+			// IE <10 executes scripts in the order in which they're loaded,
+			// not the order in which they're written. So we need to defer inline
+			// scripts so that scripts which need to be fetched are executed first.
+			.replace( /<script>(.+)<\/script>/,
+				"<script>" +
+				"window.onload = function() {" +
+					"$1" +
+				"};" +
+				"</script>" );
+
+		var iframe = document.createElement( "iframe" );
+		iframe.src = "about:blank";
+		iframe.width = "100%";
+		iframe.height = output.attr( "data-height" ) || 250;
+		iframe.style.border = "1px solid #eee";
+		output.append( iframe );
+
+		var doc = iframe.contentDocument ||
+			(iframe.contentWindow && iframe.contentWindow.document) ||
+			iframe.document ||
+			null;
+
+		if ( doc === null ) {
+			return true;
+		}
+
+		doc.open();
+		doc.write( iframeSrc );
+		doc.close();
+	});
+});
+
+
+
+
+
+/*
  * jquery.org
  */
 $(function() {
