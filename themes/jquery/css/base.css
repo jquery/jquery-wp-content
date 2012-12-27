@@ -2873,6 +2873,10 @@ footer li img {
 /* General Styles
    ========================================================================== */
 
+#content .entry-title a {
+	text-decoration: none;
+}
+
 .toc-linked {
 	position: relative;
 }
@@ -2890,6 +2894,42 @@ footer li img {
 
 .toc-linked:hover a {
 	opacity: 1;
+}
+
+
+/* Listing Pages (categories, searches, etc.)
+   ========================================================================== */
+
+.listing .post {
+	padding: 10px 20px;
+	margin: 20px 0;
+	border: 1px solid rgba( 0, 0, 0, 0.2 );
+	border-radius: 5px;
+	background-color: #eee;
+	position: relative;
+}
+
+.listing #content .entry-title {
+	font-size: 1.4em;
+	margin-bottom: .2em;
+	text-shadow: 0 1px 1px #fff;
+}
+
+.listing .entry-meta {
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
+
+.listing .entry-meta .category {
+	padding: 4px;
+	background-color: #ddd;
+	border-radius: 5px;
+}
+
+.listing #content .entry-meta .category a {
+	color: #888;
+	text-decoration: none;
 }
 
 

@@ -3,18 +3,16 @@
  * The template for displaying Search Results pages.
  */
 ?>
-<?php global $sidebar; ?>
+<?php
+	global $sidebar;
+	$searchquery = get_search_query();
+	$searchquery = preg_replace('/\$/', 'jQuery', $searchquery);
+	$featuredlist = array();
+	$entrylist = array();
+?>
 
-	<section id="body" class="clearfix <?php echo $sidebar; ?>">
-	<div class="inner" role="main">
-
-	<?php
-		$searchquery = get_search_query();
-		$searchquery = preg_replace('/\$/', 'jQuery', $searchquery);
-		$featuredlist = array();
-		$entrylist = array();
-	?>
-
+<div class="content-right">
+	<div id="content">
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">
@@ -37,17 +35,15 @@
 		<article id="post-0" class="post no-results not-found">
 			<header class="entry-header">
 				<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-			</header><!-- .entry-header -->
+			</header>
 
 			<div class="entry-content">
 				<p><?php _e( 'Apologies, but nothing matched your search criteria.', 'twentyeleven' ); ?></p>
-			</div><!-- .entry-content -->
-		</article><!-- #post-0 -->
+			</div>
+		</article>
 
 	<?php endif; ?>
-
-	</div><!-- .inner -->
+	</div>
 
 	<?php if ( $sidebar ) : get_sidebar( 'api' ); endif; ?>
-
-</section><!-- #body -->
+</div>

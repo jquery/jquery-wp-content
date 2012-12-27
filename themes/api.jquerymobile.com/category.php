@@ -4,8 +4,7 @@
  */
 
 get_header();
+get_template_part( 'category', 'api' );
+get_footer();
+
 ?>
-
-<?php get_template_part('category', 'api'); ?>
-
-<?php get_footer(); ?>

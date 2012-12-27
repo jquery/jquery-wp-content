@@ -1,13 +1,12 @@
 <?php
-/*
-Partial Category Archive Template Called by API Sites
-*/
+/**
+ * Partial Category Archive Template Called by API Sites
+ */
 ?>
 <?php global $sidebar; ?>
 
 <div class="content-right">
 	<div id="content">
-
 	<?php if ( have_posts() ) : ?>
 
 		<header class="page-header">
@@ -17,8 +16,10 @@ Partial Category Archive Template Called by API Sites
 			<hr>
 			<?php
 				$category_description = category_description();
-				if ( ! empty( $category_description ) )
-					echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
+				if ( ! empty( $category_description ) ) {
+					echo apply_filters( 'category_archive_meta',
+						'<div class="category-archive-meta">' . $category_description . '</div>' );
+				}
 			?>
 		</header>
 
@@ -35,17 +36,15 @@ Partial Category Archive Template Called by API Sites
 		<article id="post-0" class="post no-results not-found">
 			<header class="entry-header">
 				<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-			</header><!-- .entry-header -->
+			</header>
 
 			<div class="entry-content">
 				<p><?php _e( 'Apologies, but no results were found for the requested archive.', 'twentyeleven' ); ?></p>
-			</div><!-- .entry-content -->
-		</article><!-- #post-0 -->
+			</div>
+		</article>
 
 	<?php endif; ?>
-
-	</div><!-- #content -->
+	</div>
 
 	<?php if ( $sidebar ) : get_sidebar( 'api' ); endif; ?>
 </div>
-
