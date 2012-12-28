@@ -98,9 +98,9 @@ $sidebar = "sidebar-left";
 		<nav>
 			<div class="constrain">
 				<ul class="projects">
-					<li class="jquery current"><a href="http://dev.jquery.com/">jQuery</a></li>
-					<li class="jquery-ui"><a href="http://dev.jqueryui.com/">jQuery UI</a></li>
-					<li class="jquery-mobile"><a href="http://dev.jquerymobile.com/">jQuery Mobile</a></li>
+					<li class="project jquery current"><a href="http://dev.jquery.com/">jQuery</a></li>
+					<li class="project jquery-ui"><a href="http://dev.jqueryui.com/">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="http://dev.jquerymobile.com/">jQuery Mobile</a></li>
 					<li class="toggle-projects"><a href="http://dev.jquery.org/projects/">All Projects <i class="icon-caret-down"></i></a></li>
 				</ul>
 				<ul class="links">

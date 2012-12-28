@@ -1312,14 +1312,17 @@ iframe {
 	visibility: visible;
 }
 
-#global-nav nav ul.projects li.jquery,
-#global-nav nav ul.projects li.jquery-ui,
-#global-nav nav ul.projects li.jquery-mobile {
+#global-nav nav ul.projects li.project {
 	width: 42px;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding: 0;
+	height: 33px;
 	text-indent: -1000px;
 	background: url(../images/jq-nav-icons.png) -2px 0;
+}
+
+#global-nav nav ul.projects li.project a {
+	display: block;
+	height: 33px;
 }
 
 #global-nav nav ul.projects li.jquery-ui {
