@@ -1,5 +1,9 @@
 <?php
 
+add_action( 'wp_enqueue_scripts', function() {
+	wp_register_script( 'jquery-plugin-download', get_stylesheet_directory_uri() . '/js/download-tracker.js', array(), null, true );
+});
+
 function jq_plugin_meta( $attr ) {
 	$post = get_post( get_the_ID() );
 	$main_post = empty( $post->post_parent ) ? $post->ID : $post->post_parent;
