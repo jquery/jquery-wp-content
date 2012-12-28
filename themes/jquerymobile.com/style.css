@@ -3,8 +3,6 @@ Theme Name: jquerymobile-com
 Template: jquery
 */
 
-body.jquery-mobile, #container { background: #598611 url(../jquery/i/bg-body-mobile.jpg) no-repeat center -30px; }
-
 h1.site-title a {
     background: url(../jquery/i/logo-mobile.png) no-repeat;
     height: 72px;
@@ -16,7 +14,7 @@ h1.site-title a {
 
 .border, #site-footer { border-color: #88C41A; }
 
-a, .title, .entry-title { color: #598611; }
+a, .title, .entry-title { color: #108040; }
 
 #container header nav {
     border-top: solid 1px rgba(136,196,26,0.3);

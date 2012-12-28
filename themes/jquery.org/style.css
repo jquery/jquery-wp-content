@@ -451,12 +451,6 @@ a.button:hover,
 }
 
 
-#container,
-footer {
-    border-top: 1px solid rgb(96, 194, 195);
-}
-
-
 /*Adjust widths for longer navigation*/
 
 nav#main .searchform {
