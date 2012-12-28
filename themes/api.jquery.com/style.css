@@ -3,34 +3,23 @@ Theme Name: api-jquery-com
 Template: jquery
 */
 
-/*******************************************************************************/
-/*  Single Page Documentation */
-/*******************************************************************************/
-
-.inner .entry .section-title {
-	-webkit-box-shadow: #054873 0 -1px 0;
-	box-shadow: #054873 0 -1px 0;
-	border-top: 1px solid #0195E9;
+a {
+	color: #065791;
 }
 
-.section-title .version-details {
-  margin-right: 1em;
+a:hover {
+	color: #333;
 }
+
+.signatures li h4 {
+	background: #25649F;
+}
+
 .version-details a,
 .returns a {
 	color: #CB7C39;
 }
 
-
-.signatures li h4 {
-	background: #25649F url(../jquery/i/examples-back.png) center -50px no-repeat;
-}
-
 .versionAdded a {
 	color: #00D6FF;
-}
-
-.single h1.entry-title,
-h1.page-title {
-	color: #cb7c39;
 }
