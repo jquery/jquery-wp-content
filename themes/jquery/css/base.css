@@ -1218,21 +1218,15 @@ iframe {
 	clear: both;
 	font-size: 13px;
 	color: #fff;
-	opacity: 0.25;
+	opacity: 0.75;
 	text-decoration: none;
 	text-align: center;
 	line-height: 15px;
 	text-shadow: black 0 -1px 0;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
 	left: 20px;
 	right: 20px;
 	bottom: 10px;
 	position: absolute;
-}
-
-#global-project-select li a:hover em {
-	opacity: 0.75;
 }
 
 #global-nav nav {
