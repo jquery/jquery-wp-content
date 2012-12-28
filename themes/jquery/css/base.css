@@ -2902,7 +2902,7 @@ footer li img {
 /* Listing Pages (categories, searches, etc.)
    ========================================================================== */
 
-.listing .post {
+.listing .hentry {
 	padding: 10px 20px;
 	margin: 20px 0;
 	border: 1px solid rgba( 0, 0, 0, 0.2 );
