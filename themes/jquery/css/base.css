@@ -1,4 +1,8 @@
-/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+/*! Copyright 2012 jQuery Foundation and other contributors
+ * Includes:
+ * - normalize.css v1.0.1 | MIT License | git.io/normalize
+ * - Font Awesome - http://fortawesome.github.com/Font-Awesome - CC BY 3.0
+ */
 
 /* ==========================================================================
    HTML5 display definitions
@@ -44,16 +48,6 @@ audio:not([controls]) {
 	height: 0;
 }
 
-/*
- * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
- * and Safari 4.
- * Known issue: no IE 6 support.
- */
-
-[hidden] {
-	display: none;
-}
-
 /* ==========================================================================
    Base
    ========================================================================== */
@@ -82,6 +76,7 @@ input,
 select,
 textarea {
 	font-family: sans-serif;
+	color: #222;
 }
 
 /*
@@ -90,6 +85,42 @@ textarea {
 
 body {
 	margin: 0;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+@font-face {
+	font-family: 'JournalRegular';
+	src: url('fonts/journal-webfont.eot');
+	src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/journal-webfont.woff') format('woff'),
+			 url('fonts/journal-webfont.ttf') format('truetype'),
+			 url('fonts/journal-webfont.svg#JournalRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "FontAwesome";
+	src: url('fonts/fontawesome-webfont.eot');
+	src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* ==========================================================================
@@ -229,14 +260,6 @@ q:after {
 }
 
 /*
- * Addresses inconsistent and variable font size in all browsers.
- */
-
-small {
-	font-size: 80%;
-}
-
-/*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
 
@@ -307,14 +330,8 @@ nav ol {
 img {
 	border: 0; /* 1 */
 	-ms-interpolation-mode: bicubic; /* 2 */
-}
-
-/*
- * Corrects overflow displayed oddly in IE 9.
- */
-
-svg:not(:root) {
-	overflow: hidden;
+	vertical-align: middle;
+	max-width: 100%;
 }
 
 /* ==========================================================================
@@ -339,6 +356,7 @@ figure {
 
 form {
 	margin: 0;
+	padding: 10px 0;
 }
 
 /*
@@ -346,9 +364,9 @@ form {
  */
 
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -475,13 +493,8 @@ input::-moz-focus-inner {
 textarea {
 	overflow: auto; /* 1 */
 	vertical-align: top; /* 2 */
-}
-
-/* General Form Styles
-   ========================================================================== */
-
-form {
-	padding: 10px 0;
+	min-height: 150px;
+	resize: vertical;
 }
 
 input[type=text],
@@ -490,14 +503,7 @@ textarea {
 
 	width: 70%;
 	min-width: 300px;
-}
 
-/**
- * Text Inputs
- */
-
-input[type=text],
-textarea {
 	margin: 5px 0 10px 0;
 	padding: 8px 12px;
 
@@ -506,9 +512,8 @@ textarea {
 	border: 1px solid rgba(192,192,192,0.49);
 	border-radius: 2px;
 
-	-moz-box-shadow:    inset 0px 1px 3px rgba(0,0,0,0.17);
-	-webkit-box-shadow: inset 0px 1px 3px rgba(0,0,0,0.17);
-	box-shadow:         inset 0px 1px 3px rgba(0,0,0,0.17);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
+	box-shadow:         inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
 ::-webkit-input-placeholder,
@@ -529,15 +534,8 @@ textarea:focus {
 	-webkit-box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
 						inset 0px 1px 3px rgba(0,0,0,0.2);
 
-	-moz-box-shadow:    0px 0px 6px rgba(23,138,156,0.5),
-						inset 0px 1px 3px rgba(0,0,0,0.2);
-
 	box-shadow:         0px 0px 6px rgba(23,138,156,0.5),
 						inset 0px 1px 3px rgba(0,0,0,0.2);
-}
-
-textarea {
-	min-height: 150px;
 }
 
 /**
@@ -634,148 +632,57 @@ form input[type="submit"] {
    Tables
    ========================================================================== */
 
-/*
- * Remove most spacing between table cells.
- */
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-
-
-/* HTML5 Boilerplate styles
+/* ==========================================================================
+   Font Awesome
    ========================================================================== */
-
-/* Basic Styles from HTML5 Boilerplate http://h5bp.com (generated via initializr.com)*/
-
-html,
-button,
-input,
-select,
-textarea {
-	color: #222;
-}
-
-::-moz-selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
-
-::selection {
-	background: #b3d4fc;
-	text-shadow: none;
-}
-
-img {
-	vertical-align: middle;
-	max-width: 100%;
-}
-
-fieldset {
-	border: 0;
-	margin: 0;
-	padding: 0;
-}
-
-textarea {
-	resize: vertical;
-}
-
-.chromeframe {
-	margin: 0.2em 0;
-	background: #ccc;
-	color: #000;
-	padding: 0.2em 0;
-}
-
-
-/* @Fontface
-   ========================================================================== */
-
-/* Add the Journal typeface to your CSS by including `JournalRegular` in the family font-stack. Font Awesome info next.
-
-	<div id="banner"><h3>I'm a Journal Header</h3></div>
-
-Additionally, Proxima Nova is served via Typekit for global use. Add `proxima-nova` to the fontstack.
-
-	<div id="content"><h2>Proxima Nova Header</h2></div>
-*/
-
-@font-face {
-	font-family: 'JournalRegular';
-	src: url('fonts/journal-webfont.eot');
-	src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
-			 url('fonts/journal-webfont.woff') format('woff'),
-			 url('fonts/journal-webfont.ttf') format('truetype'),
-			 url('fonts/journal-webfont.svg#JournalRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-  @font-face {
-	font-family: "FontAwesome";
-	src: url('fonts/fontawesome-webfont.eot');
-	src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Font Awesome styles
-	 ========================================================================== */
-
-/*FontAwesome icons can be added via the `i` element or onto `h1`, `h2`, `h3`, `li` elements, etc. Some additional CSS styling may need to be done to get it to show up correctly.
-
-	<p><i class="icon-twitter"> Twitter</p>
-
-FontAwesome full icon reference found here http://fortawesome.github.com/Font-Awesome/#all-icons
-*/
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
- font-family: FontAwesome;
- font-weight: normal;
- font-style: normal;
- display: inline-block;
- text-decoration: inherit;
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
 }
 a [class^="icon-"], a [class*=" icon-"] {
- display: inline-block;
- text-decoration: inherit;
+	display: inline-block;
+	text-decoration: inherit;
 }
-  /* makes the font 33% larger relative to the icon container */
+/* makes the font 33% larger relative to the icon container */
 .icon-large:before {
- vertical-align: top;
- font-size: 1.3333333333333333em;
+	vertical-align: top;
+	font-size: 1.3333333333333333em;
 }
 .btn [class^="icon-"], .btn [class*=" icon-"] {
-   /* keeps button heights with and without icons the same */
-
- line-height: .9em;
+	/* keeps button heights with and without icons the same */
+	line-height: .9em;
 }
 li [class^="icon-"], li [class*=" icon-"] {
- display: inline-block;
- width: 1.25em;
- text-align: center;
+	display: inline-block;
+	width: 1.25em;
+	text-align: center;
 }
 li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
-   /* 1.5 increased font size for icon-large * 1.25 width */
-
- width: 1.875em;
+	/* 1.5 increased font size for icon-large * 1.25 width */
+	width: 1.875em;
 }
 li[class^="icon-"], li[class*=" icon-"] {
- margin-left: 0;
- list-style-type: none;
+	margin-left: 0;
+	list-style-type: none;
 }
 li[class^="icon-"]:before, li[class*=" icon-"]:before {
- text-indent: -2em;
- text-align: center;
+	text-indent: -2em;
+	text-align: center;
 }
 li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
- text-indent: -1.3333333333333333em;
+	text-indent: -1.3333333333333333em;
 }
-  /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-   readers do not read off random characters that represent icons */
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+ * readers do not read off random characters that represent icons */
 .icon-glass:before                { content: "\f000"; }
 .icon-music:before                { content: "\f001"; }
 .icon-search:before               { content: "\f002"; }
@@ -791,7 +698,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-ok:before                   { content: "\f00c"; }
 .icon-remove:before               { content: "\f00d"; }
 .icon-zoom-in:before              { content: "\f00e"; }
-
 .icon-zoom-out:before             { content: "\f010"; }
 .icon-off:before                  { content: "\f011"; }
 .icon-signal:before               { content: "\f012"; }
@@ -807,8 +713,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-inbox:before                { content: "\f01c"; }
 .icon-play-circle:before          { content: "\f01d"; }
 .icon-repeat:before               { content: "\f01e"; }
-
-  /* \f020 doesn't work in Safari. all shifted one down */
+/* \f020 doesn't work in Safari. all shifted one down */
 .icon-refresh:before              { content: "\f021"; }
 .icon-list-alt:before             { content: "\f022"; }
 .icon-lock:before                 { content: "\f023"; }
@@ -824,7 +729,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-book:before                 { content: "\f02d"; }
 .icon-bookmark:before             { content: "\f02e"; }
 .icon-print:before                { content: "\f02f"; }
-
 .icon-camera:before               { content: "\f030"; }
 .icon-font:before                 { content: "\f031"; }
 .icon-bold:before                 { content: "\f032"; }
@@ -840,7 +744,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-indent-right:before         { content: "\f03c"; }
 .icon-facetime-video:before       { content: "\f03d"; }
 .icon-picture:before              { content: "\f03e"; }
-
 .icon-pencil:before               { content: "\f040"; }
 .icon-map-marker:before           { content: "\f041"; }
 .icon-adjust:before               { content: "\f042"; }
@@ -856,7 +759,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-pause:before                { content: "\f04c"; }
 .icon-stop:before                 { content: "\f04d"; }
 .icon-forward:before              { content: "\f04e"; }
-
 .icon-fast-forward:before         { content: "\f050"; }
 .icon-step-forward:before         { content: "\f051"; }
 .icon-eject:before                { content: "\f052"; }
@@ -872,7 +774,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-remove-circle:before        { content: "\f05c"; }
 .icon-ok-circle:before            { content: "\f05d"; }
 .icon-ban-circle:before           { content: "\f05e"; }
-
 .icon-arrow-left:before           { content: "\f060"; }
 .icon-arrow-right:before          { content: "\f061"; }
 .icon-arrow-up:before             { content: "\f062"; }
@@ -888,7 +789,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-leaf:before                 { content: "\f06c"; }
 .icon-fire:before                 { content: "\f06d"; }
 .icon-eye-open:before             { content: "\f06e"; }
-
 .icon-eye-close:before            { content: "\f070"; }
 .icon-warning-sign:before         { content: "\f071"; }
 .icon-plane:before                { content: "\f072"; }
@@ -904,7 +804,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-folder-open:before          { content: "\f07c"; }
 .icon-resize-vertical:before      { content: "\f07d"; }
 .icon-resize-horizontal:before    { content: "\f07e"; }
-
 .icon-bar-chart:before            { content: "\f080"; }
 .icon-twitter-sign:before         { content: "\f081"; }
 .icon-facebook-sign:before        { content: "\f082"; }
@@ -920,7 +819,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-linkedin-sign:before        { content: "\f08c"; }
 .icon-pushpin:before              { content: "\f08d"; }
 .icon-external-link:before        { content: "\f08e"; }
-
 .icon-signin:before               { content: "\f090"; }
 .icon-trophy:before               { content: "\f091"; }
 .icon-github-sign:before          { content: "\f092"; }
@@ -936,7 +834,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-unlock:before               { content: "\f09c"; }
 .icon-credit-card:before          { content: "\f09d"; }
 .icon-rss:before                  { content: "\f09e"; }
-
 .icon-hdd:before                  { content: "\f0a0"; }
 .icon-bullhorn:before             { content: "\f0a1"; }
 .icon-bell:before                 { content: "\f0a2"; }
@@ -952,11 +849,9 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-globe:before                { content: "\f0ac"; }
 .icon-wrench:before               { content: "\f0ad"; }
 .icon-tasks:before                { content: "\f0ae"; }
-
 .icon-filter:before               { content: "\f0b0"; }
 .icon-briefcase:before            { content: "\f0b1"; }
 .icon-fullscreen:before           { content: "\f0b2"; }
-
 .icon-group:before                { content: "\f0c0"; }
 .icon-link:before                 { content: "\f0c1"; }
 .icon-cloud:before                { content: "\f0c2"; }
@@ -972,7 +867,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-strikethrough:before        { content: "\f0cc"; }
 .icon-underline:before            { content: "\f0cd"; }
 .icon-table:before                { content: "\f0ce"; }
-
 .icon-magic:before                { content: "\f0d0"; }
 .icon-truck:before                { content: "\f0d1"; }
 .icon-pinterest:before            { content: "\f0d2"; }
@@ -988,7 +882,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-sort:before                 { content: "\f0dc"; }
 .icon-sort-down:before            { content: "\f0dd"; }
 .icon-sort-up:before              { content: "\f0de"; }
-
 .icon-envelope-alt:before         { content: "\f0e0"; }
 .icon-linkedin:before             { content: "\f0e1"; }
 .icon-undo:before                 { content: "\f0e2"; }
@@ -1000,33 +893,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-sitemap:before              { content: "\f0e8"; }
 .icon-umbrella:before             { content: "\f0e9"; }
 .icon-paste:before                { content: "\f0ea"; }
-
 .icon-user-md:before              { content: "\f200"; }
-
-
-  /*	Font Awesome
-		the iconic font designed for use with Twitter Bootstrap
-		-------------------------------------------------------
-		The full suite of pictographic icons, examples, and documentation
-		can be found at: http://fortawesome.github.com/Font-Awesome/
-
-		License
-		-------------------------------------------------------
-		The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
-		http://creativecommons.org/licenses/by/3.0/ A mention of
-		'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
-		source code is considered acceptable attribution (most common on the web).
-		If human readable source code is not available to the end user, a mention in
-		an 'About' or 'Credits' screen is considered acceptable (most common in desktop
-		or mobile software).
-
-		Contact
-		-------------------------------------------------------
-		Email: dave@davegandy.com
-		Twitter: http://twitter.com/fortaweso_me
-		Work: http://lemonwi.se co-founder
-
-		*/
 
 /* Global Structure
    ========================================================================== */
@@ -1071,7 +938,6 @@ iframe {
 
 #content-wrapper {
 	background-color: #fff;
-	-moz-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	-webkit-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	max-width: 1240px;
@@ -1288,7 +1154,6 @@ iframe {
 	visibility: hidden;
 	-webkit-transiton: opacity 0.2s;
 	transition: opacity 0.2s;
-	-moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 	-webkit-box-shadow: 0 43px 5px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 	z-index: 400;
