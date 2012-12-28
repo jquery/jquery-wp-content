@@ -2185,7 +2185,7 @@ nav .searchform .icon-search {
 #container #body #sidebar {
 	width: 20.5%;
 	position: relative;
-	background: #eeeeee;
+	background: #f4f4f4;
 	height: 100%;
 	padding: 0 1.5% 0;
 /*	margin-bottom: -10000px;
@@ -2364,7 +2364,6 @@ body.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 
 #sidebar aside > ul li {
 	list-style: none;
-	border-bottom: 1px solid #c5c5c5;
 	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.25);
 	box-shadow: 0 1px 0 rgba(255,255,255,0.25);
 	padding: 0;
@@ -2398,16 +2397,21 @@ body.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 }
 
 #sidebar aside > ul li a {
+	border-bottom: 1px solid #c5c5c5;
 	font-weight: bold;
 	color: #3f3f3f;
 	text-shadow: 0 1px 0 rgba(255,255,255,1);
 	font-size: 13px;
 	text-decoration: none;
-	width: 100%;
 	display: block;
-	width: 96%;
+	width: 95%;
 	padding: 5% 10%;
-	margin: -1px 0 0 -8%;
+	margin: 0 0 0 -8%;
+}
+
+#sidebar aside > ul a:hover { 
+	background: #e9e9e9;
+	font-weight: bold;
 }
 
 #sidebar aside > ul a:active {
@@ -2431,15 +2435,18 @@ body.jquery-learning { background: #000 url(../i/learning_bg.jpg) no-repeat cent
 #container #sidebar .current-cat-parent ul a,
 #container #sidebar .current-cat ul.children a {
 	padding-left: 25%;
-	width: 75%
-}
-#sidebar aside > ul li.current-cat li {
-	border-bottom: 1px solid #c5c5c5;
-}
-#sidebar aside > ul li.current-cat > a {
-	color: #000;
+	width: 80%
 }
 
+#sidebar aside > ul li.current-cat-parent a,
+#sidebar aside > ul li.current-cat a {
+	background: #e6e6e6;
+	color: #666666;
+}
+
+#sidebar aside > ul li.current-cat > a {
+	color: #111;
+}
 
 
 /*******************************************************************************/
