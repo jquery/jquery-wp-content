@@ -2,12 +2,6 @@
  * All sites
  */
 $(function() {
-	// All projects top nav
-	$(".toggle-projects").on( "click", function( event ) {
-		$("#global-project-select").slideToggle();
-		event.preventDefault();
-	});
-
 	// CDN auto-select-all
 	$( ".cdn input" ).on( "click", function() {
 		if ( typeof this.select === "function" ) {

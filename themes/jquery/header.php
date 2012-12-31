@@ -59,49 +59,14 @@ $sidebar = "sidebar-left";
 
 <header>
 	<section id="global-nav">
-		<div id="global-project-select">
-			<div class="constrain">
-				<ul>
-					<li>
-						<a href="http://dev.jquery.com/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/global-nav-logo-jquery.png" alt="jQuery" />
-							<em>The core JS framework that lets you write less &amp; do more.</em>
-						</a>
-					</li>
-					<li>
-						<a href="http://dev.jqueryui.com/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/global-nav-logo-ui.png" alt="jQuery UI" />
-							<em>The officially supported User Interface library for jQuery.</em>
-						</a>
-					</li>
-					<li>
-						<a href="http://dev.jquerymobile.com/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/global-nav-logo-mobile.png" alt="jQuery Mobile">
-							<em>Build mobile web apps with jQuery using this framework.</em>
-						</a>
-					</li>
-					<li>
-						<a href="http://dev.sizzlejs.com/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/global-nav-logo-sizzle.png" alt="SizzleJS" />
-							<em>A smoking fast CSS selector engine for JavaScript.</em>
-						</a>
-					</li>
-					<li>
-						<a href="http://dev.qunitjs.com/">
-							<img src="<?php echo get_template_directory_uri(); ?>/images/global-nav-logo-qunit.png" alt="QUnit" />
-							<em>Write solid JavaScript apps by unit testing with QUnit.</em>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
 		<nav>
 			<div class="constrain">
 				<ul class="projects">
-					<li class="project jquery current"><a href="http://dev.jquery.com/">jQuery</a></li>
-					<li class="project jquery-ui"><a href="http://dev.jqueryui.com/">jQuery UI</a></li>
-					<li class="project jquery-mobile"><a href="http://dev.jquerymobile.com/">jQuery Mobile</a></li>
-					<li class="toggle-projects"><a href="http://dev.jquery.org/projects/">All Projects <i class="icon-caret-down"></i></a></li>
+					<li class="project jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
+					<li class="project jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+					<li class="project sizzlejs"><a href="http://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+					<li class="project qunitjs"><a href="http://qunitjs.com/" title="QUnit">QUnit</a></li>
 				</ul>
 				<ul class="links">
 					<li class="dropdown"><a href="#">Support</a>
