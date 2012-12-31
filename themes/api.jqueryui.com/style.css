@@ -7,10 +7,6 @@ a {
 	color: #B24926;
 }
 
-a:hover {
-	color: #333;
-}
-
 .version-details a,
 .returns a {
 	color: #FAA523;
