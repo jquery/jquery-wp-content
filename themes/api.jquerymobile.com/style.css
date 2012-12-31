@@ -11,6 +11,11 @@ a:hover {
 	color: #333;
 }
 
+.version-details a,
+.returns a {
+	color: #3EB249;
+}
+
 .signatures li h4 {
-	background: #7a1;
+	background: #108040;
 }
