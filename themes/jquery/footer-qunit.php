@@ -20,7 +20,7 @@
 			</div>
 			<ul class="footer-icon-links">
 				<li><a class="icon-github" href="http://github.com/jquery/qunit">GitHub <small>QUnit <br>Source</small></a></li>
-				<li><a class="icon-forum" href="http://forum.jquery.com/qunit-and-testing">Forum <small>Community <br>Support</small></a></li>
+				<li><a class="icon-group" href="http://forum.jquery.com/qunit-and-testing">Forum <small>Community <br>Support</small></a></li>
 				<li><a class="icon-warning-sign" href="http://github.com/jquery/qunit/issues">Bugs <small>Issue <br>Tracker</small></a></li>
 			</ul>
 		</div>
