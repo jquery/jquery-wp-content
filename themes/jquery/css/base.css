@@ -516,8 +516,23 @@ textarea {
 	box-shadow:         inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
-::-webkit-input-placeholder,
-:-moz-placeholder {
+/*
+ * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
+ * 2. Using :placeholder for completeness.
+ */
+::-webkit-input-placeholder {
+	color: #ff0000;
+}
+:-moz-placeholder { /* 1 */
+	color: #ff0000;
+}
+::-moz-placeholder {
+	color: #ff0000;
+}
+:-ms-placeholder {
+	color: #ff0000;
+}
+:placeholder { /* 2 */
 	color: #ff0000;
 }
 
@@ -1382,10 +1397,23 @@ nav#main .searchform input:focus {
 	outline: none;
 }
 
-nav#main .searchform input::-webkit-input-placeholder,
-nav#main .searchform input::-ms-input-placeholder,
-nav#main .searchform input::-moz-placeholder,
-nav#main .searchform input::placeholder {
+/*
+ * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
+ * 2. Using :placeholder for completeness.
+ */
+nav#main .searchform input::-webkit-input-placeholder {
+	color: #fff;
+}
+nav#main .searchform input:-moz-placeholder { /* 1 */
+	color: #fff;
+}
+nav#main .searchform input::-moz-placeholder {
+	color: #fff;
+}
+nav#main .searchform input:-ms-input-placeholder {
+	color: #fff;
+}
+nav#main .searchform input:placeholder { /* 2 */
 	color: #fff;
 }
 
