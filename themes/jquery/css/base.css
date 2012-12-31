@@ -497,8 +497,8 @@ textarea {
 	resize: vertical;
 }
 
-input[type=text],
-textarea {
+#content input[type=text],
+#content textarea {
 	color: #666;
 
 	width: 70%;
@@ -536,9 +536,9 @@ textarea {
 	color: #ff0000;
 }
 
-input:focus,
-input[type=text]:focus,
-textarea:focus {
+#content input:focus,
+#content input[type=text]:focus,
+#content textarea:focus {
 	outline: none;
 
 	color: #333;
