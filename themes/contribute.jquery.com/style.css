@@ -4,67 +4,19 @@ Template: jquery
 */
 
 iframe {
-  border: 0;
+	border: 0;
 }
 
-/*******************************************************************************/
-/* Home Page
-/*******************************************************************************/
-#banner .banner-box {
-  width: 100%;
-  text-align: center;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0 15%;
-  margin-top: 1em;
+a {
+	color: #065791;
 }
 
-#banner .banner-box p {
-  margin: 0;
-  font-weight: bold;
-  line-height: 1.4
+#banner-secondary .banner-box p {
+	font-size: 16px;
+	font-weight: bold;
 }
 
-#home-features aside {
-  float: left;
-  width: 33%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding:0 2%;
-  min-height: 250px;
-}
-#home-features aside + aside {
-  border-left: 1px solid #c5c5c5;
-}
-#home-features aside h3 {
-  text-align: center;
-}
-
-#home-features aside ul {
-  list-style-type: none;
-  text-align: left;
-}
 #home-features aside ul li {
-  margin: 0;
-}
-
-#home-features aside a.button {
-  display: block;
-  width: 150px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#open-source-content p {
-  clear: both;
-}
-
-@media screen and (max-width: 480px) {
-  #banner .banner-box {
-    width: 100%;
-  }
-
-  #home-features aside {
-    width: 100%;
-  }
+	background: none;
+	padding: 0;
 }
