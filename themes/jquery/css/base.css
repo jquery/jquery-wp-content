@@ -1963,8 +1963,6 @@ footer .cdn ~ .cdn { margin-top: 5px; }
 
 footer .cdn ~ .cdn strong { text-align: right; }
 
-.no-boxshadow { border-bottom: solid 1px #333; }
-
 footer .cdn strong {
 	text-align: center;
 	height: 26px;
