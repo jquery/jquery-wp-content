@@ -1,10 +1,16 @@
-<?php
-/**
- * The main template file.
- */
+<?php get_header(); ?>
+<div class="content-right listing">
+	<div id="content">
+		<h1 class="page-title">jQuery API</h1>
+		<hr>
 
-get_header(); ?>
+		<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'content', 'api' );
+			endwhile;
+		?>
+	</div>
 
-<?php get_template_part('index', 'api'); ?>
-
+	<?php get_sidebar( 'api' ); ?>
+</div>
 <?php get_footer(); ?>
