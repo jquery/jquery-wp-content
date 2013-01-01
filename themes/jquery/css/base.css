@@ -1925,45 +1925,6 @@ input[type="submit"].dark:hover {
 	font-weight: bold;
 }
 
-/* Footer Grid
-   ========================================================================== */
-
-.col,
-.col4-1,
-.col4-2,
-.col4-3,
-.col3-1,
-.col3-2,
-.col2-1 {
-	float: left;
-	padding-right: 3%;
-}
-
-.col4-1 { width: 21% }
-.col4-2 { width: 47% }
-.col4-3 { width: 72% }
-
-.col7-1 { width: 15.2% }
-.col7-2 { width: 27%   }
-.col7-3 { width: 40.9% }
-.col7-5 { width: 64%; }
-
-.col3-1 { width: 30% }
-.col3-2 { width: 63% }
-
-.col2-1 { width: 47% }
-
-.col.first,
-.col4-1.first,
-.col4-2.first,
-.col4-3.first,
-.col3-1.first,
-.col3-2.first,
-.col2-1.first {
-	margin-left: 0;
-	clear: left;
-}
-
 /* == Footer
    ========================================================================== */
 
@@ -2271,14 +2232,10 @@ footer .bottom { margin: 0 10% 0 0; }
 footer #legal {
 	clear: left;
 	display: block;
+	margin-top: 1em;
 	border-top: solid 1px #333;
 	-webkit-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0;
-}
-
-footer #legal .constrain {
-	background: none;
-	height: auto;
 }
 
 footer .presentations li {

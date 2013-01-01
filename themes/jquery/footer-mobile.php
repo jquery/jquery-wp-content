@@ -3,30 +3,31 @@
 
 <footer class="clearfix simple">
 	<div class="constrain">
-		<div class="col7-1 col"></div>
-		<div class="col7-5 col">
-			<h3><span>Quick Access</span></h3>
-			<div class="cdn">
-				<strong>CDN <em>CSS</em></strong>
-				<input value="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+		<div class="row">
+			<div class="eight columns centered">
+				<h3><span>Quick Access</span></h3>
+				<div class="cdn">
+					<strong>CDN <em>CSS</em></strong>
+					<input value="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+				</div>
+				<div class="cdn">
+					<strong>CDN <em>JS</em></strong>
+					<input value="http://code.jquery.com/jquery-1.8.2.min.js">
+				</div>
+				<div class="cdn">
+					<strong>CDN <em>JS</em></strong>
+					<input value="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
+				</div>
+				<div class="download">
+					<strong>Download jQuery Mobile 1.2.0:</strong>
+					<span><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.zip">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
+				</div>
+				<ul class="footer-icon-links">
+					<li><a class="icon-github" href="http://github.com/jquery/jquery-mobile">GitHub <small>jQuery Mobile <br>Source</small></a></li>
+					<li><a class="icon-group" href="http://forum.jquery.com/jquery-mobile">Forum <small>Community <br>Support</small></a></li>
+					<li><a class="icon-warning-sign" href="http://github.com/jquery/jquery-mobile/issues">Bugs <small>Issue <br>Tracker</small></a></li>
+				</ul>
 			</div>
-			<div class="cdn">
-				<strong>CDN <em>JS</em></strong>
-				<input value="http://code.jquery.com/jquery-1.8.2.min.js">
-			</div>
-			<div class="cdn">
-				<strong>CDN <em>JS</em></strong>
-				<input value="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js">
-			</div>
-			<div class="download">
-				<strong>Download jQuery Mobile 1.2.0:</strong>
-				<span><a href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.zip">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
-			</div>
-			<ul class="footer-icon-links">
-				<li><a class="icon-github" href="http://github.com/jquery/jquery-mobile">GitHub <small>jQuery Mobile <br>Source</small></a></li>
-				<li><a class="icon-group" href="http://forum.jquery.com/jquery-mobile">Forum <small>Community <br>Support</small></a></li>
-				<li><a class="icon-warning-sign" href="http://github.com/jquery/jquery-mobile/issues">Bugs <small>Issue <br>Tracker</small></a></li>
-			</ul>
 		</div>
 
 		<div id="legal">

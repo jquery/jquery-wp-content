@@ -3,54 +3,57 @@
 
 <footer class="clearfix simple">
 	<div class="constrain">
-		<div class="col3-2 col">
-			<h3><span>Quick Access</span></h3>
-			<div class="cdn">
-				<strong>CDN <em>CSS</em></strong>
-				<input value="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+		<div class="row">
+			<div class="eight columns">
+				<h3><span>Quick Access</span></h3>
+				<div class="cdn">
+					<strong>CDN <em>CSS</em></strong>
+					<input value="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+				</div>
+				<div class="cdn">
+					<strong>CDN <em>JS</em></strong>
+					<input value="http://code.jquery.com/jquery-1.8.3.js">
+				</div>
+				<div class="cdn">
+					<strong>CDN <em>JS</em></strong>
+					<input value="http://code.jquery.com/ui/1.9.2/jquery-ui.js">
+				</div>
+				<div class="download">
+					<div><strong>Download jQuery UI 1.9.2 (for jQuery 1.6+):</strong></div>
+					<span>
+						<a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-1.9.2.zip">Development Bundle</a>
+						<a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-themes-1.9.2.zip">Themes</a>
+						<a href="http://jqueryui.com/download/">Download Builder →</a>
+					</span>
+				</div>
+				<ul class="footer-icon-links">
+					<li><a class="icon-github" href="http://github.com/jquery/jquery-ui">GitHub <small>jQuery UI <br>Source</small></a></li>
+					<li><a class="icon-group" href="http://forum.jquery.com/using-jquery-ui">Forum <small>Community <br>Support</small></a></li>
+					<li><a class="icon-warning-sign" href="http://bugs.jqueryui.com">Bugs <small>Issue <br>Tracker</small></a></li>
+				</ul>
 			</div>
-			<div class="cdn">
-				<strong>CDN <em>JS</em></strong>
-				<input value="http://code.jquery.com/jquery-1.8.3.js">
+
+			<div class="four columns">
+				<h3><span>Books</span></h3>
+				<ul class="books">
+					<li>
+						<a href="http://link.packtpub.com/SHnqUf">
+							<span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-1.8.jpg" alt="jQuery UI 1.8: The User Interface Library for jQuery by Dan Wellman" width="92" height="114"></span>
+							<strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br>
+							<cite>Dan Wellman</cite>
+						</a>
+					</li>
+					<li>
+						<a href="http://link.packtpub.com/PG9pAC">
+							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-themes.jpg" alt="jQuery UI Themes by Adam Boduch" width="92" height="114"></span>
+							<strong>jQuery UI Themes</strong><br>
+							<cite>Adam Boduch</cite>
+						</a>
+					</li>
+				</ul>
 			</div>
-			<div class="cdn">
-				<strong>CDN <em>JS</em></strong>
-				<input value="http://code.jquery.com/ui/1.9.2/jquery-ui.js">
-			</div>
-			<div class="download">
-				<div><strong>Download jQuery UI 1.9.2 (for jQuery 1.6+):</strong></div>
-				<span>
-					<a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-1.9.2.zip">Development Bundle</a>
-					<a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-themes-1.9.2.zip">Themes</a>
-					<a href="http://jqueryui.com/download/">Download Builder →</a>
-				</span>
-			</div>
-			<ul class="footer-icon-links">
-				<li><a class="icon-github" href="http://github.com/jquery/jquery-ui">GitHub <small>jQuery UI <br>Source</small></a></li>
-				<li><a class="icon-group" href="http://forum.jquery.com/using-jquery-ui">Forum <small>Community <br>Support</small></a></li>
-				<li><a class="icon-warning-sign" href="http://bugs.jqueryui.com">Bugs <small>Issue <br>Tracker</small></a></li>
-			</ul>
 		</div>
 
-		<div class="col3-1 col">
-			<h3><span>Books</span></h3>
-			<ul class="books">
-				<li>
-					<a href="http://link.packtpub.com/SHnqUf">
-						<span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-1.8.jpg" alt="jQuery UI 1.8: The User Interface Library for jQuery by Dan Wellman" width="92" height="114"></span>
-						<strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br>
-						<cite>Dan Wellman</cite>
-					</a>
-				</li>
-				<li>
-					<a href="http://link.packtpub.com/PG9pAC">
-						<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-themes.jpg" alt="jQuery UI Themes by Adam Boduch" width="92" height="114"></span>
-						<strong>jQuery UI Themes</strong><br>
-						<cite>Adam Boduch</cite>
-					</a>
-				</li>
-			</ul>
-		</div>
 		<div id="legal">
 			<ul class="footer-site-links">
 				<li><a class="icon-pencil" href="http://learn.jquery.com/">Learning Center</a></li>
