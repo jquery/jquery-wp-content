@@ -1211,6 +1211,7 @@ iframe {
 
 .jquery-mobile #global-nav nav ul.projects li.sizzlejs{
 	border-left: none;
+	background-position: -157px 0;
 }
 
 
