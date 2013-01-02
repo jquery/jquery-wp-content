@@ -1134,7 +1134,7 @@ iframe {
 	padding: 0;
 	height: 33px;
 	text-indent: -1000px;
-	background: url(../images/jq-nav-icons.png) -2px 0;
+	background: url(../images/jq-nav-icons.png) -6px 0;
 }
 
 #global-nav nav ul.projects li.project a {
@@ -1159,7 +1159,7 @@ iframe {
 }
 
 .jquery #global-nav nav ul.projects li.jquery {
-	background-position: 0 bottom;
+	background-position: 0 -38px;
 	width: 52px;
 	position: relative;
 	margin-top:1px;
@@ -1172,10 +1172,11 @@ iframe {
 
 .jquery #global-nav nav ul.projects li.jquery-ui {
 	border-left: none;
+	background-position: -59px 0;
 }
 
 .jquery-ui #global-nav nav ul.projects li.jquery-ui {
-	background-position: -50px bottom;
+	background-position: -50px -38px;
 	width: 52px;
 	position: relative;
 	margin-top:1px;
@@ -1184,6 +1185,7 @@ iframe {
 
 .jquery-ui #global-nav nav ul.projects li.jquery {
 	border-right: none;
+	background-position: -2px 0;
 }
 
 .jquery-ui #global-nav nav ul.projects li.jquery-mobile {
@@ -1191,7 +1193,7 @@ iframe {
 }
 
 .jquery-mobile #global-nav nav ul.projects li.jquery-mobile {
-	background-position: -100px bottom;
+	background-position: -100px -38px;
 	width: 52px;
 	position: relative;
 	margin-top:1px;
@@ -1200,6 +1202,7 @@ iframe {
 
 .jquery-mobile #global-nav nav ul.projects li.jquery-ui {
 	border-right: none;
+	background-position: -53px 0;
 }
 
 .jquery-mobile #global-nav nav ul.projects li.jquery-mobile {
@@ -1213,10 +1216,11 @@ iframe {
 
 .sizzlejs #global-nav nav ul.projects li.jquery-mobile {
 	border-right: none;
+	background-position: -102px 0;
 }
 
 .sizzlejs #global-nav nav ul.projects li.sizzlejs {
-	background-position: -148px bottom;
+	background-position: -148px -38px;
 	width: 52px;
 	position: relative;
 	margin-top:1px;
@@ -1225,6 +1229,7 @@ iframe {
 
 .sizzlejs #global-nav nav ul.projects li.qunitjs{
 	border-left: none;
+	background-position: -206px 0;
 }
 
 
@@ -1233,7 +1238,7 @@ iframe {
 }
 
 .qunitjs #global-nav nav ul.projects li.qunitjs {
-	background-position: -202px bottom;
+	background-position: -202px -38px;
 	width: 52px;
 	position: relative;
 	margin-top:1px;
