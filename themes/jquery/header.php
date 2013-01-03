@@ -40,8 +40,8 @@ $sidebar = "sidebar-left";
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
-	<script type="text/javascript" src="//use.typekit.net/wde1aof.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script src="//use.typekit.net/wde1aof.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
 
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
