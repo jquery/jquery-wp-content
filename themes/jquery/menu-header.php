@@ -42,13 +42,13 @@ function menu_header_qunitjs_com() {
 
 function menu_header_jquerymobile_com() {
 	return array(
-		'http://mobile.jquery.com/docs' => 'Docs',
-		'http://mobile.jquery.com/download' => 'Download',
-		'http://mobile.jquery.com/gbs' => 'Platforms',
-		'http://mobile.jquery.com/themeroller' => 'Themes',
-		'http://mobile.jquery.com/resources' => 'Resources',
+		'http://api.jquerymobile.com/' => 'API Documentation',
+		'http://jquerymobile.com/download/' => 'Download',
+		'http://jquerymobile.com/gbs/' => 'Platforms',
+		'http://jquerymobile.com/themeroller/' => 'Themes',
+		'http://jquerymobile.com/resources/' => 'Resources',
 		'http://forum.jquery.com/jquery-mobile' => 'Forum',
-		'http://mobile.jquery.com/blog' => 'Blog',
+		'http://blog.jquerymobile.com/' => 'Blog',
 	);
 }
 
