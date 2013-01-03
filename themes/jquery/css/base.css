@@ -1928,8 +1928,6 @@ input[type="submit"].dark:hover {
 }
 
 #sidebar li {
-	padding-bottom: 8px;
-	padding-top: 8px;
 	padding-left: 20px;
 	line-height: 20px;
 	list-style-type: none;
@@ -1940,6 +1938,8 @@ input[type="submit"].dark:hover {
 #sidebar li a {
 	color: #4d4d4d;
 	text-decoration: none;
+	padding: 8px 0;
+	display: block;
 }
 
 #sidebar nav#secondary li {
