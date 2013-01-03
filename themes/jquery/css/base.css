@@ -1491,7 +1491,7 @@ hr {
 }
 
 pre, code {
-	font: 15px/18px "Courier New", Courier, mono;
+	font: 13px/16px "source-code-pro", Consolas, monospace;
 	word-spacing: 0;
 }
 
@@ -1505,7 +1505,6 @@ pre {
 }
 
 code {
-	font-size: 15px;
 	padding: 3px;
 	background-color: #e2e2e2;
 	border-radius: 3px;
@@ -2031,7 +2030,7 @@ footer .cdn strong:after {
 footer .cdn strong em {
 	font-style: normal;
 	color: #ccc;
-	font-family: Consolas, Monaco, monospace;
+	font-family: "source-code-pro", Consolas, monospace;
 	display: inline-block;
 	width: 35px;
 	padding-left: 5px;
@@ -2044,7 +2043,7 @@ footer .cdn input {
 	width: 100%;
 	background: inherit;
 	border: 0;
-	font-family: Consolas, monospace;
+	font-family: "source-code-pro", Consolas, monospace;
 	padding-left: 5px;
 	white-space: nowrap;
 	color: #ccc;
@@ -2397,7 +2396,7 @@ footer li img {
 	vertical-align: baseline !important;
 	width: auto !important;
 	box-sizing: content-box !important;
-	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+	font-family: "source-code-pro", Consolas, monospace !important;
 	font-weight: normal !important;
 	font-style: normal !important;
 	font-size: 1em !important;
