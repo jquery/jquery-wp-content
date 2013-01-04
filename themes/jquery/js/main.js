@@ -27,8 +27,16 @@ $(function() {
 			return;
 		}
 
-		iframeSrc = src.find( "td.code" ).text()
-			.replace( /\s+/g, " " )
+		// Get the original source
+		iframeSrc = src.find( "td.code .line" ).map(function() {
+			// Convert non-breaking spaces from highlighted code to normal spaces
+			return $( this ).text().replace( /\xa0/g, " " );
+		// Restore new lines from original source
+		}).get().join( "\n" );
+
+		iframeSrc = iframeSrc
+			// Insert styling for the live demo that we don't want in the
+			// highlighted code
 			.replace( "</head>",
 				"<style>" +
 					"html, body { border:0; margin:0; padding:0; }" +
@@ -38,7 +46,7 @@ $(function() {
 			// IE <10 executes scripts in the order in which they're loaded,
 			// not the order in which they're written. So we need to defer inline
 			// scripts so that scripts which need to be fetched are executed first.
-			.replace( /<script>(.+)<\/script>/,
+			.replace( /<script>([\s\S]+)<\/script>/,
 				"<script>" +
 				"window.onload = function() {" +
 					"$1" +
@@ -46,22 +54,11 @@ $(function() {
 				"</script>" );
 
 		var iframe = document.createElement( "iframe" );
-		iframe.src = "about:blank";
 		iframe.width = "100%";
 		iframe.height = output.attr( "data-height" ) || 250;
-		iframe.style.border = "1px solid #eee";
 		output.append( iframe );
 
-		var doc = iframe.contentDocument ||
-			(iframe.contentWindow && iframe.contentWindow.document) ||
-			iframe.document ||
-			null;
-
-		if ( doc === null ) {
-			return true;
-		}
-
-		doc.open();
+		var doc = (iframe.contentWindow || iframe.contentDocument).document;
 		doc.write( iframeSrc );
 		doc.close();
 	});
