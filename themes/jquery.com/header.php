@@ -5,8 +5,8 @@
 		<title>jQuery: The Write Less, Do More, JavaScript Library</title>
 		<link rel="stylesheet" href="http://static.jquery.com/files/rocker/css/reset.css" type="text/css" />
 		<link rel="stylesheet" href="http://static.jquery.com/files/rocker/css/screen.css" type="text/css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.4.2.min.js"><\/script>');</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script>!window.jQuery && document.write('<script src="http://code.jquery.com/jquery-1.8.3.min.js"><\/script>');</script>
 		<script src="http://static.jquery.com/files/rocker/scripts/custom.js"></script>
 		<link rel="alternate" type="application/rss+xml" title="jQuery Blog" href="http://jquery.com/blog/feed/" />
 		<link rel="shortcut icon" href="http://static.jquery.com/favicon.ico" type="image/x-icon"/>
