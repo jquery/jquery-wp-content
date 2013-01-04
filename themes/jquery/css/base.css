@@ -951,6 +951,10 @@ iframe {
 	background: #032A42;
 }
 
+.jquery-learn #container {
+	background: url(../images/bg-body-learn.jpg) no-repeat center top #000;
+}
+
 #content-wrapper {
 	background-color: #fff;
 	-webkit-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
@@ -1265,13 +1269,20 @@ footer {
 .jquery-mobile footer {
 	border-top-color: #3EB249;
 }
+
 .sizzlejs #container, 
 .sizzlejs footer {
 	border-top-color: #FAA523;
 }
+
 .qunitjs #container, 
 .qunitjs footer {
 	border-top-color: #9C3493;
+}
+
+.jquery-learn #container, 
+.jquery-learn footer {
+	border-top-color: #333;
 }
 
 /* Logo & Navigation
@@ -1297,7 +1308,8 @@ h2.logo a {
 	text-indent: -1000px;
 }
 
-.jquery h2.logo a {
+.jquery h2.logo a,
+.jquery-learn h2.logo a {
 	width: 243px;
 	background: url(../images/logo-jquery.png) no-repeat;
 }

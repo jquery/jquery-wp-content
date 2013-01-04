@@ -49,7 +49,7 @@ function jquery_sites() {
 		'learn.jquery.com' => array(
 			'blog_id' => 5,
 			'cookie_domain' => '.jquery.com',
-			'body_class' => 'jquery-learning',
+			'body_class' => 'jquery-learn',
 			'options' => array(
 				'blogname' => 'Learn jQuery',
 				'stylesheet' => 'learn.jquery.com',
