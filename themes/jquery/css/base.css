@@ -953,7 +953,7 @@ iframe {
 	-webkit-box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	box-shadow: 0 0 7px rgba(1, 1, 1, 0.87);
 	max-width: 1240px;
-	padding: 40px;
+	padding: 20px 40px;
 	margin: 0 auto;
 	border-radius: 0 0 10px 10px;
 	position: relative;
@@ -995,7 +995,7 @@ iframe {
 	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 3em 20px 3em 35px;
+	padding: 20px 20px 20px 35px;
 	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
@@ -1015,7 +1015,7 @@ iframe {
 	float: left;
 	border-left: 0;
 	border-right: 1px solid #e7e7e7;
-	margin: -40px 0 40px -40px;
+	margin: -20px 0 0 -40px;
 	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
 	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
@@ -1805,11 +1805,8 @@ p.author a {
 
 #banner-secondary {
 	background-image: url(../images/dark-grey-tile.png);
-	margin-top: -40px;
-	margin-left: -40px;
-	margin-right: -40px;
+	margin: -20px -40px 30px;
 	padding: 20px 40px;
-	margin-bottom: 30px;
 }
 
 #banner-secondary h2,
