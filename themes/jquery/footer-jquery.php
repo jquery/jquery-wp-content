@@ -31,16 +31,16 @@
       <ul class="presentations">
         <li>
           <a href="#">
-            <span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/building-spas-jquerys-best-friends.jpg" alt="Building Single Page Applications With jQuery's Best Friends by Addy Osmoni" width="142" height="92" /></span>
+            <span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/building-spas-jquerys-best-friends.jpg" alt="Building Single Page Applications With jQuery's Best Friends by Addy Osmani" width="142" height="92" /></span>
             <strong>Building Single Page Applications With jQuery's Best Friends</strong><br />
-            <cite>Addy Osmoni</cite>
+            <cite>Addy Osmani</cite>
           </a>
         </li>
         <li>
           <a href="#">
-            <span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/addyosmani-2.jpg" alt="jQuery Performance Tips &amp; Tricks by Addy Osmoni" width="142" height="92" /></span>
+            <span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/addyosmani-2.jpg" alt="jQuery Performance Tips &amp; Tricks by Addy Osmani" width="142" height="92" /></span>
             <strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
-            <cite>Addy Osmoni</cite>
+            <cite>Addy Osmani</cite>
           </a>
         </li>
       </ul>
@@ -74,7 +74,6 @@
     </div>
     <div id="legal">
       <ul class="footer-site-links">
-        <li class="icon-learning-center icon"><a href="http://learn.jquery.com/">Learning Center</a></li>
         <li class="icon-forum icon"><a href="http://forum.jquery.com/">Forum</a></li>
         <li class="icon-api icon"><a href="http://api.jquery.com/">API</a></li>
         <li class="icon-twitter icon"><a href="http://twitter.com/jquery">Twitter</a></li>
