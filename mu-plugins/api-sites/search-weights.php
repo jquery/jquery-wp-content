@@ -1,9 +1,8 @@
 <?php
 /**
- * Sorts unpaginated search results more intutiviely.
+ * Sort unpaginated search results more intutiviely.
  *
- * If the search terms exactly match an item's title, that item is first. Then, general
- * matches occur on the title, excerpt, and content fields, sorted in that order.
+ * Results are sorted based on title, then excerpt, then content. Exact title matches come first.
  */
 
 add_filter( 'the_posts', function( $posts, $query ) {
