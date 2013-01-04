@@ -61,13 +61,12 @@ Template: jquery
   height: 88px;
   overflow: hidden;
   position: absolute;
-  top: -3px;
-  right: -3px;
+  top: 0;
+  right: 0;
 }
 
 .beta-ribbon {
   font-weight: bold;
-  color: #393939;
   text-align: center;
   text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
   -webkit-transform: rotate(45deg);
@@ -100,11 +99,12 @@ Template: jquery
   background-image:     -ms-linear-gradient(top, #ffea5e, #FFea94); 
   background-image:      -o-linear-gradient(top, #ffea5e, #FFea94); 
 }
-.beta-ribbon a {
+#content .beta-ribbon a {
   text-decoration: none;
+  color: #393939;
 }
 
-.beta-ribbon:hover a {
+#content .beta-ribbon:hover a {
   text-decoration: underline;
 }
 /*******************************************************************************/
