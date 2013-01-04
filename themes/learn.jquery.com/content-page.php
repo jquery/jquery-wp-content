@@ -22,8 +22,8 @@
 
 	<hr>
 
-	<footer class="entry-meta">
-		<aside class="meta-details">
+	<div class="entry-meta row">
+		<aside class="meta-details six columns">
 			<h3>Details</h3>
 			<ul>
 				<li class="icon-calendar icon-large" title="Last Updated"><?php the_modified_time('F j, Y'); ?></li>
@@ -50,15 +50,15 @@
 				</ul>
 			<?php endif; ?>
 		</aside>
-		<aside class="github-feedback">
+		<aside class="github-feedback six columns">
 			<h3>Suggestions, Problems, Feedback?</h3>
-			<a class="btn" href="<?php echo jq_get_github_url(); ?>"><i class="icon-github"></i>  Open an Issue or Submit a Pull Request on GitHub</a>
+			<a class="button dark" href="<?php echo jq_get_github_url(); ?>"><i class="icon-github"></i>  Open an Issue or Submit a Pull Request on GitHub</a>
 		</aside>
 
 		<?php if (isset($next_prev_arr['prev']) || isset($next_prev_arr['next']) ): ?>
-		<div class='bottom-links'>
+		<div class="bottom-links row">
 		    <?php if (isset($next_prev_arr['prev'])): ?>
-			   <div class='prev'>
+			   <div class="prev six columns">
 			       <a href="<?php echo $next_prev_arr['prev']->guid; ?>">
 				   <i class="icon-chevron-left"></i>
 				   <?php echo $next_prev_arr['prev']->post_title; ?>
@@ -66,7 +66,7 @@
 			   </div>
 		    <?php endif; ?>
 		    <?php if (isset($next_prev_arr['next'])): ?>
-			   <div class='next'>
+			   <div class="next six columns">
 			       <a href="<?php echo $next_prev_arr['next']->guid; ?>">
 				   <?php echo $next_prev_arr['next']->post_title; ?>
 				   <i class="icon-chevron-right"></i>
@@ -75,5 +75,5 @@
 		    <?php endif; ?>
 		</div>
 		<?php endif; ?>
-	</footer><!-- .entry-meta -->
+	</div><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

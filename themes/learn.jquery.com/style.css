@@ -3,31 +3,13 @@ Theme Name: learn-jquery-com
 Template: jquery
 */
 
+a {
+	color: #0769AD;
+}
+
 /*******************************************************************************/
 /* Home Page
 /*******************************************************************************/
-#banner .banner-box {
-  float: left;
-  width: 50%;
-  text-align: center;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0 5%;
-}
-
-#banner .banner-box p {
-  margin: 0;
-  text-align: left;
-  font-weight: bold;
-}
-
-#home-features aside {
-  float: left;
-  width: 33%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding:0 1%;
-}
 #home-features aside h3 {
   text-align: center;
 }
@@ -44,15 +26,6 @@ Template: jquery
   clear: both;
 }
 
-@media screen and (max-width: 480px) {
-  #banner .banner-box {
-    width: 100%;
-  }
-
-  #home-features aside {
-    width: 100%;
-  }
-}
 /*******************************************************************************/
 /* Beta Ribbon
 /*******************************************************************************/
@@ -111,8 +84,10 @@ Template: jquery
 /* Sidebar
 /*******************************************************************************/
 
-#sidebar #chapter-listing ul li a {
-  padding: 2% 10%;
+#sidebar #chapter-listing ul li {
+	background: none;
+	padding-left: 0;
+
 }
 
 #sidebar #chapter-listing li.active a {
@@ -121,28 +96,32 @@ Template: jquery
   text-shadow: none;
 }
 
-#container #body #sidebar #chapter-listing ul.sub-chapter {
+#sidebar #chapter-listing li.active a i.icon-tasks {
+  color: #fff;
+}
+
+#sidebar #chapter-listing ul.sub-chapter {
   margin: 0;
   float: none;
 }
 
-#container #body #sidebar #chapter-listing ul.sub-chapter li {
+#sidebar #chapter-listing ul.sub-chapter li {
   border-bottom: none;
 }
 
-#container #body #sidebar #chapter-listing ul.sub-chapter li a {
-  padding: 1% 10% 1% 23%;
-  width: 83%;
+#sidebar #chapter-listing ul.sub-chapter li a {
+  padding: 1% 10% 1% 15%;
+  width: 100%;
 }
 /*******************************************************************************/
 /* Footer Metadata
 /*******************************************************************************/
 
+.entry-meta.row {
+  min-width: auto;
+}
+
 .entry-meta aside {
-  width: 49%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  margin:0 0 1% 0;
   color: #333;
 }
 
@@ -154,7 +133,6 @@ Template: jquery
   background: #fff7e3;
   background: -webkit-linear-gradient(top, #fffaf5 0%,#fff7e3 100%,#fff7e3 100%);
   background: linear-gradient(to bottom, #fffaf5 0%,#fff7e3 100%,#fff7e3 100%);
-  margin-right: 2%;
   margin-bottom: 1.8em;
   padding: 1em 1em 0 1em;
 }
@@ -215,10 +193,12 @@ Template: jquery
   list-style-type: none;
   margin: 0;
 }
-.entry-meta aside.meta-details .contributor-list li {
+#content .entry-meta aside.meta-details .contributor-list li {
   font-size: 14px;
   line-height: 24px;
   margin: 0 0 4px 0;
+  background: none;
+  padding-left: 0;
 }
 
 .entry-meta aside.meta-details .contributor-list li a {
@@ -245,40 +225,28 @@ Template: jquery
 }
 
 .icon-github {
-        color:#30b9f8;
+        color:#7ACEF4;
 }
 .entry-meta .bottom-links {
-        background: #ccc;
-        overflow:auto;
-        padding:0px 10px;
+	background-image: url(../jquery/images/gauze.png);
+	border: none;
+	margin: 2em 0;
         clear:both;
-        margin: 1em 0;
 }
 
-.bottom-links a {
+#content .bottom-links a {
   line-height:2;
   text-decoration: none;
   font-size:140%;
 }
 
-.bottom-links a:hover {
+#content .bottom-links a:hover {
   text-decoration: underline;
 }
-.bottom-links .prev, .bottom-links .next  {
+#content .bottom-links .prev, #content .bottom-links .next  {
         color: #333;
 }
-.bottom-links .prev {
-        float:left;
-}
-.bottom-links .next  {
-        float:right;
-}
 
-@media screen and (max-width: 480px) {
-  .entry-meta aside {
-    width: 100%;
-  }
-  .entry-meta .bottom-links {
-    width: 100%;
-  }
+#content .bottom-links .next {
+	text-align: right;
 }

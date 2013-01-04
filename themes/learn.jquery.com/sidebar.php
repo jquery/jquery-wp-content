@@ -21,16 +21,24 @@
 							<?php the_title(); ?>
 						</a>
 						<?php $sub_chapters = learn_nested_items($post->ID); ?>
+						<?php $show_sub_chapters = false ?>
 						<?php if ($sub_chapters) : ?>
-							<ul class="sub-chapter">
 							<?php while ( $sub_chapters->have_posts() ) : $sub_chapters->the_post(); ?>
 								<?php if ( has_children( $post ) ) { ?>
-								<li><a href="<?php the_permalink(); ?>">
-									<?php the_title(); ?>
-								</a></li>
+									<?php $show_sub_chapters = true; ?>
 								<?php } ?>
 							<?php endwhile; wp_reset_postdata(); ?>
-							</ul>
+							<?php if ($show_sub_chapters) : ?>
+								<ul class="sub-chapter">
+								<?php while ( $sub_chapters->have_posts() ) : $sub_chapters->the_post(); ?>
+									<?php if ( has_children( $post ) ) { ?>
+									<li><a href="<?php the_permalink(); ?>">
+										<?php the_title(); ?>
+									</a></li>
+									<?php } ?>
+								<?php endwhile; wp_reset_postdata(); ?>
+								</ul>
+							<?php endif; ?>
 						<?php endif; ?>
 					</li>
 				<?php endwhile; wp_reset_postdata(); ?>
