@@ -105,17 +105,6 @@ body {
 }
 
 @font-face {
-	font-family: 'JournalRegular';
-	src: url('fonts/journal-webfont.eot');
-	src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
-			 url('fonts/journal-webfont.woff') format('woff'),
-			 url('fonts/journal-webfont.ttf') format('truetype'),
-			 url('fonts/journal-webfont.svg#JournalRegular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
 	font-family: "FontAwesome";
 	src: url('fonts/fontawesome-webfont.eot');
 	src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
@@ -184,6 +173,10 @@ h6 {
 	margin: 0 0 2.33em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
+}
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
@@ -1069,7 +1062,7 @@ iframe {
 }
 
 #global-nav nav ul li {
-	font: bold 13px/17px sans-serif;
+	font: bold 13px/17px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	display: inline-block;
 	float: left;
 	position: relative;
@@ -1364,7 +1357,8 @@ nav#main li {
 	display: inline;
 	text-transform: uppercase;
 	float: left;
-	font: normal normal 13px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-weight: 700;
 	margin-right: 10px;
 }
 
@@ -1543,7 +1537,7 @@ pre b {
 }
 
 #content blockquote p {
-	font: italic normal 23px/26px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: italic normal 23px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #828282;
 	margin-left: 0;
 	margin-bottom: 0;
@@ -1604,7 +1598,7 @@ pre b {
 	height: 19px;
 	width: 19px;
 	padding-top: 0px;
-	font: bold 11px/19px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 11px/19px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	border-radius: 12px;
 }
 
@@ -1688,7 +1682,7 @@ pre b {
 
 #content figcaption {
 	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
-	font: italic 500 12px/20px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: italic 700 12px/20px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 5px;
@@ -1734,8 +1728,7 @@ pre b {
 }
 
 #content h1 {
-	font: normal 36px/36px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px;
+	font: 700 normal 36px/36px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 }
 
 .content-full #content h1 {
@@ -1743,13 +1736,13 @@ pre b {
 }
 
 #content h2 {
-	font: normal 24px/24px "Proxima-Nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 700 24px/24px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #333;
 	margin-bottom: 10px;
 }
 
 #content h3 {
-	font: normal normal 20px/20px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 700 normal 20px/20px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #666;
 	margin-bottom: 10px;
 	margin-top: 12px;
@@ -1764,7 +1757,8 @@ pre b {
 
 p.author {
 	color: #ababab;
-	font-family: Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-weight: 700;
 	margin-top: -20px;
 }
 
@@ -1776,7 +1770,7 @@ p.author a {
 	padding: 2%;
 	padding-bottom: .5%;
 	margin-bottom: 20px;
-	font-family: Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 700 "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #666;
 	background: url(../images-foundation/gauze.png) #f0f0f0;
 	text-shadow: 0 1px 0 #ffffff;
@@ -1799,8 +1793,7 @@ p.author a {
 }
 
 #banner-large-image h1, #banner-large-image h2 {
-	font: bold 60px/60px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px;
+	font: bold 60px/60px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	margin-bottom: 0;
 	color: #fff;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.85);
@@ -1808,12 +1801,7 @@ p.author a {
 
 #banner-large-image p {
 	color: #CCCCCC;
-	font: 24px/36px Proxima-Nova;
-	letter-spacing: -1px;
-}
-
-#banner h3 {
-	font-family: "JournalRegular", Georgia, "Times New Roman", Times, serif;
+	font: 700 normal 24px/36px "klavika-web", "Helvetica Neue", sans-serif
 }
 
 #banner-secondary {
@@ -1827,8 +1815,7 @@ p.author a {
 
 #banner-secondary h2,
 #banner-secondary h1 {
-	font: bold 45px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px;
+	font: 45px/50px;
 	margin-bottom: 0;
 	color: #fff;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.85);
@@ -1836,8 +1823,7 @@ p.author a {
 
 #banner-secondary p {
 	color: #ccc;
-	font: 26px/26px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	letter-spacing: -1px;
+	font: 22px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	padding-left: 15%;
 	padding-right: 15%;
 }
@@ -1889,7 +1875,7 @@ input[type="submit"] {
 	color: #fff !important;
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
 	padding: 8px 15px;
-	font: bold 16px/16px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 16px/16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 	background-color: #d18f4f;
@@ -1929,7 +1915,7 @@ input[type="submit"].dark:hover {
    ========================================================================== */
 
 #sidebar h3 {
-	font: normal normal 20px/18px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 20px/18px;
 	background-image: -webkit-gradient(linear, left bottom, right bottom, from(#efefef), to(#f3f3f3));
 	background-image: -moz-linear-gradient(360deg, #efefef 0%, #f3f3f3 100%);
 	margin-left: -35px;
@@ -2024,7 +2010,7 @@ footer .cdn strong {
 	background-image: -webkit-linear-gradient(#7a7a7a, #5e5e5e); /* Chrome 10+, Saf6 */
 	background-image: linear-gradient(top, #7a7a7a, #5e5e5e);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#7a7a7a', EndColorStr='#5e5e5e'); /* IE6–IE9 */
-	font-family: Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 }
 
 footer .cdn strong:after {
@@ -2155,7 +2141,7 @@ footer h3 {
 	text-align: center;
 	height: 10px;
 	margin-top: 20px;
-	font: normal 14px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 16px;
 }
 
 footer h3 span {

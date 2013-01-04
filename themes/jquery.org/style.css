@@ -62,8 +62,7 @@ a,
     margin-top: -30px;
     height: auto;
     color: #007d88;
-    font: 20px/40px Proxima-Nova;
-    letter-spacing: -1px;
+    font: bold 20px/40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 #content > div.row {
@@ -128,22 +127,19 @@ ul.flex-direction-nav {
 }
 
 .big-message {
-    font: bold 50px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    letter-spacing: -1px;
+    font: bold 50px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     color: #ffffff !important;
     margin-top: 20px;
 }
 
 #content .dark-callout-box h3 {
-    font: bold 30px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    letter-spacing: -1px;
+    font: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     color: #fff;
 }
 
 
 #content .dark-callout-box p {
-    ont: bold 30px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    letter-spacing: 0px;
+    ont: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     color: #dddcdc;
 }
 
@@ -154,8 +150,7 @@ ul.flex-direction-nav {
 }
 
 #content .project h4 {
-    font: bold 24px/50px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    letter-spacing: -1px;
+    font: bold 24px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     margin-bottom: 0;
     color: #464646;
 
@@ -268,12 +263,12 @@ a.icon-search::before {
     padding-right: 15px;
     background: none;
     color: #f3f3f3;
-    font-family: proxima-nova;
+    font: bold "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;;
 }
 
 .member-level p {
     color: #f3f3f3;
-    font-family: proxima-nova;
+    font: bold "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     float: left;
     display: inline;
     padding-left: 15px;
@@ -305,8 +300,7 @@ a.icon-search::before {
 }
 
 .choose-gifts h4 {
-    font: bold 18px/20px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    letter-spacing: -1px;
+    font: bold 18px/20px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     margin-bottom: 10px;
     color: #ffffff;
 }
@@ -531,8 +525,7 @@ nav#main ul {
             text-align: center;
             height: auto;
             color: #007d88;
-            font: 20px/26px Proxima-Nova;
-            letter-spacing: -1px;
+            font: 20px/26px "klavika-web";
             margin: -30px -40px 0;
             padding: 2% 10% 0.5%;
         }
@@ -614,23 +607,20 @@ nav#main ul {
     }
     
     #content .dark-callout-box h3 {
-        font: bold 28px/32px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-        letter-spacing: -1px;
+        font: bold 28px/32px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
         color: #fff;
     }
     
     
     #content .dark-callout-box p {
         
-        letter-spacing: 0px;
         color: #dddcdc;
         font-size: 14px;
         line-height: 18px;
     }
     
     .big-message {
-        font: bold 30px/30px Proxima-Nova, "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
-        letter-spacing: -1px;
+        font: bold 30px/30px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
         color: #ffffff !important;
         margin-top: 20px;
     }
