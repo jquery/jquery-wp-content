@@ -12,12 +12,12 @@
       <h3><span>Quick Access</span></h3>
       <div class="cdn">
         <strong>CDN</strong>
-        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+        <input value="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
       </div>
       <div class="download">
-        <strong>Download jQuery 1.7.2:</strong>
-        <span><a href="http://code.jquery.com/jquery-1.7.2.min.js">Minified <em>(32KB)</em></a>
-        <a href="http://code.jquery.com/jquery-1.7.2.js">Unminified <em>(247KB)</em></a></span>
+        <strong>Download jQuery 1.8.3:</strong>
+        <span><a href="http://code.jquery.com/jquery-1.8.3.min.js">Minified <em>(33KB)</em></a>
+        <a href="http://code.jquery.com/jquery-1.8.3.js">Unminified <em>(268KB)</em></a></span>
       </div>
       <ul class="footer-icon-links">
         <li class="footer-icon icon-github"><a href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
