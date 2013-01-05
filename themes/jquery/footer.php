@@ -8,13 +8,13 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN</strong>
-					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
 				</div>
 				<div class="download">
-					<strong>Download jQuery 1.7.2:</strong>
+					<strong>Download jQuery 1.8.3:</strong>
 					<span>
-						<a href="http://code.jquery.com/jquery-1.7.2.min.js">Minified <em>(32KB)</em></a>
-						<a href="http://code.jquery.com/jquery-1.7.2.js">Unminified <em>(247KB)</em></a>
+						<a href="http://code.jquery.com/jquery-1.8.3.min.js">Minified <em>(33KB)</em></a>
+						<a href="http://code.jquery.com/jquery-1.8.3.js">Unminified <em>(267KB)</em></a>
 					</span>
 				</div>
 				<ul class="footer-icon-links">
@@ -29,16 +29,16 @@
 				<ul class="presentations">
 					<li>
 						<a href="#">
-							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/building-spas-jquerys-best-friends.jpg" alt="Building Single Page Applications With jQuery's Best Friends by Addy Osmoni" width="142" height="92" /></span>
+							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/building-spas-jquerys-best-friends.jpg" alt="Building Single Page Applications With jQuery's Best Friends by Addy Osmani" width="142" height="92" /></span>
 							<strong>Building Single Page Applications With jQuery's Best Friends</strong><br />
-							<cite>Addy Osmoni</cite>
+							<cite>Addy Osmani</cite>
 						</a>
 					</li>
 					<li>
 						<a href="#">
-							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/addyosmani-2.jpg" alt="jQuery Performance Tips &amp; Tricks by Addy Osmoni" width="142" height="92" /></span>
+							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/addyosmani-2.jpg" alt="jQuery Performance Tips &amp; Tricks by Addy Osmani" width="142" height="92" /></span>
 							<strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
-							<cite>Addy Osmoni</cite>
+							<cite>Addy Osmani</cite>
 						</a>
 					</li>
 				</ul>
