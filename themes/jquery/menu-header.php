@@ -36,7 +36,7 @@ function menu_header_qunitjs_com() {
 		'http://qunitjs.com/intro/' => 'Intro to Unit Testing',
 		'http://api.qunitjs.com/' => 'API Documentation',
 		'http://qunitjs.com/cookbook/' => 'Cookbook',
-		'http://qunitjs.com/extensions/' => 'Extensions',
+		'http://qunitjs.com/addons/' => 'Add-ons',
 	);
 }
 
