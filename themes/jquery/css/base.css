@@ -145,32 +145,32 @@ a:hover {
 
 h1 {
 	font-size: 2em;
-	margin: 0 0 0.67em;
+	margin: 0 0 0.33em;
 }
 
 h2 {
 	font-size: 1.5em;
-	margin: 0 0 0.83em;
+	margin: 0 0 0.5em;
 }
 
 h3 {
 	font-size: 1.17em;
-	margin: 0 0 1em;
+	margin: 0 0 0.67em;
 }
 
 h4 {
 	font-size: 1em;
-	margin: 0 0 1.33em;
+	margin: 0 0 1em;
 }
 
 h5 {
 	font-size: 0.83em;
-	margin: 0 0 1.67em;
+	margin: 0 0 1.33em;
 }
 
 h6 {
 	font-size: 0.75em;
-	margin: 0 0 2.33em;
+	margin: 0 0 2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -909,7 +909,7 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 body {
 	-webkit-font-smoothing: antialiased;
 	color: #333;
-	font: 15px/20px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+	font: 15px/22.5px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 
 iframe {
@@ -1472,7 +1472,7 @@ nav#main .searchform label span{
 }
 
 p {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 	margin-top: 0;
 }
 
@@ -1488,10 +1488,9 @@ em, i {
 
 hr {
 	background-image: url(../images/gauze.png);
-	height: 1em;
+	height: .75em;
 	border: none;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin: .75em 0;
 }
 
 pre, code {
@@ -1716,7 +1715,7 @@ pre b {
 }
 
 #content h1 {
-	font: 700 normal 36px/36px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-size: 700 normal 36px/36px;
 }
 
 .content-full #content h1 {
@@ -1724,16 +1723,14 @@ pre b {
 }
 
 #content h2 {
-	font: 700 24px/24px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-size: 24px/24px;
 	color: #333;
 	margin-bottom: 10px;
 }
 
 #content h3 {
-	font: 700 normal 20px/20px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-size: 20px/20px;
 	color: #666;
-	margin-bottom: 10px;
-	margin-top: 12px;
 }
 
 #content h1.block,
@@ -1911,7 +1908,7 @@ input[type="submit"].dark:hover {
 
 #sidebar li {
 	padding-left: 20px;
-	line-height: 20px;
+	line-height: 15px;
 	list-style-type: none;
 	background: url(../images/bullet.png) no-repeat 0 14px;
 	text-shadow: 0 1px 0 #ffffff;
@@ -2383,7 +2380,7 @@ footer li img {
 
 .listing .hentry {
 	padding: 10px 20px;
-	margin: 20px 0;
+	margin: 15px 0;
 	border: 1px solid rgba( 0, 0, 0, 0.2 );
 	border-radius: 5px;
 	background-color: #eee;
@@ -2391,8 +2388,8 @@ footer li img {
 }
 
 .listing #content .entry-title {
-	font-size: 1.4em;
-	margin-bottom: .2em;
+	font-size: 1.3em;
+	margin-bottom: 0;
 	text-shadow: 0 1px 1px #fff;
 }
 
@@ -2416,7 +2413,7 @@ footer li img {
 ========================================================================== */
 
 .entry {
-	margin: 30px 0;
+	margin: 15px 0;
 }
 
 .entry-wrapper {
@@ -2429,7 +2426,7 @@ footer li img {
 #content .section-title {
 	background: #333;
 	border: 1px solid #111;
-	padding: 10px 15px;
+	padding: 8px 15px;
 	font-size: 16px;
 	color: white;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
@@ -2454,7 +2451,7 @@ footer li img {
 #content .signatures {
 	background: #eee;
 	border: 1px solid #ccc;
-	margin: 0 auto 30px;
+	margin: 0 auto 15px;
 	max-width: 750px;
 	border-radius: 3px;
 	color: #333;
@@ -2479,7 +2476,7 @@ footer li img {
 .signatures h4 {
 	font-size: 16px;
 	letter-spacing: 0;
-	padding: 10px;
+	padding: 8px 10px;
 	margin: -10px -10px 0;
 	color: #fff;
 	text-shadow: 0 1px 0 #444;
@@ -2495,7 +2492,7 @@ footer li img {
 
 #options, #methods, #events, #quick-nav {
 	border: 1px solid #CCC;
-	margin: 0 15px 30px 15px;
+	margin: 0 15px 15px;
 	padding: 10px;
 	overflow: auto;
 }
@@ -2541,7 +2538,7 @@ footer li img {
 .name .version-details {
 	float: right;
 	clear: right;
-	font-size: 12px;
+	font-size: 14px;
 	color: #fff;
 }
 
@@ -2574,8 +2571,8 @@ footer li img {
 
 .desc {
 	font-size: 16px;
-	padding: 10px 15px;
-	color: #999;
+	padding: 5px 15px 0;
+	color: #666;
 	font-style: italic;
 }
 
