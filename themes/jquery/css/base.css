@@ -1355,10 +1355,9 @@ nav#main ul {
 
 nav#main li {
 	display: inline;
-	text-transform: uppercase;
 	float: left;
-	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	font-weight: 700;
+	font: 700 normal 18px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	margin-right: 2px;
 }
 
 nav#main li a {
