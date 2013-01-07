@@ -3,7 +3,8 @@ Theme Name: jqueryui-com
 Template: jquery
 */
 
-a, .title {
+a,
+.title {
 	color: #B24926;
 }
 
@@ -12,15 +13,10 @@ a, .title {
 }
 
 #banner-secondary p.intro {
-	font-size: 24px;
-	line-height: 32px;
 	padding: 0;
-	padding-right: 0.5em;
 	float: left;
 	width: 50%;
-	text-shadow: #000 1px 1px;
 }
-
 
 #banner-secondary .download-box {
 	border: 1px solid #aaa;
@@ -38,26 +34,14 @@ a, .title {
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 }
 
-
 #banner-secondary .download-box h2 {
-	font: bold 23px/23px "proxima-nova", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #71D1FF;
 }
 
-#banner-secondary .download-box .btn {
+#banner-secondary .download-box .button {
 	float: none;
-	font-weight: bold;
-	padding: 5px 10px;
 	display: block;
 	margin-top: 15px;
-	border: 1px solid #bfbfbf;
-	text-decoration: none;
-	text-shadow: 0 1px 1px #fff;
-	border-radius: 3px;
-	background: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#d5d5d5));
-	background: -moz-linear-gradient(top,  #e5e5e5,  #d5d5d5);
-	background: -o-linear-gradient(top,  #e5e5e5,  #d5d5d5);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#d5d5d5');
 }
 
 #banner-secondary .download-box p {
@@ -92,7 +76,6 @@ a, .title {
 }
 
 #content .dev-links ul {
-	list-style: none;
 	margin: 0;
 }
 
@@ -114,7 +97,6 @@ a, .title {
 
 #content .demo-list ul {
 	width: 100%;
-	list-style: none;
 	border-top: 1px solid #ccc;
 	margin: 0;
 }
@@ -155,13 +137,10 @@ a, .title {
 }
 
 @media all and (max-width: 600px) {
-	#banner-secondary p.intro, #banner-secondary .download-box {
+	#banner-secondary p.intro,
+	#banner-secondary .download-box {
 		float: none;
 		width: auto;
-	}
-
-	#banner-secondary p.intro {
-		font-size: 18px;
 	}
 
 	#banner-secondary .download-box {
