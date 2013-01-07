@@ -28,14 +28,14 @@
 				<h3><span>Presentations</span></h3>
 				<ul class="presentations">
 					<li>
-						<a href="#">
+						<a href="http://addyosmani.com/blog/building-spas-jquerys-best-friends/">
 							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/building-spas-jquerys-best-friends.jpg" alt="Building Single Page Applications With jQuery's Best Friends by Addy Osmani" width="142" height="92" /></span>
 							<strong>Building Single Page Applications With jQuery's Best Friends</strong><br />
 							<cite>Addy Osmani</cite>
 						</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="http://addyosmani.com/jqprovenperformance/">
 							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/addyosmani-2.jpg" alt="jQuery Performance Tips &amp; Tricks by Addy Osmani" width="142" height="92" /></span>
 							<strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
 							<cite>Addy Osmani</cite>
