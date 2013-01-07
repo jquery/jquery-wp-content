@@ -3,4 +3,133 @@ Theme Name: brand-jquery-org
 Template: jquery
 */
 
-h1 { color: purple; }
+/* Structure */
+
+#content {
+	padding-bottom: 40px;
+}
+#banner-secondary.large-banner {
+	text-align: left;
+}
+
+/* Headlines */
+
+#content h2 {
+	font-size: 30px;
+	line-height: 1.8;
+	color: #333;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+#content h3 {
+	font-size: 22px;
+	line-height: 1.5;
+	color: #444;
+}
+#banner-secondary.large-banner h1, 
+#banner-secondary.large-banner h2 {
+	font-size: 42px;
+	text-transform: uppercase;
+}
+
+h6.h-klavika {
+	font-size: 46px;
+	line-height: 1.2;
+	margin-bottom: 30px;
+}
+h6.h-klavika em {
+	color: #333;
+}
+
+h6.h-helvetica {
+	font: 400 46px/1.2 Helvetica, "Helvetica Neue", Arial, sans-serif !important;
+	margin-bottom: 30px;
+}
+
+/* Custom Structure */
+.color {
+	display: block;
+	margin: 30px 0;
+	color: #fff;
+	padding: 20px;
+}
+.color * {
+	opacity: 0.9;	
+}
+#content .color h6 {
+	font: 800 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	margin-bottom: 4px;
+}
+#content .color ul {
+	margin: 0;
+	padding: 0;
+}
+#content .color li {
+	list-style-type: none;
+	background: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.color.black { background-color: #333; }
+.color.primary-blue { background-color: #0769AD; }
+.color.secondary-blue { background-color: #7ACEF4; }
+.color.primary-orange { background-color: #FAA523; }
+.color.secondary-orange { background-color: #B24926; }
+.color.primary-green { background-color: #3EB249; }
+.color.secondary-green { background-color: #108040; }
+.color.sizzle-orange { background-color: #FAA523; }
+.color.sizzle-red { background-color: #9A1B1E; }
+.color.qunit-primary-purple { background-color: #9C3493; }
+.color.qunit-secondary-purple { background-color: #390F39; }
+
+
+/* Misc Content */
+p {
+	font: 16px/1.5 Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+.figcaption {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#banner-secondary p {
+	padding-left: 0;
+	color: #fff;
+} 
+hr {
+	display: block;
+	clear: both;
+	margin: 50px 0;
+}
+
+/* Links */
+a {
+	color: #032A42;
+}
+
+/* Lists */
+#content dt {
+	font-weight: bold;
+}
+#content dd {
+	margin: 10px 0 20px;
+}
+
+/* Buttons */
+a.button, #content a.button, .button, input[type="submit"] {
+	float: none;
+	display: inline-block;
+}
+
+/* Helpers */
+.db {
+	display: inline-block;
+	float: none !important;
+	clear: both;
+}
+.p-small {
+	padding-bottom: 20px;
+}

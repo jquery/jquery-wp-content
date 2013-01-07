@@ -80,8 +80,12 @@ function menu_header_jquery_org() {
 
 function menu_header_brand_jquery_org() {
 	return array(
-		'http://brand.jquery.org/' => 'Home',
-		'http://brand.jquery.org/trademark/' => 'Trademark'
+		'http://brand.jquery.org/logos' => 'Logos',
+		'http://brand.jquery.org/colors/' => 'Colors',
+		'http://brand.jquery.org/typography/' => 'Typography',
+		'http://brand.jquery.org/naming-conventions/' => 'Naming Conventions',
+		'http://brand.jquery.org/events-conferences/' => 'Events &amp; Conferences',
+		'http://brand.jquery.org/press-contact/' => 'Press &amp; Contact'
 	);
 }
 

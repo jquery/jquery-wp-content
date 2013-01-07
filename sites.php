@@ -200,7 +200,7 @@ function jquery_sites() {
 		'brand.jquery.org' => array(
 			'blog_id' => 18,
 			'cookie_domain' => '.jquery.org',
-			'body_class' => 'jquery-project',
+			'body_class' => 'jquery-foundation',
 			'options' => array(
 				'blogname' => 'jQuery Branding Guidelines',
 				'stylesheet' => 'brand.jquery.org',
