@@ -3,9 +3,9 @@
 require dirname( __FILE__ ) . '/sites.php';
 
 if ( ! defined( 'WP_CONTENT_DIR' ) )
-	define( 'WP_CONTENT_DIR', ABSPATH . 'web-base-template' );
+	define( 'WP_CONTENT_DIR', ABSPATH . 'jquery-wp-content' );
 if ( ! defined( 'WP_CONTENT_URL' ) )
-	define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/web-base-template' );
+	define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/jquery-wp-content' );
 
 // jQuery.com staging
 if ( ! defined( 'JQUERY_STAGING' ) )
@@ -33,7 +33,7 @@ if ( JQUERY_STAGING )
 	$live_site = str_replace( JQUERY_STAGING_PREFIX, '', $live_site );
 
 if ( ! isset( $sites[ $live_site ] ) )
-	die( 'Domain mapping issue. You have web-base-template configured for ' . JQUERY_STAGING_PREFIX . 'jquery.com.' );
+	die( 'Domain mapping issue. You have jquery-wp-content configured for ' . JQUERY_STAGING_PREFIX . 'jquery.com.' );
 
 if ( ! empty( $sites[ $live_site ]['subsites'] ) ) {
 	list( $first_path_segment ) = explode( '/', trim( $_SERVER['REQUEST_URI'], '/' ), 2 );
@@ -48,7 +48,7 @@ define( 'COOKIE_DOMAIN', $sites[ $live_site ]['cookie_domain'] );
 unset( $sites, $live_site, $first_path_segment ); // Leave $blog_id.
 
 if ( defined( 'MULTISITE' ) && ! MULTISITE )
-	die( "Remove define( 'MULTISITE', false ); from wp-config.php. Maybe check out web-base-template/wp-config-sample.php for the current sample." );
+	die( "Remove define( 'MULTISITE', false ); from wp-config.php. Maybe check out jquery-wp-content/wp-config-sample.php for the current sample." );
 
 define( 'MULTISITE', true );
 define( 'SUNRISE', true );

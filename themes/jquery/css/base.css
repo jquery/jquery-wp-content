@@ -2368,7 +2368,7 @@ footer li img {
 	text-decoration: none;
 	opacity: 0;
 }
-/* TODO: Remove (https://github.com/jquery/web-base-template/issues/143) */
+/* TODO: Remove (https://github.com/jquery/jquery-wp-content/issues/143) */
 #content .toc-linked a {
 	text-decoration: none;
 }

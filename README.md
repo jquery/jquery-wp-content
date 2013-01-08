@@ -1,6 +1,6 @@
-# jQuery.com web-base-template
+# jQuery.com jquery-wp-content
 
-This is a set of plugins, themes, and configuration files for jQuery's website infrastructure, which is powered by WordPress. It is designed as a custom content directory. So think of `web-base-template` as your `wp-content` directory.
+This is a set of plugins, themes, and configuration files for jQuery's website infrastructure, which is powered by WordPress. It is designed as a custom content directory. So think of `jquery-wp-content` as your `wp-content` directory.
 
 ## Prerequisites 
 
@@ -38,18 +38,18 @@ This install guide assumes you already have certain prerequisites already config
       <li>Clone the official WordPress Github mirror at http://github.com/wordpress/wordpress/</li>
     </ul>
 
-1. Clone `web-base-template` into place, so you have a file tree that looks like this:
+1. Clone `jquery-wp-content` into place, so you have a file tree that looks like this:
 
     ```
-    web-base-template/
-    wp-admin/
-    wp-content/
-    wp-includes/
     index.php
+    jquery-wp-content/
+    license.txt
+    readme.html
+    wp-activate.php
     ...
     ```
 
-1. Copy `web-base-template/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
+1. Copy `jquery-wp-content/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
 
 1. Create an .htaccess file with the following content into that same document root:
 
@@ -81,7 +81,7 @@ For example, if your WordPress files are in the directory ```wordpress```, and y
     sudo chmod -R g+w wordpress
     ```
 
-1. Go to `http://local.jquery.com` and walk through the standard WordPress installation. `web-base-template` includes a special install script that will initialize the entire network.
+1. Go to `http://local.jquery.com` and walk through the standard WordPress installation. `jquery-wp-content` includes a special install script that will initialize the entire network.
 
 1. Be sure to have node >= 0.8 installed on your system.  Some sites, such as download.jqueryui.com, require that version or greater.
 
@@ -92,7 +92,7 @@ Changes pushed to master will be pulled onto the stage domain.
 
 Copyright 2012 jQuery Foundation and other contributors. All rights reserved.
 
-The web-base-template repository contains themes for rendering all jQuery Foundation web sites.
+The jquery-wp-content repository contains themes for rendering all jQuery Foundation web sites.
 
 ### What is licensed
 
@@ -102,12 +102,12 @@ Special exception: Code samples are given away for you to freely use, for any pu
 and Learn articles (unlike the source code of jQuery projects) you don't even have to say where you got the code from.
 Just use it.
 
-The PHP files in the web-base-template repository are a derivative work of WordPress, and available under the
+The PHP files in the jquery-wp-content repository are a derivative work of WordPress, and available under the
 terms of the GPL license ( http://codex.wordpress.org/License )
 
 ### What is not licensed
 
-The theme, design, layout, look-and-feel of the web-base-template repository, including all html, css, images, and
+The theme, design, layout, look-and-feel of the jquery-wp-content repository, including all html, css, images, and
 icons, is not licensed for use. Not by the MIT license or any other license. It is copyrighted. You don't have
 permission to use it in any way for any purpose, commercial or otherwise. If you have questions about this, please
 ask a member of the jQuery Content Team.

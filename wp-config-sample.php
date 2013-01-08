@@ -64,7 +64,7 @@ if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /** jQuery.com configuration file */
-require( dirname( __FILE__ ) . '/web-base-template/config.php' );
+require( dirname( __FILE__ ) . '/jquery-wp-content/config.php' );
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
