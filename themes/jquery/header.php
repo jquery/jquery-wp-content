@@ -78,24 +78,24 @@ $sidebar = "sidebar-left";
 					</li>
 					<li class="dropdown"><a href="#" title="Community">Community</a>
 						<ul>
-							<li><a href="http://dev.blog.jquery.com/">Blog</a></li>
+							<li><a href="http://blog.jquery.com/">Blog</a></li>
 							<li><a href="http://forum.jquery.com/">Forums</a></li>
 							<li><a href="http://meetups.jquery.com/">Meetups</a></li>
-							<li><a href="http://dev.events.jquery.org/">Events</a></li>
+							<li><a href="http://events.jquery.org/">Events</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="#" >Contribute</a>
 						<ul>
-							<li><a href="http://dev.jquery.org/donate/" >Donate</a></li>
-							<li><a href="http://dev.jquery.org/sponsor/">Sponsor</a></li>
+							<li><a href="http://jquery.org/donate/" >Donate</a></li>
+							<li><a href="http://jquery.org/sponsor/">Sponsor</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"><a href="http://dev.jquery.org/about/">About</a>
+					<li class="dropdown"><a href="http://jquery.org/about/">About</a>
 						<ul class="last">
-							<li><a href="http://dev.jquery.org/projects/">Projects</a></li>
-							<li><a href="http://dev.jquery.org/team/">Team</a></li>
-							<li><a href="http://dev.jquery.org/history/">History</a></li>
-							<li><a href="http://dev.jquery.org/sponsors/">Sponsors</a></li>
+							<li><a href="http://jquery.org/projects/">Projects</a></li>
+							<li><a href="http://jquery.org/team/">Team</a></li>
+							<li><a href="http://jquery.org/history/">History</a></li>
+							<li><a href="http://jquery.org/sponsors/">Sponsors</a></li>
 						</ul>
 					</li>
 				</ul>
