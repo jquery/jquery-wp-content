@@ -1715,7 +1715,8 @@ pre b {
 }
 
 #content h1 {
-	font-size: 700 normal 36px/36px;
+	font-size: 36px;
+	line-height: 36px;
 }
 
 .content-full #content h1 {
@@ -1723,13 +1724,15 @@ pre b {
 }
 
 #content h2 {
-	font-size: 24px/24px;
+	font-size: 24px;
+	line-height: 24px;
 	color: #333;
 	margin-bottom: 10px;
 }
 
 #content h3 {
-	font-size: 20px/20px;
+	font-size: 20px;
+	line-height: 20px;
 	color: #666;
 }
 
