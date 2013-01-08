@@ -143,12 +143,6 @@ ul.flex-direction-nav {
     color: #dddcdc;
 }
 
-.project {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #dddddd;
-}
-
 #content .project h4 {
     font: bold 24px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
     margin-bottom: 0;
