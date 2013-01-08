@@ -37,9 +37,9 @@ add_filter( 'the_content', function( $content ) {
 	$demoContent .=
 		'<div class="view-source">' .
 			'<a tabindex="0"><i class="icon-eye-open"></i> view source</a>' .
-			'<pre>' .
+			'<div>' .
 				file_get_contents( GW_RESOURCE_DIR . '/demos-highlight/' . $plugin . '/default.html' ) .
-			'</pre>' .
+			'</div>' .
 		'</div>';
 
 	return str_replace( '<!--demos-->', $demoContent, $content );

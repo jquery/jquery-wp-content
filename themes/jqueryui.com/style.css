@@ -131,7 +131,7 @@ a,
 	cursor: pointer;
 }
 
-.view-source pre {
+.view-source > div {
 	overflow: hidden;
 	display: none;
 }

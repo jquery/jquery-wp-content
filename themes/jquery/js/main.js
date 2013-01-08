@@ -102,7 +102,7 @@ $(function() {
 $(function() {
 	var demoFrame = $( ".demo-frame" ),
 		demoDescription = $( ".demo-description" ),
-		sourceView = $( ".view-source pre" ),
+		sourceView = $( ".view-source > div" ),
 		demoList = $( ".demo-list" ),
 		currentDemo = location.hash.substring( 1 );
 
