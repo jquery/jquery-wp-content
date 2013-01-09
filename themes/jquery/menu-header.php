@@ -89,11 +89,11 @@ function menu_header_brand_jquery_org() {
 	);
 }
 
-function menu_header_contribute_jquery_com() {
+function menu_header_contribute_jquery_org() {
 	return array(
-		'http://contribute.jquery.com/CLA/' => 'Contributor License Agreement',
-		'http://contribute.jquery.com/style-guide/js' => 'JS Style Guide',
-		'http://contribute.jquery.com/style-guide/html' => 'HTML Style Guide'
+		'http://contribute.jquery.org/CLA/' => 'Contributor License Agreement',
+		'http://contribute.jquery.org/style-guide/js' => 'JS Style Guide',
+		'http://contribute.jquery.org/style-guide/html' => 'HTML Style Guide'
 	);
 }
 

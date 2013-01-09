@@ -209,13 +209,13 @@ function jquery_sites() {
 				),
 			),
 		),
-		'contribute.jquery.com' => array(
+		'contribute.jquery.org' => array(
 			'blog_id' => 19,
 			'cookie_domain' => '.jquery.com',
-			'body_class' => 'jquery',
+			'body_class' => 'jquery-foundation',
 			'options' => array(
 				'blogname' => 'Contribute to jQuery',
-				'stylesheet' => 'contribute.jquery.com',
+				'stylesheet' => 'contribute.jquery.org',
 				'active_plugins' => array(
 					'jquery-static-index.php',
 				),
