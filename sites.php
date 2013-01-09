@@ -211,7 +211,7 @@ function jquery_sites() {
 		),
 		'contribute.jquery.org' => array(
 			'blog_id' => 19,
-			'cookie_domain' => '.jquery.com',
+			'cookie_domain' => '.jquery.org',
 			'body_class' => 'jquery-foundation',
 			'options' => array(
 				'blogname' => 'Contribute to jQuery',
