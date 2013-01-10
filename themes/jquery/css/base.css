@@ -1349,6 +1349,12 @@ nav#main {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
+.lte8 nav#main {
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+}
+
 nav#main ul {
 	margin: 0;
 	float: left;
