@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-		<div id="content" class="clearfix sidebar-left">
+		<div id="content" class="clearfix content-right">
 
 			<?php if ( have_posts() ) : ?>
 

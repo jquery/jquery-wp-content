@@ -10,7 +10,7 @@
 
 get_header(); ?>
 
-		<section id="body" class="clearfix sidebar-left">
+		<section id="body" class="clearfix content-right">
 			<div class="inner" role="main">
 
 			<?php if ( have_posts() ) : ?>
