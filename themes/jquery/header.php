@@ -32,7 +32,7 @@ $sidebar = "sidebar-left";
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<!--[if lt IE 7]><link rel="stylesheet" href="css/font-awesome-ie7.css"><![endif]-->
 
-	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.0.6.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.6.2.min.js"></script>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.8.3.min.js"%3E%3C/script%3E'))</script>
