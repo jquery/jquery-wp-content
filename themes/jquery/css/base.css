@@ -979,6 +979,10 @@ iframe {
 	border: 1px solid #333;
 }
 
+.lte8 #content-wrapper {
+	max-width: 1200px;
+}
+
 .constrain {
 	max-width: 1240px;
 	margin: 0 auto;
