@@ -8,6 +8,12 @@
    HTML5 display definitions
    ========================================================================== */
 
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 /*
  * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
@@ -3022,15 +3028,9 @@ footer li img {
 	}
 }
 
-/* @override
-	http://jon-mbp.local/~jon/jquery/css/grid.css */
-
 /* The Grid ----------------------
 Based on Zurb Foundation's Grid
 */
-* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-/* The Grid ---------------------- */
 .row { width: 1240px; max-width: 100%; min-width: 768px; margin: 0 auto; }
 .row .row { width: auto; max-width: none; min-width: 0; margin: 0 -25px; }
 .row.collapse .column, .row.collapse .columns { padding: 0; }
