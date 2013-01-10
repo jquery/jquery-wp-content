@@ -8,23 +8,6 @@
 		<?php get_search_form(); ?>
 	</div>
 
-	<?php
-
-		// TODO
-		//
-		// Make a much more interesting index page
-		//
-		// TODO
-
-		$toplvlpages = get_pages( array( 'parent' => 0 ) );
-		foreach( $toplvlpages as $post ) {
-			setup_postdata($post);
-			if ( $post->post_name !== 'update' ) {
-				 get_template_part('excerpt', 'index');
-			}
-		}
-	?>
-
 	<div class="info-bar">
 		<h3><i class="icon-tags"></i>Popular Tags</h3>
 		<ul><?php
