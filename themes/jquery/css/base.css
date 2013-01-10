@@ -1355,6 +1355,10 @@ nav#main {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
+.jquery-foundation nav#main {
+	background-color: rgba(7, 105, 173, 0.10);
+}
+
 .lte8 nav#main {
 	border-top: 1px solid #333;
 	border-left: 1px solid #333;
