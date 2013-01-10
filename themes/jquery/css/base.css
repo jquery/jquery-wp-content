@@ -1833,6 +1833,15 @@ p.author a {
 	padding-right: 15%;
 }
 
+#banner-secondary a {
+	color: #7ACEF4;
+}
+
+#banner-secondary em,
+#banner-secondary i {
+	color: #fff;
+}
+
 #banner-secondary.large-banner {
 	text-align: center;
 	padding-top: 30px;
