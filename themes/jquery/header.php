@@ -1,7 +1,3 @@
-<?php
-global $sidebar;
-$sidebar = "sidebar-left";
-?>
 <!doctype html>
 <!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9" <?php language_attributes(); ?>> <![endif]-->

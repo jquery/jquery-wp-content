@@ -14,9 +14,7 @@
 
 get_header(); ?>
 
-	      <!-- body -->
-	      <?php global $sidebar; ?>
-		<div id="body" class="clearfix <?php echo $sidebar; ?>">
+		<div id="body" class="clearfix sidebar-left">
 			<div class="inner" role="main">
 
 			<?php $my_query = new WP_Query("post_type=post"); ?>
@@ -50,9 +48,7 @@ get_header(); ?>
 
 			</div><!-- .inner -->
 
-			<?php if($sidebar): ?>
-			      <?php get_sidebar(); ?>
-			<?php endif; ?>
+			<?php get_sidebar(); ?>
 
 		</div><!-- #body -->
 

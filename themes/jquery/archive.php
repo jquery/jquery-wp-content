@@ -10,9 +10,7 @@
 
 get_header(); ?>
 
-	      <!-- body -->
-	      <?php global $sidebar; ?>
-		<section id="body" class="clearfix <?php echo $sidebar; ?>">
+		<section id="body" class="clearfix sidebar-left">
 			<div class="inner" role="main">
 
 			<?php if ( have_posts() ) : ?>
@@ -60,9 +58,7 @@ get_header(); ?>
 
 			</div><!-- .inner -->
 
-			<?php if($sidebar): ?>
-			      <?php get_sidebar(); ?>
-			<?php endif; ?>
+			<?php get_sidebar(); ?>
 
 		</section><!-- #body -->
 

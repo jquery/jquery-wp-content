@@ -5,9 +5,7 @@
 
 get_header(); ?>
 
-	      <!-- body -->
-	      <?php global $sidebar; ?>
-		<div id="content" class="clearfix <?php echo $sidebar; ?>">
+		<div id="content" class="clearfix sidebar-left">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -32,10 +30,8 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			<?php if($sidebar): ?>
-			      <?php get_sidebar(); ?>
-			<?php endif; ?>
+			<?php get_sidebar(); ?>
 
-		</div><!-- #body -->
+		</div>
 
 <?php get_footer(); ?>

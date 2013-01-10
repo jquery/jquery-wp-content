@@ -4,7 +4,6 @@
  */
 ?>
 <?php
-	global $sidebar;
 	$searchquery = get_search_query();
 	$searchquery = preg_replace('/\$/', 'jQuery', $searchquery);
 	$featuredlist = array();
@@ -45,5 +44,5 @@
 	<?php endif; ?>
 	</div>
 
-	<?php if ( $sidebar ) : get_sidebar( 'api' ); endif; ?>
+	<?php get_sidebar( 'api' ); ?>
 </div>

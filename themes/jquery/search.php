@@ -3,10 +3,7 @@
  * The template for displaying Search Results pages.
  */
 ?>
-<?php
-	global $sidebar;
-	get_header();
-?>
+<?php get_header(); ?>
 
 <div class="content-right">
 	<div id="content">
@@ -42,7 +39,7 @@
 	<?php endif; ?>
 	</div>
 
-	<?php if ( $sidebar ) : get_sidebar(); endif; ?>
+	<?php get_sidebar(); ?>
 </div>
 
 <?php get_footer(); ?>

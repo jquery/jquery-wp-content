@@ -3,7 +3,6 @@
  * The Template for displaying single posts in API sites.
  */
  ?>
-<?php global $sidebar; ?>
 
 <div class="content-right">
     <div id="content">
@@ -19,7 +18,5 @@
         <?php endwhile; // end of the loop. ?>
     </div><!-- #content -->
 
-		<?php if($sidebar): ?>
-			<?php get_sidebar( 'api' ); ?>
-		<?php endif; ?>
+		<?php get_sidebar( 'api' ); ?>
 </div>

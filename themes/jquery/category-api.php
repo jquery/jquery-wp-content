@@ -3,8 +3,6 @@
  * Partial Category Archive Template Called by API Sites
  */
 ?>
-<?php global $sidebar; ?>
-
 <div class="content-right">
 	<div id="content">
 	<?php if ( have_posts() ) : ?>
@@ -46,5 +44,5 @@
 	<?php endif; ?>
 	</div>
 
-	<?php if ( $sidebar ) : get_sidebar( 'api' ); endif; ?>
+	<?php get_sidebar( 'api' ); ?>
 </div>
