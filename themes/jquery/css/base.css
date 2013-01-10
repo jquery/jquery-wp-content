@@ -971,9 +971,12 @@ iframe {
 	max-width: 1240px;
 	padding: 20px 40px;
 	margin: 0 auto;
-	border: 1px solid #333;
+	border-top: 1px solid #333;
 	border-radius: 0 0 10px 10px;
 	position: relative;
+}
+.no-boxshadow #content-wrapper {
+	border: 1px solid #333;
 }
 
 .constrain {
@@ -1355,7 +1358,7 @@ nav#main {
 	border-top: 1px solid rgba(250, 250, 250, 0.27);
 	-webkit-box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
 	box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
-	-webkit-box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+	-webkit-box-shadow: 0 0 3px rgba(1, 1, 1, 0.7);
 	box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
 }
 
@@ -1374,7 +1377,7 @@ nav#main {
 	background-color: rgba(7, 105, 173, 0.10);
 }
 
-.lte8 nav#main {
+.no-boxshadow nav#main {
 	border-top: 1px solid #333;
 	border-left: 1px solid #333;
 	border-right: 1px solid #333;
