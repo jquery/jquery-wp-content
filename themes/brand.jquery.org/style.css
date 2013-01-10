@@ -26,6 +26,10 @@ Template: jquery
 	line-height: 1.5;
 	color: #444;
 }
+#content h4 {
+	font-size: 18px;
+	line-height: 1.2;
+}
 #banner-secondary.large-banner h1, 
 #banner-secondary.large-banner h2 {
 	font-size: 42px;
@@ -108,14 +112,6 @@ hr {
 /* Links */
 a {
 	color: #032A42;
-}
-
-/* Lists */
-#content dt {
-	font-weight: bold;
-}
-#content dd {
-	margin: 10px 0 20px;
 }
 
 /* Buttons */
