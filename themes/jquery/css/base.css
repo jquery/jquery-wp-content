@@ -695,6 +695,16 @@ li[class^="icon-"]:before, li[class*=" icon-"]:before {
 li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 	text-indent: -1.3333333333333333em;
 }
+
+h2 [class^="icon-"],
+h2 [class*=" icon-"],
+h3 [class^="icon-"],
+h3 [class*=" icon-"],
+h4 [class^="icon-"],
+h4 [class*=" icon-"] {
+	margin-right: 7px;
+}
+
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
  * readers do not read off random characters that represent icons */
 .icon-glass:before                { content: "\f000"; }

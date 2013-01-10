@@ -5,15 +5,6 @@ Template: jquery
 
 /*-----[ Containers and shared content ]------------------------------------*/
 
-h2 [class^="icon-"],
-h2 [class*=" icon-"],
-h3 [class^="icon-"],
-h3 [class*=" icon-"],
-h4 [class^="icon-"],
-h4 [class*=" icon-"] {
-	margin-right: 7px;
-}
-
 #sidebar li {
 	color: #b3b3b3;
 }
