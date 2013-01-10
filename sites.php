@@ -209,6 +209,7 @@ function jquery_sites() {
 				),
 			),
 		),
+
 		'contribute.jquery.org' => array(
 			'blog_id' => 19,
 			'cookie_domain' => '.jquery.org',
@@ -216,6 +217,19 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'Contribute to jQuery',
 				'stylesheet' => 'contribute.jquery.org',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
+		),
+
+		'irc.jquery.org' => array(
+			'blog_id' => 20,
+			'cookie_domain' => '.jquery.org',
+			'body_class' => 'jquery-foundation',
+			'options' => array(
+				'blogname' => 'jQuery IRC',
+				'stylesheet' => 'irc.jquery.org',
 				'active_plugins' => array(
 					'jquery-static-index.php',
 				),
