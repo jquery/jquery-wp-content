@@ -950,6 +950,8 @@ iframe {
 
 #content-wrapper {
 	background-color: #fff;
+	-webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
+	box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
 	max-width: 1240px;
 	padding: 20px 40px;
 	margin: 0 auto;
@@ -1338,6 +1340,8 @@ nav#main {
 	border-top: 1px solid rgba(250, 250, 250, 0.27);
 	-webkit-box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
 	box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
+	-webkit-box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+	box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
 }
 
 .jquery-ui nav#main,
