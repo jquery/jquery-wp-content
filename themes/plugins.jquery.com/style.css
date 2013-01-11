@@ -3,10 +3,8 @@ Theme Name: plugins-jquery-com
 Template: jquery
 */
 
-/*-----[ Containers and shared content ]------------------------------------*/
-
-#sidebar li {
-	color: #b3b3b3;
+a {
+	color: #0769AD;
 }
 
 /*----------[ Notifications ]-----------------------------------------------*/
@@ -56,55 +54,7 @@ Template: jquery
 	line-height: 24px;
 }
 
-/*----------[ Content ]-----------------------------------------------------*/
-
-#content article {
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #ccc;
-}
-
-#content article p {
-	float: left;
-	width: 70%;
-}
-
-#content article .action {
-	float: right;
-	width: 25%;
-	margin-left: 5%;
-}
-
-#content a.button {
-	float: left;
-	width: 100%;
-	padding-left: 5%;
-	padding-right: 5%;
-	text-align: center;
-}
-
-#content .plugin-title {
-	font-size: 20px;
-	line-height: 20px;
-	color: #333;
-	margin-bottom: 5px;
-}
-
-#content .plugin-title a {
-	color: #333;
-	text-decoration: none;
-}
-
-#content .plugin-title a:hover {
-	text-decoration: underline;
-}
-
 /*----------[ Home page ]---------------------------------------------------*/
-
-.home #banner-secondary p {
-	font: bold 40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #71d1ff;
-}
 
 .home #banner-secondary .searchform {
 	position: relative;
@@ -134,111 +84,6 @@ Template: jquery
 	right: 10px;
 	margin-top: -10px;
 	color: #aaa;
-}
-
-.home #sidebar {
-	width: 25%
-}
-
-.home #content {
-	position: relative;
-	width: 53%;	/* 22 | 53 | 25 */
-	margin: 0 30px 30px 30px;
-}
-
-.home #content h3, .home #content h3 i {
-	font-size: 32px;
-	text-align: center;
-	color: #e18d3b;
-	margin-bottom: 30px;
-}
-
-.home article footer {
-	margin: 0;
-	padding: 0;
-}
-
-.home #content article p {
-	margin: 1em 0;
-}
-
-.home #content article .action p.date {
-	width: 100%;
-	line-height: 11px;
-	text-align: center;
-	font-size: 11px;
-	color: #999;
-}
-
-/*----------[ Home page info sidebar ]----------------------------------------
-The new-new-CSS doesn't support a secondary bar - it has only #sidebar - so we
-unfortunately need to replicate some stuff from base.css here.
-*/
-
-.info-bar {
-	float: left;
-	position: relative;
-	width: 22%;
-	margin-left: -40px;
-	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
-	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 3em 35px 3em 20px;
-	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
-	background-image: -webkit-radial-gradient(right, #f2f2f2, #ffffff 80%);
-	background-image: -moz-radial-gradient(right, #f2f2f2, #ffffff 80%);
-	background-image: -o-radial-gradient(right, #f2f2f2, #ffffff 80%);
-	background-image: -ms-radial-gradient(right, #f2f2f2, #ffffff 80%);
-	background-image: radial-gradient(right, #f2f2f2, #ffffff 80%);
-	border: 0px;
-	border-right: 1px solid #efefef;
-}
-
-.info-bar h3 {
-	font: bold normal 20px/18px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	background-image: -webkit-gradient(linear, left bottom, right bottom, from(#efefef), to(#f3f3f3));
-	background-image: -moz-linear-gradient(360deg, #efefef 0%, #f3f3f3 100%);
-	margin-left: -20px;
-	margin-right: -35px;
-	padding: 12px 20px 12px 30px;
-	text-shadow: 0 1px 0 #ffffff;
-}
-
-.info-bar li {
-	padding-top: 2px;
-	padding-bottom: 5px;
-	padding-left: 20px;
-	line-height: 20px;
-	list-style-type: none;
-	background: url(images/bullet.png) no-repeat 0 8px;
-	text-shadow: 0 1px 0 #ffffff;
-	color: #b3b3b3;
-}
-
-.info-bar li a {
-	text-decoration: none;
-	color: #4d4d4d;
-}
-
-.info-bar li a:hover {
-	text-decoration: underline;
-}
-
-.info-bar nav#secondary li {
-	background-image: none;
-	padding-left: 0;
-}
-
-.info-bar nav#secondary li.current {
-	background-color: #e2e2e2;
-	margin-left: -35px;
-	margin-right: -20px;
-	padding-left: 35px;
-	font-weight: bold;
 }
 
 /*----------[ Individual plugin pages ]-------------------------------------*/
@@ -673,140 +518,9 @@ p.info {
 	width: 45%;
 }
 
-/*----------[ IE hacks ]----------------------------------------------------*/
-
-.lte9 .jquery-plugin h1.entry-title {
-	background: transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-}
-
-.lte9 .jquery-plugin .tags li a {
-	height: 24px;
-}
-
 /*----------[ Media queries ]-----------------------------------------------*/
 
-@media all and (max-width: 1200px) {
-
-	#sidebar.jquery-plugin p.date {
-		font-size: 16px;
-	}
-}
-
-@media all and (max-width: 1100px) {
-
-	#sidebar.jquery-plugin a.download {
-		font-size: 16px;
-	}
-
-	#sidebar.jquery-plugin p.date {
-		font-size: 14px;
-	}
-}
-
-@media all and (max-width: 1000px) {
-
-	#content, .home #content {
-		width: 65%;
-		margin: 0;
-	}
-
-	#sidebar, .home #sidebar, .home .info-bar {
-		width: 220px;
-	}
-
-	#sidebar.jquery-plugin a.download {
-		font-size: 12px;
-	}
-
-	.home .info-bar {
-		float: right;
-		margin-left: 0;
-		margin-right: -40px;
-	}
-}
-
-@media all and (max-width: 900px) {
-
-	#content {
-		width: 60%;
-	}
-}
-
-@media all and (max-width: 768px) {
-
-	.home #banner-secondary h1 {
-		font-size: 42px;
-		line-height: 42px;
-	}
-
-	.home #banner-secondary p {
-		font-size: 42px;
-		line-height: 42px;
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-
-	.home #banner-secondary .searchform {
-		font-size: 16px;
-	}
-
-	#sidebar, .info-bar, #content, #content.jquery-plugin,
-	.home #sidebar, .home .info-bar, .home #content {
-		width: 100%;
-		padding: 0;
-		clear: both;
-		float: none;
-		border-top: none;
-		border-left: none;
-		border-right: none;
-		border-bottom: none;
-		-moz-border-image: none;
-		-webkit-border-image: none;
-		-webkit-border-image: none;
-		-o-border-image: none;
-		border-image: none;
-		-webkit-box-shadow: none;
-		box-shadow: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		position: relative;
-		margin-bottom: 20px;
-	}
-
-	#sidebar h3, .home #sidebar h3,
-	.info-bar h3, .home .info-bar h3 {
-		margin-left: -20px;
-		margin-right: -20px;
-	}
-
-	#sidebar.jquery-plugin a.download {
-		font-size: 20px;
-	}
-
-	#sidebar.jquery-plugin p.date {
-		font-size: 18px;
-	}
-}
-
 @media all and (max-width: 660px) {
-
-	.home #banner-secondary h1 {
-		font-size: 36px;
-		line-height: 36px;
-	}
-
-	.home #banner-secondary p {
-		font-size: 36px;
-		line-height: 36px;
-		padding-left: 5%;
-		padding-right: 5%;
-	}
-
 	.notify p {
 		font-size: .8em;
 		line-height: .7em;
@@ -818,43 +532,5 @@ p.info {
 
 	.notify a.close {
 		font-size: 1em;
-	}
-}
-
-@media all and (max-width: 480px) {
-
-	.home #banner-secondary h1 {
-		font-size: 32px;
-		line-height: 32px;
-	}
-
-	.home #banner-secondary p {
-		font-size: 32px;
-		line-height: 32px;
-	}
-
-	.home #sidebar,
-	.home .info-bar {
-		width: 90%;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-
-	#content article p {
-		width: 100%;
-	}
-
-	#content article {
-		text-align: center;
-	}
-
-	#content article .action {
-		float: none;
-		clear: both;
-		width: 90%;
-	}
-
-	#content h1.page-title {
-		text-align: center;
 	}
 }

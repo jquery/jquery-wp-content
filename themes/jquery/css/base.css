@@ -1009,8 +1009,15 @@ iframe {
 	padding-right: 0;
 }
 
+#sidebar,
+.sidebar-left,
+.sidebar-right {
+	padding: 20px 20px 20px 35px;
+	width: 29%;
+}
 
-#sidebar {
+#sidebar,
+.sidebar-right {
 	float: right;
 	margin-right: -40px;
 	position: relative;
@@ -1019,7 +1026,6 @@ iframe {
 	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-o-border-image: -o-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
-	padding: 20px 20px 20px 35px;
 	-webkit-box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
 	background-image: -webkit-gradient(radial, 0% 50%, 0, 0% 50%, 80, color-stop(0%, #f2f2f2), color-stop(80%, #ffffff));
@@ -1028,13 +1034,13 @@ iframe {
 	background-image: -o-radial-gradient(left, #f2f2f2, #ffffff 80%);
 	background-image: -ms-radial-gradient(left, #f2f2f2, #ffffff 80%);
 	background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
-	width: 29%;
-	border: 0px;
+	border: 0;
 	border-left: 1px solid #efefef;
 }
 
 
-.content-right #sidebar {
+.content-right #sidebar,
+.sidebar-left {
 	float: left;
 	border-left: 0;
 	border-right: 1px solid #e7e7e7;
