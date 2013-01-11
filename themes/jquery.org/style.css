@@ -188,7 +188,7 @@ ul.flex-direction-nav {
 .member-level-icon {
     display: block;
     position: absolute;
-    top: 90px;
+    top: 60px;
     right: -50px;
     
     width: 225px;
@@ -198,15 +198,15 @@ ul.flex-direction-nav {
 }
 
 .member-level-icon.fan {
-    background: url(images/icn-fan.png) center top;
+    background: url(images/icn-fan.png) center top no-repeat;
 }
 
 .member-level-icon.friend {
-    background: url(images/icn-friend.png) center top;
+    background: url(images/icn-friend.png) center top no-repeat;
 }
 
 .member-level-icon.hero {
-    background: url(images/icn-hero.png) center top;
+    background: url(images/icn-hero.png) center top no-repeat;
 }
 
 
@@ -278,6 +278,10 @@ a.icon-search::before {
     margin-left: 15px;
     margin-bottom: 30px;
 
+}
+
+.member-level form a.button {
+    clear: none;
 }
 
 

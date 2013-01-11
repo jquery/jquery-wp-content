@@ -89,6 +89,21 @@ $(function() {
 			var gift = $( this ).nextAll(".choose-gifts").slideToggle();
 			gifts.not( gift ).slideUp();
 		});
+
+		$(".member-level .pay").on( "click", function() {
+			var a = $(this)
+			StripeCheckout.open({
+				key: 'pk_NjMf2QUPtR28Wg0xmyWtepIzUziVr',
+				image: a.data("image"),
+				name: a.data("name"),
+				description: a.data("description"),
+				panelLabel: a.data("panel-label"),
+				amount: a.data("amount"),
+				token: function(res) {
+					alert(res.id);
+				}
+			});
+		});
 	})();
 });
 
