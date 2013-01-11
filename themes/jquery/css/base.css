@@ -520,19 +520,19 @@ textarea {
  * 2. Using :placeholder for completeness.
  */
 ::-webkit-input-placeholder {
-	color: #ff0000;
+	color: #9A1B1E;
 }
 :-moz-placeholder { /* 1 */
-	color: #ff0000;
+	color: #9A1B1E;
 }
 ::-moz-placeholder {
-	color: #ff0000;
+	color: #9A1B1E;
 }
 :-ms-placeholder {
-	color: #ff0000;
+	color: #9A1B1E;
 }
 :placeholder { /* 2 */
-	color: #ff0000;
+	color: #9A1B1E;
 }
 
 #content input:focus,
