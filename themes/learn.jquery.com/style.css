@@ -72,12 +72,12 @@ a {
 	background-image:     -ms-linear-gradient(top, #ffea5e, #FFea94); 
 	background-image:      -o-linear-gradient(top, #ffea5e, #FFea94); 
 }
-#content .beta-ribbon a {
+.beta-ribbon a {
 	text-decoration: none;
 	color: #393939;
 }
 
-#content .beta-ribbon:hover a {
+.beta-ribbon:hover a {
 	text-decoration: underline;
 }
 /*******************************************************************************/

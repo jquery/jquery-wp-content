@@ -7,7 +7,7 @@
 
 <?php the_post(); ?>
 
-<div class="content-full">
+<div class="content-full twelve columns">
 	<div id="content">
 		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>

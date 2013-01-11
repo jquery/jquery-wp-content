@@ -968,9 +968,7 @@ iframe {
 	background-color: #fff;
 	-webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
 	box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
-	max-width: 1240px;
-	padding: 20px 40px;
-	margin: 0 auto;
+	padding: 20px 0;
 	border-top: 1px solid #333;
 	border-radius: 0 0 10px 10px;
 	position: relative;
@@ -1044,7 +1042,7 @@ iframe {
 	float: left;
 	border-left: 0;
 	border-right: 1px solid #e7e7e7;
-	margin: -20px 0 0 -40px;
+	margin: -20px 0 0 -25px;
 	-moz-border-image: -moz-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	-webkit-border-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(15%, #e7e7e7), color-stop(85%, #e7e7e7), color-stop(100%, #ffffff));
 	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
@@ -1854,8 +1852,8 @@ p.author a {
 
 #banner-secondary {
 	background-image: url(../images/dark-grey-tile.png);
-	margin: -20px -40px 15px;
-	padding: 20px 40px;
+	margin: -20px -25px 15px;
+	padding: 20px;
 }
 
 #banner-secondary h2,

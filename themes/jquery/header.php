@@ -108,4 +108,4 @@
 		<?php get_search_form(); ?>
 	</nav>
 
-	<div id="content-wrapper" class="clearfix">
+	<div id="content-wrapper" class="clearfix row">

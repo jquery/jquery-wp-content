@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-		<div id="content" class="clearfix content-right">
+		<div id="content" class="clearfix content-right twelve columns">
 
 			<?php if ( have_posts() ) : ?>
 

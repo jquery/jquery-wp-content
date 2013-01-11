@@ -57,10 +57,7 @@ a,
 .sub-banner {
     background-color: #d6eef1;
     text-align: center;
-    margin-left: -40px;
-    margin-right: -40px;
-    margin-top: -30px;
-    height: auto;
+    margin: -25px -25px 0;
     color: #007d88;
     font: bold 20px/40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }

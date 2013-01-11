@@ -4,8 +4,10 @@
 */
 get_header(); ?>
 
+<div class="beta-ribbon-wrapper"><div class="beta-ribbon"><a href="/about/#beta">Beta</a></div></div>
+
 <!-- body -->
-<div class="content-full full-width">
+<div class="content-full full-width twelve columns">
 
 <!-- inner -->
 	<div id="content">

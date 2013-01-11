@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="content-right listing">
+<div class="content-right listing twelve columns">
 	<div id="content">
 		<h1 class="page-title">jQuery API</h1>
 		<hr>
