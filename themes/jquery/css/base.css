@@ -1514,17 +1514,6 @@ nav#main .searchform .icon-search {
 	color: #fff;
 }
 
-.js nav#main .searchform .icon-search span {
-	position: absolute;
-	top: -1000em;
-	left: -1000em;
-}
-
-nav#main .searchform label span{
-	left: -9999em;
-	position: absolute;
-}
-
 /* Typography & Global Styles
    ========================================================================== */
 

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content-left listing twelve columns">
+<div class="content-full full-width listing twelve columns">
 	<div id="banner-secondary" class="large-banner">
 		<h1>Plugins Make jQuery More Awesomer</h1>
 		<p>Level up your project, not your grammar</p>
@@ -8,7 +8,7 @@
 	</div>
 
 	<div id="content">
-		<div class="four columns">
+		<div class="three columns">
 			<aside class="widget">
 				<h3><i class="icon-tags"></i>Popular Tags</h3>
 				<ul><?php
@@ -29,7 +29,7 @@
 			</aside>
 		</div>
 
-		<div class="eight columns">
+		<div class="six columns">
 			<h2 class="center-txt"><i class="icon-star"></i>New Plugins</h2>
 			<?php
 			$new_plugins = new WP_Query( array(
@@ -60,13 +60,13 @@
 				</article>
 			<?php endwhile; wp_reset_postdata(); ?>
 		</div>
-	</div>
 
-	<div id="sidebar" class="widget-area" role="complementary">
-		<aside>
-			<h3><i class="icon-calendar"></i>Recent Updates</h3>
-			<?php jq_updated_plugins(); ?>
-		</aside>
+		<div class="three columns">
+			<aside>
+				<h3><i class="icon-calendar"></i>Recent Updates</h3>
+				<?php jq_updated_plugins(); ?>
+			</aside>
+		</div>
 	</div>
 </div>
 

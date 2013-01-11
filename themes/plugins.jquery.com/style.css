@@ -60,7 +60,7 @@ a {
 
 /*----------[ Home page ]---------------------------------------------------*/
 
-.home #banner-secondary .searchform {
+#banner-secondary .searchform {
 	position: relative;
 	width: 60%;
 	margin: 60px auto 0;
@@ -72,22 +72,44 @@ a {
 	border-radius: 2em;
 }
 
-.home #banner-secondary .searchform input {
+#banner-secondary .searchform input {
 	width: 100%;
-	padding-left: 15px;
-	padding-right: 40px;
+	padding-left: 40px;
 	line-height: 1.5em;
 	border: none;
 	background: none;
 	color: #fff;
 }
 
-.home #banner-secondary .searchform i {
+/*
+ * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
+ * 2. Using :placeholder for completeness.
+ */
+#banner-secondary .searchform input::-webkit-input-placeholder {
+	color: #aaa;
+}
+#banner-secondary .searchform input:-moz-placeholder { /* 1 */
+	color: #aaa;
+}
+#banner-secondary .searchform input::-moz-placeholder {
+	color: #aaa;
+}
+#banner-secondary .searchform input:-ms-input-placeholder {
+	color: #aaa;
+}
+#banner-secondary .searchform input:placeholder { /* 2 */
+	color: #aaa;
+}
+
+#banner-secondary .searchform .icon-search {
 	position: absolute;
 	top: 50%;
-	right: 10px;
-	margin-top: -10px;
-	color: #aaa;
+	left: 10px;
+	margin-top: -15px;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	opacity: 0.33;
 }
 
 /*----------[ Individual plugin pages ]-------------------------------------*/
