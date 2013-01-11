@@ -1,14 +1,18 @@
 /*! Copyright 2012 jQuery Foundation and other contributors
- * NOTE: Do not modify the following lines except by upgrading from source
- * - normalize.css (lines 7-473)
- * - font-awesome.css (lines 483-749)
+ * Includes:
+ * - normalize.css v1.0.1 | MIT License | git.io/normalize
+ * - Font Awesome - http://fortawesome.github.com/Font-Awesome - CC BY 3.0
  */
-
-/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 /*
  * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
@@ -78,6 +82,7 @@ input,
 select,
 textarea {
 	font-family: sans-serif;
+	color: #333;
 }
 
 /*
@@ -86,6 +91,31 @@ textarea {
 
 body {
 	margin: 0;
+}
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+@font-face {
+	font-family: "FontAwesome";
+	src: url('fonts/fontawesome-webfont.eot');
+	src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* ==========================================================================
@@ -121,34 +151,38 @@ a:hover {
 
 h1 {
 	font-size: 2em;
-	margin: 0.67em 0;
+	margin: 0 0 0.33em;
 }
 
 h2 {
 	font-size: 1.5em;
-	margin: 0.83em 0;
+	margin: 0 0 0.5em;
 }
 
 h3 {
 	font-size: 1.17em;
-	margin: 1em 0;
+	margin: 0 0 0.67em;
 }
 
 h4 {
 	font-size: 1em;
-	margin: 1.33em 0;
+	margin: 0 0 1em;
 }
 
 h5 {
 	font-size: 0.83em;
-	margin: 1.67em 0;
+	margin: 0 0 1.33em;
 }
 
 h6 {
 	font-size: 0.75em;
-	margin: 2.33em 0;
+	margin: 0 0 2em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
+}
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
@@ -256,7 +290,7 @@ dl,
 menu,
 ol,
 ul {
-	margin: 1em 0;
+	margin: 0 0 1em;
 }
 
 dd {
@@ -270,7 +304,7 @@ dd {
 menu,
 ol,
 ul {
-	padding: 0 0 0 40px;
+	padding: 0;
 }
 
 /*
@@ -295,6 +329,8 @@ nav ol {
 img {
 	border: 0; /* 1 */
 	-ms-interpolation-mode: bicubic; /* 2 */
+	vertical-align: middle;
+	max-width: 100%;
 }
 
 /* ==========================================================================
@@ -319,6 +355,7 @@ figure {
 
 form {
 	margin: 0;
+	padding: 10px 0;
 }
 
 /*
@@ -326,9 +363,9 @@ form {
  */
 
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -455,32 +492,168 @@ input::-moz-focus-inner {
 textarea {
 	overflow: auto; /* 1 */
 	vertical-align: top; /* 2 */
+	min-height: 150px;
+	resize: vertical;
+}
+
+#content input[type=text],
+#content textarea {
+	color: #666;
+
+	width: 70%;
+	min-width: 300px;
+
+	margin: 5px 0 10px 0;
+	padding: 8px 12px;
+
+	background: rgba(245,245,245,0.37);
+
+	border: 1px solid rgba(192,192,192,0.49);
+	border-radius: 2px;
+
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
+	box-shadow:         inset 0 1px 3px rgba(0,0,0,0.17);
+}
+
+/*
+ * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
+ * 2. Using :placeholder for completeness.
+ */
+::-webkit-input-placeholder {
+	color: #ff0000;
+}
+:-moz-placeholder { /* 1 */
+	color: #ff0000;
+}
+::-moz-placeholder {
+	color: #ff0000;
+}
+:-ms-placeholder {
+	color: #ff0000;
+}
+:placeholder { /* 2 */
+	color: #ff0000;
+}
+
+#content input:focus,
+#content input[type=text]:focus,
+#content textarea:focus {
+	outline: none;
+
+	color: #333;
+	background: #FFF;
+
+	border: 1px solid #B24926;
+
+	-webkit-box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
+						inset 0px 1px 3px rgba(0,0,0,0.2);
+
+	box-shadow:         0px 0px 6px rgba(23,138,156,0.5),
+						inset 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+/**
+ * Radio Buttons
+ */
+
+.radio {
+	margin: 15px 0;
+}
+
+#content .radio ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+#content .radio ul li {
+	margin: 0;
+	padding: 0;
+	background: none;
+	list-style-type: none;
+}
+
+.radio label {
+	margin: 5px 0;
+}
+
+input[type=radio] {
+	margin: 0 5px 0 0;
+}
+
+/**
+ * Checkboxes
+ */
+
+input[type="checkbox"] {
+	margin: 0 5px 0 0;
+}
+
+/**
+ * Submit Buttons
+ */
+
+form input[type="submit"] {
+	margin: 40px 0;
+	float: none;
+}
+
+/**
+ * Top aligned labels
+ */
+
+.top-labels label,
+.top-labels .radio label,
+.top-labels input[type=text],
+.top-labels textarea {
+	display: block;
+}
+
+/**
+ * Left aligned labels
+ */
+
+.left-labels label {
+	padding: 5px 0 0 0;
+	display: block;
+}
+
+.left-labels span {
+	margin: 0 10px 0 0;
+	min-width: 100px;
+
+	float: left;
+
+	text-align: left;
+}
+
+.left-labels .radio span {
+	padding-top: 5px;
+}
+
+.left-labels .radio {
+	display: block;
+}
+
+.left-labels .radio li label {
+	margin: 0;
+	padding: 0 0 5px 0;
+
+	border: 0;
 }
 
 /* ==========================================================================
    Tables
    ========================================================================== */
 
-/*
- * Remove most spacing between table cells.
- */
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/*END normalize.css */
-
-@font-face {
-    font-family: "FontAwesome";
-    src: url('fonts/fontawesome-webfont.eot');
-    src: url('fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/*! font-awesome.css - http://fortawesome.github.com/Font-Awesome - CC BY 3.0 */
+/* ==========================================================================
+   Font Awesome
+   ========================================================================== */
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
 	font-family: FontAwesome;
@@ -745,247 +918,6 @@ h4 [class*=" icon-"] {
 .icon-umbrella:before             { content: "\f0e9"; }
 .icon-paste:before                { content: "\f0ea"; }
 .icon-user-md:before              { content: "\f200"; }
-
-/*END font-awesome.css */
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #333;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-h1 {
-    margin: 0 0 0.33em;
-}
-
-h2 {
-    margin: 0 0 0.5em;
-}
-
-h3 {
-    margin: 0 0 0.67em;
-}
-
-h4 {
-    margin: 0 0 1em;
-}
-
-h5 {
-    margin: 0 0 1.33em;
-}
-
-h6 {
-    margin: 0 0 2em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
-}
-
-dl,
-menu,
-ol,
-ul {
-    margin: 0 0 1em;
-}
-
-menu,
-ol,
-ul {
-    padding: 0;
-}
-
-img {
-    vertical-align: middle;
-    max-width: 100%;
-}
-
-form {
-    padding: 10px 0;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
-#content input[type=text],
-#content textarea {
-    color: #666;
-
-    width: 70%;
-    min-width: 300px;
-
-    margin: 5px 0 10px 0;
-    padding: 8px 12px;
-
-    background: rgba(245,245,245,0.37);
-
-    border: 1px solid rgba(192,192,192,0.49);
-    border-radius: 2px;
-
-    -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
-    box-shadow:         inset 0 1px 3px rgba(0,0,0,0.17);
-}
-
-/*
- * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
- * 2. Using :placeholder for completeness.
- */
-::-webkit-input-placeholder {
-    color: #ff0000;
-}
-:-moz-placeholder { /* 1 */
-    color: #ff0000;
-}
-::-moz-placeholder {
-    color: #ff0000;
-}
-:-ms-placeholder {
-    color: #ff0000;
-}
-:placeholder { /* 2 */
-    color: #ff0000;
-}
-
-#content input:focus,
-#content input[type=text]:focus,
-#content textarea:focus {
-    outline: none;
-
-    color: #333;
-    background: #FFF;
-
-    border: 1px solid #B24926;
-
-    -webkit-box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
-                        inset 0px 1px 3px rgba(0,0,0,0.2);
-
-    box-shadow:         0px 0px 6px rgba(23,138,156,0.5),
-                        inset 0px 1px 3px rgba(0,0,0,0.2);
-}
-
-/**
- * Radio Buttons
- */
-
-.radio {
-    margin: 15px 0;
-}
-
-#content .radio ul {
-    margin: 0;
-    padding: 0;
-    float: left;
-}
-
-#content .radio ul li {
-    margin: 0;
-    padding: 0;
-    background: none;
-    list-style-type: none;
-}
-
-.radio label {
-    margin: 5px 0;
-}
-
-input[type=radio] {
-    margin: 0 5px 0 0;
-}
-
-/**
- * Checkboxes
- */
-
-input[type="checkbox"] {
-    margin: 0 5px 0 0;
-}
-
-/**
- * Submit Buttons
- */
-
-form input[type="submit"] {
-    margin: 40px 0;
-    float: none;
-}
-
-/**
- * Top aligned labels
- */
-
-.top-labels label,
-.top-labels .radio label,
-.top-labels input[type=text],
-.top-labels textarea {
-    display: block;
-}
-
-/**
- * Left aligned labels
- */
-
-.left-labels label {
-    padding: 5px 0 0 0;
-    display: block;
-}
-
-.left-labels span {
-    margin: 0 10px 0 0;
-    min-width: 100px;
-
-    float: left;
-
-    text-align: left;
-}
-
-.left-labels .radio span {
-    padding-top: 5px;
-}
-
-.left-labels .radio {
-    display: block;
-}
-
-.left-labels .radio li label {
-    margin: 0;
-    padding: 0 0 5px 0;
-
-    border: 0;
-}
 
 /* Global Structure
    ========================================================================== */
