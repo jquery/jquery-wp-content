@@ -99,17 +99,12 @@ function menu_header_brand_jquery_org() {
 function menu_header_contribute_jquery_org() {
 	return array(
 		'http://contribute.jquery.org/CLA/' => 'Contributor License Agreement',
-		'http://contribute.jquery.org/style-guide/js/' => 'JS Style Guide',
-		'http://contribute.jquery.org/style-guide/html/' => 'HTML Style Guide'
+		'http://contribute.jquery.org/style-guide/js' => 'JS Style Guide',
+		'http://contribute.jquery.org/style-guide/html' => 'HTML Style Guide',
+		'http://contribute.jquery.org/commits-and-pull-requests' => 'Commits &amp; Pull Requests'
 	);
 }
 
-function menu_header_irc_jquery_org() {
-	return array(
-		'http://irc.jquery.org/irc-help/' => 'IRC Help',
-		'http://jquery.org/meeting/' => 'Meetings'
-	);
-}
 /*
  * Avert your eyes.
  */

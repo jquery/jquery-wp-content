@@ -8,7 +8,7 @@
 			<li><a href="/documentation/">Documentation</a></li>
 			<li><a href="/open-source/">Open Source</a></li>
 			<li><a href="/support/">Support</a></li>
-			<li><a href="/web/">Web Sites</a></li>
+			<li><a href="/web-sites/">Web Sites</a></li>
 		</ul>
 	</aside>
 </div>
