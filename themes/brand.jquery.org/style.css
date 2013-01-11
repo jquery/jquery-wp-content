@@ -50,7 +50,7 @@ h6.h-helvetica {
 	margin-bottom: 30px;
 }
 
-/* Custom Structure */
+/* Color Swatches */
 .color {
 	display: block;
 	margin: 30px 0;
@@ -76,19 +76,6 @@ h6.h-helvetica {
 	font-size: 14px;
 	line-height: 20px;
 }
-
-.color.black { background-color: #333; }
-.color.primary-blue { background-color: #0769AD; }
-.color.secondary-blue { background-color: #7ACEF4; }
-.color.primary-orange { background-color: #FAA523; }
-.color.secondary-orange { background-color: #B24926; }
-.color.primary-green { background-color: #3EB249; }
-.color.secondary-green { background-color: #108040; }
-.color.sizzle-orange { background-color: #FAA523; }
-.color.sizzle-red { background-color: #9A1B1E; }
-.color.qunit-primary-purple { background-color: #9C3493; }
-.color.qunit-secondary-purple { background-color: #390F39; }
-
 
 /* Misc Content */
 p {

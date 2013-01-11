@@ -1304,6 +1304,21 @@ footer {
 	border-top-color: #333;
 }
 
+/* Brand Colors for General Use
+   ========================================================================== */
+.color.black { background-color: #333; }
+.color.primary-blue { background-color: #0769AD; }
+.color.secondary-blue { background-color: #7ACEF4; }
+.color.navy-blue { background-color: #131B28; }
+.color.primary-orange { background-color: #FAA523; }
+.color.secondary-orange { background-color: #B24926; }
+.color.primary-green { background-color: #3EB249; }
+.color.secondary-green { background-color: #108040; }
+.color.sizzle-orange { background-color: #FAA523; }
+.color.sizzle-red { background-color: #9A1B1E; }
+.color.qunit-primary-purple { background-color: #9C3493; }
+.color.qunit-secondary-purple { background-color: #390F39; }
+
 /* Logo & Navigation
    ========================================================================== */
 
