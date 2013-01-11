@@ -1454,6 +1454,14 @@ nav#main .searchform input:focus {
 	outline: none;
 }
 
+.no-boxshadow nav#main .searchform {
+	border: 1px solid #333;
+}
+
+.no-boxshadow nav#main .searchform input {
+	background: #fff;
+}
+
 /*
  * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
  * 2. Using :placeholder for completeness.
