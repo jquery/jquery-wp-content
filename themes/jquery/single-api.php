@@ -18,5 +18,5 @@
         <?php endwhile; // end of the loop. ?>
     </div><!-- #content -->
 
-		<?php get_sidebar( 'api' ); ?>
+		<?php get_sidebar(); ?>
 </div>

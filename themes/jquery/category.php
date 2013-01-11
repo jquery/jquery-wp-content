@@ -5,51 +5,48 @@
 
 get_header(); ?>
 
-		<section id="body">
-			<div class="inner" role="main">
+<div class="content-right">
+	<div id="content">
+	<?php if ( have_posts() ) : ?>
 
-			<?php if ( have_posts() ) : ?>
+		<header class="page-header">
+			<h1 class="page-title"><?php
+				printf( __( 'Category: %s', 'twentyeleven' ), '<span>' . single_cat_title( '', false ) . '</span>' );
+			?></h1>
+			<hr>
+			<?php
+				$category_description = category_description();
+				if ( ! empty( $category_description ) ) {
+					echo apply_filters( 'category_archive_meta',
+						'<div class="category-archive-meta">' . $category_description . '</div>' );
+				}
+			?>
+		</header>
 
-				<header class="page-header">
-					<h1 class="page-title"><?php
-						printf( __( 'Category Archives: %s', 'twentyeleven' ), '<span>' . single_cat_title( '', false ) . '</span>' );
-					?></h1>
+		<?php
+			while ( have_posts() ) : the_post();
+				get_template_part( 'content', 'listing' );
+			endwhile;
+		?>
 
-					<?php
-						$category_description = category_description();
-						if ( ! empty( $category_description ) )
-							echo apply_filters( 'category_archive_meta', '<div class="category-archive-meta">' . $category_description . '</div>' );
-					?>
-				</header>
+		<?php twentyeleven_content_nav( 'nav-below' ); ?>
 
-				<?php twentyeleven_content_nav( 'nav-above' ); ?>
+	<?php else : ?>
 
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
+		<article id="post-0" class="post no-results not-found">
+			<header class="entry-header">
+				<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
+			</header>
 
-					<?php
-						get_template_part( 'content' );
-					?>
+			<div class="entry-content">
+				<p><?php _e( 'Apologies, but no results were found for the requested archive.', 'twentyeleven' ); ?></p>
+			</div>
+		</article>
 
-				<?php endwhile; ?>
+	<?php endif; ?>
+	</div>
 
-				<?php twentyeleven_content_nav( 'nav-below' ); ?>
-
-			<?php else : ?>
-
-				<article id="post-0" class="post no-results not-found">
-					<header class="entry-header">
-						<h1 class="entry-title"><?php _e( 'Nothing Found', 'twentyeleven' ); ?></h1>
-					</header><!-- .entry-header -->
-
-					<div class="entry-content">
-						<p><?php _e( 'Apologies, but no results were found for the requested archive.', 'twentyeleven' ); ?></p>
-					</div><!-- .entry-content -->
-				</article><!-- #post-0 -->
-
-			<?php endif; ?>
-
-			</div><!-- .inner -->
-		</section><!-- #body -->
+	<?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>

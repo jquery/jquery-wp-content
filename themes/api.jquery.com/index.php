@@ -11,6 +11,6 @@
 		?>
 	</div>
 
-	<?php get_sidebar( 'api' ); ?>
+	<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>

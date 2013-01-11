@@ -44,5 +44,5 @@
 	<?php endif; ?>
 	</div>
 
-	<?php get_sidebar( 'api' ); ?>
+	<?php get_sidebar(); ?>
 </div>
