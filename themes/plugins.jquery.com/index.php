@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="content-left listing row collapse">
+<div class="content-left listing twelve columns">
 	<div id="banner-secondary" class="large-banner">
 		<h1>Plugins Make jQuery More Awesomer</h1>
 		<p>Level up your project, not your grammar</p>
@@ -49,7 +49,7 @@
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						</h3>
 					</head>
-					<div class="entry-summary row collapse">
+					<div class="entry-summary row">
 						<div class="eight columns">
 							<?php the_excerpt(); ?>
 						</div>
