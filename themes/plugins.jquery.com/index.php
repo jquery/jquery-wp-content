@@ -54,7 +54,7 @@
 							<?php the_excerpt(); ?>
 						</div>
 						<div class="four columns">
-							<a class="button" style="float:right" href="<?php the_permalink(); ?>">View Plugin</a>
+							<a class="button" href="<?php the_permalink(); ?>">View Plugin</a>
 						</div>
 					</div>
 				</article>
