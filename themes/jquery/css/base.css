@@ -1625,7 +1625,7 @@ pre b {
 	list-style: none;
 	padding-left: 10px;
 	margin-right: 0;
-	margin-top: 0;
+	margin-top: 5px;
 	margin-left: 30px;
 }
 #content ol > li:before {
@@ -1633,7 +1633,7 @@ pre b {
 	counter-increment: li; /* Increment the counter by 1 */
 	/* Position and style the number */
 	position: absolute;
-	top: 6px;
+	top: 1px;
 	left: -25px;
 	box-sizing: border-box;
 	width: 20px;
