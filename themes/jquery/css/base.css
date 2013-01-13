@@ -977,14 +977,14 @@ iframe {
 	border: 1px solid #333;
 }
 
-.lte8 #content-wrapper {
-	max-width: 1200px;
-}
-
 .constrain {
 	max-width: 1240px;
 	margin: 0 auto;
 	padding: 0 20px;
+}
+
+.lte8 .constrain {
+  max-width: 1198px; /* Accomodate for padding + 1px border */
 }
 
 #content {
