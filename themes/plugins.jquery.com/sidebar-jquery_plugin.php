@@ -1,22 +1,11 @@
-<?php
-/**
- * The template used for displaying page content in page.php
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
-?>
-
-<div id="sidebar" class="jquery-plugin">
-
-	<div class="block toolbox">
+<div id="sidebar" class="widget-area" role="complementary">
+	<aside class="widget toolbox">
 		<div class="inner">
 			<header class="clearfix">
 				<div class="version-info">
 					<p class="version-number"><?php echo jq_release_version(); ?></p>
 					<p class="caption">Version</p>
-				</div> <!-- /.version-info -->
+				</div>
 				<div class="release-info">
 					<p class="date"><?php echo jq_release_date(); ?></p>
 					<p class="caption">Released</p>
@@ -30,46 +19,43 @@
 				<a class="other-link view-homepage" href="<?php echo jq_release_homepage(); ?>"><span class="icon-external-link"></span>View Homepage</a>
 				<a class="other-link demo" href="<?php echo jq_release_demo(); ?>"><span class="icon-eye-open"></span>Try a Demo</a>
 				<a class="other-link read-docs" href="<?php echo jq_release_docs(); ?>"><span class="icon-file"></span>Read the Docs</a>
-			</div> <!-- /.body -->
-		</div> <!-- /.inner -->
-	</div> <!-- /.toolbox -->
+			</div>
+		</div>
+	</aside>
 
-	<div class="block github-activity group">
-		<h3><span class="icon-github"></span>GitHub Activity</h3>
-		<div class="box">
-			<div class="info-block watchers">
-				<p class="number"><?php echo jq_plugin_watchers(); ?></p>
-				<p class="caption">Watchers</p>
-			</div> <!-- /.watchers -->
-			<div class="info-block forks">
-				<p class="number"><?php echo jq_plugin_forks(); ?></p>
-				<p class="caption">Forks</p>
-			</div> <!-- /.forks -->
-		</div> <!-- /.box -->
-	</div> <!-- /.github-activity -->
+	<aside class="widget github-activity group">
+		<h3 class="widget-title"><span class="icon-github"></span>GitHub Activity</h3>
+		<div class="info-block watchers">
+			<div class="number"><?php echo jq_plugin_watchers(); ?></div>
+			<div class="caption">Watchers</div>
+		</div>
+		<div class="info-block forks">
+			<div class="number"><?php echo jq_plugin_forks(); ?></div>
+			<div class="caption">Forks</div>
+		</div>
+	</aside>
 
-	<div class="block author-info">
+	<aside class="widget author-info">
 		<h3><span class="icon-user"></span>Author</h3>
 		<ul>
 			<li><?php echo jq_release_author(array('avatar' => true, 'size' => 80)); ?></li>
 		</ul>
-	</div> <!-- /.author-info -->
+	</aside>
 
 	<?php if ( $maintainers = jq_release_maintainers(array('avatar' => true, 'size' => 48)) ) { ?>
-	<div class="block maintainer-info">
+	<aside class="widget maintainer-info">
 		<h3><span class="icon-wrench"></span>Maintainers</h3>
 		<?php echo $maintainers; ?>
-	</div> <!-- /.maintainer-info -->
+	</aside>
 	<?php } ?>
 
-	<div class="block licenses">
+	<aside class="widget licenses">
 		<h3><span class="icon-book"></span>Licenses</h3>
 		<?php echo jq_release_licenses(); ?>
-	</div> <!-- /.licenses -->
+	</aside>
 
-	<div class="block dependencies">
+	<aside class="widget dependencies">
 		<h3><span class="icon-sitemap"></span>Dependencies</h3>
 		<?php echo jq_release_dependencies(); ?>
-	</div> <!-- /.dependencies -->
-
-</div> <!-- #sidebar -->
+	</aside>
+</div>

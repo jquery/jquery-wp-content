@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <?php the_post(); ?>
 
-<div class="content-left twelve columns">
+<div class="content-left twelve columns jquery-plugin">
 	<div id="content" class="jquery-plugin">
 		<?php if ( $post->post_parent && (jq_release_version() !== jq_release_version( $post->post_parent )) ) : ?>
 			<div class="notify">
