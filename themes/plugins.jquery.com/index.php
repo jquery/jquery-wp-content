@@ -2,8 +2,7 @@
 
 <div class="content-full full-width listing twelve columns">
 	<div id="banner-secondary" class="large-banner">
-		<h1>Plugins Make jQuery More Awesomer</h1>
-		<p>Level up your project, not your grammar</p>
+		<h1>The jQuery Plugin Registry</h1>
 		<?php get_search_form(); ?>
 	</div>
 
