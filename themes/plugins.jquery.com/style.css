@@ -11,8 +11,13 @@ a {
 	float: right;
 }
 
-#sidebar .popular-tags a {
+#sidebar .popular-tags a,
+#sidebar .recent-updates a {
 	display: inline-block;
+}
+
+#sidebar .recent-updates li {
+	padding-bottom: 8px;
 }
 
 /*----------[ Notifications ]-----------------------------------------------*/

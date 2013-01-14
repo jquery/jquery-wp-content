@@ -93,7 +93,7 @@ function jq_updated_plugins( $total = 10 ) {
 	$added = array();
 	$updated_plugins = new WP_Query( $updated_plugins_args );
 	if ( $updated_plugins->have_posts() ):
-		echo '<ul>';
+		echo '<ul class="recent-updates">';
 		while ( $updated_plugins->have_posts() ) :
 			$updated_plugins->the_post();
 			$parent_id = $post->post_parent;
@@ -106,7 +106,7 @@ function jq_updated_plugins( $total = 10 ) {
 
 	?>
 		<li>
-			<a href="/<?php echo $parent->post_name . '/' . $post->post_name ?>/"><?php echo $post->post_title; ?></a><br />
+			<a href="/<?php echo $parent->post_name . '/' . $post->post_name ?>/"><?php echo $post->post_title; ?></a><br>
 			(version <?php echo $post->post_name; ?>)
 		</li>
 	<?php
