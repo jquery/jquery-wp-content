@@ -18,48 +18,15 @@ a {
 /*----------[ Notifications ]-----------------------------------------------*/
 
 .notify {
-	background-image: -webkit-gradient(linear, left bottom, left top, from(#eeeaa2), to(#f2efbf));
-	background-image: -moz-linear-gradient(90deg, #eeeaa2 0%, #f2efbf 100%);
-	border-bottom: 1px solid #e4db3e;
-	color: #baa452;
-	text-shadow: 0 1px 0 #ffffff;
+	background: #ffa;
 	font-size: 18px;
-	padding: 20px 3.5% 15px;
-	position: relative;
-}
-
-.notify a {
-	background-color: #c6b372;
-	color: #edf49f;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.19);
-	padding: 2px 4px;
-	border-radius: 3px;
-	text-decoration: none;
-	margin-left: 5px;
-	margin-right: 2px;
+	padding: 20px;
+	text-align: center;
+	margin-bottom: 1em;
 }
 
 .notify p {
 	margin: 0;
-	margin-right: 30px;
-	line-height: .8em;
-}
-
-.notify p i {
-	font-size: 1.9em;
-	margin-right: 5px;
-	position: absolute;
-}
-
-.notify a:hover {
-	background-color: #97894f;
-	color: #fff;
-}
-
-.notify span {
-	margin-left: 40px;
-	display: block;
-	line-height: 24px;
 }
 
 /*----------[ Home page ]---------------------------------------------------*/
@@ -118,29 +85,8 @@ a {
 
 /*----------[ Individual plugin pages ]-------------------------------------*/
 
-#content.jquery-plugin {
-	width: 71%;	/* 71% | 29% */
-}
-
-#content.jquery-plugin h2 {
-	margin-bottom: 15px;
-}
-
-#content.jquery-plugin article {
-	border-bottom: 0;
-}
-
 .jquery-plugin .block {
 	margin-bottom: 1.5em;
-}
-
-.jquery-plugin h1.entry-title, h1.page-title {
-	font: bold 33px/33px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #d18f4f;
-}
-
-.jquery-plugin h1.entry-title {
-	margin: 0 0 .25em; /* 0.25 * 32px = 8px */
 }
 
 .jquery-plugin .block ul,
@@ -150,66 +96,11 @@ a {
 	list-style-type: none;
 }
 
-.jquery-plugin p,
-.jquery-plugin dl,
-.jquery-plugin ol,
-.jquery-plugin ul,
-.jquery-plugin table {
-	margin-bottom: 1.6em; /* 1.6 * 15px = 24px */
-}
-
 .jquery-plugin table {
 	border-radius: 8px;
 }
 
-#content.jquery-plugin .attribution, p.info {
-	float: none;
-	color: #808080;
-	font: bold 13px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-top: -5px;
-}
-
-p.info {
-	margin-top: 0;
-}
-
 /*----------[ Individual plugin page general sidebar styles ]---------------*/
-
-.jquery-plugin .github-activity,
-.jquery-plugin .author-info,
-.jquery-plugin .maintainer-info,
-.jquery-plugin .licenses,
-.jquery-plugin .dependencies {
-	color: #7f7f7f;
-}
-
-.jquery-plugin .github-activity h2,
-.jquery-plugin .author-info h2,
-.jquery-plugin .maintainer-info h2,
-.jquery-plugin .licenses h2,
-.jquery-plugin .dependencies h2 {
-	padding-left: 30px;
-	background: no-repeat left center;
-	text-shadow: 0 1px 0 white;
-}
-
-.jquery-plugin h3 {
-	margin-bottom: 5px;
-	font-size: 1.4em;
-	color: #858585;
-}
-
-.jquery-plugin h2 [class^="icon-"],
-.jquery-plugin h2 [class*=" icon-"] {
-	display: inline-block;
-	margin-left: -30px;
-	margin-right: 6px;
-	width: 24px;
-	background: no-repeat left center;
-	color: #7f7f7f;
-	text-align: center;
-	text-shadow: 0 1px 0 white;
-}
 
 .jquery-plugin .github-activity .box {
 	border-radius: 3px;
@@ -337,9 +228,6 @@ p.info {
 	margin-bottom: 1.2em;
 	border-radius: 5px;
 	border: 1px solid black;
-	 /*1.25 * 16px = 20px*/
-	 /*1.6 * 20px = 32px*/
-
 	color: white;
 	text-shadow: 0 -1px #bc7531, 0 1px #dca977;
 	text-decoration: none;
@@ -439,9 +327,6 @@ p.info {
 /*----------[ Individual plugin page versions table ]-----------------------*/
 
 .jquery-plugin .versions table {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
 	border-collapse: separate;
 	border-spacing: 0;
 	border-style: none;
@@ -546,21 +431,4 @@ p.info {
 	float: right;
 	text-align: right;
 	width: 45%;
-}
-
-/*----------[ Media queries ]-----------------------------------------------*/
-
-@media all and (max-width: 660px) {
-	.notify p {
-		font-size: .8em;
-		line-height: .7em;
-	}
-
-	.notify p i {
-		font-size: 1.8em;
-	}
-
-	.notify a.close {
-		font-size: 1em;
-	}
 }
