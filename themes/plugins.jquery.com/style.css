@@ -419,16 +419,3 @@ a {
 	text-indent: -1.6em;
 	color: #e0e0e0;
 }
-
-/*----------[ Pagination ]--------------------------------------------------*/
-
-.nav-previous {
-	float: left;
-	width: 45%;
-}
-
-.nav-next {
-	float: right;
-	text-align: right;
-	width: 45%;
-}
