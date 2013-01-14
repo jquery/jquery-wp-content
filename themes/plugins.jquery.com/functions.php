@@ -120,6 +120,25 @@ function jq_updated_plugins( $total = 10 ) {
 	wp_reset_postdata();
 }
 
+function jq_popular_tags( $total = 10 ) {
+	$tags = get_tags( array(
+		'orderby' => 'count',
+		'order' => 'DESC',
+		'number' => $total
+	));
+	echo '<ul class="popular-tags">';
+	foreach ( $tags as $tag ) {
+		echo
+			'<li>' .
+				'<a href="' . get_tag_link( $tag->term_id ) . '">' .
+					$tag->name .
+				'</a>' .
+				' <span class="count">(' . $tag->count . ')</span>' .
+			'</li>';
+	}
+	echo '</ul>';
+}
+
 //
 // The functions below (with the jq_release_ prefix) relate to a specific
 // version number release of a plugin

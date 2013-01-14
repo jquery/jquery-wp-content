@@ -11,6 +11,10 @@ a {
 	float: right;
 }
 
+#sidebar .popular-tags a {
+	display: inline-block;
+}
+
 /*----------[ Notifications ]-----------------------------------------------*/
 
 .notify {

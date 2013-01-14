@@ -11,21 +11,7 @@
 		<div class="three columns">
 			<aside class="widget">
 				<h3><i class="icon-tags"></i>Popular Tags</h3>
-				<ul><?php
-					$tags = get_tags( array(
-						'orderby' => 'count',
-						'order' => 'DESC',
-						'number' => 10
-					));
-					foreach ( $tags as $tag ) {
-						echo
-						'<li>' .
-							'<a href="' . get_tag_link( $tag->term_id ) . '">' .
-								$tag->name . '</a>' .
-							' (' . $tag->count . ')' .
-						'</li>';
-					}
-				?></ul>
+				<?php jq_popular_tags(); ?>
 			</aside>
 		</div>
 
