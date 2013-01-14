@@ -1,20 +1,9 @@
-<?php
-/**
- * The template used for displaying page content in page.php
- *
- * @package WordPress
- * @subpackage Twenty_Eleven
- * @since Twenty Eleven 1.0
- */
-?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 	<h1 class="entry-title"><?php the_title(); ?></h1>
 	<p class="attribution">by <?php echo jq_release_author(); ?></p>
 	<div class="block description">
 		<?php the_content(); ?>
-	</div> <!-- /.description -->
+	</div>
 
 	<hr>
 
@@ -22,7 +11,7 @@
 		<div class="block tags">
 			<h2>Tags</h2>
 			<?php echo $keywords; ?>
-		</div> <!-- /.tags -->
+		</div>
 		<hr>
 	<?php } ?>
 
@@ -44,6 +33,5 @@
 			<?php endforeach; ?>
 			</tbody>
 		</table>
-	</div><!-- /.versions -->
-
-</article><!-- #post-<?php the_ID(); ?> -->
+	</div>
+</article>
