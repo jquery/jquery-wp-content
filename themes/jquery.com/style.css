@@ -12,7 +12,8 @@ a,
 	color: #333;
 }
 
-#banner-secondary a {
+#banner-secondary a,
+#banner-secondary a:hover {
 	color: #b3b3b3;
 }
 #banner-secondary h3 {
