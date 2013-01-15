@@ -55,24 +55,14 @@ a,
 	background: url('i/feature-sprites.png') -278px 0px no-repeat;
 }
 
-#banner-secondary p.intro {
-	padding: 0;
-}
 
 #banner-secondary .downloads-box {
 	float: right;
 	width: 40%;
 	text-align: center;
 }
-
 #banner-secondary .downloads-box h2 {
 	color: #71D1FF;
-}
-
-#banner-secondary .downloads-box .button {
-	float: none;
-	display: block;
-	margin-top: 15px;
 }
 #banner-secondary .downloads-box span.download {
 	background: url('i/download.png') 0px 0px;
@@ -112,76 +102,14 @@ a,
 	font-size: 0.4em;
 }
 
-#content .dev-links {
-	float: right;
-	width: 30%;
-	margin: -15px -25px .5em 1em;
-	padding: 1em;
-	border: 1px solid #666;
-	border-width: 0 0 1px 1px;
-	border-radius: 0 0 0 5px;
-	box-shadow: -2px 2px 10px -2px #666;
+#home-content h2 {
+	margin-top:1em;
 }
-
-#content .dev-links ul {
-	margin: 0;
+#home-content h3 {
+	margin-top:1.5em;
 }
-
-#content .dev-links li {
-	padding: 0;
-	margin: .25em 0 .25em 1em;
-	background-image: none;
-}
-
-.demo-list {
-	float: right;
-	width: 25%;
-}
-
-.demo-list h2 {
-	font-weight: normal;
-	margin-bottom: 0;
-}
-
-#content .demo-list ul {
-	width: 100%;
-	border-top: 1px solid #ccc;
-	margin: 0;
-}
-
-#content .demo-list li {
-	border-bottom: 1px solid #ccc;
-	margin: 0;
-	padding: 0;
-	background: #eee;
-}
-
-#content .demo-list .active {
-	background: #fff;
-}
-
-#content .demo-list a {
-	text-decoration: none;
-	display: block;
-	font-weight: bold;
-	font-size: 13px;
-	color: #3f3f3f;
-	text-shadow: 1px 1px #fff;
-	padding: 2% 4%;
-}
-
-.demo-frame {
-	width: 70%;
-	height: 350px;
-}
-
-.view-source a {
-	cursor: pointer;
-}
-
-.view-source > div {
-	overflow: hidden;
-	display: none;
+#home-content h2 + h3 {
+	margin-top: 1em;
 }
 
 @media all and (max-width: 820px) {
