@@ -106,6 +106,13 @@ function menu_header_contribute_jquery_org() {
 	);
 }
 
+function menu_header_irc_jquery_org() {
+	return array(
+		'http://irc.jquery.org/irc-help' => 'IRC Help',
+		'http://jquery.org/meeting/' => 'Meetings',
+	);
+}
+
 /*
  * Avert your eyes.
  */
