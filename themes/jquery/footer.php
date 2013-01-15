@@ -8,13 +8,13 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN</strong>
-					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
 				</div>
 				<div class="download">
-					<strong>Download jQuery 1.8.3:</strong>
+					<strong>Download jQuery 1.9.0:</strong>
 					<span>
-						<a href="http://code.jquery.com/jquery-1.8.3.min.js">Minified <em>(33KB)</em></a>
-						<a href="http://code.jquery.com/jquery-1.8.3.js">Unminified <em>(267KB)</em></a>
+						<a href="http://code.jquery.com/jquery-1.9.0.min.js">Minified <em>(33KB)</em></a>
+						<a href="http://code.jquery.com/jquery-1.9.0.js">Unminified <em>(267KB)</em></a>
 					</span>
 				</div>
 				<ul class="footer-icon-links">
