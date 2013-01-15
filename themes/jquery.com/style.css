@@ -12,11 +12,6 @@ a,
 	color: #333;
 }
 
-
-#banner-secondary {
-	background: #222;
-	position: relative;
-}
 #banner-secondary a {
 	color: #b3b3b3;
 }
@@ -24,16 +19,7 @@ a,
 	color: #7ACEF4;
 	margin-bottom:0.5em;
 }
-#banner-secondary .features-box {
-	width:60%;
-	float: right;
-}
-.feature-box {
-	float:left;
-	width: 33%;
-	text-align: center;
-	padding: 0% 2%;
-}
+
 #banner-secondary .features-box p {
 	font-size: .8em;
 	line-height: 1em;
@@ -45,6 +31,7 @@ a,
 	height: 107px;
 	overflow: hidden;
 }
+
 .lightweight-footprint .feature-box-image {
 	background: url('i/feature-sprites.png') 0px 0px no-repeat;
 }
@@ -55,15 +42,6 @@ a,
 	background: url('i/feature-sprites.png') -278px 0px no-repeat;
 }
 
-
-#banner-secondary .downloads-box {
-	float: right;
-	width: 40%;
-	text-align: center;
-}
-#banner-secondary .downloads-box h2 {
-	color: #71D1FF;
-}
 #banner-secondary .downloads-box span.download {
 	background: url('i/download.png') 0px 0px;
 	width: 44px;
@@ -84,11 +62,10 @@ a,
 	margin-left:5%;
 	margin-bottom:1em;
 }
-#banner-secondary .download-main > a {
-	background: #D18F4F;
-	color: #FFF;
+
+#content #banner-secondary .download-main > a {
 	display:block;
-	padding: 0.1em;
+	padding: 0 0 .5em 0;
 	font-size: 2em;
 	width: 100%;
 	text-align:center;
@@ -96,7 +73,7 @@ a,
 }
 
 
-#banner-secondary .download-main > a  span {
+#banner-secondary .download-main > a span {
 	margin-top: 0.2em;
 	display: block;
 	font-size: 0.4em;
