@@ -104,6 +104,18 @@ function jquery_sites() {
 				),
 			),
 		),
+		'api.jqueryui.com/1.9' => array(
+			'blog_id' => 21,
+			'cookie_domain' => '.jqueryui.com',
+			'body_class' => 'jquery-ui',
+			'options' => array(
+				'blogname' => 'jQuery UI 1.9 Documentation',
+				'stylesheet' => 'api.jqueryui.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
+		),
 		'jquery.org' => array(
 			'blog_id' => 9,
 			'cookie_domain' => '.jquery.org',
