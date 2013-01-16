@@ -19,6 +19,7 @@ function menu_header_plugins_jquery_com() {
 	return array(
 		'http://plugins.jquery.com/docs/names/' => 'Naming Your Plugin',
 		'http://plugins.jquery.com/docs/publish/' => 'Publishing Your Plugin',
+		'http://plugins.jquery.com/docs/package-manifest/' => 'Package Manifest',
 	);
 }
 
