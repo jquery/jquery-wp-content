@@ -181,26 +181,31 @@ a {
 
 .jquery-plugin .toolbox header .version-info {
 	float: left;
-	width: 30%;
+	width: 55%;
 }
 
 .jquery-plugin .toolbox header .release-info {
 	float: right;
-	width: 70%;
+	width: 45%;
 }
 
 .jquery-plugin .toolbox header .release-info {
 	text-align: right;
 }
 
-.jquery-plugin .toolbox header .version-number, .jquery-plugin .toolbox header .date {
-	font: bold 1.25em/1.2em "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+.jquery-plugin .toolbox header .version-number,
+.jquery-plugin .toolbox header .date {
+	font-family: "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .jquery-plugin .toolbox header .version-number {
-	font-size: 1.9em;
+	font-size: 1.8em;
+	line-height: 1em;
 	letter-spacing: -2px;
-	line-height: .9em;
+}
+
+.jquery-plugin .toolbox header .date {
+	line-height: 1.8em;
 }
 
 .jquery-plugin .toolbox .body {
