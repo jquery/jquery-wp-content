@@ -1010,7 +1010,7 @@ iframe {
 #sidebar,
 .sidebar-left,
 .sidebar-right {
-	padding: 20px 20px 20px 35px;
+	padding: 20px;
 	width: 29%;
 }
 
@@ -1974,9 +1974,9 @@ input[type="submit"].dark:hover {
 	font: 20px/18px;
 	background-image: -webkit-gradient(linear, left bottom, right bottom, from(#efefef), to(#f3f3f3));
 	background-image: -moz-linear-gradient(360deg, #efefef 0%, #f3f3f3 100%);
-	margin-left: -35px;
+	margin-left: -20px;
 	margin-right: -20px;
-	padding: 12px 20px 12px 30px;
+	padding: 12px 20px;
 	text-shadow: 0 1px 0 #ffffff;
 }
 
