@@ -16,11 +16,17 @@
 					<span class="inner-wrapper"><span class="icon-download-alt"></span>Download now</span>
 				</a>
 				<a class="other-link gh-fork" href="<?php echo jq_plugin_repo_url(); ?>"><span class="icon-github"></span>Fork on GitHub</a>
-				<a class="other-link view-homepage" href="<?php echo jq_release_homepage(); ?>"><span class="icon-external-link"></span>View Homepage</a>
-				<a class="other-link demo" href="<?php echo jq_release_demo(); ?>"><span class="icon-eye-open"></span>Try a Demo</a>
-				<a class="other-link read-docs" href="<?php echo jq_release_docs(); ?>"><span class="icon-file"></span>Read the Docs</a>
-				<?php if (jq_plugin_bugs_url()): ?>
-				<a class="other-link bugs" href="<?php echo jq_plugin_bugs_url(); ?>"><span class="icon-flag"></span>Bug Reports</a>
+				<?php if ( jq_release_homepage() ) : ?>
+					<a class="other-link view-homepage" href="<?php echo jq_release_homepage(); ?>"><span class="icon-external-link"></span>View Homepage</a>
+				<?php endif; ?>
+				<?php if ( jq_release_demo() ) : ?>
+					<a class="other-link demo" href="<?php echo jq_release_demo(); ?>"><span class="icon-eye-open"></span>Try a Demo</a>
+				<?php endif; ?>
+				<?php if ( jq_release_docs() ) : ?>
+					<a class="other-link read-docs" href="<?php echo jq_release_docs(); ?>"><span class="icon-file"></span>Read the Docs</a>
+				<?php endif; ?>
+				<?php if ( jq_plugin_bugs_url() ): ?>
+					<a class="other-link bugs" href="<?php echo jq_plugin_bugs_url(); ?>"><span class="icon-flag"></span>Bug Reports</a>
 				<?php endif ?>
 			</div>
 		</div>
