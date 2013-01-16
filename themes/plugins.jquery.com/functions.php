@@ -14,6 +14,14 @@ function jq_plugin_repo_url() {
 	return jq_plugin_meta( array( "key" => "repo_url" ) );
 }
 
+function jq_plugin_bugs_url() {
+	$manifest = jq_plugin_manifest();
+	if ( empty( $manifest->bugs ) ) {
+		return false;
+	}
+	return is_string( $manifest->bugs ) ? $manifest->bugs : $manifest->bugs->url;
+}
+
 function jq_plugin_watchers() {
 	return jq_plugin_meta( array( "key" => "watchers" ) );
 }
