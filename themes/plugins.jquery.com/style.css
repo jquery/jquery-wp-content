@@ -126,6 +126,12 @@ a {
 	font: bold 11px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+.jquery-plugin #sidebar li a {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 .jquery-plugin #sidebar .author-info li {
 	background: none;
 	font-size: 18px;
