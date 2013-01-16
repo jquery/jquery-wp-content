@@ -24,26 +24,9 @@
 				'order' => 'DESC'
 			));
 			while ( $new_plugins->have_posts() ) : $new_plugins->the_post();
+				get_template_part( 'content', 'listing' );
+			endwhile; wp_reset_postdata();
 			?>
-				<article class="hentry clearfix">
-					<header class="entry-header">
-						<div class="entry-meta">
-							Updated <?php the_date(); ?>
-						</div>
-						<h3 class="entry-title">
-							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-						</h3>
-					</head>
-					<div class="entry-summary row">
-						<div class="eight columns">
-							<?php the_excerpt(); ?>
-						</div>
-						<div class="four columns">
-							<a class="button" href="<?php the_permalink(); ?>">View Plugin</a>
-						</div>
-					</div>
-				</article>
-			<?php endwhile; wp_reset_postdata(); ?>
 		</div>
 
 		<div class="three columns">

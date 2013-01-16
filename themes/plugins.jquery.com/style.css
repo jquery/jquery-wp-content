@@ -20,6 +20,9 @@ a {
 	padding-bottom: 8px;
 }
 
+.entry-meta {
+	text-align: right;
+}
 /*----------[ Notifications ]-----------------------------------------------*/
 
 .notify {
