@@ -65,6 +65,7 @@
 					<li class="project qunitjs"><a href="http://qunitjs.com/" title="QUnit">QUnit</a></li>
 				</ul>
 				<ul class="links">
+					<li><a href="http://plugins.jquery.com/">Plugins</a></li>
 					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
 						<ul>
 							<li><a href="http://events.jquery.org/2013/eu/">Europe</a></li>
