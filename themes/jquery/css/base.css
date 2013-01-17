@@ -2703,6 +2703,11 @@ footer li img {
 		background-image: none;
 	}
 
+	.content-full.full-width #content {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+
 	#content,
 	.col7-3.col,
 	footer #legal p.copyright,
