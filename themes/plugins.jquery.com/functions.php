@@ -27,7 +27,7 @@ function jq_plugin_watchers() {
 }
 
 function jq_plugin_watchers_url() {
-	return jq_plugin_repo_url() + "/stargazers";
+	return jq_plugin_repo_url() . "/stargazers";
 }
 
 function jq_plugin_forks() {
@@ -35,7 +35,7 @@ function jq_plugin_forks() {
 }
 
 function jq_plugin_forks_url() {
-	return jq_plugin_repo_url() + "/network";
+	return jq_plugin_repo_url() . "/network";
 }
 
 function jq_plugin_versions() {
