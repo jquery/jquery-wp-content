@@ -21,8 +21,8 @@
 				<div class="download">
 					<div><strong>Download jQuery UI 1.10.0 (for jQuery 1.6+):</strong></div>
 					<span>
-						<a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-1.10.0.zip">Development Bundle</a>
-						<a href="https://github.com/downloads/jquery/jquery-ui/jquery-ui-themes-1.10.0.zip">Themes</a>
+						<a href="http://jqueryui.com/resources/download/jquery-ui-1.10.0.zip">Development Bundle</a>
+						<a href="http://jqueryui.com/resources/download/jquery-ui-themes-1.10.0.zip">Themes</a>
 						<a href="http://jqueryui.com/download/">Download Builder →</a>
 					</span>
 				</div>
