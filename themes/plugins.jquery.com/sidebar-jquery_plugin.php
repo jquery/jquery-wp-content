@@ -34,14 +34,14 @@
 
 	<aside class="widget github-activity group">
 		<h3 class="widget-title"><span class="icon-github"></span>GitHub Activity</h3>
-		<div class="info-block watchers">
+		<a href="<?php echo jq_plugin_watchers_url(); ?>" class="info-block watchers">
 			<div class="number"><?php echo jq_plugin_watchers(); ?></div>
 			<div class="caption">Watchers</div>
-		</div>
-		<div class="info-block forks">
+		</a>
+		<a href="<?php echo jq_plugin_forks_url(); ?>" class="info-block forks">
 			<div class="number"><?php echo jq_plugin_forks(); ?></div>
 			<div class="caption">Forks</div>
-		</div>
+		</a>
 	</aside>
 
 	<aside class="widget author-info">
