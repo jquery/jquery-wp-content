@@ -7,6 +7,10 @@ a {
 	color: #0769AD;
 }
 
+#content .entry-summary {
+	clear: both;
+}
+
 #content .entry-summary .button {
 	float: right;
 }
