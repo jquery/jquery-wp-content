@@ -42,7 +42,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jquery.com',
 			'body_class' => 'jquery',
 			'options' => array(
-				'blogname' => 'jQuery Plugins',
+				'blogname' => 'jQuery Plugin Registry',
 				'stylesheet' => 'plugins.jquery.com',
 			),
 		),
