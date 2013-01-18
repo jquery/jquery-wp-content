@@ -202,7 +202,7 @@ function twentyeleven_comment( $comment, $args, $depth ) {
 	?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
 		<article id="comment-<?php comment_ID(); ?>" class="comment">
-			<footer class="comment-meta">
+			<div class="comment-meta">
 				<div class="comment-author vcard">
 					<?php
 						$avatar_size = 68;
@@ -231,7 +231,7 @@ function twentyeleven_comment( $comment, $args, $depth ) {
 					<br />
 				<?php endif; ?>
 
-			</footer>
+			</div>
 
 			<div class="comment-content"><?php comment_text(); ?></div>
 
