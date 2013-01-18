@@ -214,7 +214,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jquery.org',
 			'body_class' => 'jquery-foundation',
 			'options' => array(
-				'blogname' => 'jQuery Branding Guidelines',
+				'blogname' => 'jQuery Brand Guidelines',
 				'stylesheet' => 'brand.jquery.org',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -240,7 +240,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jquery.org',
 			'body_class' => 'jquery-foundation',
 			'options' => array(
-				'blogname' => 'jQuery IRC',
+				'blogname' => 'jQuery IRC Center',
 				'stylesheet' => 'irc.jquery.org',
 				'active_plugins' => array(
 					'jquery-static-index.php',
