@@ -1,0 +1,103 @@
+/*
+Theme Name: jquery-com
+Template: jquery
+*/
+
+
+a,
+.title {
+	color: #B24926;
+}
+#content a:hover {
+	color: #333;
+}
+
+#banner-secondary a,
+#banner-secondary a:hover {
+	color: #b3b3b3;
+}
+#banner-secondary h3 {
+	color: #7ACEF4;
+	margin-bottom:0.5em;
+}
+
+#banner-secondary .features-box p {
+	font-size: .8em;
+	line-height: 1em;
+	padding: 0;
+}
+.features-box .feature-box-image {
+	margin: 0 auto 1em auto;
+	width: 120px;
+	height: 107px;
+	overflow: hidden;
+}
+
+.lightweight-footprint .feature-box-image {
+	background: url('i/feature-sprites.png') 0px 0px no-repeat;
+}
+.css3-compliant .feature-box-image{
+	background: url('i/feature-sprites.png') -139px 0px no-repeat;
+}
+.cross-browser .feature-box-image{
+	background: url('i/feature-sprites.png') -278px 0px no-repeat;
+}
+
+#banner-secondary .downloads-box span.download {
+	background: url('i/download.png') 0px 0px;
+	width: 44px;
+	height:37px;
+	position: relative;
+	top: 1em;
+	display:inline-block;
+	margin-right:0.5em;
+}
+
+#banner-secondary .downloads-box p {
+	margin: 15px 0 5px;
+}
+
+#banner-secondary .download-main {
+	height: 107px;
+	width: 90%;
+	margin-left:5%;
+	margin-bottom:1em;
+}
+
+#content #banner-secondary .download-main > a {
+	display:block;
+	padding: 0 0 .5em 0;
+	font-size: 2em;
+	width: 100%;
+	text-align:center;
+	text-decoration: none;
+}
+
+
+#banner-secondary .download-main > a span {
+	margin-top: 0.2em;
+	display: block;
+	font-size: 0.4em;
+}
+
+#home-content h2 {
+	margin-top:1em;
+}
+#home-content h3 {
+	margin-top:1.5em;
+}
+#home-content h2 + h3 {
+	margin-top: 1em;
+}
+
+@media all and (max-width: 820px) {
+	#banner-secondary .downloads-box {
+		float:none;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	#banner-secondary .features-box {
+		float:none;
+		width:100%;
+	}
+}
