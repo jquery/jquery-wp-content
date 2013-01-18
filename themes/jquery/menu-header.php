@@ -118,6 +118,11 @@ function menu_header_irc_jquery_org() {
  * Avert your eyes.
  */
 
+// Temporary hack to make blogs work since they run outside of jquery-wp-content
+if ( !defined( 'JQUERY_LIVE_SITE' ) ) {
+	define( 'JQUERY_LIVE_SITE', $_SERVER['HTTP_HOST'] );
+}
+
 $site = explode( '/', JQUERY_LIVE_SITE, 2 );
 $domain = explode( '.', $site[0] );
 $path = count( $site ) === 2 ? explode( '/', str_replace( '.', '_', $site[1] ) ) : array();
