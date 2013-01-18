@@ -32,7 +32,6 @@ a,
 	height: 107px;
 	overflow: hidden;
 }
-
 .lightweight-footprint .feature-box-image {
 	background: url('i/feature-sprites.png') 0px 0px no-repeat;
 }
@@ -51,11 +50,9 @@ a,
 	transform: rorate(6.28rad);
 }
 
-
 #content #banner-secondary .downloads-box p {
 	margin: 15px 0 5px;
 }
-
 .download-options,
 .download-help {
 	margin-top: 1em;
@@ -76,7 +73,6 @@ a,
 	box-shadow: 0px 0px 25px rgba(209, 143, 79, 0.9);
 	-webkit-box-shadow: 0px 0px 25px rgba(209, 143, 79, 0.9);
 }
-
 #content #banner-secondary .download-main > a {
 	display:block;
 	padding: 0 0 .5em 0;
@@ -84,9 +80,8 @@ a,
 	width: 100%;
 	text-align:center;
 	text-decoration: none;
+	line-height: 0.8em;
 }
-
-
 #content #banner-secondary .download-main > a span {
 	margin-top: 0.2em;
 	display: block;
@@ -100,26 +95,4 @@ a,
 	top: 1em;
 	display:inline-block;
 	margin-right:0.5em;
-}
-
-#home-content h2 {
-	margin-top:1em;
-}
-#home-content h3 {
-	margin-top:1.5em;
-}
-#home-content h2 + h3 {
-	margin-top: 1em;
-}
-
-@media all and (max-width: 820px) {
-/*	#banner-secondary .downloads-box {
-		float:none;
-		width: 100%;
-		margin-bottom: 1em;
-	}
-	#banner-secondary .features-box {
-		float:none;
-		width:100%;
-	}*/
 }
