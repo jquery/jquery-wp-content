@@ -26,13 +26,12 @@ a,
 	line-height: 1em;
 	padding: 0;
 }
-.features-box .feature-box-image {
+.feature-box-image {
 	margin: 0 auto 1em auto;
 	width: 120px;
 	height: 107px;
 	overflow: hidden;
 }
-
 .lightweight-footprint .feature-box-image {
 	background: url('i/feature-sprites.png') 0px 0px no-repeat;
 }
@@ -41,29 +40,39 @@ a,
 }
 .cross-browser .feature-box-image{
 	background: url('i/feature-sprites.png') -278px 0px no-repeat;
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+.cross-browser .feature-box-image:hover {
+	-webkit-transition: all 0.7s linear;
+	-webkit-transform: rotate(6.28rad);
+        transition: all 0.7s;
+	transform: rorate(6.28rad);
 }
 
-#banner-secondary .downloads-box span.download {
-	background: url('i/download.png') 0px 0px;
-	width: 44px;
-	height:37px;
-	position: relative;
-	top: 1em;
-	display:inline-block;
-	margin-right:0.5em;
-}
-
-#banner-secondary .downloads-box p {
+#content #banner-secondary .downloads-box p {
 	margin: 15px 0 5px;
 }
-
-#banner-secondary .download-main {
-	height: 107px;
-	width: 90%;
-	margin-left:5%;
-	margin-bottom:1em;
+.download-options,
+.download-help {
+	margin-top: 1em;
 }
-
+#banner-secondary .download-options a {
+	display:block;
+}
+#banner-secondary .download-main .button {
+	float: none;
+	box-shadow: 0px 0px 20px rgba(209, 143, 79, 0.6);
+	-webkit-box-shadow: 0px 0px 20px rgba(209, 143, 79, 0.6);
+	border-radius: 0;
+	border: none;
+	-webkit-transition: -webkit-box-shadow 1s linear;
+	transition: all 1s;
+}
+#banner-secondary .download-main .button:hover {
+	box-shadow: 0px 0px 25px rgba(209, 143, 79, 0.9);
+	-webkit-box-shadow: 0px 0px 25px rgba(209, 143, 79, 0.9);
+}
 #content #banner-secondary .download-main > a {
 	display:block;
 	padding: 0 0 .5em 0;
@@ -71,33 +80,19 @@ a,
 	width: 100%;
 	text-align:center;
 	text-decoration: none;
+	line-height: 0.8em;
 }
-
-
-#banner-secondary .download-main > a span {
+#content #banner-secondary .download-main > a span {
 	margin-top: 0.2em;
 	display: block;
 	font-size: 0.4em;
 }
-
-#home-content h2 {
-	margin-top:1em;
-}
-#home-content h3 {
-	margin-top:1.5em;
-}
-#home-content h2 + h3 {
-	margin-top: 1em;
-}
-
-@media all and (max-width: 820px) {
-	#banner-secondary .downloads-box {
-		float:none;
-		width: 100%;
-		margin-bottom: 1em;
-	}
-	#banner-secondary .features-box {
-		float:none;
-		width:100%;
-	}
+#content #banner-secondary .download-main > a span.download {
+	background: url('i/download.png') 0px 0px;
+	width: 44px;
+	height:37px;
+	position: relative;
+	top: 1em;
+	display:inline-block;
+	margin-right:0.5em;
 }
