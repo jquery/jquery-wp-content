@@ -2,7 +2,7 @@
 	<h1 class="entry-title"><?php the_title(); ?></h1>
 	<p class="attribution">by <?php echo jq_release_author(); ?></p>
 	<div class="block description">
-		<?php the_content(); ?>
+		<?php echo htmlspecialchars(get_the_content()); ?>
 	</div>
 
 	<hr>
