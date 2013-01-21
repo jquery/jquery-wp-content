@@ -96,3 +96,15 @@ a,
 	display:inline-block;
 	margin-right:0.5em;
 }
+
+/* Browser Support */ 
+
+#support-matrix {
+	width: 100%;
+	margin: 0 auto 1em;
+}
+
+#support-matrix td {
+	text-align: center;
+}
+
