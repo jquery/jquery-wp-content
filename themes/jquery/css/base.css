@@ -1479,6 +1479,7 @@ nav#main .searchform input:focus {
 
 .no-boxshadow nav#main .searchform input {
 	background: #fff;
+	color: #333;
 }
 
 /*
