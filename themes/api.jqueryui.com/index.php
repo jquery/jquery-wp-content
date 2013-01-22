@@ -12,6 +12,7 @@
 	$latestVersion = key( $versions );
 	$thisVersion = explode( "/", JQUERY_LIVE_SITE );
 	$thisVersion = $thisVersion[1];
+	$rootUrl = $thisVersion === $latestVersion ? '' : "/$thisVersion";
 ?>
 
 <div class="content-right twelve columns">
@@ -29,7 +30,7 @@
 			to find out more about upgrading.</p>
 
 		<p>To get started, use the search at the top of the page, view the
-			<a href="/category/all/">full listing of entries</a>, or browse by
+			<a href="<?php echo "$rootUrl/category/all"; ?>">full listing of entries</a>, or browse by
 			category from the sidebar.</p>
 
 		<p>jQuery UI <?php echo $thisVersion; ?>
