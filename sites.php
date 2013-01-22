@@ -99,9 +99,7 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.8 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				// 'active_plugins' => array(
-				// 	'jquery-static-index.php',
-				// ),
+				'active_plugins' => array(),
 			),
 		),
 		'api.jqueryui.com/1.9' => array(
@@ -111,9 +109,7 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.9 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				// 'active_plugins' => array(
-				// 	'jquery-static-index.php',
-				// ),
+				'active_plugins' => array(),
 			),
 		),
 		'jquery.org' => array(
