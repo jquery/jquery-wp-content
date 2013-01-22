@@ -10,7 +10,7 @@
 	);
 
 	$latestVersion = key( $versions );
-	$thisVersion = explode( "/", JQUERY_LIVE_SITE )[1];
+	$thisVersion = end( explode( "/", JQUERY_LIVE_SITE ) );
 ?>
 
 <div class="content-right twelve columns">
