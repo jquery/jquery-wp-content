@@ -4,7 +4,7 @@
 <footer class="clearfix simple">
 	<div class="constrain">
 		<div class="row">
-			<div class="five columns">
+			<div class="eight columns">
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN</strong>
@@ -25,26 +25,6 @@
 			</div>
 
 			<div class="four columns">
-				<h3><span>Presentations</span></h3>
-				<ul class="presentations">
-					<li>
-						<a href="http://addyosmani.com/blog/building-spas-jquerys-best-friends/">
-							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/building-spas-jquerys-best-friends.jpg" alt="Building Single Page Applications With jQuery's Best Friends by Addy Osmani" width="142" height="92" /></span>
-							<strong>Building Single Page Applications With jQuery's Best Friends</strong><br />
-							<cite>Addy Osmani</cite>
-						</a>
-					</li>
-					<li>
-						<a href="http://addyosmani.com/jqprovenperformance/">
-							<span><img src="<?php echo get_template_directory_uri(); ?>/content/presentations/addyosmani-2.jpg" alt="jQuery Performance Tips &amp; Tricks by Addy Osmani" width="142" height="92" /></span>
-							<strong>jQuery Performance<br />Tips &amp; Tricks</strong><br />
-							<cite>Addy Osmani</cite>
-						</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="three columns">
 				<h3><span>Books</span></h3>
 				<ul class="books">
 					<li>
