@@ -97,6 +97,14 @@ a,
 	margin-right:0.5em;
 }
 
+#sidebar {
+	padding-top: 0;
+}
+
+#sidebar li a {
+	display: inline;
+}
+
 /* Browser Support */ 
 
 #support-matrix {
@@ -107,4 +115,3 @@ a,
 #support-matrix td {
 	text-align: center;
 }
-
