@@ -1876,7 +1876,8 @@ p.author a {
 	padding-right: 15%;
 }
 
-#banner-secondary a {
+#banner-secondary a,
+#banner-secondary a:hover {
 	color: #7ACEF4;
 }
 
