@@ -66,7 +66,7 @@
 				<li><a class="icon-group" href="http://forum.jquery.com/">Forum</a></li>
 				<li><a class="icon-wrench" href="http://api.jquery.com/">API</a></li>
 				<li><a class="icon-twitter" href="http://twitter.com/jquery">Twitter</a></li>
-				<li><a class="icon-comments" href="http://irc.jquery.com/">IRC</a></li>
+				<li><a class="icon-comments" href="http://irc.jquery.org/">IRC</a></li>
 			</ul>
 			<p class="copyright">
 				Copyright <?php echo date('Y'); ?> <a href="http://jquery.org/team/">The jQuery Foundation</a>.<br>

@@ -76,7 +76,7 @@
 					</li>
 					<li class="dropdown"><a href="#">Support</a>
 						<ul>
-							<li><a href="http://irc.jquery.com/">IRC/Chat</a></li>
+							<li><a href="http://irc.jquery.org/">IRC/Chat</a></li>
 							<li><a href="http://forum.jquery.com/">Forums</a></li>
 							<li><a href="http://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
 						</ul>
