@@ -8,9 +8,10 @@
 
 function menu_header_jquery_com() {
 	return array(
-		'http://plugins.jquery.com/' => 'Plugins',
 		'http://jquery.com/download/' => 'Download',
 		'http://api.jquery.com/' => 'API Documentation',
+		'http://blog.jquery.com/' => 'Blog',
+		'http://plugins.jquery.com/' => 'Plugins',
 		'http://jquery.com/browser-support/' => 'Browser Support',
 	);
 }
