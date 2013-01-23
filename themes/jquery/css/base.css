@@ -1373,6 +1373,40 @@ h2.logo a {
 	background: url(../images/logo-jquery-foundation.png) no-repeat;
 }
 
+.logo.small {
+  height: 30px;
+  background: url('../images/projectlogosfull-small.png') no-repeat;
+}
+
+.jquery.logo.small {
+  width:109px;
+  background-position: -0px 0px;
+}
+.jquery-foundation.logo.small {
+  width: 109px;
+  background-position: -109px 0px;
+}
+.jquery-events.logo.small {
+  width: 109px;
+  background-position: -218px 0px;
+}
+.jqueryui.logo.small {
+  width: 114px;
+  background-position: -327px 0px;
+}
+.jquery-mobile.logo.small {
+  width: 122px;
+  background-position: -441px 0px;
+}
+.qunitjs.logo.small {
+  width: 105px;
+  background-position: -563px 0px;
+}
+.sizzlejs.logo.small {
+  width: 105px;
+  background-position: -668px 0px;
+}
+
 #logo-events aside {
 	float: right;
 }

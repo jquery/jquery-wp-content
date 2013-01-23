@@ -132,6 +132,16 @@ a,
 	background-position-y: -240px;
 }
 
+/* Project Tiles */
+
+.project-tile {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+.project-tile a {
+  color: #FFF;
+}
 
 /* Browser Support */ 
 
