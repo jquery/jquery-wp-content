@@ -12,6 +12,8 @@ a,
 	color: #333;
 }
 
+/* Home Page */
+
 #banner-secondary a,
 #banner-secondary a:hover {
 	color: #b3b3b3;
@@ -26,6 +28,7 @@ a,
 	line-height: 1em;
 	padding: 0;
 }
+
 .feature-box-image {
 	margin: 0 auto 1em auto;
 	width: 120px;
@@ -99,11 +102,36 @@ a,
 
 #sidebar {
 	padding-top: 0;
+	margin-bottom: 20px;
 }
 
 #sidebar li a {
 	display: inline;
 }
+
+#content #whos-using li {
+	background: none;
+}
+
+#whos-using li a {
+	background: url('i/whos-using-sprite.png') 0px 0px no-repeat;
+	display: block;
+	height: 80px;
+	text-indent: -9999px;
+}
+
+#whos-using li a.mediatemple {
+	background-position-y: -80px;
+}
+
+#whos-using li a.backbone {
+	background-position-y: -160px;
+}
+
+#whos-using li a.wikipedia {
+	background-position-y: -240px;
+}
+
 
 /* Browser Support */ 
 
