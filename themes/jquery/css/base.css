@@ -1156,7 +1156,7 @@ iframe {
 	width: 42px;
 	padding: 0;
 	height: 33px;
-	text-indent: -1000px;
+	text-indent: -9999px;
 	background: url(../images/jq-nav-icons.png) -6px 0;
 	z-index: 10;
 }
