@@ -45,6 +45,8 @@ a,
 	background: url('i/feature-sprites.png') -278px 0px no-repeat;
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
+	position: relative;
+	z-index: 10;
 }
 .cross-browser .feature-box-image:hover {
 	-webkit-transition: all 0.7s linear;
