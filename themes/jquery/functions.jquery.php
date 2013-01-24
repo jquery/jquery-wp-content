@@ -121,10 +121,8 @@ function jq_page_links_for_category( $category ) {
 }
 
 function jq_get_github_url() {
-    global $post;
-    $source_path = get_post_meta( $post->ID, "source_path" );
-    $github_prefix = 'https://github.com/jquery/' . get_stylesheet() . '/tree/master/' . $source_path[0];
-    return $github_prefix;
+	global $post;
+	$source_path = get_post_meta( $post->ID, "source_path" );
+	$github_prefix = 'https://github.com/jquery/' . get_stylesheet() . '/tree/master/' . $source_path[0];
+	return $github_prefix;
 }
-
-?>
