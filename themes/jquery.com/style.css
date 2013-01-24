@@ -125,15 +125,15 @@ a,
 }
 
 #whos-using li a.mediatemple {
-	background-position-y: -80px;
+	background-position: 0 -80px;
 }
 
 #whos-using li a.backbone {
-	background-position-y: -160px;
+	background-position: 0 -160px;
 }
 
 #whos-using li a.wikipedia {
-	background-position-y: -240px;
+	background-position: 0 -240px;
 }
 
 /* Project Tiles */
