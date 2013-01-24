@@ -18,3 +18,11 @@ a {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+
+.github-feedback {
+	margin-top: 1.5em;
+}
+
+.icon-github {
+	color: #FFF;
+}
