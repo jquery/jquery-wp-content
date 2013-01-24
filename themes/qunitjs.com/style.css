@@ -18,3 +18,15 @@ a {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+
+footer .button.dark i{
+	color: #FFF;
+}
+
+footer .button.dark {
+	float: none;
+	width: 80%;
+	display: inline-block;
+	margin-left: 10%;
+	text-align: center;
+}
