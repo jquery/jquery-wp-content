@@ -27,9 +27,9 @@ a,
 }
 
 #banner-large-image {
-    margin-right: -40px;
-        margin-left: -40px;
-        margin-top: -40px;
+    margin-right: -25px;
+        margin-left: -25px;
+        margin-top: -25px;
         height: 360px;
         background: url(images/header-join-page.jpg) no-repeat center;
         background-size: cover;
