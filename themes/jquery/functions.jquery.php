@@ -126,3 +126,19 @@ function jq_get_github_url() {
 	$github_prefix = 'https://github.com/jquery/' . get_stylesheet() . '/tree/master/' . $source_path[0];
 	return $github_prefix;
 }
+
+function jq_content_nav() {
+	global $wp_query;
+
+	if ( $wp_query->max_num_pages == 1 ) {
+		return '';
+	}
+
+	$big = 999999999;
+	return '<div class="pagination">' . paginate_links( array(
+		'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+		'format' => '?paged=%#%',
+		'current' => max( 1, get_query_var('paged') ),
+		'total' => $wp_query->max_num_pages
+	)) . '</div>';
+}

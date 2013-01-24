@@ -22,7 +22,7 @@
 			endwhile;
 		?>
 
-		<?php twentyeleven_content_nav( 'nav-below' ); ?>
+		<?php echo jq_content_nav(); ?>
 
 	<?php else : ?>
 

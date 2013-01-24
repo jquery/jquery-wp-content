@@ -2518,6 +2518,16 @@ footer li img {
 	text-decoration: none;
 }
 
+.pagination {
+	text-align: center;
+	margin-top: 2em;
+}
+
+.page-numbers {
+	padding: 0 10px;
+}
+
+
 
 /* API Sites
 ========================================================================== */

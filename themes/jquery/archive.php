@@ -25,7 +25,7 @@
 			endwhile;
 		?>
 
-		<?php twentyeleven_content_nav( 'nav-below' ); ?>
+		<?php echo jq_content_nav(); ?>
 	<?php else : ?>
 		<article id="post-0" class="post no-results not-found">
 			<header class="entry-header">
