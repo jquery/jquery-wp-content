@@ -82,6 +82,7 @@
 							<li><a href="http://events.jquery.org/2013/eu/">Europe</a></li>
 							<li><a href="http://jqueryto.com">Toronto</a></li>
 							<li><a href="http://events.jquery.org/2013/uk/">UK</a></li>
+							<li><a href="http://events.jquery.org/2013/portland/">Portland</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="#">Support</a>
