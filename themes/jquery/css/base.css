@@ -2211,6 +2211,8 @@ footer .footer-icon-links li:hover a:before {
 	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../images/bg-footer-noise.jpg); /* FF3.6 */
 	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(0,0,0,0.3)),color-stop(1, rgba(0,0,0,0.0))), url(../images/bg-footer-noise.jpg); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../images/bg-footer-noise.jpg); /* Chrome 10+, Saf6 */
+	background-image: -o-linear-gradient(top, rgba(0,0,0,.3), rgba(0,0,0,0)), url(../images/bg-footer-noise.jpg); /* Opera 11.10-12.00 */
+	background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)), url(../images/bg-footer-noise.jpg); /* Firefox 16+, IE 10+, Opera 12.50+ */
 	background-repeat: repeat-x, repeat;
 	background-size: 100px 15px, 140px 140px;
 }
