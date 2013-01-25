@@ -3,6 +3,12 @@
  * Plugin Name: Post Type - jQuery Plugin
  */
 
+// Prevent default redirects
+// https://github.com/jquery/plugins.jquery.com/issues/108
+add_filter( 'redirect_canonical', function ( $redirect_url ) {
+	return is_404() ? false : $redirect_url;
+});
+
 // Create custom post type: jquery_plugin
 function post_type_jquery_plugin_init() {
 	register_post_type( 'jquery_plugin', array(
