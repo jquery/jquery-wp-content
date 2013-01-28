@@ -11,11 +11,7 @@
 					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
 				</div>
 				<div class="download">
-					<strong>Download jQuery 1.9.0:</strong>
-					<span>
-						<a href="http://code.jquery.com/jquery-1.9.0.min.js">Minified <em>(33KB)</em></a>
-						<a href="http://code.jquery.com/jquery-1.9.0.js">Unminified <em>(267KB)</em></a>
-					</span>
+					<strong><a href="http://jquery.com/download/">Download jQuery 1.9.0 →</a></strong>
 				</div>
 				<ul class="footer-icon-links">
 					<li><a class="icon-github" href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
