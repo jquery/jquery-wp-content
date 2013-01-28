@@ -88,9 +88,8 @@ a,
 	line-height: 0.8em;
 }
 #content #banner-secondary .download-main > a span {
-	margin-top: 0.2em;
 	display: block;
-	font-size: 0.4em;
+	font-size: 0.6em;
 }
 #content #banner-secondary .download-main > a span.download {
 	background: url('i/download.png') 0px 0px;
