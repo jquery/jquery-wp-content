@@ -176,6 +176,11 @@ a {
 	border-radius: 4px;
 }
 
+.jquery-plugin #sidebar [class^="icon-"],
+.jquery-plugin #sidebar [class*=" icon-"] {
+	margin-right: 7px;
+}
+
 /*----------[ Individual plugin page sidebar toolbox ]----------------------*/
 
 .jquery-plugin .toolbox {
@@ -279,7 +284,6 @@ a {
 
 .jquery-plugin .toolbox [class^="icon-"], .jquery-plugin .toolbox [class*=" icon-"] {
 	margin-left: -25px;
-	margin-right: 7px;
 	width: 25px;
 	color: #8ccffa;
 	text-decoration: none;
