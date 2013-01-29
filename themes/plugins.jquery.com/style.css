@@ -148,6 +148,10 @@ a {
 	font: bold 11px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+.jquery-plugin #sidebar .github-activity a:hover {
+	text-decoration: none;
+}
+
 .jquery-plugin #sidebar li a {
 	overflow: hidden;
 	white-space: nowrap;

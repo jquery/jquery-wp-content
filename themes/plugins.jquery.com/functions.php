@@ -26,8 +26,16 @@ function jq_plugin_watchers() {
 	return jq_plugin_meta( array( "key" => "watchers" ) );
 }
 
+function jq_plugin_watchers_url() {
+	return jq_plugin_repo_url() . "/stargazers";
+}
+
 function jq_plugin_forks() {
 	return jq_plugin_meta( array( "key" => "forks" ) );
+}
+
+function jq_plugin_forks_url() {
+	return jq_plugin_repo_url() . "/network";
 }
 
 function jq_plugin_versions() {
