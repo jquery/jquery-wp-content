@@ -2,7 +2,7 @@
 
 This is a set of plugins, themes, and configuration files for jQuery's website infrastructure, which is powered by WordPress. It is designed as a custom content directory. So think of `jquery-wp-content` as your `wp-content` directory.
 
-## Prerequisites 
+## Prerequisites
 
 This install guide assumes you already have certain prerequisites already configured within your environment.
 
@@ -14,72 +14,71 @@ This install guide assumes you already have certain prerequisites already config
 
 1. Configure your local webserver with a virtual host that covers the relevant jQuery domains, such as `*.jquery.com` and `*.jqueryui.com`, all pointing to the same root. For example, in Apache:
 
-    ```
-    <VirtualHost *:80>
-    ServerName local.jquery.com
-    ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
-    DocumentRoot "/srv/www/jquery"
-      <Directory /srv/www/jquery>
-         Options All
-         AllowOverride All
-         Order allow,deny
-         Allow from all
-      </Directory>
-    </VirtualHost>
-    ```
+	```
+	<VirtualHost *:80>
+	ServerName local.jquery.com
+	ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
+	DocumentRoot "/srv/www/jquery"
+		<Directory /srv/www/jquery>
+			Options All
+			AllowOverride All
+			Order allow,deny
+			Allow from all
+		</Directory>
+	</VirtualHost>
+	```
 
-    You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
+	You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
 
 1. Place the WordPress core files in the document root you chose. (Don't install it.) You can do this any number of ways:
-
-    <ul>
-      <li>Download the latest version from http://wordpress.org/latest.zip</li>
-      <li>Check out the latest tag from http://core.svn.wordpress.org/tags/</li>
-      <li>Clone the official WordPress Github mirror at http://github.com/wordpress/wordpress/</li>
-    </ul>
+	* Download the latest version from http://wordpress.org/latest.zip
+	* Check out the latest tag from http://core.svn.wordpress.org/tags/
+	* Clone the official WordPress Github mirror at http://github.com/wordpress/wordpress/
 
 1. Clone `jquery-wp-content` into place, so you have a file tree that looks like this:
 
-    ```
-    index.php
-    jquery-wp-content/
-    license.txt
-    readme.html
-    wp-activate.php
-    ...
-    ```
+	```
+	index.php
+	jquery-wp-content/
+	license.txt
+	readme.html
+	wp-activate.php
+	...
+	```
 
 1. Copy `jquery-wp-content/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
 
 1. Create an .htaccess file with the following content into that same document root:
 
-    ```
-    RewriteEngine On
-    RewriteBase /
-    RewriteRule ^index\.php$ - [L]
+	```
+	RewriteEngine On
+	RewriteBase /
+	RewriteRule ^index\.php$ - [L]
 
-    RewriteRule ^resources/?$ index.php [L]
-    RewriteRule ^resources/(.+) gw-resources/%{HTTP_HOST}/$1 [L]
+	RewriteRule ^resources/?$ index.php [L]
+	RewriteRule ^resources/(.+) gw-resources/%{HTTP_HOST}/$1 [L]
 
-    # Add a trailing slash to the wp-admin of a subsite.
-    RewriteRule ^([_0-9a-zA-Z\.-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
+	# Add a trailing slash to the wp-admin of a subsite.
+	RewriteRule ^([_0-9a-zA-Z\.-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 
-    RewriteCond %{REQUEST_FILENAME} -f [OR]
-    RewriteCond %{REQUEST_FILENAME} -d
-    RewriteRule ^ - [L]
+	RewriteCond %{REQUEST_FILENAME} -f [OR]
+	RewriteCond %{REQUEST_FILENAME} -d
+	RewriteRule ^ - [L]
 
-    # Handle wp-admin, wp-includes, and root PHP files for subsites.
-    RewriteRule  ^[_0-9a-zA-Z\.-]+/((wp-admin|wp-includes).*) $1 [L]
-    RewriteRule  ^[_0-9a-zA-Z\.-]+/(.*\.php)$ $1 [L]
+	# Handle wp-admin, wp-includes, and root PHP files for subsites.
+	RewriteRule  ^[_0-9a-zA-Z\.-]+/((wp-admin|wp-includes).*) $1 [L]
+	RewriteRule  ^[_0-9a-zA-Z\.-]+/(.*\.php)$ $1 [L]
 
-    RewriteRule . index.php [L]
-    ```
-1. Make sure that you have assigned your WordPress files and directories the correct permissions.  
+	RewriteRule . index.php [L]
+	```
+
+1. Make sure that you have assigned your WordPress files and directories the correct permissions.
 For example, if your WordPress files are in the directory ```wordpress```, and you are running Apache under Mac OS X with the ```_www``` user:
-    ```
-    sudo chown -R _www wordpress
-    sudo chmod -R g+w wordpress
-    ```
+
+	```
+	sudo chown -R _www wordpress
+	sudo chmod -R g+w wordpress
+	```
 
 1. Go to `http://local.jquery.com` and walk through the standard WordPress installation. `jquery-wp-content` includes a special install script that will initialize the entire network.
 
