@@ -49,7 +49,6 @@ function menu_header_jquerymobile_com() {
 		'http://jquerymobile.com/gbs/' => 'Platforms',
 		'http://jquerymobile.com/themeroller/' => 'Themes',
 		'http://jquerymobile.com/resources/' => 'Resources',
-		'http://forum.jquery.com/jquery-mobile' => 'Forum',
 		'http://blog.jquerymobile.com/' => 'Blog',
 	);
 }
