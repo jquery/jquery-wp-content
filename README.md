@@ -91,22 +91,22 @@ Changes pushed to master will be pulled onto the stage domain.
 
 Copyright 2012 jQuery Foundation and other contributors. All rights reserved.
 
-The jquery-wp-content repository contains themes for rendering all jQuery Foundation web sites.
+The `jquery-wp-content` repository contains themes for rendering all jQuery Foundation web sites.
 
 ### What is licensed
 
-The contents of these web sites are all available under terms of the MIT license ( http://jquery.org/license ).
+The contents of the web sites that run on top of `jquery-wp-content` are all available under the terms of the MIT license ( http://jquery.org/license ).
 
 Special exception: Code samples are given away for you to freely use, for any purpose. For code samples in API sites
 and Learn articles (unlike the source code of jQuery projects) you don't even have to say where you got the code from.
 Just use it.
 
-The PHP files in the jquery-wp-content repository are a derivative work of WordPress, and available under the
-terms of the GPL license ( http://codex.wordpress.org/License )
+The PHP files in the `jquery-wp-content` repository are a derivative work of WordPress, and available under the
+terms of the GPL license ( http://codex.wordpress.org/License ).
 
 ### What is not licensed
 
-The theme, design, layout, look-and-feel of the jquery-wp-content repository, including all html, css, images, and
-icons, is not licensed for use. Not by the MIT license or any other license. It is copyrighted. You don't have
-permission to use it in any way for any purpose, commercial or otherwise. If you have questions about this, please
-ask a member of the jQuery Content Team.
+The design, layout, and look-and-feel of the `jquery-wp-content` repository, including all CSS, images, and
+icons, are copyright jQuery Foundation, Inc. and are not licensed for use. Designs and CSS from `jquery-wp-content` may not be used on any site, personal or commerical, without prior written consent from the jQuery Foundation. `jquery-wp-content` contains CSS, images, and icons that are copyrighted by other individuals; those items are licensed under their original terms.
+
+The only permitted (and encouraged) exception to "use" is the case of cloning/forking this repository in order to create a local development environment to facilitate making contributions to jQuery Foundation websites.
