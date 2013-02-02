@@ -1363,6 +1363,7 @@ iframe {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
+	display: block;
 }
 
 #global-nav nav ul li ul {
