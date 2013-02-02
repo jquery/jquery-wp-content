@@ -30,20 +30,29 @@ This install guide assumes you already have certain prerequisites already config
 
 	You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
 
-1. Place the WordPress core files in the document root you chose. (Don't install it.) You can do this any number of ways:
+1. Place the WordPress core files **at** the document root you chose. For example, if you used `/srv/www/jquery`, you should unzip or clone WordPress directly into that directory, *not* a directory below it. **Do not install WordPress.** You can do this any number of ways:
 	* Download the latest version from http://wordpress.org/latest.zip
 	* Check out the latest tag from http://core.svn.wordpress.org/tags/
 	* Clone the official WordPress Github mirror at http://github.com/wordpress/wordpress/
 
-1. Clone `jquery-wp-content` into place, so you have a file tree that looks like this:
+1. Clone `jquery-wp-content` inside of the directory where you put WordPress, so you have a file tree that looks like this:
 
 	```
-	index.php
-	jquery-wp-content/
-	license.txt
-	readme.html
-	wp-activate.php
-	...
+	├── jquery
+	│   ├── gw-resources
+	│   ├── index.php
+	│   ├── jquery-wp-content
+	│   ├── license.txt
+	│   ├── readme.html
+	│   ├── web-base-template
+	│   ├── wp-activate.php
+	│   ├── wp-admin
+	│   ├── wp-blog-header.php
+	│   ├── wp-comments-post.php
+	│   ├── wp-config-sample.php
+	│   ├── wp-content
+	│   ├── ...
+	│   └── xmlrpc.php
 	```
 
 1. Copy `jquery-wp-content/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
