@@ -1337,7 +1337,6 @@ iframe {
 	float: left;
 	position: relative;
 	top: 1px;
-	padding: 8px 12px;
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
@@ -1363,6 +1362,8 @@ iframe {
 	font-weight: normal;
 	font-style: normal;
 	text-decoration: none;
+	display: block;
+	padding: 8px 12px;
 }
 
 #global-nav nav ul li ul {
