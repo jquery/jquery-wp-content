@@ -1178,6 +1178,13 @@ ul.icons li [class*=" icon-"] {
 	padding-left: 0;
 }
 
+h2 [class^="icon-"],
+h2 [class*=" icon-"],
+h3 [class^="icon-"],
+h3 [class*=" icon-"] {
+	margin-right: 7px;
+}
+
 /* Global Structure
    ========================================================================== */
 
