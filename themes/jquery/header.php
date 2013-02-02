@@ -98,7 +98,8 @@
 							<li><a href="http://jquery.org/history/">History</a></li>
 							<li><a href="http://jquery.org/team/">Team</a></li>
 							<li><a href="http://jquery.org/sponsors/">Sponsors</a></li>
-							<li><a href="http://jquery.org/donate/" >Donate</a></li>
+							<li><a href="http://jquery.org/donate/">Donate</a></li>
+							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
 						</ul>
 					</li>
 				</ul>
