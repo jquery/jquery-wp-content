@@ -147,3 +147,11 @@ a,
 		overflow: auto;
 	}
 }
+
+@media only screen and (max-width: 480px) {
+	#content .dev-links {
+		width: 55%;
+		margin: -15px -29px .5em 1em;
+		overflow: hidden;
+	}
+}
