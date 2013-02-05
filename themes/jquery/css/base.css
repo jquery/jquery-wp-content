@@ -3188,6 +3188,10 @@ footer li img {
 	footer .footer-icon-links li:first-child {
 		margin-left: 0;
 	}
+	
+	footer .download > span {
+		white-space: normal;
+	}
 }
 
 @media only screen and (-webkit-device-pixel-ratio: 2){
