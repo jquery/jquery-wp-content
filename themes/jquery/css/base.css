@@ -3162,7 +3162,10 @@ footer li img {
 		padding-right: 10px;
 	}
 
-	.content-full #content {
+	.content-full #content, 
+	.content-full.full-width #content,
+	.content-right #content,
+	.content-left #content {
 		padding-left: 0;
 		padding-right: 0;
 	}
