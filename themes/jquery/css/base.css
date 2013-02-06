@@ -3006,6 +3006,11 @@ footer li img {
 		clear: both;
 	}
 
+	#banner-secondary {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
 	footer #legal ul.footer-site-links {
 		display: inline;
 		text-align: center !important;
@@ -3106,6 +3111,8 @@ footer li img {
 	#banner-secondary {
 		border-top-left-radius: 9px;
 		border-top-right-radius: 9px;
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 
 	#banner-secondary h2 {
@@ -3175,7 +3182,6 @@ footer li img {
 		padding-right: 25px;
 	}
 
-	#banner-secondary,
 	#content pre {
 		margin-left: -25px;
 		margin-right: -25px;
@@ -3192,6 +3198,11 @@ footer li img {
 		margin-right: 0;
 	}
 
+	#banner-secondary {
+		margin-left: -25px;
+		margin-right: -25px;
+
+	}
 	footer .footer-icon-links li a:before {
 		display: none;
 	}
