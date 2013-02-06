@@ -3148,6 +3148,14 @@ footer li img {
 }
 
 @media only screen and (max-width: 480px) {
+	#global-nav nav {
+		height: 68px;
+	}
+	
+	#global-nav nav ul {
+		border-right: none;
+	}
+	
 	.constrain,
 	#container {
 		padding-left: 10px;
