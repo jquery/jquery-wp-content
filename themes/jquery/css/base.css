@@ -2946,6 +2946,9 @@ footer li img {
 	margin: 0;
 }
 
+#entry-longdesc .longdesc p {
+	line-height: 1.7em;
+}
 
 /* Media Queries
    ========================================================================== */
