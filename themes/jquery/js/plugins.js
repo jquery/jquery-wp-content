@@ -59,7 +59,8 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 /* Stripe
  * https://checkout.stripe.com/v2/checkout.js
  */
-(function() {
+// Temporary hack to make Stripe not load except where we might actually use it.
+window.location.protocol === "https:" && (function() {
 
   this.StripeCheckout = {};
 
