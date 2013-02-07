@@ -160,7 +160,9 @@ $(function() {
 * TinyNav
 */
 $(function() {
-	$('#menu-top').tinyNav();
+	$('#menu-top').tinyNav({
+		header: "Navigate"
+	});
 	// Use tinyNav and then move the generated control to the site footer
 	var $globalLinks = $("#global-nav .links").tinyNav({
 		header: "Browse"
