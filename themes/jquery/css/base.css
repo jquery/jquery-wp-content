@@ -1335,6 +1335,7 @@ iframe {
 }
 
 .tinynav-container { display: none }
+.tinynav { display: none }
 
 #global-nav nav ul.links {
 	float: right;
@@ -3165,11 +3166,15 @@ footer li img {
 	.tinynav-container {
 		display: block;
 	}
+	
+	#menu-top {
+		display: none;
+	}
 
 	.tinynav {
 		display: block;
 		width: 80%;
-		margin: 0 auto;
+		margin: 0 auto 30px;
 		position: relative;
 		top: 6px;
 		left: 0px;
