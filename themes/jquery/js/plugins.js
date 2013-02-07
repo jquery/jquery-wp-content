@@ -56,11 +56,13 @@ window.matchMedia=window.matchMedia||(function(e,f){var c,a=e.documentElement,b=
 
 
 
+
+// Temporary hack to make Stripe not load except where we might actually use it.
+if (window.location.protocol === "https:") {
 /* Stripe
  * https://checkout.stripe.com/v2/checkout.js
  */
-// Temporary hack to make Stripe not load except where we might actually use it.
-window.location.protocol === "https:" && (function() {
+(function() {
 
   this.StripeCheckout = {};
 
@@ -1370,3 +1372,4 @@ if (!JSON) {
   })();
 
 }).call(this);
+}
