@@ -3077,9 +3077,9 @@ footer li img {
 		box-shadow: none;
 	}
 
-	nav#main .searchform {
+	/*nav#main .searchform {
 		display: none;
-	}
+	}*/
 
 	nav#main ul {
 		width: 100% !important;
@@ -3104,6 +3104,10 @@ footer li img {
 		box-shadow: none;
 		border-radius: 4px;
 		border: 1px solid rgba(0,0,0,0.0);
+	}
+	
+	nav#main li a {
+		font-size: 12px;
 	}
 
 	#content-wrapper {
@@ -3173,17 +3177,21 @@ footer li img {
 
 	.tinynav {
 		display: block;
-		width: 80%;
-		margin: 0 auto 30px;
+		width: 100%;
+		margin: 0 auto 15px;
 		position: relative;
 		top: 6px;
 		left: 0px;
 	}
 	
+	nav#main {
+		margin-top: 15px;
+	}
+	
 	nav#main .searchform {
 		display: block;
 		float: none;
-		width: 80%;
+		width: 100%;
 		margin: 25px auto;
 	}
 		
