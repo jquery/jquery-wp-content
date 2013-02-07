@@ -7,11 +7,8 @@ $(function() {
 		if ( typeof this.select === "function" ) {
 			this.select();
 		}
-	});
+	}); 
 });
-
-
-
 
 
 /*
@@ -157,4 +154,11 @@ $(function() {
 			return this.pathname.split( "/" )[ 4 ] === (currentDemo + ".html");
 		}).click();
 	}
+});
+
+/*
+* TinyNav
+*/
+$(function() {
+    $(".links").tinyNav();
 });

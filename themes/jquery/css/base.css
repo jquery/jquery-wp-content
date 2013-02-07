@@ -1334,6 +1334,8 @@ iframe {
 	border-left: 1px solid rgba(0, 0, 0, 0.347656);
 }
 
+.tinynav { display: none }
+
 #global-nav nav ul.links {
 	float: right;
 }
@@ -3155,14 +3157,24 @@ footer li img {
 }
 
 @media only screen and (max-width: 480px) {
-	#global-nav nav {
+	/*#global-nav nav {
 		height: 68px;
-	}
+	}*/
 	
 	#global-nav nav ul {
 		border-right: none;
 	}
 	
+	.tinynav { display: block }
+    #global-nav nav ul.links { display: none }
+    select#tinynav1 {
+	    width: 80%;
+	    margin: 0 auto;
+	    position: relative;
+	    top: 6px;
+	    left: 0px;
+    }
+		
 	.constrain,
 	#container {
 		padding-left: 10px;
