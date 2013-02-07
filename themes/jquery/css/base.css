@@ -3157,23 +3157,19 @@ footer li img {
 }
 
 @media only screen and (max-width: 480px) {
-	/*#global-nav nav {
-		height: 68px;
-	}*/
 	
-	#global-nav nav ul {
-		border-right: none;
+	#global-nav { 
+		display: none;
 	}
-	
-	.tinynav { display: block }
-    #global-nav nav ul.links { display: none }
-    select#tinynav1 {
-	    width: 80%;
-	    margin: 0 auto;
-	    position: relative;
-	    top: 6px;
-	    left: 0px;
-    }
+
+	select#tinynav1 {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+		position: relative;
+		top: 6px;
+		left: 0px;
+	}
 		
 	.constrain,
 	#container {

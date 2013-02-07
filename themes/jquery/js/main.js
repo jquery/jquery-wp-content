@@ -160,5 +160,14 @@ $(function() {
 * TinyNav
 */
 $(function() {
-    $(".links").tinyNav();
+	// Use tinyNav and then move the generated control to the site footer
+	var $globalLinks = $("#global-nav .links").tinyNav({
+		header: "Browse"
+	}),
+	$label = $globalLinks.next(),
+	$nav = $label.next(),
+	$container = $("<div class='quicknav-container'></div>"),
+	$header = $("<h3><span>More jQuery Sites</span></h3>");
+	
+	$container.append( $header, $label, $nav ).insertBefore("ul.footer-icon-links");
 });
