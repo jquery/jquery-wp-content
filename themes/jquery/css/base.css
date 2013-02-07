@@ -3179,6 +3179,13 @@ footer li img {
 		top: 6px;
 		left: 0px;
 	}
+	
+	nav#main .searchform {
+		display: block;
+		float: none;
+		width: 80%;
+		margin: 25px auto;
+	}
 		
 	.constrain,
 	#container {
