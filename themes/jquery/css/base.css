@@ -1334,7 +1334,7 @@ iframe {
 	border-left: 1px solid rgba(0, 0, 0, 0.347656);
 }
 
-.tinynav { display: none }
+.tinynav-container { display: none }
 
 #global-nav nav ul.links {
 	float: right;
@@ -3162,7 +3162,11 @@ footer li img {
 		display: none;
 	}
 
-	select#tinynav1 {
+	.tinynav-container {
+		display: block;
+	}
+
+	.tinynav {
 		display: block;
 		width: 80%;
 		margin: 0 auto;

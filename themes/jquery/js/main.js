@@ -164,10 +164,9 @@ $(function() {
 	var $globalLinks = $("#global-nav .links").tinyNav({
 		header: "Browse"
 	}),
-	$label = $globalLinks.next(),
-	$nav = $label.next(),
-	$container = $("<div class='quicknav-container'></div>"),
+	$nav = $globalLinks.next(),
+	$container = $("<div class='tinynav-container'></div>"),
 	$header = $("<h3><span>More jQuery Sites</span></h3>");
 	
-	$container.append( $header, $label, $nav ).insertBefore("ul.footer-icon-links");
+	$container.append( $header, $nav ).insertBefore("ul.footer-icon-links");
 });
