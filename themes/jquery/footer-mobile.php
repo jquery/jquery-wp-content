@@ -12,7 +12,7 @@
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/jquery-1.8.3.min.js">
+					<input value="http://code.jquery.com/jquery-1.9.0.min.js">
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
