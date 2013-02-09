@@ -160,16 +160,22 @@ $(function() {
 * TinyNav
 */
 $(function() {
-	$('#menu-top').tinyNav({
-		header: "Navigate"
-	});
+	$('#menu-top').tinyNav();
 	// Use tinyNav and then move the generated control to the site footer
-	var $globalLinks = $("#global-nav .links").tinyNav({
-		header: "Browse"
-	}),
+	var $globalLinks = $("#global-nav .links").tinyNav(),
 	$nav = $globalLinks.next(),
 	$container = $("<div class='tinynav-container'></div>"),
 	$header = $("<h3><span>More jQuery Sites</span></h3>");
 	
 	$container.append( $header, $nav ).insertBefore("ul.footer-icon-links");
+});
+
+/*
+* Chosen.js
+*/
+$(function(){
+	$('.tinynav1').attr('data-placeholder', 'Navigate...');
+	$('.tinynav2').attr('data-placeholder', 'Browse...');
+	$('.tinynav1, .tinynav2').addClass('chzn-select');
+	$('.chzn-select').chosen();
 });
