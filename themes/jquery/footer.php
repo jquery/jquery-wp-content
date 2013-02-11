@@ -8,10 +8,10 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN</strong>
-					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">
+					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 				</div>
 				<div class="download">
-					<strong><a href="http://jquery.com/download/">Download jQuery 1.9.0 →</a></strong>
+					<strong><a href="http://jquery.com/download/">Download jQuery 1.9.1 →</a></strong>
 				</div>
 				<ul class="footer-icon-links">
 					<li><a class="icon-github" href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
