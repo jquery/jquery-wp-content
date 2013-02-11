@@ -145,19 +145,11 @@ ul.flex-direction-nav {
 .project img {
 	float: left;
 	display: inline;
-	width: 22%;
-}
-
-.twelve .project img {
 	width: 10%;
 }
 
 .project-text {
 	float: right;
-	width: 70%;
-}
-
-.twelve .project-text {
 	width: 85.5%;
 }
 
@@ -511,14 +503,6 @@ nav#main ul {
 	.flexslider {
 		margin-bottom: 20px;
 	}
-
-	.twelve .project img {
-		width: 22%;
-	}
-
-	.twelve .project-text {
-		width: 70%;
-	}
 }
 
 /*iPhone Landscape*/
@@ -601,14 +585,4 @@ nav#main ul {
 		padding-right: 20px !important;
 		padding-left: 20px !important;
 	}
-
-	.twelve .project img {
-		width: 22%;
-	}
-
-	.twelve .project-text {
-		width: 70%;
-	}
-
 }
-
