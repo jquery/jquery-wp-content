@@ -251,7 +251,7 @@ a.icon-search::before {
 	padding-right: 15px;
 }
 
-.member-level a.button {
+.member-level .button {
 	float: left;
 	display: inline-block;
 	clear: both;
@@ -262,7 +262,7 @@ a.icon-search::before {
 
 }
 
-.member-level form a.button {
+.member-level form .button {
 	clear: none;
 }
 
@@ -414,13 +414,13 @@ a.icon-search::before {
 	margin-bottom: 40px;
 }
 
-a.button,
-#content a.button, .button {
+.button,
+#content .button {
 	background-color: #b71551;
 }
 
-a.button:hover,
-#content a.button:hover {
+.button:hover,
+#content .button:hover {
 	background-color: #7c0d36;
 }
 

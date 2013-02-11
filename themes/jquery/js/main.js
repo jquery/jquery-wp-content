@@ -90,17 +90,18 @@ $(function() {
 			gifts.not( gift ).slideUp();
 		});
 
-		$(".member-level .pay").on( "click", function() {
-			var a = $(this)
+		$(".member-level .pay").on( "click", function( event ) {
+			event.preventDefault();
+			var button = $( this );
 			StripeCheckout.open({
 				key: 'pk_NjMf2QUPtR28Wg0xmyWtepIzUziVr',
-				image: a.data("image"),
-				name: a.data("name"),
-				description: a.data("description"),
-				panelLabel: a.data("panel-label"),
-				amount: a.data("amount"),
-				token: function(res) {
-					alert(res.id);
+				image: button.data("image"),
+				name: button.data("name"),
+				description: button.data("description"),
+				panelLabel: button.data("panel-label"),
+				amount: button.data("amount"),
+				token: function( data ) {
+					alert( "Stripe token: " + data.id );
 				}
 			});
 		});
