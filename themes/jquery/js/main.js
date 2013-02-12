@@ -7,11 +7,8 @@ $(function() {
 		if ( typeof this.select === "function" ) {
 			this.select();
 		}
-	});
+	}); 
 });
-
-
-
 
 
 /*
@@ -158,4 +155,28 @@ $(function() {
 			return this.pathname.split( "/" )[ 4 ] === (currentDemo + ".html");
 		}).click();
 	}
+});
+
+/*
+* Creating navigation elements for smaller-width screens using tinyNav and Chosen
+*/
+$(function() {
+
+	// For the site-specific navigation, we just need to create and style the select
+	var $siteMenu = $("#menu-top").tinyNav(),
+	$siteNav = $siteMenu.next();
+
+	// In order for Chosen to work as we'd like, 
+	// we have to insert the placeholder attribute, an empty option, and select it before instantiation
+	$siteNav.attr("data-placeholder", "Navigate...").prepend("<option></option>").val("").chosen();
+
+	// For the global site navigation, we move the generated control to the
+	// site footer so it doesn't appear above the header
+	var $globalLinks = $("#global-nav .links").tinyNav(),
+	$nav = $globalLinks.next(),
+	$container = $("<div class='tinynav-container'></div>"),
+	$header = $("<h3><span>More jQuery Sites</span></h3>");
+
+	$container.append( $header, $nav ).insertBefore("ul.footer-icon-links");
+	$nav.attr("data-placeholder", "Browse...").prepend("<option></option>").val("").chosen();
 });
