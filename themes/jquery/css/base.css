@@ -3209,6 +3209,15 @@ footer li img {
 		margin: 15px auto;
 	}
 	
+	nav#main ul li, nav#main ul li a {
+		float: none;
+		padding: 6px 0px 6px 8px;	
+	}
+	.chzn-container-single .chzn-single span {
+		font: normal normal 14px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+		padding-top: 2px;
+	}
+	
 	.constrain,
 	#container {
 		padding-left: 10px;
