@@ -1,5 +1,11 @@
 <?php
 
+// The Stripe keys must be defined in wp-config.php
+if ( !defined('STRIPE_PUBLIC') ) {
+	define( 'STRIPE_PUBLIC', '' );
+	define( 'STRIPE_SECRET', '' );
+}
+
 class StripeForm {
 	public static function init() {
 		wp_enqueue_script( 'stripe', get_template_directory_uri() . '/js/stripe.js' );
