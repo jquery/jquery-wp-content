@@ -2,7 +2,7 @@
 
 // The Stripe keys must be defined in wp-config.php
 if ( !defined('STRIPE_PUBLIC') ) {
-	define( 'STRIPE_PUBLIC', '' );
+	define( 'STRIPE_PUBLIC', 'invalid-key' );
 	define( 'STRIPE_SECRET', '' );
 }
 
