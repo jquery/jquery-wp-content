@@ -3082,21 +3082,30 @@ footer li img {
 		box-shadow: none;
 	}
 
-	nav#main ul {
-		width: 100% !important;
-		text-align: center !important;
-		float: left;
-		margin-bottom: 10px;
+	nav#main .searchform {
+		display: block;
+		float: none;
+		width: 100%;
+		margin: 15px auto;
+                clear:both;
 	}
 
-	nav#main ul li,
-	nav#main ul li a {
-		position: relative;
-		display: inline;
-		text-align: center !important;
-		text-transform: none;
+	nav#main ul{
+		width: auto !important;
+		text-align: left !important;
 		float: none;
+		margin: 0px;
+		padding: 0px;
 	}
+	
+	nav#main ul li, nav#main ul li a {
+		display: block;
+		text-align: left !important;
+		float: left;
+		margin-right: 0px;
+                padding: 0 4px 4px 0;
+	}
+		
 
 	nav#main li a:hover,
 	nav#main li.current a {
@@ -3108,13 +3117,9 @@ footer li img {
 	}
 	
 	nav#main li a {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	
-	#tinynav1_chzn, #tinynav2_chzn {
-		display: block;
-	}
-
 	#content-wrapper {
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
@@ -3175,7 +3180,11 @@ footer li img {
 	.tinynav-container {
 		display: block;
 	}
-	
+
+	#tinynav1_chzn, #tinynav2_chzn {
+		display: block;
+	}
+
 	#menu-top {
 		display: none;
 	}
@@ -3197,24 +3206,9 @@ footer li img {
 		display: block;
 		float: none;
 		width: 100%;
-		margin: 25px auto;
+		margin: 15px auto;
 	}
 	
-	nav#main ul{
-		width: auto !important;
-		text-align: left !important;
-		float: none;
-		margin: 0px;
-		padding: 0px;
-	}
-	
-	nav#main ul li, nav#main ul li a {
-		display: block;
-		text-align: left !important;
-		float: none;
-		margin-right: 0px;
-	}
-		
 	.constrain,
 	#container {
 		padding-left: 10px;
