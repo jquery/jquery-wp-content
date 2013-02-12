@@ -87,18 +87,58 @@ $(function() {
 			gifts.not( gift ).slideUp();
 		});
 
+		function processMembership( data ) {
+			$.ajax({
+				url: StripeForm.url,
+				data: $.extend({
+					action: StripeForm.action,
+					nonce: StripeForm.nonce
+				}, data )
+			});
+		}
+
 		$(".member-level .pay").on( "click", function( event ) {
 			event.preventDefault();
-			var button = $( this );
+			var button = $( this ),
+				form = $( this.form ),
+				name = $.trim( form.find( "[name=name]" ).val() ),
+				email = $.trim( form.find( "[name=email]" ).val() ),
+				address = $.trim( form.find( "[name=address]" ).val() ),
+				gifts = form.find( "select" ),
+				errors = [];
+
+			// Verify all fields
+			if ( name.length < 3 ) {
+				errors.push( "Please provide your full name." );
+			}
+			if ( email.length < 7 ) {
+				errors.push( "Please provide a valid email address" );
+			}
+			if ( address.length < 10 ) {
+				errors.push( "Please provide your full address." );
+			}
+			if ( gifts.filter(function() { return !$( this ).val(); }).length ) {
+				errors.push( "Please choose a size for each gift." );
+			}
+
+			// TODO: error handling
+			if ( errors.length ) {
+				return;
+			}
+
 			StripeCheckout.open({
-				key: 'pk_NjMf2QUPtR28Wg0xmyWtepIzUziVr',
+				key: StripeForm.key,
 				image: button.data("image"),
 				name: button.data("name"),
 				description: button.data("description"),
 				panelLabel: button.data("panel-label"),
 				amount: button.data("amount"),
 				token: function( data ) {
-					alert( "Stripe token: " + data.id );
+					processMembership({
+						token: data.id,
+						email: email,
+						planId: button.data( "plan-id" )
+					});
 				}
 			});
 		});
