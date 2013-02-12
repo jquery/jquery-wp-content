@@ -4,7 +4,7 @@ Template: jquery
 */
 
 /*Custom Colors*/
-a,
+/*a,
 #sidebar h3 {
     color: #b71551;
 } 
@@ -14,17 +14,17 @@ a,
 }
 
 #content h1 {
-    color: #0098bf;
+    color: white;
     font-weight: normal;
     font-style: normal;
 }
 
 #content h2 {
-    color: #b71551;
+    color: white;
     font-weight: normal;
     font-style: normal;
     margin-bottom: 20px;
-}
+}*/
 
 #banner-large-image {
     margin-right: -25px;
@@ -39,8 +39,6 @@ a,
         display: block;
         position: relative;
     }
-
-
 
 #banner-large-image h1 {
     font-size: 60px;
@@ -121,6 +119,9 @@ ul.flex-direction-nav {
     border-bottom: 10px solid #c1c1c1;
     border-top: 10px solid #c1c1c1;
     text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin-top: 25px;
 }
 
 .big-message {
