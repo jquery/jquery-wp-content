@@ -34,7 +34,8 @@ class StripeForm {
 		// Create Stripe subscription
 		$customer = Stripe_Customer::create( array(
 			'email' => $email,
-			'card' => $token
+			'card' => $token,
+			'description' => $_REQUEST['name']
 		) );
 		$charge = $customer->updateSubscription( array(
 			'plan' => $_REQUEST['planId']
@@ -49,7 +50,7 @@ class StripeForm {
 				'user_pass' => wp_generate_password(),
 				'user_login' => $email,
 				'user_email' => $email,
-				'display_name' => $_REQUEST[ 'name' ]
+				'display_name' => $_REQUEST['name']
 			) );
 		}
 
