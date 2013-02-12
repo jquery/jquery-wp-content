@@ -77,7 +77,7 @@ $(function() {
 	 * Join page
 	 */
 	(function() {
-		// Enlarged goodies
+		// Enlarged gifts
 		$(".enlarge").colorbox();
 
 		// Gift forms
@@ -133,12 +133,18 @@ $(function() {
 				description: button.data("description"),
 				panelLabel: button.data("panel-label"),
 				amount: button.data("amount"),
-				token: function( data ) {
-					processMembership({
-						token: data.id,
+				token: function( stripeData ) {
+					var data = {
+						token: stripeData.id,
+						planId: button.data( "plan-id" ),
+						name: name,
 						email: email,
-						planId: button.data( "plan-id" )
+						address: address
+					};
+					gifts.each(function() {
+						data[ this.name ] = this.value;
 					});
+					processMembership( data );
 				}
 			});
 		});
