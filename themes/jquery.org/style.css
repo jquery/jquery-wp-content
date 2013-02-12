@@ -199,6 +199,10 @@ ul.flex-direction-nav {
 	font-weight: bold;
 }
 
+.errors li {
+	color: #a00;
+}
+
 a.icon-search {
 	width: 100px;
 	height: 100px;
@@ -218,15 +222,15 @@ a.icon-search::before {
 	color: #333333;
 }
 
-.member-level ul {
+.member-level ul.gifts {
 	float: left;
 	list-style: none;
 	position: relative;
 	z-index: 2;
 }
 
-#content .member-level ul li,
-#content .member-level ul li strong {
+#content .member-level ul.gifts li,
+#content .member-level ul.gifts li strong {
 	padding-left: 0;
 	padding-right: 15px;
 	background: none;

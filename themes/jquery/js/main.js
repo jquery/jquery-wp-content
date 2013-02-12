@@ -94,6 +94,10 @@ $(function() {
 					action: StripeForm.action,
 					nonce: StripeForm.nonce
 				}, data )
+			}).done(function() {
+				window.location = "/join/thanks/";
+			}).fail(function() {
+				// TODO
 			});
 		}
 
@@ -105,24 +109,30 @@ $(function() {
 				email = $.trim( form.find( "[name=email]" ).val() ),
 				address = $.trim( form.find( "[name=address]" ).val() ),
 				gifts = form.find( "select" ),
-				errors = [];
+				errors = form.find( ".errors" ).empty().hide(),
+				valid = true;
+
+			function showError( msg ) {
+				$( "<li>" ).text( msg ).appendTo( errors );
+				valid = false;
+			}
 
 			// Verify all fields
 			if ( name.length < 3 ) {
-				errors.push( "Please provide your full name." );
+				showError( "Please provide your full name." );
 			}
 			if ( email.length < 7 ) {
-				errors.push( "Please provide a valid email address" );
+				showError( "Please provide a valid email address" );
 			}
 			if ( address.length < 10 ) {
-				errors.push( "Please provide your full address." );
+				showError( "Please provide your full address." );
 			}
 			if ( gifts.filter(function() { return !$( this ).val(); }).length ) {
-				errors.push( "Please choose a size for each gift." );
+				showError( "Please choose a size for each gift." );
 			}
 
-			// TODO: error handling
-			if ( errors.length ) {
+			if ( !valid ) {
+				errors.slideDown();
 				return;
 			}
 
