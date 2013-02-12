@@ -77,6 +77,10 @@ $(function() {
 	 * Join page
 	 */
 	(function() {
+		function isEmail( str ) {
+			return (/^[a-zA-Z0-9.!#$%&'*+\/=?\^_`{|}~\-]+@[a-zA-Z0-9\-]+(?:\.[a-zA-Z0-9\-]+)*$/).test( str );
+		}
+
 		// Enlarged gifts
 		$(".enlarge").colorbox();
 
@@ -121,7 +125,7 @@ $(function() {
 			if ( name.length < 3 ) {
 				showError( "Please provide your full name." );
 			}
-			if ( email.length < 7 ) {
+			if ( !isEmail( email ) ) {
 				showError( "Please provide a valid email address" );
 			}
 			if ( address.length < 10 ) {
