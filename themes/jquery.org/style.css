@@ -13,36 +13,30 @@ Template: jquery
 }
 
 #content h1 {
-<<<<<<< HEAD
-    color: white;
-    font-weight: normal;
-    font-style: normal;
+	color: white;
+	font-weight: normal;
+	font-style: normal;
 }
 
 #content h2 {
-    color: white;
-    font-weight: normal;
-    font-style: normal;
-    margin-bottom: 20px;
+	color: white;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: 20px;
 }*/
 
 #banner-large-image {
-    margin-right: -25px;
-        margin-left: -25px;
-        margin-top: -20px;
-        height: 360px;
-        background: url(images/header-join-page.jpg) no-repeat center;
-        background-size: cover;
-        -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-        display: block;
-        position: relative;
-    }
-=======
-	color: #0098bf;
-	font-weight: normal;
-	font-style: normal;
+	margin-right: -25px;
+	margin-left: -25px;
+	margin-top: -20px;
+	height: 360px;
+	background: url(images/header-join-page.jpg) no-repeat center;
+	background-size: cover;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	display: block;
+	position: relative;
 }
 
 #content h2 {
@@ -65,7 +59,6 @@ Template: jquery
 	display: block;
 	position: relative;
 }
->>>>>>> upstream/master
 
 #banner-large-image h1 {
 	font-size: 60px;
@@ -86,11 +79,11 @@ Template: jquery
 }
 
 .sub-banner {
-    background-color: lightgray;
-    text-align: center;
-    margin: -25px -25px 0;
-    color: rgb(102,102,102);
-    font: bold 20px/40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: lightgray;
+	text-align: center;
+	margin: -25px -25px 0;
+	color: rgb(102,102,102);
+	font: bold 20px/40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 #content > div.row {
@@ -147,11 +140,11 @@ ul.flex-direction-nav {
 }
 
 .dark-callout-box {
-    background-image: url(../jquery/images/dark-grey-tile.png);
-    margin-bottom: 30px;
-    border-bottom: 10px solid #c1c1c1;
-    border-top: 10px solid #c1c1c1;
-    text-align: center;
+	background-image: url(../jquery/images/dark-grey-tile.png);
+	margin-bottom: 30px;
+	border-bottom: 10px solid #c1c1c1;
+	border-top: 10px solid #c1c1c1;
+	text-align: center;
 	padding-top: 35px;
 	padding-bottom: 35px;
 	margin-top: 25px;
@@ -174,8 +167,8 @@ ul.flex-direction-nav {
 }
 
 #content .dark-callout-box p {
-    font: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    color: #dddcdc;
+	font: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #dddcdc;
 }
 
 #content .project h4 {
@@ -320,19 +313,19 @@ a.icon-search::before {
 }
 
 .choose-gifts {
-    background-color: lightgray;
-    clear: both;
-    position: relative;
-    z-index: 2;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 45px;
+	background-color: lightgray;
+	clear: both;
+	position: relative;
+	z-index: 2;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	padding-bottom: 45px;
 }
 
 .choose-gifts h4 {
-    font: bold 18px/20px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    margin-bottom: 10px;
+	font: bold 18px/20px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 10px;
 }
 
 .choose-gifts label {
@@ -341,10 +334,10 @@ a.icon-search::before {
 }
 
 .choose-gifts hr {
-    height: 1px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background: #898989;
+	height: 1px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: #898989;
 }
 
 .choose-gifts select {
@@ -522,12 +515,12 @@ a.icon-search::before {
 
 /*a.button,
 #content a.button, .button {
-    background-color: #b71551;
+	background-color: #b71551;
 }
 
 a.button:hover,
 #content a.button:hover {
-    background-color: #7c0d36;
+	background-color: #7c0d36;
 }*/
 
 
