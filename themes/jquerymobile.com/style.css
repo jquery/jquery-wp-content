@@ -176,11 +176,6 @@ a, .title, .entry-title { color: #108040; }
   position: relative;
 }
 
-
-/*#manufacturers a:hover {
-  background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
-}*/
-
 #manufacturers li {
   margin:0;
   padding:0 !important;
@@ -188,7 +183,6 @@ a, .title, .entry-title { color: #108040; }
   background: none !important;
   float: left;
 }
-
 
 #manufacturers li a {
   height: 62px;
