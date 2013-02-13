@@ -220,6 +220,11 @@ a, .title, .entry-title { color: #108040; }
 #manufacturers a.symbian:hover    { background-position: -406px -237px;}
 #manufacturers a.meego:hover      { background-position: -621px -237px;}
 
+#jqm-devices {
+  margin:auto; 
+  text-align: center;
+}
+
 #themeroller-logo {
   float:right;
 }
@@ -357,6 +362,9 @@ ul .next {
 
   #themeroller-logo { 
     float: none;
+  }
+  #jqm-devices {
+    display: none;
   }
 }
 
