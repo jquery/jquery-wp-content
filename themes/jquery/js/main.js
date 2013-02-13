@@ -109,7 +109,8 @@ $(function() {
 			event.preventDefault();
 			var button = $( this ),
 				form = $( this.form ),
-				name = $.trim( form.find( "[name=name]" ).val() ),
+				firstName = $.trim( form.find( "[name=first-name]" ).val() ),
+				lastName = $.trim( form.find( "[name=last-name]" ).val() ),
 				email = $.trim( form.find( "[name=email]" ).val() ),
 				address = $.trim( form.find( "[name=address]" ).val() ),
 				gifts = form.find( "select" ),
@@ -122,8 +123,11 @@ $(function() {
 			}
 
 			// Verify all fields
-			if ( name.length < 3 ) {
-				showError( "Please provide your full name." );
+			if ( !firstName ) {
+				showError( "Please provide your first name." );
+			}
+			if ( !lastName ) {
+				showError( "Please provide your last name." );
 			}
 			if ( !isEmail( email ) ) {
 				showError( "Please provide a valid email address" );
@@ -151,7 +155,8 @@ $(function() {
 					var data = {
 						token: stripeData.id,
 						planId: button.data( "plan-id" ),
-						name: name,
+						firstName: firstName,
+						lastName: lastName,
 						email: email,
 						address: address
 					};

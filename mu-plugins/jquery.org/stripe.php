@@ -36,12 +36,14 @@ class StripeForm {
 
 		$token = $_REQUEST['token'];
 		$email = $_REQUEST['email'];
+		$name = $_REQUEST['firstName'] . ' ' . $_REQUEST['lastName'];
+
 
 		// Create Stripe subscription
 		$customer = Stripe_Customer::create( array(
 			'email' => $email,
 			'card' => $token,
-			'description' => $_REQUEST['name']
+			'description' => $name
 		) );
 		$charge = $customer->updateSubscription( array(
 			'plan' => $_REQUEST['planId']
@@ -56,7 +58,9 @@ class StripeForm {
 				'user_pass' => wp_generate_password(),
 				'user_login' => $email,
 				'user_email' => $email,
-				'display_name' => $_REQUEST['name']
+				'first_name' => $_REQUEST['firstName'],
+				'last_name' => $_REQUEST['lastName'],
+				'display_name' => $name
 			) );
 		}
 
