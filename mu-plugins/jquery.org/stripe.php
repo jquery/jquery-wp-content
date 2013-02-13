@@ -43,7 +43,7 @@ class StripeForm {
 		$customer = Stripe_Customer::create( array(
 			'email' => $email,
 			'card' => $token,
-			'description' => $name
+			'description' => stripcslashes($name)
 		) );
 		$charge = $customer->updateSubscription( array(
 			'plan' => $_REQUEST['planId']
