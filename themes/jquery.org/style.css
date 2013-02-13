@@ -44,7 +44,9 @@ Template: jquery
     font-size: 60px;
 }
 
-
+#banner-secondary.large-banner.entry-header {
+	padding-bottom: 0px;
+}
 
 /*Homepage*/
 
@@ -53,10 +55,10 @@ Template: jquery
 }
 
 .sub-banner {
-    background-color: #d6eef1;
+    background-color: lightgray;
     text-align: center;
     margin: -25px -25px 0;
-    color: #007d88;
+    color: rgb(102,102,102);
     font: bold 20px/40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
@@ -147,6 +149,14 @@ ul.flex-direction-nav {
     color: #464646;
 
 }
+
+#content .project {
+	margin-top: 35px;
+}
+
+	#content .twelve.columns .project {
+		margin-top: 0px;
+	}
 
 .project img {
     float: left;
@@ -430,7 +440,7 @@ a.icon-search::before {
     margin-bottom: 40px;
 }
 
-a.button,
+/*a.button,
 #content a.button, .button {
     background-color: #b71551;
 }
@@ -438,7 +448,7 @@ a.button,
 a.button:hover,
 #content a.button:hover {
     background-color: #7c0d36;
-}
+}*/
 
 
 /*Adjust widths for longer navigation*/
@@ -449,6 +459,10 @@ nav#main .searchform {
 
 nav#main ul {
     width: 80%;
+}
+
+.content-full.full-width #content {
+	padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {
