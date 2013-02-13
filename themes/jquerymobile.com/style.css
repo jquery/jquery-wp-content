@@ -3,14 +3,14 @@ Theme Name: jquerymobile-com
 Template: jquery
 */
 
-h1.site-title a {
+/*.site-title a {
     background: url(../jquery/i/logo-mobile.png) no-repeat;
     height: 72px;
     width: 275px;
     left: -5px;
     top: -1px;
     position: relative;
-}
+}*/
 
 .border, #site-footer { border-color: #88C41A; }
 
@@ -23,51 +23,121 @@ a, .title, .entry-title { color: #108040; }
     box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
 }
 
-.page-header { margin-right: 400px; }
-
-#manufacturers {
-  list-style: none;
-  width: 730px;
-  height: 120px;
-  margin: 20px 0;
-  position: relative;
-  left: -10px;
-}
-
-#manufacturers,
-#manufacturers a:hover {
-  background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
-}
-
-#manufacturers li {
-  margin:0;
-  padding:0;
-  float: left;
-  margin-left: 5px;
+#banner-secondary h1 {
   margin-bottom: 20px;
 }
 
-.ie6 #manufacturers li,
-.ie6 #manufacturers li a {
-  display: inline;
+#banner-secondary p.intro {
+  padding: 0;
+  float: left;
+  width: 50%;
 }
 
-#manufacturers li a {
+#banner-secondary .download-box {
+  border: 1px solid #aaa;
+  background: #333;
+  background: -moz-linear-gradient(left, #333 0%, #444 100%);
+  background: -webkit-linear-gradient(left, #333 0%, #444 100%);
+  background: -o-linear-gradient(left, #333 0%, #444 100%);
+  background: linear-gradient(to right, #333 0%, #444 100%);
+  float: right;
+  width: 40%;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+#banner-secondary .download-box h2 {
+  color: #71D1FF;
+}
+
+#banner-secondary .download-box .button {
+  float: none;
   display: block;
-  height: 62px;
-  text-indent: -9999px;
-  overflow: hidden;
+  margin-top: 15px;
+}
+
+#banner-secondary .download-box p {
+  margin: 15px 0 5px;
+}
+
+#banner-secondary .download-option {
+  width: 45%;
+  float: left;
+  font-size: 16px;
+}
+
+#banner-secondary .download-notlatest {
+  float: right;
+}
+
+#banner-secondary .download-option span {
+  display: block;
+  font-size: 14px;
+  color: #71D1FF;
+}
+
+#manufacturers-logos {
+  float: right;
+  width: 200px;
+  margin: -15px -25px .5em 1em;
+  padding: 1em;
+  border: 1px solid #666;
+  border-width: 0 0 1px 1px;
+  border-radius: 0 0 0 5px;
+  box-shadow: -2px 2px 10px -2px #666;
+}
+
+#manufacturers {
+  list-style: none;
+  width: auto;
+  margin: 15px 0 !important;
+  left: -10px;
+  position: relative;
+}
+
+/*#manufacturers,
+#manufacturers a:hover {
+  background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
+}*/
+
+#manufacturers li {
+  margin:0;
+  padding:0 !important;
+  margin-bottom: 20px;
+  background: none !important;
   float: left;
 }
 
-#manufacturers a.ios              { width: 140px; margin-right: 35px;}
-#manufacturers a.android          { width: 160px; margin-right: 35px;}
-#manufacturers a.blackberry       { width: 160px; margin-right: 50px;}
-#manufacturers a.bada             { width: 120px; }
-#manufacturers a.windows          { width: 160px; margin-right: 15px; height: 40px;}
-#manufacturers a.palm             { width: 170px; margin-right: 35px; height: 40px;}
-#manufacturers a.symbian          { width: 140px; margin-right: 70px; height: 40px;}
-#manufacturers a.meego            { width: 120px; height: 40px; }
+
+#manufacturers li a {
+  height: 62px;
+  width: 180px;
+  text-indent: -9999px;
+  float: left;
+  background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
+  margin-right: 10px;
+}
+
+#manufacturers a.ios              { width: 140px;}
+#manufacturers a.android          { width: 160px;}
+#manufacturers a.blackberry       { width: 160px; }
+#manufacturers a.bada             { width: 120px;}
+#manufacturers a.windows          { width: 160px;  height: 40; margin-top: 18px;}
+#manufacturers a.palm             { width: 170px; height: 40; margin-top: 18px;}
+#manufacturers a.symbian          { width: 140px; height: 40; margin-top: 18px;}
+#manufacturers a.meego            { width: 120px; height: 40; margin-top: 18px;}
+
+#manufacturers a.ios        { background-position: -16px  -5px;}
+#manufacturers a.android    { background-position: -196px -5px;}
+#manufacturers a.blackberry { background-position: -396px -5px;}
+#manufacturers a.bada       { background-position: -611px -5px;}
+#manufacturers a.windows    { background-position: -16px  -87px;}
+#manufacturers a.palm       { background-position: -196px -87px;}
+#manufacturers a.symbian    { background-position: -406px -87px;}
+#manufacturers a.meego      { background-position: -621px -87px;}
 
 #manufacturers a.ios:hover        { background-position: -16px  -155px;}
 #manufacturers a.android:hover    { background-position: -196px -155px;}
@@ -77,6 +147,10 @@ a, .title, .entry-title { color: #108040; }
 #manufacturers a.palm:hover       { background-position: -196px -237px;}
 #manufacturers a.symbian:hover    { background-position: -406px -237px;}
 #manufacturers a.meego:hover      { background-position: -621px -237px;}
+
+#themeroller-logo {
+  float:right;
+}
 
 #sponsors {
    background-color:#f7f8f8;
@@ -196,4 +270,31 @@ ul .next {
 #graded-support {
   position: relative;
   margin-top: 70px;
+}
+
+@media all and (max-width: 750px) {
+  #banner-secondary p.intro,
+  #banner-secondary .download-box {
+    float: none;
+    width: auto;
+  }
+
+  #banner-secondary .download-box {
+    overflow: auto;
+  }
+
+  #themeroller-logo { 
+    float: none;
+  }
+}
+
+@media all and (max-width: 625px) {
+  #manufacturers-logos {
+    display: none;
+  }
+
+  #banner-secondary .download-option {
+    float: none;
+    margin: auto;
+  }
 }
