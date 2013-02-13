@@ -3,8 +3,8 @@ Theme Name: jquery-org
 Template: jquery
 */
 
-a,
-#sidebar h3 {
+/*Custom Colors*/
+/*a, #sidebar h3 {
 	color: #b71551;
 }
 
@@ -13,9 +13,30 @@ a,
 }
 
 #content h1 {
-	color: #0098bf;
+	color: white;
 	font-weight: normal;
 	font-style: normal;
+}
+
+#content h2 {
+	color: white;
+	font-weight: normal;
+	font-style: normal;
+	margin-bottom: 20px;
+}*/
+
+#banner-large-image {
+	margin-right: -25px;
+	margin-left: -25px;
+	margin-top: -20px;
+	height: 360px;
+	background: url(images/header-join-page.jpg) no-repeat center;
+	background-size: cover;
+	-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	display: block;
+	position: relative;
 }
 
 #content h2 {
@@ -43,7 +64,13 @@ a,
 	font-size: 60px;
 }
 
+.jquery-foundation.home #banner-secondary.large-banner.entry-header {
+	padding-bottom: 0px;
+}
 
+.jquery-foundation.page-id-5 #content #banner-large-image .vertically-centered-black-bg {
+	margin-top: 14.5%;
+}
 
 /*Homepage*/
 
@@ -52,10 +79,10 @@ a,
 }
 
 .sub-banner {
-	background-color: #d6eef1;
+	background-color: lightgray;
 	text-align: center;
 	margin: -25px -25px 0;
-	color: #007d88;
+	color: rgb(102,102,102);
 	font: bold 20px/40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
@@ -118,7 +145,15 @@ ul.flex-direction-nav {
 	border-bottom: 10px solid #c1c1c1;
 	border-top: 10px solid #c1c1c1;
 	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	margin-top: 25px;
 }
+
+	.jquery-foundation.page-id-2 #content .dark-callout-box {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
 
 .big-message {
 	font: bold 50px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -132,7 +167,7 @@ ul.flex-direction-nav {
 }
 
 #content .dark-callout-box p {
-	ont: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #dddcdc;
 }
 
@@ -141,6 +176,14 @@ ul.flex-direction-nav {
 	margin-bottom: 0;
 	color: #464646;
 }
+
+#content .project {
+	margin-top: 35px;
+}
+
+	#content .twelve.columns .project {
+		margin-top: 0px;
+	}
 
 .project img {
 	float: left;
@@ -176,6 +219,13 @@ ul.flex-direction-nav {
 	height: 225px;
 	opacity: 0.2;
 	z-index: 1;
+}
+
+.member-level button.button.join {
+	position: relative;
+	top: 0px;
+	left: 15px;
+	margin-bottom: 15px;
 }
 
 .member-level-icon.fan {
@@ -262,23 +312,20 @@ a.icon-search::before {
 	clear: none;
 }
 
-
 .choose-gifts {
-	background-color: #378a9b;
-	border-bottom: 16px solid #1b4c5e;
+	background-color: lightgray;
 	clear: both;
 	position: relative;
 	z-index: 2;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 45px;
 }
 
 .choose-gifts h4 {
 	font: bold 18px/20px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-bottom: 10px;
-	color: #ffffff;
 }
 
 .choose-gifts label {
@@ -290,6 +337,7 @@ a.icon-search::before {
 	height: 1px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	background: #898989;
 }
 
 .choose-gifts select {
@@ -298,6 +346,61 @@ a.icon-search::before {
 	margin-bottom: 15px;
 }
 
+.choose-gifts button.button.pay {
+	margin-right: 20px;
+}
+
+#content .choose-gifts textarea {
+	width: 100%;
+	background: white;
+	border: 1px solid rgba(192,192,192,1);
+}
+
+.choose-gifts input[type="name"] {
+	margin-right: 3px;
+}
+
+.choose-gifts input[type="name"], .choose-gifts input[type="email"]{
+	display: inline;
+	width: 49%;
+	padding: 8px 12px;
+	border: 1px solid rgba(192,192,192,1);
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
+}
+
+#content .choose-gifts input:focus, #content .choose-gifts input[type=text]:focus, #content .choose-gifts textarea:focus {
+	border: 1px solid #78CFF5;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#content .choose-gifts input::-webkit-input-placeholder {
+   color: rgba(51,51,51,0.75);
+}
+#content .choose-gifts input:-moz-placeholder {
+   color: rgba(51,51,51,0.75);	
+}
+#content .choose-gifts input::-moz-placeholder {
+   color: rgba(51,51,51,0.75);	
+}
+#content .choose-gifts input:-ms-input-placeholder {
+   color: rgba(51,51,51,0.75);	
+}
+
+#content .choose-gifts textarea::-webkit-input-placeholder {
+   color: rgba(51,51,51,0.75);
+}
+#content .choose-gifts textarea:-moz-placeholder {
+   color: rgba(51,51,51,0.75);	
+}
+#content .choose-gifts textarea::-moz-placeholder {
+   color: rgba(51,51,51,0.75);	
+}
+#content .choose-gifts textarea:-ms-input-placeholder {
+   color: rgba(51,51,51,0.75);	
+}
 
 /*History Page*/
 
@@ -410,15 +513,15 @@ a.icon-search::before {
 	margin-bottom: 40px;
 }
 
-.button,
-#content .button {
+/*a.button,
+#content a.button, .button {
 	background-color: #b71551;
 }
 
-.button:hover,
-#content .button:hover {
+a.button:hover,
+#content a.button:hover {
 	background-color: #7c0d36;
-}
+}*/
 
 
 /*Adjust widths for longer navigation*/
@@ -429,6 +532,10 @@ nav#main .searchform {
 
 nav#main ul {
 	width: 80%;
+}
+
+.content-full.full-width #content {
+	padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {
