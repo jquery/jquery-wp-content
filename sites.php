@@ -15,6 +15,7 @@ function jquery_sites() {
 				'stylesheet' => 'jquery.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
+					'vaultpress/vaultpress.php',
 				),
 			),
 		),

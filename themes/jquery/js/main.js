@@ -7,11 +7,8 @@ $(function() {
 		if ( typeof this.select === "function" ) {
 			this.select();
 		}
-	});
+	}); 
 });
-
-
-
 
 
 /*
@@ -80,7 +77,11 @@ $(function() {
 	 * Join page
 	 */
 	(function() {
-		// Enlarged goodies
+		function isEmail( str ) {
+			return (/^[a-zA-Z0-9.!#$%&'*+\/=?\^_`{|}~\-]+@[a-zA-Z0-9\-]+(?:\.[a-zA-Z0-9\-]+)*$/).test( str );
+		}
+
+		// Enlarged gifts
 		$(".enlarge").colorbox();
 
 		// Gift forms
@@ -90,17 +91,79 @@ $(function() {
 			gifts.not( gift ).slideUp();
 		});
 
-		$(".member-level .pay").on( "click", function() {
-			var a = $(this)
+		function processMembership( data ) {
+			$.ajax({
+				url: StripeForm.url,
+				data: $.extend({
+					action: StripeForm.action,
+					nonce: StripeForm.nonce
+				}, data )
+			}).done(function() {
+				window.location = "/join/thanks/";
+			}).fail(function() {
+				// TODO
+			});
+		}
+
+		$(".member-level .pay").on( "click", function( event ) {
+			event.preventDefault();
+			var button = $( this ),
+				form = $( this.form ),
+				firstName = $.trim( form.find( "[name=first-name]" ).val() ),
+				lastName = $.trim( form.find( "[name=last-name]" ).val() ),
+				email = $.trim( form.find( "[name=email]" ).val() ),
+				address = $.trim( form.find( "[name=address]" ).val() ),
+				gifts = form.find( "select" ),
+				errors = form.find( ".errors" ).empty().hide(),
+				valid = true;
+
+			function showError( msg ) {
+				$( "<li>" ).text( msg ).appendTo( errors );
+				valid = false;
+			}
+
+			// Verify all fields
+			if ( !firstName ) {
+				showError( "Please provide your first name." );
+			}
+			if ( !lastName ) {
+				showError( "Please provide your last name." );
+			}
+			if ( !isEmail( email ) ) {
+				showError( "Please provide a valid email address" );
+			}
+			if ( address.length < 10 ) {
+				showError( "Please provide your full address." );
+			}
+			if ( gifts.filter(function() { return !$( this ).val(); }).length ) {
+				showError( "Please choose a size for each gift." );
+			}
+
+			if ( !valid ) {
+				errors.slideDown();
+				return;
+			}
+
 			StripeCheckout.open({
-				key: 'pk_NjMf2QUPtR28Wg0xmyWtepIzUziVr',
-				image: a.data("image"),
-				name: a.data("name"),
-				description: a.data("description"),
-				panelLabel: a.data("panel-label"),
-				amount: a.data("amount"),
-				token: function(res) {
-					alert(res.id);
+				key: StripeForm.key,
+				image: button.data("image"),
+				name: button.data("name"),
+				description: button.data("description"),
+				panelLabel: button.data("panel-label"),
+				amount: button.data("amount"),
+				token: function( stripeData ) {
+					var data = {
+						token: stripeData.id,
+						planId: button.data( "plan-id" ),
+						firstName: firstName,
+						lastName: lastName,
+						email: email,
+						address: address
+					};
+					gifts.each(function() {
+						data[ this.name ] = this.value;
+					});
+					processMembership( data );
 				}
 			});
 		});
@@ -157,4 +220,28 @@ $(function() {
 			return this.pathname.split( "/" )[ 4 ] === (currentDemo + ".html");
 		}).click();
 	}
+});
+
+/*
+* Creating navigation elements for smaller-width screens using tinyNav and Chosen
+*/
+$(function() {
+
+	// For the site-specific navigation, we just need to create and style the select
+	var $siteMenu = $("#menu-top").tinyNav(),
+	$siteNav = $siteMenu.next();
+
+	// In order for Chosen to work as we'd like, 
+	// we have to insert the placeholder attribute, an empty option, and select it before instantiation
+	$siteNav.attr("data-placeholder", "Navigate...").prepend("<option></option>").val("").chosen();
+
+	// For the global site navigation, we move the generated control to the
+	// site footer so it doesn't appear above the header
+	var $globalLinks = $("#global-nav .links").tinyNav(),
+	$nav = $globalLinks.next(),
+	$container = $("<div class='tinynav-container'></div>"),
+	$header = $("<h3><span>More jQuery Sites</span></h3>");
+
+	$container.append( $header, $nav ).insertBefore("ul.footer-icon-links");
+	$nav.attr("data-placeholder", "Browse...").prepend("<option></option>").val("").chosen();
 });
