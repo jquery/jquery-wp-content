@@ -120,6 +120,7 @@ a {
 
 .entry-meta.row {
 	min-width: auto;
+	margin: 0;
 }
 
 .entry-meta aside {
@@ -152,6 +153,11 @@ a {
 .entry-meta aside.meta-details li {
 	margin-bottom: 0.7em;
 }
+.entry-meta aside.meta-details li[class^="icon-"] span,
+.entry-meta aside.meta-details li[class*="icon-"] span {
+	margin-left: 10px; 
+}
+
 .entry-meta aside.meta-details [class^="icon-"]:before,
 .entry-meta aside.meta-details [class*=" icon-"]:before {
 	margin-top: 0.05em;

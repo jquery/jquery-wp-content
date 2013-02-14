@@ -26,7 +26,7 @@
 		<aside class="meta-details six columns">
 			<h3>Details</h3>
 			<ul>
-				<li class="icon-calendar icon-large" title="Last Updated"><?php the_modified_time('F j, Y'); ?></li>
+				<li class="icon-calendar icon-large" title="Last Updated"><span><?php the_modified_time('F j, Y'); ?></span></li>
 			</ul>
 			<?php if ( get_post_meta( $post->ID, "contributors" ) ) : ?>
 				<?php $contributors = json_decode(get_post_meta( $post->ID, "contributors", true)) ?>
