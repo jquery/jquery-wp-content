@@ -26,9 +26,9 @@
 			widgets, and themes built on top of the jQuery JavaScript Library.
 			If you're new to jQuery UI, you might want to check out our
 			<a href="http://jqueryui.com/" title="jQuery UI">main site</a> for
-			more information and full demos. <!-- If you're new to jQuery, you might
-			also be interested in the <a href="http://learn.jquery.com/">Learn jQuery</a>
-			tutorials. --></p>
+			more information and full demos. If you're new to jQuery, you might
+			also be interested in the <a href="http://learn.jquery.com/">jQuery
+			Learning Center</a> tutorials.</p>
 
 		<p>This site provides API documentation for jQuery UI 1.10. If
 			you're working with jQuery UI 1.9, you can find the API documentation
