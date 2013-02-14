@@ -2154,12 +2154,21 @@ p.author a {
 	padding: 20px;
 }
 
-#banner-secondary h2,
-#banner-secondary h1 {
-	font: 45px/50px;
+#banner-secondary h1, 
+#banner-secondary h2 {
 	margin-bottom: 0;
 	color: #fff;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.85);
+}
+
+#banner-secondary h1 {
+	font-size: 48px;
+	line-height: 54px;
+}
+
+#banner-secondary h2 {
+	font-size: 36px;
+	line-height: 42px;
 }
 
 #banner-secondary p {
@@ -2187,9 +2196,22 @@ p.author a {
 
 #banner-secondary.large-banner h1,
 #banner-secondary.large-banner h2 {
+	margin-bottom: 10px;
+}
+
+#banner-secondary.large-banner h1 {
 	font-size: 60px;
 	line-height: 60px;
-	margin-bottom: 10px;
+}
+
+#banner-secondary.large-banner h2 {
+	font-size: 48px;
+	line-height: 48px;
+}
+
+#banner-secondary.large-banner h3 {
+	font-size: 36px;
+	line-height: 36px;
 }
 
 .center-txt {
