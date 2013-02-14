@@ -56,7 +56,7 @@
 
 		<div id="legal">
 			<ul class="footer-site-links">
-				<!-- <li><a class="icon-pencil" href="http://learn.jquery.com/">Learning Center</a></li> -->
+				<li><a class="icon-pencil" href="http://learn.jquery.com/">Learning Center</a></li>
 				<li><a class="icon-group" href="http://forum.jquery.com/using-jquery-ui/">Forum</a></li>
 				<li><a class="icon-wrench" href="http://api.jqueryui.com/">API</a></li>
 				<li><a class="icon-twitter" href="http://twitter.com/jqueryui">Twitter</a></li>
