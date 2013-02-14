@@ -36,6 +36,7 @@ a {
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index:10;
 }
 
 .beta-ribbon {
@@ -49,7 +50,7 @@ a {
 	position: relative;
 	padding: 7px 0;
 	left: -5px;
-	top: 15px;
+	top: 11px;
 	width: 120px;
 	background-color: #ffea94;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffea94), to(#FFEA5E)); 
