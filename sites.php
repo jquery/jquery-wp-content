@@ -52,7 +52,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jquery.com',
 			'body_class' => 'jquery-learn',
 			'options' => array(
-				'blogname' => 'Learn jQuery',
+				'blogname' => 'jQuery Learning Center',
 				'stylesheet' => 'learn.jquery.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
