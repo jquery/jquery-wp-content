@@ -3,28 +3,6 @@ Theme Name: jquery-org
 Template: jquery
 */
 
-/*Custom Colors*/
-/*a, #sidebar h3 {
-	color: #b71551;
-}
-
-#content code a {
-	background-color: rgba(6, 89, 150, 0.19);
-}
-
-#content h1 {
-	color: white;
-	font-weight: normal;
-	font-style: normal;
-}
-
-#content h2 {
-	color: white;
-	font-weight: normal;
-	font-style: normal;
-	margin-bottom: 20px;
-}*/
-
 #banner-large-image {
 	margin-right: -25px;
 	margin-left: -25px;
@@ -40,7 +18,6 @@ Template: jquery
 }
 
 #content h2 {
-	color: #b71551;
 	font-weight: normal;
 	font-style: normal;
 	margin-bottom: 20px;
@@ -64,12 +41,8 @@ Template: jquery
 	font-size: 60px;
 }
 
-.jquery-foundation.home #banner-secondary.large-banner.entry-header {
-	padding-bottom: 0px;
-}
-
-.jquery-foundation.page-id-5 #content #banner-large-image .vertically-centered-black-bg {
-	margin-top: 14.5%;
+#banner-large-image .vertically-centered-black-bg {
+	margin-top: 6.5%;
 }
 
 /*Homepage*/
@@ -82,7 +55,7 @@ Template: jquery
 	background-color: lightgray;
 	text-align: center;
 	margin: -25px -25px 0;
-	color: rgb(102,102,102);
+	color: #666666;
 	font: bold 20px/40px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
@@ -150,13 +123,13 @@ ul.flex-direction-nav {
 	margin-top: 25px;
 }
 
-	.jquery-foundation.page-id-2 #content .dark-callout-box {
+	.jquery-foundation #content .dark-callout-box {
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
 
 .big-message {
-	font: bold 50px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 50px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
 	color: #ffffff !important;
 	margin-top: 20px;
 }
@@ -167,7 +140,9 @@ ul.flex-direction-nav {
 }
 
 #content .dark-callout-box p {
-	font: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 22px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	padding-left: 10%;
+	padding-right: 10%;
 	color: #dddcdc;
 }
 
@@ -181,9 +156,9 @@ ul.flex-direction-nav {
 	margin-top: 35px;
 }
 
-	#content .twelve.columns .project {
-		margin-top: 0px;
-	}
+#content .twelve.columns .project {
+	margin-top: 0px;
+}
 
 .project img {
 	float: left;
@@ -197,10 +172,10 @@ ul.flex-direction-nav {
 }
 
 .member-level {
-	width: 32%;
+	width: 30.75%;
 	float: left;
 	display: inline;
-	margin-right: 2%;
+	margin-left: 2%;
 	background: url(../jquery/images/dark-grey-tile.png);
 	position: relative;
 	overflow: hidden;
@@ -303,7 +278,7 @@ a.icon-search::before {
 	clear: both;
 	position: relative;
 	z-index: 2;
-	margin-left: 15px;
+	margin-left: 0px;
 	margin-bottom: 30px;
 
 }
@@ -353,24 +328,28 @@ a.icon-search::before {
 #content .choose-gifts textarea {
 	width: 100%;
 	background: white;
-	border: 1px solid rgba(192,192,192,1);
+	border: 1px solid #c0c0c0;
 }
 
-.choose-gifts input[type="name"] {
-	margin-right: 3px;
+#content .choose-gifts input[type=text] {
+	margin: 5px 3px 0px 0px;
 }
 
-.choose-gifts input[type="name"], .choose-gifts input[type="email"]{
+#content .choose-gifts input[type=text], #content .choose-gifts input[type="email"]{
 	display: inline;
-	width: 49%;
+	background: white;
+	width: 100%;
 	padding: 8px 12px;
-	border: 1px solid rgba(192,192,192,1);
+	border: 1px solid #c0c0c0;
 	border-radius: 2px;
+	margin-top: 5px;
 	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
-#content .choose-gifts input:focus, #content .choose-gifts input[type=text]:focus, #content .choose-gifts textarea:focus {
+#content .choose-gifts input:focus, 
+#content .choose-gifts input[type="text"]:focus, 
+#content .choose-gifts textarea:focus {
 	border: 1px solid #78CFF5;
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -513,17 +492,6 @@ a.icon-search::before {
 	margin-bottom: 40px;
 }
 
-/*a.button,
-#content a.button, .button {
-	background-color: #b71551;
-}
-
-a.button:hover,
-#content a.button:hover {
-	background-color: #7c0d36;
-}*/
-
-
 /*Adjust widths for longer navigation*/
 
 nav#main .searchform {
@@ -532,10 +500,6 @@ nav#main .searchform {
 
 nav#main ul {
 	width: 80%;
-}
-
-.content-full.full-width #content {
-	padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 767px) {
