@@ -8,21 +8,21 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
-					<input value="http://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
+					<input value="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/jquery-1.9.0.js">
+					<input value="http://code.jquery.com/jquery-1.9.1.js">
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/ui/1.10.0/jquery-ui.js">
+					<input value="http://code.jquery.com/ui/1.10.1/jquery-ui.js">
 				</div>
 				<div class="download">
-					<div><strong>Download jQuery UI 1.10.0 (for jQuery 1.6+):</strong></div>
+					<div><strong>Download jQuery UI 1.10.1 (for jQuery 1.6+):</strong></div>
 					<span>
-						<a href="http://jqueryui.com/resources/download/jquery-ui-1.10.0.zip">Development Bundle</a>
-						<a href="http://jqueryui.com/resources/download/jquery-ui-themes-1.10.0.zip">Themes</a>
+						<a href="http://jqueryui.com/resources/download/jquery-ui-1.10.1.zip">Development Bundle</a>
+						<a href="http://jqueryui.com/resources/download/jquery-ui-themes-1.10.1.zip">Themes</a>
 						<a href="http://jqueryui.com/download/">Download Builder →</a>
 					</span>
 				</div>
