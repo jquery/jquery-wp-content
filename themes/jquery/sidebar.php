@@ -4,10 +4,14 @@
  */
 ?>
 <div id="sidebar" class="widget-area" role="complementary">
-	<?php $cat_args = array( 'depth' => 2, 'title_li' => '', 'current_category' => jq_post_category() ); ?>
 	<aside id="categories" class="widget">
 		<ul>
-			<?php wp_list_categories( $cat_args ); ?>
+			<?php wp_list_categories( array(
+				'depth' => 2,
+				'title_li' => '',
+				'current_category' => jq_post_category(),
+				'use_desc_for_title' => false
+			) ); ?>
 		</ul>
 	</aside>
 </div>
