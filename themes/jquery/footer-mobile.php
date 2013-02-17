@@ -8,19 +8,19 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
-					<input value="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.css">
+					<input value="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/jquery-1.9.0.min.js">
+					<input value="http://code.jquery.com/jquery-1.9.1.min.js">
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.min.js">
+					<input value="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.js">
 				</div>
 				<div class="download">
-					<strong>Download jQuery Mobile 1.3.0 beta:</strong>
-					<span><a href="http://code.jquery.com/mobile/1.3.0-beta.1/jquery.mobile-1.3.0-beta.1.zip">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
+					<strong>Download jQuery Mobile 1.3.0:</strong>
+					<span><a href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.zip">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
 				</div>
 				<ul class="footer-icon-links">
 					<li><a class="icon-github" href="http://github.com/jquery/jquery-mobile">GitHub <small>jQuery Mobile <br>Source</small></a></li>
