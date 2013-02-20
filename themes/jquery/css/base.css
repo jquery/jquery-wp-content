@@ -2976,6 +2976,82 @@ footer li img {
 	margin: 0;
 }
 
+.qunitjs .ribbon-wrapper-purple {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	cursor: pointer;
+}
+
+.qunitjs .ribbon-purple {
+	font: 12px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform:    rotate(-45deg);
+	-ms-transform:     rotate(-45deg);
+	-o-transform:      rotate(-45deg);
+	position: relative;
+	padding: 7px 0;
+	right: 0px;
+	bottom: -85px;
+	width: 200px;
+	border-top: 1px solid rgba(250, 250, 250, 0.27);
+	background-color: #6A2165;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6A2165), to(#390F39)); 
+	background-image: -webkit-linear-gradient(top, #6A2165, #390F39); 
+	background-image:    -moz-linear-gradient(top, #6A2165, #390F39); 
+	background-image:     -ms-linear-gradient(top, #6A2165, #390F39); 
+	background-image:      -o-linear-gradient(top, #6A2165, #390F39);
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+	box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.qunitjs .ribbon-purple-base i.icon-github-alt {
+	font-size: 24px;
+	color: white;
+}
+
+.qunitjs .ribbon-purple-base .icon-github-alt:before {
+	padding-right: 8px;
+}
+
+.qunitjs .ribbon-purple:before {
+	left: 0;
+}
+.qunitjs .ribbon-purple:after {
+	right: 0;
+}
+.qunitjs .ribbon-purple-base {
+	font-size: 12px;
+	color: #333;
+	text-align: center;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform:    rotate(-45deg);
+	-ms-transform:     rotate(-45deg);
+	-o-transform:      rotate(-45deg);
+	position: relative;
+	padding: 7px 14px;
+	left: 82px;
+	bottom: -51px;
+	width: 200px;
+	height: 200px;
+	background-color: #6A2165;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6A2165), to(#390F39)); 
+	background-image: -webkit-linear-gradient(top, #6A2165, #390F39); 
+	background-image:    -moz-linear-gradient(top, #6A2165, #390F39); 
+	background-image:     -ms-linear-gradient(top, #6A2165, #390F39); 
+	background-image:      -o-linear-gradient(top, #6A2165, #390F39); 
+	color: white;
+	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
+	box-shadow:         0px 0px 3px rgba(0,0,0,0.3);
+}
 
 /* Media Queries
    ========================================================================== */
