@@ -151,8 +151,8 @@ a,
 
 /* Project Tiles */
 
-#sidebar .project-tiles {
-	margin: 0 -20px;
+#content .project-tiles {
+	margin: 0;
 }
 
 .project-tile {
