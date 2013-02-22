@@ -112,6 +112,20 @@ a,
 	display: inline;
 }
 
+#sidebar li.try-jquery {
+	background: none;
+	margin: 10px 0 0;
+	padding: 0;
+}
+
+#sidebar li.try-jquery a {
+	background: url('i/try-jquery.png') top left no-repeat;
+	height: 221px;
+	width: 220px;
+	text-indent: -9999px;
+	display: block;
+}
+
 #content #whos-using li {
 	background: none;
 }
