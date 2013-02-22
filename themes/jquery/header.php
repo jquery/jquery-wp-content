@@ -88,6 +88,7 @@
 					<li class="dropdown"><a href="#">Support</a>
 						<ul>
 							<li><a href="http://learn.jquery.com/">Learning Center</a></li>
+							<li><a href="http://try.jquery.com/">Try jQuery</a></li>
 							<li><a href="http://irc.jquery.org/">IRC/Chat</a></li>
 							<li><a href="http://forum.jquery.com/">Forums</a></li>
 							<li><a href="http://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
