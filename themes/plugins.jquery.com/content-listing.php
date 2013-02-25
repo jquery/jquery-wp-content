@@ -9,11 +9,18 @@
 		</h2>
 	</header>
 	<div class="entry-summary row collapse">
-		<div class="eight columns">
-			<?php the_excerpt(); ?>
+		<div class="github-activity entry-meta">
+			<div class="info-block watchers">
+				<div class="number"><?php echo jq_plugin_watchers(); ?></div>
+				<div class="caption">Watchers</div>
+			</div>
+			<div class="info-block forks">
+				<div class="number"><?php echo jq_plugin_forks(); ?></div>
+				<div class="caption">Forks</div>
+			</div>
 		</div>
-		<div class="four columns">
-			<a class="button" href="<?php the_permalink(); ?>">View Plugin</a>
+		<div class="eight coulmns">
+			<?php the_excerpt(); ?>
 		</div>
 	</div>
 </article>

@@ -27,6 +27,7 @@ a {
 .entry-meta {
 	text-align: right;
 }
+
 /*----------[ Notifications ]-----------------------------------------------*/
 
 .notify {
@@ -119,9 +120,8 @@ a {
 	border-radius: 8px;
 }
 
-/*----------[ Individual plugin page general sidebar styles ]---------------*/
-
-.jquery-plugin .github-activity .info-block {
+/*----------[ Github Activity ]-------------------------------------*/
+.github-activity .info-block {
 	display: inline-block;
 	margin: 0 10px 1em 0;
 	border-radius: 4px;
@@ -129,7 +129,7 @@ a {
 	min-width: 80px;
 }
 
-.jquery-plugin .github-activity .info-block .number {
+.github-activity .info-block .number {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
 	background: black url('images/dark-grey-tile.png');
@@ -138,7 +138,7 @@ a {
 	font: bold 3em/1em "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-.jquery-plugin .github-activity .info-block .caption {
+.github-activity .info-block .caption {
 	border-bottom-left-radius: 4px;
 	border-bottom-right-radius: 4px;
 	padding: 4px 10px;
@@ -147,6 +147,20 @@ a {
 	text-transform: uppercase;
 	font: bold 11px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+
+.entry-meta.github-activity .info-block {
+	margin: 10px 0 0 10px;
+}
+.entry-meta.github-activity .info-block .number {
+	font-size: 1.25em;
+}
+
+.entry-meta.github-activity .info-block .caption {
+	font-size: 1em;
+}
+
+
+/*----------[ Individual plugin page general sidebar styles ]---------------*/
 
 .jquery-plugin #sidebar li a {
 	overflow: hidden;

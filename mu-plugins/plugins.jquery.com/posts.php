@@ -48,6 +48,9 @@ function jquery_plugin_posts_only_for_searches( $query ) {
 	if ( $query->is_main_query() && ($query->is_search() || $query->is_tag()) ) {
 		$query->set( 'post_type', 'jquery_plugin' );
 		$query->set( 'post_parent', 0 );
+		$query->set( 'meta_key', 'watchers' );
+		$query->set( 'orderby', 'meta_value' );
+		$query->set( 'order', 'DESC' );
 	}
 }
 
