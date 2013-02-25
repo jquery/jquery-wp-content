@@ -1528,32 +1528,32 @@ iframe {
 	border-right: none;
 }
 
-#container, 
+#container,
 footer {
 	border-top: 1px solid #7ACEF4;
 }
 
-.jquery-ui #container, 
+.jquery-ui #container,
 .jquery-ui footer {
 	border-top-color: #FAA523;
 }
 
-.jquery-mobile #container, 
+.jquery-mobile #container,
 .jquery-mobile footer {
 	border-top-color: #3EB249;
 }
 
-.sizzlejs #container, 
+.sizzlejs #container,
 .sizzlejs footer {
 	border-top-color: #FAA523;
 }
 
-.qunitjs #container, 
+.qunitjs #container,
 .qunitjs footer {
 	border-top-color: #9C3493;
 }
 
-.jquery-learn #container, 
+.jquery-learn #container,
 .jquery-learn footer {
 	border-top-color: #333;
 }
@@ -2154,7 +2154,7 @@ p.author a {
 	padding: 20px;
 }
 
-#banner-secondary h1, 
+#banner-secondary h1,
 #banner-secondary h2 {
 	margin-bottom: 0;
 	color: #fff;
@@ -2976,6 +2976,22 @@ footer li img {
 	margin: 0;
 }
 
+#content .project-tiles {
+	margin: 0;
+}
+
+.project-tile .jqueryui.small.logo,
+.project-tile .jquery-mobile.small.logo,
+.project-tile .qunitjs.small.logo,
+.project-tile .sizzlejs.small.logo {
+	margin: 0 auto;
+	text-indent: -9999px;
+}
+
+.project-tile.six.columns.color.sizzle-red {
+	margin-bottom: 10px;
+}
+
 
 /* Media Queries
    ========================================================================== */
@@ -3196,7 +3212,7 @@ footer li img {
 
 @media only screen and (max-width: 480px) {
 	
-	#global-nav { 
+	#global-nav {
 		display: none;
 	}
 
@@ -3239,7 +3255,7 @@ footer li img {
 	
 	nav#main ul li, nav#main ul li a {
 		float: none;
-		padding: 6px 0px 6px 8px;	
+		padding: 6px 0px 6px 8px;
 	}
 	.chzn-container-single .chzn-single span {
 		font: normal normal 16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
@@ -3252,7 +3268,7 @@ footer li img {
 		padding-right: 10px;
 	}
 
-	.content-full #content, 
+	.content-full #content,
 	.content-full.full-width #content,
 	.content-right #content,
 	.content-left #content {
