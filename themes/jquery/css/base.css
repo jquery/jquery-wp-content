@@ -1528,32 +1528,32 @@ iframe {
 	border-right: none;
 }
 
-#container, 
+#container,
 footer {
 	border-top: 1px solid #7ACEF4;
 }
 
-.jquery-ui #container, 
+.jquery-ui #container,
 .jquery-ui footer {
 	border-top-color: #FAA523;
 }
 
-.jquery-mobile #container, 
+.jquery-mobile #container,
 .jquery-mobile footer {
 	border-top-color: #3EB249;
 }
 
-.sizzlejs #container, 
+.sizzlejs #container,
 .sizzlejs footer {
 	border-top-color: #FAA523;
 }
 
-.qunitjs #container, 
+.qunitjs #container,
 .qunitjs footer {
 	border-top-color: #9C3493;
 }
 
-.jquery-learn #container, 
+.jquery-learn #container,
 .jquery-learn footer {
 	border-top-color: #333;
 }
@@ -2154,7 +2154,7 @@ p.author a {
 	padding: 20px;
 }
 
-#banner-secondary h1, 
+#banner-secondary h1,
 #banner-secondary h2 {
 	margin-bottom: 0;
 	color: #fff;
@@ -2977,8 +2977,8 @@ footer li img {
 }
 
 .qunitjs .ribbon-wrapper-purple {
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	overflow: hidden;
 	position: fixed;
 	bottom: 0px;
@@ -2987,7 +2987,7 @@ footer li img {
 }
 
 .qunitjs .ribbon-purple {
-	font: 12px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font: 10px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	text-transform: uppercase;
 	color: white;
 	text-align: center;
@@ -2997,15 +2997,15 @@ footer li img {
 	-o-transform:      rotate(-45deg);
 	position: relative;
 	padding: 7px 0;
-	right: 0px;
-	bottom: -85px;
-	width: 200px;
+	right: 17px;
+	bottom: -48px;
+	width: 150px;
 	border-top: 1px solid rgba(250, 250, 250, 0.27);
 	background-color: #6A2165;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#6A2165), to(#390F39)); 
-	background-image: -webkit-linear-gradient(top, #6A2165, #390F39); 
-	background-image:    -moz-linear-gradient(top, #6A2165, #390F39); 
-	background-image:     -ms-linear-gradient(top, #6A2165, #390F39); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6A2165), to(#390F39));
+	background-image: -webkit-linear-gradient(top, #6A2165, #390F39);
+	background-image:    -moz-linear-gradient(top, #6A2165, #390F39);
+	background-image:     -ms-linear-gradient(top, #6A2165, #390F39);
 	background-image:      -o-linear-gradient(top, #6A2165, #390F39);
 	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
 	-moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
@@ -3013,7 +3013,7 @@ footer li img {
 }
 
 .qunitjs .ribbon-purple-base i.icon-github-alt {
-	font-size: 24px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -3037,16 +3037,16 @@ footer li img {
 	-o-transform:      rotate(-45deg);
 	position: relative;
 	padding: 7px 14px;
-	left: 82px;
-	bottom: -51px;
-	width: 200px;
-	height: 200px;
+	left: 50px;
+	bottom: -16px;
+	width: 150px;
+	height: 150px;
 	background-color: #6A2165;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#6A2165), to(#390F39)); 
-	background-image: -webkit-linear-gradient(top, #6A2165, #390F39); 
-	background-image:    -moz-linear-gradient(top, #6A2165, #390F39); 
-	background-image:     -ms-linear-gradient(top, #6A2165, #390F39); 
-	background-image:      -o-linear-gradient(top, #6A2165, #390F39); 
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#6A2165), to(#390F39));
+	background-image: -webkit-linear-gradient(top, #6A2165, #390F39);
+	background-image:    -moz-linear-gradient(top, #6A2165, #390F39);
+	background-image:     -ms-linear-gradient(top, #6A2165, #390F39);
+	background-image:      -o-linear-gradient(top, #6A2165, #390F39);
 	color: white;
 	-webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
 	-moz-box-shadow:    0px 0px 3px rgba(0,0,0,0.3);
@@ -3272,7 +3272,7 @@ footer li img {
 
 @media only screen and (max-width: 480px) {
 	
-	#global-nav { 
+	#global-nav {
 		display: none;
 	}
 
@@ -3315,7 +3315,7 @@ footer li img {
 	
 	nav#main ul li, nav#main ul li a {
 		float: none;
-		padding: 6px 0px 6px 8px;	
+		padding: 6px 0px 6px 8px;
 	}
 	.chzn-container-single .chzn-single span {
 		font: normal normal 16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
@@ -3328,7 +3328,7 @@ footer li img {
 		padding-right: 10px;
 	}
 
-	.content-full #content, 
+	.content-full #content,
 	.content-full.full-width #content,
 	.content-right #content,
 	.content-left #content {
