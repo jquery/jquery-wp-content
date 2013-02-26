@@ -16,9 +16,9 @@ This install guide assumes you already have certain prerequisites already config
 
 	```
 	<VirtualHost *:80>
-	ServerName local.jquery.com
-	ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
-	DocumentRoot "/srv/www/jquery"
+		ServerName local.jquery.com
+		ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
+		DocumentRoot "/srv/www/jquery"
 		<Directory /srv/www/jquery>
 			Options All
 			AllowOverride All
