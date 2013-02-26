@@ -49,7 +49,7 @@ function jquery_plugin_posts_only_for_searches( $query ) {
 		$query->set( 'post_type', 'jquery_plugin' );
 		$query->set( 'post_parent', 0 );
 		$query->set( 'meta_key', 'watchers' );
-		$query->set( 'orderby', 'meta_value' );
+		$query->set( 'orderby', 'meta_value_num' );
 		$query->set( 'order', 'DESC' );
 	}
 }
