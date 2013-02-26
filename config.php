@@ -32,8 +32,21 @@ $live_site = $_SERVER['HTTP_HOST'];
 if ( JQUERY_STAGING )
 	$live_site = str_replace( JQUERY_STAGING_PREFIX, '', $live_site );
 
-if ( ! isset( $sites[ $live_site ] ) )
-	die( 'Domain mapping issue. You have jquery-wp-content configured for ' . JQUERY_STAGING_PREFIX . 'jquery.com.' );
+if ( ! isset( $sites[ $live_site ] ) ) {
+	if ( JQUERY_STAGING ) {
+		die( 'Domain mapping issue. You have jquery-wp-content configured for ' . JQUERY_STAGING_PREFIX . 'jquery.com.' );
+	} else {
+		// This shouldn't happen in production :-(
+		// Record the event and treat this as a http://jquery.com hit.
+		$vars = get_defined_vars();
+		unset( $vars['GLOBALS'], $vars['sites'], $vars['_POST'], $vars['_GET'], $vars['_FILES'], $vars['_ENV'], $vars['_REQUEST'] );
+		ob_start();
+		var_dump( $vars );
+		$debug = ob_get_clean();
+		error_log( gmdate( '[d-M-Y H:i:s e] ' ) . $debug . "\n", 3, '/tmp/domain_mapping.log' );
+		$_SERVER['HTTP_HOST'] = $live_site = 'jquery.com';
+	}
+}
 
 if ( ! empty( $sites[ $live_site ]['subsites'] ) ) {
 	list( $first_path_segment ) = explode( '/', trim( $_SERVER['REQUEST_URI'], '/' ), 2 );
