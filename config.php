@@ -28,13 +28,15 @@ $sites = jquery_sites();
 if ( ! isset( $_SERVER['HTTP_HOST'] ) )
 	$_SERVER['HTTP_HOST'] = JQUERY_STAGING_PREFIX . 'jquery.com';
 
-$live_site = $_SERVER['HTTP_HOST'];
+$live_site = preg_replace( '/^www\.|:\d+$/', '', strtolower( $_SERVER['HTTP_HOST'] ) );
 if ( JQUERY_STAGING )
 	$live_site = str_replace( JQUERY_STAGING_PREFIX, '', $live_site );
 
 if ( ! isset( $sites[ $live_site ] ) ) {
 	if ( JQUERY_STAGING ) {
-		die( 'Domain mapping issue. You have jquery-wp-content configured for ' . JQUERY_STAGING_PREFIX . 'jquery.com.' );
+		header( "400 Invalid Request" );
+		header( "Content-Type: text/plain" );
+		die( 'Domain mapping issue. You have jquery-wp-content configured for ' . JQUERY_STAGING_PREFIX . 'jquery.com. You tried to get '.$_SERVER['HTTP_HOST'] );
 	} else {
 		// This shouldn't happen in production :-(
 		// Record the event and treat this as a http://jquery.com hit.
@@ -44,7 +46,8 @@ if ( ! isset( $sites[ $live_site ] ) ) {
 		var_dump( $vars );
 		$debug = ob_get_clean();
 		error_log( gmdate( '[d-M-Y H:i:s e] ' ) . $debug . "\n", 3, '/tmp/domain_mapping.log' );
-		$_SERVER['HTTP_HOST'] = $live_site = 'jquery.com';
+		header( "Location: http://jquery.com/" );
+		exit;
 	}
 }
 
