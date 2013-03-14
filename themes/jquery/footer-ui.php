@@ -8,7 +8,7 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
-					<input value="http://code.jquery.com/ui/1.10.2/themes/base/jquery-ui.css">
+					<input value="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css">
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
