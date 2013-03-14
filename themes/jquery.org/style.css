@@ -421,14 +421,14 @@ a.icon-search::before {
 	line-height: 24px;
 }
 
-.team-page #content ul.block-grid img {
+.page-slug-team #content ul.block-grid img {
 	display: block;
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: 10px;
 }
 
-.team-page #content h2 {
+.page-slug-team #content h2 {
 	color: #333;
 	font-size: 20px;
 	line-height: 20px;
@@ -437,7 +437,7 @@ a.icon-search::before {
 	margin-bottom:5px;
 }
 
-.team-page #content h3 {
+.page-slug-team #content h3 {
 	color: #008b9f;
 	font-style: italic;
 	font-size: 14px;
@@ -447,18 +447,18 @@ a.icon-search::before {
 	border-bottom: 1px solid #dbdbdb;
 }
 
-.team-page #content ul.team-list h2,
-.team-page #content ul.team-list h3 {
+.page-slug-team #content ul.team-list h2,
+.page-slug-team #content ul.team-list h3 {
 	text-align: left;
 
 }
 
-.team-page #content ul.team-list h3 {
+.page-slug-team #content ul.team-list h3 {
 	border: none;
 	min-height: 5px;
 }
 
-.team-page #content p.center-txt {
+.page-slug-team #content p.center-txt {
 	padding-left: 10%;
 	padding-right: 10%;
 	color: #b71551;
