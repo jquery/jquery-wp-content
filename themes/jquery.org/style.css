@@ -4,10 +4,10 @@ Template: jquery
 */
 
 /*Custom Colors*/
-/*a, #sidebar h3 {
-	color: #b71551;
+a, #sidebar h3 {
+	color: #0769AD;
 }
-
+/*
 #content code a {
 	background-color: rgba(6, 89, 150, 0.19);
 }
@@ -40,7 +40,7 @@ Template: jquery
 }
 
 #content h2 {
-	color: #b71551;
+	color: #0769AD;
 	font-weight: normal;
 	font-style: normal;
 	margin-bottom: 20px;
@@ -404,15 +404,15 @@ a.icon-search::before {
 
 /*History Page*/
 
-.history-page #content h2 {
-	color: #0098bf;
+.page-slug-history #content h2 {
+	color: #0769AD;
 	font-size: 40px;
 	line-height: 40px;
 }
 
 
-.history-page #content h3 {
-	color: #b71551;
+.page-slug-history #content h3 {
+	color: #0769AD;
 	font-weight: normal;
 	font-style: normal;
 	border-top: 1px solid #d7d7d7;
@@ -438,7 +438,7 @@ a.icon-search::before {
 }
 
 .page-slug-team #content h3 {
-	color: #008b9f;
+	color: #0769AD;
 	font-style: italic;
 	font-size: 14px;
 	line-height: 18px;
@@ -461,7 +461,6 @@ a.icon-search::before {
 .page-slug-team #content p.center-txt {
 	padding-left: 10%;
 	padding-right: 10%;
-	color: #b71551;
 }
 
 .page-slug-members #content h2.block {
