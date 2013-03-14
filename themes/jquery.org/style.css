@@ -68,7 +68,7 @@ Template: jquery
 	padding-bottom: 0px;
 }
 
-.jquery-foundation.page-id-5 #content #banner-large-image .vertically-centered-black-bg {
+.jquery-foundation.page-slug-join #content #banner-large-image .vertically-centered-black-bg {
 	margin-top: 14.5%;
 }
 
@@ -150,7 +150,7 @@ ul.flex-direction-nav {
 	margin-top: 25px;
 }
 
-	.jquery-foundation.page-id-2 #content .dark-callout-box {
+	.jquery-foundation.page-slug-donate #content .dark-callout-box {
 		padding-top: 0px;
 		padding-bottom: 0px;
 	}
