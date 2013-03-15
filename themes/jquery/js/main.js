@@ -91,6 +91,89 @@ $(function() {
 			gifts.not( gift ).slideUp();
 		});
 
+		// Coupon codes
+		var couponDiscount = 0;
+		$( "[name='coupon']" ).each(function() {
+
+			var input = $( this ),
+				payButtons = input.closest( "form" ).find( ".pay" );
+
+			// Hide input by default, replace with a link to show the input
+			input.hide();
+			$( "<a href='#'>" )
+				.text( "Have a coupon code?" )
+				.on( "click", function( event ) {
+					event.preventDefault();
+					$( this ).hide();
+					input.show().focus();
+				})
+				.insertAfter( input );
+
+			// TODO: loading indicator
+			// Verify the coupon code on blur
+			input.on( "blur", function() {
+				var couponId = input.val();
+
+				// Disable pay buttons while we're verifying the coupon
+				payButtons.prop( "disabled", true );
+
+				// Verify the coupon
+				$.ajax({
+					url: StripeForm.url,
+					dataType: "json",
+					data: {
+						action: "stripe_coupon",
+						coupon: couponId
+					}
+				})
+				.done(function( coupon ) {
+
+					// Adjust payment buttons
+					payButtons.each(function() {
+						var amount,
+							button = $( this );
+
+						// Hide quarterly buttons
+						if ( button.text().match( /Quarterly/ ) ) {
+							button.hide();
+						}
+
+						// Adjust annual buttons
+						if ( button.text().match( /Annual/ ) ) {
+							amount = parseInt( button.data( "amount" ), 10 ) / 100;
+							if ( coupon.percent_off ) {
+								couponDiscount = amount * (coupon.percent_off / 100);
+							} else if ( coupon.amount_off ) {
+								couponDiscount = coupon.amount_off;
+							}
+
+							amount = amount - couponDiscount;
+							button.text( "Annual: $" + amount );
+						}
+					});
+				})
+				.fail(function() {
+					couponDiscount = 0;
+
+					// TODO: notify user
+					// Show all payment buttons with standard values
+					payButtons.each(function() {
+						var button = $( this ).show();
+
+						if ( button.text().match( /Annual/ ) ) {
+							amount = parseInt( button.data( "amount" ), 10 ) / 100;
+							button.text( "Annual: $" + amount );
+						}
+					});
+				})
+				.always(function() {
+
+					// Re-enable the pay buttons
+					payButtons.prop( "disabled", false );
+				});
+			});
+		});
+
 		function processMembership( data ) {
 			$.ajax({
 				url: StripeForm.url,
@@ -113,6 +196,7 @@ $(function() {
 				lastName = $.trim( form.find( "[name=last-name]" ).val() ),
 				email = $.trim( form.find( "[name=email]" ).val() ),
 				address = $.trim( form.find( "[name=address]" ).val() ),
+				coupon = $.trim( form.find( "[name=coupon]" ).val().toLowerCase() ),
 				gifts = form.find( "select" ),
 				errors = form.find( ".errors" ).empty().hide(),
 				valid = true;
@@ -150,7 +234,7 @@ $(function() {
 				name: button.data("name"),
 				description: button.data("description"),
 				panelLabel: button.data("panel-label"),
-				amount: button.data("amount"),
+				amount: parseInt( button.data("amount"), 10 ) - (couponDiscount * 100),
 				token: function( stripeData ) {
 					var data = {
 						token: stripeData.id,
@@ -158,7 +242,8 @@ $(function() {
 						firstName: firstName,
 						lastName: lastName,
 						email: email,
-						address: address
+						address: address,
+						coupon: coupon
 					};
 					gifts.each(function() {
 						data[ this.name ] = this.value;
