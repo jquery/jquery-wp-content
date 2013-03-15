@@ -28,6 +28,16 @@ This install guide assumes you already have certain prerequisites already config
 	</VirtualHost>
 	```
 
+	Make sure that virtual hosts are enabled as well:
+
+	```
+	NameVirtualHost *:80
+	```
+
+	Both blocks of code should be pasted into `extra/httpd-vhosts.conf`.
+	Be sure to check `httpd.conf` to verify there is a line that includes
+	`httpd-vhosts.conf`. It may already exist, but be commented out.
+
 	You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
 
 1. Place the WordPress core files **at** the document root you chose. For example, if you used `/srv/www/jquery`, you should unzip or clone WordPress directly into that directory, *not* a directory below it. **Do not install WordPress.** You can do this any number of ways:
