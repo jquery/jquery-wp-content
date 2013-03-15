@@ -76,15 +76,15 @@ function menu_header_sizzlejs_com() {
 function menu_header_jquery_org() {
 	return array(
 		'http://jquery.org/' => 'Home',
-		'http://jquery.org/credit-card/' => 'Credit Card',
-		'http://jquery.org/donate/' => 'Donate',
 		'http://jquery.org/join/' => 'Join',
 		'http://jquery.org/members/' => 'Members',
 		'http://jquery.org/sponsors/' => 'Sponsors',
+		'http://jquery.org/team/' => 'Team',
+		'http://jquery.org/meeting/' => 'Meetings',
 		'http://jquery.org/history/' => 'History',
 		'http://brand.jquery.org/' => 'Brand Guide',
-		'http://jquery.org/meeting/' => 'Meetings',
-		'http://jquery.org/team/' => 'Team',
+		'http://jquery.org/credit-card/' => 'Credit Card',
+		'http://jquery.org/donate/' => 'Donate',
 	);
 }
 
