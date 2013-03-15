@@ -147,6 +147,9 @@ $(function() {
 								couponDiscount = coupon.amount_off;
 							}
 
+							// If the coupon is worth more than the membership,
+							// don't show a negative value for the payment button
+							couponDiscount = Math.min( amount, couponDiscount );
 							amount = amount - couponDiscount;
 							button.text( "Annual: $" + amount );
 						}
