@@ -193,16 +193,12 @@ $(function() {
 		})();
 
 		function processMembership( data ) {
-			$.ajax({
+			return $.ajax({
 				url: StripeForm.url,
 				data: $.extend({
 					action: StripeForm.action,
 					nonce: StripeForm.nonce
 				}, data )
-			}).done(function() {
-				window.location = "/join/thanks/";
-			}).fail(function() {
-				// TODO
 			});
 		}
 
@@ -266,7 +262,16 @@ $(function() {
 					gifts.each(function() {
 						data[ this.name ] = this.value;
 					});
-					processMembership( data );
+					processMembership( data )
+						.done(function() {
+							window.location = "/join/thanks/";
+						}).fail(function() {
+							showError(
+								"There was an error processing your payment. " +
+								"Please contact membership@jquery.org."
+							);
+							errors.slideDown();
+						});
 				}
 			});
 		});
