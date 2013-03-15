@@ -25,6 +25,11 @@ a, #sidebar h3 {
 	margin-bottom: 20px;
 }*/
 
+.page-slug-index #banner-secondary.large-banner {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 #banner-large-image {
 	margin-right: -25px;
 	margin-left: -25px;
