@@ -17,6 +17,28 @@ class StripeForm {
 		) );
 	}
 
+	public static function coupon() {
+		require_once( 'lib/Stripe.php' );
+		Stripe::setApiKey( STRIPE_SECRET );
+
+		// Verify required data
+		if ( empty( $_REQUEST[ 'coupon' ] ) ) {
+			self::fail( 'Please enter a coupon code.');
+		}
+
+		try {
+			$coupon = Stripe_Coupon::retrieve( $_REQUEST[ 'coupon' ] );
+		} catch( Exception $e ) {
+			self::fail( 'Invalid coupon id' );
+		}
+
+		echo json_encode(array(
+			'percent_off' => $coupon->percent_off,
+			'amount_off' => $coupon->amount_off
+		));
+		exit();
+	}
+
 	public static function charge() {
 		require_once( 'lib/Stripe.php' );
 		Stripe::setApiKey( STRIPE_SECRET );
@@ -45,9 +67,14 @@ class StripeForm {
 			'card' => $token,
 			'description' => stripcslashes($name)
 		) );
-		$charge = $customer->updateSubscription( array(
+		$subscription = array(
 			'plan' => $_REQUEST['planId']
-		) );
+		);
+		if ( !empty( $_REQUEST['coupon'] ) ) {
+			$subscription['coupon'] = $_REQUEST['coupon'];
+		}
+		var_dump( $subscription );
+		$charge = $customer->updateSubscription( $subscription );
 
 		// Create or update WordPress user
 		$user = get_user_by( 'email', $email );
@@ -91,3 +118,5 @@ class StripeForm {
 add_action( 'init', array( 'StripeForm', 'init' ) );
 add_action( 'wp_ajax_nopriv_stripe_charge', array( 'StripeForm', 'charge' ) );
 add_action( 'wp_ajax_stripe_charge', array( 'StripeForm', 'charge' ) );
+add_action( 'wp_ajax_nopriv_stripe_coupon', array( 'StripeForm', 'coupon' ) );
+add_action( 'wp_ajax_stripe_coupon', array( 'StripeForm', 'coupon' ) );
