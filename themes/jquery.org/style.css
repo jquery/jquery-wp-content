@@ -482,8 +482,8 @@ a.icon-search::before {
 	font-size: 18px;
 	line-height: 18px;
 	margin-bottom: 0;
-	border-top: 1px solid #e0e0e0;
-	padding-top: 15px;
+	padding-top: 10px;
+	text-align: center;
 }
 
 .page-slug-members #content ul.block-grid p {
