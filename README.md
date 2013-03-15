@@ -44,7 +44,6 @@ This install guide assumes you already have certain prerequisites already config
 	│   ├── jquery-wp-content
 	│   ├── license.txt
 	│   ├── readme.html
-	│   ├── web-base-template
 	│   ├── wp-activate.php
 	│   ├── wp-admin
 	│   ├── wp-blog-header.php
