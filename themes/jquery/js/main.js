@@ -112,7 +112,7 @@ $(function() {
 			// TODO: loading indicator
 			// Verify the coupon code on blur
 			input.on( "blur", function() {
-				var couponId = input.val();
+				var couponId = input.val().toLowerCase();
 
 				// Disable pay buttons while we're verifying the coupon
 				payButtons.prop( "disabled", true );
