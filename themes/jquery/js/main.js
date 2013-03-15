@@ -177,6 +177,21 @@ $(function() {
 			});
 		});
 
+		(function() {
+			var couponCode = location.search.match(/[?&]coupon=([^&]+)/);
+			if ( !couponCode ) {
+				return;
+			}
+
+			couponCode = couponCode[ 1 ];
+			$( "[name='coupon']" )
+				.val( couponCode )
+				// TODO: Move the relevant logic into a function we can call
+				.each(function() {
+					$( this ).triggerHandler( "blur" );
+				});
+		})();
+
 		function processMembership( data ) {
 			$.ajax({
 				url: StripeForm.url,
