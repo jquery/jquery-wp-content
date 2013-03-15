@@ -79,8 +79,6 @@
 					</li>
 					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
 						<ul>
-							<li><a href="http://events.jquery.org/2013/eu/">Europe</a></li>
-							<li><a href="http://jqueryto.com">Toronto</a></li>
 							<li><a href="http://events.jquery.org/2013/uk/">UK</a></li>
 							<li><a href="http://events.jquery.org/2013/portland/">Portland</a></li>
 						</ul>
@@ -96,11 +94,11 @@
 					</li>
 					<li class="dropdown"><a href="http://jquery.org/">jQuery Foundation</a>
 						<ul>
-							<li><a href="http://jquery.org/about/">About</a></li>
-							<li><a href="http://jquery.org/history/">History</a></li>
-							<li><a href="http://jquery.org/team/">Team</a></li>
-							<li><a href="http://jquery.org/sponsors/">Sponsors</a></li>
+							<li><a href="http://jquery.org/credit-card/">Credit Card</a></li>
 							<li><a href="http://jquery.org/donate/">Donate</a></li>
+							<li><a href="http://jquery.org/join/">Join</a></li>
+							<li><a href="http://jquery.org/members/">Members</a></li>
+							<li><a href="http://jquery.org/team/">Team</a></li>
 							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
 						</ul>
 					</li>
