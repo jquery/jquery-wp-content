@@ -82,6 +82,7 @@ function menu_header_jquery_org() {
 		'http://jquery.org/members/' => 'Members',
 		'http://jquery.org/sponsors/' => 'Sponsors',
 		'http://jquery.org/history/' => 'History',
+		'http://brand.jquery.org/' => 'Brand Guide',
 		'http://jquery.org/meeting/' => 'Meetings',
 		'http://jquery.org/team/' => 'Team',
 	);
