@@ -140,7 +140,7 @@ $(function() {
 
 						// Adjust annual buttons
 						if ( button.text().match( /Annual/ ) ) {
-							amount = parseInt( button.data( "amount" ), 10 ) / 100;
+							amount = parseInt( button.data( "amount" ), 10 );
 							if ( coupon.percent_off ) {
 								couponDiscount = amount * (coupon.percent_off / 100);
 							} else if ( coupon.amount_off ) {
@@ -150,7 +150,7 @@ $(function() {
 							// If the coupon is worth more than the membership,
 							// don't show a negative value for the payment button
 							couponDiscount = Math.min( amount, couponDiscount );
-							amount = amount - couponDiscount;
+							amount = (amount - couponDiscount) / 100;
 							button.text( "Annual: $" + amount );
 						}
 					});
