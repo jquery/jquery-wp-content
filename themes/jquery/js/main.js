@@ -251,7 +251,7 @@ $(function() {
 				name: button.data("name"),
 				description: button.data("description"),
 				panelLabel: button.data("panel-label"),
-				amount: parseInt( button.data("amount"), 10 ) - (couponDiscount * 100),
+				amount: parseInt( button.data("amount"), 10 ) - couponDiscount,
 				token: function( stripeData ) {
 					var data = {
 						token: stripeData.id,
