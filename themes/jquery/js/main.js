@@ -214,6 +214,7 @@ $(function() {
 				email = $.trim( form.find( "[name=email]" ).val() ),
 				address = $.trim( form.find( "[name=address]" ).val() ),
 				coupon = $.trim( form.find( "[name=coupon]" ).val().toLowerCase() ),
+				amount = parseInt( button.data("amount"), 10 ) - couponDiscount,
 				gifts = form.find( "select" ),
 				errors = form.find( ".errors" ).empty().hide(),
 				valid = true;
@@ -250,8 +251,8 @@ $(function() {
 				image: button.data("image"),
 				name: button.data("name"),
 				description: button.data("description"),
-				panelLabel: button.data("panel-label"),
-				amount: parseInt( button.data("amount"), 10 ) - couponDiscount,
+				panelLabel: ( amount > 0 ? button.data("panel-label") : "Join" ),
+				amount: amount,
 				token: function( stripeData ) {
 					var data = {
 						token: stripeData.id,
