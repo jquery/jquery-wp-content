@@ -188,6 +188,9 @@ $(function() {
 				.val( couponCode )
 				// TODO: Move the relevant logic into a function we can call
 				.each(function() {
+					// Click the link to reveal the pre-filled coupon code
+					$( this ).next().triggerHandler( "click" );
+					// Tell the form to update based on the pre-filled coupon code
 					$( this ).triggerHandler( "blur" );
 				});
 		})();
