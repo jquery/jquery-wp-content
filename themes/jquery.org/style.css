@@ -426,11 +426,17 @@ a.icon-search::before {
 	line-height: 24px;
 }
 
+.page-slug-team #content ul.block-grid li {
+	text-align: center;
+}
+
 .page-slug-team #content ul.block-grid img {
-	display: block;
-	width: 100%;
 	max-width: 100%;
 	margin-bottom: 10px;
+}
+
+.page-slug-team #content ul.block-grid p {
+	text-align: left;
 }
 
 .page-slug-team #content h2 {
@@ -452,15 +458,15 @@ a.icon-search::before {
 	border-bottom: 1px solid #dbdbdb;
 }
 
-.page-slug-team #content ul.team-list h2,
-.page-slug-team #content ul.team-list h3 {
-	text-align: left;
-
-}
-
 .page-slug-team #content ul.team-list h3 {
 	border: none;
 	min-height: 5px;
+}
+
+.page-slug-team #content ul.past-team-list h2,
+.page-slug-team #content ul.past-team-list h3 {
+	text-align: left;
+
 }
 
 .page-slug-team #content p.center-txt {
