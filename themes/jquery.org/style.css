@@ -476,6 +476,10 @@ a.icon-search::before {
 	color: #d58349;
 }
 
+.page-slug-members #content ul.block-grid li {
+	text-align: center;
+}
+
 .page-slug-members #content ul.block-grid h3 {
 	color: #4d4d4d;
 	font-weight: bold;
