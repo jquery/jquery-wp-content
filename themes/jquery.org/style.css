@@ -134,10 +134,13 @@ ul.flex-direction-nav {
 	display: none;
 }
 
+#content .flexslider li {
+	text-align: center;
+}
+
 #content .flexslider li img {
+	margin-top: 10px;
 	display: inline-block;
-	margin-left: 10%;
-	width: 35%;
 }
 
 #content .flexslider li img.last {
