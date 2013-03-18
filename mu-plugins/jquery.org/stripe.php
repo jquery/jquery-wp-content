@@ -59,7 +59,9 @@ class StripeForm {
 		$token = $_REQUEST['token'];
 		$email = $_REQUEST['email'];
 		$name = $_REQUEST['firstName'] . ' ' . $_REQUEST['lastName'];
-
+		$plan = $_REQUEST['planId'];
+		$address = $_REQUEST['address'];
+		$coupon = empty( $_REQUEST['coupon'] ) ? null : $_REQUEST['coupon'];
 
 		// Create Stripe subscription
 		$customer = Stripe_Customer::create( array(
@@ -68,13 +70,13 @@ class StripeForm {
 			'description' => stripcslashes($name)
 		) );
 		$subscription = array(
-			'plan' => $_REQUEST['planId']
+			'plan' => $plan
 		);
-		if ( !empty( $_REQUEST['coupon'] ) ) {
-			$subscription['coupon'] = $_REQUEST['coupon'];
+		if ( !empty( $coupon ) ) {
+			$subscription['coupon'] = $coupon;
 		}
-		var_dump( $subscription );
 		$charge = $customer->updateSubscription( $subscription );
+		$stripeId = $customer->id;
 
 		// Create or update WordPress user
 		$user = get_user_by( 'email', $email );
@@ -92,17 +94,32 @@ class StripeForm {
 		}
 
 		// Store Stripe ID and gift choices on WordPress user
-		add_user_meta( $user_id, 'stripe_id', $customer->id );
-		add_user_meta( $user_id, 'address', $_REQUEST['address'] );
-		if ( !empty( $_REQUEST['tshirt'] ) ) {
-			add_user_meta( $user_id, 'tshirt', $_REQUEST['tshirt'] );
+		$customerInfo = array(
+			'stripe_id' => $stripeId,
+			'address' => $address
+		);
+		if ( !empty( $_REQUEST[ 'tshirt' ] ) ) {
+			$customerInfo[ 'tshirt' ] = $_REQUEST[ 'tshirt' ];
 		}
-		if ( !empty( $_REQUEST['hoodie'] ) ) {
-			add_user_meta( $user_id, 'hoodie', $_REQUEST['hoodie'] );
+		if ( !empty( $_REQUEST[ 'hoodie' ] ) ) {
+			$customerInfo[ 'hoodie' ] = $_REQUEST[ 'hoodie' ];
 		}
-		if ( !empty( $_REQUEST['bag'] ) ) {
-			add_user_meta( $user_id, 'bag', $_REQUEST['bag'] );
+		if ( !empty( $_REQUEST[ 'bag' ] ) ) {
+			$customerInfo[ 'bag' ] = $_REQUEST[ 'bag' ];
 		}
+		foreach( $customerInfo as $key => $value ) {
+			add_user_meta( $user_id, $key, $value );
+		}
+
+		$mailBody = "$name ($email) has signed up for $plan.\n";
+		if ( !empty( $coupon ) ) {
+			$mailBody .=  "coupon: $coupon\n";
+		}
+		foreach( $customerInfo as $key => $value ) {
+			$mailBody .= "$key: $value\n";
+		}
+
+		mail( 'membership@jquery.org', "New Foundation Member ($name)", $mailBody );
 
 		echo $user_id;
 		exit();
