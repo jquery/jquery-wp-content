@@ -525,6 +525,20 @@ a.icon-search::before {
 	margin-bottom: 0.3em;
 }
 
+.page-slug-donate h2 {
+	text-align: center;
+}
+
+.page-slug-donate form {
+	padding: 0 4em;
+	margin-bottom: 5em;
+}
+
+.page-slug-donate select {
+	vertical-align: top;
+	margin: 1em;
+}
+
 .page-slug-donate .envelope {
 	border: 1px solid silver;
 	border-radius: 3px;
