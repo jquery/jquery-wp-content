@@ -2574,6 +2574,14 @@ footer p.copyright a.mt-link {
 	padding-left: 31px;
 }
 
+footer p.copyright a.wp-link {
+	background: url(../images/logo-wordpress.png) left 1px no-repeat;
+	padding-left: 19px;
+	padding-top: 1px;
+	display: inline-block;
+	height: 16px;
+}
+
 footer .footer-site-links li {
 	position: relative;
 	background: none;
