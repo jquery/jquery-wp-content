@@ -512,20 +512,12 @@ a.icon-search::before {
 	padding-bottom: 2em;
 }
 
-.sponsors-page #content ul.block-grid li {
-	border-top: 1px solid #dddddd;
-	padding-top: 30px;
+.page-slug-sponsors .sponsors img {
+	margin: 0.3em 1em 2em;
 }
 
-.sponsors-page ul.block-grid li img {
-	float: left;
-	width: 30%;
-	margin-top: 10%;
-}
-
-.sponsors-page ul.block-grid li p {
-	float: right;
-	width: 65%;
+.page-slug-sponsors .sponsors .row {
+	margin: 1em 0 2em;
 }
 
 .page-slug-donate #content .row .callout-block {
