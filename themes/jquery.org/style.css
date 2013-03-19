@@ -525,6 +525,18 @@ a.icon-search::before {
 	margin-bottom: 0.3em;
 }
 
+.page-slug-donate .envelope {
+	border: 1px solid silver;
+	border-radius: 3px;
+	padding: 4em;
+	margin-bottom: 0.8em;
+}
+
+.page-slug-donate .envelope .vcard {
+	margin-top: 1em;
+	margin-left: 30%;
+}
+
 .page-slug-donate #content .row .callout-block {
 	padding-top: 20px;
 	padding-bottom: 20px;
