@@ -83,7 +83,6 @@ function menu_header_jquery_org() {
 		'http://jquery.org/meeting/' => 'Meetings',
 		'http://jquery.org/history/' => 'History',
 		'http://brand.jquery.org/' => 'Brand Guide',
-		'http://jquery.org/credit-card/' => 'Credit Card',
 		'http://jquery.org/donate/' => 'Donate',
 	);
 }

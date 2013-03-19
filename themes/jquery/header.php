@@ -98,7 +98,6 @@
 							<li><a href="http://jquery.org/members/">Members</a></li>
 							<li><a href="http://jquery.org/team/">Team</a></li>
 							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
-							<li><a href="http://jquery.org/credit-card/">Credit Card</a></li>
 							<li><a href="http://jquery.org/donate/">Donate</a></li>
 						</ul>
 					</li>
