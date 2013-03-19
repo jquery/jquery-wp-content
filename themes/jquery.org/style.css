@@ -520,6 +520,11 @@ a.icon-search::before {
 	margin: 1em 0 2em;
 }
 
+.page-slug-faq #content h2 {
+	margin-top: 1em;
+	margin-bottom: 0.3em;
+}
+
 .page-slug-donate #content .row .callout-block {
 	padding-top: 20px;
 	padding-bottom: 20px;
