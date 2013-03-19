@@ -64,7 +64,7 @@
 			</ul>
 			<p class="copyright">
 				Copyright <?php echo date('Y'); ?> <a href="http://jquery.org/team/">The jQuery Foundation</a>.<br>
-				<span class="sponsor-line"><a href="http://mediatemple.net" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://wordpress.org/">Powered by WordPress</a> | Thanks: <a href="http://jquery.org/members/">Members</a>, <a href="http://jquery.org/sponsors/">Sponsors</a></span>
+				<span class="sponsor-line"><a href="http://mediatemple.net" rel="noindex,nofollow" class="mt-link">Web hosting by Media Temple</a> | <a href="http://wordpress.org/" class="wp-link">Powered by WordPress</a> | Thanks: <a href="http://jquery.org/members/">Members</a>, <a href="http://jquery.org/sponsors/">Sponsors</a></span>
 			</p>
 		</div>
 	</div>
