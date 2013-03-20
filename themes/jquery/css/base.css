@@ -2888,6 +2888,15 @@ footer li img {
 	border-radius: 3px 3px 0 0;
 }
 
+#content .signature h4 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.signature h4 .icon-link {
+	margin-right: 0.5em;
+}
+
 .argument {
 	margin-top: 1em;
 }
