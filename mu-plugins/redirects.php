@@ -21,10 +21,7 @@ add_filter( 'template_redirect', function() {
 
 	// See if any redirects match the current URL
 	$url = trailingslashit( $_SERVER[ 'REQUEST_URI' ] );
-	foreach( $jquery_redirects[ JQUERY_LIVE_SITE ] as $old => $new ) {
-		if ( $url === $old ) {
-			wp_redirect( $new, 301 );
-			return;
-		}
+	if ( !empty( $jquery_redirects[ JQUERY_LIVE_SITE ][ $url ] ) ) {
+		wp_redirect( $jquery_redirects[ JQUERY_LIVE_SITE ][ $url ], 301 );
 	}
 });
