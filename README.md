@@ -107,7 +107,7 @@ Changes pushed to master will be pulled onto the stage domain.
 
 ## Copyright
 
-Copyright 2012 jQuery Foundation and other contributors. All rights reserved.
+Copyright 2013 jQuery Foundation and other contributors. All rights reserved.
 
 The `jquery-wp-content` repository contains themes for rendering all jQuery Foundation web sites.
 
