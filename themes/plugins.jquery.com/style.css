@@ -118,6 +118,7 @@ a {
 
 .jquery-plugin table {
 	border-radius: 8px;
+	margin: 0;
 }
 
 /*----------[ Github Activity ]-------------------------------------*/

@@ -651,6 +651,27 @@ form input[type="submit"] {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	margin: 1em 2em;
+}
+
+thead tr {
+	border-bottom: 2px solid #666;
+}
+
+tbody tr {
+	border-bottom: 1px solid #666;
+}
+
+tbody tr:hover {
+	background-color: #eee;
+}
+
+th {
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+th, td {
+	padding: .5em;
 }
 
 /* ==========================================================================
