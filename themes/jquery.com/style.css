@@ -165,11 +165,19 @@ a,
 	display: inline-block;
 }
 
-/* Browser Support */ 
+/* Browser Support */
 
 #support-matrix {
 	width: 100%;
 	margin: 0 auto 1em;
+}
+
+#support-matrix tbody tr {
+	border-bottom: none;
+}
+
+#support-matrix tr:hover {
+	background-color: transparent;
 }
 
 #support-matrix td {
