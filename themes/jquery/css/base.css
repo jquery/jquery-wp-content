@@ -2918,6 +2918,10 @@ footer li img {
 	margin-right: 0.5em;
 }
 
+.signature .event-properties {
+	margin: 15px 0 0 0;
+}
+
 .argument {
 	margin-top: 1em;
 }
