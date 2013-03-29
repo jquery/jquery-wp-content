@@ -176,7 +176,7 @@ a,
 	border-bottom: none;
 }
 
-#support-matrix tr:hover {
+#support-matrix tbody tr:hover {
 	background-color: transparent;
 }
 
