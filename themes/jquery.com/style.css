@@ -101,24 +101,17 @@ a,
 	margin-right:0.5em;
 }
 
-#sidebar {
-	padding-top: 0;
-	padding-bottom: 0;
-	margin-bottom: 20px;
-	margin-right: 0;
+.resources {
+	padding-left: 60px;
 }
 
-#sidebar li a {
-	display: inline;
-}
-
-#sidebar li.try-jquery {
+#content li.try-jquery {
 	background: none;
 	margin: 10px 0 0;
 	padding: 0;
 }
 
-#sidebar li.try-jquery a {
+#content li.try-jquery a {
 	background: url('i/try-jquery.png') top left no-repeat;
 	height: 221px;
 	width: 220px;
