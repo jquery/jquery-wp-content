@@ -239,6 +239,18 @@ function jquery_sites() {
 					'jquery-static-index.php',
 				),
 			),
+		),
+		'meetings.jquery.org' => array(
+			'blog_id' => 22,
+			'cookie_domain' => '.jquery.org',
+			'body_class' => 'jquery-foundation',
+			'options' => array(
+				'blogname' => 'jQuery Meetings',
+				'stylesheet' => 'meetings.jquery.org',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
 		)
 	);
 
