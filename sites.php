@@ -216,7 +216,6 @@ function jquery_sites() {
 				),
 			),
 		),
-
 		'contribute.jquery.org' => array(
 			'blog_id' => 19,
 			'cookie_domain' => '.jquery.org',
@@ -229,7 +228,6 @@ function jquery_sites() {
 				),
 			),
 		),
-
 		'irc.jquery.org' => array(
 			'blog_id' => 20,
 			'cookie_domain' => '.jquery.org',
