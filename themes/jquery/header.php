@@ -92,13 +92,13 @@
 							<li><a href="http://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"><a href="http://jquery.org/">jQuery Foundation</a>
+					<li class="dropdown"><a href="https://jquery.org/">jQuery Foundation</a>
 						<ul>
-							<li><a href="http://jquery.org/join/">Join</a></li>
-							<li><a href="http://jquery.org/members/">Members</a></li>
-							<li><a href="http://jquery.org/team/">Team</a></li>
+							<li><a href="https://jquery.org/join/">Join</a></li>
+							<li><a href="https://jquery.org/members/">Members</a></li>
+							<li><a href="https://jquery.org/team/">Team</a></li>
 							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
-							<li><a href="http://jquery.org/donate/">Donate</a></li>
+							<li><a href="https://jquery.org/donate/">Donate</a></li>
 						</ul>
 					</li>
 				</ul>
