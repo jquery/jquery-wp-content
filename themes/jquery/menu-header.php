@@ -75,15 +75,15 @@ function menu_header_sizzlejs_com() {
 
 function menu_header_jquery_org() {
 	return array(
-		'http://jquery.org/' => 'Home',
-		'http://jquery.org/join/' => 'Join',
-		'http://jquery.org/members/' => 'Members',
-		'http://jquery.org/sponsors/' => 'Sponsors',
-		'http://jquery.org/team/' => 'Team',
-		'http://jquery.org/meeting/' => 'Meetings',
-		'http://jquery.org/history/' => 'History',
+		'https://jquery.org/' => 'Home',
+		'https://jquery.org/join/' => 'Join',
+		'https://jquery.org/members/' => 'Members',
+		'https://jquery.org/sponsors/' => 'Sponsors',
+		'https://jquery.org/team/' => 'Team',
+		'https://jquery.org/meeting/' => 'Meetings',
+		'https://jquery.org/history/' => 'History',
 		'http://brand.jquery.org/' => 'Brand Guide',
-		'http://jquery.org/donate/' => 'Donate',
+		'https://jquery.org/donate/' => 'Donate',
 	);
 }
 
@@ -111,7 +111,7 @@ function menu_header_contribute_jquery_org() {
 function menu_header_irc_jquery_org() {
 	return array(
 		'http://irc.jquery.org/irc-help' => 'IRC Help',
-		'http://jquery.org/meeting/' => 'Meetings',
+		'https://jquery.org/meeting/' => 'Meetings',
 	);
 }
 
