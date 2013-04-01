@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-<div class="content-right twelve columns">
+<div class="content-right twelve columns listing">
 	<div id="content">
 	<?php if ( have_posts() ) : ?>
 
