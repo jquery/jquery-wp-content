@@ -145,7 +145,6 @@ function jquery_render_menu( $items ) {
 <?php
 	foreach ( $items as $url => $anchor ) {
 		$class = 'menu-item';
-		$url = set_url_scheme( $url );
 		if ( $anchor === 'Home' ) {
 			if ( $current === $url ) {
 				$class .= ' current';
