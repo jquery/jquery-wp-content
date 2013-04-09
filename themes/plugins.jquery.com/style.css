@@ -372,6 +372,10 @@ a {
 	width: 100%;
 }
 
+.jquery-plugin #content .versions table {
+	margin: 1em 0;
+}
+
 .jquery-plugin .versions table th,
 .jquery-plugin .versions table td {
 	border: 1px solid #ccc;
