@@ -52,7 +52,7 @@ a,
 	-webkit-transition: all 0.7s linear;
 	-webkit-transform: rotate(6.28rad);
         transition: all 0.7s;
-	transform: rorate(6.28rad);
+	transform: rotate(6.28rad);
 }
 
 #content #banner-secondary .downloads-box p {
