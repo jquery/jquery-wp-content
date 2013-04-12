@@ -142,3 +142,44 @@ function jq_content_nav() {
 		'total' => $wp_query->max_num_pages
 	)) . '</div>';
 }
+
+function jq_banner() {
+	$site = explode( '/', JQUERY_LIVE_SITE, 2 );
+	$domain = $site[ 0 ];
+
+	switch ( $domain ) {
+		case 'jqueryui.com':
+		case 'api.jqueryui.com':
+		case 'blog.jqueryui.com':
+			$site_color = 'orange';
+		break;
+		case 'jquery.org':
+		case 'contribute.jquery.org':
+		case 'brand.jquery.org':
+		case 'irc.jquery.org':
+		case 'meetings.jquery.org':
+			$site_color = 'gray';
+		break;
+		case 'learn.jquery.com':
+			$site_color = 'chalk';
+		break;
+		case 'qunitjs.com':
+		case 'api.qunitjs.com':
+			$site_color = 'purple';
+		break;
+		case 'jquerymobile.com':
+		case 'api.jquerymobile.com':
+		case 'blog.jquerymobile.com':
+			$site_color = 'green';
+		break;
+		default:
+			$site_color = 'blue';
+		break;
+	}
+
+	echo
+		'<a href="http://events.jquery.org/2013/portland/">' .
+			'<img src="' . get_template_directory_uri() . '/images/' .
+				'jquery_portland_banner_' . $site_color . '.png">' .
+		'</a>';
+}
