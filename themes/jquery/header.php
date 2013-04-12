@@ -111,8 +111,13 @@
 	<div id="logo-events" class="constrain clearfix">
 		<h2 class="logo"><a href="/" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
 
-		<!--Ads or events
-		<aside></aside> -->
+		<aside><a href="http://events.jquery.org/2013/portland/"><img src="<?php echo get_template_directory_uri(); ?>/images/jquery_portland_banner_<?php
+
+// TODO: Make this conditional based on the top-level theme
+// Possible values are 'blue', 'chalk', 'gray', 'green', 'organge', 'purple'
+echo "orange"
+
+		?>.png"></a></aside>
 	</div>
 
 	<nav id="main" class="constrain clearfix">
