@@ -116,11 +116,17 @@ a,
 }
 
 #content li.try-jquery a {
-	background: url('i/try-jquery.png') top left no-repeat;
-	height: 221px;
-	width: 220px;
+	background: url('i/try-jquery.jpg') top left no-repeat;
+	height: 126px;
+	width: 277px;
 	text-indent: -9999px;
 	display: block;
+}
+
+@media only screen and (-webkit-device-pixel-ratio: 2){
+	#sidebar li.try-jquery a {
+		background: url('i/try-jquery@2x.jpg') top left no-repeat;
+	}
 }
 
 #content #whos-using li {
