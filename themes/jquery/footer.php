@@ -5,7 +5,7 @@
 	<div class="constrain">
 		<div class="row">
 			<div class="eight columns">
-				<h3><span>Quick Access</span></h3>
+				<h3 id="quick-access"><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>jQuery 1.x CDN</strong>
 					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
