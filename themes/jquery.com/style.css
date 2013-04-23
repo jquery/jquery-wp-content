@@ -14,6 +14,10 @@ a,
 
 /* Home Page */
 
+#home-content {
+	margin-bottom: 15px;
+}
+
 #banner-secondary a,
 #banner-secondary a:hover {
 	color: #b3b3b3;
