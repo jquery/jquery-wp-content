@@ -5,17 +5,13 @@
 	<div class="constrain">
 		<div class="row">
 			<div class="eight columns">
-				<h3 id="quick-access"><span>Quick Access</span></h3>
+				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
-					<strong>jQuery 1.x CDN</strong>
+					<strong>CDN</strong>
 					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
 				</div>
-				<div class="cdn">
-					<strong>jQuery 2.x CDN</strong>
-					<input value="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js">
-				</div>
 				<div class="download">
-					<strong><a href="http://jquery.com/download/">Download jQuery 1.9.1 or 2.0.0 →</a></strong>
+					<strong><a href="http://jquery.com/download/">Download jQuery 1.9.1 →</a></strong>
 				</div>
 				<ul class="footer-icon-links">
 					<li><a class="icon-github" href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
