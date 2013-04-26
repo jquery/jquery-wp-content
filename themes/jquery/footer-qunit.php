@@ -40,6 +40,12 @@
 			</p>
 		</div>
 	</div>
+	<a href="<?php echo jq_get_github_url(); ?>" target="_blank" id="qunit-contribute-link">
+		<div class="ribbon-wrapper-purple">
+			<div class="ribbon-purple">Contribute</div>
+			<div class="ribbon-purple-base"><i class="icon-github-alt"></i></div>
+		</div>
+	</a>
 </footer>
 
 <?php wp_footer(); ?>
