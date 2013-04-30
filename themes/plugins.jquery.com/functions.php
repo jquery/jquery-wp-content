@@ -214,7 +214,14 @@ function jq_release_docs() {
 }
 
 function jq_release_date() {
-	return get_the_date();
+	$post = get_post( get_the_ID() );
+	if ( empty( $post->post_parent ) ) {
+		$latest = jq_plugin_meta( array( "key" => "latest" ) );
+		$version_path = "$post->post_name/$latest";
+		$post = get_page_by_path( $version_path, OBJECT, 'jquery_plugin' );
+	}
+
+	return date_format( new DateTime( $post->post_date ), 'F j, Y' );
 }
 
 function jq_release_version( $id = null ) {
