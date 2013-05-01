@@ -3023,6 +3023,11 @@ footer li img {
 	margin: 0;
 }
 
+.warning {
+	padding: 0.5em 1em;
+	margin: 1em;
+	background: #fff3a5;
+}
 
 /* Media Queries
    ========================================================================== */
