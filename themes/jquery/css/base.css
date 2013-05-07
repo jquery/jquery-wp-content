@@ -3027,6 +3027,7 @@ footer li img {
 	padding: 0.5em 1em;
 	margin: 1em;
 	background: #fff3a5;
+	border-radius: 5px;
 }
 
 /* Media Queries
@@ -4013,6 +4014,10 @@ pre .chunk {
 
 .syntaxhighlighter table td.gutter {
 	border-right: 2px solid #999;
+}
+
+.syntaxhighlighter {
+	border-radius: 5px;
 }
 
 #content .syntaxhighlighter tr {
