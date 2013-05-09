@@ -355,6 +355,11 @@ $(function() {
 			plugin = parts[ 3 ],
 			demo = parts[ 4 ].substring( 0, parts[ 4 ].length - 5 );
 
+		if ( demoList.is( "[data-full-nav]" ) ) {
+			window.location = "/" + demo;
+			return;
+		}
+
 		$.getJSON( "/resources/demos/demo-list.json" ).then(function( demoList ) {
 			demoDescription.html( $.grep( demoList[ plugin ], function( x ) {
 				return x.filename === demo;
