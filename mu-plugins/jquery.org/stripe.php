@@ -112,6 +112,7 @@ class StripeForm {
 		}
 
 		$mailBody = "$name ($email) has signed up for $plan.\n";
+		$mailBody .= "WordPress user id: $user_id\n";
 		if ( !empty( $coupon ) ) {
 			$mailBody .=  "coupon: $coupon\n";
 		}
