@@ -2,16 +2,9 @@
 	get_header();
 	the_post();
 
-	// Must be listed with newest first
-	$versions = array(
-		"1.10" => "1.6 and newer",
-		"1.9" => "1.6 and newer",
-		"1.8" => "1.3.2 and newer",
-	);
-
-	$latestVersion = key( $versions );
-	$thisVersion = explode( "/", JQUERY_LIVE_SITE );
-	$thisVersion = count( $thisVersion ) === 2 ? $thisVersion[ 1 ] : $latestVersion;
+	$versions = jq_ui_api_versions();
+	$latestVersion = jq_ui_api_version_latest();
+	$thisVersion = jq_ui_api_version_current();
 	$rootUrl = $thisVersion === $latestVersion ? '' : "/$thisVersion";
 ?>
 
