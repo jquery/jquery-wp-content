@@ -8,6 +8,6 @@
 	<label>
 		<span class="visuallyhidden">Search <?php bloginfo( 'name' ); ?></span>
 		<input type="text" name="s" value="<?php echo get_search_query(); ?>"
-			placeholder="Search <?php bloginfo( 'name' ); ?>">
+			placeholder="Search">
 	</label>
 </form>
