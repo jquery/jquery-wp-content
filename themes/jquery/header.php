@@ -83,13 +83,14 @@
 							<li><a href="http://events.jquery.org/2013/portland/">Portland</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"><a href="#">Support</a>
+					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
 						<ul>
 							<li><a href="http://learn.jquery.com/">Learning Center</a></li>
 							<li><a href="http://try.jquery.com/">Try jQuery</a></li>
 							<li><a href="http://irc.jquery.org/">IRC/Chat</a></li>
 							<li><a href="http://forum.jquery.com/">Forums</a></li>
 							<li><a href="http://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="https://jquery.org/">jQuery Foundation</a>
