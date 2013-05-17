@@ -33,8 +33,10 @@ get_header(); ?>
 					<h3><?php _e( 'Recently Updated', 'twentyeleven' ); ?></h3>
 					<?php
 					$recent_updates = new WP_Query( array(
-					'post_type' => 'page',
-					'post_limits' => 10,
+						'post_type' => 'page',
+						'post_limits' => 10,
+						'order' => 'DESC',
+						'orderby' => 'modified'
 					));
 					?>
 					<ul>
