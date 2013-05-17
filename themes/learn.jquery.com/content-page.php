@@ -5,6 +5,7 @@
 ?>
 
 <?php $next_prev_arr = get_next_prev_post(); ?>
+<?php echo jq_post_heirarchy(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>

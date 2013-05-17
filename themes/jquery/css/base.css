@@ -2792,6 +2792,9 @@ footer li img {
 	opacity: 1;
 }
 
+.post-heirarchy {
+	margin-bottom: 0.75em;
+}
 
 /* Listing Pages (categories, searches, etc.)
    ========================================================================== */
