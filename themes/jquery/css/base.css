@@ -1884,6 +1884,7 @@ code {
 	padding: 0 3px;
 	background-color: #eee;
 	border-radius: 3px;
+	white-space: nowrap;
 }
 
 pre code {
