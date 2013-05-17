@@ -183,3 +183,23 @@ function jq_banner() {
 				'jquery_portland_banner_' . $site_color . '.png">' .
 		'</a>';
 }
+
+function jq_post_heirarchy() {
+	global $post;
+	$current = $post;
+	$parents = array();
+	while ( $current->post_parent ) {
+		$current = get_post( $current->post_parent );
+		$parents[] = '<a href="' . get_permalink( $current->ID ) . '">' .
+			$current->post_title . '</a>';
+	}
+
+	if ( empty( $parents ) ) {
+		return '';
+	}
+
+	return '' .
+		'<div class="post-heirarchy">' .
+			'Posted in: ' . implode( ' > ', array_reverse( $parents ) ) .
+		'</div>';
+}
