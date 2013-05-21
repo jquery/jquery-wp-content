@@ -178,9 +178,9 @@ function jq_banner() {
 	}
 
 	echo
-		'<a href="http://appendto.com/training/jquery-virtual-training-uk/">' .
+		'<a href="http://events.jquery.org/2013/portland/">' .
 			'<img src="' . get_template_directory_uri() . '/images/' .
-				'appendto_training_banner_' . $site_color . '.png">' .
+				'jquery_portland_banner_' . $site_color . '.png">' .
 		'</a>';
 }
 
