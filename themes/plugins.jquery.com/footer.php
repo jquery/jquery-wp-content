@@ -50,9 +50,9 @@
 						</a>
 					</li>
 					<li>
-						<a href="http://jqueryenlightenment.com/">
-							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-enlightenment.jpg" alt="jQuery Enlightenment by Cody Lindley" width="92" height="114" /></span>
-							<strong>jQuery Enlightenment</strong><br />
+						<a href="http://www.syncfusion.com/resources/techportal/ebooks/jquery?utm_medium=BizDev-jQuery.org0513">
+							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114" /></span>
+							<strong>jQuery Succinctly</strong><br />
 							<cite>Cody Lindley</cite>
 						</a>
 					</li>
