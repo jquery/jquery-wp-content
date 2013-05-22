@@ -2593,16 +2593,16 @@ footer p.copyright > br {
 footer p.copyright span.sponsor-line {
 	display: block;
 	font-size: 10px;
-	margin: 1px 0 0 0;
+	margin: 2px 0 0 0;
 }
 
 footer p.copyright a.mt-link {
-	background: url(../images/logo-mediatemple.png) left 1px no-repeat;
+	background: url(../images/logo-mediatemple.png) left top no-repeat;
 	padding-left: 31px;
 }
 
 footer p.copyright a.wp-link {
-	background: url(../images/logo-wordpress.png) left 1px no-repeat;
+	background: url(../images/logo-wordpress.png) left top no-repeat;
 	padding-left: 19px;
 	padding-top: 1px;
 	display: inline-block;
