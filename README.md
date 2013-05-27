@@ -43,7 +43,7 @@ This install guide assumes you already have certain prerequisites already config
 1. Place the WordPress core files **at** the document root you chose. For example, if you used `/srv/www/jquery`, you should unzip or clone WordPress directly into that directory, *not* a directory below it. **Do not install WordPress.** You can do this any number of ways:
 	* Download the latest version from http://wordpress.org/latest.zip
 	* Check out the latest tag from http://core.svn.wordpress.org/tags/
-	* Clone the official WordPress Github mirror at http://github.com/wordpress/wordpress/
+	* Clone the official WordPress Github mirror at https://github.com/WordPress/WordPress
 
 1. Clone `jquery-wp-content` inside of the directory where you put WordPress, so you have a file tree that looks like this:
 
