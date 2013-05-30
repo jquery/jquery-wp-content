@@ -1,8 +1,3 @@
-<?php
-/**
- * The default sidebar lists categories, up to 2 levels deep.
- */
-?>
 <div id="sidebar" class="widget-area" role="complementary">
 	<aside id="categories" class="widget">
 		<h2>Minutes</h2>
