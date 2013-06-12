@@ -25,3 +25,11 @@ a {
 	width: 170px;
 	text-align: left;
 }
+
+.api-item .version-details {
+  display: block;
+  padding: 0.5em;
+  margin: 1em 0;
+  background: #fff3a5;
+  border-radius: 5px;
+}
