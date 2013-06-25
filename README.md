@@ -98,6 +98,8 @@ For example, if your WordPress files are in the directory ```wordpress```, and y
 	sudo chmod -R g+w wordpress
 	```
 
+1. Restart your web server so the changes above are in use.
+
 1. Go to `http://local.jquery.com` and walk through the standard WordPress installation. `jquery-wp-content` includes a special install script that will initialize the entire network.
 
 1. Be sure to have node >= 0.8 installed on your system.  Some sites, such as download.jqueryui.com, require that version or greater.
