@@ -1417,6 +1417,10 @@ iframe {
 	z-index: 400;
 }
 
+#global-nav nav ul li ul.wide {
+	width: 260px;
+}
+
 #global-nav nav ul li ul li {
 	background: url(../images/bg-footer-noise.jpg) #000;
 	display: block;
