@@ -144,7 +144,24 @@ function jq_content_nav() {
 }
 
 function jq_banner() {
-	return;
+	$banners = array(
+		// array(
+		// 	'image' => 'appendto-vir-training',
+		// 	'url' => 'http://appendto.com/training/jquery-virtual-training-july-2013/',
+		// 	'site-specific' => true
+		// ),
+		// array(
+		// 	'image' => 'jqconaustin',
+		// 	'url' => 'http://events.jquery.org/2013/austin/'
+		// ),
+	);
+
+	if ( empty( $banners ) ) {
+		return;
+	}
+
+	$banner = $banners[ array_rand( $banners ) ];
+
 	$site = explode( '/', JQUERY_LIVE_SITE, 2 );
 	$domain = $site[ 0 ];
 
@@ -178,10 +195,14 @@ function jq_banner() {
 		break;
 	}
 
+	$image = empty( $banner[ 'site-specific' ] ) ?
+		($banner[ 'image' ] . '.png') :
+		($banner[ 'image' ] . '-' . $site_color . '.png');
+
 	echo
-		'<a href="http://events.jquery.org/2013/portland/">' .
-			'<img src="' . get_template_directory_uri() . '/images/' .
-				'jquery_portland_banner_' . $site_color . '.png">' .
+		'<a href="' . $banner[ 'url' ] . '">' .
+			'<img src="' . get_template_directory_uri() . '/images/ads/' .
+				$image . '">' .
 		'</a>';
 }
 
