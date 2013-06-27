@@ -145,7 +145,7 @@ function jq_content_nav() {
 
 function jq_banner() {
 	$banners = array(
-		sarray(
+		array(
 			'image' => 'appendto-vir-training',
 			'url' => 'http://appendto.com/training/jquery-virtual-training-july-2013/',
 			'site-specific' => true
