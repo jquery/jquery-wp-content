@@ -144,6 +144,7 @@ function jq_content_nav() {
 }
 
 function jq_banner() {
+	return;
 	$site = explode( '/', JQUERY_LIVE_SITE, 2 );
 	$domain = $site[ 0 ];
 
