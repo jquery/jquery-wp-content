@@ -145,11 +145,11 @@ function jq_content_nav() {
 
 function jq_banner() {
 	$banners = array(
-		// array(
-		// 	'image' => 'appendto-vir-training',
-		// 	'url' => 'http://appendto.com/training/jquery-virtual-training-july-2013/',
-		// 	'site-specific' => true
-		// ),
+		array(
+			'image' => 'appendto-vir-training',
+			'url' => 'http://appendto.com/training/jquery-virtual-training-july-2013/',
+			'site-specific' => true
+		),
 		array(
 			'image' => 'jqconaustin',
 			'url' => 'http://events.jquery.org/2013/austin/'
