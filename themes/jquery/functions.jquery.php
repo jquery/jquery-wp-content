@@ -150,10 +150,10 @@ function jq_banner() {
 		// 	'url' => 'http://appendto.com/training/jquery-virtual-training-july-2013/',
 		// 	'site-specific' => true
 		// ),
-		// array(
-		// 	'image' => 'jqconaustin',
-		// 	'url' => 'http://events.jquery.org/2013/austin/'
-		// ),
+		array(
+			'image' => 'jqconaustin',
+			'url' => 'http://events.jquery.org/2013/austin/'
+		),
 	);
 
 	if ( empty( $banners ) ) {
