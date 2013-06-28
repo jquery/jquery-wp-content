@@ -64,6 +64,8 @@ This install guide assumes you already have certain prerequisites already config
 	│   └── xmlrpc.php
 	```
 
+1. Create a MySQL database and user. You can choose any name you want for both. Follow the [WordPress instructions](http://codex.wordpress.org/Installing_WordPress#Step_2:_Create_the_Database_and_a_User) for a step by step guide.
+
 1. Copy `jquery-wp-content/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
 
 1. Create an .htaccess file with the following content into that same document root:
