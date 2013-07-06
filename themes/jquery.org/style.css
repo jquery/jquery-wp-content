@@ -305,15 +305,14 @@ a.icon-search::before {
 	padding-right: 15px;
 }
 
-.member-level .button {
+.member-level .choose-gifts button.button.pay {
 	float: left;
 	display: inline-block;
-	clear: both;
 	position: relative;
 	z-index: 2;
-	margin-left: 15px;
-	margin-bottom: 30px;
-
+	margin: 0 5% 30px 0;
+	width: 44%;
+	max-width: 135px;
 }
 
 .member-level form .button {
@@ -354,12 +353,9 @@ a.icon-search::before {
 	margin-bottom: 15px;
 }
 
-.choose-gifts button.button.pay {
-	margin-right: 20px;
-}
-
 #content .choose-gifts textarea {
 	width: 100%;
+	min-width: 200px;
 	background: white;
 	border: 1px solid rgba(192,192,192,1);
 }
