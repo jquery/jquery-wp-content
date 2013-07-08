@@ -80,8 +80,8 @@
 					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
 						<ul class="wide">
 							<li><a href="http://appendto.com/training/jquery-virtual-training-july-2013/">Jul 23-25 | jQuery Virtual Training</a></li>
-							<li><a href="/2013/austin/">Sep 9 | jQuery Training Austin</a></li>
-							<li><a href="/2013/austin/">Sep 10-11 | jQuery Conference Austin</a></li>
+							<li><a href="http://events.jquery.org/2013/austin/">Sep 9 | jQuery Training Austin</a></li>
+							<li><a href="http://events.jquery.org/2013/austin/">Sep 10-11 | jQuery Conference Austin</a></li>
 							<li><a href="http://2013.cssdevconf.com/">Oct 21-22 | CSS Dev Conf</a></li>
 						</ul>
 					</li>
