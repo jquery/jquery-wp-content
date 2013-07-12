@@ -4301,7 +4301,6 @@ pre .chunk {
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
 }
 
 .chzn-container-multi .chzn-results {
