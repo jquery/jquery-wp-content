@@ -40,7 +40,16 @@ This install guide assumes you already have certain prerequisites already config
 
 	Check `httpd.conf` to ensure that the PHP module is enabled as well.
 
-	You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
+	You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you. However, if you plan to work offline, you can use the following rules:
+
+	```
+	127.0.0.1 local.jquery.com local.api.jquery.com local.blog.jquery.com local.books.jquery.com local.learn.jquery.com local.plugins.jquery.com
+	127.0.0.1 local.jqueryui.com local.api.jqueryui.com local.blog.jqueryui.com
+	127.0.0.1 local.jquerymobile.com local.api.jquerymobile.com local.blog.jquerymobile.com
+	127.0.0.1 local.jquery.org local.brand.jquery.org local.contribute.jquery.org local.events.jquery.org local.irc.jquery.org local.meetings.jquery.org
+	127.0.0.1 local.qunitjs.com local.api.qunitjs.com
+	127.0.0.1 local.sizzlejs.com
+	```
 
 1. Place the WordPress core files **at** the document root you chose. For example, if you used `/srv/www/jquery`, you should unzip or clone WordPress directly into that directory, *not* a directory below it. **Do not install WordPress.** You can do this any number of ways:
 	* Download the latest version from http://wordpress.org/latest.zip
