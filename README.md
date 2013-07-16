@@ -38,6 +38,8 @@ This install guide assumes you already have certain prerequisites already config
 	Be sure to check `httpd.conf` to verify there is a line that includes
 	`httpd-vhosts.conf`. It may already exist, but be commented out.
 
+	Check `httpd.conf` to ensure that the PHP module is enabled as well.
+
 	You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you.
 
 1. Place the WordPress core files **at** the document root you chose. For example, if you used `/srv/www/jquery`, you should unzip or clone WordPress directly into that directory, *not* a directory below it. **Do not install WordPress.** You can do this any number of ways:
