@@ -9,7 +9,6 @@
 function menu_header_jquery_com() {
 	return array(
 		'http://jquery.com/download/' => 'Download',
-		'http://jquery.com/cdn/' => 'CDN',
 		'http://api.jquery.com/' => 'API Documentation',
 		'http://blog.jquery.com/' => 'Blog',
 		'http://plugins.jquery.com/' => 'Plugins',
