@@ -2600,6 +2600,11 @@ footer p.copyright a.mt-link {
 	padding-left: 31px;
 }
 
+footer p.copyright a.mc-link {
+	background: url(../images/logo-maxcdn.png) left top no-repeat;
+	padding-left: 24px;
+}
+
 footer p.copyright a.wp-link {
 	background: url(../images/logo-wordpress.png) left top no-repeat;
 	padding-left: 19px;
