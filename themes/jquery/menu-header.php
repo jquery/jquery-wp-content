@@ -9,6 +9,7 @@
 function menu_header_jquery_com() {
 	return array(
 		'http://jquery.com/download/' => 'Download',
+		'http://jquery.com/cdn/' => 'CDN',
 		'http://api.jquery.com/' => 'API Documentation',
 		'http://blog.jquery.com/' => 'Blog',
 		'http://plugins.jquery.com/' => 'Plugins',
@@ -46,6 +47,7 @@ function menu_header_jquerymobile_com() {
 	return array(
 		'http://api.jquerymobile.com/' => 'API Documentation',
 		'http://jquerymobile.com/download/' => 'Download',
+		'http://jquerymobile.com/cdn/' => 'CDN',
 		'http://jquerymobile.com/gbs/' => 'Platforms',
 		'http://jquerymobile.com/themeroller/' => 'Themes',
 		'http://jquerymobile.com/resources/' => 'Resources',
@@ -57,6 +59,7 @@ function menu_header_jqueryui_com() {
 	return array(
 		'http://jqueryui.com/demos/' => 'Demos',
 		'http://jqueryui.com/download' => 'Download',
+		'http://jqueryui.com/cdn' => 'CDN',
 		'http://api.jqueryui.com/' => 'API Documentation',
 		'http://jqueryui.com/themeroller' => 'Themes',
 		'http://jqueryui.com/development' => 'Development',
