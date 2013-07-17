@@ -59,7 +59,7 @@ function menu_header_jqueryui_com() {
 	return array(
 		'http://jqueryui.com/demos/' => 'Demos',
 		'http://jqueryui.com/download' => 'Download',
-		'http://jqueryui.com/cdn' => 'CDN',
+		'http://jqueryui.com/cdn/' => 'CDN',
 		'http://api.jqueryui.com/' => 'API Documentation',
 		'http://jqueryui.com/themeroller' => 'Themes',
 		'http://jqueryui.com/development' => 'Development',
