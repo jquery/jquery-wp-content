@@ -19,7 +19,7 @@
 					<input value="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
 				</div>
 				<div class="download">
-					<strong>Download jQuery Mobile 1.3.1:</strong>
+					<strong>Download jQuery Mobile 1.3.2:</strong>
 					<span><a href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.zip">Zip File <em>(JavaScript, CSS, and images)</em></a></span>
 				</div>
 				<ul class="footer-icon-links">
