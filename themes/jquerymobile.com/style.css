@@ -99,6 +99,9 @@ a, .title, .entry-title { color: #108040; }
   background-image: none;
 }
 
+#try {
+  margin-top: 10px;
+}
 
 #manufacturers {
   list-style: none;
@@ -108,6 +111,7 @@ a, .title, .entry-title { color: #108040; }
   position: relative;
   left: -10px;
 }
+
 
 #manufacturers,
 #manufacturers a:hover {
@@ -120,6 +124,13 @@ a, .title, .entry-title { color: #108040; }
   float: left;
   margin-left: 5px;
   margin-bottom: 20px;
+}
+
+#content div ul li {
+  background: none;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 .ie6 #manufacturers li,
