@@ -170,85 +170,6 @@ a, .title, .entry-title { color: #108040; }
   background-image: none;
 }
 
-#try {
-  margin-top: 10px;
-}
-
-#banner-secondary p.intro {
-  padding: 0;
-  float: left;
-  width: 50%;
-}
-
-#banner-secondary .download-box {
-  border: 1px solid #aaa;
-  background: #333;
-  background: -moz-linear-gradient(left, #333 0%, #444 100%);
-  background: -webkit-linear-gradient(left, #333 0%, #444 100%);
-  background: -o-linear-gradient(left, #333 0%, #444 100%);
-  background: linear-gradient(to right, #333 0%, #444 100%);
-  float: right;
-  width: 40%;
-  text-align: center;
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-}
-
-#banner-secondary .download-box h2 {
-  color: #71D1FF;
-  font-size: 26px;
-}
-
-#banner-secondary .download-box .button {
-  float: none;
-  display: block;
-  margin-top: 15px;
-}
-
-#banner-secondary .download-box p {
-  margin: 15px 0 5px;
-}
-
-#banner-secondary .download-option {
-  width: 45%;
-  float: left;
-  font-size: 16px;
-}
-
-#banner-secondary .download-legacy {
-  float: right;
-}
-
-#banner-secondary .download-option span {
-  display: block;
-  font-size: 14px;
-  color: #71D1FF;
-}
-
-#content .dev-links {
-  float: right;
-  width: 30%;
-  margin: -15px -25px .5em 1em;
-  padding: 1em;
-  border: 1px solid #666;
-  border-width: 0 0 1px 1px;
-  border-radius: 0 0 0 5px;
-  box-shadow: -2px 2px 10px -2px #666;
-}
-
-#content .dev-links ul {
-  margin: 0;
-}
-
-#content .dev-links li {
-  padding: 0;
-  margin: .25em 0 .25em 1em;
-  background-image: none;
-}
-
-
 #manufacturers {
   list-style: none;
   width: auto;
@@ -263,6 +184,13 @@ a, .title, .entry-title { color: #108040; }
   margin-bottom: 20px;
   background: none !important;
   float: left;
+}
+
+#content div ul li {
+  background: none;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
 }
 
 #manufacturers li a {
