@@ -164,6 +164,9 @@ a, .title, .entry-title { color: #108040; }
   background-image: none;
 }
 
+#try {
+  margin-top: 10px;
+}
 
 #manufacturers {
   list-style: none;
@@ -173,8 +176,8 @@ a, .title, .entry-title { color: #108040; }
   position: relative;
 }
 
-/*#manufacturers,
-#manufacturers a:hover {
+
+/*#manufacturers a:hover {
   background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
 }*/
 
