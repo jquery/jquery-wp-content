@@ -251,6 +251,18 @@ function jquery_sites() {
 					'jquery-static-index.php',
 				),
 			),
+		),
+		'codeorigin.jquery.com' => array(
+			'blog_id' => 23,
+			'cookie_domain' => '.jquery.com',
+			'body_class' => 'jquery',
+			'options' => array(
+				'blogname' => 'jQuery CDN',
+				'stylesheet' => 'codeorigin.jquery.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
 		)
 	);
 
