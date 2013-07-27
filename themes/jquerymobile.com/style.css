@@ -358,7 +358,7 @@ ul .next {
   margin-top: 70px;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 768px) {
   #banner-secondary p.intro,
   #banner-secondary .download-box {
     float: none;
@@ -379,7 +379,7 @@ ul .next {
 }
 
 @media all and (max-width: 625px) {
-  #manufacturers-logos {
+  .dev-links {
     display: none;
   }
 
