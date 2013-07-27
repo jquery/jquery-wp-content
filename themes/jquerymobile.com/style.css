@@ -84,18 +84,6 @@ a, .title, .entry-title { color: #108040; }
   color: #71D1FF;
 }
 
-#manufacturers-logos {
-  float: right;
-  width: 200px;
-  margin: -15px -25px .5em 1em;
-  padding: 1em;
-  border: 1px solid #666;
-  border-width: 0 0 1px 1px;
-  border-radius: 0 0 0 5px;
-  box-shadow: -2px 2px 10px -2px #666;
-  display: none;
-}
-
 #content .dev-links {
   float: right;
   width: 30%;
@@ -117,64 +105,12 @@ a, .title, .entry-title { color: #108040; }
   background-image: none;
 }
 
-#manufacturers {
-  list-style: none;
-  width: auto;
-  margin: 15px 0 !important;
-  left: -10px;
-  position: relative;
-}
-
-#manufacturers li {
-  margin:0;
-  padding:0 !important;
-  margin-bottom: 20px;
-  background: none !important;
-  float: left;
-}
-
 #content div ul li {
   background: none;
   padding-bottom: 0px;
   padding-left: 0px;
   padding-top: 0px;
 }
-
-#manufacturers li a {
-  height: 62px;
-  width: 180px;
-  text-indent: -9999px;
-  float: left;
-  background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
-  margin-right: 10px;
-}
-
-#manufacturers a.ios              { width: 140px;}
-#manufacturers a.android          { width: 160px;}
-#manufacturers a.blackberry       { width: 160px; }
-#manufacturers a.bada             { width: 120px;}
-#manufacturers a.windows          { width: 160px;  height: 40; margin-top: 18px;}
-#manufacturers a.palm             { width: 170px; height: 40; margin-top: 18px;}
-#manufacturers a.symbian          { width: 140px; height: 40; margin-top: 18px;}
-#manufacturers a.meego            { width: 120px; height: 40; margin-top: 18px;}
-
-#manufacturers a.ios        { background-position: -16px  -5px;}
-#manufacturers a.android    { background-position: -196px -5px;}
-#manufacturers a.blackberry { background-position: -396px -5px;}
-#manufacturers a.bada       { background-position: -611px -5px;}
-#manufacturers a.windows    { background-position: -16px  -87px;}
-#manufacturers a.palm       { background-position: -196px -87px;}
-#manufacturers a.symbian    { background-position: -406px -87px;}
-#manufacturers a.meego      { background-position: -621px -87px;}
-
-#manufacturers a.ios:hover        { background-position: -16px  -155px;}
-#manufacturers a.android:hover    { background-position: -196px -155px;}
-#manufacturers a.blackberry:hover { background-position: -396px -155px;}
-#manufacturers a.bada:hover       { background-position: -611px -155px;}
-#manufacturers a.windows:hover    { background-position: -16px  -237px;}
-#manufacturers a.palm:hover       { background-position: -196px -237px;}
-#manufacturers a.symbian:hover    { background-position: -406px -237px;}
-#manufacturers a.meego:hover      { background-position: -621px -237px;}
 
 #jqm-devices {
   margin:auto; 
