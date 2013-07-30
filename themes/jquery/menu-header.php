@@ -32,6 +32,17 @@ function menu_header_learn_jquery_com() {
 		'http://learn.jquery.com/style-guide' => 'Style Guide',
 	);
 }
+
+function menu_header_codeorigin_jquery_com() {
+	return array(
+		'/jquery/' => 'jQuery Core',
+		'/ui/' => 'jQuery UI',
+		'/mobile/' => 'jQuery Mobile',
+		'/color/' => 'jQuery Color',
+		'/qunit/' => 'QUnit'
+	);
+}
+
 function menu_header_qunitjs_com() {
 	return array(
 		'http://qunitjs.com/' => 'Home',
