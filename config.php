@@ -80,7 +80,10 @@ define( 'ADMIN_COOKIE_PATH', '/' );
 
 // Never display WP_DEBUG notices during XML-RPC requests.
 if ( defined( 'XMLRPC_REQUEST' ) )
-    define( 'WP_DEBUG_DISPLAY', false );
+	define( 'WP_DEBUG_DISPLAY', false );
+
+// Increase memory limit
+define( 'WP_MEMORY_LIMIT', '256M' );
 
 // jQuery staging URLs
 if ( JQUERY_STAGING && ! defined( 'XMLRPC_REQUEST' ) )
