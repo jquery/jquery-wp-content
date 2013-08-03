@@ -11,7 +11,7 @@
 					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
 				</div>
 				<div class="download">
-					<strong><a href="http://jquery.com/download/">Download jQuery 1.10.1 →</a></strong>
+					<strong><a href="http://jquery.com/download/">Download jQuery 1.10.2 →</a></strong>
 				</div>
 				<ul class="footer-icon-links">
 					<li><a class="icon-github" href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
