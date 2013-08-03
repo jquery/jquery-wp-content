@@ -8,7 +8,7 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN</strong>
-					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js">
+					<input value="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 				</div>
 				<div class="download">
 					<strong><a href="http://jquery.com/download/">Download jQuery 1.10.1 →</a></strong>
