@@ -144,61 +144,7 @@ function jq_content_nav() {
 }
 
 function jq_banner() {
-	$banners = array(
-		array(
-			'image' => 'jqconaustin',
-			'url' => 'http://events.jquery.org/2013/austin/'
-		)
-	);
-
-	if ( empty( $banners ) ) {
-		return;
-	}
-
-	$banner = $banners[ array_rand( $banners ) ];
-
-	$site = explode( '/', JQUERY_LIVE_SITE, 2 );
-	$domain = $site[ 0 ];
-
-	switch ( $domain ) {
-		case 'jqueryui.com':
-		case 'api.jqueryui.com':
-		case 'blog.jqueryui.com':
-			$site_color = 'orange';
-		break;
-		case 'jquery.org':
-		case 'contribute.jquery.org':
-		case 'brand.jquery.org':
-		case 'irc.jquery.org':
-		case 'meetings.jquery.org':
-			$site_color = 'gray';
-		break;
-		case 'learn.jquery.com':
-			$site_color = 'chalk';
-		break;
-		case 'qunitjs.com':
-		case 'api.qunitjs.com':
-			$site_color = 'purple';
-		break;
-		case 'jquerymobile.com':
-		case 'api.jquerymobile.com':
-		case 'blog.jquerymobile.com':
-			$site_color = 'green';
-		break;
-		default:
-			$site_color = 'blue';
-		break;
-	}
-
-	$image = empty( $banner[ 'site-specific' ] ) ?
-		($banner[ 'image' ] . '.png') :
-		($banner[ 'image' ] . '-' . $site_color . '.png');
-
-	echo
-		'<a href="' . $banner[ 'url' ] . '">' .
-			'<img src="' . get_template_directory_uri() . '/images/ads/' .
-				$image . '">' .
-		'</a>';
+	echo '<div id="broadcast"></div>';
 }
 
 function jq_post_heirarchy() {

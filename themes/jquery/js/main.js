@@ -25,6 +25,21 @@ $(function() {
 		// Collapse the site navigation to a select menu
 		$( "#menu-top" ).tinyNav({ header: "Navigate..." });
 	})();
+
+	// Banner ads
+	(function() {
+		var protocol = document.location.protocol,
+			domain = protocol === "https:" ? "engine" : "static";
+
+		window.ados = {
+			run: [function() {
+				ados_add_placement( 5449, 32018, "broadcast", 1314 );
+				ados_load();
+			}]
+		};
+
+		$.getScript( protocol + "//" + domain + ".adzerk.net/ados.js" );
+	})();
 });
 
 

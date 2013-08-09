@@ -1833,6 +1833,10 @@ nav#main .searchform .icon-search {
 	color: #fff;
 }
 
+#broadcast {
+	height: 100px;
+}
+
 /* Typography & Global Styles
    ========================================================================== */
 
