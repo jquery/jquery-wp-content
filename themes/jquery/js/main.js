@@ -28,9 +28,6 @@ $(function() {
 
 	// Banner ads
 	(function() {
-		var protocol = document.location.protocol,
-			domain = protocol === "https:" ? "engine" : "static";
-
 		window.ados = {
 			run: [function() {
 				ados_add_placement( 5449, 32018, "broadcast", 1314 );
@@ -38,7 +35,7 @@ $(function() {
 			}]
 		};
 
-		$.getScript( protocol + "//" + domain + ".adzerk.net/ados.js" );
+		$.getScript( "//engine.adzerk.net/ados.js" );
 	})();
 });
 
