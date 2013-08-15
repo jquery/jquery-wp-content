@@ -11,3 +11,10 @@ a,
 #content a:hover {
 	color: #333;
 }
+
+.powered-by {
+	text-align: center;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
+	font-size: 1.5em;
+	font-weight: 700;
+}
