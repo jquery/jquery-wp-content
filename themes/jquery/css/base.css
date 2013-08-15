@@ -1737,7 +1737,6 @@ nav#main ul {
 }
 
 nav#main li {
-	display: inline;
 	float: left;
 	font: normal normal 16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	margin-right: 2px;
