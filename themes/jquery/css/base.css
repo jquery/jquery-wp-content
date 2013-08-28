@@ -2327,17 +2327,15 @@ input[type="submit"].dark:hover {
 }
 
 #sidebar li {
-	padding-left: 20px;
-	line-height: 15px;
+	padding: 5px 0 5px 20px;
 	list-style-type: none;
-	background: url(../images/bullet.png) no-repeat 0 14px;
+	background: url(../images/bullet.png) no-repeat 0 12px;
 	text-shadow: 0 1px 0 #ffffff;
 }
 
 #sidebar li a {
 	color: #4d4d4d;
 	text-decoration: none;
-	padding: 8px 0;
 	display: block;
 }
 
