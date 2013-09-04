@@ -127,6 +127,14 @@ function menu_header_irc_jquery_org() {
 	);
 }
 
+function menu_header_meetups_jquery_com() {
+	return array(
+		'http://meetups.jquery.com/' => 'Home',
+		'http://meetups.jquery.com/meetups/' => 'Meetups',
+		'http://meetups.jquery.com/support/' => 'Support'
+	);
+}
+
 /*
  * Avert your eyes.
  */
