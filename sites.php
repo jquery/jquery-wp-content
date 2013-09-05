@@ -263,7 +263,19 @@ function jquery_sites() {
 					'jquery-static-index.php',
 				),
 			),
-		)
+		),
+		'meetups.jquery.com' => array(
+			'blog_id' => 23,
+			'cookie_domain' => '.jquery.org',
+			'body_class' => 'jquery-foundation',
+			'options' => array(
+				'blogname' => 'jQuery Meetups',
+				'stylesheet' => 'jquery.org',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
+		),
 	);
 
 	uasort( $sites, function( $a, $b ) {
