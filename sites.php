@@ -33,6 +33,7 @@ function jquery_sites() {
 			'blog_id' => 3,
 			'cookie_domain' => '.jquery.com',
 			'body_class' => 'jquery',
+			'logo_link' => 'http://jquery.com/',
 			'options' => array(
 				'blogname' => 'jQuery API Documentation',
 				'stylesheet' => 'api.jquery.com',
@@ -85,6 +86,7 @@ function jquery_sites() {
 			'blog_id' => 8,
 			'cookie_domain' => '.jqueryui.com',
 			'body_class' => 'jquery-ui',
+			'logo_link' => 'http://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI API Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -95,6 +97,7 @@ function jquery_sites() {
 			'blog_id' => 17,
 			'cookie_domain' => '.jqueryui.com',
 			'body_class' => 'jquery-ui',
+			'logo_link' => 'http://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.8 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -105,6 +108,7 @@ function jquery_sites() {
 			'blog_id' => 21,
 			'cookie_domain' => '.jqueryui.com',
 			'body_class' => 'jquery-ui',
+			'logo_link' => 'http://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.9 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -163,6 +167,7 @@ function jquery_sites() {
 			'blog_id' => 13,
 			'cookie_domain' => '.jquerymobile.com',
 			'body_class' => 'jquery-mobile',
+			'logo_link' => 'http://jquerymobile.com/',
 			'options' => array(
 				'blogname' => 'jQuery Mobile API Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
@@ -175,6 +180,7 @@ function jquery_sites() {
 			'blog_id' => 14,
 			'cookie_domain' => '.qunitjs.com',
 			'body_class' => 'qunitjs',
+			'logo_link' => 'http://qunitjs.com/',
 			'options' => array(
 				'blogname' => 'QUnit API Documentation',
 				'stylesheet' => 'api.qunitjs.com',

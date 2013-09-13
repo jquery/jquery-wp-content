@@ -113,7 +113,7 @@
 
 <div id="container">
 	<div id="logo-events" class="constrain clearfix">
-		<h2 class="logo"><a href="/" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
+		<h2 class="logo"><a href="<?php echo jq_logo_link(); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
 
 		<aside><?php jq_banner(); ?></aside>
 	</div>

@@ -166,3 +166,9 @@ function jq_post_heirarchy() {
 			'Posted in: ' . implode( ' > ', array_reverse( $parents ) ) .
 		'</div>';
 }
+
+function jq_logo_link() {
+	$sites = jquery_sites();
+	return empty( $sites[ JQUERY_LIVE_SITE ][ 'logo_link' ] ) ? '/' :
+		$sites[ JQUERY_LIVE_SITE ][ 'logo_link' ];
+}
