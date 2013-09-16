@@ -79,8 +79,6 @@
 					</li>
 					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
 						<ul class="wide">
-							<li><a href="http://events.jquery.org/2013/austin/#training">Sep 9 | jQuery Training Austin</a></li>
-							<li><a href="http://events.jquery.org/2013/austin/">Sep 10-11 | jQuery Conference Austin</a></li>
 							<li><a href="http://jquery.itmozg.ru/">Oct 15 | jQuery Russia 2013</a></li>
 							<li><a href="http://2013.cssdevconf.com/">Oct 21-22 | CSS Dev Conf</a></li>
 							<li><a href="http://javascriptsummit.com/">Nov 19-21 | JavaScript Summit</a></li>
