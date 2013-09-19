@@ -50,6 +50,13 @@
 							<cite>Adam Boduch</cite>
 						</a>
 					</li>
+					<li>
+						<a href="http://www.packtpub.com/jquery-userinterface-cookbook/book">
+							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-cookbook.jpg" alt="jQuery UI Cookbook by Adam Boduch" width="92" height="114"></span>
+							<strong>jQuery UI Cookbook</strong><br>
+							<cite>Adam Boduch</cite>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
