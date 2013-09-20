@@ -2948,14 +2948,14 @@ footer li img {
 	margin-top: 1em;
 }
 
-#options, #methods, #events, #quick-nav {
+#options, #methods, #extension-points, #events, #quick-nav {
 	border: 1px solid #CCC;
 	margin: 0 15px 15px;
 	padding: 10px;
 	overflow: auto;
 }
 
-#options header h2, #methods header h2, #events header h2, #quick-nav h2 {
+#options header h2, #methods header h2, #extension-points header h2, #events header h2, #quick-nav h2 {
 	background: #cccccc; /* Old browsers */
 	background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
 	background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* W3C */
@@ -2976,11 +2976,13 @@ footer li img {
 }
 
 #methods .api-item li,
+#extension-points .api-item li,
 #events .api-item li {
 	margin-bottom: 1em;
 }
 
 #methods .api-item li ul,
+#extension-points .api-item li ul,
 #events .api-item li ul {
 	list-style: none;
 }
