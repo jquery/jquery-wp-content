@@ -164,6 +164,7 @@ function jquery_sites() {
 			),
 		),
 		'api.jquerymobile.com' => array(
+			'subsites' => 1, // Has one level of sub-sites (api.jquerymobile.com/([^/]+))
 			'blog_id' => 13,
 			'cookie_domain' => '.jquerymobile.com',
 			'body_class' => 'jquery-mobile',
@@ -171,9 +172,7 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Mobile API Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
-				'active_plugins' => array(
-					'jquery-static-index.php',
-				),
+				'active_plugins' => array(),
 			),
 		),
 		'api.qunitjs.com' => array(
@@ -269,12 +268,23 @@ function jquery_sites() {
 					'jquery-static-index.php',
 				),
 			),
-		)
+		),
+		'api.jquerymobile.com/1.3' => array(
+			'blog_id' => 24,
+			'cookie_domain' => '.jquerymobile.com',
+			'body_class' => 'jquery-mobile',
+			'logo_link' => 'http://jquerymobile.com/',
+			'options' => array(
+				'blogname' => 'jQuery Mobile 1.3 Documentation',
+				'stylesheet' => 'api.jquerymobile.com',
+				'active_plugins' => array(),
+			),
+		),
 	);
 
 	uasort( $sites, function( $a, $b ) {
 		if ( $a['blog_id'] == $b['blog_id'] )
-			die( 'Two sites have the same blog_id. Blame nacin?' );
+			die( 'Two sites have the same blog_id.' );
 		if ( $a['blog_id'] > $b['blog_id'] )
 			return 1;
 		return -1;
