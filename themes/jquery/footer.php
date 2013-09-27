@@ -24,9 +24,9 @@
 				<h3><span>Books</span></h3>
 				<ul class="books">
 					<li>
-						<a href="http://link.packtpub.com/S3Fr9Q">
-							<span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/learning-jquery-3rd-ed.jpg" alt="Learning jQuery 3rd Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114" /></span>
-							<strong>Learning jQuery Third Edition</strong><br />
+						<a href="http://www.packtpub.com/learning-jquery-with-simple-javascript-techniques-fourth-edition/book">
+							<span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114" /></span>
+							<strong>Learning jQuery Fourth Edition</strong><br />
 							<cite>Karl Swedberg and Jonathan Chaffer</cite>
 						</a>
 					</li>
