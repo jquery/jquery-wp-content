@@ -1,0 +1,15 @@
+body > header, body > footer, #sidebar, #logo-events, #main, #broadcast {
+    display: none;
+}
+
+#container, #content-wrapper {
+    border-top: none;
+}
+
+#content {
+    width: 100%;
+}
+
+#content ul li {
+    list-style-type: inherit;
+}
