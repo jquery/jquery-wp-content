@@ -86,6 +86,7 @@
 							<li><a href="http://javascriptsummit.com/">Nov 19-21 | JavaScript Summit</a></li>
 							<li><a href="/2014/san-diego/">Feb 12-13 | jQuery San Diego</a></li>
 							<li><a href="http://www.gentics.com/jquery-europe">Feb 28-Mar 1 | jQuery Europe</a></li>
+							<li><a href="http://jqueryuk.com">May 16 | jQuery UK</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
