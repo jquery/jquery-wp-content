@@ -8,15 +8,15 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
-					<input value="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+					<input value="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" readonly>
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/jquery-1.9.1.min.js">
+					<input value="http://code.jquery.com/jquery-1.9.1.min.js" readonly>
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
+					<input value="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js" readonly>
 				</div>
 				<div class="download">
 					<strong>Download jQuery Mobile 1.3.2:</strong>

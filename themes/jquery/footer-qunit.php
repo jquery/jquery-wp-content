@@ -8,11 +8,11 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
-					<input value="http://code.jquery.com/qunit/qunit-1.12.0.css">
+					<input value="http://code.jquery.com/qunit/qunit-1.12.0.css" readonly>
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/qunit/qunit-1.12.0.js">
+					<input value="http://code.jquery.com/qunit/qunit-1.12.0.js" readonly>
 				</div>
 				<div class="download">
 					<strong>Download QUnit 1.12.0:</strong>
