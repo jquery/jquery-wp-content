@@ -1,0 +1,59 @@
+.loading {
+	background: url(/jquery-wp-content/themes/jquerymobile.com/i/ajax.gif) center center no-repeat;
+	margin: 20px 0 0 0;
+}
+.sub ul li {
+line-height: 1.5em;
+margin: 0 0 4px -10px;
+}
+.builder {
+	padding: 0 2em;
+	min-height: 8em;
+	list-style: none;
+}
+.builder li {
+	display: block;
+}
+.builder label { 
+	display: inline-block;
+	padding: 0 0 0 6px;
+}
+.group {
+	clear: both;
+}
+.hed-cat {
+	font-size: 2em;
+	margin: 0 20px;
+	padding: 15px 0 5px 0;
+	border-bottom: 3px solid #ddd;
+	text-transform: capitalize;
+}
+.group>ul#events {
+	border: none;
+}
+.desc { 
+	display: block;
+	color: #777;
+	font-size: .9em;
+}
+.select-all {
+	display: block;
+	float: right;
+	font-size: 1.2em;
+	margin: 15px 20px 0 0;
+}
+.branches {
+	float: left;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 10px 40px;
+}
+.branches select {
+	margin: 10px 0 0 0;
+	clear: both;
+	float: left;
+}
+
+#download {
+	display: none;
+}
