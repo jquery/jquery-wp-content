@@ -23,8 +23,6 @@ a, .title, .entry-title { color: #108040; }
     box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
 }
 
-.page-header { margin-right: 400px; }
-
 #banner-secondary p.intro {
   padding: 0;
   float: left;
