@@ -1,6 +1,6 @@
 <?php
 
-list( $live_domain ) = explode( '/', JQUERY_LIVE_SITE, 2 );
+list( $live_domain ) = JQUERY_LIVE_DOMAIN;
 if ( 0 === validate_file( $live_domain ) ) {
 	foreach ( (array) glob( dirname( __FILE__ ) . "/$live_domain/*.php" ) as $domain_specific_file ) {
 		require_once( $domain_specific_file );

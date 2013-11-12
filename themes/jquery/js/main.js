@@ -28,9 +28,28 @@ $(function() {
 
 	// Banner ads
 	(function() {
+
+		// Default site id
+		var siteId = 53829,
+
+			// Sites can contain two properties: all and homepage
+			site = ({
+				"jquery.com": {
+					homepage: 32018
+				}
+			})[ $( "head" ).attr( "data-live-domain" ) ];
+
+		if ( site ) {
+			if ( location.pathname === "/" && site.homepage ) {
+				siteId = site.homepage;
+			} else if ( site.all ) {
+				siteId = site.all;
+			}
+		}
+
 		window.ados = {
 			run: [function() {
-				ados_add_placement( 5449, 32018, "broadcast", 1314 );
+				ados_add_placement( 5449, siteId, "broadcast", 1314 );
 				ados_load();
 			}]
 		};

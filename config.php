@@ -59,9 +59,12 @@ if ( ! empty( $sites[ $live_site ]['subsites'] ) ) {
 
 define( 'JQUERY_LIVE_SITE', $live_site );
 
+list( $live_domain ) = explode( '/', JQUERY_LIVE_SITE, 2 );
+define( 'JQUERY_LIVE_DOMAIN', $live_domain );
+
 $blog_id = $sites[ $live_site ]['blog_id'];
 define( 'COOKIE_DOMAIN', $sites[ $live_site ]['cookie_domain'] );
-unset( $sites, $live_site, $first_path_segment ); // Leave $blog_id.
+unset( $sites, $live_site, $live_domain, $first_path_segment ); // Leave $blog_id.
 
 if ( defined( 'MULTISITE' ) && ! MULTISITE )
 	die( "Remove define( 'MULTISITE', false ); from wp-config.php. Maybe check out jquery-wp-content/wp-config-sample.php for the current sample." );
