@@ -8,15 +8,15 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
-					<input value="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" readonly>
+					<input value="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" readonly>
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/jquery-1.9.1.js" readonly>
+					<input value="//code.jquery.com/jquery-1.9.1.js" readonly>
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="http://code.jquery.com/ui/1.10.3/jquery-ui.js" readonly>
+					<input value="//code.jquery.com/ui/1.10.3/jquery-ui.js" readonly>
 				</div>
 				<div class="download">
 					<div><strong>Download jQuery UI 1.10.3 (for jQuery 1.6+):</strong></div>
