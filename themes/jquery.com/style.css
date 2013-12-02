@@ -130,27 +130,25 @@ a,
 	}
 }
 
-#content #whos-using li {
+#content #corporate-members li {
 	background: none;
+	height: 150px;
 }
 
-#whos-using li a {
-	background: url('i/whos-using-sprite.png') 0px 0px no-repeat;
-	display: block;
-	height: 80px;
-	text-indent: -9999px;
+#corporate-members span {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
-#whos-using li a.mediatemple {
-	background-position: 0 -80px;
+#corporate-members a {
+	float: left;
+	height: 100%;
 }
 
-#whos-using li a.maxcdn {
-	background-position: 0 -160px;
-}
-
-#whos-using li a.wikipedia {
-	background-position: 0 -240px;
+#corporate-members img {
+	vertical-align: middle;
+	max-height: 150px;
 }
 
 /* Project Tiles */
