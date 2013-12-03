@@ -1,17 +1,2 @@
-gw-resources/*
-blogs.dir/*
-# Mac OS X Files
-.DS_Store
-# Thumbnails
-._*
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-
-# Windows Files
-# image file caches
-Thumbs.db 
-# Folder config file
-Desktop.ini
-jQuery Themes.esproj
+/gw-resources/*
+/blogs.dir/*
