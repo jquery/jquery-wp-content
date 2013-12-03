@@ -23,7 +23,7 @@ add_filter( 'the_content', function( $content ) {
 			'<li class="three columns">' .
 				'<a href="' . $member[ 'url' ] . '">' .
 					'<span></span>' .
-					'<img src="' . $logoUrl . '">' .
+					'<img src="' . $logoUrl . '" title="' . $member[ 'name' ] . '">' .
 				'</a>' .
 			'</li>';
 	}
