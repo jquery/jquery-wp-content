@@ -23,10 +23,22 @@ a, .title, .entry-title { color: #108040; }
     box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
 }
 
+#description {
+  float: left;
+  width: 100%;
+  margin-right: -342px;
+  padding-right: 362px;
+}
+
+.content-full #content #banner-secondary h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
 #banner-secondary p.intro {
   padding: 0;
-  float: left;
-  width: 50%;
+  max-width: 600px;
+  line-height: 1.4;
 }
 
 #banner-secondary .download-box {
@@ -37,7 +49,7 @@ a, .title, .entry-title { color: #108040; }
   background: -o-linear-gradient(left, #333 0%, #444 100%);
   background: linear-gradient(to right, #333 0%, #444 100%);
   float: right;
-  width: 40%;
+  width: 335px;
   text-align: center;
   font-size: 20px;
   padding: 10px;
@@ -61,13 +73,7 @@ a, .title, .entry-title { color: #108040; }
 }
 
 #banner-secondary .download-option {
-  width: 45%;
-  float: left;
   font-size: 16px;
-}
-
-#banner-secondary .download-notlatest {
-  float: right;
 }
 
 #banner-secondary .download-option span {
@@ -76,110 +82,85 @@ a, .title, .entry-title { color: #108040; }
   color: #71D1FF;
 }
 
+#home-content {
+  margin-bottom: 15px;
+}
+
 #content .dev-links {
   float: right;
-  width: 30%;
-  margin: -15px -25px .5em 1em;
-  padding: 1em;
-  border: 1px solid #666;
-  border-width: 0 0 1px 1px;
-  border-radius: 0 0 0 5px;
-  box-shadow: -2px 2px 10px -2px #666;
+  margin-bottom: 15px;
 }
 
-#content .dev-links ul {
-  margin: 0;
+#home-content article {
+  padding-bottom: 30px;
 }
 
-#content .dev-links li {
-  padding: 0;
-  margin: .25em 0 .25em 1em;
-  background-image: none;
+#jqm-devices {
+  float: right;
+  width: 40%;
+  margin: 0 0 15px 15px;
 }
 
-#try {
-  margin-top: 10px;
-}
-
-#manufacturers {
-  list-style: none;
-  width: 730px;
-  height: 120px;
-  margin: 20px 0;
-  position: relative;
-  left: -10px;
-}
-
-
-#manufacturers,
-#manufacturers a:hover {
-  background: url(http://cdn.jquery.net/mobile/wp-content/themes/jquery-mobile/images/manufacturers.png) -11px -5px no-repeat;
-}
-
-#manufacturers li {
-  margin:0;
-  padding:0;
+#themeroller-logo {
   float: left;
-  margin-left: 5px;
-  margin-bottom: 20px;
+  width: 359px;
+  margin: 0 15px 15px 0;
 }
 
-#content div ul li {
-  background: none;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  padding-top: 0px;
-}
-
-.ie6 #manufacturers li,
-.ie6 #manufacturers li a {
-  display: inline;
-}
-
-#manufacturers li a {
-  display: block;
-  height: 62px;
-  text-indent: -9999px;
-  overflow: hidden;
+#home-content article:last-child {
   float: left;
 }
 
-#manufacturers a.ios              { width: 140px; margin-right: 35px;}
-#manufacturers a.android          { width: 160px; margin-right: 35px;}
-#manufacturers a.blackberry       { width: 160px; margin-right: 50px;}
-#manufacturers a.bada             { width: 120px; }
-#manufacturers a.windows          { width: 160px; margin-right: 15px; height: 40px;}
-#manufacturers a.palm             { width: 170px; margin-right: 35px; height: 40px;}
-#manufacturers a.symbian          { width: 140px; margin-right: 70px; height: 40px;}
-#manufacturers a.meego            { width: 120px; height: 40px; }
+@media (max-width: 850px) {
+  #description {
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
 
-#manufacturers a.ios:hover        { background-position: -16px  -155px;}
-#manufacturers a.android:hover    { background-position: -196px -155px;}
-#manufacturers a.blackberry:hover { background-position: -396px -155px;}
-#manufacturers a.bada:hover       { background-position: -611px -155px;}
-#manufacturers a.windows:hover    { background-position: -16px  -237px;}
-#manufacturers a.palm:hover       { background-position: -196px -237px;}
-#manufacturers a.symbian:hover    { background-position: -406px -237px;}
-#manufacturers a.meego:hover      { background-position: -621px -237px;}
+  .content-full #content #banner-secondary h1 {
+    text-align: center;
+  }
 
-#sponsors {
-   background-color:#f7f8f8;
-   padding: 10px 0 25px 0;
-   margin-bottom:40px;
-   overflow: hidden;
-   list-style: none;
-}
-#sponsors li {
-   margin: 0;
-   padding: 0;
-   display:block;
-   float:left;
-   width:33%;
-}
+  #banner-secondary p.intro {
+    text-align: center;
+    max-width: none;
+    margin-bottom: 20px;
+  }
 
-#sponsors li a {
-   padding: 10px 15px;
-   display: block;
+  #banner-secondary .download-box {
+    float: none;
+    width: auto;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  #banner-secondary .download-box .button {
+    max-width: 335px;
+    margin: 15px auto 0;
+  }
+
+  #content .dev-links {
+    float: none;
+    width: auto;
+    margin-left: 0;
+  }
+
+  #home-content article {
+    float: none;
+    width: auto;
+  }
+
+  #jqm-devices,
+  #themeroller-logo {
+    float: none;
+    display: block;
+    margin: 0 auto 15px;
+  }
+
+  #jqm-devices {
+    width: 360px;
+  }
 }
 
 .a, .graded td.a { background: #5FB221; color: #fff; }
@@ -227,8 +208,7 @@ a, .title, .entry-title { color: #108040; }
   vertical-align: middle;
 }
 
- tr.platform { border-bottom: 5px solid #FFF; }
-
+tr.platform { border-bottom: 5px solid #FFF; }
 
 .graded td.platform {
   text-align: left;
