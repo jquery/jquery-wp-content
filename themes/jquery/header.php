@@ -79,11 +79,8 @@
 					</li>
 					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
 						<ul class="wide">
-							<li><a href="http://www.deque.com/deque-partners-jquery-create-accessibility-summit">Oct 10-11 | jQuery Accessibility Summit</a></li>
-							<li><a href="http://jquery.itmozg.ru/">Oct 15 | jQuery Russia</a></li>
-							<li><a href="http://modernweb.com/training/jquery-oct-2013.php">Oct 15-17 | jQuery Virtual Training</a></li>
-							<li><a href="http://2013.cssdevconf.com/">Oct 21-22 | CSS Dev Conf</a></li>
-							<li><a href="http://javascriptsummit.com/">Nov 19-21 | JavaScript Summit</a></li>
+							<li><a href="http://modernweb.com/training/jquery-dec-2013.php">Dec 17-19 | jQuery Virtual Training</a></li>
+							<li><a href="http://www.deque.com/register-javascript-accessibility-summit">Jan 16-17 | jQuery Accessibility Summit</a></li>
 							<li><a href="http://events.jquery.org/2014/san-diego/">Feb 12-13 | jQuery San Diego</a></li>
 							<li><a href="http://www.gentics.com/jquery-europe">Feb 28-Mar 1 | jQuery Europe</a></li>
 							<li><a href="http://jqueryuk.com">May 16 | jQuery UK</a></li>
