@@ -4,12 +4,14 @@ class VP_FileScan {
 	var $path;
 	var $last_dir = null;
 	var $offset = 0;
+	var $ignore_symlinks = false;
 
-	function VP_FileScan( $path ) {
+	function VP_FileScan( $path, $ignore_symlinks = false ) {
 		if ( is_dir( $path ) )
 			$this->last_dir = $this->path = @realpath( $path );
 		else
 			$this->last_dir = $this->path = dirname( @realpath( $path ) );
+		$this->ignore_symlinks = $ignore_symlinks;
 	}
 
 	function get_files( $limit = 100 ) {
@@ -40,6 +42,8 @@ class VP_FileScan {
 				if ( !empty( $next[0] ) && $next[0] != $entry )
 					continue;
 				if ( rtrim( $last_dir, DIRECTORY_SEPARATOR ) == rtrim( $path, DIRECTORY_SEPARATOR ) && $_offset < $offset )
+					continue;
+				if ( $this->ignore_symlinks && is_link( $full_entry ) )
 					continue;
 
 				if ( rtrim( $last_dir, DIRECTORY_SEPARATOR ) == rtrim( $path, DIRECTORY_SEPARATOR ) ) {
@@ -107,22 +111,31 @@ function vp_scan_file($file, $tmp_file = null) {
 	if ( !vp_is_interesting_file( $file ) ) // only scan relevant files.
 		return false;
 
+	if ( !isset( $GLOBALS['vp_signatures'] ) )
+		$GLOBALS['vp_signatures'] = array();
+
 	$found = array ();
 	foreach ( $GLOBALS['vp_signatures'] as $signature ) {
+		if ( !is_object( $signature ) || !isset( $signature->patterns ) )
+			continue;
 		// if there is no filename_regex, we assume it's the same of vp_is_interesting_file().
 		if ( empty( $signature->filename_regex ) || preg_match( '#' . addcslashes( $signature->filename_regex, '#' ) . '#i', $file ) ) {
 			if ( null === $file_content || !is_array( $file_content ) )
 				$file_content = file( $real_file );
 
 			$is_vulnerable = true;
-			reset( $signature->patterns );
 			$matches = array ();
-			while ( $is_vulnerable && list( , $pattern ) = each( $signature->patterns ) ) {
-				if ( ! $match = preg_grep( '#' . addcslashes( $pattern, '#' ) . '#im', $file_content ) ) {
-					$is_vulnerable = false;
-					break;
+			if ( is_array( $file_content ) && ( $signature->patterns ) && is_array( $signature->patterns ) ) {
+				reset( $signature->patterns );
+				while ( $is_vulnerable && list( , $pattern ) = each( $signature->patterns ) ) {
+					if ( ! $match = preg_grep( '#' . addcslashes( $pattern, '#' ) . '#im', $file_content ) ) {
+						$is_vulnerable = false;
+						break;
+					}
+					$matches += $match;
 				}
-				$matches += $match;
+			} else {
+				$is_vulnerable = false;
 			}
 			$debug_data = array( 'matches' => $matches );
 			// Additional checking needed?
