@@ -7,6 +7,9 @@ if ( ! defined( 'WP_CONTENT_DIR' ) )
 if ( ! defined( 'WP_CONTENT_URL' ) )
 	define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/jquery-wp-content' );
 
+// Enable all core updates
+define( 'WP_AUTO_UPDATE_CORE', true );
+
 // jQuery.com staging
 if ( ! defined( 'JQUERY_STAGING' ) )
 	define( 'JQUERY_STAGING', true );
