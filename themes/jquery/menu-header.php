@@ -55,10 +55,10 @@ function menu_header_qunitjs_com() {
 
 function menu_header_jquerymobile_com() {
 	return array(
-		'http://jquerymobile.com/demos/' => 'Demos',
+		'http://demos.jquerymobile.com' => 'Demos',
 		'http://jquerymobile.com/download/' => 'Download',
 		'http://api.jquerymobile.com/' => 'API Documentation',
-		'http://jquerymobile.com/themeroller/' => 'Themes',
+		'http://themeroller.jquerymobile.com' => 'Themes',
 		'http://jquerymobile.com/resources/' => 'Resources',
 		'http://blog.jquerymobile.com/' => 'Blog',
 		'http://jquerymobile.com/about/' => 'About'
