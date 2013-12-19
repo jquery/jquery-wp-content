@@ -3168,7 +3168,12 @@ footer li img {
 	}
 
 	#logo-events aside {
-		display: none;
+		display: inline-block;
+		position: relative;
+		left: 50%;
+		margin-left: -200px;
+		float: none;
+		padding: 10px 0;
 	}
 
 	#logo-events h2.logo {
@@ -3281,6 +3286,11 @@ footer li img {
 	
 	#global-nav { 
 		display: none;
+	}
+
+	#logo-events aside {
+		width: 300px;
+		margin-left: -150px;
 	}
 
 	#container {
