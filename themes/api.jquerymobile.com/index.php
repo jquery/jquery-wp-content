@@ -18,24 +18,16 @@
 		<p>jQuery Mobile is the easiest way to build sites and apps that are accessible on all
 			popular smartphone, tablet and desktop devices.</p>
 
-		<p>If you are new to jQuery Mobile, our tutorial on
-			<a href="http://learn.jquery.com/jquery-mobile/getting-started/">Getting Started
-			with jQuery Mobile</a> or our
-			<a href="http://view.jquerymobile.com/1.3.2/dist/demos/intro/">Introduction</a> to the
-			framework would be the perfect place to start.</p>
+		<p>If you are new to jQuery Mobile, the introduction to the framework in the 
+			<a href="http://demos.jquerymobile.com/">Demos</a>
+			would be a good place to start.</p>
 
-		<p>You can contribute to the project by reporting issues, suggesting new features,
-			or submitting pull requests. Please read our
-			<a href="https://github.com/jquery/jquery-mobile/blob/master/CONTRIBUTING.md">Contributing
-			Guidelines</a> before submitting.</p>
-
-		<p>This site provides API documentation for jQuery Mobile 1.3 </p>
+		<p>This site provides API documentation for jQuery Mobile <?php echo $thisVersion; ?></p>
 
 		<?php } else { ?>
 
 		<p>This site provides API documentation for jQuery Mobile <?php echo $thisVersion; ?>.
-			We encourage you to upgrade to
-			<a href="http://api.jquerymobile.com/">the latest stable version of jQuery Mobile</a>
+			We encourage you to <a href="http://jquerymobile.com/download/">upgrade to the latest stable version</a> of jQuery Mobile
 			in order to receive the best support and take advantage of recent bug
 			fixes and enhancements. Check out the
 			<a href="http://jquerymobile.com/upgrade-guide/">upgrade guides</a>
@@ -50,6 +42,9 @@
 
 		<p>jQuery Mobile <?php echo $thisVersion; ?>
 			supports jQuery <?php echo $versions[ $thisVersion ]; ?>.</p>
+
+		<p>See the <a href="http://jquerymobile.com/gbs/<?php echo $thisVersion; ?>">supported platforms</a> page for a list of all
+			operating systems and browsers that are supported by this version of jQuery Mobile.</p> 
 
 		<hr>
 
@@ -66,7 +61,6 @@
 				$url = $version === $latestVersion ? '/' : "/$version/";
 				echo "<li><a href=\"$url\">jQuery Mobile $version API Documentation</a></li>";
 			} ?>
-			<li><a href="http://jquerymobile.com/demos/1.2.0/">jQuery Mobile 1.2.0 Documentation</a></li>
 			<li><a href="http://api.jquery.com/">jQuery Core API Documentation</a></li>
 			<li><a href="http://api.jqueryui.com/">jQuery UI API Documentation</a></li>
 			<li><a href="http://learn.jquery.com/">jQuery Learning Center</a></li>
