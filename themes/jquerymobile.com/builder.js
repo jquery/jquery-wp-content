@@ -1,5 +1,5 @@
 $( function( $ ) {
-	var host = "http://jquerymobile.com/amd-builder",
+	var host = "http://amd-builder.jquerymobile.com",
 		dependencyMap,
 		builderhtml = [],
 		sortable = [],
