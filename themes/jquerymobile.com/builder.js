@@ -167,7 +167,7 @@ $( function( $ ) {
 		},
 		refreshImageBundleLink = function() {
 			var branch = $( "#branch option:selected" ).val(),
-				url = "http://code.jquery.com/mobile/" + branch + "/jquery.mobile.images-" + branch + ".zip";
+				url = "../resources/download/jquery.mobile.images-" + branch + ".zip";
 
 			if ( branch === "master" ) {
 				url = "https://github.com/jquery/jquery-mobile/tree/master/css/themes/default/images";
