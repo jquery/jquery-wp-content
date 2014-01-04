@@ -8,15 +8,15 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
-					<input value="//code.jquery.com/qunit/qunit-1.12.0.css" readonly>
+					<input value="//code.jquery.com/qunit/qunit-1.13.0.css" readonly>
 				</div>
 				<div class="cdn">
 					<strong>CDN <em>JS</em></strong>
-					<input value="//code.jquery.com/qunit/qunit-1.12.0.js" readonly>
+					<input value="//code.jquery.com/qunit/qunit-1.13.0.js" readonly>
 				</div>
 				<div class="download">
-					<strong>Download QUnit 1.12.0:</strong>
-					<span><a href="http://code.jquery.com/qunit/qunit-1.12.0.js">qunit.js</a><a href="http://code.jquery.com/qunit/qunit-1.12.0.css">qunit.css</a></span>
+					<strong>Download QUnit 1.13.0:</strong>
+					<span><a href="http://code.jquery.com/qunit/qunit-1.13.0.js">qunit.js</a><a href="http://code.jquery.com/qunit/qunit-1.13.0.css">qunit.css</a></span>
 				</div>
 				<ul class="footer-icon-links">
 					<li><a class="icon-github" href="http://github.com/jquery/qunit">GitHub <small>QUnit <br>Source</small></a></li>
