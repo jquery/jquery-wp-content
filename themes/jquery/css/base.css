@@ -2793,18 +2793,18 @@ footer li img {
 	position: relative;
 }
 
-.toc-linked a {
+.toc-linked .toc-link {
 	position: absolute;
 	left: -1em;
 	text-decoration: none;
 	opacity: 0;
 }
 /* TODO: Remove (https://github.com/jquery/jquery-wp-content/issues/143) */
-#content .toc-linked a {
+#content .toc-linked .toc-link {
 	text-decoration: none;
 }
 
-.toc-linked:hover a {
+.toc-linked:hover .toc-link {
 	opacity: 1;
 }
 
