@@ -1202,7 +1202,7 @@ ul.icons li [class*=" icon-"] {
 .icon-folder-open-alt:before      { content: "\f115"; }
 
 /* Manual Font Awesome Styles */
-[class^="icon-"]::before, [class^="icon-"]::after
+[class^="icon-"]::before, [class^="icon-"]::after,
 [class*=" icon-"]::before, [class*=" icon-"]::after {
   font-family: FontAwesome, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
