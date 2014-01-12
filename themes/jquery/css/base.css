@@ -1897,6 +1897,7 @@ code {
 	background-color: #eee;
 	border-radius: 3px;
 	white-space: pre;
+	word-wrap: break-word;
 }
 
 pre code {
