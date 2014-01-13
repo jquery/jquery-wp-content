@@ -45,7 +45,6 @@
 		<ul>
 			<li><a href="/events-conferences/#naming-your-jquery-event">Naming</a></li>
 			<li><a href="/events-conferences/#promoting-your-jquery-event">Promoting</a></li>
-			<li><a href="/events-conferences/#event-rules">Rules</a></li>
 			<li><a href="/events-conferences/#jquery-developer-summit">jQuery Developer Summit</a></li>
 		</ul>
 	</aside>
