@@ -238,13 +238,11 @@ pre {
 
 pre, code {
 	white-space: pre;
+	white-space: pre-wrap;
 	word-wrap: break-word;
 	word-spacing: 0;
 	font-size: 13px;
 	line-height: 16px;
-}
-pre {
-	white-space: pre-wrap;
 }
 code {
 	padding: 0 3px;
@@ -255,6 +253,8 @@ pre code {
 	background-color: transparent;
 	font-size: 16px;
 	font-weight: bold;
+	white-space: pre;
+	word-wrap: normal;
 }
 
 /*
