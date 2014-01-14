@@ -236,10 +236,25 @@ pre {
  * Improves readability of pre-formatted text in all browsers.
  */
 
-pre {
+pre, code {
 	white-space: pre;
-	white-space: pre-wrap;
 	word-wrap: break-word;
+	word-spacing: 0;
+	font-size: 13px;
+	line-height: 16px;
+}
+pre {
+	white-space: pre-wrap;
+}
+code {
+	padding: 0 3px;
+	background-color: #eee;
+	border-radius: 3px;
+}
+pre code {
+	background-color: transparent;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 /*
@@ -1887,23 +1902,6 @@ hr {
 	margin: .75em 0;
 }
 
-pre, code {
-	font: 13px/16px "source-code-pro", Consolas, monospace;
-	word-spacing: 0;
-}
-
-code {
-	padding: 0 3px;
-	background-color: #eee;
-	border-radius: 3px;
-	white-space: pre;
-}
-
-pre code {
-	background-color: transparent;
-	font-size: 16px;
-	font-weight: bold;
-}
 #content code a {
 	text-decoration: none;
 }
