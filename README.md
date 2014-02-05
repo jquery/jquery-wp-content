@@ -1,6 +1,6 @@
 # jQuery.com jquery-wp-content
 
-This is a set of plugins, themes, and configuration files for jQuery's website infrastructure, which is powered by WordPress. It is designed as a custom content directory. So think of `jquery-wp-content` as your `wp-content` directory.
+This is a set of plugins, themes, and configuration files for jQuery's website infrastructure, which is powered by WordPress. It is designed as a custom content directory.  This cannot be installed as a plugin into your current wordpress install, think of `jquery-wp-content` as your `wp-content` directory. 
 
 ## Prerequisites
 
