@@ -5,6 +5,8 @@
 	<div class="constrain">
 		<div class="row">
 			<div class="six columns centered">
+				<h3><span>Suggestions, Problems, Feedback?</span></h3>
+				<a class="button dark" href="<?php echo jq_get_github_url(); ?>"><i class="icon-github"></i>  Open an Issue or Submit a Pull Request on GitHub</a>
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN <em>CSS</em></strong>
