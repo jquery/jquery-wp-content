@@ -1,6 +1,6 @@
 # jQuery.com jquery-wp-content
 
-`jquery-wp-content` is a **custom replacement** for the `wp-content` directory which contains the plugins, themes and site configuration to run the jQuery multi-site wordpress network.
+`jquery-wp-content` is a **custom replacement** for the `wp-content` directory which contains the plugins, themes and site configuration to run the jQuery multi-site WordPress network.
 
 
 ## Prerequisites
