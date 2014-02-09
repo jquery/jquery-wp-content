@@ -8,10 +8,10 @@
 				<h3><span>Quick Access</span></h3>
 				<div class="cdn">
 					<strong>CDN</strong>
-					<input value="//code.jquery.com/jquery-1.10.2.min.js" readonly>
+					<input value="//code.jquery.com/jquery-1.11.0.min.js" readonly>
 				</div>
 				<div class="download">
-					<strong><a href="http://jquery.com/download/">Download jQuery 1.10.2 →</a></strong>
+					<strong><a href="http://jquery.com/download/">Download jQuery 1.11.0 →</a></strong>
 				</div>
 				<ul class="footer-icon-links">
 					<li><a class="icon-github" href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
