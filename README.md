@@ -1,126 +1,84 @@
-# jQuery.com jquery-wp-content
+# jquery-wp-content
 
 `jquery-wp-content` is a **custom replacement** for the `wp-content` directory which contains the plugins, themes and site configuration to run the jQuery multi-site WordPress network.
 
+Although we recommend using the pre-built VM, if you would like to manually install `jquery-wp-content` you will find instructions for installing in the [INSTALL.md](INSTALL.md) file in this directory. We strongly recommend using the VM as it will provide the same environment as our production servers.
 
 ## Prerequisites
 
-This install guide assumes you already have certain prerequisites already configured within your environment.
+This setup guide assumes you have certain prerequisites installed.
 
-* Apache
-* Mysql
-* PHP
+* [Virtualbox >=4.3+](https://www.virtualbox.org/)
+* [Vagrant >=1.4.0](http://www.vagrantup.com/)
 
-## Installation
+## Vagrant and Virtualbox
 
-1. Configure your local webserver with a virtual host that covers the relevant jQuery domains, such as `*.jquery.com` and `*.jqueryui.com`, all pointing to the same root. For example, in Apache:
+We recommend the combination of Virtualbox and [Vagrant](http://www.vagrantup.com/about.html) for a local development environment. Vagrant simplifies download, installation, and management of the local environment VM with a few commands.
 
-	```
-	<VirtualHost *:80>
-		ServerName local.jquery.com
-		ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
-		DocumentRoot "/srv/www/jquery"
-		php_value memory_limit 256M
-		<Directory /srv/www/jquery>
-			Options All
-			AllowOverride All
-			Order allow,deny
-			Allow from all
-		</Directory>
-	</VirtualHost>
-	```
+### Setup
 
-	Make sure that virtual hosts are enabled as well:
+From the root of your `jquery-wp-content` clone run the following command:
 
-	```
-	NameVirtualHost *:80
-	```
+```
+vagrant up
+```
 
-	Both blocks of code should be pasted into `extra/httpd-vhosts.conf`.
-	Be sure to check `httpd.conf` to verify there is a line that includes
-	`httpd-vhosts.conf`. It may already exist, but be commented out.
+This will start the VM for you, the output should look similar to what you see below.
 
-	Check `httpd.conf` to ensure that the PHP module is enabled as well.
+```
+Bringing machine 'default' up with 'virtualbox' provider...
+[default] Box 'jquery-wp-content' was not found. Fetching box from specified URL for
+the provider 'virtualbox'. Note that if the URL does not have
+a box for this provider, you should interrupt Vagrant now and add
+the box yourself. Otherwise Vagrant will attempt to download the
+full box prior to discovering this error.
+Downloading box from URL: http://boxes.jquery.com/jquery-wp-content.box
+Calculating and comparing box checksum...ime remaining: 0:00:01)
+Extracting box...
+Successfully added box 'jquery-wp-content' with provider 'virtualbox'!
+[default] Importing base box 'jquery-wp-content'...
+[default] Matching MAC address for NAT networking...
+[default] Setting the name of the VM...
+[default] Clearing any previously set forwarded ports...
+[default] Clearing any previously set network interfaces...
+[default] Preparing network interfaces based on configuration...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Running 'pre-boot' VM customizations...
+[default] Booting VM...
+[default] Waiting for machine to boot. This may take a few minutes...
+[default] Machine booted and ready!
+[default] Setting hostname...
+[default] Configuring and enabling network interfaces...
+[default] Mounting shared folders...
+[default] -- /vagrant
+[default] -- /var/www/wordpress/jquery-wp-content
+```
 
-	You do not need to configure your `/etc/hosts` file for `local.*` because `jquery.com`'s DNS handles this for you. However, if you plan to work offline, you can use the following rules:
+Complete the installation process by pointing your browser at http://vagrant.jquery.com/. Feel free to use any username/password/email combination that you choose, though keep note of the username and password as you will need them to deploy to your local VM.
 
-	```
-	127.0.0.1 local.jquery.com local.api.jquery.com local.blog.jquery.com local.books.jquery.com local.codeorigin.jquery.com local.learn.jquery.com local.plugins.jquery.com
-	127.0.0.1 local.jqueryui.com local.api.jqueryui.com local.blog.jqueryui.com
-	127.0.0.1 local.jquerymobile.com local.api.jquerymobile.com local.blog.jquerymobile.com
-	127.0.0.1 local.jquery.org local.brand.jquery.org local.contribute.jquery.org local.events.jquery.org local.irc.jquery.org local.meetings.jquery.org
-	127.0.0.1 local.qunitjs.com local.api.qunitjs.com
-	127.0.0.1 local.sizzlejs.com
-	```
+You do not need to configure your `/etc/hosts` file for `vagrant.*` because `jquery.com`'s DNS handles this for you. However, if you plan to work offline, you can use the following rules:
 
-1. Place the WordPress core files **at** the document root you chose. For example, if you used `/srv/www/jquery`, you should unzip or clone WordPress directly into that directory, *not* a directory below it. **Do not install WordPress.** You can do this any number of ways:
-	* Download the latest version from http://wordpress.org/latest.zip
-	* Check out the latest tag from http://core.svn.wordpress.org/tags/
-	* Clone the official WordPress Github mirror at https://github.com/WordPress/WordPress
+```
+172.27.72.27 vagrant.jquery.com vagrant.api.jquery.com vagrant.blog.jquery.com vagrant.books.jquery.com vagrant.codeorigin.jquery.com vagrant.learn.jquery.com vagrant.plugins.jquery.com
+172.27.72.27 vagrant.jqueryui.com vagrant.api.jqueryui.com vagrant.blog.jqueryui.com
+172.27.72.27 vagrant.jquerymobile.com vagrant.api.jquerymobile.com vagrant.blog.jquerymobile.com
+172.27.72.27 vagrant.jquery.org vagrant.brand.jquery.org vagrant.contribute.jquery.org vagrant.events.jquery.org vagrant.irc.jquery.org vagrant.meetings.jquery.org
+172.27.72.27 vagrant.qunitjs.com vagrant.api.qunitjs.com
+172.27.72.27 vagrant.sizzlejs.com
+```
 
-1. Clone `jquery-wp-content` inside of the directory where you put WordPress, so you have a file tree that looks like this:
+### Stopping and Restarting the Virtual Machine
 
-	```
-	├── jquery
-	│   ├── gw-resources
-	│   ├── index.php
-	│   ├── jquery-wp-content
-	│   ├── license.txt
-	│   ├── readme.html
-	│   ├── wp-activate.php
-	│   ├── wp-admin
-	│   ├── wp-blog-header.php
-	│   ├── wp-comments-post.php
-	│   ├── wp-config-sample.php
-	│   ├── wp-content
-	│   ├── ...
-	│   └── xmlrpc.php
-	```
+When you're not working on `jquery-wp-content` you'll probably want to run `vagrant halt` to turn off the VM to save yourself some system resources. Alternatively you can suspend the VM by using `vagrant suspend`. You can always start the VM by running `vagrant up`.
 
-1. Create a MySQL database and user. You can choose any name you want for both. Follow the [WordPress instructions](http://codex.wordpress.org/Installing_WordPress#Step_2:_Create_the_Database_and_a_User) for a step by step guide.
+### Clean up
 
-1. Copy `jquery-wp-content/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
-
-1. Create an .htaccess file with the following content into that same document root:
-
-	```
-	RewriteEngine On
-	RewriteBase /
-	RewriteRule ^index\.php$ - [L]
-
-	RewriteRule ^resources/?$ index.php [L]
-	RewriteRule ^resources/(.+) gw-resources/%{HTTP_HOST}/$1 [L]
-
-	# Add a trailing slash to the wp-admin of a subsite.
-	RewriteRule ^([_0-9a-zA-Z\.-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
-
-	RewriteCond %{REQUEST_FILENAME} -f [OR]
-	RewriteCond %{REQUEST_FILENAME} -d
-	RewriteRule ^ - [L]
-
-	# Handle wp-admin, wp-includes, and root PHP files for subsites.
-	RewriteRule  ^[_0-9a-zA-Z\.-]+/((wp-admin|wp-includes).*) $1 [L]
-	RewriteRule  ^[_0-9a-zA-Z\.-]+/(.*\.php)$ $1 [L]
-
-	RewriteRule . index.php [L]
-	```
-
-1. Make sure that you have assigned your WordPress files and directories the correct permissions.
-For example, if your WordPress files are in the directory ```wordpress```, and you are running Apache under Mac OS X with the ```_www``` user:
-
-	```
-	sudo chown -R _www wordpress
-	sudo chmod -R g+w wordpress
-	```
-
-1. Restart your web server so the changes above are in use.
-
-1. Go to `http://local.jquery.com` and walk through the standard WordPress installation. `jquery-wp-content` includes a special install script that will initialize the entire network.
-
-1. Be sure to have node >= 0.8 installed on your system.  Some sites, such as download.jqueryui.com, require that version or greater.
+Should you need to recover some harddrive space you can safely run the `vagrant destroy` command from within your `jquery-wp-content` clone. This will delete the VM image from your hard drive. **You will not lose any work by doing this.**
 
 ## Auto-Updates
-Changes pushed to master will be pulled onto the stage domain.
+
+Changes pushed to master are automatically pulled onto the stage domain.
 
 ## Copyright
 
