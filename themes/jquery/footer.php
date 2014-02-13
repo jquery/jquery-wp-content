@@ -4,43 +4,27 @@
 <footer class="clearfix simple">
 	<div class="constrain">
 		<div class="row">
-			<div class="eight columns">
-				<h3><span>Quick Access</span></h3>
-				<div class="cdn">
-					<strong>CDN</strong>
-					<input value="//code.jquery.com/jquery-1.10.2.min.js" readonly>
-				</div>
-				<div class="download">
-					<strong><a href="http://jquery.com/download/">Download jQuery 1.10.2 →</a></strong>
-				</div>
-				<ul class="footer-icon-links">
-					<li><a class="icon-github" href="http://github.com/jquery/jquery">GitHub <small>jQuery <br>Source</small></a></li>
-					<li><a class="icon-group" href="http://forum.jquery.com">Forum <small>Community <br>Support</small></a></li>
-					<li><a class="icon-warning-sign" href="http://bugs.jquery.com">Bugs <small>Issue <br>Tracker</small></a></li>
-				</ul>
-			</div>
-
-			<div class="four columns">
+			<div class="six columns offset-by-three">
 				<h3><span>Books</span></h3>
 				<ul class="books">
 					<li>
 						<a href="http://www.packtpub.com/learning-jquery-with-simple-javascript-techniques-fourth-edition/book">
-							<span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114" /></span>
-							<strong>Learning jQuery Fourth Edition</strong><br />
+							<img src="<?php echo get_template_directory_uri(); ?>/content/books/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114">
+							Learning jQuery Fourth Edition
 							<cite>Karl Swedberg and Jonathan Chaffer</cite>
 						</a>
 					</li>
 					<li>
 						<a href="http://www.manning.com/affiliate/idevaffiliate.php?id=648_176">
-							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault and Yehuda Katz" width="92" height="114" /></span>
-							<strong>jQuery in Action</strong><br />
+							<img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault and Yehuda Katz" width="92" height="114">
+							jQuery in Action
 							<cite>Bear Bibeault and Yehuda Katz</cite>
 						</a>
 					</li>
 					<li>
 						<a href="http://www.syncfusion.com/resources/techportal/ebooks/jquery?utm_medium=BizDev-jQuery.org0513">
-							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114" /></span>
-							<strong>jQuery Succinctly</strong><br />
+							<img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114">
+							jQuery Succinctly
 							<cite>Cody Lindley</cite>
 						</a>
 					</li>
