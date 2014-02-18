@@ -9,6 +9,5 @@
 				'use_desc_for_title' => false
 			) ); ?>
 		</ul>
-
 	</aside>
 </div>
