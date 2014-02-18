@@ -36,11 +36,18 @@
 			<div class="four columns">
 				<h3><span>Books</span></h3>
 				<ul class="books">
-					<li>
+					<!--<li>
 						<a href="http://link.packtpub.com/SHnqUf">
 							<span class="bottom"><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-1.8.jpg" alt="jQuery UI 1.8: The User Interface Library for jQuery by Dan Wellman" width="92" height="114"></span>
 							<strong>jQuery UI 1.8: The User Interface Library for jQuery</strong><br>
 							<cite>Dan Wellman</cite>
+						</a>
+					</li>-->
+					<li>
+						<a href="http://www.manning.com/affiliate/idevaffiliate.php?id=648_377">
+							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-in-action.jpg" alt="jQuery UI in Action by TJ VanToll" width="92" height="114"></span>
+							<strong>jQuery UI in Action</strong><br>
+							<cite>TJ VanToll</cite>
 						</a>
 					</li>
 					<li>
