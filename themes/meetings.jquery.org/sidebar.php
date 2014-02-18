@@ -9,9 +9,6 @@
 				'use_desc_for_title' => false
 			) ); ?>
 		</ul>
-		<h2>External Minutes</h2>
-		<ul>
-			<li><a href="https://github.com/rwaldron/tc39-notes">TC39 (ECMAScript)</a></li>
-		</ul>
+
 	</aside>
 </div>
