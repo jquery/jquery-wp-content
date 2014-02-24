@@ -2489,7 +2489,7 @@ footer h3:after {
 .footer-site-links {
 	float: right;
 	padding: 10px 0 0 0;
-	width: 60%;
+	width: 58%;
 	text-align: right;
 }
 
@@ -2510,14 +2510,10 @@ footer p.copyright a:hover {
 	color: #fff;
 }
 
-footer p.copyright > br {
-	display: none;
-}
-
 footer p.copyright span.sponsor-line {
 	display: block;
 	font-size: 10px;
-	margin: 2px 0 0 0;
+	margin-top: 1em;
 }
 
 footer p.copyright a.mt-link {
@@ -2538,7 +2534,7 @@ footer p.copyright a.wp-link {
 	height: 16px;
 }
 
-footer .footer-site-links li {
+.footer-site-links li {
 	position: relative;
 	background: none;
 	width: auto;
@@ -2548,7 +2544,11 @@ footer .footer-site-links li {
 	font-size: 13px;
 }
 
-footer .footer-site-links li a {
+.footer-site-links li:first-child {
+	margin-left: 0;
+}
+
+.footer-site-links li a {
 	position: relative;
 	color: #aaa;
 	display: block;
@@ -2557,7 +2557,7 @@ footer .footer-site-links li a {
 	line-height: inherit;
 }
 
-footer .footer-site-links li a:before {
+.footer-site-links li a:before {
 	position: absolute;
 	font-size: 1.5em;
 	color: #4d4d4d;
@@ -2565,20 +2565,14 @@ footer .footer-site-links li a:before {
 	left: 2px;
 }
 
-footer .footer-site-links li:hover a,
-footer .footer-site-links li:hover a:before {
+.footer-site-links li:hover a,
+.footer-site-links li:hover a:before {
 	color: #e6e6e6;
 }
 
-.footer-site-links li { display: inline-block; }
-
-footer .col {
-	margin-left: 2.5%;
-	padding: 30px 0 20px 0;
-	height: 100%;
+.footer-site-links li {
+	display: inline-block;
 }
-
-footer .col:first-child { margin-left: 0 }
 
 footer ul li {
 	list-style: none;
@@ -2588,8 +2582,6 @@ footer ul li {
 }
 
 footer #legal {
-	clear: left;
-	display: block;
 	margin-top: 1em;
 	border-top: solid 1px #333;
 	-webkit-box-shadow: #000 0 -1px 0;
@@ -2966,10 +2958,7 @@ footer .books li a cite {
 		padding-right: 2%;
 	}
 
-	#content,
-	.col7-3.col,
-	footer #legal p.copyright,
-	footer #legal ul.footer-site-links {
+	#content {
 		width: 100%;
 		float: none;
 		clear: both;
@@ -2980,28 +2969,11 @@ footer .books li a cite {
 		margin-right: -15px;
 	}
 
-	footer #legal ul.footer-site-links {
-		display: inline;
-		text-align: center !important;
-		text-transform: none;
-		float: left;
+	footer p.copyright,
+	footer ul.footer-site-links {
 		width: 100%;
-	}
-
-	footer #legal ul.footer-site-links li:first-child {
-		margin-left: 0;
-	}
-
-	footer #legal p.copyright {
 		text-align: center;
-		margin-bottom: 10px;
-	}
-
-	.col7-2.col {
-		margin: 0;
-		width: 100%;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		margin: 0 0 10px 0;
 	}
 }
 
