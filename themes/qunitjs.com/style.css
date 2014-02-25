@@ -18,3 +18,11 @@ a {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
+
+.download-box .copyable {
+	width: 14em;
+	max-width: 100%;
+	padding: 2px 5px;
+	border: 1px solid #e4e4e4;
+	border-radius: 5px;
+}
