@@ -2,8 +2,8 @@
  * All sites
  */
 $(function() {
-	// CDN auto-select-all
-	$( ".cdn input" ).on( "click", function() {
+	// copyable auto-select-all
+	$( ".copyable" ).on( "click", function() {
 		if ( typeof this.select === "function" ) {
 			this.select();
 		}
