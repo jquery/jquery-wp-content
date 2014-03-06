@@ -90,3 +90,21 @@ add_filter( 'upload_dir', function( $upload_dir ) {
 
 	return $upload_dir;
 });
+
+add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
+	if ( !isset( $args[ 'orderby' ] ) || $args[ 'orderby' ] !== 'natural' ) {
+		return $terms;
+	}
+
+	$sortedTerms = array();
+	foreach( $terms as $term ) {
+		$sortedTerms[ $term->name ] = $term;
+	}
+	uksort( $sortedTerms, 'strnatcmp' );
+	
+	if ( strtolower( $args[ 'order' ] ) === 'desc' ) {
+		$sortedTerms = array_reverse( $sortedTerms );
+	}
+
+	return $sortedTerms;
+}, 20, 3 );
