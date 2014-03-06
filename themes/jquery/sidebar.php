@@ -7,6 +7,7 @@
 	<aside id="categories" class="widget">
 		<ul>
 			<?php wp_list_categories( array(
+				'orderby' => 'natural',
 				'depth' => 2,
 				'title_li' => '',
 				'current_category' => jq_post_category(),
