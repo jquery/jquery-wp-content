@@ -2901,11 +2901,23 @@ footer .books li a cite {
 	margin: 0;
 }
 
-.warning {
+.warning, .note {
 	padding: 0.5em 1em;
 	margin: 1em;
-	background: #fff3a5;
 	border-radius: 5px;
+}
+
+.warning {
+	background: #fff3a5;
+}
+
+.note {
+	background: #428bca;
+	color: #fff;
+}
+
+.note a {
+	color: #fff;
 }
 
 /* Media Queries
