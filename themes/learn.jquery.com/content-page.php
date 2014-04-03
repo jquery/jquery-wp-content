@@ -15,9 +15,30 @@
 		<?php }?>
 	</div>
 
-	<hr>
-
 	<div class="entry-meta row">
+		<?php if (isset($next_prev_arr['prev']) || isset($next_prev_arr['next']) ): ?>
+		<div class="bottom-links row">
+			<?php if (isset($next_prev_arr['prev'])): ?>
+				<div class="prev six columns">
+					<a href="<?php echo $next_prev_arr['prev']->guid; ?>">
+					<i class="icon-chevron-left"></i>
+					<?php echo $next_prev_arr['prev']->post_title; ?>
+					</a>
+				</div>
+			<?php endif; ?>
+			<?php if (isset($next_prev_arr['next'])): ?>
+				<div class="next six columns">
+					<a href="<?php echo $next_prev_arr['next']->guid; ?>">
+					<?php echo $next_prev_arr['next']->post_title; ?>
+					<i class="icon-chevron-right"></i>
+					</a>
+				</div>
+			<?php endif; ?>
+		</div>
+		<?php else: ?>
+		<hr>
+		<?php endif; ?>
+
 		<aside class="meta-details six columns">
 			<h3>Details</h3>
 			<ul>
@@ -50,25 +71,5 @@
 			<a class="button dark" href="<?php echo jq_get_github_url(); ?>"><i class="icon-github"></i> Open an Issue or Submit a Pull Request on GitHub</a>
 		</aside>
 
-		<?php if (isset($next_prev_arr['prev']) || isset($next_prev_arr['next']) ): ?>
-		<div class="bottom-links row">
-			<?php if (isset($next_prev_arr['prev'])): ?>
-				<div class="prev six columns">
-					<a href="<?php echo $next_prev_arr['prev']->guid; ?>">
-					<i class="icon-chevron-left"></i>
-					<?php echo $next_prev_arr['prev']->post_title; ?>
-					</a>
-				</div>
-			<?php endif; ?>
-			<?php if (isset($next_prev_arr['next'])): ?>
-				<div class="next six columns">
-					<a href="<?php echo $next_prev_arr['next']->guid; ?>">
-					<?php echo $next_prev_arr['next']->post_title; ?>
-					<i class="icon-chevron-right"></i>
-					</a>
-				</div>
-			<?php endif; ?>
-		</div>
-		<?php endif; ?>
 	</div>
 </article>
