@@ -14,7 +14,7 @@
 						</a>
 					</li>-->
 					<li>
-						<a href="http://www.manning.com/affiliate/idevaffiliate.php?id=648_377">
+						<a href="http://www.manning.com/vantoll/">
 							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-in-action.jpg" alt="jQuery UI in Action by TJ VanToll" width="92" height="114"></span>
 							<strong>jQuery UI in Action</strong><br>
 							<cite>TJ VanToll</cite>
