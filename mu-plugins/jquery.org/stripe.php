@@ -8,7 +8,7 @@ if ( !defined('STRIPE_PUBLIC') ) {
 
 class StripeForm {
 	public static function init() {
-		wp_enqueue_script( 'stripe', get_template_directory_uri() . '/js/stripe.js' );
+		wp_enqueue_script( 'stripe', "https://checkout.stripe.com/checkout.js" );
 		wp_localize_script( 'stripe', 'StripeForm', array(
 			'url' => admin_url('admin-ajax.php'),
 			'action' => 'stripe_charge',
