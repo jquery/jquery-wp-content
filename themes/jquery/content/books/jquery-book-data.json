@@ -1,0 +1,58 @@
+﻿{
+    "books": [
+        {
+            "link": "http://www.packtpub.com/learning-jquery-with-simple-javascript-techniques-fourth-edition/book",
+            "imgSrc": "learning-jquery-4th-ed.jpg",
+            "title": "Learning jQuery Fourth Edition",
+            "authors": "Karl Swedberg and Jonathan Chaffer"
+        },
+        {
+            "link": "http://www.manning.com/affiliate/idevaffiliate.php?id=648_176",
+            "imgSrc": "jquery-in-action.jpg",
+            "title": "jQuery in Action",
+            "authors": "Bear Bibeault and Yehuda Katz"
+        },
+        {
+            "link": "http://www.syncfusion.com/resources/techportal/ebooks/jquery?utm_medium=BizDev-jQuery.org0513",
+            "imgSrc": "jquery-succinctly.jpg",
+            "title": "jQuery Succinctly",
+            "authors": "Cody Lindley"
+        },
+        {
+            "link": "http://www.packtpub.com/jquery-hotshot/book",
+            "imgSrc": "jquery-hotshots.jpg",
+            "title": "jQuery Hotshot",
+            "authors": "Dan Wellman"
+        },
+        {
+            "link": "http://www.packtpub.com/jquery-boilerplate-for-plugins/book",
+            "imgSrc": "jquery-boilerplate-for-plugins.jpg",
+            "title": "Instant jQuery Boilerplate for Plugins",
+            "authors": "Jonathan Fielding"
+        },
+        {
+            "link": "http://www.packtpub.com/jquery-2-0-animation-techniques-beginners-guide/book",
+            "imgSrc": "jquery-2-animation-techniques.jpg",
+            "title": "jQuery 2.0 Animation Techniques: Beginner's Guide",
+            "authors": "Adam Culpepper and Dan Wellman"
+        },
+        {
+            "link": "http://www.packtpub.com/jquery-game-development-essentials/book",
+            "imgSrc": "jquery-game-development-essentials.jpg",
+            "title": "jQuery Game Development Essentials",
+            "authors": "Selim Arsever"
+        },
+        {
+            "link": "http://www.packtpub.com/django-javascript-integration-ajax-and-jquery/book",
+            "imgSrc": "django-javascript-integration-ajax-and-jquery.jpg",
+            "title": "Django JavaScript Integration: AJAX and jQuery",
+            "authors": "Jonathan Hayward"
+        },
+		{
+			"link": "http://www.packtpub.com/jquery-2-development-cookbook/book",
+			"imgSrc": "jquery-2-development-cookbook.jpg",
+			"title": "jQuery 2.0 Development Cookbook",
+			"authors": "Leon Revill"
+		}
+    ]
+}
