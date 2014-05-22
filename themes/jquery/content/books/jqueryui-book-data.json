@@ -1,0 +1,40 @@
+﻿{
+    "books": [
+        {
+            "link": "http://www.manning.com/vantoll/",
+            "imgSrc": "jquery-ui-in-action.jpg",
+            "title": "jQuery UI in Action",
+            "authors": "TJ VanToll"
+        },
+		{
+            "link": "http://link.packtpub.com/PG9pAC",
+            "imgSrc": "jquery-ui-themes.jpg",
+            "title": "jQuery UI Themes",
+            "authors": "Adam Boduch"
+        },
+		{
+            "link": "http://www.packtpub.com/jquery-userinterface-cookbook/book",
+            "imgSrc": "jquery-ui-cookbook.jpg",
+            "title": "jQuery UI Cookbook",
+            "authors": "Adam Boduch"
+        },
+		{
+            "link": "http://www.packtpub.com/jquery-ui-1-10-user-interface-library/book",
+            "imgSrc": "jquery-ui.jpg",
+            "title": "jQuery UI 1.10: The User Interface Library for jQuery",
+            "authors": "Alex Libby and Dan Wellman"
+        },
+		{
+            "link": "http://www.packtpub.com/jquery-ui-starter/book",
+            "imgSrc": "jquery-ui-starter.jpg",
+            "title": "jQuery UI Starter",
+            "authors": "Jesse Boyer"
+        },
+		{
+            "link": "http://shop.oreilly.com/product/0636920023159.do",
+            "imgSrc": "jquery-ui2.jpg",
+            "title": "jQuery UI",
+            "authors": "Eric Sarrion"
+        }
+    ]
+}
