@@ -205,10 +205,7 @@ ul.flex-direction-nav {
 }
 
 .member-level {
-	width: 48%;
-	float: left;
-	display: inline;
-	margin-right: 2%;
+	margin-bottom: 20px;
 	background: url(../jquery/images/dark-grey-tile.png);
 	position: relative;
 	overflow: hidden;
@@ -248,6 +245,23 @@ ul.flex-direction-nav {
 	background: url(images/icn-hero.png) center top no-repeat;
 }
 
+.corporate-level {
+	margin-bottom: 20px;
+	position: relative;
+	padding: 15px;
+	color: #f3f3f3;
+}
+
+.corporate-level .corporate-header {
+	min-height: 75px;
+}
+
+.corporate-level .corporate-header img {
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+}
+
 #content .member-level h3 {
 	background-color: rgba(0, 0, 0, 0.66);
 	color: #ffffff;
@@ -255,6 +269,18 @@ ul.flex-direction-nav {
 	font-size: 30px;
 	line-height: 48px;
 	font-weight: bold;
+}
+
+.member-level .corporate-level p {
+	float: none;
+}
+
+.member-level .corporate-level p strong {
+	color: #f3f3f3;
+}
+
+#content .member-level .corporate-level ul {
+	margin-bottom: 10px;
 }
 
 .errors li {

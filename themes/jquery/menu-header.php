@@ -88,6 +88,7 @@ function menu_header_sizzlejs_com() {
 function menu_header_jquery_org() {
 	return array(
 		'https://jquery.org/' => 'Home',
+		'https://jquery.org/projects/' => 'Projects',
 		'https://jquery.org/join/' => 'Join',
 		'https://jquery.org/members/' => 'Members',
 		'https://jquery.org/sponsors/' => 'Sponsors',
