@@ -23,15 +23,14 @@
 			also be interested in the <a href="http://learn.jquery.com/">jQuery
 			Learning Center</a> tutorials.</p>
 
-		<p>This site provides API documentation for jQuery UI 1.10. If
-			you're working with jQuery UI 1.9, you can find the API documentation
-			on <a href="http://api.jqueryui.com/1.9/">api.jqueryui.com/1.9/</a>.
-			However, we would encourage you to upgrade to jQuery UI 1.10 in order
+		<p>This site provides API documentation for jQuery UI <?php echo $thisVersion; ?>. If
+			you're working with an older version, you can find the API documentation
+			at the links below.
+			However, we would encourage you to upgrade to jQuery UI <?php echo $thisVersion; ?> in order
 			to receive the best support and take advantage of recent bug fixes
 			and enhancements. Check out the
-			<a href="http://blog.jqueryui.com/2013/01/jquery-ui-1-10-0/">release announcement</a>
-			and <a href="http://jqueryui.com/upgrade-guide/1.10/">upgrade guide</a>
-			to find out more about jQuery UI 1.10.</p>
+			<a href="http://jqueryui.com/upgrade-guide/<?php echo $thisVersion; ?>/">upgrade guide</a>
+			to find out more about jQuery UI <?php echo $thisVersion; ?>.</p>
 
 		<?php } else { ?>
 
