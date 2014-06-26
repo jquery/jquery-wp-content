@@ -280,6 +280,17 @@ function jquery_sites() {
 				'active_plugins' => array(),
 			),
 		),
+		'api.jqueryui.com/1.10' => array(
+			'blog_id' => 25,
+			'cookie_domain' => '.jqueryui.com',
+			'body_class' => 'jquery-ui',
+			'logo_link' => 'http://jqueryui.com/',
+			'options' => array(
+				'blogname' => 'jQuery UI 1.10 Documentation',
+				'stylesheet' => 'api.jqueryui.com',
+				'active_plugins' => array(),
+			),
+		),
 	);
 
 	uasort( $sites, function( $a, $b ) {
