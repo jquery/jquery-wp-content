@@ -16,7 +16,7 @@ add_filter( 'the_content', function( $content ) {
 		$active = 'default';
 	} else {
 		$plugin = $matches[ 1 ];
-		$active = $post->post_name;
+		$active = $post->post_name === $matches[ 1 ] ? 'default' : $post->post_name;
 	}
 	$demoList = json_decode( file_get_contents( GW_RESOURCE_DIR . '/demos/demo-list.json' ) );
 	$demos = $demoList->$plugin;
