@@ -101,10 +101,17 @@ add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
 		$sortedTerms[ $term->name ] = $term;
 	}
 	uksort( $sortedTerms, 'strnatcasecmp' );
-	
+
 	if ( strtolower( $args[ 'order' ] ) === 'desc' ) {
 		$sortedTerms = array_reverse( $sortedTerms );
 	}
 
 	return $sortedTerms;
 }, 20, 3 );
+
+// Strip protocol from urls making them protocol agnostic.
+add_filter( 'theme_root_uri', 'strip_https', 10, 1 );
+add_filter( 'clean_url', 'strip_https', 11, 1 );
+function strip_https($url) {
+	return preg_replace( '/^https?:/', '', $url );
+}
