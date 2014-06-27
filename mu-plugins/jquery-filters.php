@@ -109,12 +109,11 @@ add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
 	return $sortedTerms;
 }, 20, 3 );
 
-add_filter( 'bloginfo_url', function($url, $show){
+add_filter( 'bloginfo_url', function($url, $show) {
 	if ('stylesheet_url' == $show || 'stylesheet_directory' == $show || 'template_directory' == $show) {
-		$stylesheet_url = $url;
-		$stylesheet_url = preg_replace("#^https?://#", '//', $stylesheet_url);
-		return $stylesheet_url;
+		$url = preg_replace("#^https?://#", '//', $url);
+		return $url;
 	}
-
+	
 	return $url;
 }, 10, 2);
