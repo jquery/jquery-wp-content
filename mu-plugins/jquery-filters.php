@@ -112,9 +112,12 @@ add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
 add_filter( 'bloginfo_url', function( $url, $show ) {
 	if ( 'stylesheet_url' == $show || 'stylesheet_directory' == $show
 		|| 'template_directory' == $show ) {
-		$url = preg_replace( "#^https?://#", '//', $url );
-		return $url;
+		return preg_replace( '#^https?://#', '//', $url );
 	}
 
 	return $url;
 }, 10, 2 );
+
+add_filter( 'clean_url', function($url) {
+	return preg_replace( '#^https?://#', '//', $url );
+}, 11, 1 );
