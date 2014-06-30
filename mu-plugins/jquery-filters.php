@@ -110,8 +110,8 @@ add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
 }, 20, 3 );
 
 add_filter( 'bloginfo_url', function( $url, $show ) {
-	if ( 'stylesheet_url' == $show || 'stylesheet_directory' == $show
-		|| 'template_directory' == $show ) {
+	if ( 'stylesheet_url' === $show || 'stylesheet_directory' === $show
+		|| 'template_directory' === $show ) {
 		return preg_replace( '#^https?://#', '//', $url );
 	}
 
