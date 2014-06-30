@@ -206,7 +206,7 @@ ul.flex-direction-nav {
 
 .member-level {
 	margin-bottom: 20px;
-	background: url(../jquery/images/dark-grey-tile.png);
+	background-color: #222;
 	position: relative;
 	overflow: hidden;
 }
