@@ -30,7 +30,7 @@
 	<script src="<?php echo bloginfo('template_directory'); ?>/js/modernizr.custom.2.6.2.min.js"></script>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo bloginfo('template_directory'); ?>/js/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
+	<script>window.jQuery || document.write(unescape('%3Cscript src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
 
 	<script src="<?php echo bloginfo('template_directory'); ?>/js/plugins.js"></script>
 	<script src="<?php echo bloginfo('template_directory'); ?>/js/main.js"></script>
