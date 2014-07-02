@@ -109,10 +109,9 @@ add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
 	return $sortedTerms;
 }, 20, 3 );
 
-add_filter( 'theme_root_uri', function( $url ) {
-    return preg_replace( '/^https?:/', '', $url );
-}, 10, 1 );
-
-add_filter( 'clean_url', function($url) {
-	return preg_replace( '#^https?://#', '//', $url );
-}, 11, 1 );
+// Strip protocol from urls making them protocol agnostic.
+add_filter( 'theme_root_uri', 'strip_https', 10, 1 );
+add_filter( 'clean_url', 'strip_https', 11, 1 );
+function strip_https($url) {
+	return preg_replace( '/^https?:/', '', $url );
+}
