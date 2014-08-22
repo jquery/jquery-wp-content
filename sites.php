@@ -206,6 +206,7 @@ function jquery_sites() {
 				'stylesheet' => 'events.jquery.org',
 				'active_plugins' => array(
 					'allow-numeric-stubs/allow-numeric-stubs.php',
+					'jquery-static-index.php',
 				),
 			),
 		),
