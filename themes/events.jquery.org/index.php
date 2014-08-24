@@ -2,22 +2,23 @@
 
 <div class="content-full full-width twelve columns">
 	<div id="content">
-		<h2>Here are a few upcoming events:</h2>
+		<h2>Here are a few upcoming jQuery Foundation events:</h2>
+		<?php $eventCount = count($events[ 'future' ]); ?>
 		<?php foreach ( $events[ 'future' ] as $event ) : ?>
-			<article class="conference-grid clearfix"
-				style="background-image: url('<?php echo $event->image; ?>');">
-				<section>
-					<h3><?php echo $event->title; ?></h3>
-					<p><?php echo $event->location . ' | ' . $event->date; ?></p>
+			<article class="conference-grid six columns"
+			style="background-image: url('<?php echo $event->image; ?>');">
+			<section>
+				<h3><?php echo $event->title; ?></h3>
+				<p><?php echo $event->location . ' | ' . $event->date; ?></p>
 
-					<p class="sponsored">Hosted by:
-						<a href="<?php echo $event->host->url; ?>">
-							<?php echo $event->host->name; ?>
-						</a>
-					</p>
-				</section>
+				<p class="sponsored">Hosted by:
+					<a href="<?php echo $event->host->url; ?>">
+						<?php echo $event->host->name; ?>
+					</a>
+				</p>
+			</section>
 
-				<a class="button" href="<?php echo $event->url; ?>">See more &raquo;</a>
+			<a class="button" href="<?php echo $event->url; ?>">See more &raquo;</a>
 			</article>
 		<?php endforeach; ?>
 
@@ -41,8 +42,9 @@
 				<h4><?php echo $event->title; ?></h4>
 				<p><?php echo $event->location . ' | ' . $event->date; ?></p>
 			</article>
-		<?php endforeach ?>
+		<?php endforeach; ?>
 	</div>
 </div>
 
 <?php get_footer(); ?>
+
