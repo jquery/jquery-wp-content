@@ -31,7 +31,8 @@ add_action( 'init', function() {
 		if ( $event->end > $now ) {
 			$events[ 'future' ][] = $event;
 		} else {
-			$events[ 'past' ][] = $event;
+			$pastYear = Date('Y', $event->end);
+			$events[ 'past' ][ $pastYear ][] = $event;
 		}
 	}
 });

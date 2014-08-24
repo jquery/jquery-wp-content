@@ -64,3 +64,41 @@ Template: jquery
 	width: 150px;
 	float: none;
 }
+
+#content .past-conferences h3 {
+	clear: both;
+}
+
+#content a.past-conference-grid.four {
+	width: 31%;
+	margin-right: 2%;
+	background-color: #efefef;
+	margin-bottom: 3%;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-decoration: none;
+	display: block;
+}
+
+a.past-conference-grid h4 {
+	color: #666;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 7px;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+a.past-conference-grid p {
+	margin: 0;
+	color: #666;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+#content a.past-conference-grid:hover
+ {
+ 	background-color: #bcbcbc;
+ }
+

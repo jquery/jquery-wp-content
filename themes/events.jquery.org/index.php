@@ -27,24 +27,22 @@
 		</p>
 		<hr>
 
-		<h2>We had a great time at these past events:</h2>
-		<?php $currentYear = date( 'Y' ) + 1; ?>
-		<?php foreach ( $events[ 'past' ] as $event ) : ?>
-			<?php
-			$eventYear = date( 'Y', $event->end );
-			if ( $eventYear < $currentYear ) {
-				$currentYear = $eventYear;
-				echo "<h3>$eventYear</h3>\n";
-			}
-			?>
+		<div class="past-conferences">
+			<h2>We had a great time at these past events:</h2>
 
-			<article class="past-conference-grid">
-				<h4><?php echo $event->title; ?></h4>
-				<p><?php echo $event->location . ' | ' . $event->date; ?></p>
-			</article>
-		<?php endforeach; ?>
+			<?php foreach ( $events[ 'past' ] as $year => $yearEvents ) : ?>
+				<?php echo "<h3>" . $year . "</h3>"; ?>
+				<?php foreach ( $yearEvents as $event ) : ?>
+					<a href="<?php echo $event->url; ?>" class="past-conference-grid four columns">
+						<article>
+							<h4><?php echo $event->title; ?></h4>
+							<p><?php echo $event->location . ' | ' . $event->date; ?></p>
+						</article>
+					</a>
+				<?php endforeach; ?>
+			<?php endforeach; ?>
+		</div>
 	</div>
 </div>
 
 <?php get_footer(); ?>
-
