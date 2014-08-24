@@ -72,8 +72,10 @@
 					</li>
 					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
 						<ul class="wide">
-							<li><a href="http://2014.cssdevconf.com/">Oct 13-15 | CSS Dev Conf 2014</a></li>
-							<li><a href="http://jssummit.com/">Nov 18-20 | JavaScript Summit 2014</a></li>
+						<?php global $events; ?>
+						<?php foreach ($events[ 'future' ] as $event) : ?>
+							<li><a href="<?php echo $event->url; ?>"><?php echo substr( $event->date, 0, -5 ) . ' | ' . $event->title ?></a></li>
+						<?php endforeach; ?>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
