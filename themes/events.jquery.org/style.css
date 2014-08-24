@@ -3,12 +3,25 @@ Theme Name: events-jquery-org
 Template: jquery
 */
 
+#banner-secondary.large-banner {
+	background-image: url("/resources/images/banner-events-bkg.jpg");
+	background-repeat: no-repeat;
+	margin: -20px 0 20px;
+	padding: 85px 0;
+}
+
+#banner-secondary .banner-text {
+	background-color: rgba(0, 0, 0, 0.82);
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
 .row article.conference-grid.six {
 	width: 49%;
 	margin-right: 2%;
 	margin-bottom: 2%;
-	padding-top: 3%;
-	padding-bottom: 2%;
+	padding:3% 0;
 	text-align: center;
 	background-position: center center;
 	background-repeat: no-repeat;
