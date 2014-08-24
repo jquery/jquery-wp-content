@@ -1681,6 +1681,11 @@ h2.logo a {
 	background: url(../images/logo-jquery-foundation.png) no-repeat;
 }
 
+.jquery-events.jquery-foundation h2.logo a {
+	width: 243px;
+	background: url(../images/logo-jquery-events.png) no-repeat;
+}
+
 .logo.small {
   height: 30px;
   background: url('../images/projectlogosfull-small.png') no-repeat;
@@ -3250,6 +3255,11 @@ footer .books li a cite {
 
 	.jquery-foundation h2.logo a {
 		background: url(../images/logo-jquery-foundation@2x.png) no-repeat;
+		background-size: 243px 66px;
+	}
+
+        .jquery-events.jquery-foundation h2.logo a {
+		background: url(../images/logo-jquery-events@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
 }

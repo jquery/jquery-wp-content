@@ -200,7 +200,7 @@ function jquery_sites() {
 		'events.jquery.org' => array(
 			'blog_id' => 16,
 			'cookie_domain' => '.jquery.org',
-			'body_class' => 'jquery-events',
+			'body_class' => 'jquery-foundation jquery-events',
 			'options' => array(
 				'blogname' => 'jQuery Events',
 				'stylesheet' => 'events.jquery.org',
