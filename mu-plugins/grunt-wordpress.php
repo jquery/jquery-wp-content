@@ -4,11 +4,14 @@
  * Description: Adds custom XML-RPC methods for use with grunt-wordpress.
  */
 
-define( 'GW_VERSION', '1.0.7' );
+define( 'GW_VERSION', '1.1.0' );
 
 if ( ! defined( 'GW_RESOURCE_DIR' ) )
-	define( 'GW_RESOURCE_DIR', dirname( WP_CONTENT_DIR ) . '/gw-resources/' .
-		preg_replace( '/^\w+:\/\//', '', home_url() ) );
+	define( 'GW_RESOURCE_DIR', gw_resources_dir( home_url() ) );
+
+function gw_resources_dir( $url ) {
+	return dirname( WP_CONTENT_DIR ) . '/gw-resources/' . preg_replace( '/^\w+:\/\//', '', $url );
+}
 
 function gw_get_version( $args ) {
 	global $wp_xmlrpc_server;
