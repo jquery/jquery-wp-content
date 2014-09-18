@@ -2523,6 +2523,8 @@ footer p.copyright a.mt-link {
 footer p.copyright a.mc-link {
 	background: url(../images/logo-maxcdn.png) left top no-repeat;
 	padding-left: 24px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 footer p.copyright a.wp-link {
