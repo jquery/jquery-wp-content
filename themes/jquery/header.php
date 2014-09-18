@@ -25,7 +25,6 @@
 
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=1">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-	<!--[if lt IE 7]><link rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.6.2.min.js"></script>
 
@@ -47,10 +46,6 @@
 
 </head>
 <body <?php body_class(); ?>>
-
-<!--[if lt IE 7]>
-<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-<![endif]-->
 
 <header>
 	<section id="global-nav">
