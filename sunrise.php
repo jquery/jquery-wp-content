@@ -2,6 +2,8 @@
 
 if ( isset( $blog_id ) ) {
 	$current_site = wpmu_current_site();
+	if ( ! is_object( $current_site ) )
+		$current_site = new stdClass;
 	if ( ! isset( $current_site->site_name ) )
 		$current_site->site_name = 'jQuery';
 	$current_blog = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->blogs WHERE blog_id = %d", $blog_id ) );
