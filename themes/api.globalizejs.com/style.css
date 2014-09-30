@@ -1,0 +1,17 @@
+/*
+Theme Name: api-globalizejs-com
+Template: jquery
+*/
+
+a {
+	color: #B24926;
+}
+
+.version-details a,
+.returns a {
+	color: #FAA523;
+}
+
+.signatures li h4 {
+	background: #B24926;
+}

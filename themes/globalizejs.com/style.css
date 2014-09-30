@@ -1,0 +1,13 @@
+/*
+Theme Name: globalizejs-com
+Template: jquery
+*/
+
+a,
+.title {
+	color: #B24926;
+}
+
+#content a:hover {
+	color: #333;
+}

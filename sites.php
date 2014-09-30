@@ -292,6 +292,27 @@ function jquery_sites() {
 				'active_plugins' => array(),
 			),
 		),
+		'globalizejs.com' => array(
+			'blog_id' => 26,
+			'cookie_domain' => '.globalizejs.com',
+			'body_class' => 'globalize',
+			'options' => array(
+				'blogname' => 'Globalize',
+				'stylesheet' => 'globalizejs.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
+			),
+		),
+		'api.globalizejs.com' => array(
+			'blog_id' => 27,
+			'cookie_domain' => '.globalizejs.com',
+			'body_class' => 'globalize',
+			'options' => array(
+				'blogname' => 'Globalize API Documentation',
+				'stylesheet' => 'api.globalizejs.com',
+			),
+		),
 	);
 
 	uasort( $sites, function( $a, $b ) {
