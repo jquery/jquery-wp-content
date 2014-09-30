@@ -9,29 +9,36 @@
 
 <div class="content-full full-width twelve columns">
 	<div id="content">
-		<h2>Here are a few upcoming jQuery Foundation events:</h2>
-		<?php $eventCount = count($events[ 'future' ]); ?>
-		<?php foreach ( $events[ 'future' ] as $event ) : ?>
-			<article class="conference-grid six columns"
-			style="background-image: url('<?php echo $event->image; ?>');">
-			<section>
-				<h3><?php echo $event->title; ?></h3>
-				<p><?php echo $event->location . ' | ' . $event->date; ?></p>
+		<?php if ( count( $events[ 'future' ] ) === 0 ) : ?>
+			<p>
+			Unfortunately there are no upcoming events right now.
+			Check back soon as we're constantly adding new events around the world!
+			</p>
+		<?php else : ?>
+			<h2>Here are a few upcoming jQuery Foundation events:</h2>
+			<?php foreach ( $events[ 'future' ] as $event ) : ?>
+				<article class="conference-grid six columns"
+				style="background-image: url('<?php echo $event->image; ?>');">
+				<section>
+					<h3><?php echo $event->title; ?></h3>
+					<p><?php echo $event->location . ' | ' . $event->date; ?></p>
 
-				<p class="sponsored">Hosted by:
-					<a href="<?php echo $event->host->url; ?>">
-						<?php echo $event->host->name; ?>
-					</a>
-				</p>
-			</section>
+					<p class="sponsored">Hosted by:
+						<a href="<?php echo $event->host->url; ?>">
+							<?php echo $event->host->name; ?>
+						</a>
+					</p>
+				</section>
 
-			<a class="button" href="<?php echo $event->url; ?>">See more &raquo;</a>
-			</article>
-		<?php endforeach; ?>
+				<a class="button" href="<?php echo $event->url; ?>">See more &raquo;</a>
+				</article>
+			<?php endforeach; ?>
 
-		<p style="font-size:80%;clear:left;">
-		Photo credits: All images used by CC license or by permission.
-		</p>
+			<p style="font-size:80%;clear:left;">
+			Photo credits: All images used by CC license or by permission.
+			</p>
+		<?php endif; ?>
+
 		<hr>
 
 		<div class="past-conferences">
