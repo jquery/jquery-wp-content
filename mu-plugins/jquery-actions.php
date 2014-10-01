@@ -16,7 +16,8 @@ add_action( 'init', function() {
 
 	$events = array(
 		'future' => array(),
-		'past' => array()
+		'past' => array(),
+		'year' => array(),
 	);
 
 	$allEvents = json_decode( file_get_contents(
@@ -27,14 +28,13 @@ add_action( 'init', function() {
 	$now = time();
 	foreach ( $allEvents as $event ) {
 		$event->end = strtotime( $event-> end );
+		$year = Date('Y', $event->end);
 
+		$events[ 'year' ][ $year ][] = $event;
 		if ( $event->end > $now ) {
 			$events[ 'future' ][] = $event;
 		} else {
-			$pastYear = Date('Y', $event->end);
-			$events[ 'past' ][ $pastYear ][] = $event;
+			$events[ 'past' ][ $year ][] = $event;
 		}
 	}
 });
-
-
