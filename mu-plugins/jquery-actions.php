@@ -37,4 +37,6 @@ add_action( 'init', function() {
 			$events[ 'past' ][ $year ][] = $event;
 		}
 	}
+
+	$events[ 'past' ] = array_reverse( $events[ 'past' ], true );
 });
