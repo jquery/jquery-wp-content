@@ -20,10 +20,12 @@ add_action( 'init', function() {
 		'year' => array(),
 	);
 
-	$allEvents = json_decode( file_get_contents(
-		gw_resources_dir( (JQUERY_STAGING ? JQUERY_STAGING_PREFIX : '') . 'events.jquery.org' ) .
-		'/events.json'
-	));
+	$eventsFile = gw_resources_dir(
+			(JQUERY_STAGING ? JQUERY_STAGING_PREFIX : '') . 'events.jquery.org'
+		) . '/events.json';
+	$allEvents = file_exists( $eventsFile ) ?
+		json_decode( file_get_contents( $eventsFile ) ) :
+		array();
 
 	$now = time();
 	foreach ( $allEvents as $event ) {
