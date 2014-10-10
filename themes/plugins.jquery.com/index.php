@@ -7,34 +7,8 @@
 	</div>
 
 	<div id="content">
-		<div class="three columns">
-			<aside class="widget">
-				<h3><i class="icon-tags"></i>Popular Tags</h3>
-				<?php jq_popular_tags(); ?>
-			</aside>
-		</div>
-
-		<div class="six columns">
-			<h2 class="center-txt"><i class="icon-star"></i>New Plugins</h2>
-			<?php
-			$new_plugins = new WP_Query( array(
-				'post_type' => 'jquery_plugin',
-				'post_parent' => 0,
-				'order_by' => 'date',
-				'order' => 'DESC'
-			));
-			while ( $new_plugins->have_posts() ) : $new_plugins->the_post();
-				get_template_part( 'content', 'listing' );
-			endwhile; wp_reset_postdata();
-			?>
-		</div>
-
-		<div class="three columns">
-			<aside>
-				<h3><i class="icon-calendar"></i>Recent Updates</h3>
-				<?php jq_updated_plugins(); ?>
-			</aside>
-		</div>
+		<h2 class="center-txt">The jQuery Plugin Registry is in read-only mode.</h2>
+		<h2 class="center-txt">New plugin releases will not be processed.</h2>
 	</div>
 </div>
 
