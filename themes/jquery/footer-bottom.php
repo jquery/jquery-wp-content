@@ -31,15 +31,15 @@
 	switch ( $project ) {
 	case 'jqueryui':
 		$links[ 'Forum' ][ 'url' ] = 'http://forum.jquery.com/using-jquery-ui/';
-		$links[ 'Twitter' ][ 'url' ] = 'http://twitter.com/jqueryui';
+		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jqueryui';
 		break;
 	case 'jquerymobile':
 		$links[ 'Forum' ][ 'url' ] = 'http://forum.jquery.com/jquery-mobile/';
-		$links[ 'Twitter' ][ 'url' ] = 'http://twitter.com/jquerymobile';
+		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jquerymobile';
 		break;
 	case 'qunitjs':
 		$links[ 'Forum' ][ 'url' ] = 'http://forum.jquery.com/qunit-and-testing/';
-		$links[ 'Twitter' ][ 'url' ] = 'http://twitter.com/qunitjs';
+		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/qunitjs';
 		break;
 	}
 ?>
