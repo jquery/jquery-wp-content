@@ -68,13 +68,13 @@ function menu_header_jquerymobile_com() {
 function menu_header_jqueryui_com() {
 	return array(
 		'http://jqueryui.com/demos/' => 'Demos',
-		'http://jqueryui.com/download' => 'Download',
+		'http://jqueryui.com/download/' => 'Download',
 		'http://api.jqueryui.com/' => 'API Documentation',
-		'http://jqueryui.com/themeroller' => 'Themes',
-		'http://jqueryui.com/development' => 'Development',
-		'http://jqueryui.com/support' => 'Support',
+		'http://jqueryui.com/themeroller/' => 'Themes',
+		'http://jqueryui.com/development/' => 'Development',
+		'http://jqueryui.com/support/' => 'Support',
 		'http://blog.jqueryui.com/' => 'Blog',
-		'http://jqueryui.com/about' => 'About',
+		'http://jqueryui.com/about/' => 'About',
 	);
 }
 
