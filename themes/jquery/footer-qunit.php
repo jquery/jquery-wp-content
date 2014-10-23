@@ -13,6 +13,13 @@
 							<cite>Dmitry Sheiko</cite>
 						</a>
 					</li>
+					<li>
+						<a href="http://shop.oreilly.com/product/0636920024699.do">
+							<img src="<?php echo get_template_directory_uri(); ?>/content/books/qunit-testable-javascript.gif" alt="Testable JavaScript" width="91" height="114">
+							<span class="book-title">Testable JavaScript</span>
+							<cite>Mark Ethan Trostler</cite>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
