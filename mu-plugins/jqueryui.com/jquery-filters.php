@@ -57,4 +57,20 @@ add_filter( 'the_content', function( $content ) {
 	return $content[ 0 ] . $demoContent . $content[ 1 ];
 } );
 
+add_filter( 'the_content', function( $content ) {
+	$output = array();
+	$parts = preg_split( '/(<!--category-links\(\w+\)-->)/', $content, -1, PREG_SPLIT_DELIM_CAPTURE );
+
+	foreach( $parts as $part ) {
+		if ( !preg_match( '/<!--category-links\((\w+)\)-->/', $part, $matches ) ) {
+			$output[] = $part;
+			continue;
+		}
+
+		$output[] = "<ul>" . jq_page_links_for_category( $matches[ 1 ] ) . "</ul>";
+	}
+
+	return implode( $output );
+} );
+
 ?>
