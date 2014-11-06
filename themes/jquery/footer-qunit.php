@@ -20,6 +20,13 @@
 							<cite>Mark Ethan Trostler</cite>
 						</a>
 					</li>
+					<li>
+						<a href="http://tddjs.com/">
+							<img src="<?php echo get_template_directory_uri(); ?>/content/books/qunit-tddjs.png" alt="Test-Driven JavaScript Development" width="91" height="114">
+							<span class="book-title">Test-Driven JavaScript Development</span>
+							<cite>Christian Johansen</cite>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
