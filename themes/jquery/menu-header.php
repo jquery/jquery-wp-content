@@ -115,8 +115,7 @@ function menu_header_brand_jquery_org() {
 function menu_header_contribute_jquery_org() {
 	return array(
 		'http://contribute.jquery.org/CLA/' => 'CLA',
-		'http://contribute.jquery.org/style-guide/js/' => 'JS Style Guide',
-		'http://contribute.jquery.org/style-guide/html/' => 'HTML Style Guide',
+		'http://contribute.jquery.org/style-guide/' => 'Style Guides',
 		'http://contribute.jquery.org/markup-conventions/' => 'Markup Conventions',
 		'http://contribute.jquery.org/commits-and-pull-requests/' => 'Commits &amp; Pull Requests'
 	);
