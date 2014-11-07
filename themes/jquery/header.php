@@ -62,7 +62,7 @@
 					<li><a href="http://plugins.jquery.com/">Plugins</a></li>
 					<li class="dropdown"><a href="http://contribute.jquery.org/">Contribute</a>
 						<ul>
-							<li><a href="http://contribute.jquery.org/cla/">CLA</a></li>
+							<li><a href="http://contribute.jquery.org/CLA/">CLA</a></li>
 							<li><a href="http://contribute.jquery.org/style-guide/">Style Guides</a></li>
 							<li><a href="http://contribute.jquery.org/triage/">Bug Triage</a></li>
 							<li><a href="http://contribute.jquery.org/code/">Code</a></li>
