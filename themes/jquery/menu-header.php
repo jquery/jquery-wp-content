@@ -50,6 +50,7 @@ function menu_header_qunitjs_com() {
 		'http://api.qunitjs.com/' => 'API Documentation',
 		'http://qunitjs.com/cookbook/' => 'Cookbook',
 		'http://qunitjs.com/plugins/' => 'Plugins',
+		'http://qunitjs.com/upgrade-guide-2.x/' => '2.x Upgrade Guide'
 	);
 }
 
