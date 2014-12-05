@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Grunt WordPress XML-RPC extensions
- * Description: Adds custom XML-RPC methods for use with grunt-wordpress.
+ * Plugin Name: Gilded WordPress XML-RPC extensions
+ * Description: Adds custom XML-RPC methods for use with Gilded WordPress.
  */
 
-define( 'GW_VERSION', '1.2.1' );
+define( 'GW_VERSION', '1.0.0' );
 
 if ( ! defined( 'GW_RESOURCE_DIR' ) )
 	define( 'GW_RESOURCE_DIR', gw_resources_dir( home_url() ) );
