@@ -5,7 +5,7 @@
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head data-live-domain="<?php echo JQUERY_LIVE_DOMAIN; ?>">
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title><?php
 		global $page, $paged;
