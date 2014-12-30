@@ -7,7 +7,6 @@
 			<li><a href="/%23jqueryui-dev/">#jqueryui-dev</a></li>
 			<li><a href="/%23jquery-meeting/">#jquery-meeting</a></li>
 			<li><a href="/%23jquery-infrastructure/">#jquery-infrastructure</a></li>
-			<li><a href="/%23jquery-developer-summit/">#jquery-developer-summit</a></li>
 			<li><a href="/%23jquery-content/">#jquery-content</a></li>
 			<li><a href="/%23jquerymobile-dev/">#jquerymobile-dev</a>
 				(inactive; moved to #jqueryui-dev)
