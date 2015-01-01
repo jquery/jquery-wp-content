@@ -37,7 +37,7 @@ differ from the terms above.
 
 - Modernizr
 	http://modernizr.com/
-	located at themes/jquery/js/modernizr.custom.2.6.2.min.js
+	located at themes/jquery/js/modernizr.custom.2.8.3.min.js
 
 - No Comments on Pages
 	http://jaka.kubje.org/wp/software/no-comments-on-pages/
