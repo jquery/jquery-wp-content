@@ -196,29 +196,6 @@ a {
 	float: left;
 }
 
-.entry-meta aside.meta-details .contributor-list {
-	list-style-type: none;
-	margin: 0;
-}
-#content .entry-meta aside.meta-details .contributor-list li {
-	font-size: 14px;
-	line-height: 24px;
-	margin: 0 0 4px 0;
-	background: none;
-	padding-left: 0;
-}
-
-.entry-meta aside.meta-details .contributor-list li a {
-	text-decoration: none;
-}
-
-.entry-meta aside.meta-details .contributor-list li a:hover {
-	text-decoration: underline;
-}
-.entry-meta aside.meta-details .contributor-list li img {
-	vertical-align: middle;
-	margin-right: 4px;
-}
 .meta .feedback {
 	float: left;
 	display: block;
