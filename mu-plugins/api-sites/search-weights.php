@@ -6,8 +6,10 @@
  */
 
 add_filter( 'the_posts', function( $posts, $query ) {
-	if ( ! $query->is_main_query() || ! $query->is_search() )
+	if ( ! $query->is_main_query() || ! $query->is_search() ||
+			is_null( $query->query_vars[ 'search_term' ] ) ) {
 		return $posts;
+	}
 
 	$priorities = array_fill( 0, 4, array() );
 
