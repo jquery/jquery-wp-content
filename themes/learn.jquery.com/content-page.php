@@ -40,7 +40,7 @@
 		<?php endif; ?>
 
 		<aside class="meta-details six columns">
-			<h3>Details</h3>
+			<h3>Last Updated</h3>
 			<ul>
 				<li class="icon-calendar icon-large" title="Last Updated"><span><?php the_modified_time('F j, Y'); ?></span></li>
 			</ul>
