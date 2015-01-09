@@ -47,15 +47,14 @@ a,
 }
 .cross-browser .feature-box-image{
 	background: url('i/feature-sprites.png') -278px 0px no-repeat;
-	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 	position: relative;
 	z-index: 10;
 }
 .cross-browser .feature-box-image:hover {
-	-webkit-transition: all 0.7s linear;
+	transition: all 0.7s;
 	-webkit-transform: rotate(6.28rad);
-        transition: all 0.7s;
+	-ms-transform: rotate(6.28rad);
 	transform: rotate(6.28rad);
 }
 
@@ -72,15 +71,12 @@ a,
 #banner-secondary .download-main .button {
 	float: none;
 	box-shadow: 0px 0px 20px rgba(209, 143, 79, 0.6);
-	-webkit-box-shadow: 0px 0px 20px rgba(209, 143, 79, 0.6);
 	border-radius: 0;
 	border: none;
-	-webkit-transition: -webkit-box-shadow 1s linear;
 	transition: all 1s;
 }
 #banner-secondary .download-main .button:hover {
 	box-shadow: 0px 0px 25px rgba(209, 143, 79, 0.9);
-	-webkit-box-shadow: 0px 0px 25px rgba(209, 143, 79, 0.9);
 }
 #content #banner-secondary .download-main > a {
 	display:block;

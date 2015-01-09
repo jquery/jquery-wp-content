@@ -61,12 +61,7 @@ a {
 	color: #fff;
 	background-color: #666;
 	border: 1px solid #ccc;
-	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
-	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
-	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
-	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
 	transition: border linear 0.2s, box-shadow linear 0.2s;
 	border-radius: 2em;
 	padding: 11px 0 11px 40px;
@@ -78,9 +73,7 @@ a {
 	outline: thin dotted \9;
 	/* IE6-9 */
 	
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(122, 206, 244, 0.6);
-	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(122, 206, 244, 0.6);
-	  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(122, 206, 244, 0.6);	
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(122, 206, 244, 0.6);	
 }
 
 /*
@@ -201,8 +194,7 @@ a {
 .jquery-plugin .toolbox {
 	border: 1px solid black;
 	border-radius: 8px;
-	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-	        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 	background-color: black;
 	margin-bottom: 1em;
 }

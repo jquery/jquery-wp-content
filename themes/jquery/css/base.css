@@ -476,9 +476,7 @@ input[type="radio"] {
  */
 
 input[type="search"] {
-	-webkit-appearance: textfield; /* 1 */
-	-moz-box-sizing: content-box;
-	-webkit-box-sizing: content-box; /* 2 */
+	-webkit-appearance: textfield;
 	box-sizing: content-box;
 }
 
@@ -530,8 +528,7 @@ textarea {
 	border: 1px solid rgba(192,192,192,0.49);
 	border-radius: 2px;
 
-	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
-	box-shadow:         inset 0 1px 3px rgba(0,0,0,0.17);
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
 /*
@@ -565,11 +562,8 @@ textarea {
 
 	border: 1px solid #B24926;
 
-	-webkit-box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
-						inset 0px 1px 3px rgba(0,0,0,0.2);
-
-	box-shadow:         0px 0px 6px rgba(23,138,156,0.5),
-						inset 0px 1px 3px rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
+		inset 0px 1px 3px rgba(0,0,0,0.2);
 }
 
 /**
@@ -827,8 +821,6 @@ ul.icons li [class*=" icon-"] {
 .icon-border {
   border: solid 1px #eeeeee;
   padding: .2em .25em .15em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .icon-2x {
@@ -836,8 +828,6 @@ ul.icons li [class*=" icon-"] {
 }
 .icon-2x.icon-border {
   border-width: 2px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
   border-radius: 4px;
 }
 .icon-3x {
@@ -845,8 +835,6 @@ ul.icons li [class*=" icon-"] {
 }
 .icon-3x.icon-border {
   border-width: 3px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
 .icon-4x {
@@ -854,8 +842,6 @@ ul.icons li [class*=" icon-"] {
 }
 .icon-4x.icon-border {
   border-width: 4px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
   border-radius: 6px;
 }
 .pull-right {
@@ -913,21 +899,9 @@ ul.icons li [class*=" icon-"] {
   -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
 }
-@-moz-keyframes spin {
-  0% { -moz-transform: rotate(0deg); }
-  100% { -moz-transform: rotate(359deg); }
-}
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(359deg); }
-}
-@-o-keyframes spin {
-  0% { -o-transform: rotate(0deg); }
-  100% { -o-transform: rotate(359deg); }
-}
-@-ms-keyframes spin {
-  0% { -ms-transform: rotate(0deg); }
-  100% { -ms-transform: rotate(359deg); }
 }
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -1283,7 +1257,6 @@ iframe {
 
 #content-wrapper {
 	background-color: #fff;
-	-webkit-box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
 	box-shadow: -3px 0 5px -3px rgba(1, 1, 1, 0.87), 3px 0 5px -3px rgba(1, 1, 1, 0.87);
 	padding: 20px 0;
 	border-top: 1px solid #333;
@@ -1399,7 +1372,6 @@ iframe {
 	position: relative;
 	top: 1px;
 	cursor: pointer;
-	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 	text-shadow: 0 0px 2px #000;
 	border-left: 1px solid rgba(255, 255, 255, 0.0976562);
@@ -1436,9 +1408,7 @@ iframe {
 	display: none;
 	opacity: 0;
 	visibility: hidden;
-	-webkit-transiton: opacity 0.2s;
 	transition: opacity 0.2s;
-	-webkit-box-shadow: 0 43px 5px rgba(0, 0, 0, 0.4);
 	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4);
 	z-index: 400;
 }
@@ -1730,9 +1700,7 @@ nav#main {
 	border-right: 1px solid rgba(2, 2, 2, 0.28);
 	border-left: 1px solid rgba(2, 2, 2, 0.28);
 	border-top: 1px solid rgba(250, 250, 250, 0.27);
-	-webkit-box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
 	box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
-	-webkit-box-shadow: 0 0 3px rgba(1, 1, 1, 0.7);
 	box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
 }
 
@@ -1784,7 +1752,6 @@ nav#main li a:hover,
 nav#main li.current a,
 nav#main .searchform {
 	background: none;
-	-webkit-box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
 	box-shadow: inset 0 0 5px rgba(0,0,0, 0.4), rgba(255,255,255,0.1) 0 1px 0;
 	border-radius: 4px;
 	border: 1px solid rgba(0,0,0,0.25);
@@ -2273,12 +2240,6 @@ a.button,
 input[type="submit"] {
 	border-radius: 5px;
 	border: 1px solid #999;
-	-webkit-box-shadow:
-		0 0 5px rgba(0, 0, 0, 0.28),
-		inset 0 1px 0 rgba(255, 255, 255, 0.45),
-		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
-		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
-		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
 	box-shadow:
 		0 0 5px rgba(0, 0, 0, 0.28),
 		inset 0 1px 0 rgba(255, 255, 255, 0.45),
@@ -2290,7 +2251,6 @@ input[type="submit"] {
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
 	padding: 8px 15px;
 	font: bold 16px/16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	-webkit-transition: all 0.2s;
 	transition: all 0.2s;
 	background-color: #d18f4f;
 	float: left;
@@ -2590,7 +2550,6 @@ footer ul li {
 footer #legal {
 	margin-top: 1em;
 	border-top: solid 1px #333;
-	-webkit-box-shadow: #000 0 -1px 0;
 	box-shadow: #000 0 -1px 0;
 }
 
@@ -2954,12 +2913,7 @@ footer .books li a cite {
 		margin: 0;
 		border-top: 1px solid #e7e7e7;
 		border-left: none;
-		-moz-border-image: none;
-		-webkit-border-image: none;
-		-webkit-border-image: none;
-		-o-border-image: none;
 		border-image: none;
-		-webkit-box-shadow: none;
 		box-shadow: none;
 		background-image: none;
 		background-image: none;
@@ -3034,7 +2988,6 @@ footer .books li a cite {
 		border-right: none;
 		border-left: none;
 		border-top: none;
-		-webkit-box-shadow: none;
 		box-shadow: none;
 		padding-top: 10px;
 	}
@@ -3067,7 +3020,6 @@ footer .books li a cite {
 	nav#main li a:hover,
 	nav#main li.current a {
 		background: none;
-		-webkit-box-shadow: none;
 		box-shadow: none;
 		border-radius: 4px;
 		border: 1px solid rgba(0,0,0,0.0);

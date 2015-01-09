@@ -15,20 +15,14 @@ em.color {
 
 .example {
 	border: 1px solid #dadada;
-	-webkit-border-radius: 3px;
-	   -moz-border-radius: 3px;
-	        border-radius: 3px;
-			padding: 0 20px;
-			margin-bottom: 30px;
+	border-radius: 3px;
+	padding: 0 20px;
+	margin-bottom: 30px;
 }
 
 .example pre {
 	clear: both;
 	margin:0 -20px;
-	-webkit-border-bottom-right-radius: 3px;
-	-webkit-border-bottom-left-radius: 3px;
-	-moz-border-radius-bottomright: 3px;
-	-moz-border-radius-bottomleft: 3px;
 	border-bottom-right-radius: 3px;
 	border-bottom-left-radius: 3px;
 }
@@ -37,10 +31,6 @@ em.color {
 	background-color: #f1f1f1;
 	margin: 0 -20px 15px;
 	padding: 20px;
-	-webkit-border-top-left-radius: 3px;
-	-webkit-border-top-right-radius: 3px;
-	-moz-border-radius-topleft: 3px;
-	-moz-border-radius-topright: 3px;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
 }
@@ -49,10 +39,6 @@ em.color {
 	background-color: #fff;
 	margin:0 0 10px 0;
 	padding: 0px;
-	-webkit-border-top-left-radius: 0px;
-	-webkit-border-top-right-radius: 0px;
-	-moz-border-radius-topleft: 0px;
-	-moz-border-radius-topright: 0px;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 }
