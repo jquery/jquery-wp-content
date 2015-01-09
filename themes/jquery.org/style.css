@@ -37,9 +37,6 @@ a, #sidebar h3 {
 	height: 360px;
 	background: url(images/header-join-page.jpg) no-repeat center;
 	background-size: cover;
-	-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
 	display: block;
 	position: relative;
 }
@@ -58,9 +55,6 @@ a, #sidebar h3 {
 	height: 360px;
 	background: url(images/header-join-page.jpg) no-repeat center;
 	background-size: cover;
-	-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
 	display: block;
 	position: relative;
 }
@@ -396,13 +390,11 @@ a.icon-search::before {
 	padding: 8px 12px;
 	border: 1px solid rgba(192,192,192,1);
 	border-radius: 2px;
-	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
 #content .choose-gifts input:focus, #content .choose-gifts input[type=text]:focus, #content .choose-gifts textarea:focus {
 	border: 1px solid #78CFF5;
-	-webkit-box-shadow: none;
 	box-shadow: none;
 }
 
@@ -634,9 +626,6 @@ nav#main ul {
 		height: 200px;
 		background: url(images/header-join-page.jpg) no-repeat center;
 		background-size: cover;
-		-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
 		display: block;
 		position: relative;
 	}
@@ -692,9 +681,6 @@ nav#main ul {
 		height: 200px;
 		background: url(images/header-join-page.jpg) no-repeat center;
 		background-size: cover;
-		-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
 		display: block;
 		position: relative;
 	}

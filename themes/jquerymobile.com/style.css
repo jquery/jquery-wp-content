@@ -19,7 +19,6 @@ a, .title, .entry-title { color: #108040; }
 #container header nav {
     border-top: solid 1px rgba(136,196,26,0.3);
     background: rgba(80,118,17,0.4);
-    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
     box-shadow: rgba(255,255,255,0.1) 0 1px 0, rgba(0,0,0,0.2) 0 -1px 0, inset rgba(80,118,17,0.5) 0 -3px 5px;
 }
 
@@ -44,9 +43,7 @@ a, .title, .entry-title { color: #108040; }
 #banner-secondary .download-box {
   border: 1px solid #aaa;
   background: #333;
-  background: -moz-linear-gradient(left, #333 0%, #444 100%);
   background: -webkit-linear-gradient(left, #333 0%, #444 100%);
-  background: -o-linear-gradient(left, #333 0%, #444 100%);
   background: linear-gradient(to right, #333 0%, #444 100%);
   float: right;
   width: 335px;
