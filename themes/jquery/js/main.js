@@ -121,7 +121,8 @@ $(function() {
  */
 $(function() {
 	$(".flexslider").flexslider({
-		controlNav: "false"
+		controlNav: "false",
+		slideshowSpeed: 3000
 	});
 
 	/*
