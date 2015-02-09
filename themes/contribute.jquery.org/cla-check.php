@@ -35,6 +35,11 @@ function getData() {
 
 	$path = "$repo/" . substr( $sha, 0, 2 ) . "/$sha.json";
 	$data = @file_get_contents( JQUERY_CLA_SERVER_URL . "/$path" );
+
+	if ( !$data ) {
+		return null;
+	}
+
 	$data = json_decode( $data );
 	$data->repo = $repo;
 	return $data;
