@@ -41,7 +41,30 @@ function getData() {
 	}
 
 	$data = json_decode( $data );
+	$data = normalizeData( $data );
 	$data->repo = $repo;
+	return $data;
+}
+
+// The web hook used to only log the audit result, not the full data.
+// So we normalize old data to the new format
+function normalizeData( $data ) {
+
+	// Since we didn't store error info before, errors got logged as undefined,
+	// which come across as null in PHP
+	if ( is_null( $data ) ) {
+		return (object) array(
+			'error' => 'Unknown error'
+		);
+	}
+
+	// If we're missing the fully structured data, just move the audit result
+	// to the proper location
+	if ( !empty( $data->commits ) ) {
+		return (object) array( 'data' => $data );
+	}
+
+	// We have proper data, just return it as is
 	return $data;
 }
 
@@ -59,21 +82,34 @@ function getProcessedPost( $data ) {
 	the_post();
 	$content = get_the_content();
 
-	if ( count( $data->neglectedAuthors ) ) {
-		$content = preg_replace( "/<!-- ifsuccess -->.*<!-- endifsuccess -->/s", '', $content );
-		$content = preg_replace( "/<!-- neglected-authors -->/", neglectedAuthors( $data ), $content );
-	} else {
-		$content = preg_replace( "/<!-- iferror -->.*<!-- endiferror -->/s", '', $content );
+	if ( !empty( $data->error ) ) {
+		$content = preg_replace( '/<!-- ifsuccess -->.*<!-- endifsuccess -->/s', '', $content );
+		$content = preg_replace( '/<!-- iffailure -->.*<!-- endiffailure -->/s', '', $content );
+		$content = preg_replace(
+			'/<!-- error -->/',
+			'<pre>' . htmlspecialchars( $data->error ) . '</pre>',
+			$content
+		);
+
+		return $content;
 	}
 
-	$content = preg_replace( "/<!-- commit-log -->/", commitLog( $data ), $content );
+	if ( count( $data->data->neglectedAuthors ) ) {
+		$content = preg_replace( '/<!-- ifsuccess -->.*<!-- endifsuccess -->/s', '', $content );
+		$content = preg_replace( '/<!-- neglected-authors -->/', neglectedAuthors( $data ), $content );
+	} else {
+		$content = preg_replace( '/<!-- iffailure -->.*<!-- endiffailure -->/s', '', $content );
+	}
+
+	$content = preg_replace( '/<!-- iferror -->.*<!-- endiferror -->/s', '', $content );
+	$content = preg_replace( '/<!-- commit-log -->/', commitLog( $data ), $content );
 
 	return $content;
 }
 
 function neglectedAuthors( $data ) {
 	$html = "<ul>\n";
-	foreach ( $data->neglectedAuthors as $author ) {
+	foreach ( $data->data->neglectedAuthors as $author ) {
 		$html .= "<li>" . htmlspecialchars( "$author->name <$author->email>" ) . "</li>\n";
 	}
 	$html .= "</ul>\n";
@@ -84,7 +120,7 @@ function commitLog( $data ) {
 	$commitPrefix = "http://github.com/jquery/$data->repo/commit/";
 
 	$html = "<dl>\n";
-	foreach ( $data->commits as $commit ) {
+	foreach ( $data->data->commits as $commit ) {
 		$html .= "<dt><a href='$commitPrefix$commit->hash'>$commit->hash</a></dt>\n";
 		$html .= "<dd>" . htmlspecialchars( "$commit->name <$commit->email>" ) . "</dd\n";
 	}
