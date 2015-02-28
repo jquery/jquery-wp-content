@@ -17,7 +17,7 @@ We recommend the combination of Virtualbox and [Vagrant](http://www.vagrantup.co
 
 ### Setup
 
-From the root of your `jquery-wp-content` clone run the following command:
+From the root of your `jquery-wp-content` clone, run the following command:
 
 ```
 vagrant up
