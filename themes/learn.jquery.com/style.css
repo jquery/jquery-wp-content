@@ -82,13 +82,13 @@ a {
 
 }
 
-#sidebar #chapter-listing li.active a {
+#sidebar #chapter-listing li.active > a {
 	background: #212121;
 	color: #fff;
 	text-shadow: none;
 }
 
-#sidebar #chapter-listing li.active a i.icon-tasks {
+#sidebar #chapter-listing li.active > a i {
 	color: #fff;
 }
 
