@@ -12,7 +12,7 @@
 			<ul>
 				<?php $chapters = learn_chapter_listing(); ?>
 				<?php while ( $chapters->have_posts() ) : $chapters->the_post(); ?>
-					<?php $is_active = ($active_post->ID == $chapters->post->ID); ?>
+					<?php $is_active = ($active_post->ID == $chapters->post->ID) || ($active_post->post_parent == $chapters->post->ID); ?>
 					<li <?php if ($is_active) { echo "class='active'"; } ?>>
 						<a href="<?php the_permalink(); ?>">
 							<?php if ( get_post_meta( $post->ID, "icon" ) ) : ?>
