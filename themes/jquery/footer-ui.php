@@ -28,7 +28,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="http://www.packtpub.com/jquery-userinterface-cookbook/book">
+						<a href="https://www.packtpub.com/web-development/jquery-ui-cookbook">
 							<img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-cookbook.jpg" alt="jQuery UI Cookbook by Adam Boduch" width="92" height="114">
 							<span class="book-title">jQuery UI Cookbook</span>
 							<cite>Adam Boduch</cite>

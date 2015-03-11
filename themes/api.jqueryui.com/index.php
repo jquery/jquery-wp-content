@@ -46,7 +46,7 @@
 		<?php } ?>
 
 		<p>To get started, use the search at the top of the page, view the
-			<a href="<?php echo "$rootUrl/category/all"; ?>">full listing of entries</a>, or browse by
+			<a href="<?php echo "$rootUrl/category/all/"; ?>">full listing of entries</a>, or browse by
 			category from the sidebar.</p>
 
 		<p>jQuery UI <?php echo $thisVersion; ?>
