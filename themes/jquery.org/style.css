@@ -612,6 +612,14 @@ nav#main ul {
 		width: 100%;
 		text-align: center;
 	}
+
+	nav#main .searchform {
+		width: 100%;
+	}
+
+	nav#main ul {
+		width: 100%;
+	}
 }
 
 
