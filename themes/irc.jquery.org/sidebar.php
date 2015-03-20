@@ -4,6 +4,8 @@
 		<ul>
 			<li><a href="/%23css-chassis/">#css-chassis</a></li>
 			<li><a href="/%23globalize/">#globalize</a></li>
+			<li><a href="/%23esprima/">#esprima</a></li>
+			<li><a href="/%23esprima-meeting/">#esprima-meeting</a></li>
 			<li><a href="/%23jquery/">#jquery</a></li>
 			<li><a href="/%23jquery-content/">#jquery-content</a></li>
 			<li><a href="/%23jquery-dev/">#jquery-dev</a></li>
