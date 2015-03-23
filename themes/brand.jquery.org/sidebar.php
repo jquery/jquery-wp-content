@@ -22,6 +22,7 @@
 			<li><a href="/colors/#jquery-mobile-green">jQuery Mobile green</a></li>
 			<li><a href="/colors/#sizzle-orange-red">Sizzle orange/red</a></li>
 			<li><a href="/colors/#qunit-purple">QUnit purple</a></li>
+			<li><a href="/colors/#globalize-aqua">Globalize aqua</a></li>
 		</ul>
 	</aside>
 	<aside class="widget">
