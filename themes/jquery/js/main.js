@@ -356,10 +356,8 @@ $(function() {
 			plugin = parts[ 3 ],
 			demo = parts[ 4 ].substring( 0, parts[ 4 ].length - 5 );
 
-		var str1 = "default";
-		var str2 = "effect";
-		if ( demo.localeCompare(str1) == 0 && plugin.localeCompare(str2) == 0 ) {
-			demo = str2;
+		if ( demo === "default" && plugin === "effect" ) {
+			demo = "effect";
 		}
 
 		if ( demoList.is( "[data-full-nav]" ) ) {
