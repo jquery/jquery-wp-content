@@ -357,7 +357,7 @@ $(function() {
 			demo = parts[ 4 ].substring( 0, parts[ 4 ].length - 5 );
 
 		if ( demoList.is( "[data-full-nav]" ) ) {
-			window.location = "/" + (demo === "default" ? plugin : demo);
+			window.location = "/" + (demo === "default" ? plugin : demo) + "/";
 			return;
 		}
 
