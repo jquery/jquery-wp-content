@@ -341,7 +341,7 @@ $(function() {
 /*
  * jqueryui.com
  */
-$(function() {	
+$(function() {
 	var demoFrame = $( ".demo-frame" ),
 		demoDescription = $( ".demo-description" ),
 		sourceView = $( ".view-source > div" ),
