@@ -361,7 +361,7 @@ $(function() {
 		}
 
 		if ( demoList.is( "[data-full-nav]" ) ) {
-			window.location = "/" + (demo === "default" ? plugin : demo);
+			window.location = "/" + (demo === "default" ? plugin : demo) + "/";
 			return;
 		}
 
