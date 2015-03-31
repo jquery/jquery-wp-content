@@ -157,6 +157,8 @@ a,
 	padding-top: 1em;
 	padding-bottom: 1em;
 	text-align: center;
+	cursor: hand;
+	cursor: pointer;
 }
 .project-tile a {
 	text-indent: -9999px;
