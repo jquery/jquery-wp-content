@@ -156,7 +156,7 @@ a,
 .project-tile {
 	padding-top: 1em;
 	padding-bottom: 1em;
-	text-align: -moz-center;
+	text-align: center;
 }
 .project-tile a {
 	text-indent: -9999px;
