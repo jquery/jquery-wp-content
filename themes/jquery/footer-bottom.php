@@ -16,7 +16,7 @@
 		),
 		'Twitter' => array(
 			'icon' => 'twitter',
-			'url' => 'http://twitter.com/jquery'
+			'url' => 'https://twitter.com/jquery'
 		),
 		'IRC' => array(
 			'icon' => 'comments',

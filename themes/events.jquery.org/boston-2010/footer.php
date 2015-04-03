@@ -63,7 +63,7 @@
               <a href="http://mediatemple.net"><img src="/resources/2010/boston/images/logos/mt-logo.png" width="200" height="78" alt="MediaTemple" /></a>
             </li>
             <li>
-              <a href="http://www.packtpub.com"><img src="/resources/2010/boston/images/logos/packt-logo.png" width="200" height="88" alt="Packt Publishing" /></a>
+              <a href="https://www.packtpub.com"><img src="/resources/2010/boston/images/logos/packt-logo.png" width="200" height="88" alt="Packt Publishing" /></a>
             </li>
             <li>
               <a href="http://www.oreilly.com"><img src="/resources/2010/boston/images/logos/oreilly.png" width="200" height="37" alt="O'Reilly" /></a>
@@ -80,18 +80,18 @@
     <section id="flickr" class="grid_9 prefix_1">
       <h3>Photo Stream<br /><small>via Flickr</small></h3>
       <ul>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555344314/" title="IMG_9779.JPG"><img src="http://farm4.static.flickr.com/3151/4555344314_bd36d63c77_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555340480/" title="IMG_9769.JPG"><img src="http://farm5.static.flickr.com/4009/4555340480_f6b5c5fe1b_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555345198/" title="IMG_9782.JPG"><img src="http://farm4.static.flickr.com/3426/4555345198_3726dedc8e_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4554714311/" title="IMG_9780.JPG"><img src="http://farm5.static.flickr.com/4038/4554714311_e5f4764f35_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4554715467/" title="IMG_9783.JPG"><img src="http://farm4.static.flickr.com/3024/4554715467_3116b14579_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555340122/" title="IMG_9768.JPG"><img src="http://farm4.static.flickr.com/3413/4555340122_66b899e43c_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555343332/" title="IMG_9776.JPG"><img src="http://farm4.static.flickr.com/3280/4555343332_dc725b5746_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555343982/" title="IMG_9778.JPG"><img src="http://farm4.static.flickr.com/3433/4555343982_8ac18c611e_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4554707781/" title="IMG_9761.JPG"><img src="http://farm4.static.flickr.com/3402/4554707781_7eeb4b4ae9_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555342860/" title="IMG_9774.JPG"><img src="http://farm4.static.flickr.com/3642/4555342860_b2ccf7797c_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4554708121/" title="IMG_9762.JPG"><img src="http://farm4.static.flickr.com/3634/4554708121_6a1deb6647_s.jpg" width="75" height="75" /></a></li>
-          <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/4555338916/" title="IMG_9764.JPG"><img src="http://farm4.static.flickr.com/3015/4555338916_ae830039e4_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555344314/" title="IMG_9779.JPG"><img src="http://farm4.static.flickr.com/3151/4555344314_bd36d63c77_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555340480/" title="IMG_9769.JPG"><img src="http://farm5.static.flickr.com/4009/4555340480_f6b5c5fe1b_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555345198/" title="IMG_9782.JPG"><img src="http://farm4.static.flickr.com/3426/4555345198_3726dedc8e_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4554714311/" title="IMG_9780.JPG"><img src="http://farm5.static.flickr.com/4038/4554714311_e5f4764f35_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4554715467/" title="IMG_9783.JPG"><img src="http://farm4.static.flickr.com/3024/4554715467_3116b14579_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555340122/" title="IMG_9768.JPG"><img src="http://farm4.static.flickr.com/3413/4555340122_66b899e43c_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555343332/" title="IMG_9776.JPG"><img src="http://farm4.static.flickr.com/3280/4555343332_dc725b5746_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555343982/" title="IMG_9778.JPG"><img src="http://farm4.static.flickr.com/3433/4555343982_8ac18c611e_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4554707781/" title="IMG_9761.JPG"><img src="http://farm4.static.flickr.com/3402/4554707781_7eeb4b4ae9_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555342860/" title="IMG_9774.JPG"><img src="http://farm4.static.flickr.com/3642/4555342860_b2ccf7797c_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4554708121/" title="IMG_9762.JPG"><img src="http://farm4.static.flickr.com/3634/4554708121_6a1deb6647_s.jpg" width="75" height="75" /></a></li>
+          <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/4555338916/" title="IMG_9764.JPG"><img src="http://farm4.static.flickr.com/3015/4555338916_ae830039e4_s.jpg" width="75" height="75" /></a></li>
         </ul>
     </section>
     <section id="best_talks" class="grid_7 prefix_1">
@@ -133,7 +133,7 @@
         </li>
       </ul>
       <h3>Photo Credits</h3>
-      <p>The header image is the work of <a href="http://www.flickr.com/photos/rene-germany/1594828030/in/photostream/">Rene Schwietzke</a> and was modified slightly for use on this site. The background image is based off a photo by <a href="http://www.flickr.com/photos/brentdanley/254566508/in/photostream/">Brent Danley</a>. Both photos were released under Creative Commons licenses and are copyrighted by their respective owners.</p>
+      <p>The header image is the work of <a href="https://www.flickr.com/photos/rene-germany/1594828030/in/photostream/">Rene Schwietzke</a> and was modified slightly for use on this site. The background image is based off a photo by <a href="https://www.flickr.com/photos/brentdanley/254566508/in/photostream/">Brent Danley</a>. Both photos were released under Creative Commons licenses and are copyrighted by their respective owners.</p>
     </section>
     <hr class="clear"/>
     <section id="jquery_footer" class="container_24">

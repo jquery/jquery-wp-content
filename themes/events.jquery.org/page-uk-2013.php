@@ -302,7 +302,7 @@ the_post();
 				<div class="span12">
 					<ul class="unstyled">
 						<li>
-							<a href="http://twitter.com/jquk" class="twitter">Follow @jquk</a>
+							<a href="https://twitter.com/jquk" class="twitter">Follow @jquk</a>
 						</li>
 						<li>
 							<a href="http://lanyrd.com/2013/jquery-uk/" class="lanyrd">Track us on Lanyrd</a>
