@@ -63,7 +63,7 @@
               <a href="http://mediatemple.net"><img src="/resources/2010/boston/images/logos/mt-logo.png" width="200" height="78" alt="MediaTemple" /></a>
             </li>
             <li>
-              <a href="http://www.packtpub.com"><img src="/resources/2010/boston/images/logos/packt-logo.png" width="200" height="88" alt="Packt Publishing" /></a>
+              <a href="https://www.packtpub.com"><img src="/resources/2010/boston/images/logos/packt-logo.png" width="200" height="88" alt="Packt Publishing" /></a>
             </li>
             <li>
               <a href="http://www.oreilly.com"><img src="/resources/2010/boston/images/logos/oreilly.png" width="200" height="37" alt="O'Reilly" /></a>

@@ -146,7 +146,7 @@ $home = $post->post_name === "sf-bay-area";
           </li>
         </ul>
         <h3>Photo Credits</h3>
-        <p>Most of the photos on this site are CC images from Flickr and are copyrighted by their respective owners. The header image is the work of <a href="http://www.flickr.com/photos/mike_miley/4281332394/">Mike Miley</a>. The rotating images are from <a href="http://www.flickr.com/photos/rj3/">&ldquo;Cowboy&rdquo; Ben Alman</a>, <a href="http://www.flickr.com/photos/arielflesler/">Ariel Flesler</a>, <a href="http://www.flickr.com/photos/mikeyboydotcom/">Mike</a> and <a href="http://twitter.com/lukeb">Luke Brookhart</a>.</p>
+        <p>Most of the photos on this site are CC images from Flickr and are copyrighted by their respective owners. The header image is the work of <a href="http://www.flickr.com/photos/mike_miley/4281332394/">Mike Miley</a>. The rotating images are from <a href="http://www.flickr.com/photos/rj3/">&ldquo;Cowboy&rdquo; Ben Alman</a>, <a href="http://www.flickr.com/photos/arielflesler/">Ariel Flesler</a>, <a href="http://www.flickr.com/photos/mikeyboydotcom/">Mike</a> and <a href="https://twitter.com/lukeb">Luke Brookhart</a>.</p>
       </section>
       <hr class="clear"/>
       <section id="jquery_footer" class="container_24">
