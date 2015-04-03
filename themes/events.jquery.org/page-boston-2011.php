@@ -118,18 +118,18 @@ $noSidebar = $post->post_name !== 'boston' && $post->post_name !== 'schedule';
           <section id="flickr" class="grid_9 prefix_1">
             <h3>Photo Stream<br /><small>via Flickr</small></h3>
             <ul>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5625065300/" title="Microsoft Campus"><img src="http://farm6.static.flickr.com/5025/5625065300_1e1776fdcc_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5624475765/" title="Simulcast to the other room"><img src="http://farm6.static.flickr.com/5022/5624475765_12f9e543ff_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5625065090/" title="Swaaaggggg..."><img src="http://farm6.static.flickr.com/5027/5625065090_2c9529138d_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5625065504/" title="Microsoft campus"><img src="http://farm6.static.flickr.com/5309/5625065504_de8e37157d_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5625065684/" title="Make sure you read"><img src="http://farm6.static.flickr.com/5061/5625065684_959453fa3e_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5622668219/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5266/5622668219_e2f18ce0ca_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5623255154/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5149/5623255154_a961e3236c_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5623125296/" title="Microsoft Mountain View Campus"><img src="http://farm6.static.flickr.com/5027/5623125296_078a52993c_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5623125050/" title="jQuery Conference Training Class"><img src="http://farm6.static.flickr.com/5022/5623125050_cb558bdf92_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5623124944/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5070/5623124944_1bbcc48148_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5622538221/" title="MS Campus Mountain View"><img src="http://farm6.static.flickr.com/5144/5622538221_8c5d25ce44_s.jpg" width="75" height="75" /></a></li>
-                <li><a target="jqueryflickr" href="http://www.flickr.com/photos/61800375@N07/5622538139/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5221/5622538139_7bab2863aa_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5625065300/" title="Microsoft Campus"><img src="http://farm6.static.flickr.com/5025/5625065300_1e1776fdcc_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5624475765/" title="Simulcast to the other room"><img src="http://farm6.static.flickr.com/5022/5624475765_12f9e543ff_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5625065090/" title="Swaaaggggg..."><img src="http://farm6.static.flickr.com/5027/5625065090_2c9529138d_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5625065504/" title="Microsoft campus"><img src="http://farm6.static.flickr.com/5309/5625065504_de8e37157d_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5625065684/" title="Make sure you read"><img src="http://farm6.static.flickr.com/5061/5625065684_959453fa3e_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5622668219/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5266/5622668219_e2f18ce0ca_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5623255154/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5149/5623255154_a961e3236c_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5623125296/" title="Microsoft Mountain View Campus"><img src="http://farm6.static.flickr.com/5027/5623125296_078a52993c_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5623125050/" title="jQuery Conference Training Class"><img src="http://farm6.static.flickr.com/5022/5623125050_cb558bdf92_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5623124944/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5070/5623124944_1bbcc48148_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5622538221/" title="MS Campus Mountain View"><img src="http://farm6.static.flickr.com/5144/5622538221_8c5d25ce44_s.jpg" width="75" height="75" /></a></li>
+                <li><a target="jqueryflickr" href="https://www.flickr.com/photos/61800375@N07/5622538139/" title="jQuery Training Class"><img src="http://farm6.static.flickr.com/5221/5622538139_7bab2863aa_s.jpg" width="75" height="75" /></a></li>
               </ul>
           </section>
           <section id="best_talks" class="grid_7 prefix_1">
@@ -180,7 +180,7 @@ $noSidebar = $post->post_name !== 'boston' && $post->post_name !== 'schedule';
               </li>
             </ul>
             <h3>Photo Credits</h3>
-            <p>The header image is the work of <a href="http://www.flickr.com/photos/ensh/4769294947/">Emmanuel Huybrechts</a>. The background image is based off a photo by <a href="http://www.flickr.com/photos/brentdanley/254566508/in/photostream/">Brent Danley</a>. Both photos were released under Creative Commons licenses and are copyrighted by their respective owners.</p>
+            <p>The header image is the work of <a href="https://www.flickr.com/photos/ensh/4769294947/">Emmanuel Huybrechts</a>. The background image is based off a photo by <a href="https://www.flickr.com/photos/brentdanley/254566508/in/photostream/">Brent Danley</a>. Both photos were released under Creative Commons licenses and are copyrighted by their respective owners.</p>
           </section>
           <hr class="clear"/>
           <section id="jquery_footer" class="container_24">

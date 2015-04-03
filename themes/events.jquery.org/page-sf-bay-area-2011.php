@@ -150,18 +150,18 @@ $noSidebar = $post->post_name === 'hotels';
       <section id="flickr" class="grid_9 prefix_1">
         <h3>Photo Stream<br /><small>via Flickr</small></h3>
         <ul>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102853142/" title="IMG_2316.JPG"><img src="http://farm5.static.flickr.com/4145/5102853142_d28dfe5fa6_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jdsharp-com/5103040651/" title="jQuery Team"><img src="http://farm2.static.flickr.com/1440/5103040651_f4bb6f60b8_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102853888/" title="IMG_2318.JPG"><img src="http://farm2.static.flickr.com/1370/5102853888_9195b90f20_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102260221/" title="IMG_2319.JPG"><img src="http://farm2.static.flickr.com/1381/5102260221_5e58576f1b_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102855096/" title="IMG_2325.JPG"><img src="http://farm2.static.flickr.com/1365/5102855096_a75385f69d_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102850384/" title="IMG_2309.JPG"><img src="http://farm5.static.flickr.com/4084/5102850384_49431f644d_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102850990/" title="IMG_2311.JPG"><img src="http://farm2.static.flickr.com/1402/5102850990_3818749bc7_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102255931/" title="IMG_2307.JPG"><img src="http://farm5.static.flickr.com/4048/5102255931_653bd20aac_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102258039/" title="IMG_2314.JPG"><img src="http://farm2.static.flickr.com/1046/5102258039_0e3b4e74b9_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102850714/" title="IMG_2310.JPG"><img src="http://farm2.static.flickr.com/1045/5102850714_6a46959584_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102260489/" title="IMG_2321.JPG"><img src="http://farm2.static.flickr.com/1390/5102260489_bcd6f02b69_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/jwalsh_/5102850094/" title="IMG_2308.JPG"><img src="http://farm5.static.flickr.com/4110/5102850094_d3e3e3e8c6_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102853142/" title="IMG_2316.JPG"><img src="http://farm5.static.flickr.com/4145/5102853142_d28dfe5fa6_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jdsharp-com/5103040651/" title="jQuery Team"><img src="http://farm2.static.flickr.com/1440/5103040651_f4bb6f60b8_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102853888/" title="IMG_2318.JPG"><img src="http://farm2.static.flickr.com/1370/5102853888_9195b90f20_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102260221/" title="IMG_2319.JPG"><img src="http://farm2.static.flickr.com/1381/5102260221_5e58576f1b_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102855096/" title="IMG_2325.JPG"><img src="http://farm2.static.flickr.com/1365/5102855096_a75385f69d_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102850384/" title="IMG_2309.JPG"><img src="http://farm5.static.flickr.com/4084/5102850384_49431f644d_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102850990/" title="IMG_2311.JPG"><img src="http://farm2.static.flickr.com/1402/5102850990_3818749bc7_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102255931/" title="IMG_2307.JPG"><img src="http://farm5.static.flickr.com/4048/5102255931_653bd20aac_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102258039/" title="IMG_2314.JPG"><img src="http://farm2.static.flickr.com/1046/5102258039_0e3b4e74b9_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102850714/" title="IMG_2310.JPG"><img src="http://farm2.static.flickr.com/1045/5102850714_6a46959584_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102260489/" title="IMG_2321.JPG"><img src="http://farm2.static.flickr.com/1390/5102260489_bcd6f02b69_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/jwalsh_/5102850094/" title="IMG_2308.JPG"><img src="http://farm5.static.flickr.com/4110/5102850094_d3e3e3e8c6_s.jpg" width="75" height="75" /></a></li>
           </ul>
       </section>
       <section id="best_talks" class="grid_7 prefix_1">
@@ -208,7 +208,7 @@ $noSidebar = $post->post_name === 'hotels';
           </li>
         </ul>
         <h3>Photo Credits</h3>
-        <p>The background image is based off a photo by <a href="http://www.flickr.com/photos/brentdanley/254566508/in/photostream/">Brent Danley</a> and is used under a Creative Commons license and is copyrighted by Brent Danley.</p>
+        <p>The background image is based off a photo by <a href="https://www.flickr.com/photos/brentdanley/254566508/in/photostream/">Brent Danley</a> and is used under a Creative Commons license and is copyrighted by Brent Danley.</p>
       </section>
       <hr class="clear"/>
       <section id="jquery_footer" class="container_24">

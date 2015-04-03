@@ -89,18 +89,18 @@ $home = $post->post_name === "sf-bay-area";
       <section id="flickr" class="grid_9 prefix_1">
         <h3>Photo Stream<br /><small>via Flickr</small></h3>
         <ul>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/dokas/3951657335/" title="jQuery Conference 2009"><img src="http://farm3.static.flickr.com/2613/3951657335_bbd54e8769_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/arielflesler/3949052468/" title="3946867790_b0172eabac"><img src="http://farm3.static.flickr.com/2664/3949052468_4459eeafea_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946874910/" title="Rey Bango"><img src="http://farm4.static.flickr.com/3435/3946874910_eab916e9bf_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946878170/" title="John Resig"><img src="http://farm4.static.flickr.com/3454/3946878170_a7c28aa7db_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946097791/" title="Jörn Zaefferer"><img src="http://farm4.static.flickr.com/3465/3946097791_c885550d70_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946877536/" title="Brandon Aaron"><img src="http://farm3.static.flickr.com/2429/3946877536_5a29b333bb_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946883114/" title="Jonathan and Mike H."><img src="http://farm3.static.flickr.com/2555/3946883114_a9d739be45_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946100303/" title="Ariel, Ralph, and Scott G."><img src="http://farm4.static.flickr.com/3445/3946100303_689e96ff69_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946094939/" title="Delicious Food at jQuery Conference 2009"><img src="http://farm3.static.flickr.com/2535/3946094939_0ce2a90d8c_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946093967/" title="jQuery Conference 2009 Breakout Sessions"><img src="http://farm4.static.flickr.com/3577/3946093967_d8d6462d5d_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946099705/" title="jQuery Project Team Meeting 2009"><img src="http://farm3.static.flickr.com/2588/3946099705_72b481fecd_s.jpg" width="75" height="75" /></a></li>
-            <li><a target="jqueryflickr" href="http://www.flickr.com/photos/63654979@N00/3946097147/" title="jQuery Project Team Meeting"><img src="http://farm4.static.flickr.com/3462/3946097147_f6151d4da8_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/dokas/3951657335/" title="jQuery Conference 2009"><img src="http://farm3.static.flickr.com/2613/3951657335_bbd54e8769_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/arielflesler/3949052468/" title="3946867790_b0172eabac"><img src="http://farm3.static.flickr.com/2664/3949052468_4459eeafea_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946874910/" title="Rey Bango"><img src="http://farm4.static.flickr.com/3435/3946874910_eab916e9bf_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946878170/" title="John Resig"><img src="http://farm4.static.flickr.com/3454/3946878170_a7c28aa7db_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946097791/" title="Jörn Zaefferer"><img src="http://farm4.static.flickr.com/3465/3946097791_c885550d70_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946877536/" title="Brandon Aaron"><img src="http://farm3.static.flickr.com/2429/3946877536_5a29b333bb_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946883114/" title="Jonathan and Mike H."><img src="http://farm3.static.flickr.com/2555/3946883114_a9d739be45_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946100303/" title="Ariel, Ralph, and Scott G."><img src="http://farm4.static.flickr.com/3445/3946100303_689e96ff69_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946094939/" title="Delicious Food at jQuery Conference 2009"><img src="http://farm3.static.flickr.com/2535/3946094939_0ce2a90d8c_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946093967/" title="jQuery Conference 2009 Breakout Sessions"><img src="http://farm4.static.flickr.com/3577/3946093967_d8d6462d5d_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946099705/" title="jQuery Project Team Meeting 2009"><img src="http://farm3.static.flickr.com/2588/3946099705_72b481fecd_s.jpg" width="75" height="75" /></a></li>
+            <li><a target="jqueryflickr" href="https://www.flickr.com/photos/63654979@N00/3946097147/" title="jQuery Project Team Meeting"><img src="http://farm4.static.flickr.com/3462/3946097147_f6151d4da8_s.jpg" width="75" height="75" /></a></li>
         </ul>
       </section>
       <section id="best_talks" class="grid_6 prefix_1">
@@ -146,7 +146,7 @@ $home = $post->post_name === "sf-bay-area";
           </li>
         </ul>
         <h3>Photo Credits</h3>
-        <p>Most of the photos on this site are CC images from Flickr and are copyrighted by their respective owners. The header image is the work of <a href="http://www.flickr.com/photos/mike_miley/4281332394/">Mike Miley</a>. The rotating images are from <a href="http://www.flickr.com/photos/rj3/">&ldquo;Cowboy&rdquo; Ben Alman</a>, <a href="http://www.flickr.com/photos/arielflesler/">Ariel Flesler</a>, <a href="http://www.flickr.com/photos/mikeyboydotcom/">Mike</a> and <a href="https://twitter.com/lukeb">Luke Brookhart</a>.</p>
+        <p>Most of the photos on this site are CC images from Flickr and are copyrighted by their respective owners. The header image is the work of <a href="https://www.flickr.com/photos/mike_miley/4281332394/">Mike Miley</a>. The rotating images are from <a href="https://www.flickr.com/photos/rj3/">&ldquo;Cowboy&rdquo; Ben Alman</a>, <a href="https://www.flickr.com/photos/arielflesler/">Ariel Flesler</a>, <a href="https://www.flickr.com/photos/mikeyboydotcom/">Mike</a> and <a href="https://twitter.com/lukeb">Luke Brookhart</a>.</p>
       </section>
       <hr class="clear"/>
       <section id="jquery_footer" class="container_24">
