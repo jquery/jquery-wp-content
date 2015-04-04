@@ -130,6 +130,7 @@ a,
 #content #corporate-members li {
 	background: none;
 	height: 150px;
+	text-align: center;
 }
 
 #corporate-members span {
