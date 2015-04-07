@@ -20,7 +20,7 @@
 		<div class="bottom-links row">
 			<?php if (isset($next_prev_arr['prev'])): ?>
 				<div class="prev six columns">
-					<a href="<?php echo $next_prev_arr['prev']->guid; ?>">
+					<a href="<?php echo get_page_link( $next_prev_arr['prev']->ID ); ?>">
 					<i class="icon-chevron-left"></i>
 					<?php echo $next_prev_arr['prev']->post_title; ?>
 					</a>
@@ -28,7 +28,7 @@
 			<?php endif; ?>
 			<?php if (isset($next_prev_arr['next'])): ?>
 				<div class="next six columns">
-					<a href="<?php echo $next_prev_arr['next']->guid; ?>">
+					<a href="<?php echo get_page_link( $next_prev_arr['next']->ID ); ?>">
 					<?php echo $next_prev_arr['next']->post_title; ?>
 					<i class="icon-chevron-right"></i>
 					</a>
