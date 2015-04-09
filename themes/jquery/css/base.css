@@ -245,7 +245,7 @@ pre, code {
 	line-height: 16px;
 }
 code {
-	padding: 0 3px;
+	padding: 2px 5px;
 	background-color: #eee; /* support: IE8 */;
 	background-color: rgba( 0, 0, 0, .1 );
 	border-radius: 3px;
@@ -1553,32 +1553,32 @@ iframe {
 	border-right: none;
 }
 
-#container, 
+#container,
 footer {
 	border-top: 1px solid #7ACEF4;
 }
 
-.jquery-ui #container, 
+.jquery-ui #container,
 .jquery-ui footer {
 	border-top-color: #FAA523;
 }
 
-.jquery-mobile #container, 
+.jquery-mobile #container,
 .jquery-mobile footer {
 	border-top-color: #3EB249;
 }
 
-.sizzlejs #container, 
+.sizzlejs #container,
 .sizzlejs footer {
 	border-top-color: #FAA523;
 }
 
-.qunitjs #container, 
+.qunitjs #container,
 .qunitjs footer {
 	border-top-color: #9C3493;
 }
 
-.jquery-learn #container, 
+.jquery-learn #container,
 .jquery-learn footer {
 	border-top-color: #333;
 }
@@ -2164,7 +2164,7 @@ p.author a {
 	padding: 20px;
 }
 
-#banner-secondary h1, 
+#banner-secondary h1,
 #banner-secondary h2 {
 	margin-bottom: 0;
 	color: #fff;
@@ -2847,9 +2847,8 @@ footer .books li a cite {
 }
 
 #options .default {
-	text-align: right;
-	font-size: 13px;
-	margin-top: -10px;
+	margin-bottom: 1em;
+	margin-top: -.5em;
 }
 
 .desc {
@@ -3009,7 +3008,7 @@ footer .books li a cite {
 		margin: 0px;
 		padding: 0px;
 	}
-	
+
 	nav#main ul li, nav#main ul li a {
 		display: block;
 		text-align: left !important;
@@ -3017,7 +3016,7 @@ footer .books li a cite {
 		margin-right: 0px;
 		padding: 0 4px 4px 0;
 	}
-		
+
 
 	nav#main li a:hover,
 	nav#main li.current a {
@@ -3026,11 +3025,11 @@ footer .books li a cite {
 		border-radius: 4px;
 		border: 1px solid rgba(0,0,0,0.0);
 	}
-	
+
 	nav#main li a {
 		font-size: 14px;
 	}
-	
+
 	#content-wrapper {
 		border-top-left-radius: 10px;
 		border-top-right-radius: 10px;
@@ -3081,8 +3080,8 @@ footer .books li a cite {
 }
 
 @media only screen and (max-width: 480px) {
-	
-	#global-nav { 
+
+	#global-nav {
 		display: none;
 	}
 
@@ -3111,31 +3110,31 @@ footer .books li a cite {
 		top: 6px;
 		left: 0px;
 	}
-	
+
 	nav#main {
 		margin-top: 15px;
 		padding-top: 0;
 	}
-	
+
 	nav#main .searchform {
 		display: block;
 		float: none;
 		width: 100%;
 		margin: 15px auto;
 	}
-	
+
 	nav#main ul li, nav#main ul li a {
 		float: none;
-		padding: 6px 0px 6px 8px;	
+		padding: 6px 0px 6px 8px;
 	}
-	
+
 	.constrain,
 	#container {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 
-	.content-full #content, 
+	.content-full #content,
 	.content-full.full-width #content,
 	.content-right #content,
 	.content-left #content {
