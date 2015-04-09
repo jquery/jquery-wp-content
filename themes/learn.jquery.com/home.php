@@ -52,7 +52,7 @@ get_header(); ?>
 					All of the content in this site is completely open source, and we welcome your contribution.
 					Whether you notice a small improvement that should be made, or want to write entirely new articles, this is one area where feature requests are encouraged!
 					</p>
-					<a class="button dark" href="http://github.com/jquery/learn.jquery.com"><i class="icon-github"></i>  Open an Issue or Submit a Pull Request</a>
+					<a class="button dark" href="https://github.com/jquery/learn.jquery.com"><i class="icon-github"></i>  Open an Issue or Submit a Pull Request</a>
 					<p class="clearfix">Each of our articles has a link to the raw content on GitHub, and we urge everyone to fork, edit, and help improve this community resource!</p>
 				</aside>
 			</div>

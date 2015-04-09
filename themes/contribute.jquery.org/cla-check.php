@@ -117,7 +117,7 @@ function neglectedAuthors( $data ) {
 }
 
 function commitLog( $data ) {
-	$commitPrefix = "http://github.com/jquery/$data->repo/commit/";
+	$commitPrefix = "https://github.com/jquery/$data->repo/commit/";
 
 	$html = "<dl>\n";
 	foreach ( $data->data->commits as $commit ) {
