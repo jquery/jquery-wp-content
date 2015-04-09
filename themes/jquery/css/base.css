@@ -2843,12 +2843,14 @@ footer .books li a cite {
 	font-size: 16px;
 	font-weight: normal;
 	color: #333;
-	float: right;
 }
 
 #options .default {
 	margin-bottom: 1em;
-	margin-top: -.5em;
+}
+#options .default .syntaxhighlighter {
+	/* stick code to label; this is more important! */
+	margin-top: 0 !important;
 }
 
 .desc {
