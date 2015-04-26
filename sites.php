@@ -304,6 +304,26 @@ function jquery_sites() {
 	return $sites;
 }
 
+/**
+ * Makes site-specific actions. Should be called during install phase of single jquery site. The context must be
+ * switched to specified site (using {@link switch_to_blog()}) before the call.
+ */
+function jquery_on_install()
+{
+	relevanssi_install();
+
+	update_option( 'relevanssi_implicit_operator', 'AND' );
+	update_option( 'relevanssi_index_post_types', array( 'post', 'page' ) );
+	update_option( 'relevanssi_min_word_length', 2 );
+	// Search terms highlighting may be buggy (try to search "wrap html" and see a page crash). Disabling it.
+	update_option( 'relevanssi_excerpts', 'off' );
+
+	// Will output success message. We don't want it to display.
+	ob_start();
+	relevanssi_build_index();
+	ob_end_clean();
+}
+
 function jquery_default_site_options() {
 	return array(
 		'enable_xmlrpc' => 1,
