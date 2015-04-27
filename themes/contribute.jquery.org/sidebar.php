@@ -10,5 +10,9 @@
 			<li><a href="/support/">Support</a></li>
 			<li><a href="/web-sites/">Web Sites</a></li>
 		</ul>
+		<h3 class="widget-title">For maintainers &hellip;</h3>
+		<ul>
+			<li><a href="/repo-maintainers-guide/">Maintainers Guide</a></li>
+		</ul>
 	</aside>
 </div>
