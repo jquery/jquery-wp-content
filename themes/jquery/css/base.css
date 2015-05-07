@@ -245,7 +245,7 @@ pre, code {
 	line-height: 16px;
 }
 code {
-	padding: 2px 5px;
+	padding: 0 3px;
 	background-color: #eee; /* support: IE8 */;
 	background-color: rgba( 0, 0, 0, .1 );
 	border-radius: 3px;
