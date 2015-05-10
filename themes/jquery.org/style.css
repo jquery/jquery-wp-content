@@ -613,10 +613,7 @@ nav#main ul {
 		text-align: center;
 	}
 
-	nav#main .searchform {
-		width: 100%;
-	}
-
+	nav#main .searchform,
 	nav#main ul {
 		width: 100%;
 	}
