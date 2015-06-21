@@ -3768,7 +3768,6 @@ pre .chunk {
 	font-weight: normal !important;
 	font-style: normal !important;
 	font-size: 1em !important;
-	min-height: inherit !important;
 	min-height: auto !important;
 }
 .syntaxhighlighter {
