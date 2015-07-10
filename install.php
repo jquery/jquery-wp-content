@@ -89,7 +89,5 @@ function jquery_install_site( $site, $user ) {
 
 	delete_option( 'rewrite_rules' );
 
-	jquery_on_install();
-
 	restore_current_blog();
 }
