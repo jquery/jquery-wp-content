@@ -93,6 +93,7 @@
 							<li><a href="https://jquery.org/join/">Join</a></li>
 							<li><a href="https://jquery.org/members/">Members</a></li>
 							<li><a href="https://jquery.org/team/">Team</a></li>
+							<li><a href="https://jquery.org/conduct/">Conduct</a></li>
 							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
 							<li><a href="https://jquery.org/donate/">Donate</a></li>
 						</ul>
