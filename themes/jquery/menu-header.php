@@ -94,6 +94,7 @@ function menu_header_jquery_org() {
 		'https://jquery.org/members/' => 'Members',
 		'https://jquery.org/support/' => 'Support',
 		'https://jquery.org/team/' => 'Team',
+		'https://jquery.org/conduct/' => 'Conduct',
 		'http://meetings.jquery.org/' => 'Meetings',
 		'https://jquery.org/history/' => 'History',
 		'http://brand.jquery.org/' => 'Brand Guide',
