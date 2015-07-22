@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-		<div id="primary" class="twelve columns">
+		<div id="primary" class="content-right twelve columns">
 			<div id="content" role="main">
 
 				<?php the_post(); ?>
@@ -21,7 +21,7 @@ get_header(); ?>
 
 			</div><!-- #content -->
 
-			<div id="sidebar" class="sidebar-right" role="complementary">
+			<div id="sidebar" class="widget-area" role="complementary">
 				<aside class="widget">
 					<h3>jQuery Foundation Code of Conduct</h3>
 					<ul>
@@ -37,7 +37,7 @@ get_header(); ?>
 				<h2>License</h2>
 				<p>
 					All content on this page is licensed under a
-					<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution </a> license.
+					<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution</a> license.
 				</p>
 				<p>
 					<a href="http://creativecommons.org/licenses/by/3.0/">
