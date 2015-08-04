@@ -110,7 +110,14 @@ function getProcessedPost( $data ) {
 function neglectedAuthors( $data ) {
 	$html = "<ul>\n";
 	foreach ( $data->data->neglectedAuthors as $author ) {
-		$html .= "<li>" . htmlspecialchars( "$author->name <$author->email>" ) . "</li>\n";
+		$html .= "<li>" . htmlspecialchars( "$author->name <$author->email>" );
+		if ( count( $author->errors ) ) {
+			$html .= ": ";
+			foreach( $author->errors as $error ) {
+				$html .= htmlspecialchars( " $error" );
+			}
+		}
+		$html .= "</li>\n";
 	}
 	$html .= "</ul>\n";
 	return $html;
