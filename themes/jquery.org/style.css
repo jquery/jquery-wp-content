@@ -539,7 +539,7 @@ a.icon-search::before {
 	margin-bottom: 0.3em;
 }
 
-.page-slug-donate h2 {
+.page-slug-donate h2, .page-slug-donate .donate-link {
 	text-align: center;
 }
 
@@ -568,6 +568,11 @@ a.icon-search::before {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	margin-bottom: 40px;
+}
+
+.page-slug-donate .donate-cashtag {
+	font-weight: bold;
+	color: green;
 }
 
 /*a.button,
