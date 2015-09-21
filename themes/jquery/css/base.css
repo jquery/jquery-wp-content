@@ -2891,18 +2891,6 @@ footer .books li a cite {
 /* Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 1100px) {
-
-}
-
-@media only screen and (max-width: 940px) {
-
-}
-
-@media only screen and (max-width: 860px) {
-
-}
-
 @media only screen and (max-width: 768px) {
 	#global-nav ul.projects li.toggle-projects {
 		display: none;
@@ -2918,11 +2906,6 @@ footer .books li a cite {
 		border-left: none;
 		border-image: none;
 		box-shadow: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
 		background-image: none;
 	}
 
