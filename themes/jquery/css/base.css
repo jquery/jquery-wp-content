@@ -2926,7 +2926,6 @@ footer .books li a cite {
 		background-image: none;
 	}
 
-	.content-full.full-width #content,
 	.content-right #content,
 	.content-left #content {
 		padding-left: 2%;
@@ -3163,11 +3162,6 @@ footer .books li a cite {
 		max-width: 100%;
 		margin-left: 0;
 		margin-right: 0;
-	}
-
-	#banner-secondary {
-		margin-left: -25px;
-		margin-right: -25px;
 	}
 
 	footer .footer-icon-links li a:before {
