@@ -1,12 +1,22 @@
 <?php
 
 if ( isset( $blog_id ) ) {
-	$current_site = wpmu_current_site();
+
+	$current_blog = $wpdb->get_row("SELECT * FROM {$wpdb->blogs} WHERE blog_id = '$blog_id' LIMIT 1");
+	$current_site = $wpdb->get_row( "SELECT * from {$wpdb->site} WHERE id = '{$current_blog->site_id}' LIMIT 0,1" );
+	
+	if( function_exists( 'get_current_site' ) ) {
+		$current_site_obj = get_current_site( $current_site );
+		$current_site = $current_site_obj->site_name;
+	}
+	
 	if ( ! is_object( $current_site ) )
 		$current_site = new stdClass;
 	if ( ! isset( $current_site->site_name ) )
 		$current_site->site_name = 'jQuery';
-	$current_blog = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->blogs WHERE blog_id = %d", $blog_id ) );
+
+	if ( ! isset( $current_site->blog_id ) )
+		$current_site->blog_id = $current_blog->blog_id;
 
 	// Can't find the site in the DB:
 	if ( ! is_object( $current_blog ) ) {
