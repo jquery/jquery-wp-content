@@ -34,7 +34,9 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	install_network();
 	populate_network( 1, $domain, $user_email, 'jQuery Network', $base, false );
 
-	update_site_option( 'site_admins', array( $user->user_login ) );
+	delete_site_option( 'site_admins' );
+	add_site_option( 'site_admins', array( $user->user_login ) );
+
 	update_site_option( 'allowedthemes', array() );
 
 	$wpdb->insert( $wpdb->blogs, array( 'site_id' => 1, 'domain' => $domain, 'path' => $base, 'registered' => current_time( 'mysql' ) ) );
