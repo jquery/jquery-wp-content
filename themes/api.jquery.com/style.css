@@ -19,3 +19,17 @@ a {
 .versionAdded a {
 	color: #7ACEF4;
 }
+
+#content figure {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
+	margin-bottom: 1.2em;
+}
+#content figure img.column {
+	vertical-align: top;
+	padding: 0;
+}
+#content figcaption {
+	clear: both;
+	box-shadow: none;
+	margin-top: 0;
+}
