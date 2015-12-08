@@ -6,7 +6,7 @@ function jq_ui_api_versions() {
 		"1.11" => "1.6 and newer",
 
 		// pre-release must be listed after stable
-		"1.12" => "1.7 and newer",
+		// "1.12" => "1.7 and newer",
 
 		"1.10" => "1.6 and newer",
 		"1.9" => "1.6 and newer",
