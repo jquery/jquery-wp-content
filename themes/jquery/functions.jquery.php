@@ -185,12 +185,11 @@ function jq_logo_link() {
  * @return [String] description
  */
 function jq_meta_description() {
-	$default = 'jQuery: The Write Less, Do More, JavaScript Library';
 	if ( !function_exists( 'jquery_sites' ) ) {
-		return $default;
+		return '';
 	}
 
 	$sites = jquery_sites();
-	return empty( $sites[ JQUERY_LIVE_SITE ][ 'options' ][ 'description' ] ) ? $default :
+	return empty( $sites[ JQUERY_LIVE_SITE ][ 'options' ][ 'description' ] ) ? '' :
 		$sites[ JQUERY_LIVE_SITE ][ 'options' ][ 'description' ];
 }
