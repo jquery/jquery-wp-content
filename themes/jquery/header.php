@@ -17,7 +17,7 @@
 	?></title>
 
 	<meta name="author" content="jQuery Foundation - jquery.org">
-	<meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library">
+	<meta name="description" content="<?php echo jq_meta_description(); ?>">
 
 	<meta name="viewport" content="width=device-width">
 
