@@ -12,6 +12,7 @@ function jquery_sites() {
 			'body_class' => 'jquery',
 			'options' => array(
 				'blogname' => 'jQuery',
+				'description' => 'jQuery: The Write Less, Do More, JavaScript Library',
 				'stylesheet' => 'jquery.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -66,6 +67,7 @@ function jquery_sites() {
 			'body_class' => 'jquery-ui',
 			'options' => array(
 				'blogname' => 'jQuery UI',
+				'description' => 'jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you\'re building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.',
 				'stylesheet' => 'jqueryui.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -133,6 +135,7 @@ function jquery_sites() {
 			'body_class' => 'qunitjs',
 			'options' => array(
 				'blogname' => 'QUnit',
+				'description' => 'QUnit: A JavaScript Unit Testing framework.',
 				'stylesheet' => 'qunitjs.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',

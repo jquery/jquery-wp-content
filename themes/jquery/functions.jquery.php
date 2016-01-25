@@ -177,3 +177,20 @@ function jq_logo_link() {
 	return empty( $sites[ JQUERY_LIVE_SITE ][ 'logo_link' ] ) ? '/' :
 		$sites[ JQUERY_LIVE_SITE ][ 'logo_link' ];
 }
+
+/**
+ * Meta description about current site
+ * Setup descriptions in 'sites.php'
+ *
+ * @return [String] description
+ */
+function jq_meta_description() {
+	$default = 'jQuery: The Write Less, Do More, JavaScript Library';
+	if ( !function_exists( 'jquery_sites' ) ) {
+		return $default;
+	}
+
+	$sites = jquery_sites();
+	return empty( $sites[ JQUERY_LIVE_SITE ][ 'options' ][ 'description' ] ) ? $default :
+		$sites[ JQUERY_LIVE_SITE ][ 'options' ][ 'description' ];
+}
