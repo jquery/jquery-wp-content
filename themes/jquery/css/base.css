@@ -2880,7 +2880,13 @@ footer .books li a cite {
 /* Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 807px) {
+	#content-wrapper.row {
+		min-width: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
 	#global-nav ul.projects li.toggle-projects {
 		display: none;
 	}
@@ -2901,8 +2907,8 @@ footer .books li a cite {
 	.content-full.full-width #content,
 	.content-right #content,
 	.content-left #content {
-		padding-left: 2%;
-		padding-right: 2%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	#content {
@@ -2912,8 +2918,8 @@ footer .books li a cite {
 	}
 
 	#banner-secondary {
-		margin-left: -15px;
-		margin-right: -15px;
+		margin-left: -15px !important;
+		margin-right: -15px !important;
 	}
 
 	footer p.copyright,
@@ -3009,11 +3015,18 @@ footer .books li a cite {
 		border-top-right-radius: 10px;
 	}
 
+	.content-full.full-width #content,
+	.content-right #content,
+	.content-left #content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 	#banner-secondary {
 		border-top-left-radius: 9px;
 		border-top-right-radius: 9px;
-		margin-left: -10px;
-		margin-right: -10px;
+		margin-left: -10px !important;
+		margin-right: -10px !important;
 	}
 
 	#banner-secondary h2 {
@@ -3138,8 +3151,8 @@ footer .books li a cite {
 	}
 
 	#banner-secondary {
-		margin-left: -25px;
-		margin-right: -25px;
+		margin-left: -25px !important;
+		margin-right: -25px !important;
 	}
 
 	footer .footer-icon-links li a:before {
