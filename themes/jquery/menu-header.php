@@ -39,7 +39,8 @@ function menu_header_codeorigin_jquery_com() {
 		'/ui/' => 'jQuery UI',
 		'/mobile/' => 'jQuery Mobile',
 		'/color/' => 'jQuery Color',
-		'/qunit/' => 'QUnit'
+		'/qunit/' => 'QUnit',
+		'/pep/' => 'PEP'
 	);
 }
 
