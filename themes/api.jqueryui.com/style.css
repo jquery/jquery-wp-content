@@ -4,14 +4,14 @@ Template: jquery
 */
 
 a {
-	color: #B24926;
+	color: #b24926;
 }
 
 .version-details a,
 .returns a {
-	color: #FAA523;
+	color: #faa523;
 }
 
 .signatures li h4 {
-	background: #B24926;
+	background: #b24926;
 }

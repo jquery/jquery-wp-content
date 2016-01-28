@@ -6,7 +6,6 @@ Template: jquery
 #banner-secondary.large-banner {
 	background-image: url("/resources/images/banner-events-bkg.jpg");
 	background-repeat: no-repeat;
-	margin: -20px 0 20px;
 	padding: 85px 0;
 }
 
@@ -21,7 +20,7 @@ Template: jquery
 	width: 49%;
 	margin-right: 2%;
 	margin-bottom: 2%;
-	padding:3% 0;
+	padding: 3% 0;
 	text-align: center;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -38,7 +37,6 @@ Template: jquery
 	padding-bottom: 5%;
 	padding-left: 2%;
 	padding-right: 2%;
-	
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.51);
 }
 
@@ -110,8 +108,7 @@ a.past-conference-grid p {
 	padding-right: 2%;
 }
 
-#content a.past-conference-grid:hover
- {
- 	background-color: #bcbcbc;
- }
+#content a.past-conference-grid:hover {
+	background-color: #bcbcbc;
+}
 

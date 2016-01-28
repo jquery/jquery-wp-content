@@ -5,7 +5,7 @@ Template: jquery
 
 /*Custom Colors*/
 a, #sidebar h3 {
-	color: #0769AD;
+	color: #0769ad;
 }
 /*
 #content code a {
@@ -42,7 +42,7 @@ a, #sidebar h3 {
 }
 
 #content h2 {
-	color: #0769AD;
+	color: #0769ad;
 	font-weight: normal;
 	font-style: normal;
 	margin-bottom: 20px;
@@ -61,10 +61,6 @@ a, #sidebar h3 {
 
 #banner-large-image h1 {
 	font-size: 60px;
-}
-
-.jquery-foundation.home #banner-secondary.large-banner.entry-header {
-	padding-bottom: 0px;
 }
 
 .jquery-foundation.page-slug-join #content #banner-large-image .vertically-centered-black-bg {
@@ -102,8 +98,8 @@ a, #sidebar h3 {
 	width: 100%;
 	display: block;
 	border: 1px solid #cbcbcb;
-	margin-left: 0px;
-	height:a;
+	margin-left: 0;
+	height: auto;
 	overflow: hidden;
 	border-radius: 10px;
 	list-style: none;
@@ -111,7 +107,7 @@ a, #sidebar h3 {
 }
 
 #content .slides {
-	margin-left: 0px;
+	margin-left: 0;
 }
 
 .flexslider ol {
@@ -119,7 +115,7 @@ a, #sidebar h3 {
 }
 
 #content .flexslider li {
-	padding-left: 0px;
+	padding-left: 0;
 	background: none;
 	display: none;
 }
@@ -138,7 +134,7 @@ ul.flex-direction-nav {
 }
 
 #content .flexslider li img.last {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .dark-callout-box {
@@ -153,8 +149,8 @@ ul.flex-direction-nav {
 }
 
 	.jquery-foundation.page-slug-donate #content .dark-callout-box {
-		padding-top: 0px;
-		padding-bottom: 0px;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 
 .big-message {
@@ -183,9 +179,9 @@ ul.flex-direction-nav {
 	margin-top: 35px;
 }
 
-	#content .twelve.columns .project {
-		margin-top: 0px;
-	}
+#content .twelve.columns .project {
+	margin-top: 0;
+}
 
 .project img {
 	float: left;
@@ -206,7 +202,7 @@ ul.flex-direction-nav {
 }
 
 .member-level.last {
-	margin-right: 0px;
+	margin-right: 0;
 }
 
 .member-level-icon {
@@ -222,7 +218,7 @@ ul.flex-direction-nav {
 
 .member-level button.button.join {
 	position: relative;
-	top: 0px;
+	top: 0;
 	left: 15px;
 	margin-bottom: 15px;
 }
@@ -284,7 +280,6 @@ ul.flex-direction-nav {
 a.icon-search {
 	width: 100px;
 	height: 100px;
-	display: block;
 	position: relative;
 	text-decoration: none !important;
 	float: left;
@@ -313,7 +308,7 @@ a.icon-search::before {
 	padding-right: 15px;
 	background: none;
 	color: #f3f3f3;
-	font: bold "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;;
+	font: bold "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .member-level p {
@@ -393,8 +388,10 @@ a.icon-search::before {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
-#content .choose-gifts input:focus, #content .choose-gifts input[type=text]:focus, #content .choose-gifts textarea:focus {
-	border: 1px solid #78CFF5;
+#content .choose-gifts input:focus,
+#content .choose-gifts input[type=text]:focus,
+#content .choose-gifts textarea:focus {
+	border: 1px solid #78cff5;
 	box-shadow: none;
 }
 
@@ -402,39 +399,39 @@ a.icon-search::before {
    color: rgba(51,51,51,0.75);
 }
 #content .choose-gifts input:-moz-placeholder {
-   color: rgba(51,51,51,0.75);	
+   color: rgba(51,51,51,0.75);
 }
 #content .choose-gifts input::-moz-placeholder {
-   color: rgba(51,51,51,0.75);	
+   color: rgba(51,51,51,0.75);
 }
 #content .choose-gifts input:-ms-input-placeholder {
-   color: rgba(51,51,51,0.75);	
+   color: rgba(51,51,51,0.75);
 }
 
 #content .choose-gifts textarea::-webkit-input-placeholder {
    color: rgba(51,51,51,0.75);
 }
 #content .choose-gifts textarea:-moz-placeholder {
-   color: rgba(51,51,51,0.75);	
+   color: rgba(51,51,51,0.75);
 }
 #content .choose-gifts textarea::-moz-placeholder {
-   color: rgba(51,51,51,0.75);	
+   color: rgba(51,51,51,0.75);
 }
 #content .choose-gifts textarea:-ms-input-placeholder {
-   color: rgba(51,51,51,0.75);	
+   color: rgba(51,51,51,0.75);
 }
 
 /*History Page*/
 
 .page-slug-history #content h2 {
-	color: #0769AD;
+	color: #0769ad;
 	font-size: 40px;
 	line-height: 40px;
 }
 
 
 .page-slug-history #content h3 {
-	color: #0769AD;
+	color: #0769ad;
 	font-weight: normal;
 	font-style: normal;
 	border-top: 1px solid #d7d7d7;
@@ -466,7 +463,7 @@ a.icon-search::before {
 }
 
 .page-slug-team #content h3 {
-	color: #0769AD;
+	color: #0769ad;
 	font-style: italic;
 	font-size: 14px;
 	line-height: 18px;
@@ -627,8 +624,7 @@ nav#main ul {
 
 /*iPad Portrait*/
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 767px) {
 	#banner-large-image {
 		margin-right: -40px;
 		margin-left: -40px;
@@ -640,7 +636,7 @@ nav#main ul {
 		position: relative;
 	}
 
-	#banner-large-image .vertically-centered-black-bg{
+	#banner-large-image .vertically-centered-black-bg {
 		height: 70% !important;
 		margin-top: 14%;
 		padding-top: 6%;
@@ -671,7 +667,7 @@ nav#main ul {
 		height: auto;
 		color: #007d88;
 		font: 20px/26px "klavika-web";
-		margin: -30px -40px 0;
+		margin: -30px -15px 0;
 		padding: 2% 10% 0.5%;
 	}
 
@@ -680,10 +676,16 @@ nav#main ul {
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	.sub-banner {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
 /*iPhone Landscape*/
 
 @media only screen and (max-width: 480px) {
-
 	#banner-large-image {
 		margin-right: -25px;
 		margin-left: -25px;
@@ -695,7 +697,7 @@ nav#main ul {
 		position: relative;
 	}
 
-	#banner-large-image .vertically-centered-black-bg{
+	#banner-large-image .vertically-centered-black-bg {
 		height: 70% !important;
 		margin-top: 14%;
 		padding-top: 7%;

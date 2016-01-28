@@ -4,20 +4,20 @@ Template: jquery
 */
 
 a {
-	color: #0769AD;
+	color: #0769ad;
 }
 
 .signatures li h4 {
-	background: #25649F;
+	background: #25649f;
 }
 
 .version-details a,
 .returns a {
-	color: #7ACEF4;
+	color: #7acef4;
 }
 
 .versionAdded a {
-	color: #7ACEF4;
+	color: #7acef4;
 }
 
 #content figure {

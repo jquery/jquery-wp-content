@@ -4,7 +4,7 @@ Template: jquery
 */
 
 a {
-	color: #0769AD;
+	color: #0769ad;
 }
 
 #content .entry-summary {
@@ -54,14 +54,12 @@ a {
 
 #banner-secondary .searchform input {
 	width: 100%;
-	padding-left: 40px;
 	line-height: 1.5em;
-	border: none;
 	background: none;
 	color: #fff;
 	background-color: #666;
 	border: 1px solid #ccc;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
 	transition: border linear 0.2s, box-shadow linear 0.2s;
 	border-radius: 2em;
 	padding: 11px 0 11px 40px;
@@ -72,8 +70,8 @@ a {
 	outline: 0;
 	outline: thin dotted \9;
 	/* IE6-9 */
-	
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(122, 206, 244, 0.6);	
+
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(122, 206, 244, 0.6);
 }
 
 /*
@@ -194,7 +192,7 @@ a {
 .jquery-plugin .toolbox {
 	border: 1px solid black;
 	border-radius: 8px;
-	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	background-color: black;
 	margin-bottom: 1em;
 }
@@ -423,10 +421,10 @@ a {
 /*---------[ Validator Output ]-----------*/
 
 .validator-output {
-        margin-bottom:1.5em;
-        padding:1em;
-        font-size:0.8em;
+	margin-bottom: 1.5em;
+	padding: 1em;
+	font-size: 0.8em;
 }
 .validator-output div {
-        margin-top:0.2em;
+	margin-top: 0.2em;
 }

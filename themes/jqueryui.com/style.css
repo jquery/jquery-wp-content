@@ -5,7 +5,7 @@ Template: jquery
 
 a,
 .title {
-	color: #B24926;
+	color: #b24926;
 }
 
 #content a:hover {
@@ -33,7 +33,7 @@ a,
 }
 
 #banner-secondary .download-box h2 {
-	color: #71D1FF;
+	color: #71d1ff;
 	font-size: 26px;
 }
 
@@ -60,7 +60,7 @@ a,
 #banner-secondary .download-option span {
 	display: block;
 	font-size: 14px;
-	color: #71D1FF;
+	color: #71d1ff;
 }
 
 #content .dev-links {
