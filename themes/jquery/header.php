@@ -41,6 +41,9 @@
 		wp_enqueue_script( 'comment-reply' );
 
 	wp_head();
+
+	if ( function_exists( 'header_append' ) )
+		header_append();
 ?>
 
 </head>
