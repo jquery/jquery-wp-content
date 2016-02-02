@@ -59,11 +59,11 @@ a {
 	margin-left: 20px;
 	color: #ff8200;
 }
-.link a: hover,
-.link a: focus {
+.link a:hover,
+.link a:focus {
 	color: #fea100;
 }
-.link a: active {
+.link a:active {
 	color: #ff6400;
 }
 .inner .download {
@@ -80,11 +80,11 @@ a {
 	background: url(i/download.png) no-repeat 0 0;
 	zoom: 1;
 }
-.inner .download a: hover,
-.inner .download a: focus {
+.inner .download a:hover,
+.inner .download a:focus {
 	background-position: 0 -67px;
 }
-.inner .download a: active {
+.inner .download a:active {
 	background-position: 0 -134px;
 }
 .features {

@@ -4,7 +4,7 @@ Template: jquery
  */
 
 a {
-	color: #0769AD;
+	color: #0769ad;
 }
 
 /*******************************************************************************/
@@ -36,13 +36,13 @@ a {
 	position: absolute;
 	top: 0;
 	right: 0;
-	z-index:10;
+	z-index: 10;
 }
 
 .beta-ribbon {
 	font-weight: bold;
 	text-align: center;
-	text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+	text-shadow: rgba(255,255,255,0.5) 0 1px 0;
 	-webkit-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -52,17 +52,17 @@ a {
 	top: 11px;
 	width: 120px;
 	background-color: #ffea94;
-	background-image: -webkit-linear-gradient(top, #ffea94, #FFEA5E); 
-	background-image: linear-gradient(to bottom, #ffea94, #FFEA5E); 
+	background-image: -webkit-linear-gradient(top, #ffea94, #ffea5E);
+	background-image: linear-gradient(to bottom, #ffea94, #ffea5E);
 	color: #6a6340;
-	box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
 	cursor: pointer;
 }
 
 .beta-ribbon:hover {
 	background-color: #ffea5e;
-	background-image: -webkit-linear-gradient(top, #ffea5e, #FFea94); 
-	background-image: linear-gradient(to bottom, #ffea5e, #FFea94); 
+	background-image: -webkit-linear-gradient(top, #ffea5e, #ffea94);
+	background-image: linear-gradient(to bottom, #ffea5e, #ffea94);
 }
 .beta-ribbon a {
 	text-decoration: none;
@@ -110,7 +110,7 @@ a {
 /*******************************************************************************/
 
 .entry-meta.row {
-	min-width: auto;
+	min-width: initial;
 	margin: 0;
 }
 
@@ -145,7 +145,7 @@ a {
 }
 .entry-meta aside.meta-details li[class^="icon-"] span,
 .entry-meta aside.meta-details li[class*="icon-"] span {
-	margin-left: 10px; 
+	margin-left: 10px;
 }
 
 .entry-meta aside.meta-details [class^="icon-"]:before,
@@ -198,19 +198,19 @@ a {
 }
 
 .github-feedback .icon-github {
-	color:#7ACEF4;
+	color: #7acef4;
 }
 .entry-meta .bottom-links {
 	background-image: url(../jquery/images/gauze.png);
 	border: none;
 	margin: 2em 0;
-	clear:both;
+	clear: both;
 }
 
 #content .bottom-links a {
-	line-height:2;
+	line-height: 2;
 	text-decoration: none;
-	font-size:140%;
+	font-size: 140%;
 }
 
 #content .bottom-links a:hover {

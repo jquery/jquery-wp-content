@@ -6,7 +6,7 @@ Template: jquery
 
 a,
 .title {
-	color: #B24926;
+	color: #b24926;
 }
 #content a:hover {
 	color: #333;
@@ -23,8 +23,8 @@ a,
 	color: #b3b3b3;
 }
 #banner-secondary h3 {
-	color: #7ACEF4;
-	margin-bottom:0.5em;
+	color: #7acef4;
+	margin-bottom: 0.5em;
 }
 
 #banner-secondary .features-box p {
@@ -40,13 +40,13 @@ a,
 	overflow: hidden;
 }
 .lightweight-footprint .feature-box-image {
-	background: url('i/feature-sprites.png') 0px 0px no-repeat;
+	background: url('i/feature-sprites.png') 0 0 no-repeat;
 }
 .css3-compliant .feature-box-image{
-	background: url('i/feature-sprites.png') -139px 0px no-repeat;
+	background: url('i/feature-sprites.png') -139px 0 no-repeat;
 }
 .cross-browser .feature-box-image{
-	background: url('i/feature-sprites.png') -278px 0px no-repeat;
+	background: url('i/feature-sprites.png') -278px 0 no-repeat;
 	transition: all 0.4s;
 	position: relative;
 	z-index: 10;
@@ -66,24 +66,24 @@ a,
 	margin-top: 1em;
 }
 #banner-secondary .download-options a {
-	display:block;
+	display: block;
 }
 #banner-secondary .download-main .button {
 	float: none;
-	box-shadow: 0px 0px 20px rgba(209, 143, 79, 0.6);
+	box-shadow: 0 0 20px rgba(209, 143, 79, 0.6);
 	border-radius: 0;
 	border: none;
 	transition: all 1s;
 }
 #banner-secondary .download-main .button:hover {
-	box-shadow: 0px 0px 25px rgba(209, 143, 79, 0.9);
+	box-shadow: 0 0 25px rgba(209, 143, 79, 0.9);
 }
 #content #banner-secondary .download-main > a {
-	display:block;
+	display: block;
 	padding: 0 0 .5em 0;
 	font-size: 2em;
 	width: 100%;
-	text-align:center;
+	text-align: center;
 	text-decoration: none;
 	line-height: 0.8em;
 }
@@ -92,13 +92,13 @@ a,
 	font-size: 0.6em;
 }
 #content #banner-secondary .download-main > a span.download {
-	background: url('i/download.png') 0px 0px;
+	background: url('i/download.png') 0 0;
 	width: 44px;
-	height:37px;
+	height: 37px;
 	position: relative;
 	top: 1em;
-	display:inline-block;
-	margin-right:0.5em;
+	display: inline-block;
+	margin-right: 0.5em;
 }
 
 .resources {
@@ -166,7 +166,7 @@ a,
 
 /* Browser Support */
 
-#support-matrix {
+#content #support-matrix {
 	width: 100%;
 	margin: 0 auto 1em;
 }

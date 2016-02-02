@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <div class="content-full full-width listing twelve columns">
-	<div id="banner-secondary" class="large-banner">
-		<h1>The jQuery Plugin Registry</h1>
-		<?php get_search_form(); ?>
-	</div>
-
 	<div id="content">
+		<div id="banner-secondary" class="large-banner">
+			<h1>The jQuery Plugin Registry</h1>
+			<?php get_search_form(); ?>
+		</div>
+
 		<div class="three columns">
 			<aside class="widget">
 				<h3><i class="icon-tags"></i>Popular Tags</h3>

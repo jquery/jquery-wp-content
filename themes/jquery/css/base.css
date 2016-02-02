@@ -536,19 +536,19 @@ textarea {
  * 2. Using :placeholder for completeness.
  */
 ::-webkit-input-placeholder {
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 :-moz-placeholder { /* 1 */
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 ::-moz-placeholder {
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 :-ms-placeholder {
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 :placeholder { /* 2 */
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 
 #content input:focus,
@@ -558,9 +558,9 @@ textarea {
 	outline: none;
 
 	color: #333;
-	background: #FFF;
+	background: #fff;
 
-	border: 1px solid #B24926;
+	border: 1px solid #b24926;
 
 	box-shadow: 0 0 6px rgba(23,138,156,0.5),
 		inset 0 1px 3px rgba(0,0,0,0.2);
@@ -809,10 +809,10 @@ ul.icons li [class*=" icon-"] {
   width: .75em;
 }
 .icon-muted {
-  color: #eeeeee;
+  color: #eee;
 }
 .icon-border {
-  border: solid 1px #eeeeee;
+  border: solid 1px #eee;
   padding: .2em .25em .15em;
   border-radius: 3px;
 }
@@ -1218,14 +1218,14 @@ iframe {
 }
 
 #container {
-	background: #0769AD;
+	background: #0769ad;
 	margin: 0 auto;
 	padding: 0 20px;
 
 }
 
 .jquery-ui #container {
-	background: #B24926;
+	background: #b24926;
 }
 
 .jquery-mobile #container {
@@ -1233,11 +1233,11 @@ iframe {
 }
 
 .sizzlejs #container {
-	background: #9A1B1E;
+	background: #9a1B1E;
 }
 
 .qunitjs #container {
-	background: #390F39;
+	background: #390f39;
 }
 
 .jquery-foundation #container {
@@ -1256,6 +1256,21 @@ iframe {
 	border-radius: 0 0 10px 10px;
 	position: relative;
 }
+
+.jquery-ui #content-wrapper,
+.sizzlejs #content-wrapper,
+.qunitjs #content-wrapper,
+.jquery-learn #content-wrapper,
+.jquery-foundation #content-wrapper,
+.jquery-ui #banner-secondary,
+.sizzlejs #banner-secondary,
+.qunitjs #banner-secondary,
+.jquery-learn #banner-secondary,
+.jquery-foundation #banner-secondary {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
 .no-boxshadow #content-wrapper {
 	border: 1px solid #333;
 }
@@ -1351,8 +1366,8 @@ iframe {
 	border-left: 1px solid rgba(0, 0, 0, 0.347656);
 }
 
-.tinynav-container { display: none }
-.tinynav { display: none }
+.tinynav-container { display: none; }
+.tinynav { display: none; }
 
 #global-nav nav ul.links {
 	float: right;
@@ -1548,27 +1563,27 @@ iframe {
 
 #container,
 footer {
-	border-top: 1px solid #7ACEF4;
+	border-top: 1px solid #7acef4;
 }
 
 .jquery-ui #container,
 .jquery-ui footer {
-	border-top-color: #FAA523;
+	border-top-color: #faa523;
 }
 
 .jquery-mobile #container,
 .jquery-mobile footer {
-	border-top-color: #3EB249;
+	border-top-color: #3eb249;
 }
 
 .sizzlejs #container,
 .sizzlejs footer {
-	border-top-color: #FAA523;
+	border-top-color: #faa523;
 }
 
 .qunitjs #container,
 .qunitjs footer {
-	border-top-color: #9C3493;
+	border-top-color: #9c3493;
 }
 
 .jquery-learn #container,
@@ -1579,19 +1594,19 @@ footer {
 /* Brand Colors for General Use
    ========================================================================== */
 .color.black { background-color: #333; }
-.color.primary-blue { background-color: #0769AD; }
-.color.secondary-blue { background-color: #7ACEF4; }
-.color.navy-blue { background-color: #131B28; }
-.color.primary-orange { background-color: #FAA523; }
-.color.secondary-orange { background-color: #B24926; }
-.color.primary-green { background-color: #3EB249; }
+.color.primary-blue { background-color: #0769ad; }
+.color.secondary-blue { background-color: #7acef4; }
+.color.navy-blue { background-color: #131b28; }
+.color.primary-orange { background-color: #faa523; }
+.color.secondary-orange { background-color: #b24926; }
+.color.primary-green { background-color: #3eb249; }
 .color.secondary-green { background-color: #108040; }
-.color.sizzle-orange { background-color: #FAA523; }
-.color.sizzle-red { background-color: #9A1B1E; }
-.color.qunit-primary-purple { background-color: #9C3493; }
-.color.qunit-secondary-purple { background-color: #390F39; }
-.color.globalize-primary-aqua { background-color: #009B93; }
-.color.globalize-secondary-aqua { background-color: #41586B; }
+.color.sizzle-orange { background-color: #faa523; }
+.color.sizzle-red { background-color: #9a1B1E; }
+.color.qunit-primary-purple { background-color: #9c3493; }
+.color.qunit-secondary-purple { background-color: #390f39; }
+.color.globalize-primary-aqua { background-color: #009b93; }
+.color.globalize-secondary-aqua { background-color: #41586b; }
 
 /* Logo & Navigation
    ========================================================================== */
@@ -1828,6 +1843,10 @@ nav#main .searchform .icon-search {
 	height: 100px;
 }
 
+#broadcast:empty {
+	display: none;
+}
+
 /* Typography & Global Styles
    ========================================================================== */
 
@@ -2023,7 +2042,6 @@ pre b {
 
 #content figure img {
 	margin: 0 !important;
-	margin-bottom: 0 !important;
 }
 
 #content figcaption {
@@ -2143,7 +2161,7 @@ p.author a {
 }
 
 #banner-large-image p {
-	color: #CCCCCC;
+	color: #cccccc;
 	font: 700 normal 24px/36px "klavika-web", "Helvetica Neue", sans-serif;
 }
 
@@ -2179,7 +2197,7 @@ p.author a {
 
 #banner-secondary a,
 #banner-secondary a:hover {
-	color: #7ACEF4;
+	color: #7acef4;
 }
 
 #banner-secondary em,
@@ -2669,7 +2687,7 @@ footer .books li a cite {
 }
 
 .entry-wrapper {
-	border: 1px solid #CCC;
+	border: 1px solid #ccc;
 	border-top: 0;
 	padding: 10px;
 	border-radius: 0 0 5px 5px;
@@ -2764,7 +2782,7 @@ footer .books li a cite {
 }
 
 #options, #methods, #extension-points, #events, #quick-nav {
-	border: 1px solid #CCC;
+	border: 1px solid #ccc;
 	margin: 0 15px 15px;
 	padding: 10px;
 	overflow: auto;
@@ -2819,7 +2837,7 @@ footer .books li a cite {
 }
 .signature li,
 .api-item {
-	border-top: 1px solid #CCC;
+	border-top: 1px solid #ccc;
 }
 
 .signature li:first-child,
@@ -2880,7 +2898,13 @@ footer .books li a cite {
 /* Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 807px) {
+	#content-wrapper.row {
+		min-width: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
 	#global-nav ul.projects li.toggle-projects {
 		display: none;
 	}
@@ -2892,7 +2916,7 @@ footer .books li a cite {
 		clear: both;
 		margin: 0;
 		border-top: 1px solid #e7e7e7;
-		border-left: none;
+		border-right: none;
 		border-image: none;
 		box-shadow: none;
 		background-image: none;
@@ -2901,8 +2925,8 @@ footer .books li a cite {
 	.content-full.full-width #content,
 	.content-right #content,
 	.content-left #content {
-		padding-left: 2%;
-		padding-right: 2%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	#content {
@@ -2912,8 +2936,8 @@ footer .books li a cite {
 	}
 
 	#banner-secondary {
-		margin-left: -15px;
-		margin-right: -15px;
+		margin-left: -15px !important;
+		margin-right: -15px !important;
 	}
 
 	footer p.copyright,
@@ -3009,11 +3033,18 @@ footer .books li a cite {
 		border-top-right-radius: 10px;
 	}
 
+	.content-full.full-width #content,
+	.content-right #content,
+	.content-left #content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 	#banner-secondary {
 		border-top-left-radius: 9px;
 		border-top-right-radius: 9px;
-		margin-left: -10px;
-		margin-right: -10px;
+		margin-left: -10px !important;
+		margin-right: -10px !important;
 	}
 
 	#banner-secondary h2 {
@@ -3138,8 +3169,8 @@ footer .books li a cite {
 	}
 
 	#banner-secondary {
-		margin-left: -25px;
-		margin-right: -25px;
+		margin-left: -25px !important;
+		margin-right: -25px !important;
 	}
 
 	footer .footer-icon-links li a:before {
@@ -3575,7 +3606,7 @@ that IE7/8 do not support :nth-child.
 .cboxIE #cboxBottomRight,
 .cboxIE #cboxMiddleLeft,
 .cboxIE #cboxMiddleRight {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
 }
 
 
