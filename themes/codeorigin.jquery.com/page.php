@@ -3,7 +3,6 @@
 // attach custom header and footer tags
 function header_append() {
 	echo '
-	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/font-awesome.css" />
 	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/hint.2.0.0.min.css" />
 	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/jquery-ui.1.11.4.min.css" />
 	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/modal.css" />
@@ -25,7 +24,7 @@ function footer_append() {
 
 <?php the_post(); ?>
 
-<div id="sri-modal-template" title="jQuery Code Integration">
+<div id="sri-modal-template" title="Code Integration">
 	<div class="sri-modal-link">
 		<code>
 			&lt;script
