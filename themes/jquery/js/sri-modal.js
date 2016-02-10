@@ -29,11 +29,9 @@
 
 	// Helper functions
 	function replace ( string, values ) {
-		$.each( values, function( key, value ) {
-			string = string.replace( new RegExp( "\\{\\{" + key + "}}", "g" ), value );
-		} );
-
-		return string;
+		return string.replace( /\{\{([^}]+)}}/g, function( _, key ) {
+			return values[key];
+		});
 	}
 
 	clipboard = new Clipboard( "[data-clipboard-text]" );
