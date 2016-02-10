@@ -82,21 +82,6 @@
 	font: 15px/22px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
 }
 
-code {
-	font-family: "source-code-pro", Consolas, monospace ;
-	word-spacing: 0;
-	padding: 0 3px;
-	background-color: #e6e6e6;
-	border-radius: 3px;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-}
-
-code span {
-	word-wrap: normal;
-	white-space: nowrap;
-}
-
 #sri-modal-template {
 	display: none;
 }
