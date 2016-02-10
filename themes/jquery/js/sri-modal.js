@@ -38,7 +38,6 @@
 
 	clipboard.on( "success", function( e ) {
 		$( e.trigger )
-			.blur()
 			.attr( "data-hint", "Copied!" )
 			.on( "mouseout", function() {
 				$( this ).removeAttr( "data-hint" );
@@ -47,7 +46,6 @@
 
 	clipboard.on( "error", function( e ) {
 		$( e.trigger )
-			.blur()
 			.attr( "data-hint", "Press Ctrl+C to copy!" )
 			.on( "mouseout", function() {
 				$( this ).removeAttr( "data-hint" );
