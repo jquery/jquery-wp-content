@@ -5,23 +5,26 @@
 
 	// Show modal on click
 	$( "body" ).on( "click", ".open-sri-modal", function( event ) {
-		if ( !event.ctrlKey && !event.metaKey ) {
-			$( replace( modalTemplate, {
-				link: document.location.origin + $( this ).attr( "href" ),
-				hash: $( this ).attr( "data-hash" )
-			} ) ).removeAttr( "id" ).appendTo( "body" ).dialog( {
-				modal: true,
-				resizable: false,
-				width: 830,
-				dialogClass: "sri-modal",
-				draggable: false,
-				close: function() {
-					$( this ).remove();
-				}
-			} );
-
-			return false;
+		if ( event.ctrlKey || event.metaKey ) {
+			return;
 		}
+
+		$( replace( modalTemplate, {
+			link: document.location.origin + $( this ).attr( "href" ),
+			hash: $( this ).attr( "data-hash" )
+		} ) ).removeAttr( "id" ).appendTo( "body" ).dialog( {
+			modal: true,
+			resizable: false,
+			width: 830,
+			dialogClass: "sri-modal",
+			draggable: false,
+			close: function() {
+				$( this ).remove();
+			}
+		} );
+
+		event.preventDefault();
+		return false;
 	} );
 
 	// Helper functions
