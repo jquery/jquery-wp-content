@@ -6,6 +6,7 @@ function header_append() {
 	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/hint.2.0.0.min.css" />
 	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/jquery-ui.1.11.4.min.css" />
 	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/sri-modal.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" integrity="sha384-mf72GmkUsTKkmt05bABaLGVDDWha9SeDJTZ0tTQv4t1Tgz3CRQX+PENxJR8nQ7Tk" crossorigin="anonymous">
 ';
 }
 
