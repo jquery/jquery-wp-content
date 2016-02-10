@@ -26,8 +26,7 @@ function footer_append() {
 
 <div id="sri-modal-template" title="Code Integration">
 	<div class="sri-modal-link">
-		<code>
-			&lt;script
+		<code>&lt;script
 			&nbsp;&nbsp;<span>src="{{link}}"</span>
 			&nbsp;&nbsp;<span>integrity="{{hash}}"</span>
 			&nbsp;&nbsp;<span>crossorigin="anonymous"&gt;&lt;/script&gt;</span>
