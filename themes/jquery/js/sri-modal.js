@@ -38,17 +38,25 @@
 
 	clipboard.on( "success", function( e ) {
 		$( e.trigger )
-			.attr( "data-hint", "Copied!" )
-			.on( "mouseout", function() {
-				$( this ).removeAttr( "data-hint" );
+			.attr( "title", "Copied!" )
+			.tooltip()
+			.tooltip( "open" )
+			.one( "mouseout", function() {
+				$( this )
+					.removeAttr( "title" )
+					.tooltip( "destroy" );
 			} );
 	} );
 
 	clipboard.on( "error", function( e ) {
 		$( e.trigger )
-			.attr( "data-hint", "Press Ctrl+C to copy!" )
-			.on( "mouseout", function() {
-				$( this ).removeAttr( "data-hint" );
+			.attr( "title", "Press Ctrl+C to copy!" )
+			.tooltip()
+			.tooltip( "open" )
+			.one( "mouseout", function() {
+				$( this )
+					.removeAttr( "title" )
+					.tooltip( "destroy" );
 			} );
 	} );
 })();

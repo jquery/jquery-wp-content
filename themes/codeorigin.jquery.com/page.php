@@ -3,10 +3,8 @@
 // attach custom header and footer tags
 function header_append() {
 	echo '
-	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/hint.2.0.0.min.css" />
-	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/jquery-ui.1.11.4.min.css" />
-	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/sri-modal.css" />
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" integrity="sha384-mf72GmkUsTKkmt05bABaLGVDDWha9SeDJTZ0tTQv4t1Tgz3CRQX+PENxJR8nQ7Tk" crossorigin="anonymous">
+	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/sri-modal.css" />
 ';
 }
 
@@ -33,7 +31,7 @@ function footer_append() {
 			&nbsp;&nbsp;<span>crossorigin="anonymous"&gt;&lt;/script&gt;</span>
 		</code>
 
-		<button class="sri-modal-copy-btn hint--top hint-rounded hint--always"
+		<button class="sri-modal-copy-btn"
 			data-clipboard-text='&lt;script src="{{link}}" integrity="{{hash}}" crossorigin="anonymous"&gt;&lt;/script&gt;'>
 			<i class="sri-modal-icon-copy icon-copy"></i>
 		</button>
