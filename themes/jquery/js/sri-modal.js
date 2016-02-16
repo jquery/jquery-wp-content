@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function() {
 	// Store modal templates
 	var modalTemplate = $( "#sri-modal-template" )[ 0 ].outerHTML,
 		clipboard;
@@ -24,7 +24,6 @@
 		} );
 
 		event.preventDefault();
-		return false;
 	} );
 
 	// Helper functions
@@ -59,4 +58,4 @@
 					.tooltip( "destroy" );
 			} );
 	} );
-})();
+});

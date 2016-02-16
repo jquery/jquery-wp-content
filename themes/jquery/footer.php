@@ -36,12 +36,7 @@
 	</div>
 </footer>
 
-<?php
-	wp_footer();
-
-	if ( function_exists( 'footer_append' ) )
-		footer_append();
-?>
+<?php wp_footer(); ?>
 
 </body>
 </html>

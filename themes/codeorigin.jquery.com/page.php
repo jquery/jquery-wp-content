@@ -1,22 +1,10 @@
 <?php
+wp_enqueue_style('jquery-ui', 'https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css');
+wp_enqueue_style('sri-modal', get_template_directory_uri() . '/css/sri-modal.css');
 
-// attach custom header and footer tags
-function header_append() {
-	echo '
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css" integrity="sha384-mf72GmkUsTKkmt05bABaLGVDDWha9SeDJTZ0tTQv4t1Tgz3CRQX+PENxJR8nQ7Tk" crossorigin="anonymous">
-	<link rel="stylesheet" href="' . get_template_directory_uri() . '/css/sri-modal.css" />
-';
-}
-
-function footer_append() {
-	echo '
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA" crossorigin="anonymous"></script>
-	<script src="' . get_template_directory_uri() . '/js/clipboard.1.5.5.min.js"></script>
-	<script src="' . get_template_directory_uri() . '/js/sri-modal.js"></script>
-';
-}
-
+wp_enqueue_script('jquery-ui', 'https://code.jquery.com/ui/1.11.4/jquery-ui.min.js');
+wp_enqueue_script('clipboard', get_template_directory_uri() . '/js/clipboard.1.5.5.min.js');
+wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js');
 ?>
 
 <?php get_header(); ?>
