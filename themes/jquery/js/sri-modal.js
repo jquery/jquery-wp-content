@@ -23,6 +23,7 @@ $(document).ready(function() {
 			}
 		} );
 
+		$('.sri-modal-copy-btn').tooltip();
 		event.preventDefault();
 	} );
 
@@ -37,25 +38,17 @@ $(document).ready(function() {
 
 	clipboard.on( "success", function( e ) {
 		$( e.trigger )
-			.attr( "title", "Copied!" )
-			.tooltip()
-			.tooltip( "open" )
+			.tooltip( "option", "content", "Copied!" )
 			.one( "mouseout", function() {
-				$( this )
-					.removeAttr( "title" )
-					.tooltip( "destroy" );
+				$( this ).tooltip( "option", "content", "Copy to clipboard!" );
 			} );
 	} );
 
 	clipboard.on( "error", function( e ) {
 		$( e.trigger )
-			.attr( "title", "Press Ctrl+C to copy!" )
-			.tooltip()
-			.tooltip( "open" )
+			.tooltip( "option", "content", "Press Ctrl+C to copy!" )
 			.one( "mouseout", function() {
-				$( this )
-					.removeAttr( "title" )
-					.tooltip( "destroy" );
+				$( this ).tooltip( "option", "content", "Copy to clipboard!" );
 			} );
 	} );
 });

@@ -19,7 +19,7 @@ wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js'
 			&nbsp;&nbsp;<span>crossorigin="anonymous"&gt;&lt;/script&gt;</span>
 		</code>
 
-		<button class="sri-modal-copy-btn"
+		<button class="sri-modal-copy-btn" title="Copy to clipboard!"
 			data-clipboard-text='&lt;script src="{{link}}" integrity="{{hash}}" crossorigin="anonymous"&gt;&lt;/script&gt;'>
 			<i class="sri-modal-icon-copy icon-copy"></i>
 		</button>
