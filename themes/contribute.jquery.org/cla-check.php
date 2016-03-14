@@ -26,6 +26,9 @@ get_footer();
 
 
 function getData() {
+	// 'jquery' is the owner for legacy URLs that were created
+	// before multi-repo support existed
+	$owner = empty( $_GET[ 'owner' ] ) ? 'jquery' : $_GET[ 'owner' ];
 	$repo = empty( $_GET[ 'repo' ] ) ? null : $_GET[ 'repo' ];
 	$sha = empty( $_GET[ 'sha' ] ) ? null : $_GET[ 'sha' ];
 
@@ -33,7 +36,7 @@ function getData() {
 		return null;
 	}
 
-	$path = "$repo/" . substr( $sha, 0, 2 ) . "/$sha.json";
+	$path = "$owner/$repo/" . substr( $sha, 0, 2 ) . "/$sha.json";
 	$data = @file_get_contents( JQUERY_CLA_SERVER_URL . "/$path" );
 
 	if ( !$data ) {
