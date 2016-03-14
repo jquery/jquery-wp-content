@@ -37,6 +37,11 @@ function getData() {
 	}
 
 	$path = "$owner/$repo/" . substr( $sha, 0, 2 ) . "/$sha.json";
+
+	if ( strpos( $path, '..' ) !== FALSE ) {
+		return null;
+	}
+
 	$data = @file_get_contents( JQUERY_CLA_SERVER_URL . "/$path" );
 
 	if ( !$data ) {
