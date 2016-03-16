@@ -50,6 +50,7 @@ function getData() {
 
 	$data = json_decode( $data );
 	$data = normalizeData( $data );
+	$data->owner = $owner;
 	$data->repo = $repo;
 	return $data;
 }
@@ -132,7 +133,7 @@ function neglectedAuthors( $data ) {
 }
 
 function commitLog( $data ) {
-	$commitPrefix = "https://github.com/jquery/$data->repo/commit/";
+	$commitPrefix = "https://github.com/$data->owner/$data->repo/commit/";
 
 	$html = "<dl>\n";
 	foreach ( $data->data->commits as $commit ) {
