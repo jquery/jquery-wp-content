@@ -13,3 +13,5 @@ if ( 0 === validate_file( $live_domain ) ) {
 	}
 }
 unset( $live_domain, $subdomain, $domain_specific_file, $type_specific_file );
+
+require 'disable-emojis/disable-emojis.php';

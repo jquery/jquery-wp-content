@@ -1,89 +1,13 @@
-Copyright jQuery Foundation and other contributors, https://jquery.org/
+		    GNU GENERAL PUBLIC LICENSE
+		       Version 2, June 1991
 
-This software consists of voluntary contributions made by many
-individuals. For exact contribution history, see the revision history
-available at https://github.com/jquery/jquery-wp-content
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc. 
+              51 Franklin St, Fifth Floor, Boston, MA 02110, USA
 
-All PHP files in this software that are not externally maintained
-libraries are derivative works of WordPress and licensed under the terms
-GPLv2 or later.
-
-====
-
-The following externally maintained libraries used by this software have
-their own licenses; we recommend you read them, as their terms may
-differ from the terms above.
-
-- Allow Numeric Stubs
-	http://www.viper007bond.com/wordpress-plugins/allow-numeric-stubs/
-	located at plugins/allow-numeric-stubs
-
-- Colorbox
-	http://www.jacklmoore.com/colorbox/
-	located at themes/jquery/js/plugins.js
-
-- Disable Emojis
-	https://wordpress.org/plugins/disable-emojis/
-	located at mu-plugins/disable-emojis
-
-- FlexSlider
-	http://www.woothemes.com/flexslider/
-	located at themes/jquery/js/plugins.js
-
-- Grunt Wordpress
-	https://github.com/scottgonzalez/grunt-wordpress
-	located at mu-plugins/grunt-wodpress.php
-
-- matchMedia.js
-	https://github.com/paulirish/matchMedia.js
-	located at themes/jquery/js/plugins.js
-
-- Modernizr
-	http://modernizr.com/
-	located at themes/jquery/js/modernizr.custom.2.8.3.min.js
-
-- No Comments on Pages
-	http://jaka.kubje.org/wp/software/no-comments-on-pages/
-	located at plugins/no-comments-on-pages
-
-- Respond.js
-	https://github.com/scottjehl/Respond
-	located at themes/jquery/js/plugins.js
-
-- Stripe PHP Bindings
-	https://github.com/stripe/stripe-php
-	located at mu-plugins/jquery.org/lib/Stripe
-
-- TinyNav.js
-	http://tinynav.viljamis.com
-	located at themes/jquery/js/plugins.js
-
-- VaultPress
-	http://vaultpress.com/
-	located at plugins/vaultpress
-
-The design, layout, and look-and-feel of jquery-wp-content - including
-all CSS, images, and icons, except as noted above - are copyright jQuery
-Foundation and are not licensed for use. Designs and CSS from
-jquery-wp-content may not be used on any site, personal or commerical,
-without prior written consent from the jQuery Foundation.
-
-The only permitted (and encouraged) exception to "use" is the case of
-cloning/forking this repository in order to create a local development
-environment to facilitate making contributions to jQuery Foundation
-web sites.
-
-====
-
-                    GNU GENERAL PUBLIC LICENSE
-                       Version 2, June 1991
-
- Copyright (C) 1989, 1991 Free Software Foundation, Inc.,
- 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
-                            Preamble
+			    Preamble
 
   The licenses for most software are designed to take away your
 freedom to share and change it.  By contrast, the GNU General Public
@@ -92,7 +16,7 @@ software--to make sure the software is free for all its users.  This
 General Public License applies to most of the Free Software
 Foundation's software and to any other program whose authors commit to
 using it.  (Some other Free Software Foundation software is covered by
-the GNU Lesser General Public License instead.)  You can apply it to
+the GNU Library General Public License instead.)  You can apply it to
 your programs, too.
 
   When we speak of free software, we are referring to freedom, not
@@ -133,7 +57,7 @@ patent must be licensed for everyone's free use or not licensed at all.
   The precise terms and conditions for copying, distribution and
 modification follow.
 
-                    GNU GENERAL PUBLIC LICENSE
+		    GNU GENERAL PUBLIC LICENSE
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. This License applies to any program or other work which contains
@@ -197,7 +121,6 @@ distribute the same sections as part of a whole which is a work based
 on the Program, the distribution of the whole must be on the terms of
 this License, whose permissions for other licensees extend to the
 entire whole, and thus to each and every part regardless of who wrote it.
-
 Thus, it is not the intent of this section to claim rights or contest
 your rights to work written entirely by you; rather, the intent is to
 exercise the right to control the distribution of derivative or
@@ -332,7 +255,7 @@ make exceptions for this.  Our decision will be guided by the two goals
 of preserving the free status of all derivatives of our free software and
 of promoting the sharing and reuse of software generally.
 
-                            NO WARRANTY
+			    NO WARRANTY
 
   11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
 FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
@@ -353,3 +276,6 @@ TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
 YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
 PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGES.
+
+		     END OF TERMS AND CONDITIONS
+
