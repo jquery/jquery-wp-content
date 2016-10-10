@@ -2491,12 +2491,12 @@ footer p.copyright span.sponsor-line {
 
 footer p.copyright a.do-link {
 	background: url(../images/logo-do.png) left top no-repeat;
-	padding-left: 17px;
+	padding: 2px 0 2px 17px;
 }
 
 footer p.copyright a.sp-link {
 	background: url(../images/logo-sp.png) left top no-repeat;
-	padding-left: 19px;
+	padding: 2px 0 2px 19px;
 }
 
 .footer-site-links li {
