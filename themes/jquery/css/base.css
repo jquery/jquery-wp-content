@@ -2489,24 +2489,14 @@ footer p.copyright span.sponsor-line {
 	margin-top: 1em;
 }
 
-footer p.copyright a.mt-link {
-	background: url(../images/logo-mediatemple.png) left top no-repeat;
-	padding-left: 31px;
+footer p.copyright a.do-link {
+	background: url(../images/logo-do.png) left top no-repeat;
+	padding-left: 17px;
 }
 
-footer p.copyright a.mc-link {
-	background: url(../images/logo-maxcdn.png) left top no-repeat;
-	padding-left: 24px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-
-footer p.copyright a.wp-link {
-	background: url(../images/logo-wordpress.png) left top no-repeat;
+footer p.copyright a.sp-link {
+	background: url(../images/logo-sp.png) left top no-repeat;
 	padding-left: 19px;
-	padding-top: 1px;
-	display: inline-block;
-	height: 16px;
 }
 
 .footer-site-links li {
