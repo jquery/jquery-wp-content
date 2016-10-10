@@ -38,7 +38,7 @@ wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js'
 	<div id="content">
 		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<div class="powered-by">Powered by <a href="http://www.stackpath.com"><img src="images/stackpath.png"></a></div>
+		<div class="powered-by">Powered by <a href="http://www.stackpath.com"><img src="https://jquery.org/jquery-wp-content/themes/jquery/images/stackpath.png"></a></div>
 		<hr>
 		<?php endif; ?>
 
