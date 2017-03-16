@@ -314,6 +314,17 @@ function jquery_sites() {
 				'active_plugins' => array(),
 			),
 		),
+		'api.jquerymobile.com/1.4' => array(
+			'blog_id' => 28,
+			'cookie_domain' => '.jquerymobile.com',
+			'body_class' => 'jquery-mobile',
+			'logo_link' => 'http://jquerymobile.com/',
+			'options' => array(
+				'blogname' => 'jQuery Mobile 1.4 Documentation',
+				'stylesheet' => 'api.jquerymobile.com',
+				'active_plugins' => array(),
+			),
+		),
 	);
 
 	uasort( $sites, function( $a, $b ) {
