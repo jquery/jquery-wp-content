@@ -28,6 +28,13 @@
 							<cite>Cody Lindley</cite>
 						</a>
 					</li>
+					<li>
+						<a href="https://www.amazon.com/jQuery-Gems-JavaScript-beginners-programming-ebook/dp/B00GW7Q9DW?tag=j0a1a-20">
+							<img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-gems.jpg" alt="jQuery Gems by Greg Sidelnikov" width="92" height="114">
+							jQuery Gems
+							<cite>Greg Sidelnikov</cite>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
