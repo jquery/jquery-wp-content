@@ -41,10 +41,7 @@
 			<a href="<?php echo "$rootUrl/category/all"; ?>">full listing of entries</a>, or browse by
 			category from the sidebar.</p>
 
-		<p>jQuery Mobile <?php echo $thisVersion; ?>
-		<?php if ( $thisVersion == "1.5" ) {
-			echo "uses jQuery UI " . $ui_versions[ $thisVersion ] . " and";
-		} ?>
+		<p>jQuery Mobile <?php echo $thisVersion; ?> uses jQuery UI <?php echo $ui_versions[ $thisVersion ] ?> and
 		supports jQuery <?php echo $versions[ $thisVersion ]; ?>.
 
 		<p>See the <a href="http://jquerymobile.com/gbs/<?php echo $thisVersion; ?>">supported platforms</a> page for a list of all

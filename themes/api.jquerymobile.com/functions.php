@@ -11,7 +11,9 @@ function jq_mobile_api_versions() {
 
 function jq_mobile_ui_api_versions() {
 	return array(
-		'1.5' => '1.12'
+		'1.5' => '1.12',
+		'1.4' => '1.10',
+		'1.3' => '1.9'
 	);
 }
 
