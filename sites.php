@@ -12,6 +12,7 @@ function jquery_sites() {
 			'body_class' => 'jquery',
 			'options' => array(
 				'blogname' => 'jQuery',
+				'description' => 'jQuery: The Write Less, Do More, JavaScript Library',
 				'stylesheet' => 'jquery.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -66,6 +67,7 @@ function jquery_sites() {
 			'body_class' => 'jquery-ui',
 			'options' => array(
 				'blogname' => 'jQuery UI',
+				'description' => 'jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you\'re building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.',
 				'stylesheet' => 'jqueryui.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -133,6 +135,7 @@ function jquery_sites() {
 			'body_class' => 'qunitjs',
 			'options' => array(
 				'blogname' => 'QUnit',
+				'description' => 'QUnit: A JavaScript Unit Testing framework.',
 				'stylesheet' => 'qunitjs.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -289,6 +292,39 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.10 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
+				'active_plugins' => array(),
+			),
+		),
+		'api.jqueryui.com/1.12' => array(
+			'blog_id' => 26,
+			'cookie_domain' => '.jqueryui.com',
+			'body_class' => 'jquery-ui',
+			'logo_link' => 'http://jqueryui.com/',
+			'options' => array(
+				'blogname' => 'jQuery UI 1.12 Documentation',
+				'stylesheet' => 'api.jqueryui.com',
+				'active_plugins' => array(),
+			),
+		),
+		'api.jqueryui.com/1.11' => array(
+			'blog_id' => 27,
+			'cookie_domain' => '.jqueryui.com',
+			'body_class' => 'jquery-ui',
+			'logo_link' => 'http://jqueryui.com/',
+			'options' => array(
+				'blogname' => 'jQuery UI 1.11 Documentation',
+				'stylesheet' => 'api.jqueryui.com',
+				'active_plugins' => array(),
+			),
+		),
+		'api.jquerymobile.com/1.4' => array(
+			'blog_id' => 28,
+			'cookie_domain' => '.jquerymobile.com',
+			'body_class' => 'jquery-mobile',
+			'logo_link' => 'http://jquerymobile.com/',
+			'options' => array(
+				'blogname' => 'jQuery Mobile 1.4 Documentation',
+				'stylesheet' => 'api.jquerymobile.com',
 				'active_plugins' => array(),
 			),
 		),

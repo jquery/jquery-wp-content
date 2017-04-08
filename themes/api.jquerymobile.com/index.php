@@ -5,6 +5,7 @@
 	$versions = jq_mobile_api_versions();
 	$latestVersion = jq_mobile_api_version_latest();
 	$thisVersion = jq_mobile_api_version_current();
+	$ui_versions = jq_mobile_ui_api_versions();
 	$rootUrl = $thisVersion === $latestVersion ? '' : "/$thisVersion";
 ?>
 
@@ -18,7 +19,7 @@
 		<p>jQuery Mobile is the easiest way to build sites and apps that are accessible on all
 			popular smartphone, tablet and desktop devices.</p>
 
-		<p>If you are new to jQuery Mobile, the introduction to the framework in the 
+		<p>If you are new to jQuery Mobile, the introduction to the framework in the
 			<a href="http://demos.jquerymobile.com/">Demos</a>
 			would be a good place to start.</p>
 
@@ -40,11 +41,11 @@
 			<a href="<?php echo "$rootUrl/category/all"; ?>">full listing of entries</a>, or browse by
 			category from the sidebar.</p>
 
-		<p>jQuery Mobile <?php echo $thisVersion; ?>
-			supports jQuery <?php echo $versions[ $thisVersion ]; ?>.</p>
+		<p>jQuery Mobile <?php echo $thisVersion; ?> uses jQuery UI <?php echo $ui_versions[ $thisVersion ] ?> and
+		supports jQuery <?php echo $versions[ $thisVersion ]; ?>.
 
 		<p>See the <a href="http://jquerymobile.com/gbs/<?php echo $thisVersion; ?>">supported platforms</a> page for a list of all
-			operating systems and browsers that are supported by this version of jQuery Mobile.</p> 
+			operating systems and browsers that are supported by this version of jQuery Mobile.</p>
 
 		<hr>
 

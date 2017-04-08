@@ -1,0 +1,88 @@
+/*
+ * Added for SRI Modal
+ */
+.sri-modal {
+	padding: 0;
+	border: none;
+	background: #fff;
+	border-radius: 0;
+}
+
+.sri-modal .ui-dialog-titlebar {
+	padding: 0;
+	border: none;
+	background: #fff;
+	color: #000;
+	cursor: auto;
+}
+
+.sri-modal .ui-dialog-title {
+	padding-top: 20px;
+	text-align: center;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-weight: 400;
+	width: 100%;
+}
+
+.sri-modal .ui-dialog-titlebar-close {
+	background: none;
+	border: none;
+	right: 28px;
+}
+
+.sri-modal .ui-icon-closethick {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEUAAADMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMxg1ZvWAAAAJXRSTlMAAQIDBAUGCQsNDhQWGSg4g4uUoKOoq62vsLW8wMrO2tzk5ujxm/5xbwAAAGxJREFUGBmNwVcWgkAQRcFHg4FgzjomZu7+t+hpRv6p0iS7byPJTs+5BluIjewML5O7A3F1AdJMrgpkqVVWBVxqNVriNhrZDRdrZXYl62sNjkBaB6Cv5PaQOpUB3iZXHFInqXx8FvozDQpN8gNoXAtiMhPWmQAAAABJRU5ErkJggg==) 0 0;
+}
+
+.sri-modal .ui-widget-content {
+	padding: 30px 0 0 0;
+}
+
+.sri-modal .ui-widget-content a {
+	color: #b24926;
+}
+
+.sri-modal-link {
+	width: 810px;
+	word-wrap: break-word;
+	word-break: break-all;
+	display: inline-block;
+	background-color: #f8fbfb;
+	padding: 0 10px;
+	position: relative;
+}
+
+.sri-modal-link code {
+	width: 765px;
+	display: inline-block;
+	white-space: pre-line;
+	background-color: transparent;
+	padding: 0;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.sri-modal-copy-btn {
+	background-color: #1c6db3;
+	border: none;
+	font-size: 1rem;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	position: absolute;
+	top: 5px;
+}
+
+.sri-modal-copy-btn > i {
+	color: #fff;
+}
+
+.sri-modal-info {
+	padding: 15px;
+	font: 15px/22px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+}
+
+#sri-modal-template {
+	display: none;
+}
+

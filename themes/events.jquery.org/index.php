@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<div id="banner-secondary" class="large-banner">
-	<div class="banner-text">
-	<h1>jQuery is better with friends.</h1>
-	<p>There are loads of events big and small.</p>
-	</div>
-</div>
-
 <div class="content-full full-width twelve columns">
 	<div id="content">
+		<div id="banner-secondary" class="large-banner">
+			<div class="banner-text">
+				<h1>jQuery is better with friends.</h1>
+				<p>There are loads of events big and small.</p>
+			</div>
+		</div>
+
 		<?php if ( count( $events[ 'future' ] ) === 0 ) : ?>
 			<p>
 			Unfortunately there are no upcoming events right now.

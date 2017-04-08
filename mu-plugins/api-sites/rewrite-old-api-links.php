@@ -13,7 +13,7 @@ if ( false === strpos( JQUERY_LIVE_SITE, '/' ) )
 list( , $subsite ) = explode( '/', JQUERY_LIVE_SITE, 2 );
 
 $callback = function( $content ) use ( $subsite ) {
-	$content = preg_replace( '~(href|src)=(["\'])/(?!\d+\.\d+/)(?=/'.JQUERY_LIVE_DOMAIN.')~', '$1=$2/' . $subsite . '/', $content );
+	$content = preg_replace( '~(href|src)=(["\'])/(?!(\d+\.\d+/|/))~', '$1=$2/' . $subsite . '/', $content );
 	return $content;
 };
 

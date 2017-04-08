@@ -26,6 +26,9 @@ get_footer();
 
 
 function getData() {
+	// 'jquery' is the owner for legacy URLs that were created
+	// before multi-repo support existed
+	$owner = empty( $_GET[ 'owner' ] ) ? 'jquery' : $_GET[ 'owner' ];
 	$repo = empty( $_GET[ 'repo' ] ) ? null : $_GET[ 'repo' ];
 	$sha = empty( $_GET[ 'sha' ] ) ? null : $_GET[ 'sha' ];
 
@@ -33,7 +36,12 @@ function getData() {
 		return null;
 	}
 
-	$path = "$repo/" . substr( $sha, 0, 2 ) . "/$sha.json";
+	$path = "$owner/$repo/" . substr( $sha, 0, 2 ) . "/$sha.json";
+
+	if ( strpos( $path, '..' ) !== FALSE ) {
+		return null;
+	}
+
 	$data = @file_get_contents( JQUERY_CLA_SERVER_URL . "/$path" );
 
 	if ( !$data ) {
@@ -42,6 +50,7 @@ function getData() {
 
 	$data = json_decode( $data );
 	$data = normalizeData( $data );
+	$data->owner = $owner;
 	$data->repo = $repo;
 	return $data;
 }
@@ -110,14 +119,21 @@ function getProcessedPost( $data ) {
 function neglectedAuthors( $data ) {
 	$html = "<ul>\n";
 	foreach ( $data->data->neglectedAuthors as $author ) {
-		$html .= "<li>" . htmlspecialchars( "$author->name <$author->email>" ) . "</li>\n";
+		$html .= "<li>" . htmlspecialchars( "$author->name <$author->email>" );
+		if ( count( $author->errors ) ) {
+			$html .= ": ";
+			foreach( $author->errors as $error ) {
+				$html .= htmlspecialchars( " $error" );
+			}
+		}
+		$html .= "</li>\n";
 	}
 	$html .= "</ul>\n";
 	return $html;
 }
 
 function commitLog( $data ) {
-	$commitPrefix = "https://github.com/jquery/$data->repo/commit/";
+	$commitPrefix = "https://github.com/$data->owner/$data->repo/commit/";
 
 	$html = "<dl>\n";
 	foreach ( $data->data->commits as $commit ) {

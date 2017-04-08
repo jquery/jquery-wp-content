@@ -15,7 +15,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="http://www.manning.com/derosa?a_aid=141d9491&a_bid=bdd5b7ad">
+						<a href="https://www.manning.com/books/jquery-in-action-third-edition?a_bid=bdd5b7ad&amp;a_aid=141d9491">
 							<img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault, Yehuda Katz, and Aurelio De Rosa" width="92" height="114">
 							jQuery in Action
 							<cite>Bear Bibeault, Yehuda Katz, and Aurelio De Rosa</cite>

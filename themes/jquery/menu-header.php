@@ -39,7 +39,8 @@ function menu_header_codeorigin_jquery_com() {
 		'/ui/' => 'jQuery UI',
 		'/mobile/' => 'jQuery Mobile',
 		'/color/' => 'jQuery Color',
-		'/qunit/' => 'QUnit'
+		'/qunit/' => 'QUnit',
+		'/pep/' => 'PEP'
 	);
 }
 
@@ -50,7 +51,8 @@ function menu_header_qunitjs_com() {
 		'http://api.qunitjs.com/' => 'API Documentation',
 		'http://qunitjs.com/cookbook/' => 'Cookbook',
 		'http://qunitjs.com/plugins/' => 'Plugins',
-		'http://qunitjs.com/upgrade-guide-2.x/' => '2.x Upgrade Guide'
+		'http://qunitjs.com/upgrade-guide-2.x/' => '2.x Upgrade Guide',
+		'http://qunitjs.com/about/' => 'About'
 	);
 }
 
@@ -94,6 +96,7 @@ function menu_header_jquery_org() {
 		'https://jquery.org/members/' => 'Members',
 		'https://jquery.org/support/' => 'Support',
 		'https://jquery.org/team/' => 'Team',
+		'https://jquery.org/conduct/' => 'Conduct',
 		'http://meetings.jquery.org/' => 'Meetings',
 		'https://jquery.org/history/' => 'History',
 		'http://brand.jquery.org/' => 'Brand Guide',

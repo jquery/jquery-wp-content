@@ -17,7 +17,7 @@
 	?></title>
 
 	<meta name="author" content="jQuery Foundation - jquery.org">
-	<meta name="description" content="jQuery: The Write Less, Do More, JavaScript Library">
+	<meta name="description" content="<?php echo jq_meta_description(); ?>">
 
 	<meta name="viewport" content="width=device-width">
 
@@ -28,8 +28,7 @@
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.8.3.min.js"></script>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
@@ -93,6 +92,7 @@
 							<li><a href="https://jquery.org/join/">Join</a></li>
 							<li><a href="https://jquery.org/members/">Members</a></li>
 							<li><a href="https://jquery.org/team/">Team</a></li>
+							<li><a href="https://jquery.org/conduct/">Conduct</a></li>
 							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
 							<li><a href="https://jquery.org/donate/">Donate</a></li>
 						</ul>

@@ -1,10 +1,10 @@
 <?php
+/**
+ * Plugin Name: jquery-wp-content Redirection extensions
+ * Description: Adds custom XML-RPC methods to control redirection.
+ */
 
-$jquery_redirects = array(
-	'qunitjs.com' => array(
-		'/addons/' => '/plugins/'
-	)
-);
+$jquery_redirects = 'jquery_redirects';
 
 add_filter( 'template_redirect', function() {
 	global $jquery_redirects;
@@ -14,14 +14,33 @@ add_filter( 'template_redirect', function() {
 		return;
 	}
 
-	// Check if this site has any redirects
-	if ( empty( $jquery_redirects[ JQUERY_LIVE_SITE ] ) ) {
-		return;
+	$url = trailingslashit( $_SERVER[ 'REQUEST_URI' ] );
+
+	// Check for redirects stored in the transients
+	$transient = get_option( $jquery_redirects );
+
+	if ( $transient && !empty( $transient[ $url ] ) ) {
+		wp_redirect( $transient[ $url ], 301 );
+	}
+} );
+
+add_filter( 'xmlrpc_methods', function( $methods ) {
+	$methods[ 'jq.setRedirects' ] = 'jq_set_redirects';
+	return $methods;
+} );
+
+function jq_set_redirects( $args ) {
+	global $wp_xmlrpc_server;
+	global $jquery_redirects;
+
+	// Authenticate
+	$username = $args[ 1 ];
+	$password = $args[ 2 ];
+
+	if ( ! $user = $wp_xmlrpc_server->login( $username, $password ) ) {
+		return $wp_xmlrpc_server->error;
 	}
 
-	// See if any redirects match the current URL
-	$url = trailingslashit( $_SERVER[ 'REQUEST_URI' ] );
-	if ( !empty( $jquery_redirects[ JQUERY_LIVE_SITE ][ $url ] ) ) {
-		wp_redirect( $jquery_redirects[ JQUERY_LIVE_SITE ][ $url ], 301 );
-	}
-});
+	// Store redirects
+	return update_option( $jquery_redirects, json_decode( $args[ 3 ], true ) );
+}

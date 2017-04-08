@@ -1,12 +1,23 @@
 <?php
+// This is a single network configuration and the network is defined in config.php
+if ( defined( 'DOMAIN_CURRENT_SITE' ) && defined( 'PATH_CURRENT_SITE' ) ) {
+	$current_site = new stdClass;
+	$current_site->id = defined( 'SITE_ID_CURRENT_SITE' ) ? SITE_ID_CURRENT_SITE : 1;
+	$current_site->blog_id = defined( 'BLOG_ID_CURRENT_SITE' ) ? BLOG_ID_CURRENT_SITE : 1;
+	$current_site->cookie_domain = defined( 'COOKIE_DOMAIN' ) ? COOKIE_DOMAIN : '.jquery.com';
+	$current_site->domain = DOMAIN_CURRENT_SITE;
+	$current_site->path = PATH_CURRENT_SITE;
+	$current_site->site_name = 'jQuery';
+}
 
 if ( isset( $blog_id ) ) {
-	$current_site = wpmu_current_site();
-	if ( ! is_object( $current_site ) )
-		$current_site = new stdClass;
-	if ( ! isset( $current_site->site_name ) )
-		$current_site->site_name = 'jQuery';
 	$current_blog = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM $wpdb->blogs WHERE blog_id = %d", $blog_id ) );
+
+	// If for some reason this became a multi-network configuration, populate the site's network.
+	if ( is_object( $current_blog ) && $current_blog->site_id != $current_site->id ) {
+		$current_site = $wpdb->get_row( $wpdb->prepare( "SELECT * from $wpdb->site WHERE id = %d LIMIT 0,1", $current_blog->site_id ) );
+		$current_site->site_name = 'jQuery';
+	}
 
 	// Can't find the site in the DB:
 	if ( ! is_object( $current_blog ) ) {

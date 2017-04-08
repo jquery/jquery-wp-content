@@ -245,7 +245,7 @@ pre, code {
 	line-height: 16px;
 }
 code {
-	padding: 2px 5px;
+	padding: 0 3px;
 	background-color: #eee; /* support: IE8 */;
 	background-color: rgba( 0, 0, 0, .1 );
 	border-radius: 3px;
@@ -536,19 +536,19 @@ textarea {
  * 2. Using :placeholder for completeness.
  */
 ::-webkit-input-placeholder {
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 :-moz-placeholder { /* 1 */
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 ::-moz-placeholder {
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 :-ms-placeholder {
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 :placeholder { /* 2 */
-	color: #9A1B1E;
+	color: #9a1B1E;
 }
 
 #content input:focus,
@@ -558,12 +558,12 @@ textarea {
 	outline: none;
 
 	color: #333;
-	background: #FFF;
+	background: #fff;
 
-	border: 1px solid #B24926;
+	border: 1px solid #b24926;
 
-	box-shadow: 0px 0px 6px rgba(23,138,156,0.5),
-		inset 0px 1px 3px rgba(0,0,0,0.2);
+	box-shadow: 0 0 6px rgba(23,138,156,0.5),
+		inset 0 1px 3px rgba(0,0,0,0.2);
 }
 
 /**
@@ -717,7 +717,7 @@ table {
   line-height: normal;
   vertical-align: baseline;
   background-image: none;
-  background-position: 0% 0%;
+  background-position: 0 0;
   background-repeat: repeat;
   margin-top: 0;
 }
@@ -777,13 +777,6 @@ a [class*=" icon-"] {
 .nav-tabs [class^="icon-"],
 .nav-pills [class^="icon-"],
 .nav-tabs [class*=" icon-"],
-.nav-pills [class*=" icon-"] {
-  /* keeps button heights with and without icons the same */
-
-}
-.nav-tabs [class^="icon-"],
-.nav-pills [class^="icon-"],
-.nav-tabs [class*=" icon-"],
 .nav-pills [class*=" icon-"],
 .nav-tabs [class^="icon-"].icon-large,
 .nav-pills [class^="icon-"].icon-large,
@@ -816,10 +809,10 @@ ul.icons li [class*=" icon-"] {
   width: .75em;
 }
 .icon-muted {
-  color: #eeeeee;
+  color: #eee;
 }
 .icon-border {
-  border: solid 1px #eeeeee;
+  border: solid 1px #eee;
   padding: .2em .25em .15em;
   border-radius: 3px;
 }
@@ -1225,14 +1218,14 @@ iframe {
 }
 
 #container {
-	background: #0769AD;
+	background: #0769ad;
 	margin: 0 auto;
 	padding: 0 20px;
 
 }
 
 .jquery-ui #container {
-	background: #B24926;
+	background: #b24926;
 }
 
 .jquery-mobile #container {
@@ -1240,11 +1233,11 @@ iframe {
 }
 
 .sizzlejs #container {
-	background: #9A1B1E;
+	background: #9a1B1E;
 }
 
 .qunitjs #container {
-	background: #390F39;
+	background: #390f39;
 }
 
 .jquery-foundation #container {
@@ -1263,6 +1256,21 @@ iframe {
 	border-radius: 0 0 10px 10px;
 	position: relative;
 }
+
+.jquery-ui #content-wrapper,
+.sizzlejs #content-wrapper,
+.qunitjs #content-wrapper,
+.jquery-learn #content-wrapper,
+.jquery-foundation #content-wrapper,
+.jquery-ui #banner-secondary,
+.sizzlejs #banner-secondary,
+.qunitjs #banner-secondary,
+.jquery-learn #banner-secondary,
+.jquery-foundation #banner-secondary {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
 .no-boxshadow #content-wrapper {
 	border: 1px solid #333;
 }
@@ -1358,8 +1366,8 @@ iframe {
 	border-left: 1px solid rgba(0, 0, 0, 0.347656);
 }
 
-.tinynav-container { display: none }
-.tinynav { display: none }
+.tinynav-container { display: none; }
+.tinynav { display: none; }
 
 #global-nav nav ul.links {
 	float: right;
@@ -1373,7 +1381,7 @@ iframe {
 	top: 1px;
 	cursor: pointer;
 	transition: all 0.2s;
-	text-shadow: 0 0px 2px #000;
+	text-shadow: 0 0 2px #000;
 	border-left: 1px solid rgba(255, 255, 255, 0.0976562);
 	border-right: 1px solid rgba(0, 0, 0, 0.347656);
 }
@@ -1446,19 +1454,19 @@ iframe {
 }
 
 #global-nav nav ul.projects li.jquery-ui {
-	background-position: -57px 0px;
+	background-position: -57px 0;
 }
 
 #global-nav nav ul.projects li.jquery-mobile {
-	background-position: -107px 0px;
+	background-position: -107px 0;
 }
 
 #global-nav nav ul.projects li.sizzlejs {
-	background-position: -155px 0px;
+	background-position: -155px 0;
 }
 
 #global-nav nav ul.projects li.qunitjs {
-	background-position: -204px 0px;
+	background-position: -204px 0;
 }
 
 .jquery #global-nav nav ul.projects li.jquery {
@@ -1555,27 +1563,27 @@ iframe {
 
 #container,
 footer {
-	border-top: 1px solid #7ACEF4;
+	border-top: 1px solid #7acef4;
 }
 
 .jquery-ui #container,
 .jquery-ui footer {
-	border-top-color: #FAA523;
+	border-top-color: #faa523;
 }
 
 .jquery-mobile #container,
 .jquery-mobile footer {
-	border-top-color: #3EB249;
+	border-top-color: #3eb249;
 }
 
 .sizzlejs #container,
 .sizzlejs footer {
-	border-top-color: #FAA523;
+	border-top-color: #faa523;
 }
 
 .qunitjs #container,
 .qunitjs footer {
-	border-top-color: #9C3493;
+	border-top-color: #9c3493;
 }
 
 .jquery-learn #container,
@@ -1586,19 +1594,19 @@ footer {
 /* Brand Colors for General Use
    ========================================================================== */
 .color.black { background-color: #333; }
-.color.primary-blue { background-color: #0769AD; }
-.color.secondary-blue { background-color: #7ACEF4; }
-.color.navy-blue { background-color: #131B28; }
-.color.primary-orange { background-color: #FAA523; }
-.color.secondary-orange { background-color: #B24926; }
-.color.primary-green { background-color: #3EB249; }
+.color.primary-blue { background-color: #0769ad; }
+.color.secondary-blue { background-color: #7acef4; }
+.color.navy-blue { background-color: #131b28; }
+.color.primary-orange { background-color: #faa523; }
+.color.secondary-orange { background-color: #b24926; }
+.color.primary-green { background-color: #3eb249; }
 .color.secondary-green { background-color: #108040; }
-.color.sizzle-orange { background-color: #FAA523; }
-.color.sizzle-red { background-color: #9A1B1E; }
-.color.qunit-primary-purple { background-color: #9C3493; }
-.color.qunit-secondary-purple { background-color: #390F39; }
-.color.globalize-primary-aqua { background-color: #009B93; }
-.color.globalize-secondary-aqua { background-color: #41586B; }
+.color.sizzle-orange { background-color: #faa523; }
+.color.sizzle-red { background-color: #9a1B1E; }
+.color.qunit-primary-purple { background-color: #9c3493; }
+.color.qunit-secondary-purple { background-color: #390f39; }
+.color.globalize-primary-aqua { background-color: #009b93; }
+.color.globalize-secondary-aqua { background-color: #41586b; }
 
 /* Logo & Navigation
    ========================================================================== */
@@ -1665,31 +1673,31 @@ h2.logo a {
 
 .jquery.logo.small {
   width:109px;
-  background-position: -0px 0px;
+  background-position: -0 0;
 }
 .jquery-foundation.logo.small {
   width: 109px;
-  background-position: -109px 0px;
+  background-position: -109px 0;
 }
 .jquery-events.logo.small {
   width: 109px;
-  background-position: -219px 0px;
+  background-position: -219px 0;
 }
 .jqueryui.logo.small {
   width: 114px;
-  background-position: -327px 0px;
+  background-position: -327px 0;
 }
 .jquery-mobile.logo.small {
   width: 122px;
-  background-position: -442px 0px;
+  background-position: -442px 0;
 }
 .qunitjs.logo.small {
   width: 105px;
-  background-position: -564px 0px;
+  background-position: -564px 0;
 }
 .sizzlejs.logo.small {
   width: 105px;
-  background-position: -669px 0px;
+  background-position: -669px 0;
 }
 
 #logo-events aside {
@@ -1758,7 +1766,7 @@ nav#main .searchform {
 	border-radius: 4px;
 	border: 1px solid rgba(0,0,0,0.25);
 	color: #fff;
-	text-shadow: rgba(0, 0, 0, 0.796875) 0px -1px 0px, rgba(255, 255, 255, 0.296875) 0px 0px 10px;
+	text-shadow: rgba(0, 0, 0, 0.796875) 0 -1px 0, rgba(255, 255, 255, 0.296875) 0 0 10px;
 }
 
 nav#main .searchform {
@@ -1833,6 +1841,10 @@ nav#main .searchform .icon-search {
 
 #broadcast {
 	height: 100px;
+}
+
+#broadcast:empty {
+	display: none;
 }
 
 /* Typography & Global Styles
@@ -1943,7 +1955,6 @@ pre b {
 	top: 1px;
 	left: -25px;
 	box-sizing: border-box;
-	width: 20px;
 	/* Some space between the number and the content in browsers that support
 		generated content but not positioning it */
 	color: #fff;
@@ -1951,7 +1962,7 @@ pre b {
 	background-color: #ababab;
 	height: 19px;
 	width: 19px;
-	padding-top: 0px;
+	padding-top: 0;
 	font: bold 11px/19px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	border-radius: 12px;
 }
@@ -1965,7 +1976,7 @@ pre b {
 .lt-ie7 #content ol li {
 	margin-left: 30px;
 	list-style-type: decimal;
-	padding-left: 0px;
+	padding-left: 0;
 }
 
 #content img.full,
@@ -2019,7 +2030,7 @@ pre b {
 .lt-ie7 #content img.right,
 .lt-ie7 #content figure.right {
 	float: left;
-	margin-left: 0px;
+	margin-left: 0;
 	margin-right: 15px;
 }
 
@@ -2030,17 +2041,13 @@ pre b {
 
 
 #content figure img {
-	margin: 0px !important;
-	margin-bottom: 0px !important;
+	margin: 0 !important;
 }
 
 #content figcaption {
-	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
 	font: italic 700 12px/20px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 10px 5px;
 	color: #737272;
 	clear: both;
 	margin-top: -10px;
@@ -2059,7 +2066,7 @@ pre b {
 	padding-bottom: 56.25%; /* 16/9 ratio */
 	height: 0;
 	overflow: hidden;
-	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
 	margin-bottom: 20px;
 }
 
@@ -2154,7 +2161,7 @@ p.author a {
 }
 
 #banner-large-image p {
-	color: #CCCCCC;
+	color: #cccccc;
 	font: 700 normal 24px/36px "klavika-web", "Helvetica Neue", sans-serif;
 }
 
@@ -2190,7 +2197,7 @@ p.author a {
 
 #banner-secondary a,
 #banner-secondary a:hover {
-	color: #7ACEF4;
+	color: #7acef4;
 }
 
 #banner-secondary em,
@@ -2245,9 +2252,9 @@ input[type="submit"] {
 	box-shadow:
 		0 0 5px rgba(0, 0, 0, 0.28),
 		inset 0 1px 0 rgba(255, 255, 255, 0.45),
-		inset 0px -1px 0px rgba(255, 255, 255, 0.45),
-		inset 1px 0px 0px rgba(255, 255, 255, 0.45),
-		inset -1px 1px 0px rgba(255, 255, 255, 0.45);
+		inset 0 -1px 0 rgba(255, 255, 255, 0.45),
+		inset 1px 0 0 rgba(255, 255, 255, 0.45),
+		inset -1px 1px 0 rgba(255, 255, 255, 0.45);
 	text-decoration: none;
 	color: #fff !important;
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
@@ -2482,24 +2489,14 @@ footer p.copyright span.sponsor-line {
 	margin-top: 1em;
 }
 
-footer p.copyright a.mt-link {
-	background: url(../images/logo-mediatemple.png) left top no-repeat;
-	padding-left: 31px;
+footer p.copyright a.do-link {
+	background: url(../images/logo-do.png) left top no-repeat;
+	padding: 2px 0 2px 17px;
 }
 
-footer p.copyright a.mc-link {
-	background: url(../images/logo-maxcdn.png) left top no-repeat;
-	padding-left: 24px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-}
-
-footer p.copyright a.wp-link {
-	background: url(../images/logo-wordpress.png) left top no-repeat;
-	padding-left: 19px;
-	padding-top: 1px;
-	display: inline-block;
-	height: 16px;
+footer p.copyright a.sp-link {
+	background: url(../images/logo-sp.png) left top no-repeat;
+	padding: 2px 0 2px 19px;
 }
 
 .footer-site-links li {
@@ -2680,7 +2677,7 @@ footer .books li a cite {
 }
 
 .entry-wrapper {
-	border: 1px solid #CCC;
+	border: 1px solid #ccc;
 	border-top: 0;
 	padding: 10px;
 	border-radius: 0 0 5px 5px;
@@ -2775,7 +2772,7 @@ footer .books li a cite {
 }
 
 #options, #methods, #extension-points, #events, #quick-nav {
-	border: 1px solid #CCC;
+	border: 1px solid #ccc;
 	margin: 0 15px 15px;
 	padding: 10px;
 	overflow: auto;
@@ -2830,7 +2827,7 @@ footer .books li a cite {
 }
 .signature li,
 .api-item {
-	border-top: 1px solid #CCC;
+	border-top: 1px solid #ccc;
 }
 
 .signature li:first-child,
@@ -2891,19 +2888,13 @@ footer .books li a cite {
 /* Media Queries
    ========================================================================== */
 
-@media only screen and (max-width: 1100px) {
-
+@media only screen and (max-width: 807px) {
+	#content-wrapper.row {
+		min-width: 0;
+	}
 }
 
-@media only screen and (max-width: 940px) {
-
-}
-
-@media only screen and (max-width: 860px) {
-
-}
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	#global-nav ul.projects li.toggle-projects {
 		display: none;
 	}
@@ -2915,22 +2906,17 @@ footer .books li a cite {
 		clear: both;
 		margin: 0;
 		border-top: 1px solid #e7e7e7;
-		border-left: none;
+		border-right: none;
 		border-image: none;
 		box-shadow: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
-		background-image: none;
 		background-image: none;
 	}
 
 	.content-full.full-width #content,
 	.content-right #content,
 	.content-left #content {
-		padding-left: 2%;
-		padding-right: 2%;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	#content {
@@ -2940,8 +2926,8 @@ footer .books li a cite {
 	}
 
 	#banner-secondary {
-		margin-left: -15px;
-		margin-right: -15px;
+		margin-left: -15px !important;
+		margin-right: -15px !important;
 	}
 
 	footer p.copyright,
@@ -3007,15 +2993,15 @@ footer .books li a cite {
 		width: auto !important;
 		text-align: left !important;
 		float: none;
-		margin: 0px;
-		padding: 0px;
+		margin: 0;
+		padding: 0;
 	}
 
 	nav#main ul li, nav#main ul li a {
 		display: block;
 		text-align: left !important;
 		float: left;
-		margin-right: 0px;
+		margin-right: 0;
 		padding: 0 4px 4px 0;
 	}
 
@@ -3037,11 +3023,18 @@ footer .books li a cite {
 		border-top-right-radius: 10px;
 	}
 
+	.content-full.full-width #content,
+	.content-right #content,
+	.content-left #content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
 	#banner-secondary {
 		border-top-left-radius: 9px;
 		border-top-right-radius: 9px;
-		margin-left: -10px;
-		margin-right: -10px;
+		margin-left: -10px !important;
+		margin-right: -10px !important;
 	}
 
 	#banner-secondary h2 {
@@ -3110,7 +3103,7 @@ footer .books li a cite {
 		margin: 0 auto 15px;
 		position: relative;
 		top: 6px;
-		left: 0px;
+		left: 0;
 	}
 
 	nav#main {
@@ -3127,7 +3120,7 @@ footer .books li a cite {
 
 	nav#main ul li, nav#main ul li a {
 		float: none;
-		padding: 6px 0px 6px 8px;
+		padding: 6px 0 6px 8px;
 	}
 
 	.constrain,
@@ -3166,8 +3159,8 @@ footer .books li a cite {
 	}
 
 	#banner-secondary {
-		margin-left: -25px;
-		margin-right: -25px;
+		margin-left: -25px !important;
+		margin-right: -25px !important;
 	}
 
 	footer .footer-icon-links li a:before {
@@ -3536,7 +3529,7 @@ that IE7/8 do not support :nth-child.
 	.block-grid.mobile > li { float: none !important; width: 100% !important; margin-left: 0 !important; }
 	.block-grid > li { clear: none !important; }
 	.block-grid.mobile-two-up > li { width: 50% !important; }
-	.block-grid.mobile-two-up > li:nth-child(2n+1) { clear: both; }
+	.block-grid.mobile-two-up > li:nth-child(2n+1) { clear: both !important; }
 	.block-grid.mobile-three-up > li { width: 33.33% !important; }
 	.block-grid.mobile-three-up > li:nth-child(3n+1) { clear: both !important; }
 	.block-grid.mobile-four-up > li { width: 25% !important; }
@@ -3603,7 +3596,7 @@ that IE7/8 do not support :nth-child.
 .cboxIE #cboxBottomRight,
 .cboxIE #cboxMiddleLeft,
 .cboxIE #cboxMiddleRight {
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00ffffff,endColorstr=#00ffffff);
 }
 
 
@@ -3768,7 +3761,6 @@ pre .chunk {
 	font-weight: normal !important;
 	font-style: normal !important;
 	font-size: 1em !important;
-	min-height: inherit !important;
 	min-height: auto !important;
 }
 .syntaxhighlighter {
