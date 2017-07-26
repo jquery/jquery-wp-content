@@ -100,6 +100,9 @@ a,
 	display: inline-block;
 	margin-right: 0.5em;
 }
+#content #banner-secondary .download-main .support-notice {
+	font-size: 12px;
+}
 
 .resources {
 	padding-left: 60px;
