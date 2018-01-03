@@ -87,14 +87,13 @@
 							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"><a href="https://jquery.org/">jQuery Foundation</a>
+					<li class="dropdown"><a href="https://js.foundation/">JS Foundation</a>
 						<ul>
-							<li><a href="https://jquery.org/join/">Join</a></li>
-							<li><a href="https://jquery.org/members/">Members</a></li>
-							<li><a href="https://jquery.org/team/">Team</a></li>
-							<li><a href="https://jquery.org/conduct/">Conduct</a></li>
-							<li><a href="http://brand.jquery.org/">Brand Guide</a></li>
-							<li><a href="https://jquery.org/donate/">Donate</a></li>
+							<li><a href="https://js.foundation/about/join">Join</a></li>
+							<li><a href="https://js.foundation/about/members">Members</a></li>
+							<li><a href="https://js.foundation/about/leadership">Leadership</a></li>
+							<li><a href="https://js.foundation/community/code-of-conduct">Conduct</a></li>
+							<li><a href="https://js.foundation/about/donate">Donate</a></li>
 						</ul>
 					</li>
 				</ul>
