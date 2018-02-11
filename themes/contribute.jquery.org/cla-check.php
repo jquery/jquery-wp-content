@@ -133,12 +133,15 @@ function neglectedAuthors( $data ) {
 }
 
 function commitLog( $data ) {
-	$commitPrefix = "https://github.com/$data->owner/$data->repo/commit/";
+	$commitPrefix = "https://github.com/" .
+		htmlspecialchars( "$data->owner/$data->repo" ) .
+		"/commit/";
 
 	$html = "<dl>\n";
 	foreach ( $data->data->commits as $commit ) {
-		$html .= "<dt><a href='$commitPrefix$commit->hash'>$commit->hash</a></dt>\n";
-		$html .= "<dd>" . htmlspecialchars( "$commit->name <$commit->email>" ) . "</dd\n";
+		$escapedHash = htmlspecialchars( $commit->hash );
+		$html .= "<dt><a href=\"$commitPrefix$escapedHash\">$escapedHash</a></dt>\n";
+		$html .= "<dd>" . htmlspecialchars( "$commit->name <$commit->email>" ) . "</dd>\n";
 	}
 	$html .= "</dl>\n";
 	return $html;
