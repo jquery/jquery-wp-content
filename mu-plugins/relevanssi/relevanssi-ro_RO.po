@@ -1,0 +1,1123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Relevanssi Premium\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-28 16:16+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Richard Vencu <richard.vencu@richardconsulting.ro>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ../relevanssi\n"
+
+#: relevanssi.php:114
+#: relevanssi.php:115
+#: ../relevanssi/relevanssi.php:94
+#: ../relevanssi/relevanssi.php:95
+msgid "User searches"
+msgstr "Căutări utilizatori"
+
+#: relevanssi.php:128
+#: ../relevanssi/relevanssi.php:107
+#, php-format
+msgid "Relevanssi needs attention: Remember to build the index (you can do it at <a href=\"%1$s\">the settings page</a>), otherwise searching won't work."
+msgstr "Relevanssi are nevoie de atenție: Amintiți-vă să construiți indexul (aceasta se poate face la <a href=\"%1$s\">pagina de configurație</a>), altfel căutările nu vor funcționa."
+
+#: relevanssi.php:2112
+#: ../relevanssi/relevanssi.php:1480
+msgid "There is no excerpt because this is a protected post."
+msgstr "Nu există rezumat pentru că acesta este un articol protejat."
+
+#: relevanssi.php:2871
+#: ../relevanssi/relevanssi.php:2000
+msgid "Indexing complete!"
+msgstr "Indexare reușită!"
+
+#: relevanssi.php:3323
+msgid "Relevanssi Premium Search Options"
+msgstr "Opțiuni de căutare Relevanssi Premium"
+
+#: relevanssi.php:3390
+msgid "Options updated!"
+msgstr "Opțiuni actualizate!"
+
+#: relevanssi.php:3398
+msgid "User Searches"
+msgstr "Căutări utilizatori"
+
+#: relevanssi.php:3400
+#: ../relevanssi/relevanssi.php:2458
+msgid "Relevanssi User Searches"
+msgstr "Căutări utilizatori Relevanssi"
+
+#: relevanssi.php:3673
+#: ../relevanssi/relevanssi.php:2673
+#, php-format
+msgid "<div id='message' class='updated fade'><p>Successfully added %d/%d terms to stopwords!</p></div>"
+msgstr "<div id='message' class='updated fade'><p>Termenii %d/%d au fost adăugați cu succes la lista de cuvinte ignorate!</p></div>"
+
+#: relevanssi.php:3680
+#: ../relevanssi/relevanssi.php:2680
+#, php-format
+msgid "<div id='message' class='updated fade'><p>Term '%s' added to stopwords!</p></div>"
+msgstr "<div id='message' class='updated fade'><p>Termenul '%s' a fost adăugat la lista de cuvinte ignorate!</p></div>"
+
+#: relevanssi.php:3683
+#: ../relevanssi/relevanssi.php:2683
+#, php-format
+msgid "<div id='message' class='updated fade'><p>Couldn't add term '%s' to stopwords!</p></div>"
+msgstr "<div id='message' class='updated fade'><p>Nu am putut adăuga termenul '%s' la lista de cuvinte ignorate!</p></div>"
+
+#: relevanssi.php:3712
+#: ../relevanssi/relevanssi.php:2712
+msgid "<div id='message' class='updated fade'><p>Stopwords removed! Remember to re-index.</p></div>"
+msgstr "<div id='message' class='updated fade'><p>Cuvintele ignorate au fost eliminate din listă! Amintiți-vă că trebuie să reindexați.</p></div>"
+
+#: relevanssi.php:3722
+#: ../relevanssi/relevanssi.php:2722
+#, php-format
+msgid "<div id='message' class='updated fade'><p>Term '%s' removed from stopwords! Re-index to get it back to index.</p></div>"
+msgstr "<div id='message' class='updated fade'><p>Termenul '%s' a fost eliminat din lista de cuvinte ignorate! Re-indexați pentru a îl reintroduce în index.</p></div>"
+
+#: relevanssi.php:3725
+#: ../relevanssi/relevanssi.php:2725
+#, php-format
+msgid "<div id='message' class='updated fade'><p>Couldn't remove term '%s' from stopwords!</p></div>"
+msgstr "<div id='message' class='updated fade'><p>NU am putut elimina termenul '%s' din lista de cuvinte ignorate!</p></div>"
+
+#: relevanssi.php:3734
+#: ../relevanssi/relevanssi.php:2734
+msgid "25 most common words in the index"
+msgstr "Cele mai frecvente 25 de cuvinte din index"
+
+#: relevanssi.php:3736
+#: ../relevanssi/relevanssi.php:2736
+msgid "These words are excellent stopword material. A word that appears in most of the posts in the database is quite pointless when searching. This is also an easy way to create a completely new stopword list, if one isn't available in your language. Click the icon after the word to add the word to the stopword list. The word will also be removed from the index, so rebuilding the index is not necessary."
+msgstr "Aceste cuvinte reprezintă candidați ideali pentru lista de cuvinte ignorate. Un cuvânt care apare în majoritatea articolelor din blog nu prea mai are sens să fie folosit ca termen de căutare. În plus aceasta este o modalitate ușoară de a construi o listă nouă de cuvinte ignorate dacă nu există deja una în limba dumneavoastră. Apăsați pe icoana de după cuvânt pentru a adăuga cuvântul la listă. Totodată cuvântul va fi eliminat și din index, așa că reindexarea nu mai este necesară."
+
+#: relevanssi.php:3759
+#: ../relevanssi/relevanssi.php:2759
+msgid "Add to stopwords"
+msgstr "Adăugare la lista de cuvinte ignorate"
+
+#: relevanssi.php:3770
+msgid "Total Searches"
+msgstr "Total căutări"
+
+#: relevanssi.php:3773
+msgid "Totals"
+msgstr "Totaluri"
+
+#: relevanssi.php:3778
+msgid "Common Queries"
+msgstr "Căutări frecvente"
+
+#: relevanssi.php:3780
+#: ../relevanssi/relevanssi.php:2770
+msgid ""
+"Here you can see the 20 most common user search queries, how many times those \n"
+"\t\tqueries were made and how many results were found for those queries."
+msgstr ""
+"Aici puteți vizualiza cele mai utilizate 20 de căutări ale utilizatorilor, de câte ori aceste \n"
+"\t\tcăutări au fost rulate și câte rezultate au fost descoperite prin rularea lor."
+
+#: relevanssi.php:3786
+#: relevanssi.php:3802
+#: ../relevanssi/relevanssi.php:2776
+#: ../relevanssi/relevanssi.php:2792
+msgid "Today and yesterday"
+msgstr "Astăzi și ieri"
+
+#: relevanssi.php:3790
+#: relevanssi.php:3806
+#: ../relevanssi/relevanssi.php:2780
+#: ../relevanssi/relevanssi.php:2796
+msgid "Last 7 days"
+msgstr "Ultimele 7 zile"
+
+#: relevanssi.php:3794
+#: relevanssi.php:3810
+#: ../relevanssi/relevanssi.php:2784
+#: ../relevanssi/relevanssi.php:2800
+msgid "Last 30 days"
+msgstr "Ultimele 30 de zile"
+
+#: relevanssi.php:3799
+#: ../relevanssi/relevanssi.php:2789
+msgid "Unsuccessful Queries"
+msgstr "Căutări eșuate"
+
+#: relevanssi.php:4125
+#: relevanssi.php:4152
+#: ../relevanssi/relevanssi.php:3048
+#: ../relevanssi/relevanssi.php:3075
+msgid "Basic options"
+msgstr "Opțiuni de bază"
+
+#: relevanssi.php:4126
+#: relevanssi.php:4214
+msgid "Weights"
+msgstr "Greutăți"
+
+#: relevanssi.php:4127
+#: relevanssi.php:4307
+#: ../relevanssi/relevanssi.php:3049
+#: ../relevanssi/relevanssi.php:3138
+msgid "Logs"
+msgstr "Jurnale"
+
+#: relevanssi.php:4128
+#: relevanssi.php:4324
+#: ../relevanssi/relevanssi.php:3050
+#: ../relevanssi/relevanssi.php:3152
+msgid "Exclusions and restrictions"
+msgstr "Excluderi și restricții"
+
+#: relevanssi.php:4129
+#: ../relevanssi/relevanssi.php:3051
+msgid "Custom excerpts"
+msgstr "Rezumate personalizate"
+
+#: relevanssi.php:4130
+#: ../relevanssi/relevanssi.php:3052
+msgid "Highlighting search results"
+msgstr "Evidențierea rezultatelor căutării"
+
+#: relevanssi.php:4131
+#: relevanssi.php:4460
+#: ../relevanssi/relevanssi.php:3053
+#: ../relevanssi/relevanssi.php:3282
+msgid "Indexing options"
+msgstr "Opțiuni de indexare"
+
+#: relevanssi.php:4132
+#: relevanssi.php:4607
+#: ../relevanssi/relevanssi.php:3054
+#: ../relevanssi/relevanssi.php:3381
+msgid "Caching"
+msgstr "Utilizare cache"
+
+#: relevanssi.php:4133
+#: relevanssi.php:4630
+#: ../relevanssi/relevanssi.php:3055
+#: ../relevanssi/relevanssi.php:3404
+msgid "Synonyms"
+msgstr "Sinonime"
+
+#: relevanssi.php:4134
+#: relevanssi.php:4638
+#: ../relevanssi/relevanssi.php:3056
+#: ../relevanssi/relevanssi.php:3412
+msgid "Stopwords"
+msgstr "Cuvinte ignorate"
+
+#: relevanssi.php:4135
+msgid "Import/export options"
+msgstr "Import/export opțiuni"
+
+#: relevanssi.php:4138
+#: ../relevanssi/relevanssi.php:3061
+msgid "Quick tools"
+msgstr "Unelte rapide"
+
+#: relevanssi.php:4140
+#: ../relevanssi/relevanssi.php:3063
+msgid "Save options"
+msgstr "Salvare opțiuni"
+
+#: relevanssi.php:4141
+#: ../relevanssi/relevanssi.php:3064
+msgid "Build the index"
+msgstr "Construire index"
+
+#: relevanssi.php:4142
+#: relevanssi.php:4605
+#: ../relevanssi/relevanssi.php:3065
+#: ../relevanssi/relevanssi.php:3379
+msgid "Continue indexing"
+msgstr "Continuare indexare"
+
+#: relevanssi.php:4142
+#: ../relevanssi/relevanssi.php:3065
+msgid "add"
+msgstr "adăugare"
+
+#: relevanssi.php:4142
+#: ../relevanssi/relevanssi.php:3065
+msgid "documents."
+msgstr "documente."
+
+#: relevanssi.php:4144
+#: ../relevanssi/relevanssi.php:3067
+msgid "Use 'Build the index' to build the index with current <a href='#indexing'>indexing options</a>. If you can't finish indexing with one go, use 'Continue indexing' to finish the job. You can change the number of documents to add until you find the largest amount you can add with one go. See 'State of the Index' below to find out how many documents actually go into the index."
+msgstr "Utilizați „Construire index” pentru a construi indexul folosind <a href='#indexing'>opțiunile curente</a>. Dacă nu puteți finaliza indexarea dintr-o singură rulare folosiți „Continuare indexare” pentru a finaliza indexul. Puteți midifica numărul de documente care sunt adăugate până aflați numărul maxim de documente pe care îl puteți indexa la o rulare. Verificați „Starea indexului” pentru a vedea câte documente au intrat în index la orice moment de timp."
+
+#: relevanssi.php:4146
+#: ../relevanssi/relevanssi.php:3069
+msgid "State of the Index"
+msgstr "Starea indexului"
+
+#: relevanssi.php:4148
+#: ../relevanssi/relevanssi.php:3071
+msgid "Documents in the index"
+msgstr "Documente în index"
+
+#: relevanssi.php:4149
+#: ../relevanssi/relevanssi.php:3072
+msgid "Highest post ID indexed"
+msgstr "Cel mai mare ID de document din index"
+
+#: relevanssi.php:4154
+msgid "API key:"
+msgstr "Cheie API:"
+
+#: relevanssi.php:4156
+msgid "API key is required to use the automatic update feature. Get yours from Relevanssi.com."
+msgstr "Cheia API este necesară atunci când se utilizează facilitatea de upgrade automat. Obțineți una de la Relevanssi.com."
+
+#: relevanssi.php:4160
+#: ../relevanssi/relevanssi.php:3092
+msgid "Use search for admin:"
+msgstr "Utilizare căutări în admin:"
+
+#: relevanssi.php:4162
+#: ../relevanssi/relevanssi.php:3094
+msgid "If checked, Relevanssi will be used for searches in the admin interface"
+msgstr "Dacă opțiunea este bifată, Relevanssi va fi folosit pentru căutări în interfața de administrare"
+
+#: relevanssi.php:4166
+#: ../relevanssi/relevanssi.php:3098
+msgid "Default operator for the search?"
+msgstr "Operatorul implicit pentru căutare?"
+
+#: relevanssi.php:4168
+#: ../relevanssi/relevanssi.php:3100
+msgid "AND - require all terms"
+msgstr "ȘI - toți termenii sunt necesari"
+
+#: relevanssi.php:4169
+#: ../relevanssi/relevanssi.php:3101
+msgid "OR - any term present is enough"
+msgstr "SAU - un singur termen este suficient"
+
+#: relevanssi.php:4171
+#: ../relevanssi/relevanssi.php:3103
+msgid "If you choose AND and the search finds no matches, it will automatically do an OR search."
+msgstr "Dacă selectați operatorul ȘI și căutarea nu produce rezultate, atunci se va efectua în mod automat o altă căutare cu operatorul SAU."
+
+#: relevanssi.php:4175
+#: ../relevanssi/relevanssi.php:3107
+msgid "Disable OR fallback:"
+msgstr "Invalidarea folosirii lui SAU ca operator de rezervă:"
+
+#: relevanssi.php:4177
+#: ../relevanssi/relevanssi.php:3109
+msgid "If you don't want Relevanssi to fall back to OR search when AND search gets no hits, check this option. For most cases, leave this one unchecked."
+msgstr "Dacă nu doriți ca Relevanssi să efectueze căutarea cu operatorul de rezervă SAU atunci când operatorul ȘI nu produce rezultate, bifați această opțiune. În cele mai multe cazuri această opțiune rămâne nebifată."
+
+#: relevanssi.php:4181
+#: ../relevanssi/relevanssi.php:3113
+msgid "Default order for results:"
+msgstr "Odinea implicită pentru rezultate:"
+
+#: relevanssi.php:4183
+#: ../relevanssi/relevanssi.php:3115
+msgid "Relevance (highly recommended)"
+msgstr "Relevanță (foarte recomandat)"
+
+#: relevanssi.php:4184
+#: ../relevanssi/relevanssi.php:3116
+msgid "Post date"
+msgstr "Dată publicate"
+
+#: relevanssi.php:4186
+msgid "If you want date-based results, you really should do what <a href='http://www.relevanssi.com/knowledge-base/relevanssi-match/'>this knowledge base entry</a> says instead of changing this option."
+msgstr "Dacă doriți rezultate ordonate după dată, ar trebui <a href='http://www.relevanssi.com/knowledge-base/relevanssi-match/'>să citiți acest articol (în engleză)</a>"
+
+#: relevanssi.php:4190
+#: ../relevanssi/relevanssi.php:3121
+msgid "When to use fuzzy matching?"
+msgstr "Când să se utilizeze căutarea aproximativă?"
+
+#: relevanssi.php:4192
+#: ../relevanssi/relevanssi.php:3123
+msgid "When straight search gets no hits"
+msgstr "Atunci când căutarea simplă nu produce nici un rezultat."
+
+#: relevanssi.php:4193
+#: ../relevanssi/relevanssi.php:3124
+msgid "Always"
+msgstr "Întotdeauna"
+
+#: relevanssi.php:4194
+#: ../relevanssi/relevanssi.php:3125
+msgid "Don't use fuzzy search"
+msgstr "Nu folosi căutări aproximative."
+
+#: relevanssi.php:4196
+#: ../relevanssi/relevanssi.php:3127
+msgid "Straight search matches just the term. Fuzzy search matches everything that begins or ends with the search term."
+msgstr "Căutarea simplă identifică numai termenul căutat. Căutarea aproximativă identifică termenul căutat și orice alte cuvinte care încep sau se termină cu termenul căutat."
+
+#: relevanssi.php:4200
+msgid "How to index internal links:"
+msgstr "Cum se indexează linkurile interne?"
+
+#: relevanssi.php:4202
+msgid "No special processing for internal links"
+msgstr "Nu se procesează în mod special linkurile interne"
+
+#: relevanssi.php:4203
+msgid "Index internal links for target documents only"
+msgstr "Indexare linkuri interne numai pentru documentele țintă"
+
+#: relevanssi.php:4204
+msgid "Index internal links for both target and source"
+msgstr "Indexare linkuri interne atât pentru sursă cât și pentru țintă"
+
+#: relevanssi.php:4206
+msgid "Internal link anchor tags can be indexed for target document (so the text will match the document the link points to), both target and source or source only (with no extra significance for the links). See Relevanssi Knowledge Base for more details. Changing this option requires reindexing."
+msgstr "Etichetele linkurilor interne pot fi folosite la indexarea documentelor țintă (textul va fi luat în considerare pentru documentul țintă), pentru ambele documente sursă și țintă sau numai pentru sursă (moment în care linkul nu mai contează). Vedeți Knowledge Base de la relevanssi.com pentru mai multe detalii. Schimbarea acestei opțiuni are efect numai după reindexare."
+
+#: relevanssi.php:4210
+msgid "Limit searches:"
+msgstr "Limitare căutări:"
+
+#: relevanssi.php:4212
+msgid "If this option is checked, Relevanssi will limit search results to at most 500 results per term. This will improve performance, but may cause some relevant documents to go unfound. However, Relevanssi tries to priorize the most relevant documents."
+msgstr "Dacă această opțiune este bifată, Relevanssi va limita rezultatele la cel mult 500 pentru fiecare termen de căutare. Aceasta va îmbunătăți performanța, însă multe din documentele relevante nu vor fi găsite. Cu toate acestea Relevanssi urmărește să prioritizeze cele mai relevante documente."
+
+#: relevanssi.php:4216
+#: ../relevanssi/relevanssi.php:3077
+msgid "These values affect the weights of the documents. These are all multipliers, so 1 means no change in weight, less than 1 means less weight, and more than 1 means more weight. Setting something to zero makes that worthless. For example, if title weight is more than 1, words in titles are more significant than words elsewhere. If title weight is 0, words in titles won't make any difference to the search results."
+msgstr "Aceste valori afectează greutatea documentelor. Aceste valori sunt toate multiplicatori, prin urmare 1 înseamnă că greutatea rămâne neschimbată, o valoare mai mare decât 1 înseamnă creșterea greutății. Setând o valoare cu zero face acel criteriu nesemnificativ."
+
+#: relevanssi.php:4221
+msgid "Element"
+msgstr "Element"
+
+#: relevanssi.php:4222
+msgid "Weight"
+msgstr "Greutate"
+
+#: relevanssi.php:4223
+msgid "Default weight"
+msgstr "Greutatea implicită"
+
+#: relevanssi.php:4228
+msgid "Post titles"
+msgstr "Titlu document"
+
+#: relevanssi.php:4239
+msgid "Tags"
+msgstr "Etichete"
+
+#: relevanssi.php:4250
+msgid "Internal links"
+msgstr "Linkuri interne"
+
+#: relevanssi.php:4261
+msgid "Comment text"
+msgstr "Text comentariu"
+
+#: relevanssi.php:4281
+#, php-format
+msgid "Post type '%s':"
+msgstr "Tip document '%s':"
+
+#: relevanssi.php:4299
+#: ../relevanssi/relevanssi.php:3130
+msgid "WPML compatibility"
+msgstr "Compatibilitate WPML"
+
+#: relevanssi.php:4301
+#: ../relevanssi/relevanssi.php:3132
+msgid "Limit results to current language:"
+msgstr "Limitare rezultate la limba curentă:"
+
+#: relevanssi.php:4303
+#: ../relevanssi/relevanssi.php:3134
+msgid "If this option is checked, Relevanssi will only return results in the current active language. Otherwise results will include posts in every language."
+msgstr "Dacă această opțiune este bifată, Relevanssi va returna numai rezultatele în limba curentă. Altfel se vor returna rezultatele din toate limbile instalate."
+
+#: relevanssi.php:4309
+#: ../relevanssi/relevanssi.php:3140
+msgid "Keep a log of user queries:"
+msgstr "Păstrează un jurnal cu căutările utilizatorilor:"
+
+#: relevanssi.php:4311
+#: ../relevanssi/relevanssi.php:3142
+msgid "If checked, Relevanssi will log user queries. The log appears in 'User searches' on the Dashboard admin menu."
+msgstr "Dacă această opțiune este bifată, atunci Relevanssi va jurnaliza căutările utilizatorilor. Jurnalul va apare în meniul „Căutari utilizatori” din Panoul de control."
+
+#: relevanssi.php:4315
+#: ../relevanssi/relevanssi.php:3146
+msgid "Don't log queries from these users:"
+msgstr "Nu jurnaliza căutările următorilor utilizatori:"
+
+#: relevanssi.php:4317
+#: ../relevanssi/relevanssi.php:3148
+msgid "Comma-separated list of user ids that will not be logged."
+msgstr "Lisă separată cu virgule a ID-urilor utilizatorilor care nu vor fi jurnalizați."
+
+#: relevanssi.php:4319
+#: ../relevanssi/relevanssi.php:3150
+msgid "If you enable logs, you can see what your users are searching for. Logs are also needed to use the 'Did you mean?' feature. You can prevent your own searches from getting in the logs with the omit feature."
+msgstr "Dacă permiteți jurnalizarea puteți afla ce anume caută utilizatorii. Jurnalele sunt de asemenea utilizate în funcția „Ați vrut să căutați...”. Puteți preveni ca propriile dumneavoastră căutări să fie incluse în jurnal prin folosirea funcției de excludere."
+
+#: relevanssi.php:4321
+msgid "Don't show Relevanssi branding on the 'User Searches' screen:"
+msgstr "Nu afișa logo Relevanssi în ecranul de „Căuterile utilizatorilor”:"
+
+#: relevanssi.php:4326
+#: ../relevanssi/relevanssi.php:3154
+msgid "Restrict search to these categories and tags:"
+msgstr "Restricționare căutări numai la aceste categorii și etichete:"
+
+#: relevanssi.php:4328
+#: ../relevanssi/relevanssi.php:3156
+msgid "Enter a comma-separated list of category and tag IDs to restrict search to those categories or tags. You can also use <code>&lt;input type='hidden' name='cat' value='list of cats and tags' /&gt;</code> in your search form. The input field will \toverrun this setting."
+msgstr "Introduceți o listă separată prin virgule a ID-urilor categoriilor și etichetelor de restricționat la căutare. Puteți folosi și <code>&lt;input type='hidden' name='cat' value='listă categorii și etichete' /&gt;</code> în formularul de căutare. Valorile introduse aici vor suprascrie valorile din formularul de căutare."
+
+#: relevanssi.php:4332
+#: ../relevanssi/relevanssi.php:3160
+msgid "Exclude these categories and tags from search:"
+msgstr "Excludere categorii și etichete din căutări:"
+
+#: relevanssi.php:4334
+msgid "Enter a comma-separated list of category and tag IDs that are excluded from search results. You can exclude categories with the 'cat' input field by using negative values."
+msgstr "Introduceți o listă separată prin virgule cu ID-urile categoriilor și a etichetelor care să fie excluse din rezultatele căutării. Mai puteți exclude categorii prin listarea categoriilor de căutat în câmpul corespunzător, punând semnul minus înainte de ID-ul categoriei."
+
+#: relevanssi.php:4338
+#: ../relevanssi/relevanssi.php:3166
+msgid "Exclude these posts/pages from search:"
+msgstr "Excludere pagini/articole din căutări:"
+
+#: relevanssi.php:4340
+msgid "Enter a comma-separated list of post/page IDs that are excluded from search results. This only works here, you can't use the input field option (WordPress doesn't pass custom parameters there). You can also use a checkbox on post/page edit pages to remove posts from index."
+msgstr "Introduceți o listă separată prin virgule a ID-urilor documentelor care doriți să fie excluse din lista de rezultate. Puteți utiliza și opțiunea din ecranul de editare a documentelor pentru a le elimina, în mod individual, din index."
+
+#: relevanssi.php:4344
+#: ../relevanssi/relevanssi.php:3172
+msgid "Respect exclude_from_search for custom post types:"
+msgstr "Respectă atributul <i>exclude_from_search</i> așa cum este definit la tipurile personalizate de articole:"
+
+#: relevanssi.php:4346
+#: ../relevanssi/relevanssi.php:3174
+msgid "If checked, Relevanssi won't display posts of custom post types that have 'exclude_from_search' set to true. If not checked, Relevanssi will display anything that is indexed."
+msgstr "Dacă opțiunea este bifată Relevanssi nu va afișa articolele din tipurile de articole care au atributul <i>exclude_from_search</i> cu valoarea true. Dacă opțiunea nu este bifată, Relevanssi va afișa orice găsește în index."
+
+#: relevanssi.php:4348
+#: ../relevanssi/relevanssi.php:3176
+msgid "Custom excerpts/snippets"
+msgstr "Rezumate/fragmente personalizate"
+
+#: relevanssi.php:4350
+#: ../relevanssi/relevanssi.php:3178
+msgid "Create custom search result snippets:"
+msgstr "Creare fragmente personalizate pentru rezultatele căutării:"
+
+#: relevanssi.php:4352
+#: ../relevanssi/relevanssi.php:3180
+msgid "If checked, Relevanssi will create excerpts that contain the search term hits. To make them work, make sure your search result template uses the_excerpt() to display post excerpts."
+msgstr "Dacă opțiunea este bifată Relevanssi va crea rezumate care conțin termenii de căutare găsiți în document. Pentru a funcționa verificați dacă macheta de afișare a rezultatelor căutărilor folosește funcția <code>the_excerpt()</code> pentru afișarea rezumatelor."
+
+#: relevanssi.php:4356
+#: ../relevanssi/relevanssi.php:3184
+msgid "Length of the snippet:"
+msgstr "Lungimea fragmentului:"
+
+#: relevanssi.php:4359
+#: ../relevanssi/relevanssi.php:3187
+msgid "characters"
+msgstr "caractere"
+
+#: relevanssi.php:4360
+#: ../relevanssi/relevanssi.php:3188
+msgid "words"
+msgstr "cuvinte"
+
+#: relevanssi.php:4362
+#: ../relevanssi/relevanssi.php:3190
+msgid "This must be an integer."
+msgstr "Această valoare trebuie să fie un număr întreg."
+
+#: relevanssi.php:4366
+#: ../relevanssi/relevanssi.php:3194
+msgid "Show breakdown of search hits in excerpts:"
+msgstr "Afișare structură rezultate căutare în rezumate:"
+
+#: relevanssi.php:4368
+#: ../relevanssi/relevanssi.php:3196
+msgid "Check this to show more information on where the search hits were made. Requires custom snippets to work."
+msgstr "Bifați această opțiune pentru a afișa mai multe informații în rezultatele căutărilor. Necesită fragmente personalizate pentru a funcționa."
+
+#: relevanssi.php:4372
+#: ../relevanssi/relevanssi.php:3200
+msgid "The breakdown format:"
+msgstr "Formatul structurii:"
+
+#: relevanssi.php:4374
+#: ../relevanssi/relevanssi.php:3202
+msgid "Use %body%, %title%, %tags% and %comments% to display the number of hits (in different parts of the post), %total% for total hits, %score% to display the document weight and %terms% to show how many hits each search term got. No double quotes (\") allowed!"
+msgstr "Utilizați %body%, %title%, %tags% și %comments% pentru a afișa numărul de rezultate (în diverse locuri ale documentului), %total% pentru numărul total de rezultate, %score% pentru afișarea greutății documentului, %terms% pentru afișarea numărului rezultatelor pentru fiecare termen de căutare. Nu se permit glilimele duble (\")!"
+
+#: relevanssi.php:4376
+#: ../relevanssi/relevanssi.php:3204
+msgid "Search hit highlighting"
+msgstr "Evidențiere termeni căutați în rezultate"
+
+#: relevanssi.php:4378
+#: ../relevanssi/relevanssi.php:3206
+msgid "First, choose the type of highlighting used:"
+msgstr "La început, alegeți tipul de evidențiere utilizat:"
+
+#: relevanssi.php:4381
+#: ../relevanssi/relevanssi.php:3209
+msgid "Highlight query terms in search results:"
+msgstr "Evidențierea termenilor căutați în rezultate:"
+
+#: relevanssi.php:4383
+#: ../relevanssi/relevanssi.php:3211
+msgid "No highlighting"
+msgstr "Fără evidențiere"
+
+#: relevanssi.php:4387
+#: ../relevanssi/relevanssi.php:3215
+msgid "Text color"
+msgstr "Text colorat"
+
+#: relevanssi.php:4388
+#: ../relevanssi/relevanssi.php:3216
+msgid "Background color"
+msgstr "Fundal colorat"
+
+#: relevanssi.php:4389
+#: ../relevanssi/relevanssi.php:3217
+msgid "CSS Style"
+msgstr "Stil CSS"
+
+#: relevanssi.php:4390
+#: ../relevanssi/relevanssi.php:3218
+msgid "CSS Class"
+msgstr "Clasa CSS"
+
+#: relevanssi.php:4392
+#: ../relevanssi/relevanssi.php:3220
+msgid "Highlighting isn't available unless you use custom snippets"
+msgstr "Evidențierea nu este disponibilă decât dacă utilizați fragmente personalizate"
+
+#: relevanssi.php:4396
+#: ../relevanssi/relevanssi.php:3224
+msgid "Highlight query terms in result titles too:"
+msgstr "Evidențierea termenilor de căutare și în titluri:"
+
+#: relevanssi.php:4402
+msgid "Highlight query terms in documents from local searches:"
+msgstr "Evidențierea termenilor de căutare în documente pentru căutările locale:"
+
+#: relevanssi.php:4404
+#: ../relevanssi/relevanssi.php:3232
+msgid "Highlights hits when user opens the post from search results. This is based on HTTP referrer, so if that's blocked, there'll be no highlights."
+msgstr "Evidențierea se face atunci când utilizatorul deschide un rezultat din lista de rezultate ale unei căutări. Această funcționalitate se bazează pe HTTP referrer, prin urmare dacă acesta este blocat nu va apare nici o evidențiere."
+
+#: relevanssi.php:4408
+msgid "Highlight query terms in documents from external searches:"
+msgstr "Evidențierea termenilor de căutare în documente și pentru căutările externe:"
+
+#: relevanssi.php:4410
+msgid "Highlights hits when user arrives from external search. Currently supports Google, Bing, Ask, Yahoo and AOL Search."
+msgstr "Se evidențiază termenii căutați atunci când căutarea este efectuată extern. Sunt suportate Google, Bing, Ask, Yahoo și AOL."
+
+#: relevanssi.php:4414
+#: ../relevanssi/relevanssi.php:3236
+msgid "Highlight query terms in comments:"
+msgstr "Evidențierea termenilor de căutare în comentarii:"
+
+#: relevanssi.php:4416
+#: ../relevanssi/relevanssi.php:3238
+msgid "Highlights hits in comments when user opens the post from search results."
+msgstr "Evidențierea în comentarii are loc atunci când utilizatorul deschide documentul din lista de rezultate ale căutării."
+
+#: relevanssi.php:4420
+#: ../relevanssi/relevanssi.php:3242
+msgid "Uncheck this if you use non-ASCII characters:"
+msgstr "Debifați dacă utilizați caractere non-ASCII:"
+
+#: relevanssi.php:4422
+#: ../relevanssi/relevanssi.php:3244
+msgid "If you use non-ASCII characters (like Cyrillic alphabet) and the highlights don't work, uncheck this option to make highlights work."
+msgstr "Dacă utilizați caractere non-ASCII (ex. alfabet chirilic) și doriți ca evidențierea termenilor să funcționeze trebuie să debifați această opțiune."
+
+#: relevanssi.php:4427
+#: ../relevanssi/relevanssi.php:3249
+msgid "Then adjust the settings for your chosen type:"
+msgstr "Apoi ajustați setările pentru tipul ales:"
+
+#: relevanssi.php:4431
+#: ../relevanssi/relevanssi.php:3253
+msgid "Text color for highlights:"
+msgstr "Culoare text pentru evidențiere:"
+
+#: relevanssi.php:4433
+#: relevanssi.php:4439
+#: ../relevanssi/relevanssi.php:3255
+#: ../relevanssi/relevanssi.php:3261
+msgid "Use HTML color codes (#rgb or #rrggbb)"
+msgstr "Utilizare coduri de culori HTML (#rgb sau #rrggbb)"
+
+#: relevanssi.php:4437
+#: ../relevanssi/relevanssi.php:3259
+msgid "Background color for highlights:"
+msgstr "Culoare fundal pentru evidențiere:"
+
+#: relevanssi.php:4443
+#: ../relevanssi/relevanssi.php:3265
+msgid "CSS style for highlights:"
+msgstr "Stil CSS pentru evidențiere:"
+
+#: relevanssi.php:4445
+#: ../relevanssi/relevanssi.php:3267
+msgid "You can use any CSS styling here, style will be inserted with a &lt;span&gt;"
+msgstr "Puteți utiliza orice stil CSS aici, stilurile vor fi inserate cu un  &lt;span&gt;"
+
+#: relevanssi.php:4449
+#: ../relevanssi/relevanssi.php:3271
+msgid "CSS class for highlights:"
+msgstr "Clasă CSS pentru evidențiere:"
+
+#: relevanssi.php:4451
+#: ../relevanssi/relevanssi.php:3273
+msgid "Name a class here, search results will be wrapped in a &lt;span&gt; with the class"
+msgstr "Numiți o clasă CSS aici, rezultatele vor fi învelite într-un  &lt;span&gt; cu clasa respectivă"
+
+#: relevanssi.php:4458
+#: relevanssi.php:4636
+#: ../relevanssi/relevanssi.php:3280
+#: ../relevanssi/relevanssi.php:3410
+msgid "Save the options"
+msgstr "Salvare opțiuni"
+
+#: relevanssi.php:4462
+msgid "Choose post types to index:"
+msgstr "Tipurile de documente de inclus în index:"
+
+#: relevanssi.php:4467
+msgid "Type"
+msgstr "Tip"
+
+#: relevanssi.php:4468
+msgid "Index"
+msgstr "Index"
+
+#: relevanssi.php:4469
+msgid "Public?"
+msgstr "Public?"
+
+#: relevanssi.php:4486
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: relevanssi.php:4487
+msgid "yes"
+msgstr "da"
+
+#: relevanssi.php:4487
+msgid "no"
+msgstr "nu"
+
+#: relevanssi.php:4508
+#: ../relevanssi/relevanssi.php:3313
+msgid "Minimum word length to index"
+msgstr "Lungimea minimă a cuvintelor de inclus în index"
+
+#: relevanssi.php:4510
+#: ../relevanssi/relevanssi.php:3315
+msgid "Words shorter than this number will not be indexed."
+msgstr "Cuvintele cu lungimea mai scurtă decât acest număr nu vor fi indexate."
+
+#: relevanssi.php:4514
+msgid "Thousands separator"
+msgstr "Separator mii"
+
+#: relevanssi.php:4516
+msgid "If Relevanssi sees this character between numbers, it'll stick the numbers together no matter how the character would otherwise be handled. Especially useful if a space is used as a thousands separator."
+msgstr "Dacă Relevanssi descoperă acest caracter între numere va menține numerele împreună, indiferent de modul în care acest caracter poate fi folosit în alt context. Este util în mod special atunci când se folosește un spațiu liber pe post de separator de mii."
+
+#: relevanssi.php:4520
+#: ../relevanssi/relevanssi.php:3325
+msgid "Expand shortcodes in post content:"
+msgstr "Expanadare shortcode-uri în conținut:"
+
+#: relevanssi.php:4522
+#: ../relevanssi/relevanssi.php:3327
+msgid "If checked, Relevanssi will expand shortcodes in post content before indexing. Otherwise shortcodes will be stripped. If you use shortcodes to include dynamic content, Relevanssi will not keep the index updated, the index will reflect the status of the shortcode content at the moment of indexing."
+msgstr "Dacă opțiunea este bifată Relevanssi va expanda shortcode-urile în conținutul documentelor înainte de a le indexa. În caz contrar shortcode-urile vor fi șterse înainte de indexare. Dacă utilizați shortcode-uri pentru a afișa conținut dinamic, Relevanssi nu va menține indexul actualizat în mod automat atunci când respectivul conținut se modifică, ci va reflecta starea găsită la momentul indexării."
+
+#: relevanssi.php:4526
+#: ../relevanssi/relevanssi.php:3331
+msgid "Index and search your posts' tags:"
+msgstr "Indexare și căutare după etichete:"
+
+#: relevanssi.php:4528
+#: ../relevanssi/relevanssi.php:3333
+msgid "If checked, Relevanssi will also index and search the tags of your posts. Remember to rebuild the index if you change this option!"
+msgstr "Dacă opțiunea este bifată Relevanssi va indexa și va căuta etichetele documentelor. Amintiți-vă să reconstruiți indexul dacă modificați această opțiune!"
+
+#: relevanssi.php:4532
+#: ../relevanssi/relevanssi.php:3337
+msgid "Index and search your posts' categories:"
+msgstr "Indexare și căutare după categorii:"
+
+#: relevanssi.php:4534
+#: ../relevanssi/relevanssi.php:3339
+msgid "If checked, Relevanssi will also index and search the categories of your posts. Category titles will pass through 'single_cat_title' filter. Remember to rebuild the index if you change this option!"
+msgstr "Dacă opțiunea este bifată Relevanssi va indexa și va căuta categoriile documentelor. Titlurile categoriilor vor fi trecute prin filtrul <code>single_cat_title</code>. Amintiți-vă să reconstruiți indexul dacă modificați această opțiune!"
+
+#: relevanssi.php:4538
+#: ../relevanssi/relevanssi.php:3343
+msgid "Index and search your posts' authors:"
+msgstr "Indexare și căutare după autor:"
+
+#: relevanssi.php:4540
+#: ../relevanssi/relevanssi.php:3345
+msgid "If checked, Relevanssi will also index and search the authors of your posts. Author display name will be indexed. Remember to rebuild the index if you change this option!"
+msgstr "Dacă opțiunea este bifată Relevanssi va indexa și căuta autorii documentelor. Se va indexa numele afișabil al autorului. Amintiți-vă să reconstruiți indexul dacă modificați această opțiune!"
+
+#: relevanssi.php:4544
+#: ../relevanssi/relevanssi.php:3349
+msgid "Index and search post excerpts:"
+msgstr "Indexare și căutare după rezumate:"
+
+#: relevanssi.php:4546
+#: ../relevanssi/relevanssi.php:3351
+msgid "If checked, Relevanssi will also index and search the excerpts of your posts.Remember to rebuild the index if you change this option!"
+msgstr "Dacă opțiunea este bifată Relevanssi va indexa și va căuta în rezumatele documentelor. Amintiți-vă să reconstruiți indexul dacă modificați această opțiune!"
+
+#: relevanssi.php:4550
+#: ../relevanssi/relevanssi.php:3355
+msgid "Index and search these comments:"
+msgstr "Indexare și căutare în aceste comentarii:"
+
+#: relevanssi.php:4552
+#: ../relevanssi/relevanssi.php:3357
+msgid "none"
+msgstr "nici unul"
+
+#: relevanssi.php:4553
+#: ../relevanssi/relevanssi.php:3358
+msgid "normal"
+msgstr "normal"
+
+#: relevanssi.php:4554
+#: ../relevanssi/relevanssi.php:3359
+msgid "all"
+msgstr "toate"
+
+#: relevanssi.php:4556
+#: ../relevanssi/relevanssi.php:3361
+msgid "Relevanssi will index and search ALL (all comments including track- &amp; pingbacks and custom comment types), NONE (no comments) or NORMAL (manually posted comments on your blog).<br />Remember to rebuild the index if you change this option!"
+msgstr "Relevanssi va indexa și va căuta TOTUL (toate comentariile inclusiv trackback-uri, pingback-uri și tipurile personalizate de comentarii), NICI UNUL (nici un comentariu) sau NORMAL (numai comentariile introduse manual în blog).<br />Amintiți-vă să reconstruiți indexul dacă modificați această opțiune!"
+
+#: relevanssi.php:4560
+#: ../relevanssi/relevanssi.php:3365
+msgid "Custom fields to index:"
+msgstr "Câmpuri personalizate de indexat:"
+
+#: relevanssi.php:4562
+#: ../relevanssi/relevanssi.php:3367
+msgid "A comma-separated list of custom field names to include in the index."
+msgstr "O listă separată prin virgule a numelor câmpurilor personalizate care să fie incluse în index."
+
+#: relevanssi.php:4566
+#: ../relevanssi/relevanssi.php:3371
+msgid "Custom taxonomies to index:"
+msgstr "Taxonomii personalizate de indexat:"
+
+#: relevanssi.php:4568
+#: ../relevanssi/relevanssi.php:3373
+msgid "A comma-separated list of custom taxonomies to include in the index."
+msgstr "O listă separată prin virgule a taxonomiilor personalizate care să fie incluse în index."
+
+#: relevanssi.php:4572
+msgid "Index and search user profiles:"
+msgstr "Indexare și căutare în profilele utilizatorilor:"
+
+#: relevanssi.php:4574
+msgid "If checked, Relevanssi will also index and search user profiles (first name, last name, display name and user description). Requires changes to search results template, see Relevanssi Knowledge Base."
+msgstr "Dacă opțiunea este bifată Relevanssi va indexa și va căuta în profilele utilizatorilor (prenume, nume, nume afișabil, descriere). Afișarea necesită modificări ale machetei de rezultate ale căutării, vedeți Knowledge Base de la relevanssi.com pentru detalii."
+
+#: relevanssi.php:4578
+msgid "Index subscriber profiles:"
+msgstr "Indexare și căutare în profilele abonaților:"
+
+#: relevanssi.php:4580
+msgid "If checked, Relevanssi will index subscriber profiles as well, otherwise only authors, editors, contributors and admins are indexed."
+msgstr "Dacă opțiunea este bifată Relevansii va indexa și va căuta în profilele abonaților. În caz contrar numai profilele autorilor, contributorilor și a administratorilor sunt indexate."
+
+#: relevanssi.php:4584
+msgid "Extra user fields to index:"
+msgstr "Câmpuri profil utilizatori suplimentare de indexat:"
+
+#: relevanssi.php:4586
+msgid "A comma-separated list of user profile field names (names of the database columns) to include in the index."
+msgstr "O listă separată prin virgule a numelor câmpurilor din profilul utilizatorilor (nume de coloane din baza de date) care să fie incluse în index."
+
+#: relevanssi.php:4590
+msgid "Index and search taxonomy pages:"
+msgstr "Indexare și căutare după paginile taxonomiilor:"
+
+#: relevanssi.php:4592
+msgid "If checked, Relevanssi will also index and search taxonomy pages (categories, tags, custom taxonomies)."
+msgstr "Dacă opțiunea este bifată Relevanssi va indexa și va căuta paginile taxonomiilor (categorii, etichete, taxonomii personalizate). Amintiți-vă să reconstruiți indexul dacă modificați această opțiune!"
+
+#: relevanssi.php:4596
+msgid "Taxonomy pages to index:"
+msgstr "Pagini cu taxonomii de indexat:"
+
+#: relevanssi.php:4598
+msgid "A comma-separated list of taxonomies to include in the taxonomy page index ('all' indexes all custom taxonomies. If you don't use 'all', remember to list 'category' and 'post_tag')."
+msgstr "O listă separată prin virgule a taxonomiilor care să fie incluse în indexul de pagini de taxonomii ('all' indexează toate taxonomiile. Dacă nu utilizați 'all', nu uitați să adăugați 'category' și 'post_tag' pentru categorii și respectiv etichete)."
+
+#: relevanssi.php:4603
+#: ../relevanssi/relevanssi.php:3377
+msgid "Save indexing options and build the index"
+msgstr "Salvare opțiuni și construire index"
+
+#: relevanssi.php:4609
+#: ../relevanssi/relevanssi.php:3383
+msgid ""
+"Warning: In many cases caching is not useful, and in some cases can be even harmful. Do not\n"
+"\tactivate cache unless you have a good reason to do so."
+msgstr ""
+"Atenție: în multe cazuri memoria cache nu este utilă, iar uneori poate fi chiar dăunătoare. Nu activați\n"
+"\tmemoria cache decât dacă aveți un motiv clar să o faceți."
+
+#: relevanssi.php:4612
+#: ../relevanssi/relevanssi.php:3386
+msgid "Enable result and excerpt caching:"
+msgstr "Permite salvarea în memoria cache a rezultatelor și a rezumatelor:"
+
+#: relevanssi.php:4614
+#: ../relevanssi/relevanssi.php:3388
+msgid "If checked, Relevanssi will cache search results and post excerpts."
+msgstr "Dacă opțiunea este bifată, Relevanssi va memora rezultatele și rezumatele în memoria cache."
+
+#: relevanssi.php:4618
+#: ../relevanssi/relevanssi.php:3392
+msgid "Cache expire (in seconds):"
+msgstr "Memoria cache expiră în (secunde):"
+
+#: relevanssi.php:4620
+#: ../relevanssi/relevanssi.php:3394
+msgid "86400 = day"
+msgstr "86400 = o zi"
+
+#: relevanssi.php:4624
+#: ../relevanssi/relevanssi.php:3398
+msgid "Entries in the cache"
+msgstr "Înregistrări în memoria cache"
+
+#: relevanssi.php:4628
+#: ../relevanssi/relevanssi.php:3402
+msgid "Clear all caches"
+msgstr "Ștergere completă cache"
+
+#: relevanssi.php:4634
+#: ../relevanssi/relevanssi.php:3408
+msgid "Add synonyms here in 'key = value' format. When searching with the OR operator, any search of 'key' will be expanded to include 'value' as well. Using phrases is possible. The key-value pairs work in one direction only, but you can of course repeat the same pair reversed."
+msgstr "Adăugați aici sinonime în formatul „cheie = valoare”. Atunci când se folosește operatorul SAU, orice termen de căutare din lista de chei va fi expandat și cu valorile corespunzătoare. Se pot utiliza și fraze. Perechea cheie-valoare funționează unidirecțional, puteți bineînțeles să introduceți și perechea inversată în listă."
+
+#: relevanssi.php:4642
+msgid "Import or export options"
+msgstr "Import și export opțiuni"
+
+#: relevanssi.php:4644
+msgid "Here you find the current Relevanssi Premium options in a text format. Copy the contents of the text field to make a backup of your settings. You can also paste new settings here to change all settings at the same time. This is useful if you have default settings you want to use on every system."
+msgstr "Aici găsiți setările curente ale modulului Relevanssi Premium în format text. Puteți copia conținutul câmpului pentru a face backup setărilor. Puteți de asemenea copia setări noi în acest câmp pentru a modifica toate setările dintr-o singură mișcare. Aceasta este util când aveți un set implicit de opțiuni pe care doriți să îl replicați pe toate blogurile."
+
+#: relevanssi.php:4648
+msgid "Import settings"
+msgstr "Import setări"
+
+#: relevanssi.php:4650
+msgid "Note! Make sure you've got correct settings from a right version of Relevanssi. Settings from a different version of Relevanssi may or may not work and may or may not mess your settings."
+msgstr "Notă: Asigurați-vă că introduceți setările de la o versiune corectă de Relevanssi. Setările de la o altă versiune ar putea sau nu să funcționeze sau ar putea să vă strice setările curente."
+
+#: relevanssi.php:4663
+#: ../relevanssi/relevanssi.php:3433
+msgid "<p>Enter a word here to add it to the list of stopwords. The word will automatically be removed from the index, so re-indexing is not necessary. You can enter many words at the same time, separate words with commas.</p>"
+msgstr "<p>Introduceți aici un cuvânt care să fie adăugat la lista de cuvinte ignorate. Cuvântul va fi eliminat automat din index, nu mai este necesară reindexarea. Pentru a introduce mai multe cuvinte simultan, separați-le cu virgule.</p>"
+
+#: relevanssi.php:4665
+#: ../relevanssi/relevanssi.php:3435
+msgid "Stopword(s) to add: "
+msgstr "Cuvinte de adăugat la lista de cuvinte ignorate:"
+
+#: relevanssi.php:4666
+#: ../relevanssi/relevanssi.php:3436
+msgid "Add"
+msgstr "Adăugare"
+
+#: relevanssi.php:4669
+#: ../relevanssi/relevanssi.php:3439
+msgid "<p>Here's a list of stopwords in the database. Click a word to remove it from stopwords. Removing stopwords won't automatically return them to index, so you need to re-index all posts after removing stopwords to get those words back to index."
+msgstr "<p>Aceasta este o listă de cuvinte ignorate din baza de date. Apăsați pe un cuvânt pentru a-l elimina din listă. Eliminarea cuvintelor nu se va reflecta în mod automat în index, va trebui să reconstruiți indexul pentru ca modificările să aibă efect."
+
+#: relevanssi.php:4695
+#: ../relevanssi/relevanssi.php:3465
+msgid "Remove all stopwords"
+msgstr "Eliminarea tuturor cuvintelor ignorate"
+
+#: relevanssi.php:4701
+#: ../relevanssi/relevanssi.php:3471
+msgid "Here's a list of stopwords you can use to export the stopwords to another blog."
+msgstr "Aceasta este o listă de cuvinte de ignorat pe care o puteți exporta pentru utilizarea în alt blog."
+
+#: relevanssi.php:4781
+msgid "Relevanssi post controls"
+msgstr "Controale articole Relevanssi"
+
+#: relevanssi.php:4787
+msgid "Relevanssi page controls"
+msgstr "Controale pagini Relevanssi"
+
+#: relevanssi.php:4805
+msgid "Exclude this post or page from the index."
+msgstr "Exclude acest document din index."
+
+#: ../relevanssi/relevanssi.php:474
+msgid "Data wiped clean, you can now delete the plugin."
+msgstr "Datele modulului au fost curățate, acum se poate elimina modului."
+
+#: ../relevanssi/relevanssi.php:2393
+msgid "Relevanssi Search Options"
+msgstr "Opțiuni de căutare Relevanssi"
+
+#: ../relevanssi/relevanssi.php:3057
+msgid "Uninstalling"
+msgstr "Dezinastalare"
+
+#: ../relevanssi/relevanssi.php:3079
+msgid "Title weight:"
+msgstr "Greutate titlu:"
+
+#: ../relevanssi/relevanssi.php:3081
+#: ../relevanssi/relevanssi.php:3085
+#: ../relevanssi/relevanssi.php:3089
+#, php-format
+msgid "Default: %s"
+msgstr "Implicit: %s"
+
+#: ../relevanssi/relevanssi.php:3083
+msgid "Tag weight:"
+msgstr "Greutate etichetă:"
+
+#: ../relevanssi/relevanssi.php:3087
+msgid "Comment weight:"
+msgstr "Greutate comentariu:"
+
+#: ../relevanssi/relevanssi.php:3162
+msgid "Enter a comma-separated list of category and tag IDs that are excluded from search results. This only works here, you can't use the input field option (WordPress doesn't pass custom parameters there)."
+msgstr "Introduceți o listă separată prin virgule a ID-urilor categoriilor și etichetelor care doriți să fie excluse din lista de rezultate."
+
+#: ../relevanssi/relevanssi.php:3168
+msgid "Enter a comma-separated list of post/page IDs that are excluded from search results. This only works here, you can't use the input field option (WordPress doesn't pass custom parameters there)."
+msgstr "Introduceți o listă separată prin virgule a ID-urilor documentelor care doriți să fie excluse din lista de rezultate."
+
+#: ../relevanssi/relevanssi.php:3230
+msgid "Highlight query terms in documents:"
+msgstr "Evidențierea termenilor de căutare în documente:"
+
+#: ../relevanssi/relevanssi.php:3284
+msgid "What to include in the index"
+msgstr "Ce să fie înclus în index"
+
+#: ../relevanssi/relevanssi.php:3286
+msgid "Everything"
+msgstr "Totul"
+
+#: ../relevanssi/relevanssi.php:3287
+msgid "All public post types"
+msgstr "Toate tipurile de documente publice"
+
+#: ../relevanssi/relevanssi.php:3288
+msgid "Posts"
+msgstr "Articole"
+
+#: ../relevanssi/relevanssi.php:3289
+msgid "Pages"
+msgstr "Pagini"
+
+#: ../relevanssi/relevanssi.php:3290
+msgid "Custom, set below"
+msgstr "Personalizat, setați mai jos"
+
+#: ../relevanssi/relevanssi.php:3292
+msgid ""
+"This determines which post types are included in the index. Choosing 'everything'\n"
+"\twill include posts, pages and all custom post types. 'All public post types' includes all\n"
+"\tregistered post types that don't have the 'exclude_from_search' set to true. This includes post,\n"
+"\tpage, and possible custom types. 'All public types' requires at least WP 2.9, otherwise it's the\n"
+"\tsame as 'everything'. If you choose 'Custom', only the post types listed below are indexed.\n"
+"\tNote: attachments are covered with a separate option below."
+msgstr ""
+"Această opțiune determină ce tipuri de documente sunt incluse în index. Alegând „Totul” va include toate articolele,\n"
+"\tpaginile și documentele de tip personalizat. „Toate tipurile de documente publice” va include toate tipurile de documente\n"
+"\tpersonalizate care nu au atributul <i>exclude_fom_search</i> cu valoarea true. Aceasta va include articolele, paginile și\n"
+"\tposibile tipuri de documente personalizate. „Toate tipurile de documente publice” necesită cel puțin WP 2.9, altfel setarea va\n"
+"\tfuncționa la fel cu „Totul”. Dacă alegeți „Personalizat” numai tipurile de documente listate mai jos sunt indexate.\n"
+"\t Notă: atașamentele sunt acoperite cu altă opțiune aflată mai jos."
+
+#: ../relevanssi/relevanssi.php:3301
+msgid "Custom post types to index"
+msgstr "Tipurile de documente de inclus în index"
+
+#: ../relevanssi/relevanssi.php:3303
+msgid ""
+"If you don't want to index all custom post types, list here the custom post types\n"
+"\tyou want to see indexed. List comma-separated post type names (as used in the database). You can\n"
+"\talso use a hidden field in the search form to restrict the search to a certain post type:\n"
+"\t<code>&lt;input type='hidden' name='post_type' value='comma-separated list of post types'\n"
+"\t/&gt;</code>. If you choose 'All public post types' or 'Everything' above, this option has no\n"
+"\teffect. You can exclude custom post types with the minus notation, for example '-foo,bar,-baz'\n"
+"\twould include 'bar' and exclude 'foo' and 'baz'."
+msgstr ""
+"Dacă nu doriți să indexați toate tipurile de documente personalizate, listați aici tipurile pe care doriți\n"
+"\tsă le introduceți în index. Listați numele tipurilor de documente separate prin virgule. În formularul de căutare\n"
+"\tse poate folosi un câmp ascuns pentru a restricționa căutarea la un singur tip de document personalizat:\n"
+"\t<code>&lt;input type='hidden' name='post_type' value='listă separată prin virgule ale tipurilor de documente dorite' /&gt;</code>.\n"
+"\tDacă ați ales mai sus „Toate tipurile de documente publice” sau „Totul”, această opțiune nu mai are efect. Puteți exclude tipuri de documente\n"
+"\tprin notare cu minus în cadrul listei, de exemplu  '-foo,bar,-baz' va include 'bar' și va exclude 'foo' și 'baz'."
+
+#: ../relevanssi/relevanssi.php:3319
+msgid "Index and search your posts' attachments:"
+msgstr "Indexare și căutare în atașamente:"
+
+#: ../relevanssi/relevanssi.php:3321
+msgid "If checked, Relevanssi will also index and search attachments of your posts (pictures, files and so on). Remember to rebuild the index if you change this option!"
+msgstr "Dacă opțiunea este bifată Relevanssi va indexa și va căuta și atașamentele documentelor (imagini, fișiere, etc). Amintiți-vă să reconstruiți indexul dacă modificați această opțiune!"
+
+#: ../relevanssi/relevanssi.php:3416
+msgid "Uninstalling the plugin"
+msgstr "Dezinstalarea modulului"
+
+#: ../relevanssi/relevanssi.php:3418
+msgid "If you want to uninstall the plugin, start by clicking the button below to wipe clean the options and tables created by the plugin, then remove it from the plugins list."
+msgstr "Dacă doriți să dezinstalați modulul, începeți prin apăsarea butornului de mai jos pentru a șterge opțiunile și tabelele specifice din baza de date, apoi eliminați modulul din listă."
+
+#: ../relevanssi/relevanssi.php:3420
+msgid "Remove plugin data"
+msgstr "Eliminarea datelor modulului"
+
+#~ msgid "Just posts"
+#~ msgstr "Numai articolele"
+
+#~ msgid "Just pages"
+#~ msgstr "Numai paginile"

@@ -90,5 +90,6 @@ function jquery_install_site( $site, $user ) {
 		update_option( $option, $value );
 
 	delete_option( 'rewrite_rules' );
+
 	restore_current_blog();
 }
