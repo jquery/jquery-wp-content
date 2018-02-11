@@ -1,0 +1,1392 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Relevanssi-ru_RU\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-07-24 16:58+0400\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Flector <rlector@gmail.com>\n"
+"Language-Team: Flector <rlector@gmail.com>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: relevanssi.php:296
+msgid "Tag weight:"
+msgstr "Вес меток:"
+
+#: relevanssi.php:311
+msgid "Category weight:"
+msgstr "Вес рубрик:"
+
+#: lib/excerpts-highlights.php:11
+msgid "There is no excerpt because this is a protected post."
+msgstr "Отсутствует цитата, так как это защищенная запись."
+
+#: lib/indexing.php:93
+msgid "Indexing complete!"
+msgstr "Индексирование завершено!"
+
+#: lib/init.php:40
+#, php-format
+msgid ""
+"Relevanssi needs attention: Remember to build the index (you can do it at <a "
+"href=\"%1$s\">the\n"
+"\t\t\t   settings page</a>), otherwise searching won't work."
+msgstr ""
+"Relevanssi сообщает: Помните, что без построения индекса (для его создания "
+"<a href=\"%1$s\">перейдите\n"
+"\t\t\t  на страницу настроек</a>) поиск работать не будет."
+
+#: lib/init.php:84 lib/init.php:85
+msgid "User searches"
+msgstr "История поиска"
+
+#: lib/interface.php:6
+msgid "Relevanssi Premium Search Options"
+msgstr "Настройки плагина Relevanssi Premium"
+
+#: lib/interface.php:9
+msgid "Relevanssi Search Options"
+msgstr "Настройки плагина Relevanssi"
+
+#: lib/interface.php:86
+msgid "User Searches"
+msgstr "История поиска"
+
+#: lib/interface.php:88
+msgid "Relevanssi User Searches"
+msgstr "Поисковые запросы"
+
+#: lib/interface.php:335
+#, php-format
+msgid ""
+"<div id='message' class='updated fade'><p>Successfully added %d/%d terms to "
+"stopwords!</p></div>"
+msgstr ""
+"<div id='message' class='updated fade'><p>Слова %d из %d добавлены в черный "
+"список!</p></div>"
+
+#: lib/interface.php:342
+#, php-format
+msgid ""
+"<div id='message' class='updated fade'><p>Term '%s' added to stopwords!</p></"
+"div>"
+msgstr ""
+"<div id='message' class='updated fade'><p>Слово '%s'  добавлено в чёрный "
+"список!</p></div>"
+
+#: lib/interface.php:345
+#, php-format
+msgid ""
+"<div id='message' class='updated fade'><p>Couldn't add term '%s' to "
+"stopwords!</p></div>"
+msgstr ""
+"<div id='message' class='updated fade'><p>Не удалось добавить слово '%s' в "
+"черный список!</p></div>"
+
+#: lib/interface.php:374
+msgid ""
+"<div id='message' class='updated fade'><p>Stopwords removed! Remember to re-"
+"index.</p></div>"
+msgstr ""
+"<div id='message' class='updated fade'><p>Черный список очищен. Не забудьте "
+"выполнить переиндексацию!</p></div>"
+
+#: lib/interface.php:384
+#, php-format
+msgid ""
+"<div id='message' class='updated fade'><p>Term '%s' removed from stopwords! "
+"Re-index to get it back to index.</p></div>"
+msgstr ""
+"<div id='message' class='updated fade'><p>Слово '%s' удалено из черного "
+"списка! Выполните переиндексацию, чтобы включить его обратно в поиск.</p></"
+"div>"
+
+#: lib/interface.php:387
+#, php-format
+msgid ""
+"<div id='message' class='updated fade'><p>Couldn't remove term '%s' from "
+"stopwords!</p></div>"
+msgstr ""
+"<div id='message' class='updated fade'><p>Не удалось удалить слово '%s' из "
+"черного списка!</p></div>"
+
+#: lib/interface.php:398
+msgid "25 most common words in the index"
+msgstr "25 самых частых слов в индексе"
+
+#: lib/interface.php:400
+msgid ""
+"These words are excellent stopword material. A word that appears in most of "
+"the posts in the database is quite pointless when searching. This is also an "
+"easy way to create a completely new stopword list, if one isn't available in "
+"your language. Click the icon after the word to add the word to the stopword "
+"list. The word will also be removed from the index, so rebuilding the index "
+"is not necessary."
+msgstr ""
+"Эти слова необходимо поместить в черный список, так как они не несут "
+"смысловой нагрузки при поиске (частицы, союзы, предлоги и тому подобное). "
+"Кликните на иконку рядом с выбранным словом, чтобы добавить его в черный "
+"список. Переиндексацию при этом делать нет необходимости."
+
+#: lib/interface.php:426
+msgid "Add to stopwords"
+msgstr "Добавить в черный список"
+
+#: lib/interface.php:437
+msgid "Total Searches"
+msgstr "Общая статистика"
+
+#: lib/interface.php:440
+msgid "Totals"
+msgstr "Всего"
+
+#: lib/interface.php:445
+msgid "Common Queries"
+msgstr "Частые запросы"
+
+#: lib/interface.php:447
+msgid ""
+"Here you can see the 20 most common user search queries, how many times "
+"those \n"
+"\t\tqueries were made and how many results were found for those queries."
+msgstr ""
+"Здесь выведен список из 20 наиболее частых запросов пользователей. Первая "
+"колонка:   поисковый запрос. Вторая колонка: сколько раз использовали данный "
+"поисковый запрос. Третья колонка: количество результатов поиска по этому "
+"поисковому запросу."
+
+#: lib/interface.php:453 lib/interface.php:469 lib/interface.php:501
+msgid "Today and yesterday"
+msgstr "Сегодня и вчера"
+
+#: lib/interface.php:457 lib/interface.php:473 lib/interface.php:502
+msgid "Last 7 days"
+msgstr "За последние 7 дней"
+
+#: lib/interface.php:461 lib/interface.php:477 lib/interface.php:503
+msgid "Last 30 days"
+msgstr "За последние 30 дней"
+
+#: lib/interface.php:466
+msgid "Unsuccessful Queries"
+msgstr "Неудачные запросы"
+
+#: lib/interface.php:484
+msgid "Reset Logs"
+msgstr "Обнуление логов"
+
+#: lib/interface.php:487
+#, php-format
+msgid "To reset the logs, type \"reset\" into the box here %s and click %s"
+msgstr "Чтобы обнулить логи наберите слово \"reset\" в этом поле: %s %s"
+
+#: lib/interface.php:504
+msgid "Forever"
+msgstr "За все время"
+
+#: lib/interface.php:506
+msgid "When"
+msgstr "Когда"
+
+#: lib/interface.php:506
+msgid "Searches"
+msgstr "Поиски"
+
+#: lib/interface.php:536
+msgid "Query"
+msgstr "Запрос"
+
+#: lib/interface.php:536
+msgid "Hits"
+msgstr "Найдено"
+
+#: lib/interface.php:846 lib/interface.php:891
+msgid "Basic options"
+msgstr "Основные настройки"
+
+#: lib/interface.php:847 lib/interface.php:957
+msgid "Weights"
+msgstr "Важность"
+
+#: lib/interface.php:848 lib/interface.php:1012
+msgid "Logs"
+msgstr "Логи"
+
+#: lib/interface.php:849 lib/interface.php:1041
+msgid "Exclusions and restrictions"
+msgstr "Исключения и ограничения"
+
+#: lib/interface.php:850
+msgid "Custom excerpts"
+msgstr "Свои цитаты"
+
+#: lib/interface.php:851
+msgid "Highlighting search results"
+msgstr "Подсветка результатов поиска"
+
+#: lib/interface.php:852 lib/interface.php:1187
+msgid "Indexing options"
+msgstr "Настройки индексирования"
+
+#: lib/interface.php:853 lib/interface.php:1335
+msgid "Caching"
+msgstr "Кэширование"
+
+#: lib/interface.php:854 lib/interface.php:1358
+msgid "Synonyms"
+msgstr "Синонимы"
+
+#: lib/interface.php:855 lib/interface.php:1366
+msgid "Stopwords"
+msgstr "Черный список"
+
+#: lib/interface.php:858
+msgid "Import/export options"
+msgstr "Импорт/Экспорт настроек"
+
+#: lib/interface.php:861
+msgid "Buy Relevanssi Premium"
+msgstr "Купить Relevanssi Premium"
+
+#: lib/interface.php:866
+msgid "Quick tools"
+msgstr "Быстрый старт"
+
+#: lib/interface.php:868
+msgid "Save options"
+msgstr "Сохранить настройки"
+
+#: lib/interface.php:869
+msgid "Build the index"
+msgstr "Создать индекс"
+
+#: lib/interface.php:870 lib/interface.php:1333
+msgid "Continue indexing"
+msgstr "Продолжить индексирование"
+
+#: lib/interface.php:870
+msgid "add"
+msgstr "добавить"
+
+#: lib/interface.php:870
+msgid "documents."
+msgstr "документ(ов)."
+
+#: lib/interface.php:874
+msgid ""
+"WARNING: You've chosen no post types to index. Nothing will be indexed. <a "
+"href='#indexing'>Choose some post types to index</a>."
+msgstr ""
+"ВНИМАНИЕ: Вы не выбрали ни один тип записей для включения в поисковый "
+"индекс, поэтому нечего индексировать. <a href='#indexing'>Выбрать типы "
+"записей для включения в индекс</a>."
+
+#: lib/interface.php:878
+msgid ""
+"Use 'Build the index' to build the index with current <a "
+"href='#indexing'>indexing options</a>. If you can't finish indexing with one "
+"go, use 'Continue indexing' to finish the job. You can change the number of "
+"documents to add until you find the largest amount you can add with one go. "
+"See 'State of the Index' below to find out how many documents actually go "
+"into the index."
+msgstr ""
+"Используйте кнопку <strong>Создать индекс</strong> для построения поискового "
+"индекса на основе выбранных <a href='#indexing'>настроек индексирования</a>. "
+"Если индексирование не будет завершено за один проход, то нажмите кнопку "
+"<strong>Продолжить индексирование</strong> для завершения процесса. Вы "
+"можете самостоятельно контролировать число документов, обрабатываемых за "
+"один раз, указав нужное значение в текстовом поле. <strong>Состояние "
+"индекса</strong> показывает, сколько документов уже проиндексировано."
+
+#: lib/interface.php:880
+msgid ""
+"If Relevanssi doesn't index anything and you have upgraded from a 2.x "
+"version, it's likely the changes in\n"
+"\tthe database structure haven't gone through in the upgrade. In that case "
+"all you need to do is to deactivate the\n"
+"\tplugin and then activate it again."
+msgstr ""
+"При апгрейде с версий 2.x плагина вам необходимо деактивировать и заново "
+"активировать плагин. В противном случае, плагин не сможет построить "
+"поисковый индекс."
+
+#: lib/interface.php:884
+msgid "State of the Index"
+msgstr "Состояние индекса"
+
+#: lib/interface.php:886
+msgid "Documents in the index"
+msgstr "Документов в индексе"
+
+#: lib/interface.php:887
+msgid "Terms in the index"
+msgstr "Слов в индексе"
+
+#: lib/interface.php:888
+msgid "Highest post ID indexed"
+msgstr "ID последней проиндексированной записи"
+
+#: lib/interface.php:897
+msgid "Use search for admin:"
+msgstr "Админ. панель"
+
+#: lib/interface.php:899
+msgid "If checked, Relevanssi will be used for searches in the admin interface"
+msgstr ""
+"Если выбрано, то Relevanssi заменит собой стандартный поиск в админ. панели."
+
+#: lib/interface.php:903
+msgid "Default operator for the search?"
+msgstr "Как обрабатывать поисковый запрос?"
+
+#: lib/interface.php:905
+msgid "AND - require all terms"
+msgstr "И - искать все слова"
+
+#: lib/interface.php:906
+msgid "OR - any term present is enough"
+msgstr "ИЛИ - достаточно присутствия любого слова"
+
+#: lib/interface.php:908
+msgid ""
+"If you choose AND and the search finds no matches, it will automatically do "
+"an OR search."
+msgstr ""
+"Если поиск с условием \"И\" не даст результата, то автоматически будет "
+"произведен поиск с условием \"ИЛИ\"."
+
+#: lib/interface.php:912
+msgid "Disable OR fallback:"
+msgstr "Отключить замену на ИЛИ:"
+
+#: lib/interface.php:914
+msgid ""
+"If you don't want Relevanssi to fall back to OR search when AND search gets "
+"no hits, check this option. For most cases, leave this one unchecked."
+msgstr ""
+"Если поиск с оператором \"И\" не даст результатов, то плагин не будет "
+"производить поиск с оператором \"ИЛИ\"."
+
+#: lib/interface.php:918
+msgid "Default order for results:"
+msgstr "Сортировка результатов:"
+
+#: lib/interface.php:920
+msgid "Relevance (highly recommended)"
+msgstr "По релевантности (рекомендуется)"
+
+#: lib/interface.php:921
+msgid "Post date"
+msgstr "По дате публикации"
+
+#: lib/interface.php:923
+msgid ""
+"If you want date-based results, see the recent post bonus in the Weights "
+"section."
+msgstr ""
+"Если вы хотите, чтобы в результатах поиска приоритет отдавался новым "
+"статьям, то задайте им нужный вес в секции <a href='#weights'>Важность</a> "
+"(только в Premium версии плагина)."
+
+#: lib/interface.php:927
+msgid "When to use fuzzy matching?"
+msgstr "Когда использовать нечеткое соответствие?"
+
+#: lib/interface.php:929
+msgid "When straight search gets no hits"
+msgstr "Когда точные совпадения не найдены"
+
+#: lib/interface.php:930
+msgid "Always"
+msgstr "Всегда"
+
+#: lib/interface.php:931
+msgid "Don't use fuzzy search"
+msgstr "Не использовать"
+
+#: lib/interface.php:933
+msgid ""
+"Straight search matches just the term. Fuzzy search matches everything that "
+"begins or ends with the search term."
+msgstr ""
+"Точное соответствие проверяет слово целиком, а нечеткое соответствие ищет "
+"совпадения в начале и конце слов."
+
+#: lib/interface.php:941
+msgid "Limit searches:"
+msgstr "Ограничение результатов:"
+
+#: lib/interface.php:943
+msgid ""
+"If this option is checked, Relevanssi will limit search results to at most "
+"500 results per term. This will improve performance, but may cause some "
+"relevant documents to go unfound. However, Relevanssi tries to prioritize "
+"the most relevant documents. <strong>This does not work well when sorting "
+"results by date.</strong> The throttle can end up cutting off recent posts "
+"to favour more relevant posts."
+msgstr ""
+"При включении данной опции плагин не будет искать более 500 результатов на "
+"один поисковый запрос. Включение данной опции улучшает производительность, "
+"но часть релевантных документов может быть упущена."
+
+#: lib/interface.php:947
+msgid "Limit:"
+msgstr "Лимит:"
+
+#: lib/interface.php:949
+msgid ""
+"For better performance, adjust the limit to a smaller number. Adjusting the "
+"limit to 100 - or even lower - should be safe for good results, and might "
+"bring a boost in search speed."
+msgstr ""
+"Чем меньше число, тем выше производительность поиска. При лимите в 100 (или "
+"даже меньше) результатов поиска можно сохранить приемлимые результаты выдачи "
+"при хорошей скорости поиска."
+
+#: lib/interface.php:959
+msgid ""
+"These values affect the weights of the documents. These are all multipliers, "
+"so 1 means no change in weight, less than 1 means less weight, and more than "
+"1 means more weight. Setting something to zero makes that worthless. For "
+"example, if title weight is more than 1, words in titles are more "
+"significant than words elsewhere. If title weight is 0, words in titles "
+"won't make any difference to the search results."
+msgstr ""
+"В этом разделе вы можете указать вес (приоритет, важность) различным "
+"элементам сайта. Чем выше вес - тем значимей данный элемент и тем больше "
+"шансов у страницы с этим элементом оказаться среди первых результатов "
+"поиска. На практике это значит, что если в заголовке записи есть искомое "
+"слово, а у заголовка установлен вес в 5 единиц, то практически наверняка эта "
+"запись будет первой среди других результатов поиска (если, конечно, другие "
+"записи тоже не содержат в заголовке искомое слово)."
+
+#: lib/interface.php:964
+msgid "Element"
+msgstr "Элемент"
+
+#: lib/interface.php:965
+msgid "Weight"
+msgstr "Вес"
+
+#: lib/interface.php:966
+msgid "Default weight"
+msgstr "Вес по умолчанию"
+
+#: lib/interface.php:971
+msgid "Post titles"
+msgstr "Вес заголовков"
+
+#: lib/interface.php:983
+msgid "Comment text"
+msgstr "Вес комментариев"
+
+#: lib/interface.php:1004
+msgid "WPML compatibility"
+msgstr "WPML совместимость"
+
+#: lib/interface.php:1006
+msgid "Limit results to current language:"
+msgstr "Ограничить результаты для текущего языка:"
+
+#: lib/interface.php:1008
+msgid ""
+"If this option is checked, Relevanssi will only return results in the "
+"current active language. Otherwise results will include posts in every "
+"language."
+msgstr ""
+"Если опция включена, то Relevanssi будет возвращать результаты только для "
+"текущего языка блога."
+
+#: lib/interface.php:1014
+msgid "Keep a log of user queries:"
+msgstr "Записывать поисковые запросы пользователей:"
+
+#: lib/interface.php:1016
+msgid ""
+"If checked, Relevanssi will log user queries. The log appears in 'User "
+"searches' on the Dashboard admin menu."
+msgstr ""
+"Если опция включена, то Relevanssi будет записывать все поисковые запросы "
+"пользователей. Найти их можно будет по ссылке \"История поиска\" в разделе "
+"\"Консоль\" ."
+
+#: lib/interface.php:1020
+msgid "Log the user's IP with the queries:"
+msgstr "Записывать IP пользователей"
+
+#: lib/interface.php:1022
+msgid "If checked, Relevanssi will log user's IP-Adress with the queries."
+msgstr ""
+"Если опция включена, то Relevanssi будет записывать IP пользователей вместе "
+"с их поисковыми запросами."
+
+#: lib/interface.php:1026
+msgid "Don't log queries from these users:"
+msgstr "Не записывать поисковые запросы этих пользователей:"
+
+#: lib/interface.php:1028
+msgid ""
+"Comma-separated list of numeric user IDs or user login names that will not "
+"be logged."
+msgstr ""
+"Введите через запятую ID или логины пользователей, чьи запросы не надо "
+"записывать в журнал."
+
+#: lib/interface.php:1032
+msgid ""
+"If you enable logs, you can see what your users are searching for. You can "
+"prevent your own searches from getting in the logs with the omit feature."
+msgstr ""
+"Если вы включите запись поисковых запросов пользователей, то сможете "
+"увидеть, что они ищут на вашем сайте. Вы можете исключить из логов свои "
+"собственные поисковые запросы."
+
+#: lib/interface.php:1035
+msgid ""
+"If you enable logs, you can see what your users are searching for. Logs are "
+"also needed to use the 'Did you mean?' feature. You can prevent your own "
+"searches from getting in the logs with the omit feature."
+msgstr ""
+"Если вы включите запись поисковых запросов пользователей, то сможете "
+"увидеть, что они ищут на вашем сайте. Запись поисковых запросов также "
+"необходима для использования функции \"Возможно, вы имели в виду:\". Вы "
+"можете исключить из логов свои собственные поисковые запросы."
+
+#: lib/interface.php:1043
+msgid "Restrict search to these categories and tags:"
+msgstr "Искать только среди этих рубрик и меток:"
+
+#: lib/interface.php:1045
+msgid ""
+"Enter a comma-separated list of category and tag IDs to restrict search to "
+"those categories or tags. You can also use <code>&lt;input type='hidden' "
+"name='cats' value='list of cats and tags' /&gt;</code> in your search form. "
+"The input field will \toverrun this setting."
+msgstr ""
+"Введите через запятую ID рубрик и меток, чтобы поиск велся только по ним. "
+
+#: lib/interface.php:1049
+msgid "Exclude these categories and tags from search:"
+msgstr "Исключить из поиска эти рубрики и метки:"
+
+#: lib/interface.php:1051
+msgid ""
+"Enter a comma-separated list of category and tag IDs that are excluded from "
+"search results. You can exclude categories with the 'cat' input field by "
+"using negative values."
+msgstr ""
+"Введите через запятую ID рубрик и меток, которые необходимо исключить из "
+"результатов поиска. "
+
+#: lib/interface.php:1055
+msgid "Exclude these posts/pages from search:"
+msgstr "Исключить эти записи/страницы из поиска:"
+
+#: lib/interface.php:1059
+msgid ""
+"Enter a comma-separated list of post/page IDs that are excluded from search "
+"results. This only works here, you can't use the input field option "
+"(WordPress doesn't pass custom parameters there). You can also use a "
+"checkbox on post/page edit pages to remove posts from index."
+msgstr ""
+"Введите через запятую ID записей/страниц, которые необходимо исключить из "
+"результатов поиска. Также вы можете использовать для этого чекбокс на "
+"странице редактирования записи/страницы."
+
+#: lib/interface.php:1062
+msgid ""
+"Enter a comma-separated list of post/page IDs that are excluded from search "
+"results. This only works here, you can't use the input field option "
+"(WordPress doesn't pass custom parameters there)."
+msgstr ""
+"Введите через запятую ID записей/страниц, которые необходимо исключить из "
+"результатов поиска."
+
+#: lib/interface.php:1068
+msgid "Respect exclude_from_search for custom post types:"
+msgstr "Учитывать <i>exclude_from_search</i> в произвольных типах записей:"
+
+#: lib/interface.php:1070
+msgid ""
+"If checked, Relevanssi won't display posts of custom post types that have "
+"'exclude_from_search' set to true. If not checked, Relevanssi will display "
+"anything that is indexed."
+msgstr ""
+"Если опция включена, то Relevanssi не будет показывать записи произвольных "
+"типов, в которых значение 'exclude_from_search' равно true. Если опция "
+"отключена, то Relevanssi будет показывать все проиндексированные записи."
+
+#: lib/interface.php:1072
+msgid "Custom excerpts/snippets"
+msgstr "Свои цитаты/сниппеты "
+
+#: lib/interface.php:1074
+msgid "Create custom search result snippets:"
+msgstr "Создавать свои цитаты для результатов поиска:"
+
+#: lib/interface.php:1076
+msgid ""
+"If checked, Relevanssi will create excerpts that contain the search term "
+"hits. To make them work, make sure your search result template uses "
+"the_excerpt() to display post excerpts."
+msgstr ""
+"Если опция включена, то Relevanssi будет создавать свои цитаты, содержащие "
+"искомый запрос. Данная опция будет работать только, если в теме блога в "
+"файле search.php используется функция the_excerpt для вывода цитат записей."
+
+#: lib/interface.php:1078
+msgid ""
+"Note: Building custom excerpts can be slow. If you are not actually using "
+"the excerpts, make sure you disable the option."
+msgstr ""
+"Примечание: создание своих цитат может быть очень медленным. Если вы в своей "
+"теме блога не используете вывод цитат, то вам лучше отключить данную опцию."
+
+#: lib/interface.php:1080
+msgid "Length of the snippet:"
+msgstr "Длина цитаты:"
+
+#: lib/interface.php:1083
+msgid "characters"
+msgstr "символов"
+
+#: lib/interface.php:1084
+msgid "words"
+msgstr "слов"
+
+#: lib/interface.php:1086
+msgid "This must be an integer."
+msgstr "Значение должно быть целым числом."
+
+#: lib/interface.php:1090
+msgid "Allowable tags in excerpts:"
+msgstr "Разрешенные теги:"
+
+#: lib/interface.php:1093
+msgid ""
+"List all tags you want to allow in excerpts, without any whitespace. For "
+"example: '&lt;p&gt;&lt;a&gt;&lt;strong&gt;'."
+msgstr ""
+"Список тегов, которые не будут вырезаться парсером из цитат. Указывать без "
+"пробелов и запятых, например:  '&lt;p&gt;&lt;a&gt;&lt;strong&gt;'."
+
+#: lib/interface.php:1097
+msgid "Show breakdown of search hits in excerpts:"
+msgstr "Показывать выдержку с числом совпадений: "
+
+#: lib/interface.php:1099
+msgid ""
+"Check this to show more information on where the search hits were made. "
+"Requires custom snippets to work."
+msgstr ""
+"Включите эту опцию, чтобы вывести в своей цитате выдержку с числом поисковых "
+"совпадений."
+
+#: lib/interface.php:1103
+msgid "The breakdown format:"
+msgstr "Шаблон выдержки:"
+
+#: lib/interface.php:1105
+msgid ""
+"Use %body%, %title%, %tags% and %comments% to display the number of hits (in "
+"different parts of the post), %total% for total hits, %score% to display the "
+"document weight and %terms% to show how many hits each search term got. No "
+"double quotes (\") allowed!"
+msgstr ""
+"Используйте %body%, %title%, %tags% и %comments% для вывода числа поисковых "
+"совпадений (в различных частях записи), %total% для общего числа поисковых "
+"совпадений, %score% для отображения веса элемента и %terms% для вывода числа "
+"переходов на каждое поисковое слово. Нельзя использовать кавычки вида "
+"\" (знаки дюйма)!"
+
+#: lib/interface.php:1107
+msgid "Search hit highlighting"
+msgstr "Подсветка совпадений в результатах поиска"
+
+#: lib/interface.php:1109
+msgid "First, choose the type of highlighting used:"
+msgstr "Сначала выберите используемый тип подсветки:"
+
+#: lib/interface.php:1112
+msgid "Highlight query terms in search results:"
+msgstr "Тип подсветки:"
+
+#: lib/interface.php:1114
+msgid "No highlighting"
+msgstr "Без подсветки"
+
+#: lib/interface.php:1118
+msgid "Text color"
+msgstr "Цвет текста"
+
+#: lib/interface.php:1119
+msgid "Background color"
+msgstr "Цвет фона"
+
+#: lib/interface.php:1120
+msgid "CSS Style"
+msgstr "Стиль CSS"
+
+#: lib/interface.php:1121
+msgid "CSS Class"
+msgstr "Класс CSS"
+
+#: lib/interface.php:1123
+msgid "Highlighting isn't available unless you use custom snippets"
+msgstr ""
+"Подсветка в тексте цитат будет работать только при использовании своих цитат."
+
+#: lib/interface.php:1127
+msgid "Highlight query terms in result titles too:"
+msgstr "Подсвечивать совпадения в заголовках записей:"
+
+#: lib/interface.php:1133
+msgid "Highlight query terms in documents from local searches:"
+msgstr "Подсвечивать совпадения в записях:"
+
+#: lib/interface.php:1135
+msgid ""
+"Highlights hits when user opens the post from search results. This is based "
+"on HTTP referrer, so if that's blocked, there'll be no highlights."
+msgstr ""
+"Подсвечивать совпадения, если пользователь открывает запись со страницы с "
+"результатами поиска.  Не будет работать, если передача HTTP referrer у "
+"пользователя запрещена."
+
+#: lib/interface.php:1141
+msgid "Highlight query terms in comments:"
+msgstr "Подсвечивать совпадения в комментариях:"
+
+#: lib/interface.php:1143
+msgid ""
+"Highlights hits in comments when user opens the post from search results."
+msgstr ""
+"Подсвечивать совпадения в комментариях, если пользователь открывает запись "
+"со страницы с результатами поиска.  Не будет работать, если передача HTTP "
+"referrer у пользователя запрещена."
+
+#: lib/interface.php:1147
+msgid "Uncheck this if you use non-ASCII characters:"
+msgstr "Снимите галку, если вы используете не ASCII символы."
+
+#: lib/interface.php:1149
+msgid ""
+"If you use non-ASCII characters (like Cyrillic alphabet) and the highlights "
+"don't work, uncheck this option to make highlights work."
+msgstr "Для русского языка отключение данной опции обязательно!"
+
+#: lib/interface.php:1154
+msgid "Then adjust the settings for your chosen type:"
+msgstr "Теперь укажите параметры выбранного типа подсветки:"
+
+#: lib/interface.php:1158
+msgid "Text color for highlights:"
+msgstr "Цвет текста для подсветки:"
+
+#: lib/interface.php:1160 lib/interface.php:1166
+msgid "Use HTML color codes (#rgb or #rrggbb)"
+msgstr "Используйте цвета в кодах HTML (#rgb или #rrggbb)"
+
+#: lib/interface.php:1164
+msgid "Background color for highlights:"
+msgstr "Цвет фона подсветки:"
+
+#: lib/interface.php:1170
+msgid "CSS style for highlights:"
+msgstr "Стиль CSS для подсветки:"
+
+#: lib/interface.php:1172
+msgid ""
+"You can use any CSS styling here, style will be inserted with a &lt;span&gt;"
+msgstr ""
+"Вы можете использовать любую CSS-стилизацию. Стиль будет обернут с помощью "
+"тегов &lt;span&gt;."
+
+#: lib/interface.php:1176
+msgid "CSS class for highlights:"
+msgstr "Класс CSS для подсветки:"
+
+#: lib/interface.php:1178
+msgid ""
+"Name a class here, search results will be wrapped in a &lt;span&gt; with the "
+"class"
+msgstr ""
+"Укажите имя класса CSS для элемента  &lt;span&gt;, который будет  "
+"использоваться для подсветки результата поиска."
+
+#: lib/interface.php:1185 lib/interface.php:1364
+msgid "Save the options"
+msgstr "Сохранить настройки"
+
+#: lib/interface.php:1189
+msgid "Choose post types to index:"
+msgstr "Выберите типы записей для индексирования:"
+
+#: lib/interface.php:1194
+msgid "Type"
+msgstr "Тип"
+
+#: lib/interface.php:1195 lib/interface.php:1241
+msgid "Index"
+msgstr "Индекс"
+
+#: lib/interface.php:1196 lib/interface.php:1242
+msgid "Public?"
+msgstr "Открыт?"
+
+#: lib/interface.php:1213 lib/interface.php:1256
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: lib/interface.php:1214 lib/interface.php:1257
+msgid "yes"
+msgstr "да"
+
+#: lib/interface.php:1214 lib/interface.php:1257
+msgid "no"
+msgstr "нет"
+
+#: lib/interface.php:1235
+msgid "Choose taxonomies to index:"
+msgstr "Выберите таксономии для индексирования:"
+
+#: lib/interface.php:1240
+msgid "Taxonomy"
+msgstr "Таксономия"
+
+#: lib/interface.php:1277
+msgid ""
+"If you check a taxonomy here, the terms for that taxonomy are indexed with "
+"the posts. If you for example choose \"post_tag\", searching for tags will "
+"find all posts that have the tag."
+msgstr ""
+"Если вы выбрали таксономии, то термины этих таксономий будут "
+"проиндексированы вместе с записями. Например, при поиске \"метка_записи\" "
+"будут найдены все записи с данной меткой."
+
+#: lib/interface.php:1281
+msgid "Minimum word length to index"
+msgstr "Минимальная длина слов для включения в индекс"
+
+#: lib/interface.php:1283
+msgid "Words shorter than this number will not be indexed."
+msgstr ""
+"Слова, которые короче указанного значения будут проигнорированы при "
+"построении индекса. Для русского языка (UTF-8) необходимо увеличить данное "
+"число в 2 раза (из-за особенностей кодировки)."
+
+#: lib/interface.php:1289
+msgid "Expand shortcodes in post content:"
+msgstr "Выполнять шорткоды в тексте записей:"
+
+#: lib/interface.php:1291
+msgid ""
+"If checked, Relevanssi will expand shortcodes in post content before "
+"indexing. Otherwise shortcodes will be stripped. If you use shortcodes to "
+"include dynamic content, Relevanssi will not keep the index updated, the "
+"index will reflect the status of the shortcode content at the moment of "
+"indexing."
+msgstr ""
+"Если опция включена, то Relevanssi будет выполнять выполнять шорткоды в "
+"тексте записей перед тем, как провести индексирование. В противном случае "
+"содержимое шорткодов будет исключено из поискового индекса. Если вы "
+"используете шорткоды с динамическим контентом, то Relevanssi сохранит в "
+"индексе только ту информацию, которая была там в момент индексирования."
+
+#: lib/interface.php:1297
+msgid "Index and search your posts' authors:"
+msgstr "Индексировать и искать авторов:"
+
+#: lib/interface.php:1299
+msgid ""
+"If checked, Relevanssi will also index and search the authors of your posts. "
+"Author display name will be indexed. Remember to rebuild the index if you "
+"change this option!"
+msgstr ""
+"Если опция включена, то Relevanssi будет индексировать и искать авторов "
+"записей (будут проиндексированы отображаемые имена авторов). Не забудьте "
+"произвести переиндексацию при изменении данной опции!"
+
+#: lib/interface.php:1303
+msgid "Index and search post excerpts:"
+msgstr "Индексировать и искать в цитатах:"
+
+#: lib/interface.php:1305
+msgid ""
+"If checked, Relevanssi will also index and search the excerpts of your posts."
+"Remember to rebuild the index if you change this option!"
+msgstr ""
+"Если опция включена, то Relevanssi будет индексировать и искать в цитатах "
+"записей. Не забудьте произвести переиндексацию при изменении данной опции!"
+
+#: lib/interface.php:1309
+msgid "Index and search these comments:"
+msgstr "Индексировать и искать в комментариях:"
+
+#: lib/interface.php:1311
+msgid "none"
+msgstr "нет"
+
+#: lib/interface.php:1312
+msgid "normal"
+msgstr "обычно"
+
+#: lib/interface.php:1313
+msgid "all"
+msgstr "все"
+
+#: lib/interface.php:1315
+msgid ""
+"Relevanssi will index and search ALL (all comments including track- &amp; "
+"pingbacks and custom comment types), NONE (no comments) or NORMAL (manually "
+"posted comments on your blog).<br />Remember to rebuild the index if you "
+"change this option!"
+msgstr ""
+"Relevanssi будет индексировать и искать по комментариям в зависимости от "
+"выбранной опции: НЕТ (не искать), ОБЫЧНО (учитываются только комментарии от "
+"пользователей), ВСЕ (учитываются все комментарии, включая обратные ссылки и "
+"уведомления). Не забудьте произвести переиндексацию при изменении данной "
+"опции!"
+
+#: lib/interface.php:1319
+msgid "Custom fields to index:"
+msgstr "Произвольные поля для индексирования:"
+
+#: lib/interface.php:1321
+msgid ""
+"A comma-separated list of custom fields to include in the index. Set to "
+"'visible' to index all visible custom fields and to 'all' to index all "
+"custom fields, also those starting with a '_' character."
+msgstr ""
+"Перечислите через запятую произвольные поля, которые необходимо "
+"проиндексировать. Введите 'visible' для индексирования всех видимых "
+"произвольных полей или 'all' - для индексирования всех полей, включая "
+"невидимые (начинающиеся с символа '_')."
+
+#: lib/interface.php:1331
+msgid "Save indexing options and build the index"
+msgstr "Сохранить настройки и создать индекс"
+
+#: lib/interface.php:1337
+msgid ""
+"Warning: In many cases caching is not useful, and in some cases can be even "
+"harmful. Do not\n"
+"\tactivate cache unless you have a good reason to do so."
+msgstr ""
+"Внимание: в большинстве случаев кэширование может работать некорректно. Не "
+"используйте его без серьезных на то причин."
+
+#: lib/interface.php:1340
+msgid "Enable result and excerpt caching:"
+msgstr "Включить кэширование:"
+
+#: lib/interface.php:1342
+msgid "If checked, Relevanssi will cache search results and post excerpts."
+msgstr ""
+"Если опция включена, то Relevanssi будет будет кэшировать результаты "
+"поисковых запросов."
+
+#: lib/interface.php:1346
+msgid "Cache expire (in seconds):"
+msgstr "Время жизни кэша (в секундах):"
+
+#: lib/interface.php:1348
+msgid "86400 = day"
+msgstr "86400 = день"
+
+#: lib/interface.php:1352
+msgid "Entries in the cache"
+msgstr "Записей в кэше"
+
+#: lib/interface.php:1356
+msgid "Clear all caches"
+msgstr "Очистить кэш"
+
+#: lib/interface.php:1362
+msgid ""
+"Add synonyms here in 'key = value' format. When searching with the OR "
+"operator, any search of 'key' will be expanded to include 'value' as well. "
+"Using phrases is possible. The key-value pairs work in one direction only, "
+"but you can of course repeat the same pair reversed."
+msgstr ""
+"Добавьте синонимы в формате 'ключ = значение' (один на строку). При поиске с "
+"условием 'ИЛИ' результаты поиска будут учитывать значение ключа. Можно "
+"использовать фразы. Пары \"ключ-значение\" работают только в одну сторону, "
+"поэтому не забывайте (при необходимости) добавлять обратные пары ('значение-"
+"ключ')."
+
+#: lib/interface.php:1385
+msgid ""
+"<p>Enter a word here to add it to the list of stopwords. The word will "
+"automatically be removed from the index, so re-indexing is not necessary. "
+"You can enter many words at the same time, separate words with commas.</p>"
+msgstr ""
+"<p>Введите слово, чтобы добавить его в черный список. Несколько слов "
+"необходимо разделить запятыми. Из поискового индекса они будут исключены "
+"автоматически и проводить переиндексирование нет нужды.</p>"
+
+#: lib/interface.php:1387
+msgid "Stopword(s) to add: "
+msgstr "Добавить в черный список:"
+
+#: lib/interface.php:1388
+msgid "Add"
+msgstr "Добавить"
+
+#: lib/interface.php:1391
+msgid ""
+"<p>Here's a list of stopwords in the database. Click a word to remove it "
+"from stopwords. Removing stopwords won't automatically return them to index, "
+"so you need to re-index all posts after removing stopwords to get those "
+"words back to index."
+msgstr ""
+"<p>Здесь указаны все слова, находящиеся в черном списке. Кликните на слово, "
+"чтобы удалить его из черного списка. Удаление слов из черного списка не "
+"означает, что оно автоматически вернется в индекс, а поэтому вам необходимо "
+"будет произвести переиндексацию."
+
+#: lib/interface.php:1417
+msgid "Remove all stopwords"
+msgstr "Очистить черный список"
+
+#: lib/interface.php:1423
+msgid ""
+"Here's a list of stopwords you can use to export the stopwords to another "
+"blog."
+msgstr "Данный черный список можно использовать для экспорта в другой блог."
+
+#: lib/uninstall.php:39
+msgid "Data wiped clean, you can now delete the plugin."
+msgstr "Информация плагина была очищена, тперь вы можете удалить плагин."
+
+#~ msgid "Options updated!"
+#~ msgstr "Ustawienia zostały zaktualizowane!"
+
+#~ msgid "API key:"
+#~ msgstr "Klucz API:"
+
+#~ msgid ""
+#~ "API key is required to use the automatic update feature. Get yours from "
+#~ "Relevanssi.com."
+#~ msgstr ""
+#~ "Klucz API jest wymagany aby umożliwić automatyczne aktualizacje. Zdobądź "
+#~ "go na stronie Relevanssi.com."
+
+#~ msgid "How to index internal links:"
+#~ msgstr "Sposób indeksowania linków wewnętrznych:"
+
+#~ msgid "No special processing for internal links"
+#~ msgstr "Bez specjalnego indeksowania linków wewnętrznych"
+
+#~ msgid "Index internal links for target documents only"
+#~ msgstr "Indeksowanie linków wewnętrznych tylko dla dokumentów docelowych"
+
+#~ msgid "Index internal links for both target and source"
+#~ msgstr ""
+#~ "Indeksowanie linków wewnętrznych zarówno dla źródeł jak i dokumentów "
+#~ "docelowych"
+
+#~ msgid ""
+#~ "Internal link anchor tags can be indexed for target document (so the text "
+#~ "will match the document the link points to), both target and source or "
+#~ "source only (with no extra significance for the links). See Relevanssi "
+#~ "Knowledge Base for more details. Changing this option requires reindexing."
+#~ msgstr ""
+#~ "Linki wewnętrzne mogą być indeksowane dla dokumentów docelowych (tak aby "
+#~ "tekst pasował do dokumentu na który wskazuje), zarówno dla docelowyc jak "
+#~ "i źródeł lub tylko dla źródeł (bez dodatkowego wpływu na linki). Zobacz "
+#~ "bazę wiedzy Relevanssi aby dowiedzieć się więcej. Zmiana tego ustawienia "
+#~ "wymaga ponownego indeksowania."
+
+#~ msgid "Hide Relevanssi on edit pages:"
+#~ msgstr "Ukryj Relevanssi na stronach edycji:"
+
+#~ msgid ""
+#~ "If you check this option, all Relevanssi features are removed from edit "
+#~ "pages."
+#~ msgstr ""
+#~ "Jeśli zaznaczysz tę opcję, wszystkie funkcje Relevanssi zostaną usunięte "
+#~ "z ekranów edycji."
+
+#~ msgid "Internal links"
+#~ msgstr "Linki wewnętrzne"
+
+#~ msgid "Post type '%s':"
+#~ msgstr "Typ wpisu '%s':"
+
+#~ msgid "Weight multiplier for new posts:"
+#~ msgstr "Mnożnik wagi dla nowych wpisów:"
+
+#~ msgid "Assign bonus for posts newer than:"
+#~ msgstr "Przyznaj bonus dla wpisów nowszych niż:"
+
+#~ msgid "days"
+#~ msgstr "dni"
+
+#~ msgid ""
+#~ "Posts newer than the day cutoff specified here will have their weight "
+#~ "multiplied with the bonus above."
+#~ msgstr ""
+#~ "Wpisy nowsze niż określona tutaj liczba dni będą miały wagę pomnożoną "
+#~ "przez podaną liczbę."
+
+#~ msgid "Don't show Relevanssi branding on the 'User Searches' screen:"
+#~ msgstr ""
+#~ "Nie wyświetlaj informacji o Relevanssi na ekranie 'Statystyk "
+#~ "wyszukiwania':"
+
+#~ msgid "Highlight query terms in documents from external searches:"
+#~ msgstr ""
+#~ "Podświetl wyszukiwane frazy w dokumentach z zewnętrznych wyszukiwarek:"
+
+#~ msgid ""
+#~ "Highlights hits when user arrives from external search. Currently "
+#~ "supports Google, Bing, Ask, Yahoo and AOL Search."
+#~ msgstr ""
+#~ "Podświetl trafienia jeśli użytkownik pochodzi z zewnętrznych "
+#~ "wyszukiwarek. Aktualnie wspierane są Google, Bing, Ask, Yahoo i AOL "
+#~ "Search."
+
+#~ msgid "Thousands separator"
+#~ msgstr "Separator liczb (tysięcy)"
+
+#~ msgid ""
+#~ "If Relevanssi sees this character between numbers, it'll stick the "
+#~ "numbers together no matter how the character would otherwise be handled. "
+#~ "Especially useful if a space is used as a thousands separator."
+#~ msgstr ""
+#~ "Jeśli Relevanssi znajdzie ten znak między cyframi, zignoruje go i "
+#~ "rozpozna całą liczbę. Jest to szczególnie przydatne gdy jako separator "
+#~ "stosowana jest spacja."
+
+#~ msgid "Custom MySQL columns to index:"
+#~ msgstr "Własne kolumny MySQL do zaindeksowania:"
+
+#~ msgid ""
+#~ "A comma-separated list of wp_posts MySQL table columns to include in the "
+#~ "index. Following columns are available: "
+#~ msgstr ""
+#~ "Oddzielona przecinkami lista kolumn MySQL z tabeli wp_posts, które mają "
+#~ "być zaindeksowane. Dostępne są następujące kolumny:"
+
+#~ msgid "Index and search user profiles:"
+#~ msgstr "Indeksowanie i przeszukiwanie profili użytkowników:"
+
+#~ msgid ""
+#~ "If checked, Relevanssi will also index and search user profiles (first "
+#~ "name, last name, display name and user description). Requires changes to "
+#~ "search results template, see Relevanssi Knowledge Base."
+#~ msgstr ""
+#~ "Jeśli zostanie zaznaczone, Relevanssi będzie indeksować i przeszukiwać "
+#~ "profile użytkowników (imię, nazwisko, wyświetlana nazwa i opis "
+#~ "użytkownika). Wymaga to zmian w szablonie wyszukiwania (zobacz w bazie "
+#~ "wiedzy Relevansii)."
+
+#~ msgid "Index subscriber profiles:"
+#~ msgstr "Indeksowanie profili subskrybentów:"
+
+#~ msgid ""
+#~ "If checked, Relevanssi will index subscriber profiles as well, otherwise "
+#~ "only authors, editors, contributors and admins are indexed."
+#~ msgstr ""
+#~ "Jeśli zostanie zaznaczone, Relevanssi będzie indeksować także profile "
+#~ "subskrybentów. W przeciwnym wypadku indeksowane będą tylko profile "
+#~ "autorów, redaktorów, współpracowników i administratorów."
+
+#~ msgid "Extra user fields to index:"
+#~ msgstr "Dodatkowe pola użytkowników do zaindeksowania:"
+
+#~ msgid ""
+#~ "A comma-separated list of user profile field names (names of the database "
+#~ "columns) to include in the index."
+#~ msgstr ""
+#~ "Oddzielona przecinkami lista nazw pól w profilach użytkownika (nazw "
+#~ "kolumn w bazie danych), które mają być zaindeksowane."
+
+#~ msgid "Index and search taxonomy pages:"
+#~ msgstr "Indeksowanie i przeszukiwanie stron taksonomii:"
+
+#~ msgid ""
+#~ "If checked, Relevanssi will also index and search taxonomy pages "
+#~ "(categories, tags, custom taxonomies)."
+#~ msgstr ""
+#~ "Jeśli zostanie zaznaczone, Relevanssi będzie indeksować i przeszukiwać "
+#~ "także strony taksonomii (kategorii, tagów, własnych taksonomii)."
+
+#~ msgid "Taxonomy pages to index:"
+#~ msgstr "Strony taksonomi do zaindeksowania:"
+
+#~ msgid ""
+#~ "A comma-separated list of taxonomies to include in the taxonomy page "
+#~ "index ('all' indexes all custom taxonomies. If you don't use 'all', "
+#~ "remember to list 'category' and 'post_tag')."
+#~ msgstr ""
+#~ "Oddzielona przecinkami lista taksonomii, które mają być ujęte w indeksie "
+#~ "stron taksonomii (wpisanie 'all' spowoduje zaindeksowanie wszystkich "
+#~ "taksonomii. Jeśli nie użyjesz 'all' dodaj przynajmniej 'category' i "
+#~ "'post_tag')."
+
+#~ msgid "Import or export options"
+#~ msgstr "Importowanie i eksportowanie ustawień"
+
+#~ msgid ""
+#~ "Here you find the current Relevanssi Premium options in a text format. "
+#~ "Copy the contents of the text field to make a backup of your settings. "
+#~ "You can also paste new settings here to change all settings at the same "
+#~ "time. This is useful if you have default settings you want to use on "
+#~ "every system."
+#~ msgstr ""
+#~ "Możesz tu znaleźć ustawienia Relevanssi Premium w formie tekstowej. "
+#~ "Skopiuj zawartość tego pola aby utworzyć kopię zapasową ustawień. Możesz "
+#~ "także wkleić tutaj nowe ustawienia aby je w prosty sposób zmienić. Jest "
+#~ "to przydatne jeśli masz domyślne ustawienia, któe stosujesz na wielu "
+#~ "stronach."
+
+#~ msgid "Import settings"
+#~ msgstr "Importuj ustawienia"
+
+#~ msgid ""
+#~ "Note! Make sure you've got correct settings from a right version of "
+#~ "Relevanssi. Settings from a different version of Relevanssi may or may "
+#~ "not work and may or may not mess your settings."
+#~ msgstr ""
+#~ "Uwaga! Upewnij się że używasz ustawień odpowiednich dla konkretnej wersji "
+#~ "Relevansii. Ustawienia z wersji innej niż stosowana mogą nie działać i "
+#~ "powodować problemy."
+
+#~ msgid "Thank you!"
+#~ msgstr "Dziękujemy!"
+
+#~ msgid ""
+#~ "Thank you for buying Relevanssi Premium! Your support makes it possible "
+#~ "for me to keep working on this plugin."
+#~ msgstr ""
+#~ "Dziękujemy za wybranie Relevanssi Premium. Twoje wsparcie umożliwia "
+#~ "dalsze prace nad tą wtyczką."
+
+#~ msgid ""
+#~ "I can do custom hacks based on Relevanssi and other WordPress "
+#~ "development. If you need someone to fix your WordPress, just ask me for a "
+#~ "quote."
+#~ msgstr ""
+#~ "Mogę przygotować dowolną modyfikację opartą o Relevanssi i WordPress. "
+#~ "Jeśli szukasz kogoś, kto popracowałby nad Twoją stroną, wyślij zapytanie."
+
+#~ msgid "Relevanssi on Facebook"
+#~ msgstr "Relevanssi na Facebooku"
+
+#~ msgid "Check out the Relevanssi page on Facebook"
+#~ msgstr "Sprawdź stronę Relevanssi na Facebooku"
+
+#~ msgid "for news and updates about your favourite plugin."
+#~ msgstr ""
+#~ "aby być na bierząco informowanym o aktualnościach i innych wydarzeniach "
+#~ "związanych z Twoją ulubioną wtyczką."
+
+#~ msgid "Help and support"
+#~ msgstr "Pomoc"
+
+#~ msgid "For Relevanssi support, see:"
+#~ msgstr "Aby uzyskać pomoc, zobacz:"
+
+#~ msgid "Plugin support page"
+#~ msgstr "Strona pomocy"
+
+#~ msgid "WordPress.org forum"
+#~ msgstr "Forum na Wordpress.com"
+
+#~ msgid "Did you know this feature?"
+#~ msgstr "Czy znałeś tę funkcję?"
+
+#~ msgid ""
+#~ "Wrap the parts of the posts you don't want to include in the index in "
+#~ "[noindex] shortcode."
+#~ msgstr ""
+#~ "Zaznacz fragmenty treści, których nie chcesz zaindeksować w skrót "
+#~ "[noindex]."
+
+#~ msgid "Use the [search] shortcode to build easy links to search results."
+#~ msgstr ""
+#~ "Użyj skrótu [search] aby w prosty sposób utworzyć linki do wyników "
+#~ "wyszukiwania."
+
+#~ msgid ""
+#~ "Enable the English-language stemmer by adding this line in your functions."
+#~ "php:"
+#~ msgstr ""
+#~ "Włącz odmiany zwrotów w języku angielskim dodają tę linię kodu do pliku "
+#~ "functions.php:"
+
+#~ msgid "Boolean NOT"
+#~ msgstr "Warunek boolean NOT"
+
+#~ msgid "To get results without particular word, use the minus operator"
+#~ msgstr "Aby uzyskać wyniki bez określnoego zwrotu użyj operatora minus (-)"
+
+#~ msgid "cats -dogs"
+#~ msgstr "koty-psy"
+
+#~ msgid "Boolean AND"
+#~ msgstr "Warunek boolean AND"
+
+#~ msgid "To force a particular term in an OR search, use the plus operator"
+#~ msgstr ""
+#~ "Aby wymusić określony termin w wyszukiwaniu w trybie OR, użyj operatora "
+#~ "plus (+)"
+
+#~ msgid "+cats dogs mice"
+#~ msgstr "+koty psy myszy"
+
+#~ msgid ""
+#~ "would require that all results include the term 'cats', and results "
+#~ "including all three terms will be favoured. The plus operator has no "
+#~ "effect in an AND search, where all terms have an implicit + before them."
+#~ msgstr ""
+#~ "będzie wymagać aby wszystkie wyniki zawierały zwrot 'cats' a wyniki "
+#~ "zawierające każdy z tych trzech zwrotów będą faworyzowane. Operator plus "
+#~ "nie ma żadnego działania w wyszukiwaniu w trybie OR, ponieważ wówczas "
+#~ "wszystkie zwroty mają taki operator."
+
+#~ msgid "Relevanssi post controls"
+#~ msgstr "Ustawienia wyszukiwania"
+
+#~ msgid "Exclude this post or page from the index."
+#~ msgstr "Wyklucz ten wpis lub stronę z indeksowania i wyszukiwania"
+
+#~ msgid "Index and search your posts' tags:"
+#~ msgstr "Indeksowanie i wyszukiwanie tagów:"
+
+#~ msgid ""
+#~ "If checked, Relevanssi will also index and search the tags of your posts. "
+#~ "Remember to rebuild the index if you change this option!"
+#~ msgstr ""
+#~ "Jeśli zostanie zaznaczone, Relevanssi będzie także indeksować i "
+#~ "wyszukiwać tagów znajdujących się we wpisach. Pamiętaj o przebudowaniu "
+#~ "indeksu, jeśli zmienisz te ustawienia."
+
+#~ msgid "Index and search your posts' categories:"
+#~ msgstr "Indeksowanie i wyszukiwanie kategorii:"
+
+#~ msgid ""
+#~ "If checked, Relevanssi will also index and search the categories of your "
+#~ "posts. Category titles will pass through 'single_cat_title' filter. "
+#~ "Remember to rebuild the index if you change this option!"
+#~ msgstr ""
+#~ "Jeśli zostanie zaznaczone, Relevanssi będzie także indeksować i "
+#~ "wyszukiwać kategorie znajdujące się we wpisach. Tytuły kategorii będą "
+#~ "przetwarzane z wykorzystaniem filtru single_cat_title'. Pamiętaj o "
+#~ "przebudowaniu indeksu, jeśli zmienisz te ustawienia."
+
+#~ msgid ""
+#~ "A comma-separated list of custom taxonomy names to include in the index."
+#~ msgstr ""
+#~ "Oddzielona przecinkami lista własnych taksonomii, które mają być "
+#~ "uwzględnione w indeksie."
