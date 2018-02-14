@@ -14,4 +14,5 @@ if ( 0 === validate_file( $live_domain ) ) {
 }
 unset( $live_domain, $subdomain, $domain_specific_file, $type_specific_file );
 
+require_once WPMU_PLUGIN_DIR . '/relevanssi/relevanssi.php';
 require 'disable-emojis/disable-emojis.php';
