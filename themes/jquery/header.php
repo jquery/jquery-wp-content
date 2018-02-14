@@ -51,25 +51,25 @@
 		<nav>
 			<div class="constrain">
 				<ul class="projects">
-					<li class="project jquery"><a href="http://jquery.com/" title="jQuery">jQuery</a></li>
-					<li class="project jquery-ui"><a href="http://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
-					<li class="project jquery-mobile"><a href="http://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
-					<li class="project sizzlejs"><a href="http://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
-					<li class="project qunitjs"><a href="http://qunitjs.com/" title="QUnit">QUnit</a></li>
+					<li class="project jquery"><a href="https://jquery.com/" title="jQuery">jQuery</a></li>
+					<li class="project jquery-ui"><a href="https://jqueryui.com/" title="jQuery UI">jQuery UI</a></li>
+					<li class="project jquery-mobile"><a href="https://jquerymobile.com/" title="jQuery Mobile">jQuery Mobile</a></li>
+					<li class="project sizzlejs"><a href="https://sizzlejs.com/" title="Sizzle">Sizzle</a></li>
+					<li class="project qunitjs"><a href="https://qunitjs.com/" title="QUnit">QUnit</a></li>
 				</ul>
 				<ul class="links">
-					<li><a href="http://plugins.jquery.com/">Plugins</a></li>
-					<li class="dropdown"><a href="http://contribute.jquery.org/">Contribute</a>
+					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
+					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
 						<ul>
-							<li><a href="http://contribute.jquery.org/CLA/">CLA</a></li>
-							<li><a href="http://contribute.jquery.org/style-guide/">Style Guides</a></li>
-							<li><a href="http://contribute.jquery.org/triage/">Bug Triage</a></li>
-							<li><a href="http://contribute.jquery.org/code/">Code</a></li>
-							<li><a href="http://contribute.jquery.org/documentation/">Documentation</a></li>
-							<li><a href="http://contribute.jquery.org/web-sites/">Web Sites</a></li>
+							<li><a href="https://contribute.jquery.org/CLA/">CLA</a></li>
+							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
+							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
+							<li><a href="https://contribute.jquery.org/code/">Code</a></li>
+							<li><a href="https://contribute.jquery.org/documentation/">Documentation</a></li>
+							<li><a href="https://contribute.jquery.org/web-sites/">Web Sites</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"><a href="http://events.jquery.org/">Events</a>
+					<li class="dropdown"><a href="https://js.foundation/events">Events</a>
 						<ul class="wide">
 						<?php global $events; ?>
 						<?php foreach ($events[ 'future' ] as $event) : ?>
@@ -79,11 +79,11 @@
 					</li>
 					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
 						<ul>
-							<li><a href="http://learn.jquery.com/">Learning Center</a></li>
+							<li><a href="https://learn.jquery.com/">Learning Center</a></li>
 							<li><a href="http://try.jquery.com/">Try jQuery</a></li>
-							<li><a href="http://irc.jquery.org/">IRC/Chat</a></li>
-							<li><a href="http://forum.jquery.com/">Forums</a></li>
-							<li><a href="http://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://irc.jquery.org/">IRC/Chat</a></li>
+							<li><a href="https://forum.jquery.com/">Forums</a></li>
+							<li><a href="https://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
 							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
 						</ul>
 					</li>
