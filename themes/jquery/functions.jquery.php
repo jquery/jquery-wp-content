@@ -193,3 +193,15 @@ function jq_meta_description() {
 	return empty( $sites[ JQUERY_LIVE_SITE ][ 'options' ][ 'description' ] ) ? '' :
 		$sites[ JQUERY_LIVE_SITE ][ 'options' ][ 'description' ];
 }
+
+/**
+ * Fixes paging on a search page when Relevanssi plugin is used
+ */
+function jq_posts_per_page($limits) {
+	if (is_search()) {
+		global $wp_query;
+		$wp_query->query_vars['posts_per_page'] = 20;
+	}
+	return $limits;
+}
+add_filter('post_limits', 'jq_posts_per_page');
