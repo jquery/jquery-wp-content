@@ -2938,7 +2938,7 @@ footer .books li a cite {
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	#global-nav ul.projects {
 		display: none;
 	}
