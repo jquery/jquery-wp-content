@@ -46,15 +46,6 @@ $(function() {
 				siteId = site.all;
 			}
 		}
-
-		window.ados = {
-			run: [function() {
-				ados_add_placement( 5449, siteId, "broadcast", 1314 );
-				ados_load();
-			}]
-		};
-
-		$.getScript( "//engine.adzerk.net/ados.js" );
 	})();
 });
 

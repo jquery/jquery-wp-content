@@ -143,10 +143,6 @@ function jq_content_nav() {
 	)) . '</div>';
 }
 
-function jq_banner() {
-	echo '<div id="broadcast"></div>';
-}
-
 function jq_post_heirarchy() {
 	global $post;
 	$current = $post;

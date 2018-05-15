@@ -106,7 +106,11 @@
 	<div id="logo-events" class="constrain clearfix">
 		<h2 class="logo"><a href="<?php echo jq_logo_link(); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
 
-		<aside><?php jq_banner(); ?></aside>
+		<aside>
+			<div id="broadcast">
+				<a href="https://js.foundation/about/donate" title="Support the JS Foundation"><img src="jquery-wp-content/themes/jquery/content/donate.png" title="Support the JS Foundation" alt="Support the JS Foundation" border="0" width="400" height="100"></a>
+			</div>
+		</aside>
 	</div>
 
 	<nav id="main" class="constrain clearfix">
