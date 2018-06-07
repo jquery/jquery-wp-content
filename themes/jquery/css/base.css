@@ -1667,6 +1667,8 @@ h2.logo a {
 }
 
 .logo.small {
+  margin-left: auto;
+  margin-right: auto;
   height: 30px;
   background: url('../images/projectlogosfull-small.png') no-repeat;
 }
