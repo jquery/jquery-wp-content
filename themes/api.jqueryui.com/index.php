@@ -18,9 +18,9 @@
 		<p>jQuery UI is a curated set of user interface interactions, effects,
 			widgets, and themes built on top of the jQuery JavaScript Library.
 			If you're new to jQuery UI, you might want to check out our
-			<a href="http://jqueryui.com/" title="jQuery UI">main site</a> for
+			<a href="https://jqueryui.com/" title="jQuery UI">main site</a> for
 			more information and full demos. If you're new to jQuery, you might
-			also be interested in the <a href="http://learn.jquery.com/">jQuery
+			also be interested in the <a href="https://learn.jquery.com/">jQuery
 			Learning Center</a> tutorials.</p>
 
 		<p>This site provides API documentation for jQuery UI <?php echo $thisVersion; ?>. If
@@ -29,18 +29,18 @@
 			However, we would encourage you to upgrade to jQuery UI <?php echo $thisVersion; ?> in order
 			to receive the best support and take advantage of recent bug fixes
 			and enhancements. Check out the
-			<a href="http://jqueryui.com/upgrade-guide/<?php echo $thisVersion; ?>/">upgrade guide</a>
+			<a href="https://jqueryui.com/upgrade-guide/<?php echo $thisVersion; ?>/">upgrade guide</a>
 			to find out more about jQuery UI <?php echo $thisVersion; ?>.</p>
 
 		<?php } else { ?>
 
 		<p>This site provides API documentation for jQuery UI <?php echo $thisVersion; ?>.
 			We encourage you to upgrade to
-			<a href="http://api.jqueryui.com/">the latest stable version of jQuery UI</a>
+			<a href="https://api.jqueryui.com/">the latest stable version of jQuery UI</a>
 			in order to receive the best support and take advantage of recent bug
 			fixes and enhancements. Check out the
-			<a href="http://jqueryui.com/upgrade-guide/">upgrade guides</a>
-			and <a href="http://jqueryui.com/changelog/">changelogs</a>
+			<a href="https://jqueryui.com/upgrade-guide/">upgrade guides</a>
+			and <a href="https://jqueryui.com/changelog/">changelogs</a>
 			to find out more about upgrading.</p>
 
 		<?php } ?>
@@ -67,9 +67,9 @@
 				$url = $version === $latestVersion ? '/' : "/$version/";
 				echo "<li><a href=\"$url\">jQuery UI $version API Documentation</a></li>";
 			} ?>
-			<li><a href="http://api.jquery.com/">jQuery Core API Documentation</a></li>
-			<li><a href="http://api.jquerymobile.com/">jQuery Mobile API Documentation</a></li>
-			<li><a href="http://learn.jquery.com/">jQuery Learning Center</a></li>
+			<li><a href="https://api.jquery.com/">jQuery Core API Documentation</a></li>
+			<li><a href="https://api.jquerymobile.com/">jQuery Mobile API Documentation</a></li>
+			<li><a href="https://learn.jquery.com/">jQuery Learning Center</a></li>
 		</ul>
 
 	</div>

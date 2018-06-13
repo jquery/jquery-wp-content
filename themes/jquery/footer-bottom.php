@@ -4,15 +4,15 @@
 	$links = array(
 		'Learning Center' => array(
 			'icon' => 'pencil',
-			'url' => 'http://learn.jquery.com/'
+			'url' => 'https://learn.jquery.com/'
 		),
 		'Forum' => array(
 			'icon' => 'group',
-			'url' => 'http://forum.jquery.com/',
+			'url' => 'https://forum.jquery.com/',
 		),
 		'API' => array(
 			'icon' => 'wrench',
-			'url' => 'http://api.' . $project . '.com/'
+			'url' => 'https://api.' . $project . '.com/'
 		),
 		'Twitter' => array(
 			'icon' => 'twitter',
@@ -20,7 +20,7 @@
 		),
 		'IRC' => array(
 			'icon' => 'comments',
-			'url' => 'http://irc.jquery.org/'
+			'url' => 'https://irc.jquery.org/'
 		),
 		'GitHub' => array(
 			'icon' => 'github',
@@ -30,15 +30,15 @@
 
 	switch ( $project ) {
 	case 'jqueryui':
-		$links[ 'Forum' ][ 'url' ] = 'http://forum.jquery.com/using-jquery-ui/';
+		$links[ 'Forum' ][ 'url' ] = 'https://forum.jquery.com/using-jquery-ui/';
 		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jqueryui';
 		break;
 	case 'jquerymobile':
-		$links[ 'Forum' ][ 'url' ] = 'http://forum.jquery.com/jquery-mobile/';
+		$links[ 'Forum' ][ 'url' ] = 'https://forum.jquery.com/jquery-mobile/';
 		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jquerymobile';
 		break;
 	case 'qunitjs':
-		$links[ 'Forum' ][ 'url' ] = 'http://forum.jquery.com/qunit-and-testing/';
+		$links[ 'Forum' ][ 'url' ] = 'https://forum.jquery.com/qunit-and-testing/';
 		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/qunitjs';
 		break;
 	}
@@ -52,7 +52,7 @@
 	<p class="copyright">
 		Copyright <?php echo date('Y'); ?> <a href="https://jquery.org/team/">The jQuery Foundation</a>.
 		<a href="https://jquery.org/license/">jQuery License</a>
-		<span class="sponsor-line"><a href="http://digitalocean.com" class="do-link">Web hosting by Digital Ocean</a> | <a href="http://www.stackpath.com" class="sp-link">CDN by StackPath</a></span>
+		<span class="sponsor-line"><a href="https://www.digitalocean.com" class="do-link">Web hosting by Digital Ocean</a> | <a href="https://www.stackpath.com" class="sp-link">CDN by StackPath</a></span>
 	</p>
 </div>
 

@@ -19,7 +19,7 @@
 
 			<hr>
 
-			<p>We recommend moving to npm, using "<a href="https://www.npmjs.org/browse/keyword/jquery-plugin">jquery-plugin</a>" as the keyword in your package.json. The npm blog has <a href="http://blog.npmjs.org/post/111475741445/publishing-your-jquery-plugin-to-npm-the-quick">instructions for publishing your plugin to npm</a>.</p>
+			<p>We recommend moving to npm, using "<a href="https://www.npmjs.org/browse/keyword/jquery-plugin">jquery-plugin</a>" as the keyword in your package.json. The npm blog has <a href="https://blog.npmjs.org/post/111475741445/publishing-your-jquery-plugin-to-npm-the-quick">instructions for publishing your plugin to npm</a>.</p>
 		</div>
 	</div>
 </div>

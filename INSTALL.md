@@ -57,8 +57,8 @@ You do not need to configure your `/etc/hosts` file for `local.*` because `jquer
 ```
 
 1. Place the WordPress core files **at** the document root you chose. For example, if you used `/srv/www/jquery`, you should unzip or clone WordPress directly into that directory, *not* a directory below it. **Do not install WordPress.** You can do this any number of ways:
-	* Download the latest version from http://wordpress.org/latest.zip
-	* Check out the latest tag from http://core.svn.wordpress.org/tags/
+	* Download the latest version from https://wordpress.org/latest.zip
+	* Check out the latest tag from https://core.svn.wordpress.org/tags/
 	* Clone the official WordPress Github mirror at https://github.com/WordPress/WordPress
 
 1. Clone `jquery-wp-content` inside of the directory where you put WordPress, so you have a file tree that looks like this:
@@ -80,7 +80,7 @@ You do not need to configure your `/etc/hosts` file for `local.*` because `jquer
 │   └── xmlrpc.php
 ```
 
-1. Create a MySQL database and user. You can choose any name you want for both. Follow the [WordPress instructions](http://codex.wordpress.org/Installing_WordPress#Step_2:_Create_the_Database_and_a_User) for a step by step guide.
+1. Create a MySQL database and user. You can choose any name you want for both. Follow the [WordPress instructions](https://codex.wordpress.org/Installing_WordPress#Step_2:_Create_the_Database_and_a_User) for a step by step guide.
 
 1. Copy `jquery-wp-content/wp-config-sample.php` and move it up one directory, to `wp-config.php`. Fill in your database credentials.
 

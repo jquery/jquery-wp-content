@@ -1,5 +1,5 @@
 = TWENTY ELEVEN =
 
-* by the WordPress team, http://wordpress.org/
+* by the WordPress team, https://wordpress.org/
 
 == ABOUT TWENTY ELEVEN ==

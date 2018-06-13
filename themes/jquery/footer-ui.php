@@ -7,7 +7,7 @@
 				<h3><span>Books</span></h3>
 				<ul class="books">
 					<li>
-						<a href="http://www.manning.com/vantoll/">
+						<a href="https://www.manning.com/books/jquery-ui-in-action">
 							<span><img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-ui-in-action.jpg" alt="jQuery UI in Action by TJ VanToll" width="92" height="114"></span>
 							<strong>jQuery UI in Action</strong><br>
 							<cite>TJ VanToll</cite>

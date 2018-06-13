@@ -33,7 +33,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 
-	<script src="//use.typekit.net/wde1aof.js"></script>
+	<script src="https://use.typekit.net/wde1aof.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
 
 <?php
@@ -61,7 +61,7 @@
 					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
 					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
 						<ul>
-							<li><a href="https://contribute.jquery.org/CLA/">CLA</a></li>
+							<li><a href="https://js.foundation/CLA">CLA</a></li>
 							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
 							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
 							<li><a href="https://contribute.jquery.org/code/">Code</a></li>

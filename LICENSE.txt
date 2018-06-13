@@ -15,11 +15,11 @@ their own licenses; we recommend you read them, as their terms may
 differ from the terms above.
 
 - Allow Numeric Stubs
-	http://www.viper007bond.com/wordpress-plugins/allow-numeric-stubs/
+	https://wordpress.org/plugins/allow-numeric-stubs/
 	located at plugins/allow-numeric-stubs
 
 - Colorbox
-	http://www.jacklmoore.com/colorbox/
+	https://www.jacklmoore.com/colorbox/
 	located at themes/jquery/js/plugins.js
 
 - Disable Emojis
@@ -27,7 +27,7 @@ differ from the terms above.
 	located at mu-plugins/disable-emojis
 
 - FlexSlider
-	http://www.woothemes.com/flexslider/
+	https://woocommerce.com/flexslider/
 	located at themes/jquery/js/plugins.js
 
 - Grunt Wordpress
@@ -39,11 +39,11 @@ differ from the terms above.
 	located at themes/jquery/js/plugins.js
 
 - Modernizr
-	http://modernizr.com/
+	https://modernizr.com/
 	located at themes/jquery/js/modernizr.custom.2.8.3.min.js
 
 - No Comments on Pages
-	http://jaka.kubje.org/wp/software/no-comments-on-pages/
+	https://wordpress.org/plugins/no-comments-on-pages/
 	located at plugins/no-comments-on-pages
 
 - Respond.js
@@ -55,11 +55,11 @@ differ from the terms above.
 	located at mu-plugins/jquery.org/lib/Stripe
 
 - TinyNav.js
-	http://tinynav.viljamis.com
+	http://tinynav.com/
 	located at themes/jquery/js/plugins.js
 
 - VaultPress
-	http://vaultpress.com/
+	https://vaultpress.com/
 	located at plugins/vaultpress
 
 The design, layout, and look-and-feel of jquery-wp-content - including

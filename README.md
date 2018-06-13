@@ -9,11 +9,11 @@ Although we recommend using the pre-built VM, if you would like to manually inst
 This setup guide assumes you have certain prerequisites installed.
 
 * [Virtualbox >=4.3+](https://www.virtualbox.org/)
-* [Vagrant >=1.4.0](http://www.vagrantup.com/)
+* [Vagrant >=1.4.0](https://www.vagrantup.com/)
 
 ## Vagrant and Virtualbox
 
-We recommend the combination of Virtualbox and [Vagrant](http://www.vagrantup.com/about.html) for a local development environment. Vagrant simplifies download, installation, and management of the local environment VM with a few commands.
+We recommend the combination of Virtualbox and [Vagrant](https://www.vagrantup.com/intro/index.html) for a local development environment. Vagrant simplifies download, installation, and management of the local environment VM with a few commands.
 
 ### Setup
 
