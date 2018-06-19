@@ -15,14 +15,14 @@
 						</a>
 					</li>
 					<li>
-						<a href="https://www.manning.com/books/jquery-in-action-third-edition?a_bid=bdd5b7ad&amp;a_aid=141d9491">
+						<a href="https://www.manning.com/books/jquery-in-action-third-edition">
 							<img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-in-action.jpg" alt="jQuery in Action by Bear Bibeault, Yehuda Katz, and Aurelio De Rosa" width="92" height="114">
 							jQuery in Action
 							<cite>Bear Bibeault, Yehuda Katz, and Aurelio De Rosa</cite>
 						</a>
 					</li>
 					<li>
-						<a href="http://www.syncfusion.com/resources/techportal/ebooks/jquery?utm_medium=BizDev-jQuery.org0513">
+						<a href="https://www.syncfusion.com/ebooks/jquery">
 							<img src="<?php echo get_template_directory_uri(); ?>/content/books/jquery-succinctly.jpg" alt="jQuery Succinctly by Cody Lindley" width="92" height="114">
 							jQuery Succinctly
 							<cite>Cody Lindley</cite>

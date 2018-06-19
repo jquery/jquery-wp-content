@@ -10,7 +10,7 @@
 define( 'JQUERY_STAGING', true );
 define( 'JQUERY_STAGING_PREFIX', 'local.' );
 
-// For http://contribute.jquery.org/CLA/status/
+// For https://contribute.jquery.org/CLA/status/
 // define( 'JQUERY_CLA_SERVER_URL', '');
 
 // WordPress debugging mode (enables PHP E_NOTICE and WordPress notices)

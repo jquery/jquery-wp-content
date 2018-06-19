@@ -20,7 +20,7 @@
 			popular smartphone, tablet and desktop devices.</p>
 
 		<p>If you are new to jQuery Mobile, the introduction to the framework in the
-			<a href="http://demos.jquerymobile.com/">Demos</a>
+			<a href="https://demos.jquerymobile.com/">Demos</a>
 			would be a good place to start.</p>
 
 		<p>This site provides API documentation for jQuery Mobile <?php echo $thisVersion; ?></p>
@@ -28,11 +28,11 @@
 		<?php } else { ?>
 
 		<p>This site provides API documentation for jQuery Mobile <?php echo $thisVersion; ?>.
-			We encourage you to <a href="http://jquerymobile.com/download/">upgrade to the latest stable version</a> of jQuery Mobile
+			We encourage you to <a href="https://jquerymobile.com/download/">upgrade to the latest stable version</a> of jQuery Mobile
 			in order to receive the best support and take advantage of recent bug
 			fixes and enhancements. Check out the
-			<a href="http://jquerymobile.com/upgrade-guide/">upgrade guides</a>
-			and <a href="http://jquerymobile.com/changelog/">changelogs</a>
+			<a href="https://jquerymobile.com/upgrade-guide/">upgrade guides</a>
+			and <a href="https://jquerymobile.com/changelog/">changelogs</a>
 			to find out more about upgrading.</p>
 
 		<?php } ?>
@@ -44,7 +44,7 @@
 		<p>jQuery Mobile <?php echo $thisVersion; ?> uses jQuery UI <?php echo $ui_versions[ $thisVersion ] ?> and
 		supports jQuery <?php echo $versions[ $thisVersion ]; ?>.
 
-		<p>See the <a href="http://jquerymobile.com/gbs/<?php echo $thisVersion; ?>">supported platforms</a> page for a list of all
+		<p>See the <a href="https://jquerymobile.com/gbs/<?php echo $thisVersion; ?>">supported platforms</a> page for a list of all
 			operating systems and browsers that are supported by this version of jQuery Mobile.</p>
 
 		<hr>
@@ -62,9 +62,9 @@
 				$url = $version === $latestVersion ? '/' : "/$version/";
 				echo "<li><a href=\"$url\">jQuery Mobile $version API Documentation</a></li>";
 			} ?>
-			<li><a href="http://api.jquery.com/">jQuery Core API Documentation</a></li>
-			<li><a href="http://api.jqueryui.com/">jQuery UI API Documentation</a></li>
-			<li><a href="http://learn.jquery.com/">jQuery Learning Center</a></li>
+			<li><a href="https://api.jquery.com/">jQuery Core API Documentation</a></li>
+			<li><a href="https://api.jqueryui.com/">jQuery UI API Documentation</a></li>
+			<li><a href="https://learn.jquery.com/">jQuery Learning Center</a></li>
 		</ul>
 
 	</div>
