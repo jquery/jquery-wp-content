@@ -107,7 +107,7 @@
 
 		<aside>
 			<div id="broadcast">
-				<a href="https://js.foundation/about/donate" title="Support the JS Foundation"><img src="jquery-wp-content/themes/jquery/content/donate.png" title="Support the JS Foundation" alt="Support the JS Foundation" border="0" width="400" height="100"></a>
+				<a href="https://js.foundation/about/donate" title="Support the JS Foundation"><img src="<?php echo get_template_directory_uri(); ?>/content/donate.png" title="Support the JS Foundation" alt="Support the JS Foundation" border="0" width="400" height="100"></a>
 			</div>
 		</aside>
 	</div>
