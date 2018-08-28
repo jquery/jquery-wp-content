@@ -35,6 +35,16 @@
 
 	<script src="https://use.typekit.net/wde1aof.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<!-- at the end of the HEAD -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/docsearch.css">
+
+	<!-- at the end of the BODY -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js" async onload="docsearch({apiKey: '3cfde9aca378c8aab554d5bf1b23489b',
+	indexName: 'jquery',
+	inputSelector: 'input[name=\'s\']',
+	debug: false // Set debug to true if you want to inspect the dropdown
+	})"></script>
 
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
