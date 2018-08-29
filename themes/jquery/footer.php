@@ -37,6 +37,11 @@
 </footer>
 
 <?php wp_footer(); ?>
-
+	<!-- at the end of the BODY -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"  onload="docsearch({apiKey: '3cfde9aca378c8aab554d5bf1b23489b',
+	indexName: 'jquery',
+	inputSelector: 'input[name=\'s\']',
+	debug: true // Set debug to true if you want to inspect the dropdown
+	})" async></script>
 </body>
 </html>
