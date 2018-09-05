@@ -1,0 +1,19 @@
+/* Custom DocSeach CSS to adapt the generic one * See https://community.algolia.com/docsearch/styling.html for more info */
+nav#main .searchform {
+	text-shadow: none;
+}
+
+.searchform label {
+	width: 100%;
+	display: block;
+}
+
+.algolia-autocomplete {
+	width: 99%;
+}
+
+@media only screen and (max-width: 480px) {
+	.ds-dropdown-menu {
+		min-width: 100% !important;
+	}
+}

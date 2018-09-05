@@ -35,6 +35,9 @@
 
 	<script src="https://use.typekit.net/wde1aof.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<!-- at the end of the HEAD -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/docsearch.css">
 
 <?php
 	if ( is_singular() && get_option( 'thread_comments' ) )
