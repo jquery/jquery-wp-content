@@ -1,7 +1,7 @@
 <!doctype html>
-<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9>" <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9"> <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9"> <?php language_attributes(); ?>> <![endif]-->
+<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9"> <?php language_attributes(); ?>> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
 <head data-live-domain="<?php echo JQUERY_LIVE_DOMAIN; ?>">
 	<meta charset="utf-8">
