@@ -1,7 +1,6 @@
-$(document).ready(function() {
+$( function() {
 	// Store modal templates
-	var modalTemplate = $( "#sri-modal-template" )[ 0 ].outerHTML,
-		clipboard;
+	var modalTemplate = $( "#sri-modal-template" )[ 0 ].outerHTML;
 
 	// Show modal on click
 	$( "body" ).on( "click", ".open-sri-modal", function( event ) {
@@ -23,7 +22,27 @@ $(document).ready(function() {
 			}
 		} );
 
-		$('.sri-modal-copy-btn').tooltip();
+		$('.sri-modal-copy-btn')
+			.tooltip()
+			.on( "click", function() {
+				var buttonElem = $( this );
+				clipboard
+					.writeText( buttonElem.attr( "data-clipboard-text" ) )
+					.then( function() {
+						buttonElem
+							.tooltip( "option", "content", "Copied!" )
+							.one( "mouseout", function() {
+								buttonElem.tooltip( "option", "content", "Copy to clipboard!" );
+							} );
+					} )
+					.catch( function() {
+						buttonElem
+							.tooltip( "option", "content", "Copying to clipboard failed!" )
+							.one( "mouseout", function() {
+								buttonElem.tooltip( "option", "content", "Copy to clipboard!" );
+							} );
+					} );
+			} );
 		event.preventDefault();
 	} );
 
@@ -31,24 +50,6 @@ $(document).ready(function() {
 	function replace ( string, values ) {
 		return string.replace( /\{\{([^}]+)}}/g, function( _, key ) {
 			return values[key];
-		});
+		} );
 	}
-
-	clipboard = new Clipboard( "[data-clipboard-text]" );
-
-	clipboard.on( "success", function( e ) {
-		$( e.trigger )
-			.tooltip( "option", "content", "Copied!" )
-			.one( "mouseout", function() {
-				$( this ).tooltip( "option", "content", "Copy to clipboard!" );
-			} );
-	} );
-
-	clipboard.on( "error", function( e ) {
-		$( e.trigger )
-			.tooltip( "option", "content", "Press Ctrl+C to copy!" )
-			.one( "mouseout", function() {
-				$( this ).tooltip( "option", "content", "Copy to clipboard!" );
-			} );
-	} );
-});
+} );
