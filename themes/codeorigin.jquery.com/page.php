@@ -3,7 +3,7 @@ wp_enqueue_style('jquery-ui', 'https://code.jquery.com/ui/1.11.4/themes/ui-light
 wp_enqueue_style('sri-modal', get_template_directory_uri() . '/css/sri-modal.css');
 
 wp_enqueue_script('jquery-ui', 'https://code.jquery.com/ui/1.11.4/jquery-ui.min.js');
-wp_enqueue_script('clipboard', get_template_directory_uri() . '/js/clipboard.1.5.5.min.js');
+wp_enqueue_script('clipboard-polyfill', get_template_directory_uri() . '/js/clipboard-polyfill.js');
 wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js');
 ?>
 
