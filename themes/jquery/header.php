@@ -104,6 +104,11 @@
 	</section>
 </header>
 
+<div id="banner-blm">
+	<h2>#BlackLivesMatter</h2>
+	<p>To Donate, see this <a href="https://bit.ly/fundthecommunity">list of organizations to support</a> from <a href="(https://www.reclaimtheblock.org/)">Reclaim the Block</a> 
+</div>
+
 <div id="container">
 	<div id="logo-events" class="constrain clearfix">
 		<h2 class="logo"><a href="<?php echo jq_logo_link(); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
