@@ -2186,11 +2186,13 @@ p.author a {
 #banner-secondary h2 {
 	font-size: 36px;
 	line-height: 42px;
+	text-align: center;
 }
 
 #banner-secondary p {
 	color: #ccc;
 	font: 22px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	text-align: center;
 	padding-left: 15%;
 	padding-right: 15%;
 }
