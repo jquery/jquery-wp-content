@@ -64,7 +64,7 @@
 					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
 					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
 						<ul>
-							<li><a href="https://cla.js.foundation/jquery/">CLA</a></li>
+							<li><a href="https://js.foundation/CLA">CLA</a></li>
 							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
 							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
 							<li><a href="https://contribute.jquery.org/code/">Code</a></li>
@@ -104,9 +104,9 @@
 	</section>
 </header>
 
-<div id="banner-secondary">
+<div id="banner-blm">
     <h2>#BlackLivesMatter</h2>
-	<p>To Donate, see <a href="(https://www.reclaimtheblock.org/)">Reclaim the Block</a>'s <a href="https://bit.ly/fundthecommunity">list of organizations to support</a>
+    <p>To Donate, see <a href="(https://www.reclaimtheblock.org/)">Reclaim the Block</a>'s <a href="https://bit.ly/fundthecommunity">list of organizations to support</a>
 </div>
 
 <div id="container">

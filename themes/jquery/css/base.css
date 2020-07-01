@@ -2233,6 +2233,25 @@ p.author a {
 	line-height: 36px;
 }
 
+#banner-blm {
+	background-image: url(../images/dark-grey-tile.png);
+	color: #fff;
+	text-align: center;
+	margin: -20px -25px 15px;
+	padding: 20px;
+}
+
+#banner-blm h2 {
+	font-size: 36px;
+	line-height: 42px;
+}
+
+#banner-blm p {
+	font: 22px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
 .center-txt {
 	text-align: center !important;
 }
