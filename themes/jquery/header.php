@@ -106,7 +106,7 @@
 
 <div id="banner-blm">
 	<h2>#BlackLivesMatter</h2>
-	<p>To Donate, see this <a href="https://bit.ly/fundthecommunity">list of organizations to support</a> from <a href="(https://www.reclaimtheblock.org/)">Reclaim the Block</a> 
+	<p>To Donate, see this <a href="https://bit.ly/fundthecommunity">list of organizations to support</a> from <a href="https://www.reclaimtheblock.org/">Reclaim the Block</a> 
 </div>
 
 <div id="container">
