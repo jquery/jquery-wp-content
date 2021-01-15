@@ -4,12 +4,17 @@ $( function() {
 
 	// Show modal on click
 	$( "body" ).on( "click", ".open-sri-modal", function( event ) {
+		var href, link;
+
 		if ( event.ctrlKey || event.metaKey ) {
 			return;
 		}
 
+		href = $( this ).attr( "href" );
+		link = isRelativeUrl( href ) ? document.location.origin + href : href;
+
 		$( replace( modalTemplate, {
-			link: document.location.origin + $( this ).attr( "href" ),
+			link: link,
 			hash: $( this ).attr( "data-hash" )
 		} ) ).removeAttr( "id" ).appendTo( "body" ).dialog( {
 			modal: true,
@@ -51,5 +56,9 @@ $( function() {
 		return string.replace( /\{\{([^}]+)}}/g, function( _, key ) {
 			return values[key];
 		} );
+	}
+
+	function isRelativeUrl( url ) {
+		return !/^https?:\/\//.test( url );
 	}
 } );

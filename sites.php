@@ -261,6 +261,8 @@ function jquery_sites() {
 				),
 			),
 		),
+		// The legacy site, replaced by a Docker image deployed separately.
+		// The WordPress parts have been superseded by releases.jquery.com.
 		'codeorigin.jquery.com' => array(
 			'blog_id' => 23,
 			'cookie_domain' => '.jquery.com',
@@ -326,6 +328,18 @@ function jquery_sites() {
 				'blogname' => 'jQuery Mobile 1.4 Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
 				'active_plugins' => array(),
+			),
+		),
+		'releases.jquery.com' => array(
+			'blog_id' => 29,
+			'cookie_domain' => '.jquery.com',
+			'body_class' => 'jquery',
+			'options' => array(
+				'blogname' => 'jQuery Releases',
+				'stylesheet' => 'releases.jquery.com',
+				'active_plugins' => array(
+					'jquery-static-index.php',
+				),
 			),
 		),
 	);
