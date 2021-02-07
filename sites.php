@@ -335,7 +335,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jquery.com',
 			'body_class' => 'jquery',
 			'options' => array(
-				'blogname' => 'jQuery Releases',
+				'blogname' => 'jQuery CDN',
 				'stylesheet' => 'releases.jquery.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
