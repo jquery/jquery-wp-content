@@ -9,7 +9,7 @@ $( function() {
 		}
 
 		$( replace( modalTemplate, {
-			link: document.location.origin + $( this ).attr( "href" ),
+			link: $( this ).prop( "href" ),
 			hash: $( this ).attr( "data-hash" )
 		} ) ).removeAttr( "id" ).appendTo( "body" ).dialog( {
 			modal: true,

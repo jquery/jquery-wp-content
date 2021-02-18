@@ -60,7 +60,7 @@ Complete the installation process by pointing your browser at http://vagrant.jqu
 You do not need to configure your `/etc/hosts` file for `vagrant.*` because `jquery.com`'s DNS handles this for you. However, if you plan to work offline, you can use the following rules:
 
 ```
-172.27.72.27 vagrant.jquery.com vagrant.api.jquery.com vagrant.blog.jquery.com vagrant.books.jquery.com vagrant.codeorigin.jquery.com vagrant.learn.jquery.com vagrant.plugins.jquery.com
+172.27.72.27 vagrant.jquery.com vagrant.api.jquery.com vagrant.blog.jquery.com vagrant.books.jquery.com vagrant.releases.jquery.com vagrant.learn.jquery.com vagrant.plugins.jquery.com
 172.27.72.27 vagrant.jqueryui.com vagrant.api.jqueryui.com vagrant.blog.jqueryui.com
 172.27.72.27 vagrant.jquerymobile.com vagrant.api.jquerymobile.com vagrant.blog.jquerymobile.com
 172.27.72.27 vagrant.jquery.org vagrant.brand.jquery.org vagrant.contribute.jquery.org vagrant.events.jquery.org vagrant.irc.jquery.org vagrant.meetings.jquery.org
