@@ -2231,22 +2231,14 @@ p.author a {
 	line-height: 36px;
 }
 
-#banner-blm {
-	background-image: url(../images/dark-grey-tile.png);
-	color: #fff;
-	text-align: center;
-	padding: 20px;
-}
-
-#banner-blm h2 {
-	font-size: 36px;
-	line-height: 42px;
-}
-
-#banner-blm p {
-	font: 22px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	padding-left: 15%;
-	padding-right: 15%;
+#banner-openjs-world-2021 {
+	display: block;
+	width: 100%;
+	height: 200px;
+	background-image: url(../images/banner-openjs-world-2021.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #1d2737ff;
 }
 
 .center-txt {
