@@ -1317,11 +1317,9 @@ iframe {
 	float: right;
 	margin-right: -25px;
 	position: relative;
-	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	background-image: -webkit-radial-gradient(left, #f2f2f2, #ffffff 80%);
-	background-image: radial-gradient(left, #f2f2f2, #ffffff 80%);
+	background-image: radial-gradient(ellipse at left, #f2f2f2, #ffffff 80%);
 	border: 0;
 	border-left: 1px solid #efefef;
 }
@@ -1333,11 +1331,9 @@ iframe {
 	border-left: 0;
 	border-right: 1px solid #e7e7e7;
 	margin: -20px 0 0 -25px;
-	-webkit-border-image: -webkit-linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	border-image: linear-gradient(#ffffff, #e7e7e7 15%, #e7e7e7 85%, #ffffff);
 	box-shadow: inset 15px 0 5px -16px #e7e7e7;
-	background-image: -webkit-radial-gradient(right, #f2f2f2, #ffffff 80%);
-	background-image: radial-gradient(right, #f2f2f2, #ffffff 80%);
+	background-image: radial-gradient(ellipse at right, #f2f2f2, #ffffff 80%);
 }
 
 .entry-summary p {
@@ -1710,7 +1706,6 @@ nav#main {
 	border-right: 1px solid rgba(2, 2, 2, 0.28);
 	border-left: 1px solid rgba(2, 2, 2, 0.28);
 	border-top: 1px solid rgba(250, 250, 250, 0.27);
-	box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
 	box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
 }
 
@@ -1806,23 +1801,7 @@ nav#main .searchform input:focus {
 	color: #333;
 }
 
-/*
- * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
- * 2. Using :placeholder for completeness.
- */
-nav#main .searchform input::-webkit-input-placeholder {
-	color: #fff;
-}
-nav#main .searchform input:-moz-placeholder { /* 1 */
-	color: #fff;
-}
-nav#main .searchform input::-moz-placeholder {
-	color: #fff;
-}
-nav#main .searchform input:-ms-input-placeholder {
-	color: #fff;
-}
-nav#main .searchform input:placeholder { /* 2 */
+nav#main .searchform input::placeholder {
 	color: #fff;
 }
 
@@ -2131,7 +2110,8 @@ p.author a {
 	padding: 2%;
 	padding-bottom: .5%;
 	margin-bottom: 20px;
-	font: 700 "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-weight: 700;
+	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #666;
 	background: url(../images-foundation/gauze.png) #f0f0f0;
 	text-shadow: 0 1px 0 #ffffff;
@@ -2316,7 +2296,8 @@ input[type="submit"].dark:hover {
    ========================================================================== */
 
 #sidebar h3 {
-	font: 20px/18px;
+	font-size: 20px;
+	line-height: 18px;
 	background-image: -webkit-linear-gradient(left, #efefef, #f3f3f3);
 	background-image: linear-gradient(to right, #efefef, #f3f3f3);
 	margin-left: -20px;
@@ -3630,120 +3611,165 @@ pre code {
   background: #f8f8ff
 }
 
-pre .comment,
-pre .template_comment,
-pre .diff .header,
-pre .javadoc {
-  color: #998;
-  font-style: italic
+/*
+ * Styles for highlight.js. Classes without the hljs prefix are legacy
+ * and can be removed once all pages update grunt-jquery-content to
+ * the latest version.
+ */
+
+pre .comment, /* legacy */
+pre .hljs-comment,
+pre .template_comment, /* legacy */
+pre .diff .header, /* legacy */
+pre .diff .hljs-meta,
+pre .javadoc, /* legacy */
+pre .hljs-doctag {
+	color: #998;
+	font-style: italic
 }
 
-pre .keyword,
-pre .css .rule .keyword,
-pre .winutils,
-pre .javascript .title,
-pre .nginx .title,
-pre .subst,
-pre .request,
-pre .status {
-  color: #333;
-  font-weight: bold
+pre .keyword, /* legacy */
+pre .hljs-keyword,
+pre .css .rule .keyword, /* legacy */
+pre .css .hljs-keyword,
+pre .winutils, /* ??? */
+pre .javascript .title, /* legacy */
+pre .javascript .hljs-name,
+pre .nginx .title, /* legacy */
+pre .nginx .hljs-name,
+pre .subst, /* legacy */
+pre .hljs-subst,
+pre .request, /* ??? */
+pre .status /* ??? */ {
+	color: #333;
+	font-weight: bold
 }
 
-pre .number,
-pre .hexcolor,
-pre .ruby .constant {
-  color: #099;
+pre .number, /* legacy */
+pre .hexcolor, /* legacy */
+pre .hljs-number,
+pre .ruby .constant /* legacy */ {
+	color: #099;
 }
 
-pre .string,
-pre .tag .value,
-pre .phpdoc,
-pre .tex .formula {
-  color: #d14
+pre .string, /* legacy */
+pre .tag .value, /* legacy */
+pre .hljs-string,
+pre .phpdoc, /* legacy */
+pre .tex .formula /* legacy */ {
+	color: #d14
 }
 
-pre .title,
-pre .id {
-  color: #900;
-  font-weight: bold
+pre .hljs-name,
+pre .id, /* legacy */
+pre .hljs-selector-id {
+	color: #900;
+	font-weight: bold
 }
 
-pre .javascript .title,
-pre .lisp .title,
-pre .clojure .title,
-pre .subst {
-  font-weight: normal
+pre .javascript .title, /* legacy */
+pre .javascript .hljs-name,
+pre .lisp .title, /* legacy */
+pre .lisp .hljs-name,
+pre .clojure .title, /* legacy */
+pre .clojure .hljs-name,
+pre .subst, /* legacy */
+pre .hljs-subst {
+	font-weight: normal
 }
 
-pre .class .title,
+pre .class .title, /* legacy */
+pre .hljs-selector-class .hljs-name,
 pre .haskell .type,
-pre .vhdl .literal,
-pre .tex .command {
-  color: #458;
-  font-weight: bold
+pre .haskell .hljs-type,
+pre .vhdl .literal, /* legacy */
+pre .vhdl .hljs-string,
+pre .tex .command, /* legacy */
+pre .tex .hljs-keyword {
+	color: #458;
+	font-weight: bold
 }
 
-pre .tag,
-pre .tag .title,
-pre .rules .property,
-pre .django .tag .keyword {
-  color: #000080;
-  font-weight: normal
+pre .tag, /* legacy */
+pre .hljs-tag,
+pre .tag .title, /* legacy */
+pre .hljs-tag .hljs-name,
+pre .rules .property, /* ??? */
+pre .django .tag .keyword, /* legacy */
+pre .django .hljs-tag .hljs-keyword {
+	color: #000080;
+	font-weight: normal
 }
 
-pre .attribute,
-pre .variable,
-pre .lisp .body {
-  color: #008080
+pre .attribute, /* legacy */
+pre .hljs-attribute,
+pre .hljs-attr,
+pre .variable, /* legacy */
+pre .hljs-variable,
+pre .lisp .body, /* legacy */
+pre .lisp .hljs-symbol {
+	color: #008080
 }
 
-pre .regexp {
-  color: #009926
+pre .regexp, /* legacy */
+pre .hljs-regexp {
+	color: #009926
 }
 
-pre .class {
-  color: #458;
-  font-weight: bold
+pre .class, /* legacy */
+pre .hljs-selector-class {
+	color: #458;
+	font-weight: bold
 }
 
-pre .symbol,
-pre .ruby .symbol .string,
-pre .lisp .keyword,
-pre .tex .special,
-pre .prompt {
-  color: #990073
+pre .symbol, /* legacy */
+pre .hljs-symbol,
+pre .ruby .symbol .string, /* legacy */
+pre .ruby .hljs-symbol .hljs-string,
+pre .lisp .keyword, /* legacy */
+pre .lisp .hljs-keyword,
+pre .tex .special, /* legacy */
+pre .prompt /* legacy */ {
+	color: #990073
 }
 
-pre .built_in,
-pre .lisp .title,
-pre .clojure .built_in {
-  color: #0086b3
+pre .built_in, /* legacy */
+pre .hljs-built_in,
+pre .lisp .title, /* legacy */
+pre .lisp .hljs-name,
+pre .clojure .built_in, /* legacy */
+pre .clojure .hljs-built_in {
+	color: #0086b3
 }
 
-pre .preprocessor,
-pre .pi,
-pre .doctype,
-pre .shebang,
-pre .cdata {
-  color: #999;
-  font-weight: bold
+pre .preprocessor, /* legacy */
+pre .pi, /* legacy */
+pre .doctype, /* legacy */
+pre .shebang, /* legacy */
+pre .cdata, /* legacy */
+pre .hljs-meta {
+	color: #999;
+	font-weight: bold
 }
 
-pre .deletion {
-  background: #fdd
+pre .deletion, /* legacy */
+pre .hljs-deletion {
+	background: #fdd
 }
 
-pre .addition {
-  background: #dfd
+pre .addition, /* legacy */
+pre .hljs-addition {
+	background: #dfd
 }
 
-pre .diff .change {
-  background: #0086b3
+pre .diff .change, /* legacy */
+pre .diff .hljs-meta {
+	background: #0086b3
 }
 
-pre .chunk {
-  color: #aaa
+pre .chunk, /* legacy */
+pre .diff .hljs-comment {
+	color: #aaa
 }
 
 .syntaxhighlighter a,
