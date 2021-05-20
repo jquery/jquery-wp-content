@@ -104,10 +104,13 @@
 	</section>
 </header>
 
-<div id="banner-blm">
-	<h2>#BlackLivesMatter</h2>
-	<p>To Donate, see this <a href="https://bit.ly/fundthecommunity">list of organizations to support</a> from <a href="https://www.reclaimtheblock.org/">Reclaim the Block</a> 
-</div>
+<a id="banner-openjs-world-2021" href="https://openjsf.org/openjs-world-2021/">
+	<div class="visuallyhidden">
+		<h2>OpenJS World</h2>
+		<p>June 2, 2021</p>
+		<p>Register today!</p>
+	</div>
+</a>
 
 <div id="container">
 	<div id="logo-events" class="constrain clearfix">
