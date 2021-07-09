@@ -2211,16 +2211,6 @@ p.author a {
 	line-height: 36px;
 }
 
-#banner-openjs-world-2021 {
-	display: block;
-	width: 100%;
-	height: 200px;
-	background-image: url(../images/banner-openjs-world-2021.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: #1d2737ff;
-}
-
 .center-txt {
 	text-align: center !important;
 }

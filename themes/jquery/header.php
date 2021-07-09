@@ -104,14 +104,6 @@
 	</section>
 </header>
 
-<a id="banner-openjs-world-2021" href="https://openjsf.org/openjs-world-2021/">
-	<div class="visuallyhidden">
-		<h2>OpenJS World</h2>
-		<p>June 2, 2021</p>
-		<p>Register today!</p>
-	</div>
-</a>
-
 <div id="container">
 	<div id="logo-events" class="constrain clearfix">
 		<h2 class="logo"><a href="<?php echo jq_logo_link(); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
