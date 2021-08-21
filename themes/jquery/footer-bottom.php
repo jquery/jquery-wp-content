@@ -37,10 +37,6 @@
 		$links[ 'Forum' ][ 'url' ] = 'https://forum.jquery.com/jquery-mobile/';
 		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jquerymobile';
 		break;
-	case 'qunitjs':
-		$links[ 'Forum' ][ 'url' ] = 'https://forum.jquery.com/qunit-and-testing/';
-		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/qunitjs';
-		break;
 	}
 ?>
 

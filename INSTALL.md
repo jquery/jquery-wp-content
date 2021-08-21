@@ -21,7 +21,7 @@ This install guide assumes you have certain prerequisites already configured wit
 ```
 <VirtualHost *:80>
 	ServerName local.jquery.com
-	ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.qunitjs.com *.sizzlejs.com *.jquerymobile.com
+	ServerAlias *.jquery.com *.jqueryui.com *.jquery.org *.sizzlejs.com *.jquerymobile.com
 	DocumentRoot "/srv/www/jquery"
 	php_value memory_limit 256M
 	<Directory /srv/www/jquery>
@@ -52,7 +52,6 @@ You do not need to configure your `/etc/hosts` file for `local.*` because `jquer
 127.0.0.1 local.jqueryui.com local.api.jqueryui.com local.blog.jqueryui.com
 127.0.0.1 local.jquerymobile.com local.api.jquerymobile.com local.blog.jquerymobile.com
 127.0.0.1 local.jquery.org local.brand.jquery.org local.contribute.jquery.org local.events.jquery.org local.irc.jquery.org local.meetings.jquery.org
-127.0.0.1 local.qunitjs.com local.api.qunitjs.com
 127.0.0.1 local.sizzlejs.com
 ```
 

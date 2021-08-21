@@ -1236,10 +1236,6 @@ iframe {
 	background: #9a1B1E;
 }
 
-.qunitjs #container {
-	background: #390f39;
-}
-
 .jquery-foundation #container {
 	background: #333;
 }
@@ -1259,12 +1255,10 @@ iframe {
 
 .jquery-ui #content-wrapper,
 .sizzlejs #content-wrapper,
-.qunitjs #content-wrapper,
 .jquery-learn #content-wrapper,
 .jquery-foundation #content-wrapper,
 .jquery-ui #banner-secondary,
 .sizzlejs #banner-secondary,
-.qunitjs #banner-secondary,
 .jquery-learn #banner-secondary,
 .jquery-foundation #banner-secondary {
 	border-top-left-radius: 0;
@@ -1535,27 +1529,11 @@ iframe {
 	border: none;
 }
 
-.sizzlejs #global-nav nav ul.projects li.qunitjs{
+.sizzlejs #global-nav nav ul.projects li.qunitjs {
 	border-left: none;
 	background-position: -206px 0;
 }
 
-
-.qunitjs #global-nav nav ul.projects li.sizzlejs {
-	border-right: none;
-}
-
-.qunitjs #global-nav nav ul.projects li.qunitjs {
-	background-position: -202px bottom;
-	width: 52px;
-	position: relative;
-	margin-top:1px;
-	border: none;
-}
-
-.qunitjs #global-nav nav ul.projects {
-	border-right: none;
-}
 
 #container,
 footer {
@@ -1575,11 +1553,6 @@ footer {
 .sizzlejs #container,
 .sizzlejs footer {
 	border-top-color: #faa523;
-}
-
-.qunitjs #container,
-.qunitjs footer {
-	border-top-color: #9c3493;
 }
 
 .jquery-learn #container,
@@ -1647,11 +1620,6 @@ h2.logo a {
 	background: url(../images/logo-sizzle.png) no-repeat;
 }
 
-.qunitjs h2.logo a {
-	width: 243px;
-	background: url(../images/logo-qunit.png) no-repeat;
-}
-
 .jquery-foundation h2.logo a {
 	width: 243px;
 	background: url(../images/logo-jquery-foundation.png) no-repeat;
@@ -1687,10 +1655,6 @@ h2.logo a {
   width: 122px;
   background-position: -442px 0;
 }
-.qunitjs.logo.small {
-  width: 105px;
-  background-position: -564px 0;
-}
 .sizzlejs.logo.small {
   width: 105px;
   background-position: -669px 0;
@@ -1712,9 +1676,6 @@ nav#main {
 .jquery-ui nav#main,
 .sizzlejs nav#main {
 	background-color: rgba(12, 12, 12, 0.06);
-}
-.qunitjs nav#main {
-	background-color: rgba(156, 52, 147, 0.5);
 }
 .jquery-learn nav#main {
 	background-color: rgba(0, 0, 0, 0.4);
@@ -3178,17 +3139,12 @@ footer .books li a cite {
 		background-size: 243px 66px;
 	}
 
-	.qunitjs h2.logo a {
-		background: url(../images/logo-qunit@2x.png) no-repeat;
-		background-size: 243px 66px;
-	}
-
 	.jquery-foundation h2.logo a {
 		background: url(../images/logo-jquery-foundation@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
 
-        .jquery-events.jquery-foundation h2.logo a {
+	.jquery-events.jquery-foundation h2.logo a {
 		background: url(../images/logo-jquery-events@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}

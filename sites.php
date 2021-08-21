@@ -129,19 +129,7 @@ function jquery_sites() {
 				),
 			),
 		),
-		'qunitjs.com' => array(
-			'blog_id' => 10,
-			'cookie_domain' => '.qunitjs.com',
-			'body_class' => 'qunitjs',
-			'options' => array(
-				'blogname' => 'QUnit',
-				'description' => 'QUnit: A JavaScript Unit Testing framework.',
-				'stylesheet' => 'qunitjs.com',
-				'active_plugins' => array(
-					'jquery-static-index.php',
-				),
-			),
-		),
+		# Historical: Database blog_id 10 is reserved for qunitjs.com.
 		'sizzlejs.com' => array(
 			'blog_id' => 11,
 			'cookie_domain' => '.sizzlejs.com',
@@ -178,19 +166,7 @@ function jquery_sites() {
 				'active_plugins' => array(),
 			),
 		),
-		'api.qunitjs.com' => array(
-			'blog_id' => 14,
-			'cookie_domain' => '.qunitjs.com',
-			'body_class' => 'qunitjs',
-			'logo_link' => 'https://qunitjs.com/',
-			'options' => array(
-				'blogname' => 'QUnit API Documentation',
-				'stylesheet' => 'api.qunitjs.com',
-				'active_plugins' => array(
-					'jquery-static-index.php',
-				),
-			),
-		),
+		# Historical: Database blog_id 14 is reserved for api.qunitjs.com.
 		'books.jquery.com' => array(
 			'blog_id' => 15,
 			'cookie_domain' => '.jquery.com',

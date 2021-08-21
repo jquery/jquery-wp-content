@@ -55,18 +55,6 @@ function menu_header_releases_jquery_com() {
 	);
 }
 
-function menu_header_qunitjs_com() {
-	return array(
-		'https://qunitjs.com/' => 'Home',
-		'https://qunitjs.com/intro/' => 'Intro to Unit Testing',
-		'https://api.qunitjs.com/' => 'API Documentation',
-		'https://qunitjs.com/cookbook/' => 'Cookbook',
-		'https://qunitjs.com/plugins/' => 'Plugins',
-		'https://qunitjs.com/upgrade-guide-2.x/' => '2.x Upgrade Guide',
-		'https://qunitjs.com/about/' => 'About'
-	);
-}
-
 function menu_header_jquerymobile_com() {
 	return array(
 		'https://jquerymobile.com/demos/' => 'Demos',
