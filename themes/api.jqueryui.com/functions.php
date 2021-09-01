@@ -3,6 +3,7 @@
 function jq_ui_api_versions() {
 	// Must be listed with current stable first
 	return array(
+		"1.13" => "1.8 and newer",
 		"1.12" => "1.7 and newer",
 		"1.11" => "1.6 and newer",
 		"1.10" => "1.6 and newer",
