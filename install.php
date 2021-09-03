@@ -3,7 +3,7 @@
 global $blog_id;
 
 if ( 1 != $blog_id && false !== strpos( $_SERVER['PHP_SELF'], 'wp-admin/install.php' ) ) {
-	wp_redirect( 'http://' . DOMAIN_CURRENT_SITE . '/wp-admin/install.php' );
+	header( 'Location: http://' . DOMAIN_CURRENT_SITE . '/wp-admin/install.php', true );
 	exit;
 }
 
@@ -74,7 +74,31 @@ function jquery_install_site( $site, $user ) {
 	$default_options['admin_email'] = $user->user_email;
 
 	if ( 1 !== $details['blog_id'] ) {
-		$blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, $path, 1 );
+		// krinkle(2021-09-03): This used to use insert_blog which didn't take a blog_id.
+		// Thus, this only worked reliably when setting up a fresh server, or when adding
+		// sites in the exact order that they are defined, and without any gaps, as otherwise
+		// the "next" inserted ID would not match what we declare in jquery_sites()
+		//
+		// $blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, $path, 1 );
+		//
+		// WordPress 5.1, deprecates insert_blog() in favour of a new wp_insert_site() function,
+		// which does accept a custom 'blog_id' to be set up front.
+		// But, we are still on WordPress 4.x, so, for now inline what insert_blog() did, but
+		// augmented with a custom blog_id.
+		//
+		// Start insert_blog()
+		global $wpdb;
+		$path = trailingslashit($path);
+		// WordPress 4 terms: The network is a site, and each domain is a blog.
+		// WordPress 5+ terms: The network is a network, and each domain is a site.
+		// Network id must be constant for all blogs, always 1.
+		$site_id = 1;
+		$result = $wpdb->insert( $wpdb->blogs, array('site_id' => (int)$site_id, 'blog_id' => (int)$details['blog_id'], 'domain' => $domain, 'path' => $path, 'registered' => current_time('mysql')) );
+		$blog_id = $result ? $wpdb->insert_id : false;
+		refresh_blog_details( $blog_id );
+		wp_maybe_update_network_site_counts();
+		// End insert_blog()
+
 		if ( $blog_id != $details['blog_id'] )
 			wp_die( "Something went very wrong when trying to install $domain as site $blog_id-{$details['blog_id']}. Find nacin." );
 
