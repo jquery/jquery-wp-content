@@ -213,18 +213,7 @@ function jquery_sites() {
 				),
 			),
 		),
-		'irc.jquery.org' => array(
-			'blog_id' => 20,
-			'cookie_domain' => '.jquery.org',
-			'body_class' => 'jquery-foundation',
-			'options' => array(
-				'blogname' => 'jQuery IRC Center',
-				'stylesheet' => 'irc.jquery.org',
-				'active_plugins' => array(
-					'jquery-static-index.php',
-				),
-			),
-		),
+		# Historical: Database blog_id 20 is reserved for irc.jquery.org.
 		'meetings.jquery.org' => array(
 			'blog_id' => 22,
 			'cookie_domain' => '.jquery.org',

@@ -123,13 +123,6 @@ function menu_header_contribute_jquery_org() {
 	);
 }
 
-function menu_header_irc_jquery_org() {
-	return array(
-		'https://irc.jquery.org/irc-help' => 'IRC Help',
-		'https://jquery.org/meeting/' => 'Meetings',
-	);
-}
-
 function menu_header_events_jquery_org() {
 	global $events;
 

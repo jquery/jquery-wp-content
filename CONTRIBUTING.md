@@ -2,4 +2,4 @@ Welcome! Thanks for your interest in contributing to jquery-wp-content. You're *
 
 You may also want to take a look at our [commit & pull request guide](https://contribute.jquery.org/commits-and-pull-requests/) and [style guides](https://contribute.jquery.org/style-guide/) for instructions on how to maintain your fork and submit your code. Before we can merge any pull request, we'll also need you to sign our [contributor license agreement](https://contribute.jquery.org/cla).
 
-You can find us on [IRC](https://irc.jquery.org), specifically in #jquery-content should you have any questions. If you've never contributed to open source before, we've put together [a short guide with tips, tricks, and ideas on getting started](https://contribute.jquery.org/open-source/).
+You can [Chat on Gitter](https://gitter.im/jquery/dev), should you have any questions. If you've never contributed to open source before, we've put together [a short guide with tips, tricks, and ideas on getting started](https://contribute.jquery.org/open-source/).
