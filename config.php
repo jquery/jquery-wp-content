@@ -43,12 +43,15 @@ if ( ! isset( $sites[ $live_site ] ) ) {
 	} else {
 		// This shouldn't happen in production :-(
 		// Record the event and treat this as a http://jquery.com hit.
+		// Debug wordpress global vars and $_SERVER
 		$vars = get_defined_vars();
-		unset( $vars['GLOBALS'], $vars['sites'], $vars['_POST'], $vars['_GET'], $vars['_FILES'], $vars['_ENV'], $vars['_REQUEST'] );
-		ob_start();
-		var_dump( $vars );
-		$debug = ob_get_clean();
-		error_log( gmdate( '[d-M-Y H:i:s e] ' ) . $debug . "\n", 3, '/tmp/domain_mapping.log' );
+		unset(
+			$vars['GLOBALS'],
+			$vars['_REQUEST'], $vars['_POST'], $vars['_GET'], $vars['_COOKIE'],
+			$vars['_FILES'], $vars['_ENV'],
+			$vars['sites']
+		);
+		error_log( "jquery-wp-content Unable to map '$live_site'. " . json_encode( $vars, JSON_UNESCAPED_SLASHES ) );
 		header( "Location: http://jquery.com/" );
 		exit;
 	}
