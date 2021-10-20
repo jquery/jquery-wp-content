@@ -24,7 +24,7 @@
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
 
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=3">
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=2">
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.8.3.min.js"></script>
 
