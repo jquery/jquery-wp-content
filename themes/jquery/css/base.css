@@ -1655,6 +1655,10 @@ h2.logo a {
   width: 122px;
   background-position: -442px 0;
 }
+.qunitjs.logo.small {
+  width: 105px;
+  background-position: -564px 0;
+}
 .sizzlejs.logo.small {
   width: 105px;
   background-position: -669px 0;
