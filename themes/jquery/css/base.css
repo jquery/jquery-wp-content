@@ -3793,6 +3793,8 @@ pre .diff .hljs-comment {
 .syntaxhighlighter table td.gutter .line {
 	text-align: right !important;
 	padding: 0 0.5em 0 1em !important;
+	user-select: none;
+	-webkit-user-select: none;
 }
 .syntaxhighlighter table td.code .line {
 	padding: 0 0.5em !important;
