@@ -10,6 +10,9 @@ function jquery_sites() {
 			'blog_id' => 1,
 			'cookie_domain' => '.jquery.com',
 			'body_class' => 'jquery',
+			'xfn-rel-me' => array(
+				'https://social.lfx.dev/@jquery',
+			),
 			'options' => array(
 				'blogname' => 'jQuery',
 				'description' => 'jQuery: The Write Less, Do More, JavaScript Library',

@@ -42,3 +42,19 @@ add_action( 'init', function() {
 
 	$events[ 'past' ] = array_reverse( $events[ 'past' ], true );
 });
+
+// https://docs.joinmastodon.org/user/profile/#verification
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me
+// https://microformats.org/wiki/rel-me
+// https://gmpg.org/xfn/
+function jquery_xfnrelme_wp_head() {
+	$sites = jquery_sites();
+	$links = isset( $sites[ JQUERY_LIVE_SITE ]['xfn-rel-me'] ) ?
+		$sites[ JQUERY_LIVE_SITE ]['xfn-rel-me'] :
+		array();
+	foreach ( $links as $url ) {
+		echo '<link rel="me" href="' . esc_url( $url ) . '">' . "\n";
+	}
+}
+
+add_action('wp_head', 'jquery_xfnrelme_wp_head');
