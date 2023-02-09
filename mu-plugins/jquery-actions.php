@@ -53,7 +53,10 @@ function jquery_xfnrelme_wp_head() {
 		$sites[ JQUERY_LIVE_SITE ]['xfn-rel-me'] :
 		array();
 	foreach ( $links as $url ) {
-		echo '<link rel="me" href="' . esc_url( $url ) . '">' . "\n";
+		// We use esc_attr instead of esc_url, as the latter would shorten
+		// the URL to be scheme-less as "//example" instead of "https://example",
+		// which prevents relation verification.
+		echo '<link rel="me" href="' . esc_attr( $url ) . '">' . "\n";
 	}
 }
 
