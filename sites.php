@@ -170,15 +170,7 @@ function jquery_sites() {
 			),
 		),
 		# Historical: Database blog_id 14 is reserved for api.qunitjs.com.
-		'books.jquery.com' => array(
-			'blog_id' => 15,
-			'cookie_domain' => '.jquery.com',
-			'body_class' => 'jquery',
-			'options' => array(
-				'blogname' => 'jQuery Books',
-				'stylesheet' => 'books.jquery.com',
-			),
-		),
+		# Historical: Database blog_id 15 is reserved for books.jquery.com
 		'events.jquery.org' => array(
 			'blog_id' => 16,
 			'cookie_domain' => '.jquery.org',
