@@ -27,52 +27,6 @@ a {
 }
 
 /*******************************************************************************/
-/* Beta Ribbon
-/*******************************************************************************/
-.beta-ribbon-wrapper {
-	width: 85px;
-	height: 88px;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 10;
-}
-
-.beta-ribbon {
-	font-weight: bold;
-	text-align: center;
-	text-shadow: rgba(255,255,255,0.5) 0 1px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-	position: relative;
-	padding: 7px 0;
-	left: -5px;
-	top: 11px;
-	width: 120px;
-	background-color: #ffea94;
-	background-image: -webkit-linear-gradient(top, #ffea94, #ffea5E);
-	background-image: linear-gradient(to bottom, #ffea94, #ffea5E);
-	color: #6a6340;
-	box-shadow: 0 0 3px rgba(0,0,0,0.3);
-	cursor: pointer;
-}
-
-.beta-ribbon:hover {
-	background-color: #ffea5e;
-	background-image: -webkit-linear-gradient(top, #ffea5e, #ffea94);
-	background-image: linear-gradient(to bottom, #ffea5e, #ffea94);
-}
-.beta-ribbon a {
-	text-decoration: none;
-	color: #393939;
-}
-
-.beta-ribbon:hover a {
-	text-decoration: underline;
-}
-/*******************************************************************************/
 /* Sidebar
 /*******************************************************************************/
 
