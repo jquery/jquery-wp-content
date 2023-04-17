@@ -131,3 +131,15 @@ if (JQUERY_STAGING && JQUERY_STAGING_PREFIX && JQUERY_LIVE_SITE) {
 		return str_replace( '//' . JQUERY_LIVE_SITE, '//' . JQUERY_STAGING_PREFIX . JQUERY_LIVE_SITE, $value );
 	} );
 }
+
+add_filter( 'xmlrpc_wp_insert_post_data', function ( $post_data, $content_struct ) {
+	if ( $post_data['post_type'] !== 'page' ) {
+		return $post_data;
+	}
+
+	if ( isset( $content_struct['page_template'] ) ) {
+		$post_data['page_template'] = $content_struct['page_template'];
+	}
+
+	return $post_data;
+}, /* priority */ 10, /* accepted args */ 2 );
