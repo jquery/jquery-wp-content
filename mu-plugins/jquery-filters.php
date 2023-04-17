@@ -141,5 +141,9 @@ add_filter( 'xmlrpc_wp_insert_post_data', function ( $post_data, $content_struct
 		$post_data['page_template'] = $content_struct['page_template'];
 	}
 
+	if ( isset( $content_struct['menu_order'] ) ) {
+		$post_data['menu_order'] = $content_struct['menu_order'];
+	}
+
 	return $post_data;
 }, /* priority */ 10, /* accepted args */ 2 );
