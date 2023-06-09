@@ -1,4 +1,8 @@
 <?php
+/**
+ * Plugin Name: API category listing
+ * Description: Tweak category pages for API documentation sites.
+ */
 
 /**
  * Sets category listings to be ordered by slug ascending, with no paging.

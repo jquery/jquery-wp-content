@@ -1,4 +1,8 @@
 <?php
+/**
+ * Plugin Name: jQuery Actions
+ * Description: Default actions for all jQuery sites.
+ */
 
 remove_action( 'wp_head', 'feed_links', 2 );
 remove_action( 'wp_head', 'feed_links_extra', 3 );

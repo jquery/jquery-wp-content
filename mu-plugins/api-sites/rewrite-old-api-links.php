@@ -1,4 +1,9 @@
 <?php
+/**
+ * Plugin Name: Versioned API content links.
+ * Description: Rewrite links in content on versioned API subsites (jQuery UI, jQuery Mobile).
+ */
+
 /*
  * For subsites like /1.8/, this plugin rewrites root-relative links
  * like /Effects to /1.8/Effects.

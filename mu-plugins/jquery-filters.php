@@ -1,6 +1,7 @@
 <?php
-/* Plugin Name: jQuery Filters
- * Description: Default filters, option values, and other tweaks.
+/**
+ * Plugin Name: jQuery Filters
+ * Description: Default filters for all jQuery sites.
  */
 
 if ( defined( 'WP_INSTALLING' ) )
