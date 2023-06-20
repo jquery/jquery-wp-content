@@ -120,3 +120,13 @@ function strip_https($url) {
 
 	return preg_replace( '/^https?:/', '', $url );
 }
+
+// Production databases set the home values in corresponding site options tables.
+// However, sites that use jquery-static-index.php cause index pages
+// to redirect to live sites in local development. This filter does not
+// prevent the redirect, but changes the redirect to the local site.
+if (JQUERY_STAGING && JQUERY_STAGING_PREFIX && JQUERY_LIVE_SITE) {
+	add_filter( 'option_home', function( $value ) {
+		return str_replace( '//' . JQUERY_LIVE_SITE, '//' . JQUERY_STAGING_PREFIX . JQUERY_LIVE_SITE, $value );
+	} );
+}
