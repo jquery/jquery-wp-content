@@ -9,10 +9,6 @@ p {
 a {
 	color: #ff8200;
 }
-::-moz-selection {
-	color: #fff;
-	background: #78645a;
-}
 ::selection {
 	color: #fff;
 	background: #78645a;
@@ -36,10 +32,6 @@ a {
 	font: 19px "Helvetica Light", Arial, Helvetica, sans-serif;
 	color: #ff6400;
 	background-position: 0 100%;
-}
-#header span::-moz-selection {
-	color: #fff;
-	background: #ff6400;
 }
 #header span::selection {
 	color: #fff;

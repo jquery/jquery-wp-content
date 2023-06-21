@@ -63,7 +63,6 @@ a, .title, .entry-title { color: #108040; }
 #banner-secondary .download-box {
 	border: 1px solid #aaa;
 	background: #333;
-	background: -webkit-linear-gradient(left, #333 0%, #444 100%);
 	background: linear-gradient(to right, #333 0%, #444 100%);
 	float: right;
 	width: 335px;

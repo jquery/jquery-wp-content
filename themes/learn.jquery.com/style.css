@@ -77,7 +77,6 @@ a {
 	box-shadow: 0 0 5px -0.5px #ddd;
 	border: 1px solid white;
 	background: #fff7e3;
-	background: -webkit-linear-gradient(top, #fffaf5 0%,#fff7e3 100%,#fff7e3 100%);
 	background: linear-gradient(to bottom, #fffaf5 0%,#fff7e3 100%,#fff7e3 100%);
 	margin-bottom: 1.8em;
 	padding: 1em 1em 0 1em;

@@ -53,8 +53,6 @@ a,
 }
 .cross-browser .feature-box-image:hover {
 	transition: all 0.7s;
-	-webkit-transform: rotate(6.28rad);
-	-ms-transform: rotate(6.28rad);
 	transform: rotate(6.28rad);
 }
 

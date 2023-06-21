@@ -74,23 +74,7 @@ a {
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(122, 206, 244, 0.6);
 }
 
-/*
- * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
- * 2. Using :placeholder for completeness.
- */
-#banner-secondary .searchform input::-webkit-input-placeholder {
-	color: #aaa;
-}
-#banner-secondary .searchform input:-moz-placeholder { /* 1 */
-	color: #aaa;
-}
-#banner-secondary .searchform input::-moz-placeholder {
-	color: #aaa;
-}
-#banner-secondary .searchform input:-ms-input-placeholder {
-	color: #aaa;
-}
-#banner-secondary .searchform input:placeholder { /* 2 */
+#banner-secondary .searchform input::placeholder {
 	color: #aaa;
 }
 

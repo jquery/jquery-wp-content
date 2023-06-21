@@ -531,23 +531,7 @@ textarea {
 	box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
-/*
- * 1. :-moz-placeholder has been deprecated in favor of ::-moz-placeholder.
- * 2. Using :placeholder for completeness.
- */
-::-webkit-input-placeholder {
-	color: #9a1B1E;
-}
-:-moz-placeholder { /* 1 */
-	color: #9a1B1E;
-}
-::-moz-placeholder {
-	color: #9a1B1E;
-}
-:-ms-placeholder {
-	color: #9a1B1E;
-}
-:placeholder { /* 2 */
+::placeholder {
 	color: #9a1B1E;
 }
 
@@ -887,14 +871,7 @@ ul.icons li [class*=" icon-"] {
 }
 .icon-spin {
   display: inline-block;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
-  -webkit-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
-}
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(359deg); }
 }
 @keyframes spin {
   0% { transform: rotate(0deg); }
@@ -2236,7 +2213,6 @@ input[type="submit"].dark:hover {
 #sidebar h3 {
 	font-size: 20px;
 	line-height: 18px;
-	background-image: -webkit-linear-gradient(left, #efefef, #f3f3f3);
 	background-image: linear-gradient(to right, #efefef, #f3f3f3);
 	margin-left: -20px;
 	margin-right: -20px;
@@ -2348,8 +2324,7 @@ footer .footer-icon-links li:hover a:before {
 }
 
 .multiplebgs.cssgradients footer {
-	background-image: -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.0)), url(../images/bg-footer-noise.jpg); /* Chrome 10+, Saf6 */
-	background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)), url(../images/bg-footer-noise.jpg); /* Firefox 16+, IE 10+, Opera 12.50+ */
+	background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)), url(../images/bg-footer-noise.jpg);
 	background-repeat: repeat-x, repeat;
 	background-size: 100px 15px, 140px 140px;
 }
@@ -2717,9 +2692,7 @@ footer .books li a cite {
 
 #options header h2, #methods header h2, #extension-points header h2, #events header h2, #quick-nav h2 {
 	background: #cccccc; /* Old browsers */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
 	background: linear-gradient(to bottom, #ffffff 0%,#eeeeee 17%,#cccccc 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 	margin: -10px -10px 10px -10px;
 	padding: 10px;
 }
@@ -3138,11 +3111,6 @@ footer .books li a cite {
 		background: url(../images/logo-jquery-foundation@2x.png) no-repeat;
 		background-size: 243px 66px;
 	}
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-	   only screen and (min-resolution: 144dpi) {
-
 }
 
  /* Helper classes

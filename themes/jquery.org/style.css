@@ -7,23 +7,6 @@ Template: jquery
 a, #sidebar h3 {
 	color: #0769ad;
 }
-/*
-#content code a {
-	background-color: rgba(6, 89, 150, 0.19);
-}
-
-#content h1 {
-	color: white;
-	font-weight: normal;
-	font-style: normal;
-}
-
-#content h2 {
-	color: white;
-	font-weight: normal;
-	font-style: normal;
-	margin-bottom: 20px;
-}*/
 
 .page-slug-index #banner-secondary.large-banner {
 	padding-top: 20px;
@@ -395,29 +378,11 @@ a.icon-search::before {
 	box-shadow: none;
 }
 
-#content .choose-gifts input::-webkit-input-placeholder {
-   color: rgba(51,51,51,0.75);
-}
-#content .choose-gifts input:-moz-placeholder {
-   color: rgba(51,51,51,0.75);
-}
-#content .choose-gifts input::-moz-placeholder {
-   color: rgba(51,51,51,0.75);
-}
-#content .choose-gifts input:-ms-input-placeholder {
+#content .choose-gifts input::placeholder {
    color: rgba(51,51,51,0.75);
 }
 
-#content .choose-gifts textarea::-webkit-input-placeholder {
-   color: rgba(51,51,51,0.75);
-}
-#content .choose-gifts textarea:-moz-placeholder {
-   color: rgba(51,51,51,0.75);
-}
-#content .choose-gifts textarea::-moz-placeholder {
-   color: rgba(51,51,51,0.75);
-}
-#content .choose-gifts textarea:-ms-input-placeholder {
+#content .choose-gifts textarea::placeholder {
    color: rgba(51,51,51,0.75);
 }
 
