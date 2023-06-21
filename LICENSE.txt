@@ -54,10 +54,6 @@ differ from the terms above.
 	http://tinynav.com/
 	located at themes/jquery/js/plugins.js
 
-- VaultPress
-	https://vaultpress.com/
-	located at plugins/vaultpress
-
 The design, layout, and look-and-feel of jquery-wp-content - including
 all CSS, images, and icons, except as noted above - are copyright jQuery
 Foundation and are not licensed for use. Designs and CSS from
