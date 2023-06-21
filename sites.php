@@ -171,19 +171,7 @@ function jquery_sites() {
 		),
 		# Historical: Database blog_id 14 is reserved for api.qunitjs.com.
 		# Historical: Database blog_id 15 is reserved for books.jquery.com
-		'events.jquery.org' => array(
-			'blog_id' => 16,
-			'cookie_domain' => '.jquery.org',
-			'body_class' => 'jquery-foundation jquery-events',
-			'options' => array(
-				'blogname' => 'jQuery Events',
-				'stylesheet' => 'events.jquery.org',
-				'active_plugins' => array(
-					'allow-numeric-stubs/allow-numeric-stubs.php',
-					'jquery-static-index.php',
-				),
-			),
-		),
+		# Historical: Database blog_id 16 is reserved for events.jquery.org
 		'brand.jquery.org' => array(
 			'blog_id' => 18,
 			'cookie_domain' => '.jquery.org',

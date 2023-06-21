@@ -71,10 +71,6 @@
 					</li>
 					<li class="dropdown"><a href="https://js.foundation/events">Events</a>
 						<ul class="wide">
-						<?php global $events; ?>
-						<?php foreach ($events[ 'future' ] as $event) : ?>
-							<li><a href="<?php echo $event->url; ?>"><?php echo substr( $event->date, 0, -5 ) . ' | ' . $event->title ?></a></li>
-						<?php endforeach; ?>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>

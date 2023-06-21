@@ -14,10 +14,6 @@ The following externally maintained libraries used by this software have
 their own licenses; we recommend you read them, as their terms may
 differ from the terms above.
 
-- Allow Numeric Stubs
-	https://wordpress.org/plugins/allow-numeric-stubs/
-	located at plugins/allow-numeric-stubs
-
 - Colorbox
 	https://www.jacklmoore.com/colorbox/
 	located at themes/jquery/js/plugins.js

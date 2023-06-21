@@ -123,16 +123,6 @@ function menu_header_contribute_jquery_org() {
 	);
 }
 
-function menu_header_events_jquery_org() {
-	global $events;
-
-	$items = array();
-	foreach( $events[ 'future' ] as $event ) {
-		$items[ $event->url ] = substr( $event->date, 0, -5 ) . ' | ' . $event->title;
-	}
-	return $items;
-}
-
 /*
  * Avert your eyes.
  */
