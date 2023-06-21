@@ -1592,6 +1592,10 @@ h2.logo a {
   width: 105px;
   background-position: -564px 0;
 }
+.sizzlejs.logo.small {
+  width: 105px;
+  background-position: -669px 0;
+}
 
 #logo-events aside {
 	float: right;
