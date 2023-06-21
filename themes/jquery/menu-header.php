@@ -80,13 +80,6 @@ function menu_header_jqueryui_com() {
 	);
 }
 
-function menu_header_sizzlejs_com() {
-	return array(
-		'https://sizzlejs.com/' => 'Home',
-		'https://github.com/jquery/sizzle' => 'Source Code',
-	);
-}
-
 function menu_header_jquery_org() {
 	return array(
 		'https://jquery.org/' => 'Home',

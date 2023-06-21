@@ -1209,10 +1209,6 @@ iframe {
 	background: #108040;
 }
 
-.sizzlejs #container {
-	background: #9a1B1E;
-}
-
 .jquery-foundation #container {
 	background: #333;
 }
@@ -1231,13 +1227,11 @@ iframe {
 }
 
 .jquery-ui #content-wrapper,
-.sizzlejs #content-wrapper,
-.jquery-learn #content-wrapper,
-.jquery-foundation #content-wrapper,
 .jquery-ui #banner-secondary,
-.sizzlejs #banner-secondary,
-.jquery-learn #banner-secondary,
-.jquery-foundation #banner-secondary {
+.jquery-foundation #content-wrapper,
+.jquery-foundation #banner-secondary,
+.jquery-learn #content-wrapper,
+.jquery-learn #banner-secondary {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 }
@@ -1493,25 +1487,6 @@ iframe {
 }
 
 
-.sizzlejs #global-nav nav ul.projects li.jquery-mobile {
-	border-right: none;
-	background-position: -102px 0;
-}
-
-.sizzlejs #global-nav nav ul.projects li.sizzlejs {
-	background-position: -148px bottom;
-	width: 52px;
-	position: relative;
-	margin-top:1px;
-	border: none;
-}
-
-.sizzlejs #global-nav nav ul.projects li.qunitjs {
-	border-left: none;
-	background-position: -206px 0;
-}
-
-
 #container,
 footer {
 	border-top: 1px solid #7acef4;
@@ -1525,11 +1500,6 @@ footer {
 .jquery-mobile #container,
 .jquery-mobile footer {
 	border-top-color: #3eb249;
-}
-
-.sizzlejs #container,
-.sizzlejs footer {
-	border-top-color: #faa523;
 }
 
 .jquery-learn #container,
@@ -1592,11 +1562,6 @@ h2.logo a {
 	background: url(../images/logo-jquery-mobile.png) no-repeat;
 }
 
-.sizzlejs h2.logo a {
-	width: 243px;
-	background: url(../images/logo-sizzle.png) no-repeat;
-}
-
 .jquery-foundation h2.logo a {
 	width: 243px;
 	background: url(../images/logo-jquery-foundation.png) no-repeat;
@@ -1627,10 +1592,6 @@ h2.logo a {
   width: 105px;
   background-position: -564px 0;
 }
-.sizzlejs.logo.small {
-  width: 105px;
-  background-position: -669px 0;
-}
 
 #logo-events aside {
 	float: right;
@@ -1645,8 +1606,7 @@ nav#main {
 	box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
 }
 
-.jquery-ui nav#main,
-.sizzlejs nav#main {
+.jquery-ui nav#main {
 	background-color: rgba(12, 12, 12, 0.06);
 }
 .jquery-learn nav#main {
@@ -3100,11 +3060,6 @@ footer .books li a cite {
 	.jquery-mobile h2.logo a {
 		background: url(../images/logo-jquery-mobile@2x.png) no-repeat;
 		background-size: 268px 66px;
-	}
-
-	.sizzlejs h2.logo a {
-		background: url(../images/logo-sizzle@2x.png) no-repeat;
-		background-size: 243px 66px;
 	}
 
 	.jquery-foundation h2.logo a {

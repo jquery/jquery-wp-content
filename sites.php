@@ -133,18 +133,7 @@ function jquery_sites() {
 			),
 		),
 		# Historical: Database blog_id 10 is reserved for qunitjs.com.
-		'sizzlejs.com' => array(
-			'blog_id' => 11,
-			'cookie_domain' => '.sizzlejs.com',
-			'body_class' => 'sizzlejs',
-			'options' => array(
-				'blogname' => 'Sizzle JS',
-				'stylesheet' => 'sizzlejs.com',
-				'active_plugins' => array(
-					'jquery-static-index.php',
-				),
-			),
-		),
+		# Historical: Database blog_id 11 is reserved for sizzlejs.com.
 		'jquerymobile.com' => array(
 			'blog_id' => 12,
 			'cookie_domain' => '.jquerymobile.com',

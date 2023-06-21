@@ -64,7 +64,6 @@ You do not need to configure your `/etc/hosts` file for `vagrant.*` because `jqu
 172.27.72.27 vagrant.jqueryui.com vagrant.api.jqueryui.com vagrant.blog.jqueryui.com
 172.27.72.27 vagrant.jquerymobile.com vagrant.api.jquerymobile.com vagrant.blog.jquerymobile.com
 172.27.72.27 vagrant.jquery.org vagrant.brand.jquery.org vagrant.contribute.jquery.org vagrant.meetings.jquery.org
-172.27.72.27 vagrant.sizzlejs.com
 ```
 
 ### Stopping and Restarting the Virtual Machine
