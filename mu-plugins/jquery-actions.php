@@ -32,7 +32,8 @@ remove_action( 'template_redirect',   'wp_shortlink_header',  11 );
 // - https://microformats.org/wiki/rel-me
 // - https://gmpg.org/xfn/
 function jquery_xfnrelme_wp_head() {
-	$links = explode( ',', get_option( 'jquery_xfn_rel_me' , '' ) );
+	$option = get_option( 'jquery_xfn_rel_me' , '' );
+	$links = $option !== '' ? explode( ',', $option ) : array();
 	foreach ( $links as $url ) {
 		// We use esc_attr instead of esc_url, as the latter would shorten
 		// the URL to be scheme-less as "//example" instead of "https://example",
