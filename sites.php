@@ -10,9 +10,6 @@ function jquery_sites() {
 			'blog_id' => 1,
 			'cookie_domain' => '.jquery.com',
 			'body_class' => 'jquery',
-			'xfn-rel-me' => array(
-				'https://social.lfx.dev/@jquery',
-			),
 			'algolia_docsearch' => array(
 				'apiKey' => '3cfde9aca378c8aab554d5bf1b23489b',
 				'indexName' => 'jquery',
@@ -24,6 +21,7 @@ function jquery_sites() {
 				'active_plugins' => array(
 					'jquery-static-index.php',
 				),
+				'jquery_xfn_rel_me' => 'https://social.lfx.dev/@jquery',
 			),
 		),
 		'blog.jquery.com' => array(

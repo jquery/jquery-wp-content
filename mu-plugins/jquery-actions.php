@@ -15,20 +15,29 @@ remove_action( 'wp_head', 'rel_canonical' );
 remove_action( 'wp_head',             'wp_shortlink_wp_head', 10 );
 remove_action( 'template_redirect',   'wp_shortlink_header',  11 );
 
-// https://docs.joinmastodon.org/user/profile/#verification
-// https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me
-// https://microformats.org/wiki/rel-me
-// https://gmpg.org/xfn/
+// Add rel=me link to HTML head for Mastodon domain verification
+//
+// Usage:
+//
+// Put one or more comma-separated URLs in the 'jquery_xfn_rel_me' WordPress option.
+//
+// Example:
+//
+//     'jquery_xfn_rel_me' => 'https://example.org/@foo,https://social.example/@bar'
+//
+// See also:
+//
+// - https://docs.joinmastodon.org/user/profile/#verification
+// - https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me
+// - https://microformats.org/wiki/rel-me
+// - https://gmpg.org/xfn/
 function jquery_xfnrelme_wp_head() {
-	$sites = jquery_sites();
-	$links = isset( $sites[ JQUERY_LIVE_SITE ]['xfn-rel-me'] ) ?
-		$sites[ JQUERY_LIVE_SITE ]['xfn-rel-me'] :
-		array();
+	$links = explode( ',', get_option( 'jquery_xfn_rel_me' , '' ) );
 	foreach ( $links as $url ) {
 		// We use esc_attr instead of esc_url, as the latter would shorten
 		// the URL to be scheme-less as "//example" instead of "https://example",
 		// which prevents relation verification.
-		echo '<link rel="me" href="' . esc_attr( $url ) . '">' . "\n";
+		echo '<link rel="me" href="' . esc_attr( trim( $url ) ) . '">' . "\n";
 	}
 }
 
