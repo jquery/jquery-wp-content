@@ -14,7 +14,7 @@
 	?></title>
 
 	<meta name="author" content="JS Foundation - js.foundation">
-	<meta name="description" content="<?php echo jq_meta_description(); ?>">
+	<meta name="description" content="<?php echo get_option( 'jquery_description', '' ); ?>">
 
 	<meta name="viewport" content="width=device-width">
 
@@ -99,7 +99,7 @@
 
 <div id="container">
 	<div id="logo-events" class="constrain clearfix">
-		<h2 class="logo"><a href="<?php echo jq_logo_link(); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
+		<h2 class="logo"><a href="<?php echo get_option( 'jquery_logo_link', '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
 
 		<aside>
 			<div id="broadcast"></div>

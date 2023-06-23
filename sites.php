@@ -11,7 +11,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'jQuery',
-				'description' => 'jQuery: The Write Less, Do More, JavaScript Library',
+				'jquery_description' => 'jQuery: The Write Less, Do More, JavaScript Library',
 				'stylesheet' => 'jquery.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -35,7 +35,6 @@ function jquery_sites() {
 		'api.jquery.com' => array(
 			'blog_id' => 3,
 			'cookie_domain' => '.jquery.com',
-			'logo_link' => 'https://jquery.com/',
 			'options' => array(
 				'blogname' => 'jQuery API Documentation',
 				'stylesheet' => 'api.jquery.com',
@@ -43,6 +42,7 @@ function jquery_sites() {
 					'jquery-api-category-listing.php',
 				),
 				'jquery_body_class' => 'jquery',
+				'jquery_logo_link'=> 'https://jquery.com/',
 				'jquery_docsearch_api_key' => '3cfde9aca378c8aab554d5bf1b23489b',
 				'jquery_docsearch_index_name' => 'jquery',
 			),
@@ -73,7 +73,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI',
-				'description' => 'jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you\'re building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.',
+				'jquery_description' => 'jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library. Whether you\'re building highly interactive web applications or you just need to add a date picker to a form control, jQuery UI is the perfect choice.',
 				'stylesheet' => 'jqueryui.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
@@ -96,7 +96,6 @@ function jquery_sites() {
 			'subsites' => 1, // Has one level of sub-sites (api.jqueryui.com/([^/]+))
 			'blog_id' => 8,
 			'cookie_domain' => '.jqueryui.com',
-			'logo_link' => 'https://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI API Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -104,6 +103,7 @@ function jquery_sites() {
 					'jquery-api-category-listing.php',
 				),
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
 			),
@@ -111,7 +111,6 @@ function jquery_sites() {
 		'api.jqueryui.com/1.8' => array(
 			'blog_id' => 17,
 			'cookie_domain' => '.jqueryui.com',
-			'logo_link' => 'https://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.8 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -120,6 +119,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
 			),
@@ -127,7 +127,6 @@ function jquery_sites() {
 		'api.jqueryui.com/1.9' => array(
 			'blog_id' => 21,
 			'cookie_domain' => '.jqueryui.com',
-			'logo_link' => 'https://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.9 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -136,6 +135,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
 			),
@@ -172,7 +172,6 @@ function jquery_sites() {
 			'subsites' => 1, // Has one level of sub-sites (api.jquerymobile.com/([^/]+))
 			'blog_id' => 13,
 			'cookie_domain' => '.jquerymobile.com',
-			'logo_link' => 'https://jquerymobile.com/',
 			'options' => array(
 				'blogname' => 'jQuery Mobile API Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
@@ -180,6 +179,7 @@ function jquery_sites() {
 					'jquery-api-category-listing.php',
 				),
 				'jquery_body_class' => 'jquery-mobile',
+				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_docsearch_api_key' => '207328b0f1c18555c9021d05157dd651',
 				'jquery_docsearch_index_name' => 'jquerymobile',
 			),
@@ -228,7 +228,6 @@ function jquery_sites() {
 		'api.jquerymobile.com/1.3' => array(
 			'blog_id' => 24,
 			'cookie_domain' => '.jquerymobile.com',
-			'logo_link' => 'https://jquerymobile.com/',
 			'options' => array(
 				'blogname' => 'jQuery Mobile 1.3 Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
@@ -237,6 +236,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-mobile',
+				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_docsearch_api_key' => '207328b0f1c18555c9021d05157dd651',
 				'jquery_docsearch_index_name' => 'jquerymobile',
 			),
@@ -244,7 +244,6 @@ function jquery_sites() {
 		'api.jqueryui.com/1.10' => array(
 			'blog_id' => 25,
 			'cookie_domain' => '.jqueryui.com',
-			'logo_link' => 'https://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.10 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -253,6 +252,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
 			),
@@ -260,7 +260,6 @@ function jquery_sites() {
 		'api.jqueryui.com/1.12' => array(
 			'blog_id' => 26,
 			'cookie_domain' => '.jqueryui.com',
-			'logo_link' => 'https://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.12 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -269,6 +268,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
 			),
@@ -276,7 +276,6 @@ function jquery_sites() {
 		'api.jqueryui.com/1.11' => array(
 			'blog_id' => 27,
 			'cookie_domain' => '.jqueryui.com',
-			'logo_link' => 'https://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.11 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -285,6 +284,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
 			),
@@ -292,7 +292,6 @@ function jquery_sites() {
 		'api.jquerymobile.com/1.4' => array(
 			'blog_id' => 28,
 			'cookie_domain' => '.jquerymobile.com',
-			'logo_link' => 'https://jquerymobile.com/',
 			'options' => array(
 				'blogname' => 'jQuery Mobile 1.4 Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
@@ -301,6 +300,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-mobile',
+				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_docsearch_api_key' => '207328b0f1c18555c9021d05157dd651',
 				'jquery_docsearch_index_name' => 'jquerymobile',
 			),
@@ -320,7 +320,6 @@ function jquery_sites() {
 		'api.jqueryui.com/1.13' => array(
 			'blog_id' => 30,
 			'cookie_domain' => '.jqueryui.com',
-			'logo_link' => 'https://jqueryui.com/',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.13 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
@@ -329,6 +328,7 @@ function jquery_sites() {
 					'jquery-api-versioned-links.php',
 				),
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
 			),
