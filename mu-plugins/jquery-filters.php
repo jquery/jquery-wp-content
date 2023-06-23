@@ -63,17 +63,20 @@ add_filter( 'ms_site_check', '__return_true' );
 
 // Add body classes found in postmeta.
 add_filter( 'body_class', function( $classes ) {
-	$sites = jquery_sites();
-	if ( isset( $sites[ JQUERY_LIVE_SITE ]['body_class'] ) )
-		array_unshift( $classes, $sites[ JQUERY_LIVE_SITE ]['body_class'] );
-	if ( 0 === strpos( JQUERY_LIVE_SITE, 'api.' ) )
+	$body_class_setting = get_option( 'jquery_body_class' );
+	if ( $body_class_setting ) {
+		array_unshift( $classes, $body_class_setting );
+	}
+	if ( strpos( JQUERY_LIVE_SITE, 'api.' ) === 0 ) {
 		array_unshift( $classes, 'api' );
+	}
 
-	if ( is_page() )
+	if ( is_page() ) {
 		$classes[] = 'page-slug-' . sanitize_html_class( strtolower( get_queried_object()->post_name ) );
-	if ( is_singular() && $post_classes = get_post_meta( get_queried_object_id(), 'body_class', true ) )
+	}
+	if ( is_singular() && $post_classes = get_post_meta( get_queried_object_id(), 'body_class', true ) ) {
 		$classes = array_merge( $classes, explode( ' ', $post_classes ) );
-
+	}
 	if ( is_archive() || is_search() ) {
 		$classes[] = 'listing';
 	}
