@@ -5,7 +5,7 @@ function relevanssi_populate_stopwords() {
 	global $wpdb, $relevanssi_variables;
 
 	$lang = get_option('WPLANG');
-	if (empty($lang) && WPLANG != '') {
+	if (empty($lang) && defined('WPLANG') && WPLANG != '') {
 		$lang = WPLANG;
 	}
 	if (empty($lang)) $lang = "en_GB";
