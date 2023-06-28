@@ -4,7 +4,7 @@ if (!defined('WP_UNINSTALL_PLUGIN'))
 	exit();
 
 global $wpdb;
-require_once( 'lib/uninstall.php' );
+require_once('lib/uninstall.php');
 
 if (!defined('RELEVANSSI_PREMIUM')) relevanssi_uninstall();
 // if Relevanssi Premium is installed, options will not be deleted
@@ -24,6 +24,7 @@ function relevanssi_uninstall() {
 	delete_option('relevanssi_excerpt_type');
 	delete_option('relevanssi_excerpt_allowable_tags');
 	delete_option('relevanssi_log_queries');
+	delete_option('relevanssi_log_queries_with_ip');
 	delete_option('relevanssi_excat');
 	delete_option('relevanssi_extag');
 	delete_option('relevanssi_cat');

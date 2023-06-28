@@ -29,7 +29,7 @@ function relevanssi_shortcode($atts, $content, $name) {
 
 function relevanssi_noindex_shortcode($atts, $content) {
 	// When in general use, make the shortcode disappear.
-	return $content;
+	return do_shortcode($content);
 }
 
 function relevanssi_noindex_shortcode_indexing($atts, $content) {
