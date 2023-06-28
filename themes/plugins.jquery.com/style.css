@@ -108,7 +108,7 @@ a {
 .github-activity .info-block .number {
 	border-top-left-radius: 4px;
 	border-top-right-radius: 4px;
-	background: black url('images/dark-grey-tile.png');
+	background: black url(../jquery/images/dark-grey-tile.png);
 	padding: 2px 10px;
 	color: white;
 	font: bold 3em/1em "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -234,7 +234,7 @@ a {
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
 	padding: 12px 15px 5px;
-	background: url('images/dark-grey-tile.png');
+	background: url(../jquery/images/dark-grey-tile.png);
 }
 
 .jquery-plugin .toolbox a.download {
@@ -371,7 +371,7 @@ a {
 
 .jquery-plugin .versions table thead tr {
 	border-radius: 8px 8px 0 0;
-	background: black url('images/dark-grey-tile.png');
+	background: black url(../jquery/images/dark-grey-tile.png);
 }
 
 .jquery-plugin .versions table thead th.version-head {

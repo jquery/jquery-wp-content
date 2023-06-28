@@ -655,7 +655,7 @@ nav#main ul {
 	}
 
 	.dark-callout-box {
-		background-image: url(images/dark-grey-tile.png);
+		background-image: url(../jquery/images/dark-grey-tile.png);
 		border-bottom: 10px solid #c1c1c1;
 		border-top: 10px solid #c1c1c1;
 		text-align: center;
