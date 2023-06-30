@@ -29,7 +29,7 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Blog',
 				'stylesheet' => 'blog-jquery-com',
-			//	'permalink_structure' => '/%category%/%postname%/',
+				// 'permalink_structure' => '/%category%/%postname%/',
 			),
 		),
 		'api.jquery.com' => array(
@@ -40,6 +40,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery API Documentation',
 				'stylesheet' => 'api.jquery.com',
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+				),
 			),
 		),
 		'plugins.jquery.com' => array(
@@ -94,7 +97,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI API Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+				),
 			),
 		),
 		'api.jqueryui.com/1.8' => array(
@@ -105,7 +110,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.8 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 		'api.jqueryui.com/1.9' => array(
@@ -116,7 +124,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.9 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 		'jquery.org' => array(
@@ -154,7 +165,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Mobile API Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+				),
 			),
 		),
 		# Historical: Database blog_id 14 is reserved for api.qunitjs.com.
@@ -219,7 +232,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Mobile 1.3 Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 		'api.jqueryui.com/1.10' => array(
@@ -230,7 +246,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.10 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 		'api.jqueryui.com/1.12' => array(
@@ -241,7 +260,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.12 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 		'api.jqueryui.com/1.11' => array(
@@ -252,7 +274,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.11 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 		'api.jquerymobile.com/1.4' => array(
@@ -263,7 +288,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Mobile 1.4 Documentation',
 				'stylesheet' => 'api.jquerymobile.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 		'releases.jquery.com' => array(
@@ -286,7 +314,10 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery UI 1.13 Documentation',
 				'stylesheet' => 'api.jqueryui.com',
-				'active_plugins' => array(),
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
 			),
 		),
 	);
