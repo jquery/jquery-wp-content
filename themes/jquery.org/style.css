@@ -77,47 +77,12 @@ a, #sidebar h3 {
 	position: relative;
 }
 
-.flexslider {
-	width: 100%;
-	display: block;
-	border: 1px solid #cbcbcb;
-	margin-left: 0;
-	height: auto;
-	overflow: hidden;
-	border-radius: 10px;
-	list-style: none;
-	padding-top: 10px;
-}
-
 #content .slides {
 	margin-left: 0;
 }
 
-.flexslider ol {
-	display: none;
-}
-
-#content .flexslider li {
-	padding-left: 0;
-	background: none;
-	display: none;
-}
-
 ul.flex-direction-nav {
 	display: none;
-}
-
-#content .flexslider li {
-	text-align: center;
-}
-
-#content .flexslider li img {
-	margin-top: 10px;
-	display: inline-block;
-}
-
-#content .flexslider li img.last {
-	margin-right: 0;
 }
 
 .dark-callout-box {
@@ -634,10 +599,6 @@ nav#main ul {
 		font: 20px/26px "klavika-web";
 		margin: -30px -15px 0;
 		padding: 2% 10% 0.5%;
-	}
-
-	.flexslider {
-		margin-bottom: 20px;
 	}
 }
 

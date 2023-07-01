@@ -14,17 +14,9 @@ The following externally maintained libraries used by this software have
 their own licenses; we recommend you read them, as their terms may
 differ from the terms above.
 
-- Colorbox
-	https://www.jacklmoore.com/colorbox/
-	located at themes/jquery/js/plugins.js
-
 - Disable Emojis
 	https://wordpress.org/plugins/disable-emojis/
 	located at mu-plugins/disable-emojis
-
-- FlexSlider
-	https://woocommerce.com/flexslider/
-	located at themes/jquery/js/plugins.js
 
 - Grunt Wordpress
 	https://github.com/scottgonzalez/grunt-wordpress
@@ -45,10 +37,6 @@ differ from the terms above.
 - Respond.js
 	https://github.com/scottjehl/Respond
 	located at themes/jquery/js/plugins.js
-
-- Stripe PHP Bindings
-	https://github.com/stripe/stripe-php
-	located at mu-plugins/jquery.org/lib/Stripe
 
 - TinyNav.js
 	http://tinynav.com/
