@@ -201,3 +201,20 @@ function jq_posts_per_page($limits) {
 	return $limits;
 }
 add_filter('post_limits', 'jq_posts_per_page');
+
+function jq_the_algolia_docsearch() {
+	$sites = jquery_sites();
+	$docsearch = isset( $sites[ JQUERY_LIVE_SITE ]['algolia_docsearch']['apiKey'] )
+		? $sites[ JQUERY_LIVE_SITE ]['xfn-rel-me']['algolia_docsearch']
+		: null;
+
+	if ( $docsearch ) :
+?>
+<script async src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js" onload='document.querySelector("input[name=\"s\"]") && docsearch({apiKey: <?php print json_encode($docsearch['apiKey']); ?>,
+			indexName: <?php print json_encode($docsearch['indexName']); ?>,
+			inputSelector: "input[name=\"s\"]",
+			debug: true
+		})'></script>
+<?php
+	endif;
+}
