@@ -205,7 +205,7 @@ add_filter('post_limits', 'jq_posts_per_page');
 function jq_the_algolia_docsearch() {
 	$sites = jquery_sites();
 	$docsearch = isset( $sites[ JQUERY_LIVE_SITE ]['algolia_docsearch']['apiKey'] )
-		? $sites[ JQUERY_LIVE_SITE ]['xfn-rel-me']['algolia_docsearch']
+		? $sites[ JQUERY_LIVE_SITE ]['algolia_docsearch']
 		: null;
 
 	if ( $docsearch ) :
