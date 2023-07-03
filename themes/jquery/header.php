@@ -25,7 +25,7 @@
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.8.3.min.js"></script>
 
-	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
