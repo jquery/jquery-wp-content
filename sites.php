@@ -242,20 +242,7 @@ function jquery_sites() {
 				),
 			),
 		),
-		// The legacy site, replaced by a Docker image deployed separately.
-		// The WordPress parts have been superseded by releases.jquery.com.
-		'codeorigin.jquery.com' => array(
-			'blog_id' => 23,
-			'cookie_domain' => '.jquery.com',
-			'body_class' => 'jquery',
-			'options' => array(
-				'blogname' => 'jQuery CDN',
-				'stylesheet' => 'codeorigin.jquery.com',
-				'active_plugins' => array(
-					'jquery-static-index.php',
-				),
-			),
-		),
+		# Historical: Database blog_id 23 is reserved for codeorigin.jquery.com
 		'api.jquerymobile.com/1.3' => array(
 			'blog_id' => 24,
 			'cookie_domain' => '.jquerymobile.com',

@@ -33,17 +33,6 @@ function menu_header_learn_jquery_com() {
 	);
 }
 
-function menu_header_codeorigin_jquery_com() {
-	return array(
-		'/jquery/' => 'jQuery Core',
-		'/ui/' => 'jQuery UI',
-		'/mobile/' => 'jQuery Mobile',
-		'/color/' => 'jQuery Color',
-		'/qunit/' => 'QUnit',
-		'/pep/' => 'PEP'
-	);
-}
-
 function menu_header_releases_jquery_com() {
 	return array(
 		'/jquery/' => 'jQuery Core',
