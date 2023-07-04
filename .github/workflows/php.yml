@@ -1,0 +1,30 @@
+name: PHP Composer
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        php-version:
+          - "5.4"
+          - "7.4"
+          - "8.0"
+          - "8.1"
+
+    name: Lint PHP ${{ matrix.php-version }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup PHP version
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-version }}
+
+    - run: composer install
+    - run: composer test

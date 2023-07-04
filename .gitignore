@@ -1,2 +1,4 @@
 /gw-resources/*
-.vagrant
+/vendor/
+/.vagrant
+/composer.lock
