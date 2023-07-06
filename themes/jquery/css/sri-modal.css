@@ -34,11 +34,11 @@
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEUAAADMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMxg1ZvWAAAAJXRSTlMAAQIDBAUGCQsNDhQWGSg4g4uUoKOoq62vsLW8wMrO2tzk5ujxm/5xbwAAAGxJREFUGBmNwVcWgkAQRcFHg4FgzjomZu7+t+hpRv6p0iS7byPJTs+5BluIjewML5O7A3F1AdJMrgpkqVVWBVxqNVriNhrZDRdrZXYl62sNjkBaB6Cv5PaQOpUB3iZXHFInqXx8FvozDQpN8gNoXAtiMhPWmQAAAABJRU5ErkJggg==) 0 0;
 }
 
-.sri-modal .ui-widget-content {
+.sri-modal .ui-dialog-content {
 	padding: 30px 0 0 0;
 }
 
-.sri-modal .ui-widget-content a {
+.sri-modal .ui-dialog-content a {
 	color: #b24926;
 }
 
@@ -86,3 +86,6 @@
 	display: none;
 }
 
+.sri-modal .ui-tooltip {
+	box-shadow: 0 0 5px #aaa;
+}
