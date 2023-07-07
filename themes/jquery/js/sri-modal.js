@@ -14,7 +14,6 @@ $( function() {
 		} ) ).removeAttr( "id" ).appendTo( "body" ).dialog( {
 			modal: true,
 			resizable: false,
-			width: 830,
 			dialogClass: "sri-modal",
 			draggable: false,
 			close: function() {

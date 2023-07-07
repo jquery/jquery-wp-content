@@ -2,10 +2,16 @@
  * Added for SRI Modal
  */
 .sri-modal {
-	padding: 0;
+	padding: 20px;
 	border: none;
 	background: #fff;
 	border-radius: 0;
+
+	/* Resize with window */
+	width: calc(100% - 40px) !important;
+	max-width: 830px;
+	left: 50% !important;
+	transform: translateX(-50%);
 }
 
 .sri-modal .ui-dialog-titlebar {
@@ -17,7 +23,6 @@
 }
 
 .sri-modal .ui-dialog-title {
-	padding-top: 20px;
 	text-align: center;
 	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	font-weight: 400;
@@ -43,23 +48,23 @@
 }
 
 .sri-modal-link {
-	width: 810px;
+	width: 100%;
 	word-wrap: break-word;
 	word-break: break-all;
 	display: inline-block;
 	background-color: #f8fbfb;
-	padding: 0 10px;
+	/* Leave room for button */
+	padding: 10px 45px 10px 10px;
 	position: relative;
 }
 
 .sri-modal-link code {
-	width: 765px;
 	display: inline-block;
 	white-space: pre-line;
 	background-color: transparent;
-	padding: 0;
 	font-size: 13px;
 	line-height: 16px;
+	padding: 0;
 }
 
 .sri-modal-copy-btn {
@@ -71,6 +76,7 @@
 	cursor: pointer;
 	position: absolute;
 	top: 5px;
+	right: 0;
 }
 
 .sri-modal-copy-btn > i {
