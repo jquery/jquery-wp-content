@@ -11,6 +11,18 @@ wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js'
 
 <?php the_post(); ?>
 
+<div class="content-full twelve columns">
+	<div id="content">
+		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<div class="powered-by">Powered by <a href="https://www.stackpath.com"><img src="<?php echo get_template_directory_uri(); ?>/images/stackpath.png"></a></div>
+		<hr>
+		<?php endif; ?>
+
+		<?php get_template_part( 'content', 'page' ); ?>
+	</div>
+</div>
+
 <div hidden id="sri-modal-template">
 	<div class="sri-modal-link">
 		<code>&lt;script
@@ -31,18 +43,6 @@ wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js'
 		This allows browsers to ensure that resources hosted on third-party servers have
 		not been tampered with. Use of SRI is recommended as a best-practice, whenever
 		libraries are loaded from a third-party source. Read more at <a href="https://www.srihash.org/" target="_blank">srihash.org</a>
-	</div>
-</div>
-
-<div class="content-full twelve columns">
-	<div id="content">
-		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<div class="powered-by">Powered by <a href="https://www.stackpath.com"><img src="<?php echo get_template_directory_uri(); ?>/images/stackpath.png"></a></div>
-		<hr>
-		<?php endif; ?>
-
-		<?php get_template_part( 'content', 'page' ); ?>
 	</div>
 </div>
 
