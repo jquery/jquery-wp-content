@@ -310,6 +310,7 @@ function jquery_sites() {
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'jQuery CDN',
+				'jquery_description' => 'Worldwide distribution of jQuery releases.',
 				'stylesheet' => 'releases.jquery.com',
 				'active_plugins' => array(
 					'jquery-static-index.php',
