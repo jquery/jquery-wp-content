@@ -11,7 +11,7 @@ wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js'
 
 <?php the_post(); ?>
 
-<div id="sri-modal-template" title="Code Integration">
+<div hidden id="sri-modal-template">
 	<div class="sri-modal-link">
 		<code>&lt;script
 			&nbsp;&nbsp;<span>src="{{link}}"</span>

@@ -1,25 +1,30 @@
 $( function() {
 	// Store modal templates
-	var modalTemplate = $( "#sri-modal-template" )[ 0 ].outerHTML;
+	var modalTemplate = $( "#sri-modal-template" )[ 0 ].outerHTML,
+		$modal = $( "<div>" ).attr( "title", "Code Integration" );
 
 	// Show modal on click
 	$( "body" ).on( "click", ".open-sri-modal", function( event ) {
 		if ( event.ctrlKey || event.metaKey ) {
 			return;
 		}
+		var link = this;
 
-		$( replace( modalTemplate, {
-			link: $( this ).prop( "href" ),
-			hash: $( this ).attr( "data-hash" )
-		} ) ).removeAttr( "id" ).appendTo( "body" ).dialog( {
-			modal: true,
-			resizable: false,
-			dialogClass: "sri-modal",
-			draggable: false,
-			close: function() {
-				$( this ).remove();
-			}
-		} );
+		$modal
+			.html( replace( modalTemplate, {
+				link: link.href,
+				hash: $( link ).attr( "data-hash" )
+			} ) )
+			.appendTo( "body" )
+			.dialog( {
+				modal: true,
+				resizable: false,
+				dialogClass: "sri-modal",
+				draggable: false,
+				close: function() {
+					$( this ).remove();
+				}
+			} );
 
 		$('.sri-modal-copy-btn')
 			.tooltip()
