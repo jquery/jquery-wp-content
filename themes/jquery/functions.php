@@ -14,6 +14,16 @@ if ( !isset( $content_width ) ) {
 	$content_width = 584;
 }
 
+add_action('init', function () {
+	// Remove unused stuff from wp_head
+	add_action('wp_enqueue_scripts', function () {
+		// Disable default styles that we don't use
+		wp_dequeue_style('wp-block-library');
+		wp_dequeue_style('classic-theme-styles');
+		wp_dequeue_style('global-styles');
+	});
+});
+
 add_action( 'after_setup_theme', function () {
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
