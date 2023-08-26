@@ -5,24 +5,16 @@
  * For more information on hooks, actions, and filters, see https://codex.wordpress.org/Plugin_API.
  */
 
-require_once( 'functions.jquery.php' );
+require_once 'functions.jquery.php';
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
-if ( ! isset( $content_width ) )
+if ( !isset( $content_width ) ) {
 	$content_width = 584;
+}
 
-/**
- * Tell WordPress to run twentyeleven_setup() when the 'after_setup_theme' hook is run.
- */
-add_action( 'after_setup_theme', 'twentyeleven_setup' );
-
-if ( ! function_exists( 'twentyeleven_setup' ) ):
-/**
- * Sets up theme defaults and registers support for various WordPress features.
- */
-function twentyeleven_setup() {
+add_action( 'after_setup_theme', function () {
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
 
@@ -31,55 +23,38 @@ function twentyeleven_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Primary Menu', 'twentyeleven' ) );
-}
-endif; // twentyeleven_setup
+} );
 
 /**
  * Returns a "Continue Reading" link for excerpts
  */
-function twentyeleven_continue_reading_link() {
+function jq_continue_reading_link() {
 	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) . '</a>';
 }
 
 /**
- * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis and twentyeleven_continue_reading_link().
+ * Replaces "[...]" (appended to automatically generated excerpts) with an ellipsis
+ * and jq_continue_reading_link().
  *
  * To override this in a child theme, remove the filter and add your own
  * function tied to the excerpt_more filter hook.
  */
-function twentyeleven_auto_excerpt_more( $more ) {
-	return ' &hellip;' . twentyeleven_continue_reading_link();
-}
-add_filter( 'excerpt_more', 'twentyeleven_auto_excerpt_more' );
-
-/**
- * Adds a pretty "Continue Reading" link to custom post excerpts.
- *
- * To override this link in a child theme, remove the filter and add your own
- * function tied to the get_the_excerpt filter hook.
- */
-function twentyeleven_custom_excerpt_more( $output ) {
-	if ( has_excerpt() && ! is_attachment() ) {
-		$output .= twentyeleven_continue_reading_link();
-	}
-	return $output;
-}
-// add_filter( 'get_the_excerpt', 'twentyeleven_custom_excerpt_more' );
+add_filter( 'excerpt_more', function ( $more ) {
+	return ' &hellip;' . jq_continue_reading_link();
+} );
 
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
-function twentyeleven_page_menu_args( $args ) {
+add_filter( 'wp_page_menu_args', function ( $args ) {
 	$args['show_home'] = true;
 	return $args;
-}
-add_filter( 'wp_page_menu_args', 'twentyeleven_page_menu_args' );
+} );
 
 /**
  * Register our sidebars and widgetized areas. Also register the default Epherma widget.
  */
-function twentyeleven_widgets_init() {
-
+add_action( 'widgets_init', function () {
 	register_sidebar( array(
 		'name' => __( 'Main Sidebar', 'twentyeleven' ),
 		'id' => 'sidebar-1',
@@ -128,28 +103,12 @@ function twentyeleven_widgets_init() {
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',
 	) );
-}
-add_action( 'widgets_init', 'twentyeleven_widgets_init' );
-
-/**
- * Display navigation to next/previous pages when applicable
- */
-function twentyeleven_content_nav( $nav_id ) {
-	global $wp_query;
-
-	if ( $wp_query->max_num_pages > 1 ) : ?>
-		<nav id="<?php echo $nav_id; ?>">
-			<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentyeleven' ) ); ?></div>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></div>
-		</nav><!-- #nav-above -->
-	<?php endif;
-}
+} );
 
 /**
  * Count the number of footer sidebars to enable dynamic classes for the footer
  */
-function twentyeleven_footer_sidebar_class() {
+function jq_footer_sidebar_class() {
 	$count = 0;
 
 	if ( is_active_sidebar( 'sidebar-3' ) )
@@ -179,16 +138,15 @@ function twentyeleven_footer_sidebar_class() {
 		echo 'class="' . $class . '"';
 }
 
-if ( ! function_exists( 'twentyeleven_comment' ) ) :
 /**
  * Template for comments and pingbacks.
  *
  * To override this walker in a child theme without modifying the comments template
- * simply create your own twentyeleven_comment(), and that function will be used instead.
+ * simply create your own jq_comment(), and that function will be used instead.
  *
  * Used as a callback by wp_list_comments() for displaying the comments.
  */
-function twentyeleven_comment( $comment, $args, $depth ) {
+function jq_comment( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
 		case 'pingback' :
@@ -241,14 +199,12 @@ function twentyeleven_comment( $comment, $args, $depth ) {
 			break;
 	endswitch;
 }
-endif; // ends check for twentyeleven_comment()
 
-if ( ! function_exists( 'twentyeleven_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
- * Create your own twentyeleven_posted_on to override in a child theme
+ * Create your own jq_posted_on to override in a child theme
  */
-function twentyeleven_posted_on() {
+function jq_posted_on() {
 	printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'twentyeleven' ),
 		esc_url( get_permalink() ),
 		esc_attr( get_the_time() ),
@@ -259,14 +215,13 @@ function twentyeleven_posted_on() {
 		esc_html( get_the_author() )
 	);
 }
-endif;
 
 /**
  * Adds two classes to the array of body classes.
  * The first is if the site has only had one author with published posts.
  * The second is if a singular post being displayed
  */
-function twentyeleven_body_classes( $classes ) {
+add_filter( 'body_class', function ( $classes ) {
 
 	if ( ! is_multi_author() ) {
 		$classes[] = 'single-author';
@@ -276,5 +231,4 @@ function twentyeleven_body_classes( $classes ) {
 		$classes[] = 'singular';
 
 	return $classes;
-}
-add_filter( 'body_class', 'twentyeleven_body_classes' );
+} );
