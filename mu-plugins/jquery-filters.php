@@ -22,10 +22,8 @@ foreach ( $options as $option => $value ) {
 		// For standalone sites, let Puppet manage plugins.
 		continue;
 	}
-	add_filter( 'pre_option_' . $option, function( $null ) use ( $value, $blog_id ) {
-		if ( $blog_id == get_current_blog_id() )
-			return $value;
-		return $null;
+	add_filter( 'pre_option_' . $option, function () use ( $value ) {
+		return $value;
 	} );
 }
 unset( $sites, $options, $option );
