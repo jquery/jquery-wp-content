@@ -18,7 +18,7 @@ foreach ( $options as $option => $value ) {
 		// Don't mess with themes for now.
 		continue;
 	}
-	if ( $option === 'active_plugins' && !defined( 'MULTISITE' ) ) {
+	if ( $option === 'active_plugins' && !is_multisite() ) {
 		// For standalone sites, let Puppet manage plugins.
 		continue;
 	}
