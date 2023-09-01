@@ -4,8 +4,11 @@
  * Description: Default filters for all jQuery sites.
  */
 
-if ( defined( 'WP_INSTALLING' ) )
+if ( defined( 'WP_INSTALLING' ) ) {
 	return;
+}
+
+require_once dirname( __FILE__ ) . '/../sites.php';
 
 $options = jquery_default_site_options();
 $sites = jquery_sites();

@@ -1,6 +1,6 @@
 <?php
 
-require dirname( __FILE__ ) . '/sites.php';
+require_once dirname( __FILE__ ) . '/sites.php';
 
 if ( ! defined( 'WP_CONTENT_DIR' ) )
 	define( 'WP_CONTENT_DIR', ABSPATH . 'jquery-wp-content' );

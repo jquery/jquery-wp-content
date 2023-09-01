@@ -7,8 +7,11 @@ if ( 1 != $blog_id && false !== strpos( $_SERVER['PHP_SELF'], 'wp-admin/install.
 	exit;
 }
 
-if ( ! isset( $_POST['weblog_title'] ) )
+if ( ! isset( $_POST['weblog_title'] ) ) {
 	$_POST['weblog_title'] = 'jQuery';
+}
+
+require_once dirname( __FILE__ ) . '/sites.php';
 
 function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated = '', $user_password = '' ) {
 	global $wpdb;

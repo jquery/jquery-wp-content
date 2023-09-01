@@ -1,4 +1,7 @@
 <?php
+
+require_once dirname( __FILE__ ) . '/sites.php';
+
 // This is a single network configuration and the network is defined in config.php
 if ( defined( 'DOMAIN_CURRENT_SITE' ) && defined( 'PATH_CURRENT_SITE' ) ) {
 	$current_site = new stdClass;
