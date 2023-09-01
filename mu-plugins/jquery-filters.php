@@ -11,8 +11,14 @@ $options = jquery_default_site_options();
 $sites = jquery_sites();
 $options = array_merge( $options, $sites[ JQUERY_LIVE_SITE ]['options'] );
 foreach ( $options as $option => $value ) {
-	if ( 'stylesheet' === $option || 'template' === $option )
-		continue; // Don't mess with themes for now.
+	if ( $option === 'stylesheet' || $option === 'template' ) {
+		// Don't mess with themes for now.
+		continue;
+	}
+	if ( $option === 'active_plugins' && !defined( 'MULTISITE' ) ) {
+		// For standalone sites, let Puppet manage plugins.
+		continue;
+	}
 	add_filter( 'pre_option_' . $option, function( $null ) use ( $value, $blog_id ) {
 		if ( $blog_id == get_current_blog_id() )
 			return $value;
