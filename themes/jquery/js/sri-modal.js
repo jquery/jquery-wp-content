@@ -1,6 +1,6 @@
 $( function() {
 	// Store modal templates
-	var modalTemplate = $( "#sri-modal-template" )[ 0 ].outerHTML,
+	var modalTemplate = $( "#sri-modal-template" )[ 0 ].innerHTML,
 		$modal = $( "<div>" ).attr( "title", "Code Integration" );
 
 	// Show modal on click
