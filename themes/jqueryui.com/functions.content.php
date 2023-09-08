@@ -72,5 +72,3 @@ add_filter( 'the_content', function( $content ) {
 
 	return implode( $output );
 } );
-
-?>
