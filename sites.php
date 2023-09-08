@@ -53,6 +53,9 @@ function jquery_sites() {
 			'options' => array(
 				'blogname' => 'jQuery Plugin Registry',
 				'stylesheet' => 'plugins.jquery.com',
+				'active_plugins' => array(
+					'jquery-plugins-site.php',
+				),
 				'jquery_body_class' => 'jquery',
 			),
 		),
