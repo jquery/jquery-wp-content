@@ -98,7 +98,7 @@ function menu_header_brand_jquery_org() {
 
 function menu_header_contribute_jquery_org() {
 	return array(
-		'https://js.foundation/CLA' => 'CLA',
+		'https://cla.openjsf.org/' => 'CLA',
 		'https://contribute.jquery.org/style-guide/' => 'Style Guides',
 		'https://contribute.jquery.org/markup-conventions/' => 'Markup Conventions',
 		'https://contribute.jquery.org/commits-and-pull-requests/' => 'Commits &amp; Pull Requests'

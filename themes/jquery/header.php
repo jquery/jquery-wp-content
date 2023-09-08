@@ -61,7 +61,7 @@
 					<li><a href="https://plugins.jquery.com/">Plugins</a></li>
 					<li class="dropdown"><a href="https://contribute.jquery.org/">Contribute</a>
 						<ul>
-							<li><a href="https://js.foundation/CLA">CLA</a></li>
+							<li><a href="https://cla.openjsf.org/">CLA</a></li>
 							<li><a href="https://contribute.jquery.org/style-guide/">Style Guides</a></li>
 							<li><a href="https://contribute.jquery.org/triage/">Bug Triage</a></li>
 							<li><a href="https://contribute.jquery.org/code/">Code</a></li>
