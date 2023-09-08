@@ -11,7 +11,7 @@ if ( ! isset( $_POST['weblog_title'] ) ) {
 	$_POST['weblog_title'] = 'jQuery';
 }
 
-require_once dirname( __FILE__ ) . '/sites.php';
+require_once __DIR__ . '/sites.php';
 
 function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated = '', $user_password = '' ) {
 	global $wpdb;

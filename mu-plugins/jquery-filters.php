@@ -8,7 +8,7 @@ if ( defined( 'WP_INSTALLING' ) ) {
 	return;
 }
 
-require_once dirname( __FILE__ ) . '/../sites.php';
+require_once __DIR__ . '/../sites.php';
 
 $options = jquery_default_site_options();
 $sites = jquery_sites();

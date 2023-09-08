@@ -61,10 +61,10 @@ $table_prefix  = 'wp_';
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+	define('ABSPATH', __DIR__ . '/');
 
 /** jQuery.com configuration file */
-require( dirname( __FILE__ ) . '/jquery-wp-content/config.php' );
+require( __DIR__ . '/jquery-wp-content/config.php' );
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
