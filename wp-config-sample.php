@@ -60,11 +60,12 @@ $table_prefix  = 'wp_';
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
-if ( !defined('ABSPATH') )
-	define('ABSPATH', __DIR__ . '/');
+if ( !defined( 'ABSPATH' ) ) {
+	define( 'ABSPATH', __DIR__ . '/' );
+}
 
-/** jQuery.com configuration file */
-require( __DIR__ . '/jquery-wp-content/config.php' );
+/** jQuery configuration file */
+require __DIR__ . '/jquery-wp-content/config.php';
 
 /** Sets up WordPress vars and included files. */
-require_once(ABSPATH . 'wp-settings.php');
+require_once ABSPATH . 'wp-settings.php';
