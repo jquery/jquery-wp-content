@@ -30,11 +30,9 @@
 
 	switch ( $project ) {
 	case 'jqueryui':
-		$links[ 'Forum' ][ 'url' ] = 'https://forum.jquery.com/using-jquery-ui/';
 		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jqueryui';
 		break;
 	case 'jquerymobile':
-		$links[ 'Forum' ][ 'url' ] = 'https://forum.jquery.com/jquery-mobile/';
 		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jquerymobile';
 		break;
 	}
