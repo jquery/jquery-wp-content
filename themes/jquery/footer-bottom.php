@@ -1,6 +1,4 @@
 <?php
-	$project = preg_replace( '/^.*?([^.]+)\.[^.]+$/', '$1', JQUERY_LIVE_DOMAIN );
-
 	$links = array(
 		'Learning Center' => array(
 			'icon' => 'pencil',
@@ -10,13 +8,9 @@
 			'icon' => 'group',
 			'url' => 'https://forum.jquery.com/',
 		),
-		'API' => array(
-			'icon' => 'wrench',
-			'url' => 'https://api.' . $project . '.com/'
-		),
 		'Twitter' => array(
 			'icon' => 'twitter',
-			'url' => 'https://twitter.com/jquery'
+			'url' => get_option( 'jquery_twitter_link' ) ?: 'https://twitter.com/jquery'
 		),
 		'IRC' => array(
 			'icon' => 'comments',
@@ -27,15 +21,6 @@
 			'url' => 'https://github.com/jquery'
 		)
 	);
-
-	switch ( $project ) {
-	case 'jqueryui':
-		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jqueryui';
-		break;
-	case 'jquerymobile':
-		$links[ 'Twitter' ][ 'url' ] = 'https://twitter.com/jquerymobile';
-		break;
-	}
 ?>
 
 <div id="legal">
@@ -50,4 +35,4 @@
 </div>
 
 <?php
-unset( $project, $links );
+unset( $links );

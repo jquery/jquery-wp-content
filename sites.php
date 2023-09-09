@@ -84,6 +84,7 @@ function jquery_sites() {
 				'jquery_body_class' => 'jquery-ui',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'blog.jqueryui.com' => array(
@@ -93,10 +94,11 @@ function jquery_sites() {
 				'blogname' => 'jQuery UI Blog',
 				'stylesheet' => 'blog.jqueryui.com',
 				'jquery_body_class' => 'jquery-ui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com' => array(
-			'subsites' => 1, // Has one level of sub-sites (api.jqueryui.com/([^/]+))
+			'subsites' => true, // Has one level of sub-sites (api.jqueryui.com/([^/]+))
 			'blog_id' => 8,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
@@ -109,6 +111,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.8' => array(
@@ -125,6 +128,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.9' => array(
@@ -141,6 +145,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'jquery.org' => array(
@@ -169,10 +174,11 @@ function jquery_sites() {
 				'jquery_body_class' => 'jquery-mobile',
 				'jquery_docsearch_api_key' => '207328b0f1c18555c9021d05157dd651',
 				'jquery_docsearch_index_name' => 'jquerymobile',
+				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
 			),
 		),
 		'api.jquerymobile.com' => array(
-			'subsites' => 1, // Has one level of sub-sites (api.jquerymobile.com/([^/]+))
+			'subsites' => true, // Has one level of sub-sites (api.jquerymobile.com/([^/]+))
 			'blog_id' => 13,
 			'cookie_domain' => '.jquerymobile.com',
 			'options' => array(
@@ -185,6 +191,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_docsearch_api_key' => '207328b0f1c18555c9021d05157dd651',
 				'jquery_docsearch_index_name' => 'jquerymobile',
+				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
 			),
 		),
 		# Historical: Database blog_id 14 is reserved for api.qunitjs.com.
@@ -242,6 +249,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_docsearch_api_key' => '207328b0f1c18555c9021d05157dd651',
 				'jquery_docsearch_index_name' => 'jquerymobile',
+				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
 			),
 		),
 		'api.jqueryui.com/1.10' => array(
@@ -258,6 +266,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.12' => array(
@@ -274,6 +283,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.11' => array(
@@ -290,6 +300,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 		'api.jquerymobile.com/1.4' => array(
@@ -306,6 +317,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_docsearch_api_key' => '207328b0f1c18555c9021d05157dd651',
 				'jquery_docsearch_index_name' => 'jquerymobile',
+				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
 			),
 		),
 		'releases.jquery.com' => array(
@@ -335,6 +347,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_docsearch_api_key' => '2fce35e56784bbb48c78d105739190c2',
 				'jquery_docsearch_index_name' => 'jqueryui',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
 	);
