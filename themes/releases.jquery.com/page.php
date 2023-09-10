@@ -1,8 +1,8 @@
 <?php
-wp_enqueue_style('jquery-ui', 'https://code.jquery.com/ui/1.13.2/themes/ui-lightness/jquery-ui.css');
+wp_enqueue_style('jquery-ui', 'https://codeorigin.jquery.com/ui/1.13.2/themes/ui-lightness/jquery-ui.css');
 wp_enqueue_style('sri-modal', get_template_directory_uri() . '/css/sri-modal.css');
 
-wp_enqueue_script('jquery-ui', 'https://code.jquery.com/ui/1.13.2/jquery-ui.min.js');
+wp_enqueue_script('jquery-ui', 'https://codeorigin.jquery.com/ui/1.13.2/jquery-ui.min.js');
 wp_enqueue_script('clipboard-polyfill', get_template_directory_uri() . '/js/clipboard-polyfill.js');
 wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js');
 ?>
