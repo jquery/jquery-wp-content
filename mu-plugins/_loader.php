@@ -1,5 +1,5 @@
 <?php
 
 // Enabled everywhere
-require_once WPMU_PLUGIN_DIR . '/relevanssi/relevanssi.php';
-require 'disable-emojis/disable-emojis.php';
+require_once __DIR__ . '/../relevanssi/relevanssi.php';
+require_once __DIR__ . '/../disable-emojis/disable-emojis.php';
