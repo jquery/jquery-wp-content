@@ -66,18 +66,3 @@ define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 define( 'ADMIN_COOKIE_PATH', '/' );
-
-if ( JQUERY_STAGING_PREFIX === 'local.' && ! defined( 'XMLRPC_REQUEST' ) ) {
-	ob_start( 'jquery_com_staging_urls' );
-}
-
-function jquery_com_staging_urls( $content ) {
-	$pairs = [];
-	foreach ( jquery_sites() as $site => $_ ) {
-		// Replace HTTPS with protocol-relative so navigation stays within HTTP locally.
-		$pairs[ 'https://' . $site ] = '//' . JQUERY_STAGING_PREFIX . $site;
-		// Update any remaining HTTP or protocol-relative urls.
-		$pairs[ '//' . $site ] = '//' . JQUERY_STAGING_PREFIX . $site;
-	}
-	return strtr( $content, $pairs );
-}
