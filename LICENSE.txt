@@ -16,11 +16,11 @@ differ from the terms above.
 
 - Disable Emojis
 	https://wordpress.org/plugins/disable-emojis/
-	located at mu-plugins/disable-emojis
+	located at plugins/disable-emojis
 
-- Grunt Wordpress
+- Gilded Wordpress
 	https://github.com/scottgonzalez/grunt-wordpress
-	located at mu-plugins/grunt-wodpress.php
+	located at plugins/gilded-wordpress.php
 
 - matchMedia.js
 	https://github.com/paulirish/matchMedia.js
