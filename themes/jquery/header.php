@@ -15,34 +15,26 @@
 
 	<meta name="author" content="JS Foundation - js.foundation">
 	<meta name="description" content="<?php echo get_option( 'jquery_description', '' ); ?>">
-
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
-
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=4">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=2">
 
-	<script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.2.8.3.min.js"></script>
-
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-
 	<script src="https://use.typekit.net/wde1aof.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<!-- at the end of the HEAD -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/docsearch.css">
-
 <?php
-	if ( is_singular() && get_option( 'thread_comments' ) )
+	if ( is_singular() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}
 
 	wp_head();
 ?>
-
 </head>
 <body <?php body_class(); ?>>
 

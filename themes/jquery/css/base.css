@@ -1236,10 +1236,6 @@ iframe {
 	border-top-right-radius: 0;
 }
 
-.no-boxshadow #content-wrapper {
-	border: 1px solid #333;
-}
-
 .constrain {
 	max-width: 1240px;
 	margin: 0 auto;
@@ -1621,12 +1617,6 @@ nav#main {
 	background-color: rgba(102, 102, 102, 0.1);
 }
 
-.no-boxshadow nav#main {
-	border-top: 1px solid #333;
-	border-left: 1px solid #333;
-	border-right: 1px solid #333;
-}
-
 nav#main ul {
 	margin: 0;
 	float: left;
@@ -1687,15 +1677,6 @@ nav#main .searchform input {
 
 nav#main .searchform input:focus {
 	outline: none;
-}
-
-.no-boxshadow nav#main .searchform {
-	border: 1px solid #333;
-}
-
-.no-boxshadow nav#main .searchform input {
-	background: #fff;
-	color: #333;
 }
 
 nav#main .searchform input::placeholder {
@@ -2215,6 +2196,7 @@ input[type="submit"].dark:hover {
 
 footer {
 	background: url(../images/bg-footer-noise.jpg) repeat;
+	background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)) top left / 100px 15px repeat-x, url(../images/bg-footer-noise.jpg) repeat;
 	margin-top: -20px;
 	padding-top: 40px;
 }
@@ -2285,17 +2267,6 @@ footer .footer-icon-links li small {
 
 footer .footer-icon-links li:hover a:before {
 	color: #d1d1d1;
-}
-
-.multiplebgs.cssgradients footer {
-	background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)), url(../images/bg-footer-noise.jpg);
-	background-repeat: repeat-x, repeat;
-	background-size: 100px 15px, 140px 140px;
-}
-
-.no-multiplebgs footer, .no-cssgradients footer {
-	background-image: url(../images/bg-footer-noise.jpg);
-	background-repeat: repeat;
 }
 
 footer h3 {

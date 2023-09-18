@@ -22,21 +22,9 @@ differ from the terms above.
 	https://github.com/scottgonzalez/grunt-wordpress
 	located at plugins/gilded-wordpress.php
 
-- matchMedia.js
-	https://github.com/paulirish/matchMedia.js
-	located at themes/jquery/js/plugins.js
-
-- Modernizr
-	https://modernizr.com/
-	located at themes/jquery/js/modernizr.custom.2.8.3.min.js
-
 - No Comments on Pages
 	https://wordpress.org/plugins/no-comments-on-pages/
 	located at plugins/no-comments-on-pages
-
-- Respond.js
-	https://github.com/scottjehl/Respond
-	located at themes/jquery/js/plugins.js
 
 - TinyNav.js
 	http://tinynav.com/
