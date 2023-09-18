@@ -369,6 +369,13 @@ function jquery_default_site_options() {
 		'blogdescription' => '',
 		'permalink_structure' => '/%postname%/',
 		'use_smilies' => 0,
+		// The one site where comments are sometimes enabled (blog.jquery.com)
+		// has always had thread_comments turned off.
+		//
+		// Oher sites like api.jquery.com implement their pages as posts,
+		// but naturally don't support comments at all. Turn this off to
+		// remove the WordPress comment-reply script from pages by default.
+		'thread_comments' => 0,
 	);
 
 }

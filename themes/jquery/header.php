@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/docsearch.css">
 <?php
-	if ( is_singular() && get_option( 'thread_comments' ) ) {
+	if ( get_option( 'thread_comments' ) && comments_open() ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
