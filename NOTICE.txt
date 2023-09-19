@@ -1,0 +1,33 @@
+Copyright jQuery Foundation and other contributors, https://github.com/jquery/jquery-wp-content
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+====
+
+- Disable Emojis
+  https://wordpress.org/plugins/disable-emojis/
+	located at plugins/disable-emojis
+
+- Gilded Wordpress
+  https://github.com/scottgonzalez/grunt-wordpress
+	located at plugins/gilded-wordpress
+
+- No Comments on Pages
+  https://wordpress.org/plugins/no-comments-on-pages/
+	located at plugins/no-comments-on-pages
+
+- TinyNav.js
+	http://tinynav.com/
+	located at themes/jquery/js/plugins.js
