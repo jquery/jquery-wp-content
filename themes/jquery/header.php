@@ -74,13 +74,13 @@
 							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"><a href="https://js.foundation/">JS Foundation</a>
+					<li class="dropdown"><a href="https://openjsf.org/">OpenJS Foundation</a>
 						<ul>
-							<li><a href="https://js.foundation/about/join">Join</a></li>
-							<li><a href="https://js.foundation/about/members">Members</a></li>
-							<li><a href="https://js.foundation/about/leadership">Leadership</a></li>
-							<li><a href="https://js.foundation/community/code-of-conduct">Conduct</a></li>
-							<li><a href="https://js.foundation/about/donate">Donate</a></li>
+							<li><a href="https://openjsf.org/about/join/">Join</a></li>
+							<li><a href="https://openjsf.org/about/members/">Members</a></li>
+							<li><a href="https://openjsf.org/about/governance/">Governance</a></li>
+							<li><a href="https://code-of-conduct.openjsf.org/">Conduct</a></li>
+							<li><a href="https://openjsf.org/about/project-funding-opportunities/">Donate</a></li>
 						</ul>
 					</li>
 				</ul>
