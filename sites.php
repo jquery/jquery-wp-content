@@ -363,7 +363,7 @@ function jquery_sites() {
 }
 
 function jquery_default_site_options() {
-	return array(
+	$defaults = array(
 		'enable_xmlrpc' => 1,
 		'template' => 'jquery',
 		'blogdescription' => '',
@@ -377,5 +377,15 @@ function jquery_default_site_options() {
 		// remove the WordPress comment-reply script from pages by default.
 		'thread_comments' => 0,
 	);
+
+	// Production databases set the home values in corresponding site options tables.
+	// However, sites that use jquery-static-index.php cause index pages
+	// to redirect to live sites in local development. This filter does not
+	// prevent the redirect, but changes the redirect to the local site.
+	if ( JQUERY_STAGING ) {
+		$defaults['home'] = '//' . JQUERY_STAGING_PREFIX . JQUERY_LIVE_SITE;
+		$defaults['siteurl'] = '//' . JQUERY_STAGING_PREFIX . JQUERY_LIVE_SITE;
+	}
+	return $defaults;
 
 }

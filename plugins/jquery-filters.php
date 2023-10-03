@@ -148,17 +148,6 @@ add_filter( 'xmlrpc_wp_insert_post_data', function ( $post_data, $content_struct
 	return $post_data;
 }, 10, 2 );
 
-
-// Production databases set the home values in corresponding site options tables.
-// However, sites that use jquery-static-index.php cause index pages
-// to redirect to live sites in local development. This filter does not
-// prevent the redirect, but changes the redirect to the local site.
-if (JQUERY_STAGING && JQUERY_STAGING_PREFIX && JQUERY_LIVE_SITE) {
-	add_filter( 'option_home', function( $value ) {
-		return str_replace( '//' . JQUERY_LIVE_SITE, '//' . JQUERY_STAGING_PREFIX . JQUERY_LIVE_SITE, $value );
-	} );
-}
-
 if ( JQUERY_STAGING_PREFIX === 'local.' && !defined( 'XMLRPC_REQUEST' ) ) {
 	ob_start( 'jquery_com_ob_local_urls' );
 }
