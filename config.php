@@ -4,11 +4,11 @@
 if ( !defined( 'JQUERY_STAGING' ) ) {
 	define( 'JQUERY_STAGING', true );
 }
-if ( !defined( 'JQUERY_STAGING_PREFIX' ) ) {
-	define( 'JQUERY_STAGING_PREFIX', 'local.' );
+if ( !defined( 'JQUERY_STAGING_FORMAT' ) ) {
+	define( 'JQUERY_STAGING_FORMAT', JQUERY_STAGING ? 'local.%s' : '' );
 }
-if ( !JQUERY_STAGING && JQUERY_STAGING_PREFIX ) {
-	die( 'Error: JQUERY_STAGING_PREFIX must be empty on production domains' );
+if ( !JQUERY_STAGING && JQUERY_STAGING_FORMAT ) {
+	die( 'Error: JQUERY_STAGING_FORMAT must be empty on production domains' );
 }
 
 // Custom settings for WordPress

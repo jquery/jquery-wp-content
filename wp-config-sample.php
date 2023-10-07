@@ -8,7 +8,7 @@
  */
 
 define( 'JQUERY_STAGING', true );
-define( 'JQUERY_STAGING_PREFIX', 'local.' );
+define( 'JQUERY_STAGING_FORMAT', 'local.%s' );
 
 // WordPress debugging mode (enables PHP E_NOTICE and WordPress notices)
 define( 'WP_DEBUG', (bool) JQUERY_STAGING );

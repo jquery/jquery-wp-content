@@ -374,7 +374,7 @@ function jquery_sites() {
  */
 function jquery_site_expand( $site ) {
 	if ( JQUERY_STAGING ) {
-		return JQUERY_STAGING_PREFIX . $site;
+		return strtr( JQUERY_STAGING_FORMAT, [ '%s' => $site ] );
 	}
 	return $site;
 }
@@ -386,7 +386,15 @@ function jquery_site_expand( $site ) {
 function jquery_site_extract( $hostname ) {
 	$live_site = preg_replace( '/:\d+$/', '', strtolower( $hostname ) );
 	if ( JQUERY_STAGING ) {
-		$live_site = strtr( $live_site, [ JQUERY_STAGING_PREFIX => '' ] );
+		// Convert the format into a regex that matches the placeholder
+		// Strip port from both because the webserver may internally have
+		// a different port from the public one
+		$rPortless = preg_quote( preg_replace( '/:\d+$/', '', JQUERY_STAGING_FORMAT ), '/' );
+		$rPortless = strtr( $rPortless, [ '%s' => '(.+)' ] );
+		$rPortless = "/^{$rPortless}$/";
+		if ( preg_match( $rPortless, $live_site, $m ) ) {
+			$live_site = $m[1];
+		}
 	}
 	return $live_site;
 }
