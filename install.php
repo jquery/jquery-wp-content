@@ -17,7 +17,7 @@ function wp_install( $blog_title, $user_name, $user_email, $public, $deprecated 
 	global $wpdb;
 
 	$base = '/';
-	$domain = JQUERY_STAGING_PREFIX . 'jquery.com';
+	$domain = jquery_site_expand( 'jquery.com' );
 
 	wp_check_mysql_version();
 	wp_cache_flush();
@@ -82,7 +82,7 @@ function jquery_install_site( $site, $user ) {
 		// sites in the exact order that they are defined, and without any gaps, as otherwise
 		// the "next" inserted ID would not match what we declare in jquery_sites()
 		//
-		// $blog_id = insert_blog( JQUERY_STAGING_PREFIX . $domain, $path, 1 );
+		// $blog_id = insert_blog( jquery_site_expand( $domain ), $path, 1 );
 		//
 		// WordPress 5.1, deprecates insert_blog() in favour of a new wp_insert_site() function,
 		// which does accept a custom 'blog_id' to be set up front.

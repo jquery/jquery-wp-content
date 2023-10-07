@@ -362,6 +362,35 @@ function jquery_sites() {
 	return $sites;
 }
 
+/**
+ * Resolve a canonical site (e.g. JQUERY_LIVE_SITE) into one for
+ * the current environment. This exists to automatically change
+ * the site hostname if JQUERY_STAGING is true.
+ *
+ * This is cheap and can be applied at the last minute as-needed.
+ *
+ * @param string $site
+ * @return string
+ */
+function jquery_site_expand( $site ) {
+	if ( JQUERY_STAGING ) {
+		return JQUERY_STAGING_PREFIX . $site;
+	}
+	return $site;
+}
+
+/**
+ * @param string $site E.g. `$_SERVER['HTTP_HOST']`
+ * @return string
+ */
+function jquery_site_extract( $hostname ) {
+	$live_site = preg_replace( '/:\d+$/', '', strtolower( $hostname ) );
+	if ( JQUERY_STAGING ) {
+		$live_site = strtr( $live_site, [ JQUERY_STAGING_PREFIX => '' ] );
+	}
+	return $live_site;
+}
+
 function jquery_default_site_options() {
 	$defaults = array(
 		'enable_xmlrpc' => 1,
@@ -383,8 +412,8 @@ function jquery_default_site_options() {
 	// to redirect to live sites in local development. This filter does not
 	// prevent the redirect, but changes the redirect to the local site.
 	if ( JQUERY_STAGING ) {
-		$defaults['home'] = '//' . JQUERY_STAGING_PREFIX . JQUERY_LIVE_SITE;
-		$defaults['siteurl'] = '//' . JQUERY_STAGING_PREFIX . JQUERY_LIVE_SITE;
+		$defaults['home'] = '//' . jquery_site_expand( JQUERY_LIVE_SITE );
+		$defaults['siteurl'] = '//' . jquery_site_expand( JQUERY_LIVE_SITE );
 	}
 	return $defaults;
 

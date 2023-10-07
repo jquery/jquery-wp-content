@@ -33,10 +33,7 @@ if ( !isset( $_SERVER['HTTP_HOST'] ) ) {
 }
 // Strip custom port number or staging prefix
 // e.g. local.jquery.com:8080 -> jquery.com
-$live_site = preg_replace( '/:\d+$/', '', strtolower( $_SERVER['HTTP_HOST'] ) );
-if ( JQUERY_STAGING ) {
-	$live_site = strtr( $live_site, [ JQUERY_STAGING_PREFIX => '' ] );
-}
+$live_site =  jquery_site_extract( $_SERVER['HTTP_HOST'] );
 if ( !isset( $sites[ $live_site ] ) ) {
 	header( "400 Invalid Request" );
 	header( "Content-Type: text/plain" );
@@ -61,7 +58,7 @@ define( 'COOKIE_DOMAIN', $sites[ JQUERY_LIVE_SITE ]['cookie_domain'] );
 define( 'MULTISITE', true );
 define( 'SUNRISE', true );
 define( 'SUBDOMAIN_INSTALL', true );
-define( 'DOMAIN_CURRENT_SITE', JQUERY_STAGING_PREFIX . 'jquery.com' );
+define( 'DOMAIN_CURRENT_SITE', jquery_site_expand( 'jquery.com' ) );
 define( 'PATH_CURRENT_SITE', '/' );
 define( 'SITE_ID_CURRENT_SITE', 1 );
 define( 'BLOG_ID_CURRENT_SITE', 1 );

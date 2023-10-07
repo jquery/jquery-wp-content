@@ -148,16 +148,16 @@ add_filter( 'xmlrpc_wp_insert_post_data', function ( $post_data, $content_struct
 	return $post_data;
 }, 10, 2 );
 
-if ( JQUERY_STAGING_PREFIX === 'local.' && !defined( 'XMLRPC_REQUEST' ) ) {
+if ( JQUERY_STAGING && !defined( 'XMLRPC_REQUEST' ) ) {
 	ob_start( 'jquery_com_ob_local_urls' );
 }
 function jquery_com_ob_local_urls( $content ) {
 	$pairs = [];
 	foreach ( jquery_sites() as $site => $_ ) {
 		// Replace HTTPS with protocol-relative so navigation stays within HTTP locally.
-		$pairs[ 'https://' . $site ] = '//' . JQUERY_STAGING_PREFIX . $site;
+		$pairs[ 'https://' . $site ] = '//' . jquery_site_expand( $site );
 		// Update any remaining HTTP or protocol-relative urls.
-		$pairs[ '//' . $site ] = '//' . JQUERY_STAGING_PREFIX . $site;
+		$pairs[ '//' . $site ] = '//' . jquery_site_expand( $site );
 	}
 	return strtr( $content, $pairs );
 }
