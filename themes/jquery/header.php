@@ -18,17 +18,24 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=5">
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=2">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=6">
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=3">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 	<script src="https://use.typekit.net/wde1aof.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/docsearch.css">
 <?php
+	if ( jq_search_get_provider() === 'typesense' ) {
+?><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.css">
+<?php
+	} elseif ( jq_search_get_provider() === 'algolia' ) {
+?>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/docsearch.css">
+<?php
+	}
 	if ( get_option( 'thread_comments' ) && comments_open() ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -37,6 +37,6 @@
 </footer>
 
 <?php wp_footer(); ?>
-<?php jq_the_algolia_docsearch(); ?>
+<?php jq_search_the_footer(); ?>
 </body>
 </html>

@@ -1,0 +1,240 @@
+/*! https://github.com/jquery/typesense-minibar 1.1.1 */
+.tsmb-form {
+  --tsmb-size-edge: 1px;
+  --tsmb-size-radius: 3px;
+  --tsmb-size-highlight: 2px;
+  --tsmb-size-base: 1rem;
+  --tsmb-size-sm: 0.8rem;
+  --tsmb-size-half: calc(var(--tsmb-size-sm)/2);
+  --tsmb-size-input: calc(var(--tsmb-size-base) * 1.2);
+
+  --tsmb-color-base-background: #fff;
+  --tsmb-color-base30: #333;
+  --tsmb-color-base50: #63676d;
+  --tsmb-color-base90: #cdcdcd;
+  --tsmb-color-focus-background: #fff;
+  --tsmb-color-focus30: #333;
+  --tsmb-color-focus50: #63676d;
+  --tsmb-color-focus90: #cdcdcd;
+
+  --tsmb-color-primary30: #390f39;
+  --tsmb-color-primary50: #9c3493;
+  --tsmb-color-primary90: #fbdbfb;
+
+  position: relative;
+  width: 20rem;
+  max-width: 100%;
+  padding: 0;
+  color: var(--tsmb-color-base30);
+}
+
+.tsmb-form input[type=search] {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: inherit;
+  background: var(--tsmb-color-base-background);
+  padding: var(--tsmb-size-sm) var(--tsmb-size-sm) var(--tsmb-size-sm) calc(var(--tsmb-size-base) + var(--tsmb-size-sm) + var(--tsmb-size-sm));
+  border: var(--tsmb-size-edge) solid var(--tsmb-color-base90);
+  border-radius: var(--tsmb-size-radius);
+  font-size: var(--tsmb-size-base);
+  width: 100%;
+  line-height: var(--tsmb-size-input);
+}
+
+.tsmb-form input[type=search]::placeholder {
+  color: var(--tsmb-color-base50);
+  opacity: 1;
+}
+
+.tsmb-form:focus-within {
+  color: var(--tsmb-color-focus30);
+}
+.tsmb-form:focus-within input[type=search] {
+  background: var(--tsmb-color-focus-background);
+}
+.tsmb-form:focus-within input[type=search]::placeholder {
+  color: var(--tsmb-color-focus50);
+}
+
+.tsmb-form input[type=search]::-webkit-search-decoration,
+.tsmb-form input[type=search]::-webkit-search-cancel-button,
+.tsmb-form input[type=search]::-webkit-search-results-button,
+.tsmb-form input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.tsmb-form::before {
+  content: '';
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='654 -372 1664 1664' width='20' height='20'><path d='M1806,332c0-123.3-43.8-228.8-131.5-316.5C1586.8-72.2,1481.3-116,1358-116s-228.8,43.8-316.5,131.5 C953.8,103.2,910,208.7,910,332s43.8,228.8,131.5,316.5C1129.2,736.2,1234.7,780,1358,780s228.8-43.8,316.5-131.5 C1762.2,560.8,1806,455.3,1806,332z M2318,1164c0,34.7-12.7,64.7-38,90s-55.3,38-90,38c-36,0-66-12.7-90-38l-343-342 c-119.3,82.7-252.3,124-399,124c-95.3,0-186.5-18.5-273.5-55.5s-162-87-225-150s-113-138-150-225S654,427.3,654,332 s18.5-186.5,55.5-273.5s87-162,150-225s138-113,225-150S1262.7-372,1358-372s186.5,18.5,273.5,55.5s162,87,225,150s113,138,150,225 S2062,236.7,2062,332c0,146.7-41.3,279.7-124,399l343,343C2305.7,1098.7,2318,1128.7,2318,1164z'/></svg>") 0 50% / contain no-repeat;
+  position: absolute;
+  top: calc(var(--tsmb-size-sm) + var(--tsmb-size-edge));
+  left: var(--tsmb-size-sm);
+  width: var(--tsmb-size-base);
+  height: var(--tsmb-size-input);
+  opacity: 0.5;
+}
+
+/* js only */
+.tsmb-form--open input[type=search],
+.tsmb-form--slash input[type=search] {
+  padding-right: calc(var(--tsmb-size-sm) + var(--tsmb-size-base) + var(--tsmb-size-base));
+}
+
+.tsmb-icon-close {
+  box-sizing: border-box;
+  position: absolute;
+  top: calc(50% - var(--tsmb-size-base)/2);
+  right: var(--tsmb-size-base);
+  width: var(--tsmb-size-base);
+  height: var(--tsmb-size-base);
+
+  stroke: currentColor;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tsmb-form--open .tsmb-icon-close {
+  display: block !important;
+}
+
+.tsmb-form--slash:not(.tsmb-form--open):not(:focus-within)::after {
+  content: '/';
+  display: inline-block;
+  position: absolute;
+  top: calc(50% - (var(--tsmb-size-input) + var(--tsmb-size-sm)/2)/2);
+  right: var(--tsmb-size-sm);
+  width: calc(var(--tsmb-size-input) + var(--tsmb-size-sm)/2);
+  height: calc(var(--tsmb-size-input) + var(--tsmb-size-sm)/2);
+
+  font-size: var(--tsmb-size-base);
+  line-height: calc(var(--tsmb-size-input) + var(--tsmb-size-sm)/2);
+  text-align: center;
+
+  background: var(--tsmb-color-base-background);
+  border: var(--tsmb-size-edge) solid var(--tsmb-color-base90);
+  border-radius: var(--tsmb-size-radius);
+  color: var(--tsmb-color-base90);
+}
+
+.tsmb-form [role=listbox] {
+  position: absolute;
+  z-index: 10;
+
+  background: var(--tsmb-color-focus-background);
+  color: var(--tsmb-color-focus30);
+  width: 100%;
+  max-height: 70vh;
+  overflow: auto;
+  border: var(--tsmb-size-edge) solid var(--tsmb-color-focus90);
+  box-shadow: 0 var(--tsmb-size-sm) 20px rgba(0,0,0,0.12);
+}
+
+.tsmb-suggestion_group {
+  margin: var(--tsmb-size-sm) var(--tsmb-size-base) 0 var(--tsmb-size-base);
+  border-bottom: var(--tsmb-size-edge) solid var(--tsmb-color-focus90);
+}
+
+.tsmb-form [role=option] a {
+  display: block;
+  padding: var(--tsmb-size-base);
+  text-decoration: none;
+  border-left: var(--tsmb-size-highlight) solid transparent;
+}
+.tsmb-form:not([data-group=true]) [role=option]:not(:first-child) a {
+  border-top: var(--tsmb-size-edge) solid var(--tsmb-color-focus90);
+}
+.tsmb-form[data-group=true] [role=option] a {
+  margin: 0 var(--tsmb-size-base);
+  padding: var(--tsmb-size-sm);
+}
+
+.tsmb-form [role=option] a:hover,
+.tsmb-form [role=option][aria-selected=true] a {
+  background: var(--tsmb-color-primary90);
+  border-left-color: var(--tsmb-color-primary50);
+}
+
+.tsmb-form [role=option] mark {
+  background: none;
+  color: inherit;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.tsmb-suggestion_group,
+.tsmb-suggestion_title,
+.tsmb-suggestion_content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tsmb-suggestion_title {
+  color: var(--tsmb-color-primary30);
+}
+.tsmb-form[data-group=true] .tsmb-suggestion_title {
+  font-weight: bold;
+  font-size: var(--tsmb-size-sm);
+}
+
+.tsmb-suggestion_content {
+  font-size: var(--tsmb-size-sm);
+  color: var(--tsmb-color-focus50);
+}
+
+.tsmb-empty {
+  padding: var(--tsmb-size-base);
+}
+
+.tsmb-foot,
+.tsmb-foot:hover {
+  display: block;
+  text-align: right;
+  font-size: var(--tsmb-size-sm);
+  line-height: 18px;
+  padding: var(--tsmb-size-half) var(--tsmb-size-sm);
+  box-shadow: 0 0 10px rgba(0,0,0,0.12);
+  text-decoration: none;
+}
+.tsmb-foot::before {
+  content: 'Search by';
+  color: var(--tsmb-color-focus50);
+}
+.tsmb-foot::after {
+  content: ' Typesense';
+  color: #0300b0;
+}
+
+@media (max-width: 480px) {
+  .tsmb-form {
+    width: 100%;
+  }
+
+  .tsmb-form input[type=search] {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .tsmb-form [role=listbox] {
+    border-radius: var(--tsmb-size-radius);
+    min-width: 500px;
+    margin-top: var(--tsmb-size-half);
+  }
+
+  .tsmb-form--slash::after {
+    display: none;
+  }
+}
+/*! https://github.com/jquery/typesense-minibar 1.1.1 */
+.tsmb-foot::after {
+  content: "";
+  display: inline-block;
+  vertical-align: top;
+  width: 88px;
+  height: 18px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 18' width='80' height='18'><g fill='%230300b0'><path d='m4.82 5.16c.03534.18.05.354.05.522 0 .156-.01766.32-.053.50l-2.24-.018v6.04c0 .504.22.756.68.756h1.34c.08246.20.12368.40.12368.61s-.01177.33-.03533.37c-.54184.07-1.10.108-1.67.108-1.14 0-1.71-.498-1.71-1.49v-6.40l-1.25.018c-.0353374-.18-.0530061-.348-.0530061-.504 0-.168.01-.342.05-.522l1.25.018v-1.89c0-.324.04-.552.14-.684.09-.144.27-.216.54-.216h.47706l.10601.10v2.7z'></path><path d='m13.37 5.25-2.42 8.44c-.4476 1.54-.9247 2.64-1.43 3.27s-1.26.954-2.27.954c-.51828 0-.99534-.078-1.43-.234-.03533-.336.05-.66.28-.972.36.132.75.198 1.16.198.62 0 1.10-.216 1.43-.648.32-.432.63-1.10.90111-2.01l.053-.18c-.30625-.024-.54184-.096-.70674-.216-.15313-.12-.2827-.342-.38872-.666l-2.47-7.92c.36516-.156.62-.234.77-.234.34 0 .57129.21.68.63l1.39 4.51c.04711.14.31803 1.08.81 2.80.02356.08.08245.12.17668.12l2.15-7.95c.1531-.048.35-.072.60-.072.25 0 .4771.03.6537.10z'></path><path d='m16.76 13.41v3.56c0 .324-.0471.55-.1414.68-.0942.14-.2827.21-.5653.21h-.4771l-.106-.108v-12.54l.106-.108h.4594c.2827 0 .4711.07.5654.23.106.14.159.38.159.72v.09c.7067-.804 1.54-1.20 2.52-1.20 1.00 0 1.75.414 2.26 1.24.5065.81.7598 1.95.75 3.40 0 .708-.0943 1.34-.2827 1.90-.1767.56-.4182 1.04-.7244 1.44-.2945.38-.6361.68-1.02.9-.3887.20-.7892.30-1.20.306-.8128 0-1.58-.246-2.31-.738zm0-5.85v4.62c.7185.54 1.39.81 2.03.81s1.16-.288 1.57-.864.61-1.44.6184-2.61c0-.576-.053-1.07-.159-1.49-.0942-.432-.2238-.786-.3887-1.06-.1649-.288-.3593-.498-.5831-.63-.212-.144-.4417-.216-.6891-.216-.4711 0-.9187.12-1.34.378-.424.25-.7774.60-1.06 1.06z'></path><path d='m31.26 9.99h-5.47c.0589 2.04.81 3.06 2.27 3.06.80 0 1.65-.252 2.56-.756.25.24.41.546.47.918-.9659.67-2.04 1.00-3.25 1.00-.6125 0-1.13-.114-1.57-.342-.4359-.24-.7951-.564-1.07-.972-.271-.42-.4712-.912-.6008-1.47-.1295-.564-.1943-1.18-.1943-1.85 0-.684.07-1.30.2297-1.87.1649-.564.40-1.05.70-1.45.3063-.408.67-.726 1.09-.954.43-.228.93-.342 1.48-.342.54 0 1.02.102 1.44.306.43.192.79.462 1.07.81.29.336.51.744.67 1.22.1531.46.2297.97.2297 1.51 0 .216-.0118.42-.0354.63-.0117.19-.0294.37-.053.55zm-5.47-1.02h4.24v-.234c0-.828-.1708-1.49-.5124-1.99s-.854-.756-1.53-.756c-.6714 0-1.19.27-1.57.81-.3651.54-.5713 1.26-.6184 2.17z'></path><path d='m33.08 13.37c.0117-.264.08-.552.21-.864.14-.324.30-.576.47-.756.93.516 1.74.774 2.45.774.38 0 .7009-.078.93-.234.24-.156.37-.366.37-.63 0-.42-.3181-.756-.9541-1.00l-.9895-.378c-1.48-.552-2.22-1.43-2.22-2.64 0-.432.07-.816.22-1.15.1649-.348.38-.642.67-.882.29-.252.64-.444 1.04-.576s.8481-.198 1.34-.198c.2238 0 .4712.01.7421.05.2827.03.5654.09.84.162.28.06.55.132.81.216s.4829.17.6714.27c0 .3-.0589.61-.1767.93s-.2768.56-.477.72c-.9306-.42-1.73-.63-2.42-.63-.3062 0-.5477.07-.7244.23-.1767.14-.265.33-.265.57 0 .372.29.666.88.882l1.07.396c.7775.27 1.35.654 1.73 1.13.3769.48.56 1.03.5654 1.67 0 .852-.3122 1.53-.9365 2.05-.6243.50-1.51.756-2.68.756-1.14 0-2.21-.294-3.21-.882z'></path><path d='m48.56 10.29h-4.87c.0353.66.18 1.18.4417 1.56.2709.37.7362.55 1.39.558.68 0 1.46-.204 2.35-.612.34.36.55.834.65 1.42-.9423.68-2.07 1.02-3.39 1.02-1.24 0-2.19-.39-2.84-1.17-.6361-.792-.9542-1.96-.9542-3.51 0-.72.08-1.36.2474-1.94.1649-.588.40-1.08.7244-1.49.3181-.42.70-.744 1.16-.972.45-.228.98-.342 1.57-.342.60 0 1.13.096 1.59.288.45.18.84.444 1.16.792.31.336.55.738.70 1.20.1649.46.2474.97.2474 1.53 0 .3-.0177.58-.053.86-.0353.26-.0825.52-.1414.79zm-3.41-3.78c-.9188 0-1.41.708-1.48 2.12h2.93v-.216c0-.576-.1178-1.03-.3534-1.38-.2355-.348-.6007-.522-1.09-.522z'></path><path d='m58.25 7.99v3.92c0 .768.12 1.33.3711 1.71-.377.33-.8305.50-1.36.504-.5065 0-.854-.114-1.04-.342-.1884-.24-.2827-.612-.2827-1.11v-4.19c0-.54-.0648-.918-.1943-1.13-.1296-.216-.3711-.324-.7244-.324-.6243 0-1.20.288-1.74.864v6.12c-.1767.03-.3652.06-.5654.07-.1885.01-.3829.01-.5831.01-.2003 0-.4005-.006-.6007-.018-.1885-.012-.3711-.036-.5478-.072v-8.91l.106-.126h.8835c.6596 0 1.07.36 1.23 1.08.85-.756 1.71-1.13 2.56-1.13s1.47.282 1.87.846c.4123.55.6184 1.29.6184 2.23z'></path><path d='m60.10 13.37c.0117-.264.08-.552.21-.864.14-.324.30-.576.47-.756.93.516 1.74.774 2.45.774.38 0 .7008-.078.93-.234.24-.156.37-.366.37-.63 0-.42-.3181-.756-.9541-1.00l-.9895-.378c-1.48-.552-2.22-1.43-2.22-2.64 0-.432.07-.816.22-1.15.165-.348.38-.642.67-.882.29-.252.64-.444 1.04-.576s.8481-.198 1.34-.198c.2238 0 .4712.01.7421.05.2827.03.5654.09.84.162.28.06.55.132.81.216.25.084.48.174.67.27 0 .3-.0589.61-.1767.93s-.2768.56-.4771.72c-.9305-.42-1.73-.63-2.42-.63-.3062 0-.5477.07-.7244.23-.1767.14-.265.33-.265.57 0 .372.29.666.88.882l1.07.396c.7774.27 1.35.654 1.73 1.13.377.48.56 1.03.5655 1.67 0 .852-.3122 1.53-.9365 2.05-.6243.50-1.51.756-2.68.756-1.14 0-2.21-.294-3.21-.882z'></path><path d='m75.58 10.29h-4.87c.0353.66.18 1.18.4417 1.56.2709.37.7362.55 1.39.558.68 0 1.46-.204 2.35-.612.34.36.55.834.65 1.42-.9423.68-2.07 1.02-3.39 1.02-1.24 0-2.19-.39-2.84-1.17-.636-.792-.9541-1.96-.9541-3.51 0-.72.08-1.36.2474-1.94.1649-.588.40-1.08.7244-1.49.318-.42.70-.744 1.16-.972.45-.228.98-.342 1.57-.342.60 0 1.13.096 1.59.288.45.18.84.444 1.16.792.31.336.55.738.70 1.20.1649.46.2474.97.2474 1.53 0 .3-.0177.58-.053.86-.0353.26-.0825.52-.1414.79zm-3.41-3.78c-.9188 0-1.41.708-1.48 2.12h2.93v-.216c0-.576-.1178-1.03-.3534-1.38-.2355-.348-.6007-.522-1.09-.522z'></path><path d='m78.32 16.52v-16.46c.1767-.0360003.37-.0540004.60-.0540004.23 0 .4535.01.6538.05v16.46c-.2003.03-.4182.05-.6538.05-.2238 0-.424-.018-.6007-.054z'></path></g></svg>") 100% 0 / contain no-repeat;
+}
