@@ -18,7 +18,7 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=4">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=5">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=2">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>

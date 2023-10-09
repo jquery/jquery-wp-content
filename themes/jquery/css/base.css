@@ -1659,6 +1659,13 @@ nav#main .searchform {
 	padding: 0;
 	border-radius: 20px;
 	position: relative;
+	text-shadow: none;
+}
+
+/* Increase invisible click area to focus search field */
+.searchform label {
+	width: 100%;
+	display: block;
 }
 
 nav#main .searchform input {
