@@ -9,11 +9,35 @@ remove_action( 'wp_head', 'feed_links_extra', 3 );
 remove_action( 'wp_head', 'rsd_link' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
-remove_action( 'wp_head', 'rel_canonical' );
 
 // Remove shortlink <head> and header.
 remove_action( 'wp_head',             'wp_shortlink_wp_head', 10 );
 remove_action( 'template_redirect',   'wp_shortlink_header',  11 );
+
+/**
+ * Add rel=canonical on singular pages (API pages, and blog posts)
+ *
+ * Derived from WordPress 6.3.1 rel_canonical:
+ *
+ * - Avoid applying esc_url and its 'clean_url' filter so that
+ *   'https://' is not stripped, and thus the URL is actually canonical.
+ */
+function jq_rel_canonical() {
+	if ( !is_singular() ) {
+		return;
+	}
+	$id = get_queried_object_id();
+	if ( $id === 0 ) {
+		return;
+	}
+
+	$url = wp_get_canonical_url( $id );
+	if ( $url) {
+		echo '<link rel="canonical" href="' . esc_attr( $url ) . '" />' . "\n";
+	}
+}
+remove_action( 'wp_head', 'rel_canonical' );
+add_action( 'wp_head', 'jq_rel_canonical' );
 
 // Add rel=me link to HTML head for Mastodon domain verification
 //
