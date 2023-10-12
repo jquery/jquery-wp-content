@@ -14,47 +14,34 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action( 'wp_head',             'wp_shortlink_wp_head', 10 );
 remove_action( 'template_redirect',   'wp_shortlink_header',  11 );
 
-/**
- * Add rel=canonical on singular pages (API pages, and blog posts)
- *
- * Derived from WordPress 6.3.1 rel_canonical:
- *
- * - Avoid applying esc_url and its 'clean_url' filter so that
- *   'https://' is not stripped, and thus the URL is actually canonical.
- */
-function jq_rel_canonical() {
-	if ( !is_singular() ) {
-		return;
-	}
-	$id = get_queried_object_id();
-	if ( $id === 0 ) {
-		return;
-	}
-
-	$url = wp_get_canonical_url( $id );
-	if ( $url) {
-		echo '<link rel="canonical" href="' . esc_attr( $url ) . '" />' . "\n";
-	}
+// Ensure relative links remain on the current protocol
+// (such as references to theme assets and intra-site links).
+// This does not influence 'home' and 'siteurl' options, and thus
+// does not affect <link rel=canonical> and sitemap output.
+if ( @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ) {
+    $_SERVER['HTTPS'] = '1';
+} elseif ( @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'http' ) {
+    $_SERVER['HTTPS'] = '0';
 }
-remove_action( 'wp_head', 'rel_canonical' );
-add_action( 'wp_head', 'jq_rel_canonical' );
 
-// Add rel=me link to HTML head for Mastodon domain verification
-//
-// Usage:
-//
-// Put one or more comma-separated URLs in the 'jquery_xfn_rel_me' WordPress option.
-//
-// Example:
-//
-//     'jquery_xfn_rel_me' => 'https://example.org/@foo,https://social.example/@bar'
-//
-// See also:
-//
-// - https://docs.joinmastodon.org/user/profile/#verification
-// - https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me
-// - https://microformats.org/wiki/rel-me
-// - https://gmpg.org/xfn/
+/**
+ * Add rel=me link to HTML head for Mastodon domain verification
+ *
+ * Usage:
+ *
+ * Put one or more comma-separated URLs in the 'jquery_xfn_rel_me' WordPress option.
+ *
+ * Example:
+ *
+ *     'jquery_xfn_rel_me' => 'https://example.org/@foo,https://social.example/@bar'
+ *
+ * See also:
+ *
+ * - https://docs.joinmastodon.org/user/profile/#verification
+ * - https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/me
+ * - https://microformats.org/wiki/rel-me
+ * - https://gmpg.org/xfn/
+ */
 function jquery_xfnrelme_wp_head() {
 	$option = get_option( 'jquery_xfn_rel_me' , '' );
 	$links = $option !== '' ? explode( ',', $option ) : array();

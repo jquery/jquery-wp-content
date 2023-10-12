@@ -120,18 +120,6 @@ add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
 	return $sortedTerms;
 }, 20, 3 );
 
-// Strip protocol from urls making them protocol agnostic.
-add_filter( 'theme_root_uri', 'strip_https', 10, 1 );
-add_filter( 'clean_url', 'strip_https', 11, 1 );
-function strip_https($url) {
-	// WordPress core updates need a protocol.
-	if ( 'downloads.wordpress.org' === parse_url( $url, PHP_URL_HOST ) ) {
-		return $url;
-	}
-
-	return preg_replace( '/^https?:/', '', $url );
-}
-
 add_filter( 'xmlrpc_wp_insert_post_data', function ( $post_data, $content_struct ) {
 	if ( $post_data['post_type'] !== 'page' ) {
 		return $post_data;
