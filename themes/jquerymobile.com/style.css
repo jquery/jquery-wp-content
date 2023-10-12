@@ -29,24 +29,8 @@ a, .title, .entry-title { color: #108040; }
 	padding-right: 362px;
 }
 
-#banner-jquery-mobile-no-support {
-	background-image: url(../jquery/images/dark-grey-tile.png);
-	color: #fff;
+.banner-jquery-mobile-no-support {
 	text-align: center;
-	margin: -25px;
-	padding: 20px;
-}
-
-#banner-jquery-mobile-no-support h2 {
-	color: #fff;
-	font-size: 36px;
-	line-height: 42px;
-}
-
-#banner-jquery-mobile-no-support p {
-	font: 22px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	padding-left: 15%;
-	padding-right: 15%;
 }
 
 .content-full #content #banner-secondary h1 {
