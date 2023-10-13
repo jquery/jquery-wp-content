@@ -178,13 +178,8 @@ add_filter('post_limits', 'jq_posts_per_page');
 function jq_search_get_provider() {
 	$typesenseKey = get_option( 'jquery_typesense_key' );
 	$typesenseCollection = get_option( 'jquery_typesense_collection' );
-	if ( JQUERY_STAGING && $typesenseKey && $typesenseCollection ) {
+	if ( $typesenseKey && $typesenseCollection ) {
 		return 'typesense';
-	}
-	$algoliaKey = get_option( 'jquery_docsearch_api_key' );
-	$algoliaIndex = get_option( 'jquery_docsearch_index_name' );
-	if ( $algoliaKey && $algoliaIndex ) {
-		return 'algolia';
 	}
 	return '';
 }
@@ -194,17 +189,5 @@ function jq_search_the_footer() {
 ?>
 <script defer src="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.js"></script>
 <?php
-	else:
-		$algoliaKey = get_option( 'jquery_docsearch_api_key' );
-		$algoliaIndex = get_option( 'jquery_docsearch_index_name' );
-		if ( $algoliaKey && $algoliaIndex ) :
-?>
-<script async src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js" onload='document.querySelector("input[name=\"s\"]") && docsearch({apiKey: <?php print json_encode($algoliaKey); ?>,
-			indexName: <?php print json_encode($algoliaIndex); ?>,
-			inputSelector: "input[name=\"s\"]",
-			debug: true
-		})'></script>
-<?php
-		endif;
 	endif;
 }

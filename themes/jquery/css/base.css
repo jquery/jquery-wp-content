@@ -1614,10 +1614,6 @@ nav#main {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.jquery-foundation nav#main {
-	background-color: rgba(102, 102, 102, 0.1);
-}
-
 nav#main ul {
 	margin: 0;
 	float: left;
@@ -1653,16 +1649,14 @@ nav#main li.current a {
 
 .searchform {
 	float: right;
-	width: 28%;
+	margin: 6px 0;
+	width: 30%;
 }
 .searchform input {
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
-.searchform input:focus {
-	outline: none;
-}
 
-.searchform.tsmb-form {
+.tsmb-form {
 	--tsmb-size-radius: 5px;
 	--tsmb-size-base: 12px;
 	--tsmb-size-sm: 0.8rem;
@@ -1676,27 +1670,33 @@ nav#main li.current a {
 	--tsmb-color-primary30: #333; /* jQuery Black */
 	--tsmb-color-primary50: #0769ad;  /* jQuery Primary Blue */
 	--tsmb-color-primary90: #b4efff; /* oklch(0.92 0.07 228) hue=228 of #7ACEF4 (jQuery Secondary Blue) */
-	margin: 6px 0;
-	width: 30%;
 }
-.jquery-ui .searchform.tsmb-form {
+.jquery-ui .tsmb-form {
 	--tsmb-color-primary50: #b24926; /* jQuery UI Secondary Orange */
 	--tsmb-color-primary90: #ffddb2; /* = #b4efff + oklch(hue=70) of #FAA523 (jQuery UI Primary Orange) */
 }
-.jquery-mobile .searchform.tsmb-form {
+.jquery-mobile .tsmb-form {
 	--tsmb-color-primary50: #108040; /* jQuery Mobile Secondary Green */
 	--tsmb-color-primary90: #c9f2c8; /* = #b4efff + oklch(hue=144) of #3EB249 (jQuery UI Primary Orange) */
 }
-.searchform.tsmb-form:not(:focus-within)::before {
+.jquery-foundation .tsmb-form {
+	--tsmb-color-primary50: #333; /* jQuery Black */
+	--tsmb-color-primary90: #ccc;
+}
+.jquery-learn .tsmb-form {
+	--tsmb-color-primary50: #222;
+	--tsmb-color-primary90: #ccc;
+}
+.tsmb-form:not(:focus-within)::before {
   filter: invert();
 }
-.searchform.tsmb-form input[type=search] {
+.tsmb-form input[type=search] {
 	border-width: 0;
 }
-.searchform.tsmb-form [role="listbox"] {
+.tsmb-form [role="listbox"] {
 	right: 0;
 }
-.searchform.tsmb-form [role="option"] mark {
+.tsmb-form [role="option"] mark {
   border-bottom: 2px solid var(--tsmb-color-primary90);
 }
 
@@ -2845,7 +2845,7 @@ footer .books li a cite {
 		margin: 15px auto;
 		clear:both;
 	}
-	.searchform.tsmb-form input[type=search] {
+	.searchform input[type=search] {
 		border-width: 1px;
 	}
 
