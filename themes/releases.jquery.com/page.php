@@ -15,7 +15,7 @@ wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js'
 	<div id="content">
 		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<div class="powered-by">Powered by <a href="https://www.stackpath.com"><img src="<?php echo get_template_directory_uri(); ?>/images/stackpath.png"></a></div>
+		<div class="powered-by">Powered by <a href="https://www.fastly.com"><img alt="Fastly" width="84" height="40" src="<?php echo get_template_directory_uri(); ?>/images/fastly@2x.png"></a></div>
 		<hr>
 		<?php endif; ?>
 

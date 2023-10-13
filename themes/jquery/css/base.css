@@ -2203,6 +2203,7 @@ footer {
 	background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)) top left / 100px 15px repeat-x, url(../images/bg-footer-noise.jpg) repeat;
 	margin-top: -20px;
 	padding-top: 40px;
+	color: #aaa;
 }
 
 footer.simple {
@@ -2231,7 +2232,6 @@ footer .download a { margin: 0 10px; }
 
 footer .download a em {
 	font-style: normal;
-	color: #aaa;
 }
 
 footer .download a:hover { border-bottom: solid 1px #888; }
@@ -2310,44 +2310,52 @@ footer h3:after {
 	border-radius: 4px 4px 0 0;
 }
 
-.footer-site-links {
-	float: right;
-	padding: 10px 0 0 0;
-	width: 58%;
-	text-align: right;
-}
-
-footer p.copyright {
-	margin: 10px 0 0 0;
-	float: left;
-	width: 40%;
-	font-size: 11px;
-	line-height: 130%;
+footer .legal {
+	margin-top: 1em;
+	border-top: solid 1px #333;
+	box-shadow: #000 0 -1px 0;
+	padding-top: 10px;
 	color: #777;
 }
 
-footer p.copyright a {
+.footer-site-links {
+	float: right;
+	width: 58%;
+	min-height: 5em; /* displace p.copyright*/
+	text-align: right;
+}
+
+footer p {
+	margin: 0 0 0.5em;
+	font-size: 11px;
+	line-height: 130%;
+}
+
+footer p.copyright {
+	margin-top: 0;
+	width: 40%;
+}
+
+footer .legal a {
 	color: #aaa;
 }
 
-footer p.copyright a:hover {
+footer .legal a:hover {
 	color: #fff;
 }
 
-footer p.copyright span.sponsor-line {
-	display: block;
-	font-size: 10px;
-	margin-top: 1em;
+footer a.wp-link:before,
+footer a.do-link:before {
+	content: url(../images/logo-wordpress.svg);
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	padding-right: 0.5em;
+	vertical-align: bottom;
+	filter: invert(1);
 }
-
-footer p.copyright a.do-link {
-	background: url(../images/logo-do.png) left top no-repeat;
-	padding: 2px 0 2px 17px;
-}
-
-footer p.copyright a.sp-link {
-	background: url(../images/logo-sp.png) left top no-repeat;
-	padding: 2px 0 2px 19px;
+footer a.do-link:before {
+	content: url(../images/logo-digitalocean.svg);
 }
 
 .footer-site-links li {
@@ -2395,12 +2403,6 @@ footer ul li {
 	padding: 0;
 	margin: 0;
 	line-height: 30px;
-}
-
-footer #legal {
-	margin-top: 1em;
-	border-top: solid 1px #333;
-	box-shadow: #000 0 -1px 0;
 }
 
 footer .books li {
@@ -2782,6 +2784,12 @@ footer .books li a cite {
 	footer p.copyright,
 	footer ul.footer-site-links {
 		width: 100%;
+		min-height: auto;
+	}
+
+	footer p.copyright,
+	footer ul.footer-site-links,
+	footer p {
 		text-align: center;
 		margin: 0 0 10px 0;
 	}
