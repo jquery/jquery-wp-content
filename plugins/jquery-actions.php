@@ -23,6 +23,14 @@ if ( @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ) {
 } elseif ( @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'http' ) {
     $_SERVER['HTTPS'] = '0';
 }
+add_filter( 'wp_headers', function ( $headers ) {
+	if ( isset( $headers['Vary'] ) ) {
+		$headers['Vary'] .= ',X-Forwarded-Proto';
+	} else {
+		$headers['Vary'] = 'X-Forwarded-Proto';
+	}
+	return $headers;
+}, 10, 1 );
 
 /**
  * Add rel=me link to HTML head for Mastodon domain verification
