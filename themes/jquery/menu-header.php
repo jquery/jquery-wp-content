@@ -72,16 +72,11 @@ function menu_header_jqueryui_com() {
 function menu_header_jquery_org() {
 	return array(
 		'https://jquery.org/' => 'Home',
-		'https://jquery.org/projects/' => 'Projects',
-		'https://jquery.org/join/' => 'Join',
-		'https://jquery.org/members/' => 'Members',
-		'https://jquery.org/support/' => 'Support',
-		'https://jquery.org/team/' => 'Team',
-		'https://jquery.org/conduct/' => 'Conduct',
 		'https://meetings.jquery.org/' => 'Meetings',
-		'https://jquery.org/history/' => 'History',
+		'https://jquery.org/team/' => 'Team',
 		'https://brand.jquery.org/' => 'Brand Guide',
-		'https://jquery.org/donate/' => 'Donate',
+		'https://jquery.org/support/' => 'Support',
+		'https://jquery.org/history/' => 'History',
 	);
 }
 
