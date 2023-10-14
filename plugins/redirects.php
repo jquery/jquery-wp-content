@@ -5,14 +5,16 @@
  */
 
 add_filter( 'template_redirect', function() {
-	// Only handle 404 Not Found
-	if ( !is_404() ) {
+	if ( is_404() ) {
+		$url = trailingslashit( $_SERVER[ 'REQUEST_URI' ] );
+	} elseif ( is_front_page() ) {
+		$url = "/";
+	} else {
+		// Don't influence any other pages
 		return;
 	}
 
-	$url = trailingslashit( $_SERVER[ 'REQUEST_URI' ] );
-
-	// Check for redirects stored in the transients
+	// Check for redirects stored in the database
 	$transient = get_option( 'jquery_redirects' );
 
 	if ( $transient && !empty( $transient[ $url ] ) ) {
