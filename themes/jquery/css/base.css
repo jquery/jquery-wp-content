@@ -2236,43 +2236,6 @@ footer .download a em {
 
 footer .download a:hover { border-bottom: solid 1px #888; }
 
-footer .footer-icon-links li {
-	width: 22%;
-	margin-left: 11%;
-	float: left;
-}
-
-footer .footer-icon-links li a {
-	display: block;
-	line-height: inherit;
-	font-size: 18px;
-	float: left;
-	position: relative;
-	width: auto;
-	text-align: left;
-	padding-left: 10px;
-}
-
-footer .footer-icon-links li a:before {
-	position: absolute;
-	left: -35px;
-	top: 10px;
-	font-size: 2em;
-	color: #4d4d4d;
-	text-shadow: 0 -1px 0 #000000;
-}
-
-footer .footer-icon-links li small {
-	display: block;
-	font-size: 14px;
-	color: #777;
-	line-height: 120%;
-}
-
-footer .footer-icon-links li:hover a:before {
-	color: #d1d1d1;
-}
-
 footer h3 {
 	color: #777;
 	letter-spacing: normal;

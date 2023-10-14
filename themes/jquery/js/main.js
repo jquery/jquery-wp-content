@@ -13,15 +13,6 @@ $(function() {
 	 * Change navigation elements for smaller screens
 	 */
 	(function() {
-
-		// Move the global nav to the footer and collapse to a select menu
-		var globalLinks = $( "#global-nav .links" ).tinyNav({ header: "Browse..." }),
-			nav = globalLinks.next(),
-			container = $( "<div class='tinynav-container'></div>" ),
-			header = $( "<h3><span>More jQuery Sites</span></h3>" );
-
-		container.append( header, nav ).insertBefore( "ul.footer-icon-links" );
-
 		// Collapse the site navigation to a select menu
 		$( "#menu-top" ).tinyNav({ header: "Navigate..." });
 	})();
