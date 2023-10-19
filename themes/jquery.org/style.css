@@ -221,24 +221,6 @@ ul.flex-direction-nav {
 	color: #a00;
 }
 
-a.icon-search {
-	width: 100px;
-	height: 100px;
-	position: relative;
-	text-decoration: none !important;
-	float: left;
-	display: inline;
-	margin-left: 15px;
-	margin-bottom: 10px;
-	z-index: 2;
-}
-
-a.icon-search::before {
-	position: absolute;
-	right: 4px;
-	color: #333333;
-}
-
 .member-level ul.gifts {
 	float: left;
 	list-style: none;
