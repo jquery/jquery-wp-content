@@ -47,18 +47,7 @@ function jquery_sites() {
 				'jquery_typesense_collection' => 'jquery_com',
 			),
 		),
-		'plugins.jquery.com' => array(
-			'blog_id' => 4,
-			'cookie_domain' => '.jquery.com',
-			'options' => array(
-				'blogname' => 'jQuery Plugin Registry',
-				'stylesheet' => 'plugins.jquery.com',
-				'active_plugins' => array(
-					'jquery-plugins-site.php',
-				),
-				'jquery_body_class' => 'jquery',
-			),
-		),
+		# Historical: Database blog_id 4 is reserved for plugins.jquery.com
 		'learn.jquery.com' => array(
 			'blog_id' => 5,
 			'cookie_domain' => '.jquery.com',

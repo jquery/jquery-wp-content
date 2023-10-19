@@ -16,14 +16,6 @@ function menu_header_jquery_com() {
 	);
 }
 
-function menu_header_plugins_jquery_com() {
-	return array(
-		// 'https://plugins.jquery.com/docs/names/' => 'Naming Your Plugin',
-		// 'https://plugins.jquery.com/docs/publish/' => 'Publishing Your Plugin',
-		// 'https://plugins.jquery.com/docs/package-manifest/' => 'Package Manifest',
-	);
-}
-
 function menu_header_learn_jquery_com() {
 	return array(
 		'https://learn.jquery.com' => 'Home',
