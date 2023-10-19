@@ -1,6 +1,6 @@
 <?php
 
-// Plugins enabled everywhere for local dev (jquery-wp-docker) and old WP-MU servers.
+// Plugins enabled everywhere for local dev (jquery-wp-docker)
 //
 // For production, plugin enablement is managed via Puppet:
 // https://github.com/jquery/infrastructure-puppet/blob/staging/modules/profile/manifests/wordpress/docs.pp

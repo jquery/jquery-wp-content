@@ -18,8 +18,11 @@ foreach ( $options as $option => $value ) {
 		// Don't mess with themes for now.
 		continue;
 	}
-	if ( $option === 'active_plugins' && !is_multisite() ) {
-		// For standalone sites, let Puppet manage plugins.
+	if ( $option === 'active_plugins' ) {
+		// Deprecated
+		// In production, Puppet manages activation of per-site plugins.
+		// Locally, global plugins are enabled via mu-plugins/_loader.php,
+		// and per-site plugins are activated by the imported database.
 		continue;
 	}
 	add_filter( 'pre_option_' . $option, function () use ( $value ) {
