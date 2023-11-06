@@ -410,11 +410,17 @@ function jquery_default_site_options() {
 	// prevent the redirect, but changes the redirect to the local site.
 	//
 	// WordPress/wp-login.php requires 'home' to use a full URL.
-	// If it uses a protocol-relative URL, it uses the entire URL as the path=
-	// and thus cause cookies to never be sent by the browser.
+	// If it uses a protocol-relative URL, it uses the entire URL as the "path="
+	// and thus cause cookies to never be sent by the browser. This doesn't matter
+	// much for the public stage sites where we don't login, but it matters for
+	// jquery-wp-docker.
+	//
+	// To ensure canonical URLs work correctly on public stage sites and avoid
+	// HTTP-403 errors, apply set_url_scheme() which will change it to stay on
+	// HTTPS if you're already on HTTPS.
 	if ( JQUERY_STAGING ) {
-		$defaults['home'] = 'http://' . jquery_site_expand( JQUERY_LIVE_SITE );
-		$defaults['siteurl'] = 'http://' . jquery_site_expand( JQUERY_LIVE_SITE );
+		$defaults['home'] = set_url_scheme( 'http://' . jquery_site_expand( JQUERY_LIVE_SITE ) );
+		$defaults['siteurl'] = set_url_scheme( 'http://' . jquery_site_expand( JQUERY_LIVE_SITE ) );
 	}
 	return $defaults;
 
