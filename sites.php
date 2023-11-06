@@ -408,9 +408,13 @@ function jquery_default_site_options() {
 	// However, sites that use jquery-static-index.php cause index pages
 	// to redirect to live sites in local development. This filter does not
 	// prevent the redirect, but changes the redirect to the local site.
+	//
+	// WordPress/wp-login.php requires 'home' to use a full URL.
+	// If it uses a protocol-relative URL, it uses the entire URL as the path=
+	// and thus cause cookies to never be sent by the browser.
 	if ( JQUERY_STAGING ) {
-		$defaults['home'] = '//' . jquery_site_expand( JQUERY_LIVE_SITE );
-		$defaults['siteurl'] = '//' . jquery_site_expand( JQUERY_LIVE_SITE );
+		$defaults['home'] = 'http://' . jquery_site_expand( JQUERY_LIVE_SITE );
+		$defaults['siteurl'] = 'http://' . jquery_site_expand( JQUERY_LIVE_SITE );
 	}
 	return $defaults;
 
