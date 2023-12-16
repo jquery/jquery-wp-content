@@ -25,8 +25,6 @@
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
-	<script src="https://use.typekit.net/wde1aof.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
 <?php
 	if ( get_option( 'thread_comments' ) && comments_open() ) {
 		wp_enqueue_script( 'comment-reply' );
