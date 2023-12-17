@@ -92,11 +92,6 @@ ul.flex-direction-nav {
 	margin-top: 25px;
 }
 
-	.jquery-foundation.page-slug-donate #content .dark-callout-box {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
-
 .big-message {
 	font: bold 50px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #ffffff !important;
@@ -347,128 +342,9 @@ ul.flex-direction-nav {
 	font-size: 24px;
 	line-height: 24px;
 }
-
-.page-slug-team #content ul.block-grid li {
-	text-align: center;
-}
-
-.page-slug-team #content ul.block-grid img {
-	max-width: 100%;
-	margin-bottom: 10px;
-}
-
-.page-slug-team #content ul.block-grid p {
-	text-align: left;
-}
-
-.page-slug-team #content h2 {
-	color: #333;
-	font-size: 20px;
-	line-height: 20px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom:5px;
-}
-
-.page-slug-team #content h3 {
-	color: #0769ad;
-	font-style: italic;
-	font-size: 14px;
-	line-height: 18px;
-	text-align: center;
-	min-height: 45px;
-	border-bottom: 1px solid #dbdbdb;
-}
-
-.page-slug-team #content ul.team-list h3 {
-	border: none;
-	min-height: 5px;
-}
-
-.page-slug-team #content ul.past-team-list h2,
-.page-slug-team #content ul.past-team-list h3 {
-	text-align: left;
-
-}
-
-.page-slug-team #content p.center-txt {
-	padding-left: 10%;
-	padding-right: 10%;
-}
-
-.page-slug-members #content h2.block {
-	text-align: center;
-}
-
-.page-slug-members #content a {
-	color: #d58349;
-}
-
-.page-slug-members #content ul.block-grid li {
-	text-align: center;
-}
-
-.page-slug-members #content ul.block-grid h3 {
-	color: #4d4d4d;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 18px;
-	margin-bottom: 0;
-	padding-top: 10px;
-	text-align: center;
-}
-
-.page-slug-members #content ul.block-grid p {
-	margin-bottom: 0;
-}
-
-.page-slug-members #content ul.block-grid p a {
-	text-decoration: none;
-}
-
-.page-slug-members .corporatemembers .row {
-	margin-top: 2em;
-	padding-bottom: 2em;
-}
 .page-slug-faq #content h2 {
 	margin-top: 1em;
 	margin-bottom: 0.3em;
-}
-
-.page-slug-donate h2, .page-slug-donate .donate-link {
-	text-align: center;
-}
-
-.page-slug-donate form {
-	padding: 0 4em;
-}
-
-.page-slug-donate select {
-	vertical-align: top;
-	margin: 1em;
-}
-
-.page-slug-donate .envelope {
-	border: 1px solid silver;
-	border-radius: 3px;
-	padding: 4em;
-	margin-bottom: 0.8em;
-}
-
-.page-slug-donate .envelope .vcard {
-	margin-top: 1em;
-	margin-left: 30%;
-}
-
-.page-slug-donate #content .row .callout-block {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 40px;
-}
-
-.page-slug-donate .donate-cashtag {
-	font-weight: bold;
-	color: green;
 }
 
 
