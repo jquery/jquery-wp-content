@@ -181,3 +181,56 @@ a,
 #support-matrix td {
 	text-align: center;
 }
+
+/* Team */
+
+.page-slug-team .block-grid,
+.page-slug-team #content .block-grid {
+	display: flex;
+	flex-flow: row wrap;
+}
+.page-slug-team .block-grid li {
+	text-align: center;
+}
+.page-slug-team .block-grid img {
+	max-width: 100%;
+	margin-bottom: 10px;
+}
+.page-slug-team .block-grid p {
+	text-align: left;
+}
+
+.page-slug-team #content h2 {
+	color: #333;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.page-slug-team #content h3 {
+	color: #0769ad;
+	font-style: italic;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.page-slug-team #content .team-list h3 {
+	min-height: 5px;
+}
+
+.page-slug-team #content .past-team-list h2,
+.page-slug-team #content .past-team-list h3 {
+	text-align: left;
+}
+.page-slug-team #content .past-team-list h3 {
+	min-height: 45px;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+.page-slug-team .center-txt {
+	padding-left: 10%;
+	padding-right: 10%;
+}
