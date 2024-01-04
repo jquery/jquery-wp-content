@@ -3367,7 +3367,7 @@ that IE7/8 do not support :nth-child.
 /* Syntax Highlighting ---------------------- */
 
 pre, code {
-	font-family: "source-code-pro", Consolas, monospace !important;
+	font-family: Consolas, Menlo, monospace !important;
 	word-spacing: 0;
 }
 pre code {
@@ -3566,7 +3566,7 @@ pre .diff .hljs-comment {
 	vertical-align: baseline !important;
 	width: auto !important;
 	box-sizing: content-box !important;
-	font-family: "source-code-pro", Consolas, monospace !important;
+	font-family: Consolas, Menlo, monospace !important;
 	font-weight: normal !important;
 	font-style: normal !important;
 	font-size: 1em !important;
