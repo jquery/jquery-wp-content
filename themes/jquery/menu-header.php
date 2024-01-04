@@ -115,7 +115,7 @@ if ( function_exists( $func ) )
 unset( $site, $domain, $path, $func );
 
 function jquery_render_menu( $items ) {
-	$current = trailingslashit( set_url_scheme( 'https://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] ) );
+	$current = trailingslashit( 'https://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] );
 	?>
 <div class="menu-top-container">
 	<ul id="menu-top" class="menu">
