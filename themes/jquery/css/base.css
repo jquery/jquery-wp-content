@@ -1,7 +1,7 @@
 /*! Copyright jQuery Foundation and other contributors
  * Includes:
  * - normalize.css v1.0.1 | MIT License | git.io/normalize
- * - Font Awesome - http://fortawesome.github.com/Font-Awesome - CC BY 3.0
+ * - Font Awesome - https://fortawesome.github.com/Font-Awesome - CC BY 3.0
  */
 
 /* ==========================================================================
@@ -111,12 +111,16 @@ body {
 	padding: 0.2em 0;
 }
 
+/* ==========================================================================
+   FontAwesome (https://fortawesome.github.com/Font-Awesome)
+	 .ttf and .woff files were included in the FontAwesome download.
+	 .woff2 file created with https://github.com/nfroidure/ttf2woff2
+   ========================================================================== */
+
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('fonts/fontawesome-webfont.eot?v=3.0.2');
-  src: url('fonts/fontawesome-webfont.eot?#iefix&v=3.0.2') format('embedded-opentype'),
-    url('fonts/fontawesome-webfont.woff?v=3.0.2') format('woff'),
-    url('fonts/fontawesome-webfont.ttf?v=3.0.2') format('truetype');
+  font-family: "FontAwesome";
+  src: url("fonts/FontAwesome/fontawesome-webfont.woff2") format("woff2"),
+		url("fonts/FontAwesome/fontawesome-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -184,7 +188,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
-	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
+	font-family: Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif !important;
 }
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -676,12 +680,33 @@ table {
 }
 
 #content th {
-	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-family: Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 }
 
 #content th,
 #content td {
 	padding: .5em;
+}
+
+/* ==========================================================================
+   Cairo Font (https://github.com/Gue3bara/Cairo)
+	 .ttf files downloaded from Google Fonts, but only used for conversion.
+	 .woff files created with https://github.com/odemiral/woff2sfnt-sfnt2woff
+	 .woff2 files created with https://github.com/nfroidure/ttf2woff2
+   ========================================================================== */
+
+@font-face {
+	font-family: Cairo;
+	src: url("fonts/Cairo/Cairo-Regular.woff2") format("woff2"),
+		url("fonts/Cairo/Cairo-Regular.woff") format("woff");
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Cairo;
+	src: url("fonts/Cairo/Cairo-Bold.woff2") format("woff2"),
+		url("fonts/Cairo/Cairo-Bold.woff") format("woff");
+	font-weight: 700;
 }
 
 /* ==========================================================================
@@ -1624,14 +1649,14 @@ nav#main ul {
 
 nav#main li {
 	float: left;
-	font: normal normal 16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font: normal 700 16px Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	margin-right: 2px;
 }
 
 nav#main li a {
 	color: #fff;
 	text-decoration: none;
-	padding: 6px 10px;
+	padding: 2px 10px;
 	display: block;
 	border: 1px solid transparent;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.76);
@@ -1824,7 +1849,7 @@ pre b {
 	height: 19px;
 	width: 19px;
 	padding-top: 0;
-	font: bold 11px/19px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font: bold 11px/19px Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	border-radius: 12px;
 }
 
@@ -1907,7 +1932,7 @@ pre b {
 
 #content figcaption {
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
-	font: italic 700 12px/20px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font: italic 700 12px/20px Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	padding: 10px 5px;
 	color: #737272;
 	clear: both;
@@ -1979,7 +2004,7 @@ pre b {
 
 p.author {
 	color: #ababab;
-	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-family: Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	font-weight: 700;
 	margin-top: -20px;
 }
@@ -1993,7 +2018,7 @@ p.author a {
 	padding-bottom: .5%;
 	margin-bottom: 20px;
 	font-weight: 700;
-	font-family: "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font-family: Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #666;
 	background: url(../images-foundation/gauze.png) #f0f0f0;
 	text-shadow: 0 1px 0 #ffffff;
@@ -2016,7 +2041,7 @@ p.author a {
 }
 
 #banner-large-image h1, #banner-large-image h2 {
-	font: bold 60px/60px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font: bold 60px/60px Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	margin-bottom: 0;
 	color: #fff;
 	text-shadow: 0 0 4px rgba(0, 0, 0, 0.85);
@@ -2024,7 +2049,7 @@ p.author a {
 
 #banner-large-image p {
 	color: #cccccc;
-	font: 700 normal 24px/36px "klavika-web", "Helvetica Neue", sans-serif;
+	font: 700 normal 24px/36px Cairo, "Helvetica Neue", sans-serif;
 }
 
 #banner-secondary {
@@ -2121,7 +2146,7 @@ input[type="submit"] {
 	color: #fff !important;
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.35);
 	padding: 8px 15px;
-	font: bold 16px/16px "klavika-web", "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+	font: bold 16px/16px Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	transition: all 0.2s;
 	background-color: #d18f4f;
 	float: left;
@@ -2508,7 +2533,6 @@ footer .books li a cite {
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 	letter-spacing: 0;
 	border-radius: 5px 5px 0 0;
-	font-weight: normal;
 	margin-bottom: 0;
 	overflow: hidden;
 }
