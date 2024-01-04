@@ -1,7 +1,7 @@
 /*! Copyright jQuery Foundation and other contributors
  * Includes:
- * - normalize.css v1.0.1 | MIT License | git.io/normalize
- * - Font Awesome - https://fortawesome.github.com/Font-Awesome - CC BY 3.0
+ * - normalize.css v1.0.1 (MIT License, Copyright Nicolas Gallagher and Jonathan Neal)
+ * - Font Awesome v3.0.2 (MIT License, Font Awesome by Dave Gandy)
  */
 
 /* ==========================================================================
@@ -112,15 +112,15 @@ body {
 }
 
 /* ==========================================================================
-   FontAwesome (https://fortawesome.github.com/Font-Awesome)
+   FontAwesome (https://fontawesome.com/v3/)
 	 .ttf and .woff files were included in the FontAwesome download.
 	 .woff2 file created with https://github.com/nfroidure/ttf2woff2
    ========================================================================== */
 
 @font-face {
   font-family: "FontAwesome";
-  src: url("fonts/FontAwesome/fontawesome-webfont.woff2") format("woff2"),
-		url("fonts/FontAwesome/fontawesome-webfont.woff") format("woff");
+  src: url("../lib/FontAwesome/fontawesome-webfont.woff2") format("woff2"),
+		url("../lib/FontAwesome/fontawesome-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -697,15 +697,15 @@ table {
 
 @font-face {
 	font-family: Cairo;
-	src: url("fonts/Cairo/Cairo-Regular.woff2") format("woff2"),
-		url("fonts/Cairo/Cairo-Regular.woff") format("woff");
+	src: url("../lib/Cairo/Cairo-Regular.woff2") format("woff2"),
+		url("../lib/Cairo/Cairo-Regular.woff") format("woff");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: Cairo;
-	src: url("fonts/Cairo/Cairo-Bold.woff2") format("woff2"),
-		url("fonts/Cairo/Cairo-Bold.woff") format("woff");
+	src: url("../lib/Cairo/Cairo-Bold.woff2") format("woff2"),
+		url("../lib/Cairo/Cairo-Bold.woff") format("woff");
 	font-weight: 700;
 }
 

@@ -16,22 +16,36 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 
 ====
 
+- Cairo
+  https://github.com/Gue3bara/Cairo
+  located at themes/jquery/lib/Cairo
+
 - Disable Emojis
   https://wordpress.org/plugins/disable-emojis/
-	located at plugins/disable-emojis
+  located at plugins/disable-emojis
+
+- Font Awesome
+  https://fontawesome.com/v3/
+  located at themes/jquery/lib/FontAwesome
+  and included in themes/jquery/css/base.css
 
 - Gilded Wordpress
   https://github.com/scottgonzalez/grunt-wordpress
-	located at plugins/gilded-wordpress
+  located at plugins/gilded-wordpress
 
 - No Comments on Pages
   https://wordpress.org/plugins/no-comments-on-pages/
-	located at plugins/no-comments-on-pages
+  located at plugins/no-comments-on-pages
+
+- Normalize.css
+  https://github.com/necolas/normalize.css/tree/v1.0.1
+  located at themes/jquery/lib/normalize
+  and included in themes/jquery/css/base.css
 
 - TinyNav.js
-	http://tinynav.com/
-	located at themes/jquery/js/plugins.js
+  http://tinynav.com/
+  located at themes/jquery/js/plugins.js
 
 - typesense-minibar
-	https://github.com/jquery/typesense-minibar
-	located at themes/jquery/lib/typesense-minibar.js
+  https://github.com/jquery/typesense-minibar
+  located at themes/jquery/lib/typesense-minibar
