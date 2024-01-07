@@ -1332,7 +1332,9 @@ iframe {
    ========================================================================== */
 
 #global-nav {
-	background: url(../images/jq-global-nav.png) repeat-x 0 bottom #1b1b1b;
+	background: #232323;
+	background: linear-gradient(to bottom, transparent 92%, rgb(20, 20, 20)),
+		linear-gradient(to bottom, rgb(75, 75, 75), #232323);
 }
 
 #global-nav nav {
@@ -1373,7 +1375,7 @@ iframe {
 }
 
 #global-nav nav ul li:hover {
-	background: url(../images/bg-footer-noise.jpg) #000;
+	background: #232323;
 	color: #fff;
 }
 
@@ -1409,7 +1411,7 @@ iframe {
 }
 
 #global-nav nav ul li ul li {
-	background: url(../images/bg-footer-noise.jpg) #000;
+	background: #232323;
 	display: block;
 	color: #fff;
 	float: none;
@@ -2228,8 +2230,8 @@ input[type="submit"].dark:hover {
    ========================================================================== */
 
 footer {
-	background: url(../images/bg-footer-noise.jpg) repeat;
-	background: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)) top left / 100px 15px repeat-x, url(../images/bg-footer-noise.jpg) repeat;
+	background: #232323;
+	background: #232323 linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,0)) top left / 100px 15px repeat-x;
 	margin-top: -20px;
 	padding-top: 40px;
 	color: #aaa;
@@ -2286,7 +2288,7 @@ footer h3 span {
 	padding: 3px 10px;
 	position: relative;
 	top: -0.8em;
-	background: url(../images/bg-footer-noise.jpg) repeat #212121;
+	background: #232323;
 	z-index: 1;
 }
 
