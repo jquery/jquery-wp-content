@@ -1810,12 +1810,14 @@ pre b {
 }
 
 #content ul li {
-	padding-bottom: 5px;
-	padding-top: 5px;
-	padding-left: 20px;
+	padding: 5px 0 5px 12px;
+	margin-left: 8px;
 	line-height: 20px;
-	list-style-type: none;
-	background: url(../images/bullet.png) no-repeat 0 10px;
+}
+
+#content ul li::marker {
+	content: "●";
+	color: #ccc;
 }
 
 #content ul.block-grid li {
@@ -2196,10 +2198,16 @@ input[type="submit"].dark:hover {
 }
 
 #sidebar li {
-	padding: 5px 0 5px 20px;
-	list-style-type: none;
-	background: url(../images/bullet.png) no-repeat 0 12px;
+	padding: 5px 0 5px 12px;
+	margin-left: 8px;
+	/* set explicitly to avoid default of "circle" on sub list */
+	list-style-type: disc;
 	text-shadow: 0 1px 0 #ffffff;
+}
+
+#sidebar li::marker {
+	color: #ccc;
+	content: "●";
 }
 
 #sidebar li a {
@@ -2965,7 +2973,8 @@ footer .books li a cite {
 		margin: 15px auto;
 	}
 
-	nav#main ul li, nav#main ul li a {
+	nav#main ul li,
+	nav#main ul li a {
 		float: none;
 		padding: 6px 0 6px 8px;
 	}
