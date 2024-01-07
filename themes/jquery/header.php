@@ -90,9 +90,7 @@
 	<div id="logo-events" class="constrain clearfix">
 		<h2 class="logo"><a href="<?php echo get_option( 'jquery_logo_link', '/' ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php bloginfo( 'name' ); ?></a></h2>
 
-		<aside>
-			<div id="broadcast"></div>
-		</aside>
+		<aside id="broadcast"></aside>
 	</div>
 
 	<nav id="main" class="constrain clearfix">
