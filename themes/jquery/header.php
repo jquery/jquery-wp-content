@@ -19,8 +19,8 @@
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=7">
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=4">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=8">
+	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=5">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>

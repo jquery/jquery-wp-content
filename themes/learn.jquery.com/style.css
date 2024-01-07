@@ -31,9 +31,10 @@ a {
 /*******************************************************************************/
 
 #sidebar #chapter-listing ul li {
-	background: none;
 	padding-left: 0;
-
+}
+#sidebar #chapter-listing ul li::marker {
+	content: "";
 }
 
 #sidebar #chapter-listing li.active > a {
