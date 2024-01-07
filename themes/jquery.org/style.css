@@ -81,31 +81,10 @@ ul.flex-direction-nav {
 	display: none;
 }
 
-.dark-callout-box {
-	background-image: url(../jquery/images/dark-grey-tile.png);
-	margin-bottom: 30px;
-	border-bottom: 10px solid #c1c1c1;
-	border-top: 10px solid #c1c1c1;
-	text-align: center;
-	padding-top: 35px;
-	padding-bottom: 35px;
-	margin-top: 25px;
-}
-
 .big-message {
 	font: bold 50px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #ffffff !important;
 	margin-top: 20px;
-}
-
-#content .dark-callout-box h3 {
-	font: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #fff;
-}
-
-#content .dark-callout-box p {
-	font: bold 30px/50px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #dddcdc;
 }
 
 #content .project h4 {
@@ -465,35 +444,9 @@ nav#main ul {
 		padding-top: 3.5%;
 	}
 
-	.dark-callout-box {
-		background-image: url(../jquery/images/dark-grey-tile.png);
-		border-bottom: 10px solid #c1c1c1;
-		border-top: 10px solid #c1c1c1;
-		text-align: center;
-		margin-bottom: 0;
-		padding-right: 22px !important;
-		padding-left: 22px !important;
-	}
-
-	#content .dark-callout-box h3 {
-		font: bold 28px/32px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-		color: #fff;
-	}
-
-	#content .dark-callout-box p {
-		color: #dddcdc;
-		font-size: 14px;
-		line-height: 18px;
-	}
-
 	.big-message {
 		font: bold 30px/30px "klavika-web", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
 		color: #ffffff !important;
 		margin-top: 20px;
-	}
-
-	.callout-block {
-		padding-right: 20px !important;
-		padding-left: 20px !important;
 	}
 }
