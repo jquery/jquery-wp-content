@@ -154,7 +154,7 @@ a {
 	color: #7acef4;
 }
 .entry-meta .bottom-links {
-	background-image: url(../jquery/images/gauze.png);
+	background: #ececec;
 	border: none;
 	margin: 2em 0;
 	clear: both;

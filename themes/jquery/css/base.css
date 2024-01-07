@@ -1769,7 +1769,7 @@ em, i {
 }
 
 hr {
-	background-image: url(../images/gauze.png);
+	background: #ececec;
 	height: .75em;
 	border: none;
 	margin: .75em 0;
@@ -2001,7 +2001,7 @@ pre b {
 #content h1.block,
 #content h2.block {
 	padding: 10px 2%;
-	background: url(../images/gauze.png) #ececec;
+	background: #ececec;
 	text-shadow: 0 1px 0 #ffffff;
 }
 
@@ -2023,7 +2023,7 @@ p.author a {
 	font-weight: 700;
 	font-family: Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 	color: #666;
-	background: url(../images-foundation/gauze.png) #f0f0f0;
+	background: #f0f0f0;
 	text-shadow: 0 1px 0 #ffffff;
 }
 
