@@ -9,13 +9,19 @@ $(function() {
 		}
 	});
 
-	/*
-	 * Change navigation elements for smaller screens
-	 */
-	(function() {
-		// Collapse the site navigation to a select menu
-		$( "#menu-top" ).tinyNav({ header: "Navigate..." });
-	})();
+	// collapsible navigation for smaller screens
+	$('.menu-trigger').on('click', function (e) {
+		var $btn = $(this),
+			$nav = $(this).next('.menu');
+		if ($nav.hasClass('menu-open')) {
+			$btn.attr('aria-expanded', 'false');
+			$nav.removeClass('menu-open');
+		} else {
+			$btn.attr('aria-expanded', 'true');
+			$nav.addClass('menu-open');
+			$nav.find('a').first().focus();
+		}
+	});
 });
 
 

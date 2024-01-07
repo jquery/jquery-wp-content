@@ -42,10 +42,6 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   located at themes/jquery/lib/normalize
   and included in themes/jquery/css/base.css
 
-- TinyNav.js
-  http://tinynav.com/
-  located at themes/jquery/js/plugins.js
-
 - typesense-minibar
   https://github.com/jquery/typesense-minibar
   located at themes/jquery/lib/typesense-minibar

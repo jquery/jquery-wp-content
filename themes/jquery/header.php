@@ -23,7 +23,6 @@
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=4">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/plugins.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <?php
 	if ( get_option( 'thread_comments' ) && comments_open() ) {
