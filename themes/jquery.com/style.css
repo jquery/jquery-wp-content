@@ -184,11 +184,6 @@ a,
 
 /* Team */
 
-.page-slug-team .block-grid,
-.page-slug-team #content .block-grid {
-	display: flex;
-	flex-flow: row wrap;
-}
 .page-slug-team .block-grid li {
 	text-align: center;
 }
