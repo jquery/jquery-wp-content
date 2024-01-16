@@ -1351,9 +1351,6 @@ iframe {
 	border-left: 1px solid rgba(0, 0, 0, 0.347656);
 }
 
-.tinynav-container { display: none; }
-.tinynav { display: none; }
-
 #global-nav nav ul.links {
 	float: right;
 }
@@ -2801,11 +2798,6 @@ footer .books li a cite {
 		font-size: 12px;
 	}
 
-	#logo-events {
-		padding-top: 20px;
-		padding-bottom: 10px;
-	}
-
 	#logo-events aside {
 		display: inline-block;
 		position: relative;
@@ -2819,16 +2811,6 @@ footer .books li a cite {
 		float: none;
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	nav#main {
-		background-color: rgba(0, 0, 0, 0.0);
-		border-radius: 10px 10px 0 0;
-		border-right: none;
-		border-left: none;
-		border-top: none;
-		box-shadow: none;
-		padding-top: 10px;
 	}
 
 	nav#main .searchform {
@@ -2869,11 +2851,6 @@ footer .books li a cite {
 
 	nav#main li a {
 		font-size: 14px;
-	}
-
-	#content-wrapper {
-		border-top-left-radius: 10px;
-		border-top-right-radius: 10px;
 	}
 
 	.content-full.full-width #content,
@@ -2942,25 +2919,31 @@ footer .books li a cite {
 		border-top: none !important;
 	}
 
-	.tinynav-container {
-		display: block;
+	.menu-top-container {
+		display: flex;
+		flex-flow: column;
+	}
+
+	.menu-top-container .menu-trigger {
+		display: inline-block !important;
+		align-self: flex-end;
 	}
 
 	#menu-top {
 		display: none;
 	}
 
-	.tinynav {
+	#menu-top.menu-open {
 		display: block;
-		width: 100%;
-		margin: 0 auto 15px;
-		position: relative;
-		top: 6px;
-		left: 0;
+		background-color: rgba(0, 0, 0, 0.18);
+		margin-top: 6px;
 	}
 
 	nav#main {
 		padding: 0;
+		background: none;
+		border: none;
+		box-shadow: none;
 	}
 
 	nav#main .searchform {
@@ -2991,6 +2974,8 @@ footer .books li a cite {
 	}
 
 	#content-wrapper {
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
 		padding-left: 25px;
 		padding-right: 25px;
 	}

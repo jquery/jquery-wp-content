@@ -118,7 +118,8 @@ function jquery_render_menu( $items ) {
 	$current = trailingslashit( 'https://' . JQUERY_LIVE_SITE . $_SERVER['REQUEST_URI'] );
 	?>
 <div class="menu-top-container">
-	<ul id="menu-top" class="menu">
+	<button hidden id="menu-trigger" class="button menu-trigger" aria-expanded="false" aria-haspopup="menu">Navigation</button>
+	<ul id="menu-top" class="menu" role="menu" aria-labelledby="menu-trigger">
 <?php
 	foreach ( $items as $url => $anchor ) {
 		$class = 'menu-item';
