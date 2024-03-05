@@ -1786,17 +1786,23 @@ pre b {
 
 #content blockquote {
 	margin: 20px 0;
+	padding: 20px 30px;
+	background-color: #f2f2f2;
+	color: #828282;
+	position: relative;
+	font-size: 18px;
+	line-height: 26px;
+	font-style: italic;
 }
 
 #content blockquote p {
-	font: italic normal 23px/26px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	color: #828282;
 	margin-left: 0;
 	margin-bottom: 0;
-	padding: 20px 30px;
-	position: relative;
 	text-shadow: 0 1px 0 #ffffff;
-	background-color: #f2f2f2;
+}
+#content blockquote b,
+#content blockquote strong {
+	color: inherit;
 }
 
 #content ol,
