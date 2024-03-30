@@ -61,13 +61,11 @@
 						<ul class="wide">
 						</ul>
 					</li>
-					<li class="dropdown"><a href="https://jquery.org/support/">Support</a>
+					<li class="dropdown"><a href="https://jquery.com/support/">Support</a>
 						<ul>
 							<li><a href="https://learn.jquery.com/">Learning Center</a></li>
-							<li><a href="https://irc.jquery.org/">IRC/Chat</a></li>
-							<li><a href="https://forum.jquery.com/">Forums</a></li>
+							<li><a href="https://jquery.com/support/">Chat</a></li>
 							<li><a href="https://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
-							<li><a href="https://jquery.org/support/">Commercial Support</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="https://openjsf.org/">OpenJS Foundation</a>

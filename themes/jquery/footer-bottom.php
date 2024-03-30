@@ -4,17 +4,13 @@
 			'icon' => 'pencil',
 			'url' => 'https://learn.jquery.com/'
 		),
-		'Forum' => array(
-			'icon' => 'group',
-			'url' => 'https://forum.jquery.com/',
+		'Chat' => array(
+			'icon' => 'comments',
+			'url' => 'https://jquery.com/support/'
 		),
 		'Twitter' => array(
 			'icon' => 'twitter',
 			'url' => get_option( 'jquery_twitter_link' ) ?: 'https://twitter.com/jquery'
-		),
-		'IRC' => array(
-			'icon' => 'comments',
-			'url' => 'https://irc.jquery.org/'
 		),
 		'GitHub' => array(
 			'icon' => 'github',
