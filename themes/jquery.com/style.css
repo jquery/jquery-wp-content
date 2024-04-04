@@ -117,25 +117,6 @@ a,
 	display: inline-block;
 }
 
-/* Browser Support */
-
-#content #support-matrix {
-	width: 100%;
-	margin: 0 auto 1em;
-}
-
-#support-matrix tbody tr {
-	border-bottom: none;
-}
-
-#support-matrix tbody tr:hover {
-	background-color: transparent;
-}
-
-#support-matrix td {
-	text-align: center;
-}
-
 /* Team */
 
 .page-slug-team .block-grid li {
