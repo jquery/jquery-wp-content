@@ -614,39 +614,6 @@ form input[type="submit"] {
 }
 
 /**
- * Left aligned labels
- */
-
-.left-labels label {
-	padding: 5px 0 0 0;
-	display: block;
-}
-
-.left-labels span {
-	margin: 0 10px 0 0;
-	min-width: 100px;
-
-	float: left;
-
-	text-align: left;
-}
-
-.left-labels .radio span {
-	padding-top: 5px;
-}
-
-.left-labels .radio {
-	display: block;
-}
-
-.left-labels .radio li label {
-	margin: 0;
-	padding: 0 0 5px 0;
-
-	border: 0;
-}
-
-/**
  * Label descriptions
  */
 
