@@ -101,27 +101,6 @@ a,
 	padding-left: 60px;
 }
 
-#content #corporate-members li {
-	background: none;
-	height: 150px;
-	text-align: center;
-}
-
-#corporate-members span {
-	display: inline-block;
-	height: 100%;
-	vertical-align: middle;
-}
-
-#corporate-members a {
-	height: 100%;
-}
-
-#corporate-members img {
-	vertical-align: middle;
-	max-height: 150px;
-}
-
 /* Project Tiles */
 
 #content .project-tiles {
