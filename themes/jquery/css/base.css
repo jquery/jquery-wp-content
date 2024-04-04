@@ -2543,6 +2543,10 @@ footer .books li a cite {
 	text-shadow: 0 1px 0 #fff;
 }
 
+#content .signatures li::marker {
+	content: "";
+}
+
 #content .signatures li {
 	list-style: none;
 	background: none;
