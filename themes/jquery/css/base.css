@@ -1387,6 +1387,7 @@ iframe {
 	text-decoration: none;
 	display: block;
 	padding: 8px 12px;
+	white-space: nowrap;
 }
 
 #global-nav nav ul li ul {
@@ -1394,7 +1395,7 @@ iframe {
 	position: absolute;
 	top: 32px;
 	left: -2px;
-	width: 120px;
+	min-width: 120px;
 	display: none;
 	opacity: 0;
 	visibility: hidden;
