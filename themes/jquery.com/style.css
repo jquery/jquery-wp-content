@@ -54,9 +54,6 @@ a,
 	transform: rotate(6.28rad);
 }
 
-#content #banner-secondary .downloads-box p {
-	margin: 15px 0 5px;
-}
 .download-options,
 .download-help {
 	margin-top: 1em;
