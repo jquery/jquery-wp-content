@@ -66,6 +66,7 @@
 							<li><a href="https://learn.jquery.com/">Learning Center</a></li>
 							<li><a href="https://jquery.com/support/">Chat</a></li>
 							<li><a href="https://stackoverflow.com/tags/jquery/info">Stack Overflow</a></li>
+							<li><a href="https://contribute.jquery.org/bug-reports/">Report a bug</a></li>
 						</ul>
 					</li>
 					<li class="dropdown"><a href="https://openjsf.org/">OpenJS Foundation</a>
