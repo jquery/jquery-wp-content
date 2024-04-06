@@ -31,8 +31,21 @@ foreach ( $options as $option => $value ) {
 }
 unset( $sites, $options, $option );
 
-// Disable WordPress auto-paragraphing for posts.
-remove_filter( 'the_content', 'wpautop' );
+// Remove misc links from <head> on non-blog sites
+if ( !get_option( 'jquery_is_blog' ) ) {
+	remove_action( 'wp_head', 'feed_links', 2 );
+	remove_action( 'wp_head', 'feed_links_extra', 3 );
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
+	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
+
+	// Remove shortlink <head> and header.
+	remove_action( 'wp_head',             'wp_shortlink_wp_head', 10 );
+	remove_action( 'template_redirect',   'wp_shortlink_header',  11 );
+
+	// Disable WordPress auto-paragraphing for posts, except on actual blog sites
+	remove_filter( 'the_content', 'wpautop' );
+}
 
 // Disable WordPress text transformations (smart quotes, etc.) for posts.
 remove_filter( 'the_content', 'wptexturize' );

@@ -16,7 +16,7 @@
 					<?php _e( 'Blog Archives', 'twentyeleven' ); ?>
 				<?php endif; ?>
 			</h1>
-			<hr class="dots">
+			<hr>
 		</header>
 
 		<?php

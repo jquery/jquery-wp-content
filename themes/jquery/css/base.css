@@ -17,7 +17,6 @@
 /*
  * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-
 article,
 aside,
 details,
@@ -35,7 +34,6 @@ summary {
 /*
  * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
-
 audio,
 canvas,
 video {
@@ -48,7 +46,6 @@ video {
  * Prevents modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-
 audio:not([controls]) {
 	display: none;
 	height: 0;
@@ -64,7 +61,6 @@ audio:not([controls]) {
  * 2. Prevents iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-
 html {
 	font-size: 100%; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
@@ -75,7 +71,6 @@ html {
  * Addresses `font-family` inconsistency between `textarea` and other form
  * elements.
  */
-
 html,
 button,
 input,
@@ -88,7 +83,6 @@ textarea {
 /*
  * Addresses margins handled incorrectly in IE 6/7.
  */
-
 body {
 	margin: 0;
 }
@@ -132,7 +126,6 @@ body {
 /*
  * Addresses `outline` inconsistency between Chrome and other browsers.
  */
-
 a:focus {
 	outline: thin dotted;
 }
@@ -140,7 +133,6 @@ a:focus {
 /*
  * Improves readability when focused and also mouse hovered in all browsers.
  */
-
 a:active,
 a:hover {
 	outline: 0;
@@ -193,7 +185,6 @@ h1, h2, h3, h4, h5, h6 {
 /*
  * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
-
 abbr[title] {
 	border-bottom: 1px dotted;
 }
@@ -201,7 +192,6 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
-
 b,
 strong {
 	font-weight: bold;
@@ -214,7 +204,6 @@ blockquote {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-
 dfn {
 	font-style: italic;
 }
@@ -222,7 +211,6 @@ dfn {
 /*
  * Addresses styling not present in IE 6/7/8/9.
  */
-
 mark {
 	background: #ff0;
 	color: #000;
@@ -231,7 +219,6 @@ mark {
 /*
  * Addresses margins set differently in IE 6/7.
  */
-
 p,
 pre {
 	margin: 1em 0;
@@ -240,7 +227,6 @@ pre {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-
 pre, code {
 	white-space: pre;
 	white-space: pre-wrap;
@@ -251,40 +237,34 @@ pre, code {
 }
 code {
 	padding: 0 3px;
-	background-color: #eee; /* support: IE8 */;
-	background-color: rgba( 0, 0, 0, .1 );
+	/* Prefer translucent shade over hardcoded light grey, so that <code> can be
+	   also be used in elements with white text and dark backgrounds,
+	   such as div.note on https://api.jqueryui.com/buttonset/
+	   https://github.com/jquery/jquery-wp-content/pull/314
+	 */
+	background-color: rgba( 0, 0, 0, 0.08 );
 	border-radius: 3px;
 }
 pre code {
 	background-color: transparent;
 	font-size: 16px;
-	font-weight: bold;
 	white-space: pre;
 	word-wrap: normal;
 }
 
-/*
- * Addresses CSS quotes not supported in IE 6/7.
- */
-
+/* Addresses CSS quotes not supported in IE 6/7. */
 q {
 	quotes: none;
 }
 
-/*
- * Addresses `quotes` property not supported in Safari 4.
- */
-
+/* Addresses `quotes` property not supported in Safari 4. */
 q:before,
 q:after {
 	content: '';
 	content: none;
 }
 
-/*
- * Prevents `sub` and `sup` affecting `line-height` in all browsers.
- */
-
+/* Prevents `sub` and `sup` affecting `line-height` in all browsers. */
 sub,
 sup {
 	font-size: 75%;
@@ -292,11 +272,9 @@ sup {
 	position: relative;
 	vertical-align: baseline;
 }
-
 sup {
 	top: -0.5em;
 }
-
 sub {
 	bottom: -0.25em;
 }
@@ -305,10 +283,7 @@ sub {
    Lists
    ========================================================================== */
 
-/*
- * Addresses margins set differently in IE 6/7.
- */
-
+/* Addresses margins set differently in IE 6/7. */
 dl,
 menu,
 ol,
@@ -320,20 +295,14 @@ dd {
 	margin: 0 0 0 40px;
 }
 
-/*
- * Addresses paddings set differently in IE 6/7.
- */
-
+/* Addresses paddings set differently in IE 6/7. */
 menu,
 ol,
 ul {
 	padding: 0;
 }
 
-/*
- * Corrects list images handled incorrectly in IE 7.
- */
-
+/* Corrects list images handled incorrectly in IE 7. */
 nav ul,
 nav ol {
 	list-style: none;
@@ -348,7 +317,6 @@ nav ol {
  * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improves image quality when scaled in IE 7.
  */
-
 img {
 	border: 0; /* 1 */
 	-ms-interpolation-mode: bicubic; /* 2 */
@@ -363,7 +331,6 @@ img {
 /*
  * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
-
 figure {
 	margin: 0;
 }
@@ -375,7 +342,6 @@ figure {
 /*
  * Corrects margin displayed oddly in IE 6/7.
  */
-
 form {
 	margin: 0;
 	padding: 10px 0;
@@ -384,7 +350,6 @@ form {
 /*
  * Define consistent border, margin, and padding.
  */
-
 fieldset {
 	border: 0;
 	margin: 0;
@@ -396,7 +361,6 @@ fieldset {
  * 2. Corrects text not wrapping in Firefox 3.
  * 3. Corrects alignment displayed oddly in IE 6/7.
  */
-
 legend {
 	border: 0; /* 1 */
 	padding: 0;
@@ -410,7 +374,6 @@ legend {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-
 button,
 input,
 select,
@@ -425,7 +388,6 @@ textarea {
  * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-
 button,
 input {
 	line-height: normal;
@@ -440,7 +402,6 @@ input {
  * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE 6.
  */
-
 button,
 html input[type="button"], /* 1 */
 input[type="reset"],
@@ -453,7 +414,6 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-
 button[disabled],
 input[disabled] {
 	cursor: default;
@@ -465,7 +425,6 @@ input[disabled] {
  * 3. Removes excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
-
 input[type="checkbox"],
 input[type="radio"] {
 	box-sizing: border-box; /* 1 */
@@ -479,7 +438,6 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-
 input[type="search"] {
 	-webkit-appearance: textfield;
 	box-sizing: content-box;
@@ -489,7 +447,6 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
@@ -498,7 +455,6 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in Firefox 3+.
  */
-
 button::-moz-focus-inner,
 input::-moz-focus-inner {
 	border: 0;
@@ -509,7 +465,6 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-
 textarea {
 	overflow: auto; /* 1 */
 	vertical-align: top; /* 2 */
@@ -532,15 +487,9 @@ textarea {
 
 	border: 1px solid rgba(192,192,192,0.49);
 	border-radius: 2px;
-
-	box-shadow: inset 0 1px 3px rgba(0,0,0,0.17);
 }
 
-::placeholder {
-	color: #9a1B1E;
-}
-
-#content input:focus,
+#content input:not([type]):focus,
 #content input[type="text"]:focus,
 #content input[type="email"]:focus,
 #content textarea:focus {
@@ -550,9 +499,6 @@ textarea {
 	background: #fff;
 
 	border: 1px solid #b24926;
-
-	box-shadow: 0 0 6px rgba(23,138,156,0.5),
-		inset 0 1px 3px rgba(0,0,0,0.2);
 }
 
 /**
@@ -569,11 +515,14 @@ textarea {
 	float: left;
 }
 
+#content .radio ul li::marker {
+	content: "";
+}
 #content .radio ul li {
+	list-style: none;
+	background: none;
 	margin: 0;
 	padding: 0;
-	background: none;
-	list-style-type: none;
 }
 
 .radio label {
@@ -596,7 +545,7 @@ input[type="checkbox"] {
  * Submit Buttons
  */
 
-form input[type="submit"] {
+.top-labels input[type="submit"] {
 	margin: 40px 0;
 	float: none;
 }
@@ -778,7 +727,7 @@ li [class*=" icon-"].icon-large,
   width: 1.5625em;
 }
 ul.icons {
-  list-style-type: none;
+  list-style: none;
   text-indent: -0.75em;
 }
 ul.icons li [class^="icon-"],
@@ -1761,12 +1710,12 @@ pre b {
 	font-size: 18px;
 	line-height: 26px;
 	font-style: italic;
+	text-shadow: 0 1px 0 #ffffff;
 }
 
 #content blockquote p {
 	margin-left: 0;
 	margin-bottom: 0;
-	text-shadow: 0 1px 0 #ffffff;
 }
 #content blockquote b,
 #content blockquote strong {
@@ -1797,10 +1746,6 @@ pre b {
 	background: none;
 }
 
-#content ol {
-	counter-reset: li; /* Initiate a counter */
-}
-
 #content ol > li {
 	position: relative; /* Give each list item a left margin to make room for the numbers */
 	list-style: none;
@@ -1809,52 +1754,12 @@ pre b {
 	margin-top: 5px;
 	margin-left: 30px;
 }
-#content ol > li:before {
-	content: counter(li); /* Use the counter as content */
-	counter-increment: li; /* Increment the counter by 1 */
-	/* Position and style the number */
-	position: absolute;
-	top: 1px;
-	left: -25px;
-	box-sizing: border-box;
-	/* Some space between the number and the content in browsers that support
-		generated content but not positioning it */
-	color: #fff;
-	text-align: center;
-	background-color: #ababab;
-	height: 19px;
-	width: 19px;
-	padding-top: 0;
-	font: bold 11px/19px Cairo, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	border-radius: 12px;
-}
-
-.lt-ie8 #content ol,
-.lt-ie7 #content ol {
-	margin-left: 20px;
-}
-
-.lt-ie8 #content ol li,
-.lt-ie7 #content ol li {
-	margin-left: 30px;
-	list-style-type: decimal;
-	padding-left: 0;
-}
 
 #content img.full,
 #content figure.full {
 	display: block;
 	width: 100%;
 	max-width: 100%;
-}
-
-.lt-ie8 #content figure img {
-	position: relative;
-}
-
-.lt-ie7 #content figure.full,
-.lt-ie8 #content figure.full {
-	width: 99%;
 }
 
 #content img.full,
@@ -1885,15 +1790,6 @@ pre b {
 #content figure.right {
 	float: right;
 	margin-left: 15px;
-}
-
-.lt-ie8 #content img.right,
-.lt-ie8 #content figure.right,
-.lt-ie7 #content img.right,
-.lt-ie7 #content figure.right {
-	float: left;
-	margin-left: 0;
-	margin-right: 15px;
 }
 
 #content img.left,
@@ -2127,7 +2023,16 @@ a.button:hover,
 #content a.button:hover,
 .button:hover,
 input[type="submit"]:hover {
+	border-color: #b24926;
 	background-color: #cc8540;
+}
+
+a.button:active,
+#content a.button:active,
+.button:active,
+input[type="submit"]:active {
+	border-color: #b24926;
+	background-color: #b24926;
 }
 
 a.button.large,
@@ -2481,6 +2386,7 @@ footer .books li a cite {
 	margin-top: 2em;
 }
 
+.pagination a,
 .page-numbers {
 	padding: 0 10px;
 }
@@ -2546,7 +2452,6 @@ footer .books li a cite {
 #content .signatures li::marker {
 	content: "";
 }
-
 #content .signatures li {
 	list-style: none;
 	background: none;

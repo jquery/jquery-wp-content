@@ -13,7 +13,7 @@
 			echo " | $site_description";
 	?></title>
 
-	<meta name="author" content="OpenJS Foundation - openjsf.org">
+	<meta name="author" content="<?php echo get_option( 'jquery_author', 'OpenJS Foundation - openjsf.org' ); ?>">
 	<meta name="description" content="<?php echo get_option( 'jquery_description', '' ); ?>">
 	<meta name="viewport" content="width=device-width">
 

@@ -23,6 +23,7 @@ get_header(); ?>
 			<h1 class="page-title author"><?php
 				printf( __( 'Author Archives: %s', 'twentyeleven' ), get_the_author() );
 			?></h1>
+			<hr>
 		</header>
 
 		<?php

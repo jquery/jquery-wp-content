@@ -161,7 +161,10 @@ function jq_comment( $comment, $args, $depth ) {
 	switch ( $comment->comment_type ) :
 		case 'pingback' :
 		case 'trackback' :
-			// no pingbacks or trackbacks
+?>
+	<li class="post pingback">
+		<p>Pingback: <?php comment_author_link(); ?><?php edit_comment_link( 'Edit', ' &bull; <span class="edit-link">', '</span>' ); ?></p>
+	<?php
 			break;
 		default :
 	?>
@@ -176,34 +179,27 @@ function jq_comment( $comment, $args, $depth ) {
 
 						echo get_avatar( $comment, $avatar_size );
 
-						/* translators: 1: comment author, 2: date and time */
-						printf( __( '%1$s on %2$s <span class="says">said:</span>', 'twentyeleven' ),
-							sprintf( '<span class="fn">%s</span>', get_comment_author_link() ),
-							sprintf( '<a href="%1$s"><time pubdate datetime="%2$s">%3$s</time></a>',
+						echo sprintf( '%1s on %2s:',
+							sprintf( '<span class="fn">%s</span>', esc_html( get_comment_author() ) ),
+							sprintf( '<a href="%1s"><time pubdate datetime="%2s">%3s</time></a>',
 								esc_url( get_comment_link( $comment->comment_ID ) ),
 								get_comment_time( 'c' ),
-								/* translators: 1: date, 2: time */
-								sprintf( __( '%1$s at %2$s', 'twentyeleven' ), get_comment_date(), get_comment_time() )
+								sprintf( '%1s at %2s', get_comment_date(), get_comment_time() )
 							)
 						);
-					?>
 
-					<?php edit_comment_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?>
-				</div><!-- .comment-author .vcard -->
-
+						edit_comment_link( __( 'Edit', 'twentyeleven' ), ' &bull; <span class="edit-link">', '</span>' ); ?>
+				</div>
 				<?php if ( $comment->comment_approved == '0' ) : ?>
 					<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'twentyeleven' ); ?></em>
-					<br />
+					<br>
 				<?php endif; ?>
-
 			</div>
-
 			<div class="comment-content"><?php comment_text(); ?></div>
-
 			<div class="reply">
 				<?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'Reply <span>&darr;</span>', 'twentyeleven' ), 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
-			</div><!-- .reply -->
-		</article><!-- #comment-## -->
+			</div>
+		</article>
 
 	<?php
 			break;
@@ -237,7 +233,7 @@ add_filter( 'body_class', function ( $classes ) {
 		$classes[] = 'single-author';
 	}
 
-	if ( is_singular() && ! is_home() && ! is_page_template( 'sidebar-page.php' ) )
+	if ( is_singular() && ! is_home() )
 		$classes[] = 'singular';
 
 	return $classes;

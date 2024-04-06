@@ -26,13 +26,16 @@
 		<?php endif; ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
+		<div class="entry-posted">
 			<?php jq_posted_on(); ?>
 		</div>
 		<?php endif; ?>
 	</header>
 
-	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
+	<?php
+	// Show excerpt in search, archives (year, author, category), and non-latest items on blog homepage
+	if ( ( is_home() && get_next_post_link() ) || is_archive() || is_search() ) :
+	?>
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div>

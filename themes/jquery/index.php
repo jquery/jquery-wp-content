@@ -13,6 +13,8 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();
 				get_template_part( 'content' );
 			endwhile;
+
+			echo jq_content_nav();
 		?>
 
 	<?php else : ?>

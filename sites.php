@@ -26,10 +26,14 @@ function jquery_sites() {
 			'blog_id' => 2,
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
-				'blogname' => 'jQuery Blog',
-				'stylesheet' => 'blog-jquery-com',
-				// 'permalink_structure' => '/%category%/%postname%/',
+				'blogname' => 'Official jQuery Blog',
+				'blogdescription' => 'New Wave JavaScript',
+				'jquery_author' => 'jQuery Team - jquery.com',
+				'jquery_description' => 'jQuery: The Write Less, Do More, JavaScript Library',
+				'stylesheet' => 'blog.jquery.com',
 				'jquery_body_class' => 'jquery',
+				'permalink_structure' => '/%year%/%monthnum%/%day%/%postname%/',
+				'jquery_is_blog' => true,
 			),
 		),
 		'api.jquery.com' => array(
@@ -395,10 +399,11 @@ function jquery_default_site_options() {
 		'blogdescription' => '',
 		'permalink_structure' => '/%postname%/',
 		'use_smilies' => 0,
+
 		// The one site where comments are sometimes enabled (blog.jquery.com)
 		// has always had thread_comments turned off.
 		//
-		// Oher sites like api.jquery.com implement their pages as posts,
+		// Other sites like api.jquery.com implement their pages as posts,
 		// but naturally don't support comments at all. Turn this off to
 		// remove the WordPress comment-reply script from pages by default.
 		'thread_comments' => 0,

@@ -10,11 +10,11 @@ get_header(); ?>
 
 			<?php the_post(); ?>
 
-			<nav id="nav-single">
+			<nav class="pagination">
 				<h3 class="assistive-text"><?php _e( 'Image navigation', 'twentyeleven' ); ?></h3>
-				<span class="nav-previous"><?php previous_image_link( false, __( '&larr; Previous' , 'twentyeleven' ) ); ?></span>
-				<span class="nav-next"><?php next_image_link( false, __( 'Next &rarr;' , 'twentyeleven' ) ); ?></span>
-			</nav><!-- #nav-single -->
+				<?php previous_image_link( false, __( '&larr; Previous' , 'twentyeleven' ) ); ?>
+				<?php next_image_link( false, __( 'Next &rarr;' , 'twentyeleven' ) ); ?>
+			</nav>
 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<header class="entry-header">
