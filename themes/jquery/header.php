@@ -57,7 +57,7 @@
 							<li><a href="https://contribute.jquery.org/web-sites/">Web Sites</a></li>
 						</ul>
 					</li>
-					<li class="dropdown"><a href="https://js.foundation/events">Events</a>
+					<li class="dropdown"><a href="https://events.jquery.org/">Events</a>
 						<ul class="wide">
 						</ul>
 					</li>
