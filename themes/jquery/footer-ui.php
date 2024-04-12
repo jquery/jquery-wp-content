@@ -4,7 +4,7 @@
 <footer class="clearfix simple">
 	<div class="constrain">
 		<div class="row">
-			<div class="six columns offset-by-three">
+			<div class="six columns centered">
 				<h3><span>Books</span></h3>
 				<ul class="books">
 					<li>

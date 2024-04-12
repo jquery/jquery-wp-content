@@ -2686,83 +2686,43 @@ Based on Zurb Foundation's Grid
 [class*="column"] + [class*="column"].end { float: left; }
 
 .one, .row .one { width: 8.33333%; }
-
 .two, .row .two { width: 16.66667%; }
-
 .three, .row .three { width: 25%; }
-
 .four, .row .four { width: 33.33333%; }
-
 .five, .row .five { width: 41.66667%; }
-
 .six, .row .six { width: 50%; }
-
 .seven, .row .seven { width: 58.33333%; }
-
 .eight, .row .eight { width: 66.66667%; }
-
 .nine, .row .nine { width: 75%; }
-
 .ten, .row .ten { width: 83.33333%; }
-
 .eleven, .row .eleven { width: 91.66667%; }
-
 .twelve, .row .twelve { width: 100%; }
 
-.row .offset-by-one { margin-left: 8.33333%; }
-
-.row .offset-by-two { margin-left: 16.66667%; }
-
-.row .offset-by-three { margin-left: 25%; }
-
-.row .offset-by-four { margin-left: 33.33333%; }
-
-.row .offset-by-five { margin-left: 41.66667%; }
-
-.row .offset-by-six { margin-left: 50%; }
-
-.row .offset-by-seven { margin-left: 58.33333%; }
-
-.row .offset-by-eight { margin-left: 66.66667%; }
-
-.row .offset-by-nine { margin-left: 75%; }
-
-.row .offset-by-ten { margin-left: 83.33333%; }
-
 .push-two { left: 16.66667%; }
-
 .pull-two { right: 16.66667%; }
 
 .push-three { left: 25%; }
-
 .pull-three { right: 25%; }
 
 .push-four { left: 33.33333%; }
-
 .pull-four { right: 33.33333%; }
 
 .push-five { left: 41.66667%; }
-
 .pull-five { right: 41.66667%; }
 
 .push-six { left: 50%; }
-
 .pull-six { right: 50%; }
 
 .push-seven { left: 58.33333%; }
-
 .pull-seven { right: 58.33333%; }
 
 .push-eight { left: 66.66667%; }
-
 .pull-eight { right: 66.66667%; }
 
 .push-nine { left: 75%; }
-
 .pull-nine { right: 75%; }
 
 .push-ten { left: 83.33333%; }
-
 .pull-ten { right: 83.33333%; }
 
 img, object, embed { max-width: 100%; height: auto; }
@@ -2784,7 +2744,6 @@ object, embed { height: 100%; }
 	[class*="column"] + [class*="column"]:last-child { float: none; }
 	.column:before, .columns:before, .column:after, .columns:after { content: ""; display: table; }
 	.column:after, .columns:after { clear: both; }
-	.offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten { margin-left: 0 !important; }
 	.push-two, .push-three, .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten { left: auto; }
 	.pull-two, .pull-three, .pull-four, .pull-five, .pull-six, .pull-seven, .pull-eight, .pull-nine, .pull-ten { right: auto; }
 	/* Mobile 4-column Grid */
