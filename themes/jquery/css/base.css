@@ -9,8 +9,6 @@
    ========================================================================== */
 
 * {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -32,14 +30,12 @@ summary {
 }
 
 /*
- * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ * Corrects `inline-block` display.
  */
 audio,
 canvas,
 video {
 	display: inline-block;
-	*display: inline;
-	*zoom: 1;
 }
 
 /*
@@ -64,7 +60,6 @@ audio:not([controls]) {
 html {
 	font-size: 100%; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
-	-ms-text-size-adjust: 100%; /* 2 */
 }
 
 /*
@@ -80,9 +75,6 @@ textarea {
 	color: #333;
 }
 
-/*
- * Addresses margins handled incorrectly in IE 6/7.
- */
 body {
 	margin: 0;
 }
@@ -202,14 +194,6 @@ dfn {
 }
 
 /*
- * Addresses styling not present in IE 6/7/8/9.
- */
-mark {
-	background: #ff0;
-	color: #000;
-}
-
-/*
  * Addresses margins set differently in IE 6/7.
  */
 p,
@@ -308,11 +292,9 @@ nav ol {
 
 /*
  * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
- * 2. Improves image quality when scaled in IE 7.
  */
 img {
 	border: 0; /* 1 */
-	-ms-interpolation-mode: bicubic; /* 2 */
 	vertical-align: middle;
 	max-width: 100%;
 }
@@ -352,13 +334,11 @@ fieldset {
 /*
  * 1. Corrects color not being inherited in IE 6/7/8/9.
  * 2. Corrects text not wrapping in Firefox 3.
- * 3. Corrects alignment displayed oddly in IE 6/7.
  */
 legend {
 	border: 0; /* 1 */
 	padding: 0;
 	white-space: normal; /* 2 */
-	*margin-left: -7px; /* 3 */
 }
 
 /*
@@ -374,7 +354,6 @@ textarea {
 	font-size: 100%; /* 1 */
 	margin: 0; /* 2 */
 	vertical-align: baseline; /* 3 */
-	*vertical-align: middle; /* 3 */
 }
 
 /*
@@ -392,8 +371,6 @@ input {
  * 2. Corrects inability to style clickable `input` types in iOS.
  * 3. Improves usability and consistency of cursor style between image-type
  *    `input` and others.
- * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
- *    Known issue: inner spacing remains in IE 6.
  */
 button,
 html input[type="button"], /* 1 */
@@ -401,7 +378,6 @@ input[type="reset"],
 input[type="submit"] {
 	-webkit-appearance: button; /* 2 */
 	cursor: pointer; /* 3 */
-	*overflow: visible;  /* 4 */
 }
 
 /*
@@ -415,21 +391,16 @@ input[disabled] {
 /*
  * 1. Addresses box sizing set to content-box in IE 8/9.
  * 2. Removes excess padding in IE 8/9.
- * 3. Removes excess padding in IE 7.
- *    Known issue: excess padding remains in IE 6.
  */
 input[type="checkbox"],
 input[type="radio"] {
 	box-sizing: border-box; /* 1 */
 	padding: 0; /* 2 */
-	*height: 13px; /* 3 */
-	*width: 13px; /* 3 */
 }
 
 /*
  * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome.
  */
 input[type="search"] {
 	-webkit-appearance: textfield;
@@ -2583,7 +2554,6 @@ footer .books li a cite {
 	background-color: transparent;
 	border: 0;
 	overflow: hidden;
-	*text-indent: -9999px;
 }
 
 .ir:before {
@@ -2631,10 +2601,6 @@ footer .books li a cite {
 
 .clearfix:after {
 	clear: both;
-}
-
-.clearfix {
-	*zoom: 1;
 }
 
 /* Print styles
@@ -2807,12 +2773,9 @@ img, object, embed { max-width: 100%; height: auto; }
 
 object, embed { height: 100%; }
 
-img { -ms-interpolation-mode: bicubic; }
-
 #map_canvas img, .map_canvas img { max-width: none!important; }
 
 /* Nicolas Gallagher's micro clearfix */
-.row { *zoom: 1; }
 .row:before, .row:after { content: ""; display: table; }
 .row:after { clear: both; }
 
@@ -3144,8 +3107,6 @@ pre .diff .hljs-comment {
 .syntaxhighlighter table td.gutter .line {
 	text-align: right !important;
 	padding: 0 0.5em 0 1em !important;
-	-webkit-user-select: none;
-	-ms-user-select: none;
 	user-select: none;
 }
 .syntaxhighlighter table td.code .line {
