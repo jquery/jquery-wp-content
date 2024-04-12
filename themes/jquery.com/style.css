@@ -119,6 +119,41 @@ a,
 
 /* Team */
 
+.block-grid,
+#content .block-grid {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 -12px;
+}
+.block-grid li,
+#content .block-grid li {
+	display: block;
+	margin: 0;
+	padding: 0 12px 12px;
+}
+.block-grid.two-up li,
+#content .block-grid.two-up li {
+	width: 50%;
+}
+.block-grid.three-up li,
+#content .block-grid.three-up li {
+	width: 33.33%;
+}
+.block-grid.four-up li,
+#content .block-grid.four-up li {
+	width: 25%;
+}
+.block-grid.five-up li,
+#content .block-grid.five-up li {
+	width: 20%;
+}
+@media only screen and (max-width: 767px) {
+	.block-grid.mobile-one-up li { width: 100% !important; }
+	.block-grid.mobile-two-up li { width: 50% !important; }
+	.block-grid.mobile-three-up li { width: 33.33% !important; }
+	.block-grid.mobile-four-up li { width: 25% !important; }
+}
+
 .page-slug-team .block-grid li {
 	text-align: center;
 }
@@ -129,7 +164,6 @@ a,
 .page-slug-team .block-grid p {
 	text-align: left;
 }
-
 .page-slug-team #content h2 {
 	color: #333;
 	font-size: 20px;
@@ -138,7 +172,6 @@ a,
 	text-align: center;
 	margin-bottom: 5px;
 }
-
 .page-slug-team #content h3 {
 	color: #0769ad;
 	font-style: italic;

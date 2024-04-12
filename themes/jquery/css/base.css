@@ -1370,10 +1370,6 @@ pre b {
 	color: #ccc;
 }
 
-#content ul.block-grid li {
-	background: none;
-}
-
 #content ol > li {
 	position: relative; /* Give each list item a left margin to make room for the numbers */
 	list-style: none;
@@ -2814,45 +2810,6 @@ object, embed { height: 100%; }
 	.pull-two-mobile { right: 50%; }
 	.push-three-mobile { left: 75%; }
 	.pull-three-mobile { right: 75%; }
-}
-
-
-/* Block Grids */
-.block-grid,
-#content .block-grid {
-	display: flex;
-	flex-flow: row wrap;
-	margin: 0 -12px;
-}
-.block-grid > li,
-#content .block-grid > li {
-	display: block;
-	margin: 0;
-	padding: 0 12px 12px;
-}
-.block-grid.two-up > li,
-#content .block-grid.two-up > li {
-	width: 50%;
-}
-.block-grid.three-up > li,
-#content .block-grid.three-up > li {
-	width: 33.33%;
-}
-.block-grid.four-up > li,
-#content .block-grid.four-up > li {
-	width: 25%;
-}
-.block-grid.five-up > li,
-#content .block-grid.five-up > li {
-	width: 20%;
-}
-
-/* Mobile Block Grids */
-@media only screen and (max-width: 767px) {
-	.block-grid.mobile-one-up > li { width: 100% !important; }
-	.block-grid.mobile-two-up > li { width: 50% !important; }
-	.block-grid.mobile-three-up > li { width: 33.33% !important; }
-	.block-grid.mobile-four-up > li { width: 25% !important; }
 }
 
 /* Syntax Highlighting ---------------------- */
