@@ -15,20 +15,10 @@ Template: jquery
 /* Headlines */
 
 #content h2 {
-	font-size: 30px;
-	line-height: 1.8;
-	color: #333;
 	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-#content h3 {
-	font-size: 22px;
-	line-height: 1.5;
-	color: #444;
 }
 #content h4 {
 	font-size: 18px;
-	line-height: 1.2;
 }
 #banner-secondary.large-banner h1,
 #banner-secondary.large-banner h2 {
@@ -36,18 +26,10 @@ Template: jquery
 	text-transform: uppercase;
 }
 
-h6.h-klavika {
-	font-size: 46px;
-	line-height: 1.2;
-	margin-bottom: 30px;
-}
-h6.h-klavika em {
-	color: #333;
-}
-
-h6.h-helvetica {
-	font: 400 46px/1.2 Helvetica, "Helvetica Neue", Arial, sans-serif !important;
-	margin-bottom: 30px;
+#content .h-h1-size {
+	font-weight: bold;
+	line-height: 36px;
+	font-size: 36px;
 }
 
 /* Color Swatches */
@@ -57,19 +39,18 @@ h6.h-helvetica {
 	color: #fff;
 	padding: 20px;
 }
-.color * {
-	opacity: 0.9;	
-}
-#content .color h6 {
-	font: 800 14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-	margin-bottom: 4px;
+#content .color h3 {
+	color: inherit;
 }
 #content .color ul {
 	margin: 0;
 	padding: 0;
 }
+#content .color li::marker {
+	content: "":
+}
 #content .color li {
-	list-style-type: none;
+	list-style: none;
 	background: none;
 	margin: 0;
 	padding: 0;
@@ -78,9 +59,6 @@ h6.h-helvetica {
 }
 
 /* Misc Content */
-p {
-	font: 16px/1.5 Helvetica, "Helvetica Neue", Arial, sans-serif;
-}
 .figcaption {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -89,7 +67,7 @@ p {
 #banner-secondary p {
 	padding-left: 0;
 	color: #fff;
-} 
+}
 hr {
 	display: block;
 	clear: both;
