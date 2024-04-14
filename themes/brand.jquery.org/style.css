@@ -47,7 +47,7 @@ Template: jquery
 	padding: 0;
 }
 #content .color li::marker {
-	content: "":
+	content: "";
 }
 #content .color li {
 	list-style: none;
