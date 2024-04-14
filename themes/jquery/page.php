@@ -4,7 +4,12 @@
 
 <div class="content-right twelve columns">
 	<div id="content">
-		<?php if ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
+		<?php if ( get_post_meta( $post->ID, "subtitle" ) ) : ?>
+		<div id="banner-secondary" class="large-banner">
+			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<p><?php echo get_post_meta( $post->ID, "subtitle", true ); ?></p>
+		</div>
+		<?php elseif ( !count( get_post_meta( $post->ID, "hide_title" ) ) ) : ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<hr>
 		<?php endif; ?>

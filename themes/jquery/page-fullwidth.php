@@ -10,7 +10,7 @@
 <div class="content-full full-width twelve columns">
 	<div id="content">
 		<?php if ( get_post_meta( $post->ID, "subtitle" ) ) : ?>
-		<div id="banner-secondary" class="large-banner entry-header">
+		<div id="banner-secondary" class="large-banner">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<p><?php echo get_post_meta( $post->ID, "subtitle", true ); ?></p>
 		</div>
