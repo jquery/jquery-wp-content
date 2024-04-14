@@ -28,7 +28,7 @@
 	<aside class="widget">
 		<h3 class="widget-title"><a href="/typography/">Typography</a></h3>
 		<ul>
-			<li><a href="/typography/#klavika">Klavika</a></li>
+			<li><a href="/typography/#cario">Cario</a></li>
 			<li><a href="/typography/#helvetica">Helvetica</a></li>
 			<li><a href="/typography/#quagmire">Quagmire</a></li>
 		</ul>
