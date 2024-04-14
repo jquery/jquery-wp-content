@@ -66,7 +66,7 @@ a,
 }
 #comments .commentlist > li.pingback {
 	margin: 0 0 1em 60px;
-	padding: 0 1.625em;
+	padding: 0;
 }
 .comment-meta .fn {
 	font-style: normal;

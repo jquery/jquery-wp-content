@@ -162,8 +162,8 @@ function jq_comment( $comment, $args, $depth ) {
 		case 'pingback' :
 		case 'trackback' :
 ?>
-	<li class="post pingback">
-		<p>Pingback: <?php comment_author_link(); ?><?php edit_comment_link( 'Edit', ' &bull; <span class="edit-link">', '</span>' ); ?></p>
+	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>">
+		<p><span class="icon-link"></span> Pingback: <?php comment_author_link(); ?><?php edit_comment_link( 'Edit', ' &bull; <span class="edit-link">', '</span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -182,7 +182,7 @@ function jq_comment( $comment, $args, $depth ) {
 						echo sprintf( '%1s on %2s:',
 							sprintf( '<span class="fn">%s</span>', esc_html( get_comment_author() ) ),
 							sprintf( '<a href="%1s"><time pubdate datetime="%2s">%3s</time></a>',
-								esc_url( get_comment_link( $comment->comment_ID ) ),
+								esc_url( get_comment_link() ),
 								get_comment_time( 'c' ),
 								sprintf( '%1s at %2s', get_comment_date(), get_comment_time() )
 							)
@@ -219,6 +219,19 @@ function jq_posted_on() {
 		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
 		sprintf( esc_attr__( 'View all posts by %s', 'twentyeleven' ), get_the_author() ),
 		esc_html( get_the_author() )
+	);
+}
+
+function jq_image_posted_on() {
+	printf( __( '<span class="sep">Published in </span><a href="%1$s" title="Return to %2$s" rel="gallery">%2$s</a>' ),
+		esc_url( get_permalink( wp_get_post_parent_id() ) ),
+		get_the_title( wp_get_post_parent_id() )
+	);
+	$metadata = wp_get_attachment_metadata();
+	printf( __( '<a href="%1$s" title="Link to full-size image">%2$s &times; %3$s</a>' ),
+		esc_url( wp_get_attachment_url() ),
+		$metadata['width'],
+		$metadata['height'],
 	);
 }
 
