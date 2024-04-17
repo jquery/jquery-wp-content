@@ -87,11 +87,6 @@ a {
 }
 
 /* Helpers */
-.db {
-	display: inline-block;
-	float: none !important;
-	clear: both;
-}
 .p-small {
 	padding-bottom: 20px;
 }

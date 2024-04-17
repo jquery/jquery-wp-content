@@ -534,6 +534,16 @@ label .field-description {
 	font-size: 0.8em;
 }
 
+/**
+ * Button
+ */
+
+.db {
+	display: inline-block;
+	float: none !important;
+	clear: both;
+}
+
 /* ==========================================================================
    Tables
    ========================================================================== */
