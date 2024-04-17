@@ -1954,7 +1954,8 @@ footer .books li a cite {
 	text-decoration: none;
 }
 
-.entry-meta {
+.entry-meta,
+.entry-posted {
 	color: #999;
 	font-size: 12px;
 }
@@ -1980,6 +1981,23 @@ footer .books li a cite {
 
 .post-heirarchy {
 	margin-bottom: 0.75em;
+}
+
+/* WordPress requirements for theme and content */
+
+.assistive-text,
+.screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+}
+.alignright {
+	float: right;
+}
+.alignleft {
+	float: left;
 }
 
 /* Listing Pages (categories, searches, etc.)

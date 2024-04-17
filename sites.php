@@ -30,7 +30,7 @@ function jquery_sites() {
 				'blogdescription' => 'New Wave JavaScript',
 				'jquery_author' => 'jQuery Team - jquery.com',
 				'jquery_description' => 'jQuery: The Write Less, Do More, JavaScript Library',
-				'stylesheet' => 'blog.jquery.com',
+				'stylesheet' => 'jquery.com',
 				'jquery_body_class' => 'jquery',
 				'permalink_structure' => '/%year%/%monthnum%/%day%/%postname%/',
 				'jquery_is_blog' => true,
