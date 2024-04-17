@@ -77,10 +77,13 @@ a,
 	margin: 0;
 }
 
+#content .dev-links li::marker {
+	content: "";
+}
 #content .dev-links li {
+	list-style: none;
 	padding: 0;
 	margin: .25em 0 .25em 1em;
-	background-image: none;
 }
 
 .demo-list {
