@@ -5,9 +5,17 @@ function jquery_sites() {
 	if ( isset( $sites ) )
 		return $sites;
 
-	$sites = array( /* blog_id, cookie domain */
+	# Historical: Formerly hosted plugins.jquery.com
+	# Historical: Formerly hosted qunitjs.com
+	# Historical: Formerly hosted sizzlejs.com
+	# Historical: Formerly hosted api.qunitjs.com
+	# Historical: Formerly hosted books.jquery.com
+	# Historical: Formerly hosted events.jquery.org
+	# Historical: Formerly hosted irc.jquery.org.
+	# Historical: Formerly hosted codeorigin.jquery.com
+
+	$sites = array(
 		'jquery.com' => array(
-			'blog_id' => 1,
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'jQuery',
@@ -23,7 +31,6 @@ function jquery_sites() {
 			),
 		),
 		'blog.jquery.com' => array(
-			'blog_id' => 2,
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'Official jQuery Blog',
@@ -37,7 +44,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jquery.com' => array(
-			'blog_id' => 3,
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'jQuery API Documentation',
@@ -51,9 +57,7 @@ function jquery_sites() {
 				'jquery_typesense_collection' => 'jquery_com',
 			),
 		),
-		# Historical: Database blog_id 4 is reserved for plugins.jquery.com
 		'learn.jquery.com' => array(
-			'blog_id' => 5,
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'jQuery Learning Center',
@@ -65,7 +69,6 @@ function jquery_sites() {
 			),
 		),
 		'jqueryui.com' => array(
-			'blog_id' => 6,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI',
@@ -81,7 +84,6 @@ function jquery_sites() {
 			),
 		),
 		'blog.jqueryui.com' => array(
-			'blog_id' => 7,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI Blog',
@@ -92,7 +94,6 @@ function jquery_sites() {
 		),
 		'api.jqueryui.com' => array(
 			'subsites' => true, // Has one level of sub-sites (api.jqueryui.com/([^/]+))
-			'blog_id' => 8,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI API Documentation',
@@ -108,7 +109,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jqueryui.com/1.8' => array(
-			'blog_id' => 17,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.8 Documentation',
@@ -125,7 +125,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jqueryui.com/1.9' => array(
-			'blog_id' => 21,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.9 Documentation',
@@ -142,7 +141,6 @@ function jquery_sites() {
 			),
 		),
 		'jquery.org' => array(
-			'blog_id' => 9,
 			'cookie_domain' => '.jquery.org',
 			'options' => array(
 				'blogname' => 'jQuery Foundation',
@@ -153,10 +151,7 @@ function jquery_sites() {
 				'jquery_body_class' => 'jquery-foundation',
 			),
 		),
-		# Historical: Database blog_id 10 is reserved for qunitjs.com.
-		# Historical: Database blog_id 11 is reserved for sizzlejs.com.
 		'jquerymobile.com' => array(
-			'blog_id' => 12,
 			'cookie_domain' => '.jquerymobile.com',
 			'options' => array(
 				'blogname' => 'jQuery Mobile',
@@ -172,7 +167,6 @@ function jquery_sites() {
 		),
 		'api.jquerymobile.com' => array(
 			'subsites' => true, // Has one level of sub-sites (api.jquerymobile.com/([^/]+))
-			'blog_id' => 13,
 			'cookie_domain' => '.jquerymobile.com',
 			'options' => array(
 				'blogname' => 'jQuery Mobile API Documentation',
@@ -187,11 +181,7 @@ function jquery_sites() {
 				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
 			),
 		),
-		# Historical: Database blog_id 14 is reserved for api.qunitjs.com.
-		# Historical: Database blog_id 15 is reserved for books.jquery.com
-		# Historical: Database blog_id 16 is reserved for events.jquery.org
 		'brand.jquery.org' => array(
-			'blog_id' => 18,
 			'cookie_domain' => '.jquery.org',
 			'options' => array(
 				'blogname' => 'jQuery Brand Guidelines',
@@ -203,7 +193,6 @@ function jquery_sites() {
 			),
 		),
 		'contribute.jquery.org' => array(
-			'blog_id' => 19,
 			'cookie_domain' => '.jquery.org',
 			'options' => array(
 				'blogname' => 'Contribute to jQuery',
@@ -214,9 +203,7 @@ function jquery_sites() {
 				'jquery_body_class' => 'jquery-foundation',
 			),
 		),
-		# Historical: Database blog_id 20 is reserved for irc.jquery.org.
 		'meetings.jquery.org' => array(
-			'blog_id' => 22,
 			'cookie_domain' => '.jquery.org',
 			'options' => array(
 				'blogname' => 'jQuery Meetings',
@@ -227,9 +214,7 @@ function jquery_sites() {
 				'jquery_body_class' => 'jquery-foundation',
 			),
 		),
-		# Historical: Database blog_id 23 is reserved for codeorigin.jquery.com
 		'api.jquerymobile.com/1.3' => array(
-			'blog_id' => 24,
 			'cookie_domain' => '.jquerymobile.com',
 			'options' => array(
 				'blogname' => 'jQuery Mobile 1.3 Documentation',
@@ -246,7 +231,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jqueryui.com/1.10' => array(
-			'blog_id' => 25,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.10 Documentation',
@@ -263,7 +247,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jqueryui.com/1.12' => array(
-			'blog_id' => 26,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.12 Documentation',
@@ -280,7 +263,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jqueryui.com/1.11' => array(
-			'blog_id' => 27,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.11 Documentation',
@@ -297,7 +279,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jquerymobile.com/1.4' => array(
-			'blog_id' => 28,
 			'cookie_domain' => '.jquerymobile.com',
 			'options' => array(
 				'blogname' => 'jQuery Mobile 1.4 Documentation',
@@ -314,7 +295,6 @@ function jquery_sites() {
 			),
 		),
 		'releases.jquery.com' => array(
-			'blog_id' => 29,
 			'cookie_domain' => '.jquery.com',
 			'options' => array(
 				'blogname' => 'jQuery CDN',
@@ -327,7 +307,6 @@ function jquery_sites() {
 			),
 		),
 		'api.jqueryui.com/1.13' => array(
-			'blog_id' => 30,
 			'cookie_domain' => '.jqueryui.com',
 			'options' => array(
 				'blogname' => 'jQuery UI 1.13 Documentation',
@@ -345,13 +324,6 @@ function jquery_sites() {
 		),
 	);
 
-	uasort( $sites, function( $a, $b ) {
-		if ( $a['blog_id'] == $b['blog_id'] )
-			die( 'Two sites have the same blog_id.' );
-		if ( $a['blog_id'] > $b['blog_id'] )
-			return 1;
-		return -1;
-	} );
 	return $sites;
 }
 
