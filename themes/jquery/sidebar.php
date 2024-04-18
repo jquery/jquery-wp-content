@@ -3,7 +3,7 @@
  * The default sidebar lists categories, up to 2 levels deep.
  */
 if ( get_option( 'jquery_is_blog' ) ):
-	require __DIR__ . '/sidebar-blogpost.php';
+	get_template_part( 'sidebar-blogpost' );
 else:
 ?>
 <div id="sidebar" class="widget-area" role="complementary">

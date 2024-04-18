@@ -1,1 +1,1 @@
-<?php get_template_part( 'footer', 'mobile' ); ?>
+<?php get_template_part( 'footer', 'mobile' );

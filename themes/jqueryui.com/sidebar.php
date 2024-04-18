@@ -1,4 +1,8 @@
-<div id="sidebar" class="widget-area" role="complementary">
+<?php
+if ( get_option( 'jquery_is_blog' ) ):
+	get_template_part( 'sidebar-blogpost' );
+else:
+?><div id="sidebar" class="widget-area" role="complementary">
 	<aside class="widget">
 		<h3 class="widget-title">Interactions</h3>
 		<ul>
@@ -24,3 +28,5 @@
 		</ul>
 	</aside>
 </div>
+<?php
+endif;

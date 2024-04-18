@@ -1,1 +1,1 @@
-<?php get_template_part( 'footer', 'ui' ); ?>
+<?php get_template_part( 'footer', 'ui' );
