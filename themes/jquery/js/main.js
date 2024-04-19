@@ -1,3 +1,6 @@
+// Some CSS depends on the `js` class.
+$( "html" ).addClass( "js" ).removeClass( "no-js" );
+
 /*
  * All sites
  */
