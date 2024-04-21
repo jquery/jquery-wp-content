@@ -33,6 +33,11 @@ with this program; if not, write to the Free Software Foundation, Inc.,
   https://github.com/scottgonzalez/grunt-wordpress
   located at plugins/gilded-wordpress
 
+- Memcached
+  https://wordpress.org/plugins/memcached/
+  https://github.com/Automattic/wp-memcached/tree/35e1ea16f6b8cb8a1e6fbca124e33a44db21fa74 (2023-12-11)
+  located at plugins/memcached/
+
 - No Comments on Pages
   https://wordpress.org/plugins/no-comments-on-pages/
   located at plugins/no-comments-on-pages
