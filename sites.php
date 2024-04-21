@@ -391,6 +391,14 @@ function jquery_default_site_options() {
 		'permalink_structure' => '/%postname%/',
 		'use_smilies' => 0,
 
+		'close_comments_days_old' => 14,
+		'close_comments_for_old_posts' => 1,
+		'comment_moderation' => 1,
+		'comments_notify' => 0,
+		'default_comment_status' => 'closed',
+		'default_ping_status' => 'closed',
+		'show_comments_cookies_opt_in' => 0,
+
 		// The one site where comments are sometimes enabled (blog.jquery.com)
 		// has always had thread_comments turned off.
 		//
