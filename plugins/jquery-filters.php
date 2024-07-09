@@ -14,16 +14,19 @@ $options = jquery_default_site_options();
 $sites = jquery_sites();
 $options = array_merge( $options, $sites[ JQUERY_LIVE_SITE ]['options'] );
 foreach ( $options as $option => $value ) {
-	if ( $option === 'stylesheet' || $option === 'template' ) {
-		// Don't mess with themes for now.
-		continue;
-	}
-	if ( $option === 'active_plugins' ) {
-		// Deprecated
-		// In production, Puppet manages activation of per-site plugins.
-		// Locally, global plugins are enabled via mu-plugins/_loader.php,
-		// and per-site plugins are activated by the imported database.
-		continue;
+	// Skip these in production, where they are managed by puppet.
+	// Staging should be allowed to set them for testing.
+	// Local testing with a fresh database does not
+	// currently work if these are skipped.
+	if ( !JQUERY_STAGING ) {
+		if ( $option === 'stylesheet' || $option === 'template' ) {
+			// Don't mess with themes for now.
+			continue;
+		}
+		if ( $option === 'active_plugins' ) {
+			// In production, Puppet manages activation of per-site plugins.
+			continue;
+		}
 	}
 	add_filter( 'pre_option_' . $option, function () use ( $value ) {
 		return $value;
