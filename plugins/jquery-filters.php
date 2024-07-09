@@ -16,6 +16,8 @@ $options = array_merge( $options, $sites[ JQUERY_LIVE_SITE ]['options'] );
 foreach ( $options as $option => $value ) {
 	// Skip these in production, where they are managed by puppet.
 	// Staging should be allowed to set them for testing.
+	// Local testing with a fresh database does not
+	// currently work if these are skipped.
 	if ( !JQUERY_STAGING ) {
 		if ( $option === 'stylesheet' || $option === 'template' ) {
 			// Don't mess with themes for now.
