@@ -22,7 +22,6 @@ foreach ( $options as $option => $value ) {
 			continue;
 		}
 		if ( $option === 'active_plugins' ) {
-			// Deprecated
 			// In production, Puppet manages activation of per-site plugins.
 			// Locally, global plugins are enabled via mu-plugins/_loader.php,
 			// and per-site plugins are activated by the imported database.
