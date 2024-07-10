@@ -50,7 +50,7 @@
 			category from the sidebar.</p>
 
 		<p>jQuery UI <?php echo $thisVersion; ?>
-			supports jQuery <?php echo $versions[ $thisVersion ]; ?>.</p>
+			supports <?php echo $versions[ $thisVersion ]; ?>.</p>
 
 		<hr>
 
