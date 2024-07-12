@@ -14,17 +14,18 @@ $options = jquery_default_site_options();
 $sites = jquery_sites();
 $options = array_merge( $options, $sites[ JQUERY_LIVE_SITE ]['options'] );
 foreach ( $options as $option => $value ) {
-	// Skip these in production, where they are managed by puppet.
-	// Staging should be allowed to set them for testing.
+	// Skip these on live sites (both production and staging),
+	// where they are managed by puppet.
 	// Local testing with a fresh database does not
 	// currently work if these are skipped.
-	if ( !JQUERY_STAGING ) {
+	if ( JQUERY_STAGING !== 'local' ) {
 		if ( $option === 'stylesheet' || $option === 'template' ) {
 			// Don't mess with themes for now.
 			continue;
 		}
 		if ( $option === 'active_plugins' ) {
-			// In production, Puppet manages activation of per-site plugins.
+			// On live sites (including staging ones),
+			// Puppet manages activation of per-site plugins.
 			continue;
 		}
 	}
