@@ -341,6 +341,22 @@ function jquery_sites() {
 				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
 			),
 		),
+		'api.jqueryui.com/1.14' => array(
+			'cookie_domain' => '.jqueryui.com',
+			'options' => array(
+				'blogname' => 'jQuery UI 1.14 Documentation',
+				'stylesheet' => 'api.jqueryui.com',
+				'active_plugins' => array(
+					'jquery-api-category-listing.php',
+					'jquery-api-versioned-links.php',
+				),
+				'jquery_body_class' => 'jquery-ui',
+				'jquery_logo_link'=> 'https://jqueryui.com/',
+				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
+				'jquery_typesense_collection' => 'jqueryui_com',
+				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+			),
+		),
 	);
 
 	return $sites;
