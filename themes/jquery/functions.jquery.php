@@ -183,11 +183,3 @@ function jq_search_get_provider() {
 	}
 	return '';
 }
-
-function jq_search_the_footer() {
-	if ( jq_search_get_provider() === 'typesense' ) :
-?>
-<script defer src="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.js"></script>
-<?php
-	endif;
-}

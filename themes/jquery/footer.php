@@ -37,6 +37,5 @@
 </footer>
 
 <?php wp_footer(); ?>
-<?php jq_search_the_footer(); ?>
 </body>
 </html>

@@ -1,7 +1,5 @@
-/*! https://github.com/jquery/typesense-minibar 1.1.1 */
-globalThis.tsminibar = function tsminibar (form) {
-  const { origin, collection } = form.dataset;
-  const group = !!form.dataset.group;
+/*! https://github.com/jquery/typesense-minibar 1.3.2 */
+globalThis.tsminibar = function tsminibar (form, dataset = form.dataset) {
   const cache = new Map();
   const state = { query: '', cursor: -1, open: false, hits: [] };
   const searchParams = new URLSearchParams({
@@ -14,10 +12,10 @@ globalThis.tsminibar = function tsminibar (form) {
     sort_by: 'item_priority:desc',
     snippet_threshold: '8',
     highlight_affix_num_tokens: '12',
-    'x-typesense-api-key': form.dataset.key,
-    ...Object.fromEntries(new URLSearchParams(form.dataset.searchParams))
+    'x-typesense-api-key': dataset.key,
+    ...Object.fromEntries(new URLSearchParams(dataset.searchParams))
   });
-  const noResults = form.dataset.noResults || "No results for '{}'.";
+  const noResults = dataset.noResults || "No results for '{}'.";
 
   const input = form.querySelector('input[type=search]');
   const listbox = document.createElement('div');
@@ -31,7 +29,7 @@ globalThis.tsminibar = function tsminibar (form) {
       preconnect = document.createElement('link');
       preconnect.rel = 'preconnect';
       preconnect.crossOrigin = 'anonymous'; // match fetch cors,credentials:omit
-      preconnect.href = origin;
+      preconnect.href = dataset.origin;
       document.head.append(preconnect);
     }
     if (!state.open && state.hits.length) {
@@ -42,7 +40,7 @@ globalThis.tsminibar = function tsminibar (form) {
   input.addEventListener('input', async function () {
     const query = state.query = input.value;
     if (!query) {
-      state.hits = []; // don't leak old hits on focus
+      state.hits = [];
       state.cursor = -1;
       return close();
     }
@@ -72,7 +70,7 @@ globalThis.tsminibar = function tsminibar (form) {
     }
   });
   form.addEventListener('submit', function (e) {
-    e.preventDefault(); // disable fallback
+    e.preventDefault();
   });
   form.insertAdjacentHTML('beforeend', '<svg viewBox="0 0 12 12" width="20" height="20" aria-hidden="true" class="tsmb-icon-close" style="display: none;"><path d="M9 3L3 9M3 3L9 9"/></svg>');
   form.querySelector('.tsmb-icon-close').addEventListener('click', function () {
@@ -92,7 +90,7 @@ globalThis.tsminibar = function tsminibar (form) {
 
   function connect () {
     document.addEventListener('click', onDocClick);
-    if (form.dataset.slash !== 'false') {
+    if (dataset.slash !== 'false') {
       document.addEventListener('keydown', onDocSlash);
       form.classList.add('tsmb-form--slash');
     }
@@ -124,9 +122,10 @@ globalThis.tsminibar = function tsminibar (form) {
     }
     searchParams.set('q', query);
     const resp = await fetch(
-      `${origin}/collections/${collection}/documents/search?` + searchParams,
+      `${dataset.origin}/collections/${dataset.collection}/documents/search?` + searchParams,
       { mode: 'cors', credentials: 'omit', method: 'GET' }
     );
+    const group = !!dataset.group;
     const data = await resp.json();
     hits = data?.grouped_hits?.map(ghit => {
       const hit = ghit.hits[0];
@@ -151,14 +150,11 @@ globalThis.tsminibar = function tsminibar (form) {
   function render () {
     listbox.hidden = !state.open;
     form.classList.toggle('tsmb-form--open', state.open);
-    if (state.open) {
-      listbox.innerHTML = (state.hits.map((hit, i) => `<div role="option"${i === state.cursor ? ' aria-selected="true"' : ''}>${hit.lvl0 ? `<div class="tsmb-suggestion_group">${hit.lvl0}</div>` : ''}<a href="${hit.url}" tabindex="-1"><div class="tsmb-suggestion_title">${hit.title}</div><div class="tsmb-suggestion_content">${hit.content}</div></a></div>`).join('') || `<div class="tsmb-empty">${noResults.replace('{}', escape(state.query))}</div>`) + (form.dataset.foot ? '<a href="https://typesense.org" class="tsmb-foot" title="Search by Typesense"></a>' : '');
-    }
+    listbox.innerHTML = (state.hits.map((hit, i) => `<div role="option"${i === state.cursor ? ' aria-selected="true"' : ''}>${hit.lvl0 ? `<div class="tsmb-suggestion_group">${hit.lvl0}</div>` : ''}<a href="${hit.url}" tabindex="-1"><div class="tsmb-suggestion_title">${hit.title}</div><div class="tsmb-suggestion_content">${hit.content}</div></a></div>`).join('') || `<div class="tsmb-empty">${noResults.replace('{}', escape(state.query))}</div>`) + (dataset.foot ? '<a href="https://typesense.org" class="tsmb-foot" title="Search by Typesense"></a>' : '');
   }
 
   function moveCursor (offset) {
     state.cursor += offset;
-    // -1 refers to input field
     if (state.cursor >= state.hits.length) state.cursor = -1;
     if (state.cursor < -1) state.cursor = state.hits.length - 1;
     render();
@@ -166,4 +162,10 @@ globalThis.tsminibar = function tsminibar (form) {
 
   return { form, connect, disconnect };
 };
+window.customElements.define('typesense-minibar', class extends HTMLElement {
+  connectedCallback () {
+    const form = this.querySelector('form');
+    if (form && this.dataset.origin) tsminibar(form, this.dataset);
+  }
+});
 document.querySelectorAll('.tsmb-form[data-origin]').forEach(form => tsminibar(form));

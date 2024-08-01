@@ -18,13 +18,19 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.css">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=15">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.css?v=1.3.2">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=16">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=8">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 <?php
+	if ( jq_search_get_provider() === 'typesense' ) :
+?>
+	<script defer type="module" src="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.js?v=1.3.2"></script>
+<?php
+	endif;
+
 	if ( get_option( 'thread_comments' ) && comments_open() ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

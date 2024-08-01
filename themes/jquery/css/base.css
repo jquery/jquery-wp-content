@@ -1240,6 +1240,7 @@ nav#main li.current a {
 	--tsmb-size-radius: 5px;
 	--tsmb-size-base: 12px;
 	--tsmb-size-sm: 0.8rem;
+	--tsmb-size-listbox-right: 0;
 	--tsmb-color-base-background: var(--tsmb-color-primary50);
 	--tsmb-color-base30: #fff;
 	--tsmb-color-base50: var(--tsmb-color-primary90);
@@ -1272,9 +1273,6 @@ nav#main li.current a {
 }
 .tsmb-form input[type=search] {
 	border-width: 0;
-}
-.tsmb-form [role="listbox"] {
-	right: 0;
 }
 .tsmb-form [role="option"] mark {
   border-bottom: 2px solid var(--tsmb-color-primary90);
