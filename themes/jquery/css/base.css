@@ -1236,7 +1236,7 @@ nav#main li.current a {
 	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
-.tsmb-form {
+typesense-minibar {
 	--tsmb-size-radius: 5px;
 	--tsmb-size-base: 12px;
 	--tsmb-size-sm: 0.8rem;
@@ -1252,29 +1252,29 @@ nav#main li.current a {
 	--tsmb-color-primary50: #0769ad;  /* jQuery Primary Blue */
 	--tsmb-color-primary90: #b4efff; /* oklch(0.92 0.07 228) hue=228 of #7ACEF4 (jQuery Secondary Blue) */
 }
-.jquery-ui .tsmb-form {
+.jquery-ui typesense-minibar {
 	--tsmb-color-primary50: #b24926; /* jQuery UI Secondary Orange */
 	--tsmb-color-primary90: #ffddb2; /* = #b4efff + oklch(hue=70) of #FAA523 (jQuery UI Primary Orange) */
 }
-.jquery-mobile .tsmb-form {
+.jquery-mobile typesense-minibar {
 	--tsmb-color-primary50: #108040; /* jQuery Mobile Secondary Green */
 	--tsmb-color-primary90: #c9f2c8; /* = #b4efff + oklch(hue=144) of #3EB249 (jQuery UI Primary Orange) */
 }
-.jquery-foundation .tsmb-form {
+.jquery-foundation typesense-minibar {
 	--tsmb-color-primary50: #333; /* jQuery Black */
 	--tsmb-color-primary90: #ccc;
 }
-.jquery-learn .tsmb-form {
+.jquery-learn typesense-minibar {
 	--tsmb-color-primary50: #222;
 	--tsmb-color-primary90: #ccc;
 }
-.tsmb-form:not(:focus-within)::before {
+typesense-minibar form:not(:focus-within)::before {
   filter: invert();
 }
-.tsmb-form input[type=search] {
+typesense-minibar input[type=search] {
 	border-width: 0;
 }
-.tsmb-form [role="option"] mark {
+typesense-minibar[role="option"] mark {
   border-bottom: 2px solid var(--tsmb-color-primary90);
 }
 

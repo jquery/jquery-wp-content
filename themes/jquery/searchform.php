@@ -3,7 +3,7 @@
  * The template for displaying search forms
  */
 ?>
-<form role="search" class="searchform tsmb-form" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get"<?php
+<typesense-minibar<?php
 	if ( jq_search_get_provider() === 'typesense' ) :
 		$typesenseKey = get_option( 'jquery_typesense_key' );
 		$typesenseCollection = get_option( 'jquery_typesense_collection' );
@@ -15,6 +15,8 @@
 <?php
 	endif;
 ?>>
+	<form role="search" class="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" method="get">
 	<input type="search" name="s" aria-label="Search <?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" value="<?php echo get_search_query(); ?>" placeholder="Search" autocomplete="off">
 	<button type="submit" class="visuallyhidden"></button>
 </form>
+</typesense-minibar>
