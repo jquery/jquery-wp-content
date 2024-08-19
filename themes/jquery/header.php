@@ -1,3 +1,4 @@
+<?php jq_content_security_policy() ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
@@ -5,7 +6,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title><?php
-		global $page, $paged;
 		wp_title( '|', true, 'right' );
 		bloginfo( 'name' );
 		$site_description = get_bloginfo( 'description', 'display' );

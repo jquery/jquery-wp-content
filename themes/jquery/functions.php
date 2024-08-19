@@ -251,3 +251,39 @@ add_filter( 'body_class', function ( $classes ) {
 
 	return $classes;
 } );
+
+/**
+ * Content Security Policy
+ */
+function jq_content_security_policy() {
+	$nonce = wp_create_nonce( JQUERY_LIVE_SITE );
+	$policy = array(
+		'default-src' => "'self'",
+		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
+		// The SHA is for the inline style from typesense
+		// 'unsafe-hashes' is required in order to use hashes in style-src
+		'style-src' => "'self' 'nonce-$nonce' 'sha256-biLFinpqYMtWHmXfkA1BPeCY0/fNt46SAZ+BBk5YUog=' 'unsafe-hashes'",
+		// data: SVG images are used in typesense
+		'img-src' => "'self' data:",
+		'connect-src' => "'self' typesense.jquery.com",
+		'font-src' => "'self'",
+		'object-src' => "'none'",
+		'media-src' => "'self'",
+		'frame-src' => "'self'",
+		'child-src' => "'self'",
+		'form-action' => "'self'",
+		'frame-ancestors' => "'none'",
+		'base-uri' => "'self'",
+		'block-all-mixed-content' => '',
+		'report-uri' => 'https://csp-report-api.openjs-foundation.workers.dev/',
+	);
+
+	$policy = apply_filters( 'jq_content_security_policy', $policy );
+
+	$policy_string = '';
+	foreach ( $policy as $key => $value ) {
+		$policy_string .= $key . ' ' . $value . '; ';
+	}
+
+	header( 'Content-Security-Policy-Report-Only: ' . $policy_string );
+}
