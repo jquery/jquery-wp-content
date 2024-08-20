@@ -1,4 +1,3 @@
-<?php jq_content_security_policy() ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>

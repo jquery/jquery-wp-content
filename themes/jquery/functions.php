@@ -255,8 +255,8 @@ add_filter( 'body_class', function ( $classes ) {
 /**
  * Content Security Policy
  */
-function jq_content_security_policy() {
-	$nonce = wp_create_nonce( JQUERY_LIVE_SITE );
+function jq_content_security_policy( $headers ) {
+	$nonce = bin2hex( random_bytes( 8 ) );
 	$policy = array(
 		'default-src' => "'self'",
 		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
@@ -285,5 +285,9 @@ function jq_content_security_policy() {
 		$policy_string .= $key . ' ' . $value . '; ';
 	}
 
-	header( 'Content-Security-Policy-Report-Only: ' . $policy_string );
+	$headers[] = 'Content-Security-Policy: ' . $policy_string;
+
+	return $headers;
 }
+
+add_filter( 'wp_headers', 'jq_content_security_policy' );
