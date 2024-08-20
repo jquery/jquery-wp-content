@@ -255,7 +255,7 @@ add_filter( 'body_class', function ( $classes ) {
 /**
  * Content Security Policy
  */
-function jq_content_security_policy( $headers ) {
+function jq_content_security_policy() {
 	$nonce = bin2hex( random_bytes( 8 ) );
 	$policy = array(
 		'default-src' => "'self'",
@@ -285,9 +285,7 @@ function jq_content_security_policy( $headers ) {
 		$policy_string .= $key . ' ' . $value . '; ';
 	}
 
-	$headers[] = 'Content-Security-Policy: ' . $policy_string;
-
-	return $headers;
+	header( 'Content-Security-Policy: ' . $policy_string );
 }
 
-add_filter( 'wp_headers', 'jq_content_security_policy' );
+add_action( 'send_headers', 'jq_content_security_policy' );
