@@ -275,7 +275,7 @@ function jq_content_security_policy() {
 		'frame-ancestors' => "'none'",
 		'base-uri' => "'self'",
 		'block-all-mixed-content' => '',
-		'report-uri' => 'https://csp-report-api.openjs-foundation.workers.dev/',
+		'report-to' => 'https://csp-report-api.openjs-foundation.workers.dev/',
 	);
 
 	$policy = apply_filters( 'jq_content_security_policy', $policy );
