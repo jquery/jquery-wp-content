@@ -94,7 +94,9 @@ a,
 	margin-right: 0.5em;
 }
 #content #banner-secondary .download-main .support-notice {
+	padding-top: 8px;
 	font-size: 12px;
+	line-height: 1.4em;
 }
 
 .resources {

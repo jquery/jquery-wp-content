@@ -881,6 +881,24 @@ iframe {
 	margin: 0;
 }
 
+/* Support message
+   ========================================================================== */
+
+	 #support-message {
+		display: flex;
+		justify-content: center;
+		background-color: #dddddd;
+		padding: 4px 4px;
+		font-size: 15px;
+	}
+	#support-message span {
+		text-align: center;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#support-message span a {
+		color: #222;
+	}
 
 /* Global Nav
    ========================================================================== */
