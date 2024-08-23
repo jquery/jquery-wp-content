@@ -34,10 +34,6 @@
 </head>
 <body <?php body_class(); ?>>
 
-<div id="support-message" class="support-message">
-  <span style="">jQuery 4 is currently in beta. Soon jQuery 3 will reach EOL along with versions 1 and 2. Learn more about our&nbsp;<a href="https://jquery.com/support/">Version&nbsp;Support</a>.</span>
-</div>
-
 <header>
 	<section id="global-nav">
 		<nav>
@@ -97,9 +93,7 @@
 	</div>
 
 	<nav id="main" class="constrain clearfix">
-		<?php
-
-		get_template_part('menu', 'header'); ?>
+		<?php get_template_part('menu', 'header'); ?>
 
 		<?php get_search_form(); ?>
 	</nav>
