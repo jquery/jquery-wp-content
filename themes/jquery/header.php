@@ -18,7 +18,7 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.css?v=1.3.2">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.css?v=1.3.4">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=17">
 	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=8">
 
@@ -27,7 +27,7 @@
 <?php
 	if ( jq_search_get_provider() === 'typesense' ) :
 ?>
-	<script defer type="module" src="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.js?v=1.3.2"></script>
+	<script defer type="module" src="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.js?v=1.3.4"></script>
 <?php
 	endif;
 

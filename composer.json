@@ -8,8 +8,8 @@
 	"scripts": {
 		"test": "parallel-lint --exclude vendor/ .",
 		"deps": [
-			"curl -O -q --output-dir themes/jquery/lib/typesense-minibar 'https://raw.githubusercontent.com/jquery/typesense-minibar/1.3.2/{typesense-minibar.css,typesense-minibar.js,LICENSE.txt}'",
-			"curl -q https://raw.githubusercontent.com/jquery/typesense-minibar/1.3.2/typesense-minibar-foot.css >> themes/jquery/lib/typesense-minibar/typesense-minibar.css",
+			"curl -O -q --output-dir themes/jquery/lib/typesense-minibar 'https://raw.githubusercontent.com/jquery/typesense-minibar/1.3.4/{typesense-minibar.css,typesense-minibar.js,LICENSE.txt}'",
+			"curl -q https://raw.githubusercontent.com/jquery/typesense-minibar/1.3.4/typesense-minibar-foot.css >> themes/jquery/lib/typesense-minibar/typesense-minibar.css",
 			"curl -O -q --output-dir plugins/memcached 'https://raw.githubusercontent.com/Automattic/wp-memcached/35e1ea16f6b8cb8a1e6fbca124e33a44db21fa74/{object-cache.php,readme.txt,LICENSE}'"
 		]
 	}
