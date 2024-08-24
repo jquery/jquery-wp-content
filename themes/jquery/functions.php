@@ -260,9 +260,8 @@ function jq_content_security_policy() {
 	$policy = array(
 		'default-src' => "'self'",
 		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
-		// The SHA is for the inline style from typesense
-		// 'unsafe-hashes' is required in order to use hashes in style-src
-		'style-src' => "'self' 'nonce-$nonce' 'sha256-biLFinpqYMtWHmXfkA1BPeCY0/fNt46SAZ+BBk5YUog=' 'unsafe-hashes'",
+		// The nonce is here so inline scripts can be used in the theme
+		'style-src' => "'self' 'nonce-$nonce'",
 		// data: SVG images are used in typesense
 		'img-src' => "'self' data:",
 		'connect-src' => "'self' typesense.jquery.com",
