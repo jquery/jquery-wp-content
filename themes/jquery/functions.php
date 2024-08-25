@@ -256,6 +256,9 @@ add_filter( 'body_class', function ( $classes ) {
  * Content Security Policy
  */
 function jq_content_security_policy() {
+	if ( !JQUERY_STAGING ) {
+		return;
+	}
 	$nonce = bin2hex( random_bytes( 8 ) );
 	$policy = array(
 		'default-src' => "'self'",
@@ -284,7 +287,7 @@ function jq_content_security_policy() {
 		$policy_string .= $key . ' ' . $value . '; ';
 	}
 
-	header( 'Content-Security-Policy: ' . $policy_string );
+	header( 'Content-Security-Policy-Report-Only: ' . $policy_string );
 }
 
 add_action( 'send_headers', 'jq_content_security_policy' );
