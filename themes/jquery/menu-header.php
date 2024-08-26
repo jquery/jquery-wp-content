@@ -11,9 +11,9 @@ function menu_header_jquery_com() {
 		'https://jquery.com/download/' => 'Download',
 		'https://api.jquery.com/' => 'API Documentation',
 		'https://blog.jquery.com/' => 'Blog',
+		'https://jquery.com/support/' => 'Support',
 		'https://plugins.jquery.com/' => 'Plugins',
 		'https://jquery.com/browser-support/' => 'Browser Support',
-		'https://jquery.com/support/' => 'Version Support',
 	);
 }
 
