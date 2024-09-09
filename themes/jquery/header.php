@@ -77,12 +77,12 @@
 					</li>
 					<li class="dropdown"><a href="https://openjsf.org/">OpenJS Foundation</a>
 						<ul>
-							<li><a href="https://openjsf.org/about/join/">Join</a></li>
-							<li><a href="https://openjsf.org/about/members/">Members</a></li>
+							<li><a href="https://openjsf.org/join">Join</a></li>
+							<li><a href="https://openjsf.org/members">Members</a></li>
 							<li><a href="https://jquery.com/team">jQuery Team</a></li>
-							<li><a href="https://openjsf.org/about/governance/">Governance</a></li>
+							<li><a href="https://openjsf.org/governance">Governance</a></li>
 							<li><a href="https://code-of-conduct.openjsf.org/">Conduct</a></li>
-							<li><a href="https://openjsf.org/about/project-funding-opportunities/">Donate</a></li>
+							<li><a href="https://openjsf.org/projects">Projects</a></li>
 						</ul>
 					</li>
 				</ul>
