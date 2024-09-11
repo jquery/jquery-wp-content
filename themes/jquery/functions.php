@@ -251,3 +251,48 @@ add_filter( 'body_class', function ( $classes ) {
 
 	return $classes;
 } );
+
+/**
+ * Content Security Policy
+ */
+function jq_content_security_policy() {
+	if ( !JQUERY_STAGING ) {
+		return;
+	}
+	$nonce = bin2hex( random_bytes( 8 ) );
+	$report_url = 'https://csp-report-api.openjs-foundation.workers.dev/';
+	$policy = array(
+		'default-src' => "'self'",
+		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
+		// The nonce is here so inline scripts can be used in the theme
+		'style-src' => "'self' 'nonce-$nonce'",
+		// data: SVG images are used in typesense
+		'img-src' => "'self' data:",
+		'connect-src' => "'self' typesense.jquery.com",
+		'font-src' => "'self'",
+		'object-src' => "'none'",
+		'media-src' => "'self'",
+		'frame-src' => "'self'",
+		'child-src' => "'self'",
+		'form-action' => "'self'",
+		'frame-ancestors' => "'none'",
+		'base-uri' => "'self'",
+		'block-all-mixed-content' => '',
+		'report-to' => 'csp-endpoint',
+		// Add report-uri for Firefox, which
+		// does not yet support report-to
+		'report-uri' => $report_url,
+	);
+
+	$policy = apply_filters( 'jq_content_security_policy', $policy );
+
+	$policy_string = '';
+	foreach ( $policy as $key => $value ) {
+		$policy_string .= $key . ' ' . $value . '; ';
+	}
+
+	header( 'Reporting-Endpoints: csp-endpoint="' . $report_url . '"' );
+	header( 'Content-Security-Policy-Report-Only: ' . $policy_string );
+}
+
+add_action( 'send_headers', 'jq_content_security_policy' );
