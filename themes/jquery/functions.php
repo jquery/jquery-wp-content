@@ -260,6 +260,7 @@ function jq_content_security_policy() {
 		return;
 	}
 	$nonce = bin2hex( random_bytes( 8 ) );
+	$report_url = 'https://csp-report-api.openjs-foundation.workers.dev/';
 	$policy = array(
 		'default-src' => "'self'",
 		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
@@ -277,7 +278,10 @@ function jq_content_security_policy() {
 		'frame-ancestors' => "'none'",
 		'base-uri' => "'self'",
 		'block-all-mixed-content' => '',
-		'report-to' => 'https://csp-report-api.openjs-foundation.workers.dev/',
+		'report-to' => 'csp-endpoint',
+		// Add report-uri for Firefox, which
+		// does not yet support report-to
+		'report-uri' => $report_url,
 	);
 
 	$policy = apply_filters( 'jq_content_security_policy', $policy );
@@ -287,6 +291,7 @@ function jq_content_security_policy() {
 		$policy_string .= $key . ' ' . $value . '; ';
 	}
 
+	header( 'Reporting-Endpoints: csp-endpoint="' . $report_url . '"' );
 	header( 'Content-Security-Policy-Report-Only: ' . $policy_string );
 }
 
