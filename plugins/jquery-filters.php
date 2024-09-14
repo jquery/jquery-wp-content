@@ -35,6 +35,16 @@ foreach ( $options as $option => $value ) {
 }
 unset( $sites, $options, $option );
 
+// Ensure that the local port is used for template assets, if it exists.
+add_filter( 'theme_root_uri', function( $value ) {
+	if ( JQUERY_STAGING === 'local' ) {
+		// Don't specify http vs https here, as the site may be accessed via either.
+		$siteurl = '//' . strtr( JQUERY_STAGING_FORMAT, [ '%s' => JQUERY_LIVE_SITE ] );
+		$value = $siteurl . '/wp-content/themes';
+	}
+	return $value;
+});
+
 // Remove misc links from <head> on non-blog sites
 if ( !get_option( 'jquery_is_blog' ) ) {
 	remove_action( 'wp_head', 'feed_links', 2 );
