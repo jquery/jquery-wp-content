@@ -252,6 +252,46 @@ add_filter( 'body_class', function ( $classes ) {
 	return $classes;
 } );
 
+/*
+ * Determine if the current page is for a deprecated version of jQuery.
+ * We are concened with two URL structures:
+ *   category/deprecated/deprecated-1.3/
+ *   category/version/1.9/
+ *
+ * @returns int True or false
+ */
+function jq_is_version_deprecated($url) {
+  $parsedUrl = parse_url($url);
+  $path = $parsedUrl['path'];
+  $segments = explode('/', trim($path, '/'));
+
+  $versionLessThan3 = false;
+
+  if (count($segments) > 2) {
+		switch (strtolower($segments[1])) {
+			// Check first URL structure:
+			// category/deprecated/deprecated-1.3/
+			case 'deprecated':
+				// Obtain the version number from the third slug.
+				$version = floatval(substr($segments[2], 11));
+
+				if ($version < 3) $versionLessThan3 = true;
+
+				break;
+
+			// Check second URL structure:
+			// category/version/1.9/
+			case 'version':
+				$version = floatval($segments[2]);
+
+				if ($version < 3)  $versionLessThan3 = true;
+
+				break;
+			}
+	}
+  return $versionLessThan3;
+}
+
 /**
  * Content Security Policy
  */
@@ -296,3 +336,4 @@ function jq_content_security_policy() {
 }
 
 add_action( 'send_headers', 'jq_content_security_policy' );
+
