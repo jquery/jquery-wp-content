@@ -39,6 +39,12 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php if ( is_front_page() && defined( "JQUERY_BANNER" ) ) : ?>
+	<div id="banner">
+		<?php echo JQUERY_BANNER ?>
+	</div>
+<?php endif; ?>
+
 <header>
 	<section id="global-nav">
 		<nav>
