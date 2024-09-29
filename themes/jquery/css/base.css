@@ -103,6 +103,14 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-size: 1.2em;
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+.icon-info-sign:before { content: "\f05a"; }
 
 /* ==========================================================================
    Links
@@ -887,10 +895,10 @@ iframe {
 #banner {
 	text-align: center;
 	background-color: #dddddd;
-	padding: 4px 20px;
-	font-size: 15px;
+	padding: 0.25em 1.25em;
 	color: #333; /* jQuery Black */
 }
+
 #banner a:hover {
 	text-decoration: none;
 }

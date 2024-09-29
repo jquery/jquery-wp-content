@@ -35,13 +35,12 @@ a {
 	padding-left: 1em;
 }
 
-/* Support warning at top of API pages */
+/* Version support warning at top of API pages */
 
-#support-warning-box {
-	padding-top: 8px;
-	padding-left: 8px;
-	padding-bottom: 8px;
+#version-support-warning {
 	display: flex;
-	position: relative;
-	z-index: 1;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.5em 0 0.5em 0.5em;
+	line-height: 1.2;
 }
