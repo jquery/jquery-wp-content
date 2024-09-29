@@ -39,13 +39,12 @@
 </head>
 <body <?php body_class(); ?>>
 
-<?php if (is_front_page()) { ?>
-
-<div id="support-message" class="support-message">
-	<span style="">jQuery 4 is currently in beta. Soon jQuery 3 will reach EOL along with versions 1 and 2. Learn more about our&nbsp;<a href="https://jquery.com/support/">Version&nbsp;Support</a>.</span>
-</div>
-
-<?php } ?>
+<!-- Render the banner if there's a banner message in post_meta -->
+<?php if ( get_post_meta( $post->ID, "banner" ) ) : ?>
+	<div id="banner">
+		<?php echo get_post_meta( $post->ID, "banner", true ); ?>
+	</div>
+<?php endif; ?>
 
 <header>
 	<section id="global-nav">

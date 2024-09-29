@@ -884,20 +884,15 @@ iframe {
 /* Support message at top of page.
    ========================================================================== */
 
-#support-message {
-	display: flex;
-	justify-content: center;
-	background-color: #dddddd;
-	padding: 4px 4px;
-	font-size: 15px;
-}
-#support-message span {
+#banner {
 	text-align: center;
-	padding-left: 20px;
-	padding-right: 20px;
+	background-color: #dddddd;
+	padding: 4px 20px;
+	font-size: 15px;
+	color: #333; /* jQuery Black */
 }
-#support-message span a {
-	color: #222;
+#banner a:hover {
+	text-decoration: none;
 }
 
 /* Global Nav
@@ -1414,8 +1409,7 @@ pre b {
 
 #content img.full,
 #content img.left,
-#content img.right,
-#banner img.full {
+#content img.right {
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
 }
 
@@ -1476,10 +1470,6 @@ pre b {
 	overflow: hidden;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
 	margin-bottom: 20px;
-}
-
-#portfolio.media #banner .embed {
-	margin-bottom: 40px;
 }
 
 .embed iframe,
