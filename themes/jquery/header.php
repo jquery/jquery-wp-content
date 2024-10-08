@@ -39,7 +39,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-<?php if ( defined( "JQUERY_BANNER" ) ) : ?>
+<?php if ( is_front_page() && defined( "JQUERY_BANNER" ) ) : ?>
 	<div id="banner">
 		<?php echo JQUERY_BANNER ?>
 	</div>
