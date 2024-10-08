@@ -1,12 +1,4 @@
-<?php
-	// Set banner in post meta for the header to display it
-	update_post_meta(
-		get_the_ID(),
-		'banner',
-		'jQuery 4.0 is currently in beta. Once released, jQuery 3.x will only receive critical updates. Learn more about our <a href="https://jquery.com/support/">Version Support</a>.'
-	);
-	get_header();
-?>
+<?php get_header(); ?>
 
 <div class="content-right listing twelve columns">
 	<div id="content">

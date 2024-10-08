@@ -39,10 +39,9 @@
 </head>
 <body <?php body_class(); ?>>
 
-<!-- Render the banner if there's a banner message in post_meta -->
-<?php if ( get_post_meta( $post->ID, "banner" ) ) : ?>
+<?php if ( defined( "JQUERY_BANNER" ) ) : ?>
 	<div id="banner">
-		<?php echo get_post_meta( $post->ID, "banner", true ); ?>
+		<?php echo JQUERY_BANNER ?>
 	</div>
 <?php endif; ?>
 
