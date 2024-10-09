@@ -103,6 +103,14 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+	font-size: 1.2em;
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+.icon-info-sign:before { content: "\f05a"; }
 
 /* ==========================================================================
    Links
@@ -881,6 +889,19 @@ iframe {
 	margin: 0;
 }
 
+/* Support message at top of page.
+   ========================================================================== */
+
+#banner {
+	text-align: center;
+	background-color: #dddddd;
+	padding: 0.25em 1.25em;
+	color: #333; /* jQuery Black */
+}
+
+#banner a:hover {
+	text-decoration: none;
+}
 
 /* Global Nav
    ========================================================================== */
@@ -1396,8 +1417,7 @@ pre b {
 
 #content img.full,
 #content img.left,
-#content img.right,
-#banner img.full {
+#content img.right {
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
 }
 
@@ -1458,10 +1478,6 @@ pre b {
 	overflow: hidden;
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.20);
 	margin-bottom: 20px;
-}
-
-#portfolio.media #banner .embed {
-	margin-bottom: 40px;
 }
 
 .embed iframe,

@@ -34,3 +34,13 @@ a {
 	margin-top: 0;
 	padding-left: 1em;
 }
+
+/* Version support warning at top of API pages */
+
+#version-support-warning {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.5em 0 0.5em 0.5em;
+	line-height: 1.2;
+}
