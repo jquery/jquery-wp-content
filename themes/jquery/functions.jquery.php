@@ -183,3 +183,14 @@ function jq_search_get_provider() {
 	}
 	return '';
 }
+
+/**
+ * Get a checksum of styles used in the header
+ */
+function jq_css_checksum() {
+	$base = get_template_directory() . '/css/base.css';
+	$typesense = get_template_directory() . '/lib/typesense-minibar/typesense-minibar.css';
+	$styles = get_stylesheet_directory() . '/style.css';
+
+	return md5( filemtime( $base ) . filemtime( $typesense ) . filemtime( $styles ) );
+}
