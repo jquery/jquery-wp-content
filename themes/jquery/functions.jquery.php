@@ -187,7 +187,7 @@ function jq_search_get_provider() {
 /**
  * Try to append a "?v=" cache buster to a static CSS or JS file URI.
  */
-function jq_url_append_version($uri) {
+function jq_url_append_version( $uri ) {
 	foreach ( [
 		get_stylesheet_directory_uri() => get_stylesheet_directory(),
 		get_template_directory_uri() => get_template_directory(),
