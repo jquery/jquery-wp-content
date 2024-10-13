@@ -185,12 +185,19 @@ function jq_search_get_provider() {
 }
 
 /**
- * Get a checksum of styles used in the header
+ * Try to append a "?v=" cache buster to a static CSS or JS file URI.
  */
-function jq_css_checksum() {
-	$base = get_template_directory() . '/css/base.css';
-	$typesense = get_template_directory() . '/lib/typesense-minibar/typesense-minibar.css';
-	$styles = get_stylesheet_directory() . '/style.css';
+function jq_url_append_version( $uri ) {
+	foreach ( [
+		get_stylesheet_directory_uri() => get_stylesheet_directory(),
+		get_template_directory_uri() => get_template_directory(),
+	] as $uriPrefix => $directory ) {
+		if ( str_starts_with( $uri, $uriPrefix ) ) {
+			$filepath = strtr( $uri, [ $uriPrefix => $directory ] );
+			return $uri . '?v=' . substr( @md5_file( $filepath ) ?: '', 0, 8 );
+		}
+	}
 
-	return md5( filemtime( $base ) . filemtime( $typesense ) . filemtime( $styles ) );
+	// Unchanged
+	return $uri;
 }

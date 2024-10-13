@@ -17,16 +17,16 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.css?v=<?php echo jq_css_checksum(); ?>">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/base.css?v=<?php echo jq_css_checksum(); ?>">
-	<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?v=<?php echo jq_css_checksum(); ?>">
+	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_template_directory_uri() . '/lib/typesense-minibar/typesense-minibar.css' ); ?>">
+	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_template_directory_uri() . '/css/base.css' ); ?>">
+	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_bloginfo( 'stylesheet_url' ) ); ?>">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
+	<script src="<?php echo jq_url_append_version( get_template_directory_uri() . '/js/main.js' ); ?>"></script>
 <?php
 	if ( jq_search_get_provider() === 'typesense' ) :
 ?>
-	<script defer type="module" src="<?php echo get_template_directory_uri(); ?>/lib/typesense-minibar/typesense-minibar.js?v=<?php echo jq_css_checksum(); ?>"></script>
+	<script defer type="module" src="<?php echo jq_url_append_version( get_template_directory_uri() . '/lib/typesense-minibar/typesense-minibar.js' ); ?>"></script>
 <?php
 	endif;
 
