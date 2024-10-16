@@ -265,9 +265,9 @@ function jq_content_security_policy() {
 		'default-src' => "'self'",
 		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
 		// The nonce is here so inline scripts can be used in the theme
-		'style-src' => "'self' 'nonce-$nonce'",
+		'style-src' => "'self' 'nonce-$nonce' code.jquery.com",
 		// data: SVG images are used in typesense
-		'img-src' => "'self' data:",
+		'img-src' => "'self' data: code.jquery.com",
 		'connect-src' => "'self' typesense.jquery.com",
 		'font-src' => "'self'",
 		'object-src' => "'none'",
