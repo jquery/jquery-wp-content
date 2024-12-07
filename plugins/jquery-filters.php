@@ -88,6 +88,10 @@ add_filter( 'pre_site_option_fileupload_maxk', function() {
 	return 1024 * 1024;
 } );
 
+// Disable the new image sizes feature.
+// It adds a style tag that would require a CSP exception.
+add_filter( 'wp_img_tag_add_auto_sizes', '__return_false' );
+
 // Allow full HTML in term descriptions.
 add_action( 'init', 'jquery_unfiltered_html_for_term_descriptions' );
 add_action( 'set_current_user', 'jquery_unfiltered_html_for_term_descriptions' );
