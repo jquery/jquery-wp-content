@@ -256,9 +256,6 @@ add_filter( 'body_class', function ( $classes ) {
  * Content Security Policy
  */
 function jq_content_security_policy() {
-	if ( !JQUERY_STAGING ) {
-		return;
-	}
 	$nonce = bin2hex( random_bytes( 8 ) );
 	$report_url = 'https://csp-report-api.openjs-foundation.workers.dev/';
 	$policy = array(
