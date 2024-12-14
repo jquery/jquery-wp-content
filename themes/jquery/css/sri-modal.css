@@ -35,7 +35,9 @@
 	right: 28px;
 }
 
-.sri-modal .ui-icon-closethick {
+.sri-modal .ui-icon-closethick,
+.sri-modal .ui-button:hover .ui-icon-closethick,
+.sri-modal .ui-button:active .ui-icon-closethick {
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEUAAADMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMzMxg1ZvWAAAAJXRSTlMAAQIDBAUGCQsNDhQWGSg4g4uUoKOoq62vsLW8wMrO2tzk5ujxm/5xbwAAAGxJREFUGBmNwVcWgkAQRcFHg4FgzjomZu7+t+hpRv6p0iS7byPJTs+5BluIjewML5O7A3F1AdJMrgpkqVVWBVxqNVriNhrZDRdrZXYl62sNjkBaB6Cv5PaQOpUB3iZXHFInqXx8FvozDQpN8gNoXAtiMhPWmQAAAABJRU5ErkJggg==) 0 0;
 }
 
