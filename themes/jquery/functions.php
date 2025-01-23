@@ -264,14 +264,12 @@ function jq_content_security_policy() {
 		// The nonce is here so inline scripts can be used in the theme
 		'style-src' => "'self' 'nonce-$nonce' code.jquery.com",
 		// data: SVG images are used in typesense
-		'img-src' => "'self' data: code.jquery.com",
+		// Allow gravatars in wordpress admins
+		'img-src' => "'self' data: secure.gravatar.com code.jquery.com",
 		'connect-src' => "'self' typesense.jquery.com",
-		'font-src' => "'self'",
+		// Allow data fonts for the wordpress admins
+		'font-src' => "'self' data:",
 		'object-src' => "'none'",
-		'media-src' => "'self'",
-		'frame-src' => "'self'",
-		'child-src' => "'self'",
-		'form-action' => "'self'",
 		'frame-ancestors' => "'none'",
 		'base-uri' => "'self'",
 		'block-all-mixed-content' => '',
