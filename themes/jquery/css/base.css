@@ -2042,11 +2042,6 @@ footer .books li a cite {
 	border-radius: 5px;
 }
 
-.listing #content .entry-meta .category a {
-	color: #0769ad;
-	text-decoration: underline;
-}
-
 .pagination {
 	text-align: center;
 	margin-top: 2em;
