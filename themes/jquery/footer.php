@@ -8,7 +8,7 @@
 				<h3><span>Books</span></h3>
 				<ul class="books">
 					<li>
-						<a href="https://www.packtpub.com/web-development/learning-jquery-fourth-edition">
+						<a href="https://www.packtpub.com/en-us/product/learning-jquery-fourth-edition-9781782163152">
 							<img src="<?php echo get_template_directory_uri(); ?>/content/books/learning-jquery-4th-ed.jpg" alt="Learning jQuery 4th Edition by Karl Swedberg and Jonathan Chaffer" width="92" height="114" loading="lazy">
 							Learning jQuery Fourth Edition
 							<cite>Karl Swedberg and Jonathan Chaffer</cite>
