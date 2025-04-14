@@ -2270,6 +2270,10 @@ footer .books li a cite {
 	color: #fff;
 }
 
+.entry-example h3 {
+	margin-top: 1em;
+}
+
 /* Media Queries
    ========================================================================== */
 
