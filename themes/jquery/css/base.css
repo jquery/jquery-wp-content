@@ -1970,7 +1970,7 @@ footer .books li a cite {
 
 .entry-meta,
 .entry-posted {
-	color: #999;
+	color: #666;
 	font-size: 12px;
 }
 
@@ -2040,11 +2040,6 @@ footer .books li a cite {
 	padding: 4px;
 	background-color: #ddd;
 	border-radius: 5px;
-}
-
-.listing #content .entry-meta .category a {
-	color: #888;
-	text-decoration: none;
 }
 
 .pagination {
