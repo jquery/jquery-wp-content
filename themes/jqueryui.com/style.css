@@ -109,6 +109,10 @@ a,
 	background: #eee;
 }
 
+#content .demo-list li::marker {
+	content: "";
+}
+
 #content .demo-list .active {
 	background: #fff;
 }
