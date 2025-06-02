@@ -63,6 +63,8 @@
 	padding: 0;
 	position: absolute;
 	top: 0;
+	width: 68px;
+	max-height: 68px;
 }
 a.comment-reply-link {
 	background: #eee;
