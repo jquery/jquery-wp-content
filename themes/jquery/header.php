@@ -19,6 +19,13 @@
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/i/favicon.ico">
 	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_template_directory_uri() . '/lib/typesense-minibar/typesense-minibar.css' ); ?>">
 	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_template_directory_uri() . '/css/base.css' ); ?>">
+<?php
+	if ( get_option( 'jquery_is_blog' ) ) :
+?>
+	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_template_directory_uri() . '/css/blog.css' ); ?>">
+<?php
+	endif;
+?>
 	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_bloginfo( 'stylesheet_url' ) ); ?>">
 
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
