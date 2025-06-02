@@ -62,6 +62,18 @@ if ( !get_option( 'jquery_is_blog' ) ) {
 
 	// Disable WordPress auto-paragraphing for posts, except on actual blog sites
 	remove_filter( 'the_content', 'wpautop' );
+
+	add_filter( 'option_uploads_use_yearmonth_folders', '__return_false' );
+
+	add_filter( 'upload_dir', function( $upload_dir ) {
+		if ( defined( 'UPLOADS' ) ) {
+			$upload_dir['path'] = $upload_dir['basedir'] = UPLOADS;
+		} else {
+			$upload_dir['path'] = $upload_dir['basedir'] = WP_CONTENT_DIR . '/uploads';
+		}
+
+		return $upload_dir;
+	});
 }
 
 // Disable WordPress text transformations (smart quotes, etc.) for posts.
@@ -126,17 +138,6 @@ add_filter( 'body_class', function( $classes ) {
 	}
 
 	return $classes;
-});
-
-add_filter( 'option_uploads_use_yearmonth_folders', '__return_false' );
-add_filter( 'upload_dir', function( $upload_dir ) {
-	if ( defined( 'UPLOADS' ) ) {
-		$upload_dir['path'] = $upload_dir['basedir'] = UPLOADS;
-	} else {
-		$upload_dir['path'] = $upload_dir['basedir'] = WP_CONTENT_DIR . '/uploads';
-	}
-
-	return $upload_dir;
 });
 
 add_filter( 'get_terms', function( $terms, $taxonomies, $args ) {
