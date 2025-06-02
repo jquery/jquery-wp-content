@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: Disable Emojis
+Plugin Name: Disable Emojis (GDPR friendly)
 Plugin URI: https://geek.hellyer.kiwi/plugins/disable-emojis/
-Description: Disable Emojis
-Version: 1.5.2
+Description: Disable Emojis (GDPR friendly)
+Version: 1.7.7
 Author: Ryan Hellyer
 Author URI: https://geek.hellyer.kiwi/
 License: GPL2
@@ -29,7 +29,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 
 /**
- * Disable the emoji's
+ * Disable the emojis.
  */
 function disable_emojis() {
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -53,9 +53,9 @@ add_action( 'init', 'disable_emojis' );
 function disable_emojis_tinymce( $plugins ) {
 	if ( is_array( $plugins ) ) {
 		return array_diff( $plugins, array( 'wpemoji' ) );
-	} else {
-		return array();
 	}
+
+	return array();
 }
 
 /**
@@ -66,11 +66,17 @@ function disable_emojis_tinymce( $plugins ) {
  * @return array                 Difference betwen the two arrays.
  */
 function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
-	if ( 'dns-prefetch' == $relation_type ) {
-		/** This filter is documented in wp-includes/formatting.php */
-		$emoji_svg_url = apply_filters( 'emoji_svg_url', 'https://s.w.org/images/core/emoji/2/svg/' );
 
-		$urls = array_diff( $urls, array( $emoji_svg_url ) );
+	if ( 'dns-prefetch' == $relation_type ) {
+
+		// Strip out any URLs referencing the WordPress.org emoji location
+		$emoji_svg_url_bit = 'https://s.w.org/images/core/emoji/';
+		foreach ( $urls as $key => $url ) {
+			if ( strpos( $url, $emoji_svg_url_bit ) !== false ) {
+				unset( $urls[$key] );
+			}
+		}
+
 	}
 
 	return $urls;

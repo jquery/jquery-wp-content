@@ -1,0 +1,12 @@
+{
+    "name": "ryanhellyer/disable-emojiis",
+    "description": "WordPress plugin which disables the WordPress emoji functionality. GDPR friendly.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "ryanhellyer"
+        }
+    ],
+    "require": {}
+}

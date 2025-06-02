@@ -1,21 +1,25 @@
-=== Disable Emojis ===
+=== Disable Emojis (GDPR friendly) ===
 Contributors: ryanhellyer
-Tags: emojis
+Tags: emojis, gdpr, disable
 Donate link: https://geek.hellyer.kiwi/donate/
-Requires at least: 4.2
-Tested up to: 4.7
-Stable tag: 1.5.2
+Requires at least: 4.8
+Tested up to: 6.8
+Stable tag: 1.7.7
 
 
-This plugin disables the new WordPress emoji functionality.
+This plugin disables the new WordPress emoji functionality. GDPR friendly.
 
 
 == Description ==
 
-This plugin disables the new WordPress emoji functionality.
+This plugin disables the new WordPress emoji functionality. GDPR friendly.
 
 
-Note: Emoticons will still work and emoji's will still work in browsers which have built in support for them. This plugin simply removes the extra code bloat used to add support for emoji's in older browswers.
+Note: Emoticons will still work and emojis will still work in browsers which have built in support for them. This plugin simply removes the extra code bloat used to add support for emojis in older browsers.
+
+= GDPR compliancy =
+
+This plugin does not do anything to make your site less GDPR compliant. It disables the DNS prefetching of emojis within WordPress, which should ensure improved privacy. To determine if your site is GDPR compliant, please seek legal advice. I have done my best to ensure the plugin is 100% GDPR compliant, but I am not a lawyer so can not guarantee anything ;)
 
 
 == Installation ==
@@ -30,6 +34,38 @@ Visit the <a href="https://geek.hellyer.kiwi/plugins/disable-emojis/">Disable Em
 
 
 == Changelog ==
+
+= 1.7.7 =
+* Confirmed support for newer WordPress versions.
+
+= 1.7.6 =
+* Confirmed support for newer WordPress versions.
+
+= 1.7.5 =
+* Added Composer support.
+
+= 1.7.4 =
+* Fixing typos.
+
+= 1.7.3 =
+* Unneeded version bump to shut the WordPress.org notice up.
+
+= 1.7.2 =
+* Subtle improvement to code cleanliness.
+* Improved documentation regarding GDPR issues.
+
+= 1.7.1 =
+* Added GDPR friendly label on advice from Ipstenu.
+
+= 1.7 =
+* Removed DNS prefetch URL again.
+* This time using simple string check rather than relying on internal WordPress filters.
+
+= 1.6 =
+* Removed DNS prefetch URL. Props to Aaron Queen for assisting with this.
+
+= 1.5.3 =
+* Catering to new DNS prefetch URL in version 4.7 of core
 
 = 1.5.2 =
 * Improved documentation.
