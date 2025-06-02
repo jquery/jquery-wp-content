@@ -21,7 +21,7 @@ add_action('init', function () {
 		wp_dequeue_style('wp-block-library');
 		wp_dequeue_style('classic-theme-styles');
 		wp_dequeue_style('global-styles');
-		wp_dequeue_style('akismet-widget-style-inline-css');
+		wp_dequeue_style('akismet-widget-style');
 	});
 });
 
