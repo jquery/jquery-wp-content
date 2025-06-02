@@ -263,6 +263,8 @@ function jq_content_security_policy() {
 		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
 		// The nonce is here so inline scripts can be used in the theme
 		'style-src' => "'self' 'nonce-$nonce' code.jquery.com",
+		// Allow style="" attributes in blog posts and markdown.
+		'style-src-attr' => "'unsafe-inline'",
 		// data: SVG images are used in typesense
 		// Allow gravatars in wordpress admins
 		'img-src' => "'self' data: secure.gravatar.com code.jquery.com",
