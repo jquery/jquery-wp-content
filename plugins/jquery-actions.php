@@ -8,11 +8,14 @@
 // (such as references to theme assets and intra-site links).
 // This does not influence 'home' and 'siteurl' options, and thus
 // does not affect <link rel=canonical> and sitemap output.
-if ( @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https' ) {
+$jq_proto = $_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '';
+if ( $jq_proto == 'https' ) {
     $_SERVER['HTTPS'] = '1';
-} elseif ( @$_SERVER['HTTP_X_FORWARDED_PROTO'] == 'http' ) {
+} elseif ( $jq_proto == 'http' ) {
     $_SERVER['HTTPS'] = '0';
 }
+unset( $jq_proto );
+
 add_filter( 'wp_headers', function ( $headers ) {
 	if ( isset( $headers['Vary'] ) ) {
 		$headers['Vary'] .= ',X-Forwarded-Proto';

@@ -76,6 +76,54 @@ if ( !get_option( 'jquery_is_blog' ) ) {
 	});
 }
 
+/**
+ * Content Security Policy
+ * https://github.com/jquery/infrastructure-puppet/issues/54
+ */
+add_action( 'send_headers', function() {
+	$nonce = bin2hex( random_bytes( 8 ) );
+	$report_url = 'https://csp-report-api.openjs-foundation.workers.dev/';
+	$policy = array(
+		'default-src' => "'self'",
+		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
+		// The nonce is here so inline scripts can be used in the theme
+		'style-src' => "'self' 'nonce-$nonce' code.jquery.com",
+		// Allow style="" attributes in blog posts and markdown.
+		'style-src-attr' => "'unsafe-inline'",
+		// data: SVG images are used in typesense
+		// Allow gravatars in wordpress admins
+		'img-src' => "'self' data: secure.gravatar.com code.jquery.com",
+		'connect-src' => "'self' typesense.jquery.com",
+		// Allow data fonts for the wordpress admins
+		'font-src' => "'self' data:",
+		'object-src' => "'none'",
+		'frame-ancestors' => "'none'",
+		'base-uri' => "'self'",
+		'block-all-mixed-content' => '',
+		'report-to' => 'csp-endpoint',
+		// Add report-uri for Firefox, which
+		// does not yet support report-to
+		'report-uri' => $report_url,
+	);
+
+	$policy = apply_filters( 'jq_content_security_policy', $policy );
+
+	if ( is_admin() ) {
+		// wp-admin (as used by blogs) requires inline scripts, inline styles,
+		// and workers from blob: URLs
+		$policy[ 'script-src' ] = "'self' 'unsafe-inline' blob: code.jquery.com";
+		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
+	}
+
+	$policy_string = '';
+	foreach ( $policy as $key => $value ) {
+		$policy_string .= $key . ' ' . $value . '; ';
+	}
+
+	header( 'Reporting-Endpoints: csp-endpoint="' . $report_url . '"' );
+	header( 'Content-Security-Policy: ' . $policy_string );
+} );
+
 // Disable WordPress text transformations (smart quotes, etc.) for posts.
 remove_filter( 'the_content', 'wptexturize' );
 
