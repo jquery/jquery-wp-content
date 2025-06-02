@@ -43,6 +43,12 @@
 #comments .commentlist > li.bypostauthor {
 	border-color: #0769ad;  /* jQuery Primary Blue */
 }
+.jquery-ui #comments .commentlist > li.bypostauthor {
+	border-color: #b24926;  /* jQuery UI Secondary Orange */
+}
+.jquery-mobile #comments .commentlist > li.bypostauthor {
+	border-color: #108040;  /* jQuery Mobile Secondary Green */
+}
 #comments .commentlist > li.bypostauthor .comment-meta {
 	background: #ddd;
 	border-radius: 3px 3px 0 0;
