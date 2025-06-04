@@ -2025,6 +2025,10 @@ footer .books li a cite {
 	background-color: #eee;
 	position: relative;
 }
+.listing .hentry:first-child {
+	/* align top of first sidebar heading, with top of first homepage article */
+	margin-top: 0;
+}
 
 .listing #content .entry-title {
 	font-size: 1.3em;
