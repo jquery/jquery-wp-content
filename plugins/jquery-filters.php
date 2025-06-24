@@ -115,7 +115,8 @@ add_action( 'send_headers', function() {
 		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
 	} elseif ( get_option( 'jquery_is_blog' ) ) {
 		// Allow <style> in blog posts
-		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
+		// Allow re-use of blog post attachments between blog.jquery.com, blog.jqueryui.com, and blog.jquerymobile.com
+		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com blog.jquery.com blog.jqueryui.com blog.jquerymobile.com";
 	}
 
 	$policy_string = '';
