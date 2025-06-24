@@ -85,8 +85,8 @@ add_action( 'send_headers', function() {
 	$report_url = 'https://csp-report-api.openjs-foundation.workers.dev/';
 	$policy = array(
 		'default-src' => "'self'",
-		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
 		// The nonce is here so inline scripts can be used in the theme
+		'script-src' => "'self' 'nonce-$nonce' code.jquery.com",
 		'style-src' => "'self' 'nonce-$nonce' code.jquery.com",
 		// Allow style="" attributes in blog posts and markdown.
 		'style-src-attr' => "'unsafe-inline'",
@@ -112,6 +112,9 @@ add_action( 'send_headers', function() {
 		// wp-admin (as used by blogs) requires inline scripts, inline styles,
 		// and workers from blob: URLs
 		$policy[ 'script-src' ] = "'self' 'unsafe-inline' blob: code.jquery.com";
+		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
+	} elseif ( get_option( 'jquery_is_blog' ) ) {
+		// Allow <style> in blog posts
 		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
 	}
 
