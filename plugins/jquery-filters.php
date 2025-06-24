@@ -108,16 +108,20 @@ add_action( 'send_headers', function() {
 
 	$policy = apply_filters( 'jq_content_security_policy', $policy );
 
-	if ( is_admin() ) {
-		// wp-admin (as used by blogs) requires inline scripts, inline styles,
-		// and workers from blob: URLs
-		$policy[ 'script-src' ] = "'self' 'unsafe-inline' blob: code.jquery.com";
-		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
-	} elseif ( get_option( 'jquery_is_blog' ) ) {
+	if ( get_option( 'jquery_is_blog' ) ) {
 		// Allow <style> in blog posts
 		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
 		// Allow re-use of blog post attachments between blog.jquery.com, blog.jqueryui.com, and blog.jquerymobile.com
 		$policy[ 'img-src' ] = "'self' data: secure.gravatar.com code.jquery.com blog.jquery.com blog.jqueryui.com blog.jquerymobile.com";
+
+		// wp-admin requires inline scripts, inline styles, and workers from blob: URLs
+		if ( is_admin() ) {
+			$policy[ 'script-src' ] = "'self' 'unsafe-inline' blob: code.jquery.com";
+		}
+	} elseif ( is_admin() ) {
+		// wp-admin (as used by blogs) requires inline scripts, inline styles, and workers from blob: URLs
+		$policy[ 'script-src' ] = "'self' 'unsafe-inline' blob: code.jquery.com";
+		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
 	}
 
 	$policy_string = '';
