@@ -1400,12 +1400,8 @@ pre b {
 }
 
 #content ol > li {
-	position: relative; /* Give each list item a left margin to make room for the numbers */
-	list-style: none;
 	padding-left: 10px;
-	margin-right: 0;
 	margin-top: 5px;
-	margin-left: 30px;
 }
 
 #content img.full,
