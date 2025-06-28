@@ -113,6 +113,8 @@ add_action( 'send_headers', function() {
 		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
 		// Allow re-use of blog post attachments between blog.jquery.com, blog.jqueryui.com, and blog.jquerymobile.com
 		$policy[ 'img-src' ] = "'self' data: secure.gravatar.com code.jquery.com blog.jquery.com blog.jqueryui.com blog.jquerymobile.com";
+		// Allow Vimeo on blog.jquerymobile.com and other blogs
+		$policy[ 'frame-src' ] = "'self' player.vimeo.com";
 
 		// wp-admin requires inline scripts, inline styles, and workers from blob: URLs
 		if ( is_admin() ) {
