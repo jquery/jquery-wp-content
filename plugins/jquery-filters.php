@@ -111,8 +111,9 @@ add_action( 'send_headers', function() {
 	if ( get_option( 'jquery_is_blog' ) ) {
 		// Allow <style> in blog posts
 		$policy[ 'style-src' ] = "'self' 'unsafe-inline' code.jquery.com";
-		// Allow re-use of blog post attachments between blog.jquery.com, blog.jqueryui.com, and blog.jquerymobile.com
-		$policy[ 'img-src' ] = "'self' data: secure.gravatar.com code.jquery.com blog.jquery.com blog.jqueryui.com blog.jquerymobile.com";
+		// Allow re-use of attachments between blog.jquery.com, blog.jqueryui.com, and blog.jquerymobile.com
+		// Allow re-use of doc site resources from jqueryui.com in posts on blog.jqueryui.com
+		$policy[ 'img-src' ] = "'self' data: secure.gravatar.com code.jquery.com jquery.com jqueryui.com jquerymobile.com blog.jquery.com blog.jqueryui.com blog.jquerymobile.com";
 		// Allow Vimeo on blog.jquerymobile.com and other blogs
 		$policy[ 'frame-src' ] = "'self' player.vimeo.com";
 
