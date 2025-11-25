@@ -1312,6 +1312,7 @@ typesense-minibar[role="option"] mark {
 
 #content a {
 	text-decoration: underline;
+	word-break: break-word;
 }
 
 #content a:hover {
