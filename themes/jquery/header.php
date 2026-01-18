@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_template_directory_uri() . '/css/base.css' ); ?>">
 	<link rel="stylesheet" href="<?php echo jq_url_append_version( get_bloginfo( 'stylesheet_url' ) ); ?>">
 
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
 	<script src="<?php echo jq_url_append_version( get_template_directory_uri() . '/js/main.js' ); ?>"></script>
 <?php
 	if ( jq_search_get_provider() === 'typesense' ) :
