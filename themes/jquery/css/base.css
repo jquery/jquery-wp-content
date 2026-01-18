@@ -2437,6 +2437,10 @@ footer .books li a cite {
 		padding: 0;
 	}
 
+ footer .books{
+  display: flex;
+ }
+
 	footer .books li {
 		clear: both;
 		margin-bottom: 10px;
