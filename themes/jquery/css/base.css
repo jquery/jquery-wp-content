@@ -2554,6 +2554,10 @@ footer .books li a cite {
 		margin-right: -25px !important;
 	}
 
+ footer .books{
+  display: block;
+ }
+
 	footer .footer-icon-links li a:before {
 		display: none;
 	}
