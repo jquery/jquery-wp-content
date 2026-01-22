@@ -1920,15 +1920,17 @@ footer ul li {
 	line-height: 30px;
 }
 
+footer .books{
+ display: flex;
+ gap: 15px 16px;
+ justify-content: center;
+}
+
 footer .books li {
-	float: left;
-	width: 30%;
-	min-width: 95px;
-	margin-left: 2.8%;
-	margin-bottom: 15px;
-	line-height: 130%;
-	font-size: 11px;
-	text-align: center;
+ flex: 1 0 30%;
+ line-height: 130%;
+ font-size: 11px;
+ text-align: center;
 }
 
 footer .books li:first-child {
@@ -2436,25 +2438,6 @@ footer .books li a cite {
 		font-size: 22px;
 		padding: 0;
 	}
-
- footer .books{
-  display: flex;
- }
-
-	footer .books li {
-		clear: both;
-		margin-bottom: 10px;
-		float: none;
-		margin-left: auto !important;
-		margin-right: auto;
-		text-align: center;
-	}
-
-	footer .books li span {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -2554,8 +2537,17 @@ footer .books li a cite {
 		margin-right: -25px !important;
 	}
 
- footer .books{
-  display: block;
+ footer .books {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+ }
+
+ footer .books li {
+  flex: 1 1 45%;
+ }
+
+ footer .books li:first-child {
+  margin-left: 0%;
  }
 
 	footer .footer-icon-links li a:before {
