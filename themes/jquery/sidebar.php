@@ -1,10 +1,9 @@
 <?php
-/**
- * The default sidebar lists categories, up to 2 levels deep.
- */
 if ( get_option( 'jquery_is_blog' ) ):
 	get_template_part( 'sidebar-blogpost' );
 else:
+	// The default sidebar lists categories, up to 2 levels deep.
+	// This is used on api.jquery.com and api.jquerymobile.com.
 ?>
 <div id="sidebar" class="widget-area" role="complementary">
 	<aside id="categories" class="widget">
