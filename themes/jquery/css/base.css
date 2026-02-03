@@ -1928,14 +1928,10 @@ footer .books {
 }
 
 footer .books li {
-	flex: 1 0 29%;
+	flex: 1 0 92px;
 	line-height: 130%;
 	font-size: 11px;
 	text-align: center;
-}
-
-footer .books li:first-child {
-	margin-left: 2%;
 }
 
 footer .books li a img {
@@ -2534,14 +2530,6 @@ footer .books li a cite {
 	#banner-secondary {
 		margin-left: -25px !important;
 		margin-right: -25px !important;
-	}
-
-	footer .books li {
-		min-width: 92px;
-	}
-
-	footer .books li:first-child {
-		margin-left: 0%;
 	}
 
 	footer .footer-icon-links li a:before {
