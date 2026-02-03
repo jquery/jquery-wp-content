@@ -1920,19 +1920,18 @@ footer ul li {
 	line-height: 30px;
 }
 
+footer .books {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+}
+
 footer .books li {
-	float: left;
-	width: 30%;
-	min-width: 95px;
-	margin-left: 2.8%;
-	margin-bottom: 15px;
+	flex: 1 0 92px;
 	line-height: 130%;
 	font-size: 11px;
 	text-align: center;
-}
-
-footer .books li:first-child {
-	margin-left: 2%;
 }
 
 footer .books li a img {
@@ -1955,8 +1954,6 @@ footer .books li a cite {
 	line-height: 1.5em;
 	color: #aaa;
 }
-
-
 
 /* General Styles
    ========================================================================== */
@@ -2435,21 +2432,6 @@ footer .books li a cite {
 	#banner-secondary.large-banner p {
 		font-size: 22px;
 		padding: 0;
-	}
-
-	footer .books li {
-		clear: both;
-		margin-bottom: 10px;
-		float: none;
-		margin-left: auto !important;
-		margin-right: auto;
-		text-align: center;
-	}
-
-	footer .books li span {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
 
