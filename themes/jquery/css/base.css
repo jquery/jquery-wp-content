@@ -1,7 +1,11 @@
 /*! Copyright jQuery Foundation and other contributors
  * Includes:
  * - normalize.css v1.0.1 (MIT License, Copyright Nicolas Gallagher and Jonathan Neal)
- * - Font Awesome v3.0.2 (MIT License, Font Awesome by Dave Gandy)
+ * - Font Awesome v7.2.0 
+ * -- Fonts: SIL Open Font License 1.1 (https://scripts.sil.org/OFL)
+ * -- Icons: CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+ * -- Code: MIT (https://opensource.org/licenses/MIT)
+ * -- by Fonticons, Inc. (https://fontawesome.com)
  */
 
 /* ==========================================================================
@@ -98,9 +102,20 @@ body {
 
 @font-face {
   font-family: "FontAwesome";
-  src: url("../lib/FontAwesome/fontawesome-webfont.woff2") format("woff2"),
-		url("../lib/FontAwesome/fontawesome-webfont.woff") format("woff");
+  src: url("../lib/FontAwesome/fa-brands-400.woff2") format("woff2");
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../lib/FontAwesome/fa-regular-400.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../lib/FontAwesome/fa-solid-900.woff2") format("woff2");
+  font-weight: 900;
   font-style: normal;
 }
 [class^="icon-"]:before,
@@ -729,25 +744,25 @@ ul.icons li [class*=" icon-"] {
     readers do not read off random characters that represent icons */
 .icon-bolt:before                 { content: "\f0e7"; } /* Used: learn */
 .icon-calendar:before             { content: "\f073"; } /* Used: learn */
-.icon-certificate:before          { content: "\f0a3"; } /* Used: learn */
-.icon-chevron-left:before         { content: "\f053"; } /* Used: learn */
-.icon-chevron-right:before        { content: "\f054"; } /* Used: learn */
+.icon-certificate:before          { content: "\f0a3";font-weight: 900; } /* Used: learn */
+.icon-chevron-left:before         { content: "\f053";font-weight: 900; } /* Used: learn */
+.icon-chevron-right:before        { content: "\f054";font-weight: 900; } /* Used: learn */
 .icon-comments:before             { content: "\f086"; } /* Used: footer */
 .icon-copy:before                 { content: "\f0c5"; } /* Used: releases */
-.icon-dashboard:before            { content: "\f0e4"; } /* Used: learn */
+.icon-dashboard:before            { content: "\f624";font-weight: 900; } /* Used: learn */
 .icon-eye-open:before             { content: "\f06e"; } /* Used: jqueryui.com */
 .icon-github:before               { content: "\f09b"; } /* Used: footer */
-.icon-link:before                 { content: "\f0c1"; } /* Used: toc-link, grunt-jquery-content */
-.icon-magnet:before               { content: "\f076"; } /* Used: learn */
-.icon-pencil:before               { content: "\f040"; } /* Used: footer */
+.icon-link:before                 { content: "\f0c1";font-weight: 900; } /* Used: toc-link, grunt-jquery-content */
+.icon-magnet:before               { content: "\f076";font-weight: 900; } /* Used: learn */
+.icon-pencil:before               { content: "\f303";font-weight: 900; } /* Used: footer */
 .icon-picture:before              { content: "\f03e"; } /* Used: learn */
-.icon-question-sign:before        { content: "\f059"; } /* Used: learn */
-.icon-refresh:before              { content: "\f021"; } /* Used: learn */
-.icon-sitemap:before              { content: "\f0e8"; } /* Used: learn */
+.icon-question-sign:before        { content: "\f059";font-weight: 900; } /* Used: learn */
+.icon-refresh:before              { content: "\f021";font-weight: 900; } /* Used: learn */
+.icon-sitemap:before              { content: "\f0e8";font-weight: 900; } /* Used: learn */
 .icon-star-empty:before           { content: "\f006"; } /* Used: learn */
-.icon-tasks:before                { content: "\f0ae"; } /* Used: learn */
-.icon-th-large:before             { content: "\f009"; } /* Used: learn */
-.icon-twitter:before              { content: "\f099"; } /* Used: footer */
+.icon-tasks:before                { content: "\f0ae";font-weight: 900; } /* Used: learn */
+.icon-th-large:before             { content: "\f009";font-weight: 900; } /* Used: learn */
+.icon-twitter:before              { content: "\e61b"; } /* Used: footer */
 
 /* Manual Font Awesome Styles */
 [class^="icon-"]::before, [class^="icon-"]::after,
