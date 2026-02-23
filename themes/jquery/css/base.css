@@ -105,10 +105,11 @@ body {
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-	font-size: 1.2em;
-  text-decoration: inherit;
-  display: inline-block;
-  speak: none;
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: sub;
+	filter: invert(0.4);
 }
 .icon-info-sign:before { content: "\f05a"; }
 
@@ -727,27 +728,28 @@ ul.icons li [class*=" icon-"] {
 }
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
-.icon-bolt:before                 { content: "\f0e7"; } /* Used: learn */
-.icon-calendar:before             { content: "\f073"; } /* Used: learn */
-.icon-certificate:before          { content: "\f0a3"; } /* Used: learn */
-.icon-chevron-left:before         { content: "\f053"; } /* Used: learn */
-.icon-chevron-right:before        { content: "\f054"; } /* Used: learn */
-.icon-comments:before             { content: "\f086"; } /* Used: footer */
-.icon-copy:before                 { content: "\f0c5"; } /* Used: releases */
-.icon-dashboard:before            { content: "\f0e4"; } /* Used: learn */
-.icon-eye-open:before             { content: "\f06e"; } /* Used: jqueryui.com */
-.icon-github:before               { content: "\f09b"; } /* Used: footer */
-.icon-link:before                 { content: "\f0c1"; } /* Used: toc-link, grunt-jquery-content */
-.icon-magnet:before               { content: "\f076"; } /* Used: learn */
-.icon-pencil:before               { content: "\f040"; } /* Used: footer */
-.icon-picture:before              { content: "\f03e"; } /* Used: learn */
-.icon-question-sign:before        { content: "\f059"; } /* Used: learn */
-.icon-refresh:before              { content: "\f021"; } /* Used: learn */
-.icon-sitemap:before              { content: "\f0e8"; } /* Used: learn */
-.icon-star-empty:before           { content: "\f006"; } /* Used: learn */
-.icon-tasks:before                { content: "\f0ae"; } /* Used: learn */
-.icon-th-large:before             { content: "\f009"; } /* Used: learn */
-.icon-twitter:before              { content: "\f099"; } /* Used: footer */
+.icon-bolt:before                 { content: url(../lib/FontAwesome/bolt.svg); } /* Used: learn */
+.icon-calendar:before             { content: url(../lib/FontAwesome/calendar-days.svg); } /* Used: learn */
+.icon-certificate:before          { content: url(../lib/FontAwesome/certificate.svg); } /* Used: learn */
+.icon-chevron-left:before         { content: url(../lib/FontAwesome/chevron-left.svg); } /* Used: learn */
+.icon-chevron-right:before        { content: url(../lib/FontAwesome/chevron-right.svg); } /* Used: learn */
+.icon-comments:before             { content: url(../lib/FontAwesome/comments.svg); } /* Used: footer */
+.icon-copy:before                 { content: url(../lib/FontAwesome/copy.svg); } /* Used: releases */
+.icon-dashboard:before            { content: url(../lib/FontAwesome/gauge.svg); } /* Used: learn */
+.icon-eye-open:before             { content: url(../lib/FontAwesome/eye-open.svg); } /* Used: jqueryui.com */
+.icon-github:before               { content: url(../lib/FontAwesome/github.svg); } /* Used: footer */
+.icon-link:before                 { content: url(../lib/FontAwesome/link.svg); } /* Used: toc-link, grunt-jquery-content */
+.icon-magnet:before               { content: url(../lib/FontAwesome/magnet.svg); } /* Used: learn */
+.icon-mastodon:before             { content: url(../lib/FontAwesome/mastodon.svg); } /* Used: footer */
+.icon-pencil:before               { content: url(../lib/FontAwesome/pencil.svg); } /* Used: footer */
+.icon-picture:before              { content: url(../lib/FontAwesome/image.svg); } /* Used: learn */
+.icon-question-sign:before        { content: url(../lib/FontAwesome/question.svg); } /* Used: learn */
+.icon-refresh:before              { content: url(../lib/FontAwesome/arrows-rotate.svg); } /* Used: learn */
+.icon-sitemap:before              { content: url(../lib/FontAwesome/sitemap.svg); } /* Used: learn */
+.icon-star-empty:before           { content: url(../lib/FontAwesome/star.svg); } /* Used: learn */
+.icon-tasks:before                { content: url(../lib/FontAwesome/bars-progress.svg); } /* Used: learn */
+.icon-th-large:before             { content: url(../lib/FontAwesome/table-cells-large.svg); } /* Used: learn */
+.icon-twitter:before              { content: url(../lib/FontAwesome/x-twitter.svg); } /* Used: footer */
 
 /* Manual Font Awesome Styles */
 [class^="icon-"]::before, [class^="icon-"]::after,
@@ -1898,15 +1900,18 @@ footer a.do-link:before {
 
 .footer-site-links li a:before {
 	position: absolute;
-	font-size: 1.5em;
-	color: #4d4d4d;
-	text-shadow: 0 -1px 0 #000000;
+	width: 1.5em;
+	height: 1.5em;
 	left: 2px;
+	text-shadow: 0 -1px 0 #000000;
+	filter: invert(0.4);
 }
 
-.footer-site-links li:hover a,
-.footer-site-links li:hover a:before {
+.footer-site-links li:hover a {
 	color: #e6e6e6;
+}
+.footer-site-links li:hover a:before {
+	filter: invert(0.9);
 }
 
 .footer-site-links li {
