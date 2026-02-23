@@ -8,9 +8,13 @@
 			'class' => 'icon-comments',
 			'url' => 'https://jquery.com/support/'
 		),
-		'Twitter' => array(
+		'X' => array(
 			'class' => 'icon-twitter',
-			'url' => get_option( 'jquery_twitter_link' ) ?: 'https://twitter.com/jquery'
+			'url' => get_option( 'jquery_x_link' ) ?: 'https://x.com/jquery'
+		),
+		'Mastodon' => array(
+			'class' => 'icon-mastodon',
+			'url' => 'https://social.lfx.dev/@jquery'
 		),
 		'GitHub' => array(
 			'class' => 'icon-github',
