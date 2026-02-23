@@ -736,14 +736,14 @@ ul.icons li [class*=" icon-"] {
 .icon-comments:before             { content: url(../lib/FontAwesome/comments.svg); } /* Used: footer */
 .icon-copy:before                 { content: url(../lib/FontAwesome/copy.svg); } /* Used: releases */
 .icon-dashboard:before            { content: url(../lib/FontAwesome/gauge.svg); } /* Used: learn */
-.icon-eye-open:before             { content: url(../lib/FontAwesome/eye-open.svg); } /* Used: jqueryui.com */
+.icon-eye-open:before             { content: url(../lib/FontAwesome/eye.svg); } /* Used: jqueryui.com */
 .icon-github:before               { content: url(../lib/FontAwesome/github.svg); } /* Used: footer */
 .icon-link:before                 { content: url(../lib/FontAwesome/link.svg); } /* Used: toc-link, grunt-jquery-content */
 .icon-magnet:before               { content: url(../lib/FontAwesome/magnet.svg); } /* Used: learn */
 .icon-mastodon:before             { content: url(../lib/FontAwesome/mastodon.svg); } /* Used: footer */
 .icon-pencil:before               { content: url(../lib/FontAwesome/pencil.svg); } /* Used: footer */
 .icon-picture:before              { content: url(../lib/FontAwesome/image.svg); } /* Used: learn */
-.icon-question-sign:before        { content: url(../lib/FontAwesome/question.svg); } /* Used: learn */
+.icon-question-sign:before        { content: url(../lib/FontAwesome/circle-question.svg); } /* Used: learn */
 .icon-refresh:before              { content: url(../lib/FontAwesome/arrows-rotate.svg); } /* Used: learn */
 .icon-sitemap:before              { content: url(../lib/FontAwesome/sitemap.svg); } /* Used: learn */
 .icon-star-empty:before           { content: url(../lib/FontAwesome/star.svg); } /* Used: learn */
