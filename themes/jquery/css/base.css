@@ -728,28 +728,28 @@ ul.icons li [class*=" icon-"] {
 }
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
-.icon-bolt:before                 { content: url(../lib/FontAwesome/bolt.svg); } /* Used: learn */
-.icon-calendar:before             { content: url(../lib/FontAwesome/calendar-days.svg); } /* Used: learn */
-.icon-certificate:before          { content: url(../lib/FontAwesome/certificate.svg); } /* Used: learn */
-.icon-chevron-left:before         { content: url(../lib/FontAwesome/chevron-left.svg); } /* Used: learn */
-.icon-chevron-right:before        { content: url(../lib/FontAwesome/chevron-right.svg); } /* Used: learn */
-.icon-comments:before             { content: url(../lib/FontAwesome/comments.svg); } /* Used: footer */
-.icon-copy:before                 { content: url(../lib/FontAwesome/copy.svg); } /* Used: releases */
-.icon-dashboard:before            { content: url(../lib/FontAwesome/gauge.svg); } /* Used: learn */
-.icon-eye-open:before             { content: url(../lib/FontAwesome/eye.svg); } /* Used: jqueryui.com */
-.icon-github:before               { content: url(../lib/FontAwesome/github.svg); } /* Used: footer */
-.icon-link:before                 { content: url(../lib/FontAwesome/link.svg); } /* Used: toc-link, grunt-jquery-content */
-.icon-magnet:before               { content: url(../lib/FontAwesome/magnet.svg); } /* Used: learn */
-.icon-mastodon:before             { content: url(../lib/FontAwesome/mastodon.svg); } /* Used: footer */
-.icon-pencil:before               { content: url(../lib/FontAwesome/pencil.svg); } /* Used: footer */
-.icon-picture:before              { content: url(../lib/FontAwesome/image.svg); } /* Used: learn */
-.icon-question-sign:before        { content: url(../lib/FontAwesome/circle-question.svg); } /* Used: learn */
-.icon-refresh:before              { content: url(../lib/FontAwesome/arrows-rotate.svg); } /* Used: learn */
-.icon-sitemap:before              { content: url(../lib/FontAwesome/sitemap.svg); } /* Used: learn */
-.icon-star-empty:before           { content: url(../lib/FontAwesome/star.svg); } /* Used: learn */
-.icon-tasks:before                { content: url(../lib/FontAwesome/bars-progress.svg); } /* Used: learn */
-.icon-th-large:before             { content: url(../lib/FontAwesome/table-cells-large.svg); } /* Used: learn */
-.icon-twitter:before              { content: url(../lib/FontAwesome/x-twitter.svg); } /* Used: footer */
+.icon-bolt:before                 { content: ""; background: url(../lib/FontAwesome/bolt.svg) no-repeat; } /* Used: learn */
+.icon-calendar:before             { content: ""; background: url(../lib/FontAwesome/calendar-days.svg) no-repeat; } /* Used: learn */
+.icon-certificate:before          { content: ""; background: url(../lib/FontAwesome/certificate.svg) no-repeat; } /* Used: learn */
+.icon-chevron-left:before         { content: ""; background: url(../lib/FontAwesome/chevron-left.svg) no-repeat; } /* Used: learn */
+.icon-chevron-right:before        { content: ""; background: url(../lib/FontAwesome/chevron-right.svg) no-repeat; } /* Used: learn */
+.icon-comments:before             { content: ""; background: url(../lib/FontAwesome/comments.svg) no-repeat; } /* Used: footer */
+.icon-copy:before                 { content: ""; background: url(../lib/FontAwesome/copy.svg) no-repeat; } /* Used: releases */
+.icon-dashboard:before            { content: ""; background: url(../lib/FontAwesome/gauge.svg) no-repeat; } /* Used: learn */
+.icon-eye-open:before             { content: ""; background: url(../lib/FontAwesome/eye.svg) no-repeat; } /* Used: jqueryui.com */
+.icon-github:before               { content: ""; background: url(../lib/FontAwesome/github.svg) no-repeat; } /* Used: footer */
+.icon-link:before                 { content: ""; background: url(../lib/FontAwesome/link.svg) no-repeat; } /* Used: toc-link, grunt-jquery-content */
+.icon-magnet:before               { content: ""; background: url(../lib/FontAwesome/magnet.svg) no-repeat; } /* Used: learn */
+.icon-mastodon:before             { content: ""; background: url(../lib/FontAwesome/mastodon.svg) no-repeat; } /* Used: footer */
+.icon-pencil:before               { content: ""; background: url(../lib/FontAwesome/pencil.svg) no-repeat; } /* Used: footer */
+.icon-picture:before              { content: ""; background: url(../lib/FontAwesome/image.svg) no-repeat; } /* Used: learn */
+.icon-question-sign:before        { content: ""; background: url(../lib/FontAwesome/circle-question.svg) no-repeat; } /* Used: learn */
+.icon-refresh:before              { content: ""; background: url(../lib/FontAwesome/arrows-rotate.svg) no-repeat; } /* Used: learn */
+.icon-sitemap:before              { content: ""; background: url(../lib/FontAwesome/sitemap.svg) no-repeat; } /* Used: learn */
+.icon-star-empty:before           { content: ""; background: url(../lib/FontAwesome/star.svg) no-repeat; } /* Used: learn */
+.icon-tasks:before                { content: ""; background: url(../lib/FontAwesome/bars-progress.svg) no-repeat; } /* Used: learn */
+.icon-th-large:before             { content: ""; background: url(../lib/FontAwesome/table-cells-large.svg) no-repeat; } /* Used: learn */
+.icon-twitter:before              { content: ""; background: url(../lib/FontAwesome/x-twitter.svg) no-repeat; } /* Used: footer */
 
 /* Manual Font Awesome Styles */
 [class^="icon-"]::before, [class^="icon-"]::after,
