@@ -151,6 +151,10 @@ a {
 	margin: 4px 0 0 0;
 }
 
+.icon-github:before {
+	filter: invert(0.9);
+}
+
 .entry-meta .bottom-links {
 	background: #ececec;
 	border: none;
