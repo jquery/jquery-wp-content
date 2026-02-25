@@ -1975,14 +1975,21 @@ footer .books li a cite {
 
 .toc-linked {
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 .toc-linked .toc-link {
 	position: absolute;
-	left: -1em;
+	left: -1.2em;
 	text-decoration: none;
 	opacity: 0;
 }
+
+.toc-linked .icon-link:before {
+	filter: invert(0.1);
+}
+
 /* TODO: Remove (https://github.com/jquery/jquery-wp-content/issues/143) */
 #content .toc-linked .toc-link {
 	text-decoration: none;
