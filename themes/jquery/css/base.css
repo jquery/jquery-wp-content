@@ -749,7 +749,7 @@ ul.icons li [class*=" icon-"] {
 .icon-star-empty:before           { content: ""; background: url(../lib/FontAwesome/star.svg) no-repeat; } /* Used: learn */
 .icon-tasks:before                { content: ""; background: url(../lib/FontAwesome/bars-progress.svg) no-repeat; } /* Used: learn */
 .icon-th-large:before             { content: ""; background: url(../lib/FontAwesome/table-cells-large.svg) no-repeat; } /* Used: learn */
-.icon-twitter:before              { content: "\f099"; } /* Deprecated */
+.icon-twitter:before              { content: ""; background: url(../lib/FontAwesome/twitter.svg) no-repeat; } /* Deprecated */
 .icon-x:before                    { content: ""; background: url(../lib/FontAwesome/x-twitter.svg) no-repeat; } /* Used: footer */
 
 /* Manual Font Awesome Styles */
