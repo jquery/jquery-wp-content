@@ -726,8 +726,8 @@ ul.icons li [class*=" icon-"] {
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0;
 }
-/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
+
+/* Font Awesome Svg Icon */
 .icon-bolt:before                 { content: ""; background: url(../lib/FontAwesome/bolt.svg) no-repeat; } /* Used: learn */
 .icon-calendar:before             { content: ""; background: url(../lib/FontAwesome/calendar-days.svg) no-repeat; } /* Used: learn */
 .icon-certificate:before          { content: ""; background: url(../lib/FontAwesome/certificate.svg) no-repeat; } /* Used: learn */
