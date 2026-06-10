@@ -140,8 +140,6 @@ add_action( 'send_headers', function() {
 // Disable WordPress text transformations (smart quotes, etc.) for posts.
 remove_filter( 'the_content', 'wptexturize' );
 
-// Disable more restrictive multisite upload settings.
-remove_filter( 'upload_mimes', 'check_upload_mimes' );
 // Give unfiltered upload ability to super admins.
 define( 'ALLOW_UNFILTERED_UPLOADS', true );
 // Until unfiltered uploads make it into XML-RPC:
