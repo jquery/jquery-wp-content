@@ -140,16 +140,44 @@ add_action( 'send_headers', function() {
 // Disable WordPress text transformations (smart quotes, etc.) for posts.
 remove_filter( 'the_content', 'wptexturize' );
 
-// Give unfiltered upload ability to super admins.
-define( 'ALLOW_UNFILTERED_UPLOADS', true );
-// Until unfiltered uploads make it into XML-RPC:
+// As of June 2026, blogs use the following mime types:
+//
+// ```
+// wpblogs$ ls /srv/wordpress/sites/*/wp-content/uploads/*/*/*.* | awk -F. '{print $NF}' | tr '[:upper:]' '[:lower:]' | sort | uniq
+// gif
+// ico
+// jpeg
+// jpg
+// pdf
+// png
+// zip
+// ```
+//
+// These are allowed by default in WordPress 7.0 and require no extension.
+// https://github.com/WordPress/WordPress/blob/7.0/wp-includes/functions.php#L3447
+//
+// As of June 2026, docsites use the following mime types:
+//
+// ```
+// wp$ ls /srv/wordpress/sites/*/gw-resources/**/*.* | awk -F. '{print $NF}' | tr '[:upper:]' '[:lower:]' | sort | uniq
+// css
+// gif
+// html
+// jpg
+// js
+// json
+// png
+// svg
+// xml
+// zip
+// ```
+//
+// Of these, we need to add js, json, svg, and xml.
 add_filter( 'upload_mimes', function( $mimes ) {
-	$mimes['eot'] = 'application/vnd.ms-fontobject';
-	$mimes['svg'] = 'image/svg+xml';
-	$mimes['ttf'] = 'application/x-font-ttf';
-	$mimes['woff'] = 'application/font-woff';
-	$mimes['xml'] = 'text/xml';
+	$mimes['js'] = 'text/javascript';
 	$mimes['json'] = 'application/json';
+	$mimes['svg'] = 'image/svg+xml';
+	$mimes['xml'] = 'text/xml';
 	return $mimes;
 } );
 
