@@ -200,9 +200,6 @@ function jquery_unfiltered_html_for_term_descriptions() {
 		add_filter( 'pre_term_description', 'wp_filter_post_kses' );
 }
 
-// Bypass multisite checks.
-add_filter( 'ms_site_check', '__return_true' );
-
 // Add body classes found in postmeta.
 add_filter( 'body_class', function( $classes ) {
 	$body_class_setting = get_option( 'jquery_body_class' );
