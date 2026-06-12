@@ -140,21 +140,7 @@ add_action( 'send_headers', function() {
 // Disable WordPress text transformations (smart quotes, etc.) for posts.
 remove_filter( 'the_content', 'wptexturize' );
 
-// As of June 2026, blogs use the following mime types:
-//
-// ```
-// wpblogs$ ls /srv/wordpress/sites/*/wp-content/uploads/*/*/*.* | awk -F. '{print $NF}' | tr '[:upper:]' '[:lower:]' | sort | uniq
-// gif
-// ico
-// jpeg
-// jpg
-// pdf
-// png
-// zip
-// ```
-//
-// These are allowed by default in WordPress 7.0 and require no extension.
-// https://github.com/WordPress/WordPress/blob/7.0/wp-includes/functions.php#L3447
+// Enable additional file types and upload size limit for docsites.
 //
 // As of June 2026, docsites use the following mime types:
 //
@@ -172,14 +158,35 @@ remove_filter( 'the_content', 'wptexturize' );
 // zip
 // ```
 //
-// Of these, we need to add js, json, svg, and xml.
-add_filter( 'upload_mimes', function( $mimes ) {
-	$mimes['js'] = 'text/javascript';
-	$mimes['json'] = 'application/json';
-	$mimes['svg'] = 'image/svg+xml';
-	$mimes['xml'] = 'text/xml';
-	return $mimes;
-} );
+// Of these, we need to add js, json, svg, and xml. The rest are allowed by
+// default as of WordPress 7.0.
+//
+// https://github.com/WordPress/WordPress/blob/7.0/wp-includes/functions.php#L3447
+if ( !get_option( 'jquery_is_blog' ) ) {
+	add_filter( 'upload_mimes', function( $mimes ) {
+		$mimes['js'] = 'text/javascript';
+		$mimes['json'] = 'application/json';
+		$mimes['svg'] = 'image/svg+xml';
+		$mimes['xml'] = 'text/xml';
+		return $mimes;
+	} );
+}
+
+// Blogs don't require additional file types right now.
+//
+// As of June 2026, blogs use the following mime types:
+// ```
+// wpblogs$ ls /srv/wordpress/sites/*/wp-content/uploads/*/*/*.* | awk -F. '{print $NF}' | tr '[:upper:]' '[:lower:]' | sort | uniq
+// gif
+// ico
+// jpeg
+// jpg
+// pdf
+// png
+// zip
+// ```
+//
+// These are allowed by default as of WordPress 7.0.
 
 // Disable the new image sizes feature.
 // It adds a style tag that would require a CSP exception.
