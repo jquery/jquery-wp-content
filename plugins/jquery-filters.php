@@ -181,11 +181,6 @@ add_filter( 'upload_mimes', function( $mimes ) {
 	return $mimes;
 } );
 
-// Increase file size limit to 1GB
-add_filter( 'pre_site_option_fileupload_maxk', function() {
-	return 1024 * 1024;
-} );
-
 // Disable the new image sizes feature.
 // It adds a style tag that would require a CSP exception.
 add_filter( 'wp_img_tag_add_auto_sizes', '__return_false' );
