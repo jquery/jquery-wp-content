@@ -14,18 +14,9 @@ $options = jquery_default_site_options();
 $sites = jquery_sites();
 $options = array_merge( $options, $sites[ JQUERY_LIVE_SITE ]['options'] );
 foreach ( $options as $option => $value ) {
-	// Skip these on live sites (both production and staging),
-	// where they are managed by puppet.
-	// Local testing with a fresh database does not
-	// currently work if these are skipped.
+	// On live sites (both production and staging), these are managed by Puppet instead.
 	if ( JQUERY_STAGING !== 'local' ) {
-		if ( $option === 'stylesheet' || $option === 'template' ) {
-			// Don't mess with themes for now.
-			continue;
-		}
-		if ( $option === 'active_plugins' ) {
-			// On live sites (including staging ones),
-			// Puppet manages activation of per-site plugins.
+		if ( $option === 'stylesheet' || $option === 'template' || $option === 'active_plugins' ) {
 			continue;
 		}
 	}
@@ -258,6 +249,13 @@ add_filter( 'xmlrpc_wp_insert_post_data', function ( $post_data, $content_struct
 
 	return $post_data;
 }, 10, 2 );
+
+add_filter( 'two_factor_providers', function ( $providers ) {
+	// No outgoing email
+	unset( $providers['Two_Factor_Email'] );
+
+	return $providers;
+} );
 
 if ( JQUERY_STAGING && !defined( 'XMLRPC_REQUEST' ) ) {
 	ob_start( 'jquery_com_ob_local_urls' );

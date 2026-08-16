@@ -7,6 +7,7 @@
 
 require_once __DIR__ . '/../plugins/disable-emojis/disable-emojis.php';
 require_once __DIR__ . '/../plugins/gilded-wordpress/gilded-wordpress.php';
+require_once __DIR__ . '/../plugins/two-factor/two-factor.php';
 require_once __DIR__ . '/../plugins/jquery-actions.php';
 require_once __DIR__ . '/../plugins/jquery-filters.php';
 require_once __DIR__ . '/../plugins/jquery-tags-on-pages.php';

@@ -14,9 +14,13 @@
 			"curl -O -q --output-dir themes/jquery/lib/typesense-minibar 'https://raw.githubusercontent.com/jquery/typesense-minibar/1.3.4/{typesense-minibar.css,typesense-minibar.js,LICENSE.txt}'",
 			"curl -q https://raw.githubusercontent.com/jquery/typesense-minibar/1.3.4/typesense-minibar-foot.css >> themes/jquery/lib/typesense-minibar/typesense-minibar.css",
 
-			"git rm -rf plugins/disable-emojis/",
+			"git rm --ignore-unmatch -rf plugins/disable-emojis/",
 			"curl -s 'https://downloads.wordpress.org/plugin/disable-emojis.1.7.7.zip' | tar -xv -C plugins/",
 			"git add plugins/disable-emojis/",
+
+			"git rm --ignore-unmatch -rf plugins/two-factor/",
+			"curl -s 'https://downloads.wordpress.org/plugin/two-factor.0.16.0.zip' | tar -xv -C plugins/",
+			"git add plugins/two-factor/",
 
 			"@deps:gw",
 
