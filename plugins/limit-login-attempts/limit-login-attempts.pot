@@ -1,0 +1,265 @@
+# Copyright (C) 2012 Limit Login Attempts
+# This file is distributed under the same license as the Limit Login Attempts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Limit Login Attempts 1.7.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/limit-login-attempts\n"
+"POT-Creation-Date: 2012-05-20 10:43:32+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: limit-login-attempts.php:522
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: limit-login-attempts.php:528
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: limit-login-attempts.php:534
+msgid "[%s] Failed login attempts from whitelisted IP"
+msgstr ""
+
+#: limit-login-attempts.php:538
+msgid "[%s] Too many failed login attempts"
+msgstr ""
+
+#: limit-login-attempts.php:543
+msgid "%d failed login attempts (%d lockout(s)) from IP: %s"
+msgstr ""
+
+#: limit-login-attempts.php:547
+msgid "Last user attempted: %s"
+msgstr ""
+
+#: limit-login-attempts.php:551
+msgid "IP was NOT blocked because of external whitelist."
+msgstr ""
+
+#: limit-login-attempts.php:553
+msgid "IP was blocked for %s"
+msgstr ""
+
+#: limit-login-attempts.php:615
+msgid "<strong>ERROR</strong>: Too many failed login attempts."
+msgstr ""
+
+#: limit-login-attempts.php:619
+msgid "Please try again later."
+msgstr ""
+
+#: limit-login-attempts.php:626
+msgid "Please try again in %d hour."
+msgid_plural "Please try again in %d hours."
+msgstr[0] ""
+msgstr[1] ""
+
+#: limit-login-attempts.php:628
+msgid "Please try again in %d minute."
+msgid_plural "Please try again in %d minutes."
+msgstr[0] ""
+msgstr[1] ""
+
+#: limit-login-attempts.php:657
+msgid "<strong>%d</strong> attempt remaining."
+msgid_plural "<strong>%d</strong> attempts remaining."
+msgstr[0] ""
+msgstr[1] ""
+
+#: limit-login-attempts.php:728
+msgid "<strong>ERROR</strong>: Incorrect username or password."
+msgstr ""
+
+#: limit-login-attempts.php:896
+msgctxt "Internet address"
+msgid "IP"
+msgstr ""
+
+#: limit-login-attempts.php:896
+msgid "Tried to log in as"
+msgstr ""
+
+#: limit-login-attempts.php:901
+msgid "%d lockout"
+msgid_plural "%d lockouts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: limit-login-attempts.php:930
+msgid "Cleared IP log"
+msgstr ""
+
+#: limit-login-attempts.php:938
+msgid "Reset lockout count"
+msgstr ""
+
+#: limit-login-attempts.php:946
+msgid "Cleared current lockouts"
+msgstr ""
+
+#: limit-login-attempts.php:975
+msgid "Options changed"
+msgstr ""
+
+#: limit-login-attempts.php:993
+msgid "It appears the site is reached directly (from your IP: %s)"
+msgstr ""
+
+#: limit-login-attempts.php:995
+msgid ""
+"It appears the site is reached through a proxy server (proxy IP: %s, your "
+"IP: %s)"
+msgstr ""
+
+#: limit-login-attempts.php:1003
+msgid ""
+"<strong>Current setting appears to be invalid</strong>. Please make sure it "
+"is correct. Further information can be found <a href=\"%s\" title=\"FAQ"
+"\">here</a>"
+msgstr ""
+
+#: limit-login-attempts.php:1011
+msgid "Limit Login Attempts Settings"
+msgstr ""
+
+#: limit-login-attempts.php:1012
+msgid "Statistics"
+msgstr ""
+
+#: limit-login-attempts.php:1017
+msgid "Total lockouts"
+msgstr ""
+
+#: limit-login-attempts.php:1020
+msgid "Reset Counter"
+msgstr ""
+
+#: limit-login-attempts.php:1021
+msgid "%d lockout since last reset"
+msgid_plural "%d lockouts since last reset"
+msgstr[0] ""
+msgstr[1] ""
+
+#: limit-login-attempts.php:1022
+msgid "No lockouts yet"
+msgstr ""
+
+#: limit-login-attempts.php:1027
+msgid "Active lockouts"
+msgstr ""
+
+#: limit-login-attempts.php:1029
+msgid "Restore Lockouts"
+msgstr ""
+
+#: limit-login-attempts.php:1030
+msgid "%d IP is currently blocked from trying to log in"
+msgstr ""
+
+#: limit-login-attempts.php:1036
+msgid "Options"
+msgstr ""
+
+#: limit-login-attempts.php:1041
+msgid "Lockout"
+msgstr ""
+
+#: limit-login-attempts.php:1043
+msgid "allowed retries"
+msgstr ""
+
+#: limit-login-attempts.php:1044
+msgid "minutes lockout"
+msgstr ""
+
+#: limit-login-attempts.php:1045
+msgid "lockouts increase lockout time to"
+msgstr ""
+
+#: limit-login-attempts.php:1045
+msgid "hours"
+msgstr ""
+
+#: limit-login-attempts.php:1046
+msgid "hours until retries are reset"
+msgstr ""
+
+#: limit-login-attempts.php:1050
+msgid "Site connection"
+msgstr ""
+
+#: limit-login-attempts.php:1056
+msgid "Direct connection"
+msgstr ""
+
+#: limit-login-attempts.php:1061
+msgid "From behind a reversy proxy"
+msgstr ""
+
+#: limit-login-attempts.php:1067
+msgid "Handle cookie login"
+msgstr ""
+
+#: limit-login-attempts.php:1069
+msgid "Yes"
+msgstr ""
+
+#: limit-login-attempts.php:1069
+msgid "No"
+msgstr ""
+
+#: limit-login-attempts.php:1073
+msgid "Notify on lockout"
+msgstr ""
+
+#: limit-login-attempts.php:1075
+msgid "Log IP"
+msgstr ""
+
+#: limit-login-attempts.php:1076
+msgid "Email to admin after"
+msgstr ""
+
+#: limit-login-attempts.php:1076
+msgid "lockouts"
+msgstr ""
+
+#: limit-login-attempts.php:1081
+msgid "Change Options"
+msgstr ""
+
+#: limit-login-attempts.php:1089
+msgid "Lockout log"
+msgstr ""
+
+#: limit-login-attempts.php:1094
+msgid "Clear Log"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Limit Login Attempts"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://devel.kostdoktorn.se/limit-login-attempts"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Limit rate of login attempts, including by way of cookies, for each IP."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Johan Eenfeldt"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://devel.kostdoktorn.se"
+msgstr ""

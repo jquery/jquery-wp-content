@@ -22,6 +22,10 @@
 			"curl -s 'https://downloads.wordpress.org/plugin/two-factor.0.16.0.zip' | tar -xv -C plugins/",
 			"git add plugins/two-factor/",
 
+			"git rm --ignore-unmatch -rf plugins/limit-login-attempts/",
+			"curl -s 'https://downloads.wordpress.org/plugin/limit-login-attempts.1.7.2.zip' | tar -xv -C plugins/",
+			"git add plugins/limit-login-attempts/",
+
 			"@deps:gw",
 
 			"curl -O -q --output-dir plugins/memcached 'https://raw.githubusercontent.com/Automattic/wp-memcached/35e1ea16f6b8cb8a1e6fbca124e33a44db21fa74/{object-cache.php,readme.txt,LICENSE}'"

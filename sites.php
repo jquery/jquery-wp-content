@@ -422,6 +422,9 @@ function jquery_default_site_options() {
 		// but naturally don't support comments at all. Turn this off to
 		// remove the WordPress comment-reply script from pages by default.
 		'thread_comments' => 0,
+
+		// https://github.com/jquery/infrastructure/issues/572
+		'limit_login_lockout_notify' => '',
 	);
 
 	// Production databases set the home values in corresponding site options tables.

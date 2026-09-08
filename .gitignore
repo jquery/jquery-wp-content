@@ -2,3 +2,6 @@
 /blogs.dir/*
 /vendor/
 /composer.lock
+/plugins/limit-login-attempts/limit-login-attempts-*.po
+/plugins/limit-login-attempts/limit-login-attempts-*.mo
+/plugins/limit-login-attempts/screenshot*
