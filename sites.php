@@ -81,7 +81,7 @@ function jquery_sites() {
 				'jquery_body_class' => 'jquery-ui',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'blog.jqueryui.com' => array(
@@ -95,7 +95,7 @@ function jquery_sites() {
 				'jquery_is_blog' => true,
 				'jquery_author' => 'jQuery Team',
 				'jquery_description' => 'jQuery: The Write Less, Do More, JavaScript Library',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com' => array(
@@ -111,7 +111,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.8' => array(
@@ -127,7 +127,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.9' => array(
@@ -143,7 +143,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'jquery.org' => array(
@@ -168,7 +168,7 @@ function jquery_sites() {
 				'jquery_body_class' => 'jquery-mobile',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jquerymobile_com',
-				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
+				'jquery_x_link' => 'https://x.com/jquerymobile',
 			),
 		),
 		'api.jquerymobile.com' => array(
@@ -184,7 +184,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jquerymobile_com',
-				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
+				'jquery_x_link' => 'https://x.com/jquerymobile',
 			),
 		),
 		'blog.jquerymobile.com' => array(
@@ -197,7 +197,7 @@ function jquery_sites() {
 				'jquery_is_blog' => true,
 				'jquery_author' => 'jQuery Team',
 				'jquery_description' => 'jQuery: The Write Less, Do More, JavaScript Library',
-				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
+				'jquery_x_link' => 'https://x.com/jquerymobile',
 			),
 		),
 		'brand.jquery.org' => array(
@@ -246,7 +246,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jquerymobile_com',
-				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
+				'jquery_x_link' => 'https://x.com/jquerymobile',
 			),
 		),
 		'api.jqueryui.com/1.10' => array(
@@ -262,7 +262,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.12' => array(
@@ -278,7 +278,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.11' => array(
@@ -294,7 +294,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'api.jquerymobile.com/1.4' => array(
@@ -310,7 +310,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jquerymobile.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jquerymobile_com',
-				'jquery_twitter_link' => 'https://twitter.com/jquerymobile',
+				'jquery_x_link' => 'https://x.com/jquerymobile',
 			),
 		),
 		'releases.jquery.com' => array(
@@ -338,7 +338,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 		'api.jqueryui.com/1.14' => array(
@@ -354,7 +354,7 @@ function jquery_sites() {
 				'jquery_logo_link'=> 'https://jqueryui.com/',
 				'jquery_typesense_key' => 'Zh8mMgohXECel9wjPwqT7lekLSG3OCgz',
 				'jquery_typesense_collection' => 'jqueryui_com',
-				'jquery_twitter_link' => 'https://twitter.com/jqueryui',
+				'jquery_x_link' => 'https://x.com/jqueryui',
 			),
 		),
 	);

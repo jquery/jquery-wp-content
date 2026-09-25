@@ -105,10 +105,11 @@ body {
 }
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
-	font-size: 1.2em;
-  text-decoration: inherit;
-  display: inline-block;
-  speak: none;
+	display: inline-block;
+	width: 1.2em;
+	height: 1.2em;
+	vertical-align: sub;
+	filter: invert(0.4);
 }
 .icon-info-sign:before { content: "\f05a"; }
 
@@ -725,29 +726,31 @@ ul.icons li [class*=" icon-"] {
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0;
 }
-/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-    readers do not read off random characters that represent icons */
-.icon-bolt:before                 { content: "\f0e7"; } /* Used: learn */
-.icon-calendar:before             { content: "\f073"; } /* Used: learn */
-.icon-certificate:before          { content: "\f0a3"; } /* Used: learn */
-.icon-chevron-left:before         { content: "\f053"; } /* Used: learn */
-.icon-chevron-right:before        { content: "\f054"; } /* Used: learn */
-.icon-comments:before             { content: "\f086"; } /* Used: footer */
-.icon-copy:before                 { content: "\f0c5"; } /* Used: releases */
-.icon-dashboard:before            { content: "\f0e4"; } /* Used: learn */
-.icon-eye-open:before             { content: "\f06e"; } /* Used: jqueryui.com */
-.icon-github:before               { content: "\f09b"; } /* Used: footer */
-.icon-link:before                 { content: "\f0c1"; } /* Used: toc-link, grunt-jquery-content */
-.icon-magnet:before               { content: "\f076"; } /* Used: learn */
-.icon-pencil:before               { content: "\f040"; } /* Used: footer */
-.icon-picture:before              { content: "\f03e"; } /* Used: learn */
-.icon-question-sign:before        { content: "\f059"; } /* Used: learn */
-.icon-refresh:before              { content: "\f021"; } /* Used: learn */
-.icon-sitemap:before              { content: "\f0e8"; } /* Used: learn */
-.icon-star-empty:before           { content: "\f006"; } /* Used: learn */
-.icon-tasks:before                { content: "\f0ae"; } /* Used: learn */
-.icon-th-large:before             { content: "\f009"; } /* Used: learn */
-.icon-twitter:before              { content: "\f099"; } /* Used: footer */
+
+/* Font Awesome Svg Icon */
+.icon-bolt:before                 { content: ""; background: url(../lib/FontAwesome/bolt.svg) no-repeat; } /* Used: learn */
+.icon-calendar:before             { content: ""; background: url(../lib/FontAwesome/calendar-days.svg) no-repeat; } /* Used: learn */
+.icon-certificate:before          { content: ""; background: url(../lib/FontAwesome/certificate.svg) no-repeat; } /* Used: learn */
+.icon-chevron-left:before         { content: ""; background: url(../lib/FontAwesome/chevron-left.svg) no-repeat; } /* Used: learn */
+.icon-chevron-right:before        { content: ""; background: url(../lib/FontAwesome/chevron-right.svg) no-repeat; } /* Used: learn */
+.icon-comments:before             { content: ""; background: url(../lib/FontAwesome/comments.svg) no-repeat; } /* Used: footer */
+.icon-copy:before                 { content: ""; background: url(../lib/FontAwesome/copy.svg) no-repeat; } /* Used: releases */
+.icon-dashboard:before            { content: ""; background: url(../lib/FontAwesome/gauge.svg) no-repeat; } /* Used: learn */
+.icon-eye-open:before             { content: ""; background: url(../lib/FontAwesome/eye.svg) no-repeat; } /* Used: jqueryui.com */
+.icon-github:before               { content: ""; background: url(../lib/FontAwesome/github.svg) no-repeat; } /* Used: footer */
+.icon-link:before                 { content: ""; background: url(../lib/FontAwesome/link.svg) no-repeat; } /* Used: toc-link, grunt-jquery-content */
+.icon-magnet:before               { content: ""; background: url(../lib/FontAwesome/magnet.svg) no-repeat; } /* Used: learn */
+.icon-mastodon:before             { content: ""; background: url(../lib/FontAwesome/mastodon.svg) no-repeat; } /* Used: footer */
+.icon-pencil:before               { content: ""; background: url(../lib/FontAwesome/pencil.svg) no-repeat; } /* Used: footer */
+.icon-picture:before              { content: ""; background: url(../lib/FontAwesome/image.svg) no-repeat; } /* Used: learn */
+.icon-question-sign:before        { content: ""; background: url(../lib/FontAwesome/circle-question.svg) no-repeat; } /* Used: learn */
+.icon-refresh:before              { content: ""; background: url(../lib/FontAwesome/arrows-rotate.svg) no-repeat; } /* Used: learn */
+.icon-sitemap:before              { content: ""; background: url(../lib/FontAwesome/sitemap.svg) no-repeat; } /* Used: learn */
+.icon-star-empty:before           { content: ""; background: url(../lib/FontAwesome/star.svg) no-repeat; } /* Used: learn */
+.icon-tasks:before                { content: ""; background: url(../lib/FontAwesome/bars-progress.svg) no-repeat; } /* Used: learn */
+.icon-th-large:before             { content: ""; background: url(../lib/FontAwesome/table-cells-large.svg) no-repeat; } /* Used: learn */
+.icon-twitter:before              { content: ""; background: url(../lib/FontAwesome/twitter.svg) no-repeat; } /* Deprecated */
+.icon-x:before                    { content: ""; background: url(../lib/FontAwesome/x-twitter.svg) no-repeat; } /* Used: footer */
 
 /* Manual Font Awesome Styles */
 [class^="icon-"]::before, [class^="icon-"]::after,
@@ -1898,15 +1901,18 @@ footer a.do-link:before {
 
 .footer-site-links li a:before {
 	position: absolute;
-	font-size: 1.5em;
-	color: #4d4d4d;
-	text-shadow: 0 -1px 0 #000000;
+	width: 1.5em;
+	height: 1.5em;
 	left: 2px;
+	text-shadow: 0 -1px 0 #000000;
+	filter: invert(0.4);
 }
 
-.footer-site-links li:hover a,
-.footer-site-links li:hover a:before {
+.footer-site-links li:hover a {
 	color: #e6e6e6;
+}
+.footer-site-links li:hover a:before {
+	filter: invert(0.9);
 }
 
 .footer-site-links li {
@@ -1970,14 +1976,21 @@ footer .books li a cite {
 
 .toc-linked {
 	position: relative;
+	display: flex;
+	align-items: center;
 }
 
 .toc-linked .toc-link {
 	position: absolute;
-	left: -1em;
+	left: -1.2em;
 	text-decoration: none;
 	opacity: 0;
 }
+
+.toc-linked .icon-link:before {
+	filter: invert(0.1);
+}
+
 /* TODO: Remove (https://github.com/jquery/jquery-wp-content/issues/143) */
 #content .toc-linked .toc-link {
 	text-decoration: none;
