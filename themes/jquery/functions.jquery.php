@@ -83,21 +83,23 @@ function jq_post_category () {
 	return $current_category;
 }
 
-function jq_pages_for_category( $category ) {
+function jq_pages_for_category( $category, $orderby = 'title' ) {
 	return get_posts( array(
 		'post_type' => 'page',
 		'category_name' => $category,
 		'posts_per_page' => -1,
-		'orderby' => 'title',
+		'orderby' => $orderby,
 		'order' => 'ASC'
 	) );
 }
 
-function jq_page_links_for_category( $category ) {
+function jq_page_links_for_category( $category, $orderby = 'title' ) {
+	global $post;
 	$ret = '';
-	foreach ( jq_pages_for_category( $category ) as $post ) {
-		$ret .= '<li><a href="' . get_permalink( $post->ID ) . '">' .
-			$post->post_title . '</a></li>';
+	foreach ( jq_pages_for_category( $category, $orderby ) as $page ) {
+		$attr = ( $page->ID === $post->ID ) ? ' class="current"' : '';
+		$ret .= '<li' . $attr . '><a href="' . get_permalink( $page->ID ) . '">' .
+			$page->post_title . '</a></li>';
 	}
 	return $ret;
 }
