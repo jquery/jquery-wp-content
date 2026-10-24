@@ -39,10 +39,10 @@ wp_enqueue_script('sri-modal', get_template_directory_uri() . '/js/sri-modal.js'
 
 	<div class="sri-modal-info">
 		The <code>integrity</code> and <code>crossorigin</code> attributes are used for
-		<a href="https://www.w3.org/TR/SRI/" target="_blank">Subresource Integrity (SRI) checking</a>.
+		<a href="https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity" target="_blank">Subresource Integrity (SRI) checking</a>.
 		This allows browsers to ensure that resources hosted on third-party servers have
 		not been tampered with. Use of SRI is recommended as a best-practice, whenever
-		libraries are loaded from a third-party source. Read more at <a href="https://www.srihash.org/" target="_blank">srihash.org</a>
+		libraries are loaded from a third-party source. Read more at <a href="https://srihash.org/" target="_blank">srihash.org</a>
 	</div>
 </div>
 
