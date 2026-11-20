@@ -1739,12 +1739,15 @@ input[type="submit"].dark:hover {
 	padding-left: 0;
 }
 
+#sidebar li.current {
+	font-weight: bold;
+}
+
 #sidebar nav#secondary li.current {
 	background-color: #eee;
 	margin-left: -35px;
 	margin-right: -20px;
 	padding-left: 35px;
-	font-weight: bold;
 }
 
 /* == Footer
